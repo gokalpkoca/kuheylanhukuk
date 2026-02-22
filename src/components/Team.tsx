@@ -5,10 +5,10 @@ import { Mail, Globe } from "lucide-react";
 const team = [
   {
     name: "Mert Deniz Küheylan",
-    title: "Ortak",
+    title: "Kurucu Ortak",
     initials: "MDK",
     bio: "Uluslararası ticaret hukuku ve şirketler hukuku alanında uzmanlaşmış, geniş bir müvekkil portföyüne hizmet vermektedir. Türk ve uluslararası hukuk düzenlemelerine hâkimdir.",
-    email: "md.kuheylan@kuheylan.av.tr",
+    email: "av.mdkuheylan@hotmail.com",
     languages: ["Türkçe", "İngilizce", "Almanca"],
   },
 ];
@@ -45,7 +45,7 @@ const Team = () => {
           çıkmadan önlemek, müvekkillerine en uygun ve en doğru çözümleri sunmaktır.
         </motion.p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="flex justify-center max-w-md mx-auto">
           {team.map((member, i) => (
             <motion.div
               key={member.name}
