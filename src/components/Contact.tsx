@@ -50,8 +50,8 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-serif text-lg text-foreground font-semibold mb-1">E-posta</h3>
-                <a href="mailto:info@ekici-sahin.av.tr" className="text-muted-foreground hover:text-gold transition-colors">
-                  info@ekici-sahin.av.tr
+                <a href="mailto:info@kuheylanhukuk.com" className="text-muted-foreground hover:text-gold transition-colors">
+                  info@kuheylanhukuk.com
                 </a>
               </div>
             </div>
