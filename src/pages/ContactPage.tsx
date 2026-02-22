@@ -51,15 +51,15 @@ const ContactPage = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      <section className="relative h-[280px] md:h-[340px] flex items-center justify-center bg-card overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-card via-card/95 to-background" />
+      <section className="relative h-[280px] md:h-[340px] flex items-center justify-center bg-dark-surface overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(0,8%,18%)] via-[hsl(0,8%,18%)]/95 to-background" />
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="relative z-10 text-center"
         >
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground font-bold">
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-dark-surface-foreground font-bold">
             {t("contact_page.title")}
           </h1>
           <div className="w-16 h-px bg-primary mx-auto mt-6" />
