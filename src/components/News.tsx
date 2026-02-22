@@ -38,7 +38,7 @@ const News = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="haberler" className="py-24 lg:py-32 bg-dark-surface">
+    <section id="haberler" className="py-24 lg:py-32 bg-white">
       <div className="container mx-auto px-4 lg:px-8" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -49,7 +49,7 @@ const News = () => {
           <p className="text-gold uppercase tracking-[0.2em] text-sm font-medium mb-4">
             {t("news.subtitle")}
           </p>
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-dark-surface-foreground font-bold">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground font-bold">
             {t("news.title")}
           </h2>
           <div className="w-16 h-px bg-gold mx-auto mt-6" />
@@ -62,13 +62,13 @@ const News = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.4, delay: Math.min(i, 5) * 0.08 }}
-              className="border border-white/10 rounded bg-white/5 p-6 hover:border-gold hover:-translate-y-1 transition-all duration-300 group flex flex-col"
+              className="border border-border rounded bg-white p-6 hover:border-gold hover:-translate-y-1 transition-all duration-300 group flex flex-col shadow-sm"
             >
-              <div className="flex items-center gap-2 text-xs text-dark-surface-muted mb-3">
+              <div className="flex items-center gap-2 text-xs text-muted-foreground mb-3">
                 <Calendar className="w-3.5 h-3.5 text-gold" />
                 <span>{article.date}</span>
               </div>
-              <h3 className="font-serif text-base text-dark-surface-foreground font-medium leading-snug mb-3 flex-1">
+              <h3 className="font-serif text-base text-foreground font-medium leading-snug mb-3 flex-1">
                 {article.title}
               </h3>
               <p className="text-xs text-gold/80 mb-4">{t(`pa.${article.category}`)}</p>
