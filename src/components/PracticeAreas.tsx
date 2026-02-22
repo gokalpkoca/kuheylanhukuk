@@ -2,10 +2,12 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Link } from "react-router-dom";
 import { practiceAreas } from "@/data/practiceAreas";
+import { useLanguage } from "@/context/LanguageContext";
 
 const PracticeAreas = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const { t } = useLanguage();
 
   return (
     <section id="faaliyet-alanlari" className="py-24 lg:py-32 bg-background">
@@ -17,10 +19,10 @@ const PracticeAreas = () => {
           className="text-center mb-6"
         >
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground font-bold">
-            Faaliyet <span className="text-primary italic">Alanları</span>
+            {t("practice.title1")} <span className="text-primary italic">{t("practice.title2")}</span>
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Büromuz, iş ahlakı ve güvenilirliğiyle öne çıkarak, müvekkillerimizin değişen ihtiyaçlarına farklı hukuk alanlarında çözümler sunmaktadır.
+            {t("practice.description")}
           </p>
         </motion.div>
 
@@ -34,7 +36,7 @@ const PracticeAreas = () => {
             href="#faaliyet-alanlari"
             className="inline-flex items-center gap-2 text-primary text-sm font-medium hover:underline"
           >
-            Tüm Faaliyet Alanları
+            {t("practice.view_all")}
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
@@ -45,7 +47,7 @@ const PracticeAreas = () => {
           <div className="flex gap-5 min-w-max">
             {practiceAreas.map((area, i) => (
               <motion.div
-                key={area.label}
+                key={area.slug}
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.4, delay: i * 0.04 }}
@@ -57,7 +59,7 @@ const PracticeAreas = () => {
                     <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
                       <area.icon className="w-10 h-10 text-primary mb-4 group-hover:scale-110 transition-transform duration-300" />
                       <h3 className="font-serif text-sm text-foreground text-center font-medium leading-snug">
-                        {area.label}
+                        {t(`pa.${area.slug}`)}
                       </h3>
                     </div>
                   </div>

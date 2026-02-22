@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 const COOKIE_KEY = "cookie_consent_accepted";
 
 const CookieConsent = () => {
   const [visible, setVisible] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const accepted = localStorage.getItem(COOKIE_KEY);
@@ -39,7 +41,7 @@ const CookieConsent = () => {
           </button>
 
           <h3 className="font-serif text-base font-semibold text-foreground mb-3">
-            Çerez Politikası
+            {t("cookie.title")}
           </h3>
 
           <div className="text-xs text-muted-foreground leading-relaxed space-y-2 max-h-48 overflow-y-auto pr-2">
@@ -59,13 +61,13 @@ const CookieConsent = () => {
               onClick={accept}
               className="px-6 py-2 bg-primary text-primary-foreground text-sm font-medium rounded hover:opacity-90 transition-opacity"
             >
-              Kabul Et
+              {t("cookie.accept")}
             </button>
             <button
               onClick={accept}
               className="px-6 py-2 border border-border text-muted-foreground text-sm font-medium rounded hover:border-primary hover:text-primary transition-colors"
             >
-              Reddet
+              {t("cookie.reject")}
             </button>
           </div>
         </motion.div>

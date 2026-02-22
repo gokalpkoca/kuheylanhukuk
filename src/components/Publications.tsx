@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { BookOpen } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 const books = [
   { title: "Sermaye Piyasası Hukuku Uygulamaları", role: "Sermaye Piyasası Departmanı" },
@@ -14,6 +15,7 @@ const books = [
 const Publications = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const { t } = useLanguage();
 
   return (
     <section className="py-24 lg:py-32 bg-background">
@@ -25,15 +27,14 @@ const Publications = () => {
           className="text-center mb-16"
         >
           <p className="text-gold uppercase tracking-[0.2em] text-sm font-medium mb-4">
-            Akademik Katkılar
+            {t("pub.subtitle")}
           </p>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground font-bold">
-            Danışmanlarımızın Eserleri
+            {t("pub.title")}
           </h2>
           <div className="w-16 h-px bg-gold mx-auto mt-6" />
         </motion.div>
 
-        {/* Horizontal Scroll */}
         <div className="overflow-x-auto pb-4 -mx-4 px-4">
           <div className="flex gap-6 min-w-max">
             {books.map((book, i) => (
@@ -44,7 +45,6 @@ const Publications = () => {
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 className="w-56 shrink-0 border border-border rounded bg-card hover:border-gold transition-all duration-300 group cursor-pointer"
               >
-                {/* Book Cover */}
                 <div className="aspect-[3/4] bg-navy-light flex flex-col items-center justify-center p-6 relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-b from-gold/5 to-transparent" />
                   <BookOpen className="w-10 h-10 text-gold/60 mb-4 relative z-10" />

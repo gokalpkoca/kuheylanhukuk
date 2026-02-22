@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { ArrowRight, Calendar } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/context/LanguageContext";
 
 const allArticles = [
   { title: "Halka Arz Yol Haritası: SPK Mevzuatı Kapsamında Uyum Süreci", date: "16 Şubat 2026", dept: "Sermaye Piyasası Hukuku Departmanı" },
@@ -34,6 +35,7 @@ const News = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [showAll, setShowAll] = useState(false);
   const displayed = showAll ? allArticles : allArticles.slice(0, 6);
+  const { t } = useLanguage();
 
   return (
     <section id="haberler" className="py-24 lg:py-32 bg-secondary">
@@ -45,10 +47,10 @@ const News = () => {
           className="text-center mb-16"
         >
           <p className="text-gold uppercase tracking-[0.2em] text-sm font-medium mb-4">
-            Güncel Bilgilerden Haberdar Olun
+            {t("news.subtitle")}
           </p>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground font-bold">
-            Bilgi Havuzu & Haberler
+            {t("news.title")}
           </h2>
           <div className="w-16 h-px bg-gold mx-auto mt-6" />
         </motion.div>
@@ -71,7 +73,7 @@ const News = () => {
               </h3>
               <p className="text-xs text-gold/80 mb-4">{article.dept}</p>
               <button className="inline-flex items-center gap-1.5 text-gold text-sm font-medium hover:gap-3 transition-all duration-200 self-start">
-                Devamını Oku
+                {t("news.read_more")}
                 <ArrowRight className="w-4 h-4" />
               </button>
             </motion.article>
@@ -84,7 +86,7 @@ const News = () => {
               to="/blog"
               className="inline-block px-8 py-3 border border-gold text-gold uppercase text-sm tracking-[0.15em] font-medium hover:bg-gold hover:text-primary-foreground transition-all duration-300"
             >
-              Tümünü Gör
+              {t("news.view_all")}
             </Link>
           </div>
         )}

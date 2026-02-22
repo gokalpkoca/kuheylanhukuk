@@ -4,9 +4,11 @@ import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { practiceAreas } from "@/data/practiceAreas";
+import { useLanguage } from "@/context/LanguageContext";
 
 const PracticeAreaDetail = () => {
   const { slug } = useParams<{ slug: string }>();
+  const { t } = useLanguage();
   const area = practiceAreas.find((a) => a.slug === slug);
   const currentIndex = practiceAreas.findIndex((a) => a.slug === slug);
   const prev = currentIndex > 0 ? practiceAreas[currentIndex - 1] : null;
@@ -19,7 +21,7 @@ const PracticeAreaDetail = () => {
         <main className="pt-32 pb-20 container mx-auto px-4 text-center">
           <h1 className="font-serif text-3xl text-foreground font-bold mb-4">Sayfa Bulunamadı</h1>
           <Link to="/#faaliyet-alanlari" className="text-primary hover:underline">
-            Faaliyet Alanlarına Dön
+            {t("practice.back")}
           </Link>
         </main>
         <Footer />
@@ -44,7 +46,7 @@ const PracticeAreaDetail = () => {
               className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-8"
             >
               <ArrowLeft className="w-4 h-4" />
-              Faaliyet Alanları
+              {t("nav.faaliyet_alanlari")}
             </Link>
 
             <div className="flex items-center gap-4 mb-8">
@@ -52,7 +54,7 @@ const PracticeAreaDetail = () => {
                 <Icon className="w-8 h-8 text-primary" />
               </div>
               <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground font-bold">
-                {area.label}
+                {t(`pa.${area.slug}`)}
               </h1>
             </div>
 
@@ -62,10 +64,9 @@ const PracticeAreaDetail = () => {
               {area.description}
             </p>
 
-            {/* Other practice areas */}
             <div className="border-t border-border pt-10">
               <h3 className="font-serif text-xl text-foreground font-semibold mb-6">
-                Diğer Faaliyet Alanları
+                {t("practice.view_all")}
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                 {practiceAreas
@@ -76,13 +77,12 @@ const PracticeAreaDetail = () => {
                       to={`/faaliyet-alanlari/${a.slug}`}
                       className="px-4 py-3 border border-border rounded text-sm text-muted-foreground hover:border-primary hover:text-primary transition-all"
                     >
-                      {a.label}
+                      {t(`pa.${a.slug}`)}
                     </Link>
                   ))}
               </div>
             </div>
 
-            {/* Prev / Next navigation */}
             <div className="flex justify-between items-center mt-12 pt-8 border-t border-border">
               {prev ? (
                 <Link
@@ -90,7 +90,7 @@ const PracticeAreaDetail = () => {
                   className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   <ArrowLeft className="w-4 h-4" />
-                  {prev.label}
+                  {t(`pa.${prev.slug}`)}
                 </Link>
               ) : (
                 <div />
@@ -100,7 +100,7 @@ const PracticeAreaDetail = () => {
                   to={`/faaliyet-alanlari/${next.slug}`}
                   className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
-                  {next.label}
+                  {t(`pa.${next.slug}`)}
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               ) : (
