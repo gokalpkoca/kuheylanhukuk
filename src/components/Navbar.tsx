@@ -9,7 +9,7 @@ const navItems = [
   { label: "Faaliyet Alanları", href: "#faaliyet-alanlari", dropdown: true },
   { label: "Makaleler", href: "#haberler" },
   { label: "Kariyer", href: "#kariyer" },
-  { label: "İletişim", href: "#iletisim" },
+  { label: "İletişim", href: "/iletisim", isPage: true },
 ];
 
 const languages = ["TR", "EN", "AR", "RU", "ES"];
@@ -90,6 +90,14 @@ const Navbar = () => {
                     </div>
                   )}
                 </div>
+              ) : (item as any).isPage ? (
+                <Link
+                  key={item.href}
+                  to={item.href}
+                  className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200 tracking-wide uppercase"
+                >
+                  {item.label}
+                </Link>
               ) : (
                 <a
                   key={item.href}
@@ -181,6 +189,15 @@ const Navbar = () => {
                     </div>
                   )}
                 </div>
+              ) : (item as any).isPage ? (
+                <Link
+                  key={item.href}
+                  to={item.href}
+                  onClick={() => setIsOpen(false)}
+                  className="block py-3 px-4 text-sm uppercase tracking-wide text-muted-foreground hover:text-primary transition-colors"
+                >
+                  {item.label}
+                </Link>
               ) : (
                 <a
                   key={item.href}
