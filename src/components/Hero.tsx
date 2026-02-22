@@ -48,18 +48,6 @@ const Hero = () => {
           </a>
         </motion.div>
 
-        {/* Experience Badge */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className="absolute bottom-12 right-8 lg:right-16 hidden md:block"
-        >
-          <div className="bg-card/80 backdrop-blur border border-border rounded-lg px-6 py-4 text-center">
-            <span className="font-serif text-4xl font-bold text-primary">46</span>
-            <p className="text-muted-foreground text-xs mt-1 tracking-wide">yıllık<br/>tecrübe</p>
-          </div>
-        </motion.div>
       </div>
 
       {/* Slide indicator */}
