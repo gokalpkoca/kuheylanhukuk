@@ -4,6 +4,13 @@ import { Link } from "react-router-dom";
 import { practiceAreas as practiceAreaData } from "@/data/practiceAreas";
 import { useLanguage, Language } from "@/context/LanguageContext";
 
+const languageFlags: Record<Language, string> = {
+  TR: "🇹🇷",
+  EN: "🇬🇧",
+  AR: "🇸🇦",
+  RU: "🇷🇺",
+  ES: "🇪🇸",
+};
 const languages: Language[] = ["TR", "EN", "AR", "RU", "ES"];
 
 const Navbar = () => {
@@ -173,7 +180,7 @@ const Navbar = () => {
                 onClick={() => setLangDropdownOpen(!langDropdownOpen)}
                 className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
               >
-                <Globe className="w-4 h-4" />
+                <span className="text-base leading-none">{languageFlags[language]}</span>
                 <span>{language}</span>
                 <ChevronDown className={`w-3 h-3 transition-transform ${langDropdownOpen ? "rotate-180" : ""}`} />
               </button>
@@ -189,7 +196,7 @@ const Navbar = () => {
                           : "text-muted-foreground hover:text-primary hover:bg-secondary"
                       }`}
                     >
-                      {lang}
+                      <span className="text-base leading-none">{languageFlags[lang]}</span> {lang}
                     </button>
                   ))}
                 </div>
@@ -304,7 +311,7 @@ const Navbar = () => {
                         : "text-muted-foreground hover:text-primary"
                     }`}
                   >
-                    {lang}
+                    <span className="text-base leading-none">{languageFlags[lang]}</span> {lang}
                   </button>
                 ))}
               </div>
