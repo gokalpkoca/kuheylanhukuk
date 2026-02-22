@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Calendar, ArrowRight, ArrowLeft } from "lucide-react";
@@ -35,8 +35,16 @@ const ITEMS_PER_PAGE = 9;
 const departments = ["Tümü", ...Array.from(new Set(allArticles.map((a) => a.dept)))];
 
 const Blog = () => {
+  const [searchParams] = useSearchParams();
   const [currentPage, setCurrentPage] = useState(1);
-  const [selectedDept, setSelectedDept] = useState("Tümü");
+  const initialDept = searchParams.get("dept") || "Tümü";
+  const [selectedDept, setSelectedDept] = useState(initialDept);
+
+  useEffect(() => {
+    const dept = searchParams.get("dept") || "Tümü";
+    setSelectedDept(dept);
+    setCurrentPage(1);
+  }, [searchParams]);
 
   const filtered = selectedDept === "Tümü" ? allArticles : allArticles.filter((a) => a.dept === selectedDept);
   const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);

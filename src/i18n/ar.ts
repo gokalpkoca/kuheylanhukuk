@@ -4,6 +4,7 @@ const ar: Record<string, string> = {
   "nav.ekibimiz": "فريقنا",
   "nav.faaliyet_alanlari": "مجالات الممارسة",
   "nav.makaleler": "المقالات",
+  "nav.tum_makaleler": "جميع المقالات",
   "nav.kariyer": "الوظائف",
   "nav.iletisim": "اتصل بنا",
 

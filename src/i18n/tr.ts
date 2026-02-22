@@ -4,6 +4,7 @@ const tr: Record<string, string> = {
   "nav.ekibimiz": "Ekibimiz",
   "nav.faaliyet_alanlari": "Faaliyet Alanları",
   "nav.makaleler": "Makaleler",
+  "nav.tum_makaleler": "Tüm Makaleler",
   "nav.kariyer": "Kariyer",
   "nav.iletisim": "İletişim",
 
