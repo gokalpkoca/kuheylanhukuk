@@ -5,35 +5,35 @@ import Footer from "@/components/Footer";
 import { Calendar, ArrowRight, ArrowLeft } from "lucide-react";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
+import { practiceAreas } from "@/data/practiceAreas";
 
 const allArticles = [
-  { title: "Halka Arz Yol Haritası: SPK Mevzuatı Kapsamında Uyum Süreci", date: "16 Şubat 2026", dept: "Sermaye Piyasası Hukuku Departmanı" },
-  { title: "TTK Çerçevesinde Acentelik ve Distribütörlük", date: "09 Şubat 2026", dept: "Şirketler Hukuku Departmanı" },
-  { title: "Kira Sertifikaları ve Varlık Kiralama Şirketleri Çerçevesinde Türk Hukukunda Faizsiz Finansman Yapısı", date: "02 Şubat 2026", dept: "Sermaye Piyasası Hukuku Departmanı" },
-  { title: "Limited Şirket Pay Devri Süreci ve Şartları", date: "26 Ocak 2026", dept: "Şirketler Hukuku Departmanı" },
-  { title: "Sermaye Şirketlerinde Bölünme: Tam ve Kısmi Bölünme", date: "20 Ocak 2026", dept: "Şirketler Hukuku Departmanı" },
-  { title: "Kripto Varlık Hizmet Sağlayıcılarının Kuruluş ve Faaliyet Esasları", date: "05 Ocak 2026", dept: "Sermaye Piyasası Hukuku Departmanı" },
-  { title: "Portföy Yönetim Şirketlerinin Kuruluşu, Faaliyet Alanları ve Düzenleyici Rejimi", date: "26 Aralık 2025", dept: "Sermaye Piyasası Hukuku Departmanı" },
-  { title: "Yönetim Kurulu Sorumluluk Serisi-3: Yönetim Kurulu Üyelerinin Cezai Sorumluluğu", date: "23 Aralık 2025", dept: "Şirketler Hukuku Departmanı" },
-  { title: "Pay Sahipleri Sözleşmelerinin Hukukî Niteliği, Esas Sözleşme ile İlişkisi ve Üçüncü Kişilere Etkisi", date: "15 Aralık 2025", dept: "Şirketler Hukuku Departmanı" },
-  { title: "Halka Açık Ortaklıklarda Pay Devri Rejimi", date: "04 Aralık 2025", dept: "Sermaye Piyasası Hukuku Departmanı" },
-  { title: "Zorunlu Pay Alım Teklifi: Yönetim Kontrolü Değişikliklerinde Yatırımcı Koruma Mekanizması", date: "01 Aralık 2025", dept: "Sermaye Piyasası Hukuku Departmanı" },
-  { title: "Yönetim Kurulu Üyeleri Sorumluluk Serisi – 2: İbra Kurumu", date: "21 Kasım 2025", dept: "Şirketler Hukuku Departmanı" },
-  { title: "TTK Anlamında Birleşme: Kavram, Usul ve Uygulamada Kırılma Noktaları", date: "31 Ekim 2025", dept: "Şirketler Hukuku Departmanı" },
-  { title: "Türk Madencilik Hukukunda Ruhsat ve İzin Rejiminin Esasları", date: "30 Ekim 2025", dept: "Hukuk Departmanı" },
-  { title: "Halka Açık Ortaklıklarda İlişkili Taraf İşlemleri ve Örtülü Kazanç Aktarımına Karşı Hukuki Çerçeve", date: "17 Ekim 2025", dept: "Sermaye Piyasası Hukuku Departmanı" },
-  { title: "Kaydileştirilmiş Sermaye Piyasası Araçları Üzerinde Rehin Hakkı ve Paraya Çevrilmesi", date: "14 Ekim 2025", dept: "Sermaye Piyasası Hukuku Departmanı" },
-  { title: "Yönetim Kurulu Üyeleri Sorumluluk Serisi-1: TTK Çerçevesinde Kurumsal Yönetim Perspektifi", date: "10 Ekim 2025", dept: "Şirketler Hukuku Departmanı" },
-  { title: "Aracı Kurumların Kuruluş ve Faaliyet Esasları", date: "12 Eylül 2025", dept: "Sermaye Piyasası Hukuku Departmanı" },
-  { title: "Fikri ve Sınai Haklarda Hükümsüzlük: Kavram, Sebepler ve Sonuçlar", date: "23 Eylül 2025", dept: "Fikri Mülkiyet Hukuku Departmanı" },
-  { title: "Spor Anonim Şirketlerinde İşlem Yasakları: Mali Disiplinin Hukuki Çerçevesi", date: "20 Ağustos 2025", dept: "Spor Hukuku Departmanı" },
-  { title: "Şirket Devralamalarında Gizli Riskleri Ortaya Çıkarmak: Due Diligence'ın Önemi", date: "20 Ağustos 2025", dept: "M&A Departmanı" },
-  { title: "Tahvil İhracı Süreci: Hukuki Çerçeve ve Uygulama Esasları", date: "20 Ağustos 2025", dept: "Sermaye Piyasası Hukuku Departmanı" },
-  { title: "Türkiye'de Gayrimenkul Yatırım Fonlarının Evrimi", date: "20 Ağustos 2025", dept: "Sermaye Piyasası Hukuku Departmanı" },
+  { title: "Halka Arz Yol Haritası: SPK Mevzuatı Kapsamında Uyum Süreci", date: "16 Şubat 2026", category: "sermaye-piyasasi-hukuku" },
+  { title: "TTK Çerçevesinde Acentelik ve Distribütörlük", date: "09 Şubat 2026", category: "sirketler-hukuku" },
+  { title: "Kira Sertifikaları ve Varlık Kiralama Şirketleri Çerçevesinde Türk Hukukunda Faizsiz Finansman Yapısı", date: "02 Şubat 2026", category: "sermaye-piyasasi-hukuku" },
+  { title: "Limited Şirket Pay Devri Süreci ve Şartları", date: "26 Ocak 2026", category: "sirketler-hukuku" },
+  { title: "Sermaye Şirketlerinde Bölünme: Tam ve Kısmi Bölünme", date: "20 Ocak 2026", category: "sirketler-hukuku" },
+  { title: "Kripto Varlık Hizmet Sağlayıcılarının Kuruluş ve Faaliyet Esasları", date: "05 Ocak 2026", category: "sermaye-piyasasi-hukuku" },
+  { title: "Portföy Yönetim Şirketlerinin Kuruluşu, Faaliyet Alanları ve Düzenleyici Rejimi", date: "26 Aralık 2025", category: "sermaye-piyasasi-hukuku" },
+  { title: "Yönetim Kurulu Sorumluluk Serisi-3: Yönetim Kurulu Üyelerinin Cezai Sorumluluğu", date: "23 Aralık 2025", category: "sirketler-hukuku" },
+  { title: "Pay Sahipleri Sözleşmelerinin Hukukî Niteliği, Esas Sözleşme ile İlişkisi ve Üçüncü Kişilere Etkisi", date: "15 Aralık 2025", category: "sirketler-hukuku" },
+  { title: "Halka Açık Ortaklıklarda Pay Devri Rejimi", date: "04 Aralık 2025", category: "sermaye-piyasasi-hukuku" },
+  { title: "Zorunlu Pay Alım Teklifi: Yönetim Kontrolü Değişikliklerinde Yatırımcı Koruma Mekanizması", date: "01 Aralık 2025", category: "sermaye-piyasasi-hukuku" },
+  { title: "Yönetim Kurulu Üyeleri Sorumluluk Serisi – 2: İbra Kurumu", date: "21 Kasım 2025", category: "sirketler-hukuku" },
+  { title: "TTK Anlamında Birleşme: Kavram, Usul ve Uygulamada Kırılma Noktaları", date: "31 Ekim 2025", category: "sirketler-hukuku" },
+  { title: "Türk Madencilik Hukukunda Ruhsat ve İzin Rejiminin Esasları", date: "30 Ekim 2025", category: "cevre-hukuku" },
+  { title: "Halka Açık Ortaklıklarda İlişkili Taraf İşlemleri ve Örtülü Kazanç Aktarımına Karşı Hukuki Çerçeve", date: "17 Ekim 2025", category: "sermaye-piyasasi-hukuku" },
+  { title: "Kaydileştirilmiş Sermaye Piyasası Araçları Üzerinde Rehin Hakkı ve Paraya Çevrilmesi", date: "14 Ekim 2025", category: "sermaye-piyasasi-hukuku" },
+  { title: "Yönetim Kurulu Üyeleri Sorumluluk Serisi-1: TTK Çerçevesinde Kurumsal Yönetim Perspektifi", date: "10 Ekim 2025", category: "sirketler-hukuku" },
+  { title: "Aracı Kurumların Kuruluş ve Faaliyet Esasları", date: "12 Eylül 2025", category: "sermaye-piyasasi-hukuku" },
+  { title: "Fikri ve Sınai Haklarda Hükümsüzlük: Kavram, Sebepler ve Sonuçlar", date: "23 Eylül 2025", category: "marka-patent-hukuku" },
+  { title: "Spor Anonim Şirketlerinde İşlem Yasakları: Mali Disiplinin Hukuki Çerçevesi", date: "20 Ağustos 2025", category: "spor-hukuku" },
+  { title: "Şirket Devralamalarında Gizli Riskleri Ortaya Çıkarmak: Due Diligence'ın Önemi", date: "20 Ağustos 2025", category: "sirketler-hukuku" },
+  { title: "Tahvil İhracı Süreci: Hukuki Çerçeve ve Uygulama Esasları", date: "20 Ağustos 2025", category: "sermaye-piyasasi-hukuku" },
+  { title: "Türkiye'de Gayrimenkul Yatırım Fonlarının Evrimi", date: "20 Ağustos 2025", category: "sermaye-piyasasi-hukuku" },
 ];
 
 const ITEMS_PER_PAGE = 9;
-const departments = ["Tümü", ...Array.from(new Set(allArticles.map((a) => a.dept)))];
 
 const Blog = () => {
   const [searchParams] = useSearchParams();
@@ -48,7 +48,7 @@ const Blog = () => {
     setCurrentPage(1);
   }, [searchParams]);
 
-  const filtered = selectedDept === "Tümü" ? allArticles : allArticles.filter((a) => a.dept === selectedDept);
+  const filtered = selectedDept === "Tümü" ? allArticles : allArticles.filter((a) => a.category === selectedDept);
   const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
   const paginated = filtered.slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE);
 
@@ -82,19 +82,29 @@ const Blog = () => {
             <div className="w-16 h-px bg-primary mt-6" />
           </motion.div>
 
-          {/* Department Filter */}
+          {/* Category Filter */}
           <div className="flex flex-wrap gap-2 mb-10">
-            {departments.map((dept) => (
+            <button
+              onClick={() => handleDeptChange("Tümü")}
+              className={`px-4 py-2 text-xs uppercase tracking-wider rounded border transition-all duration-200 ${
+                selectedDept === "Tümü"
+                  ? "bg-primary text-primary-foreground border-primary"
+                  : "border-border text-muted-foreground hover:border-primary hover:text-primary"
+              }`}
+            >
+              {t("news.view_all")}
+            </button>
+            {practiceAreas.map((area) => (
               <button
-                key={dept}
-                onClick={() => handleDeptChange(dept)}
+                key={area.slug}
+                onClick={() => handleDeptChange(area.slug)}
                 className={`px-4 py-2 text-xs uppercase tracking-wider rounded border transition-all duration-200 ${
-                  selectedDept === dept
+                  selectedDept === area.slug
                     ? "bg-primary text-primary-foreground border-primary"
                     : "border-border text-muted-foreground hover:border-primary hover:text-primary"
                 }`}
               >
-                {dept}
+                {t(`pa.${area.slug}`)}
               </button>
             ))}
           </div>
@@ -116,7 +126,7 @@ const Blog = () => {
                 <h2 className="font-serif text-base text-foreground font-medium leading-snug mb-3 flex-1">
                   {article.title}
                 </h2>
-                <p className="text-xs text-primary/80 mb-4">{article.dept}</p>
+                <p className="text-xs text-primary/80 mb-4">{t(`pa.${article.category}`)}</p>
                 <button className="inline-flex items-center gap-1.5 text-primary text-sm font-medium hover:gap-3 transition-all duration-200 self-start">
                   Devamını Oku
                   <ArrowRight className="w-4 h-4" />
