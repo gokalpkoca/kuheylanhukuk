@@ -5,20 +5,22 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
+import { useLanguage } from "@/context/LanguageContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const ContactPage = () => {
   const { toast } = useToast();
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", subject: "", message: "" });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const mailtoLink = `mailto:info@kuheylanhukuk.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
-      `Ad Soyad: ${formData.name}\nE-posta: ${formData.email}\nTelefon: ${formData.phone}\n\n${formData.message}`
+      `${t("contact.name")}: ${formData.name}\n${t("contact.email_label")}: ${formData.email}\n${t("contact.phone_label")}: ${formData.phone}\n\n${formData.message}`
     )}`;
     window.location.href = mailtoLink;
-    toast({ title: "Yönlendiriliyor", description: "E-posta uygulamanız açılıyor..." });
+    toast({ title: t("contact.redirecting"), description: t("contact.redirect_desc") });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -28,19 +30,19 @@ const ContactPage = () => {
   const contactCards = [
     {
       icon: <Phone className="w-8 h-8" />,
-      title: "Telefon",
+      title: t("contact.phone"),
       detail: "+90 535 227 96 96",
       href: "tel:+905352279696",
     },
     {
       icon: <Mail className="w-8 h-8" />,
-      title: "Mail",
+      title: t("contact.email"),
       detail: "info@kuheylanhukuk.com",
       href: "mailto:info@kuheylanhukuk.com",
     },
     {
       icon: <MapPin className="w-8 h-8" />,
-      title: "Adres",
+      title: t("contact.address"),
       detail: "Burhaniye, Neşet Bey Sk. NO:12 Kat:3 D:5, 34676 Üsküdar/İstanbul, Türkiye",
     },
   ];
@@ -49,7 +51,6 @@ const ContactPage = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      {/* Hero Banner */}
       <section className="relative h-[280px] md:h-[340px] flex items-center justify-center bg-card overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-card via-card/95 to-background" />
         <motion.div
@@ -59,13 +60,12 @@ const ContactPage = () => {
           className="relative z-10 text-center"
         >
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground font-bold">
-            İletişim
+            {t("contact_page.title")}
           </h1>
           <div className="w-16 h-px bg-primary mx-auto mt-6" />
         </motion.div>
       </section>
 
-      {/* Contact Cards */}
       <section className="py-16 lg:py-20">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -102,7 +102,6 @@ const ContactPage = () => {
         </div>
       </section>
 
-      {/* Map Section */}
       <section className="pb-16 lg:pb-20">
         <div className="container mx-auto px-4 lg:px-8 max-w-5xl">
           <motion.div
@@ -111,7 +110,7 @@ const ContactPage = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <h2 className="font-serif text-2xl md:text-3xl text-foreground font-bold text-center mb-8">
-              İletişim Haritası
+              {t("contact.map_title")}
             </h2>
             <div className="rounded-lg overflow-hidden border border-border">
               <iframe
@@ -130,7 +129,6 @@ const ContactPage = () => {
         </div>
       </section>
 
-      {/* Contact Form */}
       <section className="pb-24 lg:pb-32">
         <div className="container mx-auto px-4 lg:px-8 max-w-3xl">
           <motion.div
@@ -140,38 +138,38 @@ const ContactPage = () => {
           >
             <div className="bg-card border border-border rounded-lg p-8 md:p-10">
               <h2 className="font-serif text-2xl md:text-3xl text-foreground font-bold text-center mb-2">
-                Bize Ulaşın
+                {t("contact_page.reach_us")}
               </h2>
               <p className="text-muted-foreground text-center text-sm mb-8">
-                Formu doldurarak bizimle iletişime geçebilirsiniz.
+                {t("contact.form_subtitle")}
               </p>
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div>
-                    <label className="text-sm font-medium text-foreground mb-2 block">Ad Soyad</label>
-                    <Input name="name" value={formData.name} onChange={handleChange} placeholder="Adınız Soyadınız" required className="bg-background border-border" />
+                    <label className="text-sm font-medium text-foreground mb-2 block">{t("contact.name")}</label>
+                    <Input name="name" value={formData.name} onChange={handleChange} placeholder={t("contact.name_placeholder")} required className="bg-background border-border" />
                   </div>
                   <div>
-                    <label className="text-sm font-medium text-foreground mb-2 block">E-posta</label>
-                    <Input name="email" type="email" value={formData.email} onChange={handleChange} placeholder="ornek@mail.com" required className="bg-background border-border" />
+                    <label className="text-sm font-medium text-foreground mb-2 block">{t("contact.email_label")}</label>
+                    <Input name="email" type="email" value={formData.email} onChange={handleChange} placeholder={t("contact.email_placeholder")} required className="bg-background border-border" />
                   </div>
                   <div>
-                    <label className="text-sm font-medium text-foreground mb-2 block">Telefon</label>
-                    <Input name="phone" value={formData.phone} onChange={handleChange} placeholder="+90 5XX XXX XX XX" className="bg-background border-border" />
+                    <label className="text-sm font-medium text-foreground mb-2 block">{t("contact.phone_label")}</label>
+                    <Input name="phone" value={formData.phone} onChange={handleChange} placeholder={t("contact.phone_placeholder")} className="bg-background border-border" />
                   </div>
                   <div>
-                    <label className="text-sm font-medium text-foreground mb-2 block">Konu</label>
-                    <Input name="subject" value={formData.subject} onChange={handleChange} placeholder="Konu başlığı" required className="bg-background border-border" />
+                    <label className="text-sm font-medium text-foreground mb-2 block">{t("contact.subject")}</label>
+                    <Input name="subject" value={formData.subject} onChange={handleChange} placeholder={t("contact.subject_placeholder")} required className="bg-background border-border" />
                   </div>
                 </div>
                 <div>
-                  <label className="text-sm font-medium text-foreground mb-2 block">Mesajınız</label>
-                  <Textarea name="message" value={formData.message} onChange={handleChange} placeholder="Mesajınızı buraya yazınız..." rows={6} required className="bg-background border-border" />
+                  <label className="text-sm font-medium text-foreground mb-2 block">{t("contact.message")}</label>
+                  <Textarea name="message" value={formData.message} onChange={handleChange} placeholder={t("contact.message_placeholder")} rows={6} required className="bg-background border-border" />
                 </div>
                 <div className="text-center">
                   <Button type="submit" size="lg" className="gap-2 px-10">
                     <Send className="w-4 h-4" />
-                    Gönder
+                    {t("contact.send")}
                   </Button>
                 </div>
               </form>

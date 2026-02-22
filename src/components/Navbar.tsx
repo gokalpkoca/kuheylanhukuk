@@ -2,27 +2,28 @@ import { useState, useEffect, useRef } from "react";
 import { Menu, X, Globe, Phone, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import { practiceAreas as practiceAreaData } from "@/data/practiceAreas";
+import { useLanguage, Language } from "@/context/LanguageContext";
 
-const navItems = [
-  { label: "Kurumsal", href: "#hakkimizda" },
-  { label: "Ekibimiz", href: "#ekibimiz" },
-  { label: "Faaliyet Alanları", href: "#faaliyet-alanlari", dropdown: true },
-  { label: "Makaleler", href: "#haberler" },
-  { label: "Kariyer", href: "#kariyer" },
-  { label: "İletişim", href: "/iletisim", isPage: true },
-];
-
-const languages = ["TR", "EN", "AR", "RU", "ES"];
+const languages: Language[] = ["TR", "EN", "AR", "RU", "ES"];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [activeLang, setActiveLang] = useState("TR");
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const langRef = useRef<HTMLDivElement>(null);
+  const { language, setLanguage, t } = useLanguage();
+
+  const navItems = [
+    { label: t("nav.kurumsal"), href: "#hakkimizda" },
+    { label: t("nav.ekibimiz"), href: "#ekibimiz" },
+    { label: t("nav.faaliyet_alanlari"), href: "#faaliyet-alanlari", dropdown: true },
+    { label: t("nav.makaleler"), href: "#haberler" },
+    { label: t("nav.kariyer"), href: "#kariyer" },
+    { label: t("nav.iletisim"), href: "/iletisim", isPage: true },
+  ];
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -54,7 +55,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-1.5 shrink-0">
+          <a href="/" className="flex items-center gap-1.5 shrink-0">
             <span className="font-serif text-lg lg:text-xl font-bold text-foreground tracking-wide">
               KÜHEYLAN
             </span>
@@ -66,7 +67,7 @@ const Navbar = () => {
           {/* Desktop Nav */}
           <div className="hidden xl:flex items-center gap-1">
             {navItems.map((item) =>
-              item.dropdown ? (
+              (item as any).dropdown ? (
                 <div key={item.href} className="relative" ref={dropdownRef}>
                   <button
                     onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -84,7 +85,7 @@ const Navbar = () => {
                           onClick={() => setDropdownOpen(false)}
                           className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-primary hover:bg-secondary transition-colors"
                         >
-                          {area.label}
+                          {t(`pa.${area.slug}`)}
                         </Link>
                       ))}
                     </div>
@@ -129,7 +130,7 @@ const Navbar = () => {
                 className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
               >
                 <Globe className="w-4 h-4" />
-                <span>{activeLang}</span>
+                <span>{language}</span>
                 <ChevronDown className={`w-3 h-3 transition-transform ${langDropdownOpen ? "rotate-180" : ""}`} />
               </button>
               {langDropdownOpen && (
@@ -137,9 +138,9 @@ const Navbar = () => {
                   {languages.map((lang) => (
                     <button
                       key={lang}
-                      onClick={() => { setActiveLang(lang); setLangDropdownOpen(false); }}
+                      onClick={() => { setLanguage(lang); setLangDropdownOpen(false); }}
                       className={`block w-full text-left px-3 py-1.5 text-sm transition-colors ${
-                        activeLang === lang
+                        language === lang
                           ? "text-primary font-semibold bg-secondary"
                           : "text-muted-foreground hover:text-primary hover:bg-secondary"
                       }`}
@@ -165,7 +166,7 @@ const Navbar = () => {
         {isOpen && (
           <div className="xl:hidden bg-card border-t border-border pb-4 rounded-b shadow-xl shadow-black/20">
             {navItems.map((item) =>
-              item.dropdown ? (
+              (item as any).dropdown ? (
                 <div key={item.href}>
                   <button
                     onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
@@ -183,7 +184,7 @@ const Navbar = () => {
                           onClick={() => { setIsOpen(false); setMobileDropdownOpen(false); }}
                           className="block py-2.5 px-8 text-sm text-muted-foreground hover:text-primary transition-colors"
                         >
-                          {area.label}
+                          {t(`pa.${area.slug}`)}
                         </Link>
                       ))}
                     </div>
@@ -221,9 +222,9 @@ const Navbar = () => {
                 {languages.map((lang) => (
                   <button
                     key={lang}
-                    onClick={() => setActiveLang(lang)}
+                    onClick={() => setLanguage(lang)}
                     className={`text-xs px-2 py-1 rounded transition-colors ${
-                      activeLang === lang
+                      language === lang
                         ? "bg-primary text-primary-foreground font-semibold"
                         : "text-muted-foreground hover:text-primary"
                     }`}
