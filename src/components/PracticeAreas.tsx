@@ -6,21 +6,21 @@ import {
 } from "lucide-react";
 
 const areas = [
-  { icon: Users, label: "STK Hukuku" },
-  { icon: Gavel, label: "Ceza Hukuku" },
-  { icon: Heart, label: "Sağlık Hukuku" },
-  { icon: Newspaper, label: "Basın Hukuku" },
-  { icon: TreePine, label: "Çevre Hukuku" },
   { icon: Landmark, label: "Banka Hukuku" },
-  { icon: Building2, label: "Kültür ve Tabiat Varlıkları Hukuku" },
-  { icon: TrendingUp, label: "Sermaye Piyasası Hukuku" },
+  { icon: Newspaper, label: "Basın Hukuku" },
+  { icon: Gavel, label: "Ceza Hukuku" },
+  { icon: TreePine, label: "Çevre Hukuku" },
   { icon: Package, label: "Gümrük Hukuku" },
-  { icon: Award, label: "Marka & Patent Hukuku" },
-  { icon: Trophy, label: "Spor Hukuku" },
-  { icon: Scale, label: "Medeni Hukuk" },
-  { icon: Briefcase, label: "Şirketler Hukuku" },
   { icon: FileText, label: "İcra & İflas Hukuku" },
   { icon: HardHat, label: "İş Hukuku" },
+  { icon: Building2, label: "Kültür ve Tabiat Varlıkları Hukuku" },
+  { icon: Award, label: "Marka & Patent Hukuku" },
+  { icon: Scale, label: "Medeni Hukuk" },
+  { icon: Heart, label: "Sağlık Hukuku" },
+  { icon: TrendingUp, label: "Sermaye Piyasası Hukuku" },
+  { icon: Trophy, label: "Spor Hukuku" },
+  { icon: Users, label: "STK Hukuku" },
+  { icon: Briefcase, label: "Şirketler Hukuku" },
 ];
 
 const PracticeAreas = () => {

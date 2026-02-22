@@ -2,10 +2,11 @@ import { useState, useEffect, useRef } from "react";
 import { Menu, X, Globe, Phone, ChevronDown } from "lucide-react";
 
 const practiceAreas = [
-  "STK Hukuku", "Ceza Hukuku", "Sağlık Hukuku", "Basın Hukuku",
-  "Çevre Hukuku", "Banka Hukuku", "Kültür ve Tabiat Varlıkları Hukuku",
-  "Sermaye Piyasası Hukuku", "Gümrük Hukuku", "Marka & Patent Hukuku",
-  "Spor Hukuku", "Medeni Hukuk", "Şirketler Hukuku", "İcra & İflas Hukuku", "İş Hukuku",
+  "Banka Hukuku", "Basın Hukuku", "Ceza Hukuku", "Çevre Hukuku",
+  "Gümrük Hukuku", "İcra & İflas Hukuku", "İş Hukuku",
+  "Kültür ve Tabiat Varlıkları Hukuku", "Marka & Patent Hukuku",
+  "Medeni Hukuk", "Sağlık Hukuku", "Sermaye Piyasası Hukuku",
+  "Spor Hukuku", "STK Hukuku", "Şirketler Hukuku",
 ];
 
 const navItems = [
