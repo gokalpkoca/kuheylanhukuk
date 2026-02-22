@@ -3,8 +3,8 @@ const ru: Record<string, string> = {
   "nav.kurumsal": "О нас",
   "nav.ekibimiz": "Наша команда",
   "nav.faaliyet_alanlari": "Области практики",
-  "nav.makaleler": "Статьи",
-  "nav.tum_makaleler": "Все статьи",
+  "nav.makaleler": "База знаний",
+  "nav.tum_makaleler": "База знаний",
   "nav.kariyer": "Карьера",
   "nav.iletisim": "Контакты",
 
@@ -61,9 +61,10 @@ const ru: Record<string, string> = {
 
   // News
   "news.subtitle": "Будьте в курсе последней информации",
-  "news.title": "База знаний и Новости",
+  "news.title": "База знаний",
   "news.read_more": "Читать далее",
   "news.view_all": "Смотреть все",
+  "news.not_found": "Контент в этой категории не найден.",
 
   // Contact
   "contact.subtitle": "Свяжитесь с нами",

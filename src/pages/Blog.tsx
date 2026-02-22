@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Calendar, ArrowRight, ArrowLeft } from "lucide-react";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/context/LanguageContext";
 
 const allArticles = [
   { title: "Halka Arz Yol Haritası: SPK Mevzuatı Kapsamında Uyum Süreci", date: "16 Şubat 2026", dept: "Sermaye Piyasası Hukuku Departmanı" },
@@ -39,6 +40,7 @@ const Blog = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const initialDept = searchParams.get("dept") || "Tümü";
   const [selectedDept, setSelectedDept] = useState(initialDept);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const dept = searchParams.get("dept") || "Tümü";
@@ -75,7 +77,7 @@ const Blog = () => {
               Ana Sayfa
             </Link>
             <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground font-bold">
-              Bilgi Havuzu & Makaleler
+              {t("nav.makaleler")}
             </h1>
             <div className="w-16 h-px bg-primary mt-6" />
           </motion.div>
@@ -124,7 +126,7 @@ const Blog = () => {
           </div>
 
           {filtered.length === 0 && (
-            <p className="text-center text-muted-foreground py-16">Bu kategoride makale bulunamadı.</p>
+            <p className="text-center text-muted-foreground py-16">{t("news.not_found")}</p>
           )}
 
           {/* Pagination */}

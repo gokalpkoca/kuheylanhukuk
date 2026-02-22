@@ -122,7 +122,7 @@ const Navbar = () => {
                         onClick={() => setArticleDropdownOpen(false)}
                         className="block px-4 py-2.5 text-sm font-medium text-foreground hover:text-primary hover:bg-secondary transition-colors border-b border-border"
                       >
-                        {t("nav.tum_makaleler") || "Tüm Makaleler"}
+                        {t("nav.tum_makaleler")}
                       </Link>
                       {articleDepartments.map((dept) => (
                         <Link
@@ -252,7 +252,7 @@ const Navbar = () => {
                         onClick={() => { setIsOpen(false); setMobileArticleDropdownOpen(false); }}
                         className="block py-2.5 px-8 text-sm font-medium text-foreground hover:text-primary transition-colors"
                       >
-                        {t("nav.tum_makaleler") || "Tüm Makaleler"}
+                        {t("nav.tum_makaleler")}
                       </Link>
                       {articleDepartments.map((dept) => (
                         <Link

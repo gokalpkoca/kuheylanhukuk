@@ -3,8 +3,8 @@ const en: Record<string, string> = {
   "nav.kurumsal": "About Us",
   "nav.ekibimiz": "Our Team",
   "nav.faaliyet_alanlari": "Practice Areas",
-  "nav.makaleler": "Articles",
-  "nav.tum_makaleler": "All Articles",
+  "nav.makaleler": "Knowledge Base",
+  "nav.tum_makaleler": "Knowledge Base",
   "nav.kariyer": "Careers",
   "nav.iletisim": "Contact",
 
@@ -61,9 +61,10 @@ const en: Record<string, string> = {
 
   // News
   "news.subtitle": "Stay Updated with the Latest Information",
-  "news.title": "Knowledge Base & News",
+  "news.title": "Knowledge Base",
   "news.read_more": "Read More",
   "news.view_all": "View All",
+  "news.not_found": "No content found in this category.",
 
   // Contact
   "contact.subtitle": "Get in Touch",

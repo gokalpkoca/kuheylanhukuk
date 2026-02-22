@@ -3,8 +3,8 @@ const es: Record<string, string> = {
   "nav.kurumsal": "Sobre Nosotros",
   "nav.ekibimiz": "Nuestro Equipo",
   "nav.faaliyet_alanlari": "Áreas de Práctica",
-  "nav.makaleler": "Artículos",
-  "nav.tum_makaleler": "Todos los Artículos",
+  "nav.makaleler": "Base de Conocimientos",
+  "nav.tum_makaleler": "Base de Conocimientos",
   "nav.kariyer": "Carreras",
   "nav.iletisim": "Contacto",
 
@@ -61,9 +61,10 @@ const es: Record<string, string> = {
 
   // News
   "news.subtitle": "Manténgase Informado con la Última Información",
-  "news.title": "Base de Conocimiento y Noticias",
+  "news.title": "Base de Conocimiento",
   "news.read_more": "Leer Más",
   "news.view_all": "Ver Todo",
+  "news.not_found": "No se encontró contenido en esta categoría.",
 
   // Contact
   "contact.subtitle": "Contáctenos",
