@@ -16,11 +16,24 @@ const Navbar = () => {
   const langRef = useRef<HTMLDivElement>(null);
   const { language, setLanguage, t } = useLanguage();
 
+  const articleDepartments = [
+    "Sermaye Piyasası Hukuku Departmanı",
+    "Şirketler Hukuku Departmanı",
+    "Hukuk Departmanı",
+    "Fikri Mülkiyet Hukuku Departmanı",
+    "Spor Hukuku Departmanı",
+    "M&A Departmanı",
+  ];
+
+  const [articleDropdownOpen, setArticleDropdownOpen] = useState(false);
+  const [mobileArticleDropdownOpen, setMobileArticleDropdownOpen] = useState(false);
+  const articleDropdownRef = useRef<HTMLDivElement>(null);
+
   const navItems = [
     { label: t("nav.kurumsal"), href: "#hakkimizda" },
     { label: t("nav.ekibimiz"), href: "#ekibimiz" },
-    { label: t("nav.faaliyet_alanlari"), href: "#faaliyet-alanlari", dropdown: true },
-    { label: t("nav.makaleler"), href: "#haberler" },
+    { label: t("nav.faaliyet_alanlari"), href: "#faaliyet-alanlari", dropdown: "practiceAreas" },
+    { label: t("nav.makaleler"), href: "/blog", dropdown: "articles" },
     { label: t("nav.kariyer"), href: "#kariyer" },
     { label: t("nav.iletisim"), href: "/iletisim", isPage: true },
   ];
@@ -35,6 +48,9 @@ const Navbar = () => {
     const handleClickOutside = (e: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
         setDropdownOpen(false);
+      }
+      if (articleDropdownRef.current && !articleDropdownRef.current.contains(e.target as Node)) {
+        setArticleDropdownOpen(false);
       }
       if (langRef.current && !langRef.current.contains(e.target as Node)) {
         setLangDropdownOpen(false);
@@ -64,10 +80,9 @@ const Navbar = () => {
             </span>
           </a>
 
-          {/* Desktop Nav */}
           <div className="hidden xl:flex items-center gap-1">
             {navItems.map((item) =>
-              (item as any).dropdown ? (
+              item.dropdown === "practiceAreas" ? (
                 <div key={item.href} className="relative" ref={dropdownRef}>
                   <button
                     onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -86,6 +101,37 @@ const Navbar = () => {
                           className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-primary hover:bg-secondary transition-colors"
                         >
                           {t(`pa.${area.slug}`)}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ) : item.dropdown === "articles" ? (
+                <div key={item.href} className="relative" ref={articleDropdownRef}>
+                  <button
+                    onClick={() => setArticleDropdownOpen(!articleDropdownOpen)}
+                    className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200 tracking-wide uppercase"
+                  >
+                    {item.label}
+                    <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${articleDropdownOpen ? "rotate-180" : ""}`} />
+                  </button>
+                  {articleDropdownOpen && (
+                    <div className="absolute top-full left-0 mt-1 w-80 bg-card border border-border rounded shadow-xl shadow-black/30 z-50 py-2">
+                      <Link
+                        to="/blog"
+                        onClick={() => setArticleDropdownOpen(false)}
+                        className="block px-4 py-2.5 text-sm font-medium text-foreground hover:text-primary hover:bg-secondary transition-colors border-b border-border"
+                      >
+                        {t("nav.tum_makaleler") || "Tüm Makaleler"}
+                      </Link>
+                      {articleDepartments.map((dept) => (
+                        <Link
+                          key={dept}
+                          to={`/blog?dept=${encodeURIComponent(dept)}`}
+                          onClick={() => setArticleDropdownOpen(false)}
+                          className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-primary hover:bg-secondary transition-colors"
+                        >
+                          {dept}
                         </Link>
                       ))}
                     </div>
@@ -166,7 +212,7 @@ const Navbar = () => {
         {isOpen && (
           <div className="xl:hidden bg-card border-t border-border pb-4 rounded-b shadow-xl shadow-black/20">
             {navItems.map((item) =>
-              (item as any).dropdown ? (
+              item.dropdown === "practiceAreas" ? (
                 <div key={item.href}>
                   <button
                     onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
@@ -185,6 +231,37 @@ const Navbar = () => {
                           className="block py-2.5 px-8 text-sm text-muted-foreground hover:text-primary transition-colors"
                         >
                           {t(`pa.${area.slug}`)}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ) : item.dropdown === "articles" ? (
+                <div key={item.href}>
+                  <button
+                    onClick={() => setMobileArticleDropdownOpen(!mobileArticleDropdownOpen)}
+                    className="flex items-center justify-between w-full py-3 px-4 text-sm uppercase tracking-wide text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    {item.label}
+                    <ChevronDown className={`w-4 h-4 transition-transform ${mobileArticleDropdownOpen ? "rotate-180" : ""}`} />
+                  </button>
+                  {mobileArticleDropdownOpen && (
+                    <div className="bg-secondary border-t border-b border-border">
+                      <Link
+                        to="/blog"
+                        onClick={() => { setIsOpen(false); setMobileArticleDropdownOpen(false); }}
+                        className="block py-2.5 px-8 text-sm font-medium text-foreground hover:text-primary transition-colors"
+                      >
+                        {t("nav.tum_makaleler") || "Tüm Makaleler"}
+                      </Link>
+                      {articleDepartments.map((dept) => (
+                        <Link
+                          key={dept}
+                          to={`/blog?dept=${encodeURIComponent(dept)}`}
+                          onClick={() => { setIsOpen(false); setMobileArticleDropdownOpen(false); }}
+                          className="block py-2.5 px-8 text-sm text-muted-foreground hover:text-primary transition-colors"
+                        >
+                          {dept}
                         </Link>
                       ))}
                     </div>

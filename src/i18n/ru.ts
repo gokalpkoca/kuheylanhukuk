@@ -4,6 +4,7 @@ const ru: Record<string, string> = {
   "nav.ekibimiz": "Наша команда",
   "nav.faaliyet_alanlari": "Области практики",
   "nav.makaleler": "Статьи",
+  "nav.tum_makaleler": "Все статьи",
   "nav.kariyer": "Карьера",
   "nav.iletisim": "Контакты",
 
