@@ -1,0 +1,96 @@
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import { Mail, Globe } from "lucide-react";
+
+const team = [
+  {
+    name: "Mert Deniz Küheylan",
+    title: "Ortak",
+    initials: "MDK",
+    bio: "Uluslararası ticaret hukuku ve şirketler hukuku alanında uzmanlaşmış, geniş bir müvekkil portföyüne hizmet vermektedir. Türk ve uluslararası hukuk düzenlemelerine hâkimdir.",
+    email: "md.kuheylan@kuheylan.av.tr",
+    languages: ["Türkçe", "İngilizce", "Almanca"],
+  },
+];
+
+const Team = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  return (
+    <section id="ekibimiz" className="py-24 lg:py-32 bg-secondary">
+      <div className="container mx-auto px-4 lg:px-8" ref={ref}>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-6"
+        >
+          <p className="text-gold uppercase tracking-[0.2em] text-sm font-medium mb-4">
+            Kadromuz
+          </p>
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground font-bold">
+            Gücümüz — Ekibimiz
+          </h2>
+          <div className="w-16 h-px bg-gold mx-auto mt-6 mb-8" />
+        </motion.div>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="text-muted-foreground text-center max-w-3xl mx-auto mb-16 leading-relaxed"
+        >
+          Büromuzun önceliği, müvekkillerinin karşılaşabileceği hukuki riskleri henüz ortaya
+          çıkmadan önlemek, müvekkillerine en uygun ve en doğru çözümleri sunmaktır.
+        </motion.p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {team.map((member, i) => (
+            <motion.div
+              key={member.name}
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
+              className="border border-border rounded bg-card p-8 hover:border-gold transition-colors duration-300"
+            >
+              {/* Avatar */}
+              <div className="w-24 h-24 rounded-full bg-navy-light border-2 border-gold flex items-center justify-center mx-auto mb-6">
+                <span className="font-serif text-2xl text-gold font-bold">{member.initials}</span>
+              </div>
+
+              <div className="text-center">
+                <h3 className="font-serif text-xl text-foreground font-semibold mb-1">
+                  {member.name}
+                </h3>
+                <p className="text-gold text-sm uppercase tracking-wider mb-4">{member.title}</p>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                  {member.bio}
+                </p>
+
+                <div className="flex items-center justify-center gap-2 text-muted-foreground text-xs mb-4">
+                  <Mail className="w-3.5 h-3.5 text-gold" />
+                  <span>{member.email}</span>
+                </div>
+
+                <div className="flex items-center justify-center gap-2 flex-wrap">
+                  <Globe className="w-3.5 h-3.5 text-gold" />
+                  {member.languages.map((lang) => (
+                    <span
+                      key={lang}
+                      className="text-xs px-2 py-0.5 bg-navy-light text-muted-foreground rounded"
+                    >
+                      {lang}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Team;
