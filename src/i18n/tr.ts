@@ -3,8 +3,8 @@ const tr: Record<string, string> = {
   "nav.kurumsal": "Kurumsal",
   "nav.ekibimiz": "Ekibimiz",
   "nav.faaliyet_alanlari": "Faaliyet Alanları",
-  "nav.makaleler": "Makaleler",
-  "nav.tum_makaleler": "Tüm Makaleler",
+  "nav.makaleler": "Bilgi Havuzu",
+  "nav.tum_makaleler": "Bilgi Havuzu",
   "nav.kariyer": "Kariyer",
   "nav.iletisim": "İletişim",
 
@@ -61,9 +61,10 @@ const tr: Record<string, string> = {
 
   // News
   "news.subtitle": "Güncel Bilgilerden Haberdar Olun",
-  "news.title": "Bilgi Havuzu & Haberler",
+  "news.title": "Bilgi Havuzu",
   "news.read_more": "Devamını Oku",
   "news.view_all": "Tümünü Gör",
+  "news.not_found": "Bu kategoride içerik bulunamadı.",
 
   // Contact
   "contact.subtitle": "Bize Ulaşın",
