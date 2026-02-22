@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Calendar, ArrowRight, ArrowLeft } from "lucide-react";
+import { Calendar, ArrowRight, ArrowLeft, Search, X } from "lucide-react";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
 import { practiceAreas } from "@/data/practiceAreas";
@@ -40,6 +40,7 @@ const Blog = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const initialDept = searchParams.get("dept") || "";
   const [selectedDept, setSelectedDept] = useState(initialDept);
+  const [searchQuery, setSearchQuery] = useState("");
   const { t } = useLanguage();
 
   useEffect(() => {
@@ -48,12 +49,19 @@ const Blog = () => {
     setCurrentPage(1);
   }, [searchParams]);
 
-  const filtered = selectedDept === "" ? allArticles : allArticles.filter((a) => a.category === selectedDept);
+  const filtered = allArticles
+    .filter((a) => selectedDept === "" || a.category === selectedDept)
+    .filter((a) => searchQuery === "" || a.title.toLocaleLowerCase("tr").includes(searchQuery.toLocaleLowerCase("tr")));
   const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
   const paginated = filtered.slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE);
 
   const handleDeptChange = (dept: string) => {
     setSelectedDept(prev => prev === dept ? "" : dept);
+    setCurrentPage(1);
+  };
+
+  const handleSearch = (value: string) => {
+    setSearchQuery(value);
     setCurrentPage(1);
   };
 
@@ -81,6 +89,26 @@ const Blog = () => {
             </h1>
             <div className="w-16 h-px bg-primary mt-6" />
           </motion.div>
+
+          {/* Search */}
+          <div className="relative mb-6">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => handleSearch(e.target.value)}
+              placeholder="Makale ara..."
+              className="w-full pl-11 pr-10 py-3 border border-border rounded bg-card text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors"
+            />
+            {searchQuery && (
+              <button
+                onClick={() => handleSearch("")}
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            )}
+          </div>
 
           {/* Category Filter */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 mb-10 auto-rows-fr">
