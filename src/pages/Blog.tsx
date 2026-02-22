@@ -83,10 +83,10 @@ const Blog = () => {
           </motion.div>
 
           {/* Category Filter */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 mb-10">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 mb-10 auto-rows-fr">
             <button
               onClick={() => handleDeptChange("Tümü")}
-              className={`flex items-center gap-2.5 px-4 py-3 text-xs uppercase tracking-wider rounded border transition-all duration-200 ${
+              className={`flex items-center gap-2.5 px-4 py-3 text-xs uppercase tracking-wider rounded border transition-all duration-200 min-h-[52px] ${
                 selectedDept === "Tümü"
                   ? "bg-primary text-primary-foreground border-primary"
                   : "border-border text-muted-foreground hover:border-primary hover:text-primary"
@@ -100,7 +100,7 @@ const Blog = () => {
                 <button
                   key={area.slug}
                   onClick={() => handleDeptChange(area.slug)}
-                  className={`flex items-center gap-2.5 px-4 py-3 text-xs uppercase tracking-wider rounded border transition-all duration-200 text-left ${
+                  className={`flex items-center gap-2.5 px-4 py-3 text-xs uppercase tracking-wider rounded border transition-all duration-200 text-left min-h-[52px] ${
                     selectedDept === area.slug
                       ? "bg-primary text-primary-foreground border-primary"
                       : "border-border text-muted-foreground hover:border-primary hover:text-primary"
