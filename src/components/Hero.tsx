@@ -7,8 +7,8 @@ const Hero = () => {
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg})` }}
-      >
+        style={{ backgroundImage: `url(${heroBg})` }}>
+
         <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/40" />
       </div>
 
@@ -18,8 +18,8 @@ const Hero = () => {
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="max-w-2xl"
-        >
+          className="max-w-2xl">
+
           <div className="flex items-center gap-3 mb-6">
             <div className="w-12 h-px bg-primary" />
             <p className="text-primary uppercase tracking-[0.2em] text-sm font-medium">
@@ -39,8 +39,8 @@ const Hero = () => {
 
           <a
             href="#ekibimiz"
-            className="inline-flex items-center gap-3 px-8 py-3.5 bg-primary/10 border border-primary text-foreground uppercase text-sm tracking-[0.15em] font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300 rounded"
-          >
+            className="inline-flex items-center gap-3 px-8 py-3.5 bg-primary/10 border border-primary text-foreground uppercase text-sm tracking-[0.15em] font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300 rounded">
+
             Ekibimizi İnceleyin
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -51,11 +51,11 @@ const Hero = () => {
       </div>
 
       {/* Slide indicator */}
-      <div className="absolute bottom-8 left-8 lg:left-16 text-muted-foreground text-sm font-medium">
-        01
-      </div>
-    </section>
-  );
+      
+
+
+    </section>);
+
 };
 
 export default Hero;
