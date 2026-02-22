@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { ArrowRight, Calendar } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const allArticles = [
   { title: "Halka Arz Yol Haritası: SPK Mevzuatı Kapsamında Uyum Süreci", date: "16 Şubat 2026", dept: "Sermaye Piyasası Hukuku Departmanı" },
@@ -79,12 +80,12 @@ const News = () => {
 
         {!showAll && allArticles.length > 6 && (
           <div className="text-center mt-12">
-            <button
-              onClick={() => setShowAll(true)}
-              className="px-8 py-3 border border-gold text-gold uppercase text-sm tracking-[0.15em] font-medium hover:bg-gold hover:text-primary-foreground transition-all duration-300"
+            <Link
+              to="/blog"
+              className="inline-block px-8 py-3 border border-gold text-gold uppercase text-sm tracking-[0.15em] font-medium hover:bg-gold hover:text-primary-foreground transition-all duration-300"
             >
               Tümünü Gör
-            </button>
+            </Link>
           </div>
         )}
       </div>
