@@ -16,15 +16,6 @@ const Navbar = () => {
   const langRef = useRef<HTMLDivElement>(null);
   const { language, setLanguage, t } = useLanguage();
 
-  const articleDepartments = [
-    "Sermaye Piyasası Hukuku Departmanı",
-    "Şirketler Hukuku Departmanı",
-    "Hukuk Departmanı",
-    "Fikri Mülkiyet Hukuku Departmanı",
-    "Spor Hukuku Departmanı",
-    "M&A Departmanı",
-  ];
-
   const [articleDropdownOpen, setArticleDropdownOpen] = useState(false);
   const [mobileArticleDropdownOpen, setMobileArticleDropdownOpen] = useState(false);
   const articleDropdownRef = useRef<HTMLDivElement>(null);
@@ -124,14 +115,14 @@ const Navbar = () => {
                       >
                         {t("nav.tum_makaleler")}
                       </Link>
-                      {articleDepartments.map((dept) => (
+                      {practiceAreaData.map((area) => (
                         <Link
-                          key={dept}
-                          to={`/blog?dept=${encodeURIComponent(dept)}`}
+                          key={area.slug}
+                          to={`/blog?dept=${encodeURIComponent(area.slug)}`}
                           onClick={() => setArticleDropdownOpen(false)}
                           className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-primary hover:bg-secondary transition-colors"
                         >
-                          {dept}
+                          {t(`pa.${area.slug}`)}
                         </Link>
                       ))}
                     </div>
@@ -254,14 +245,14 @@ const Navbar = () => {
                       >
                         {t("nav.tum_makaleler")}
                       </Link>
-                      {articleDepartments.map((dept) => (
+                      {practiceAreaData.map((area) => (
                         <Link
-                          key={dept}
-                          to={`/blog?dept=${encodeURIComponent(dept)}`}
+                          key={area.slug}
+                          to={`/blog?dept=${encodeURIComponent(area.slug)}`}
                           onClick={() => { setIsOpen(false); setMobileArticleDropdownOpen(false); }}
                           className="block py-2.5 px-8 text-sm text-muted-foreground hover:text-primary transition-colors"
                         >
-                          {dept}
+                          {t(`pa.${area.slug}`)}
                         </Link>
                       ))}
                     </div>
