@@ -34,13 +34,17 @@
 
     --radius: 0.25rem;
 
-    --navy-deep: 8 13% 18%;
-    --navy: 8 13% 22%;
+    --navy-deep: 0 8% 15%;
+    --navy: 0 8% 18%;
     --navy-light: 220 15% 92%;
     --gold: 4 99% 33%;
     --gold-light: 4 80% 45%;
     --gold-dark: 4 100% 25%;
     --cream: 30 15% 94%;
+
+    --dark-surface: 0 8% 18%;
+    --dark-surface-foreground: 30 15% 88%;
+    --dark-surface-muted: 30 10% 65%;
 
     --sidebar-background: 0 0% 100%;
     --sidebar-foreground: 8 13% 22%;
@@ -107,6 +111,22 @@
 
   .bg-cream {
     background-color: hsl(var(--cream));
+  }
+
+  .bg-dark-surface {
+    background-color: hsl(var(--dark-surface));
+  }
+
+  .text-dark-surface-foreground {
+    color: hsl(var(--dark-surface-foreground));
+  }
+
+  .text-dark-surface-muted {
+    color: hsl(var(--dark-surface-muted));
+  }
+
+  .border-dark-surface {
+    border-color: hsl(var(--dark-surface) / 0.3);
   }
 }
 
