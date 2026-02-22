@@ -1,0 +1,105 @@
+import {
+  Scale, Gavel, Heart, Newspaper, TreePine, Landmark, Building2,
+  TrendingUp, Package, Award, Trophy, Users, Briefcase, FileText, HardHat,
+  LucideIcon
+} from "lucide-react";
+
+export interface PracticeArea {
+  icon: LucideIcon;
+  label: string;
+  slug: string;
+  description: string;
+}
+
+export const practiceAreas: PracticeArea[] = [
+  {
+    icon: Landmark,
+    label: "Banka Hukuku",
+    slug: "banka-hukuku",
+    description: "Bankacılık sektörüne yönelik düzenleyici uyum, kredi sözleşmeleri, teminat hukuku, mevduat ilişkileri ve bankacılık işlemlerinden doğan uyuşmazlıkların çözümü konularında kapsamlı hukuki danışmanlık sunulmaktadır.",
+  },
+  {
+    icon: Newspaper,
+    label: "Basın Hukuku",
+    slug: "basin-hukuku",
+    description: "Basın ve medya kuruluşlarına yönelik yayın hukuku, kişilik hakları, cevap ve düzeltme hakkı, basın özgürlüğü sınırları ve dijital medya hukuku alanlarında uzman hukuki destek sağlanmaktadır.",
+  },
+  {
+    icon: Gavel,
+    label: "Ceza Hukuku",
+    slug: "ceza-hukuku",
+    description: "Ceza davalarının her aşamasında etkin savunma, soruşturma sürecinde hukuki danışmanlık, tutukluluk itirazları, temyiz başvuruları ve beyaz yaka suçları dahil tüm ceza hukuku alanlarında temsil hizmeti verilmektedir.",
+  },
+  {
+    icon: TreePine,
+    label: "Çevre Hukuku",
+    slug: "cevre-hukuku",
+    description: "Çevresel etki değerlendirmesi, çevre izinleri, atık yönetimi, emisyon düzenlemeleri ve çevre mevzuatına uyum konularında hukuki danışmanlık ve dava takibi hizmetleri sunulmaktadır.",
+  },
+  {
+    icon: Package,
+    label: "Gümrük Hukuku",
+    slug: "gumruk-hukuku",
+    description: "İthalat ve ihracat işlemlerinde gümrük mevzuatına uyum, gümrük vergisi uyuşmazlıkları, antrepo işlemleri, menşe kuralları ve serbest bölge hukuku alanlarında kapsamlı hukuki hizmet verilmektedir.",
+  },
+  {
+    icon: FileText,
+    label: "İcra & İflas Hukuku",
+    slug: "icra-iflas-hukuku",
+    description: "Alacak tahsili, icra takibi, iflas ve konkordato süreçleri, yeniden yapılandırma, haciz işlemleri ve borçlu-alacaklı ilişkilerinin hukuki yönetimi konularında deneyimli kadromuzla hizmet sunulmaktadır.",
+  },
+  {
+    icon: HardHat,
+    label: "İş Hukuku",
+    slug: "is-hukuku",
+    description: "İş sözleşmeleri, işçi-işveren uyuşmazlıkları, iş güvenliği, toplu iş hukuku, işe iade davaları ve sosyal güvenlik hukuku alanlarında işveren ve çalışanlara kapsamlı hukuki danışmanlık sağlanmaktadır.",
+  },
+  {
+    icon: Building2,
+    label: "Kültür ve Tabiat Varlıkları Hukuku",
+    slug: "kultur-tabiat-varliklari-hukuku",
+    description: "Kültürel miras ve tabiat varlıklarının korunması, tescil süreçleri, restorasyon izinleri, sit alanı düzenlemeleri ve kültürel varlık ticareti konularında uzman hukuki danışmanlık verilmektedir.",
+  },
+  {
+    icon: Award,
+    label: "Marka & Patent Hukuku",
+    slug: "marka-patent-hukuku",
+    description: "Marka ve patent tescili, fikri mülkiyet hakları koruması, lisans sözleşmeleri, tecavüz davaları, endüstriyel tasarım ve coğrafi işaret tescili konularında kapsamlı hukuki hizmet sunulmaktadır.",
+  },
+  {
+    icon: Scale,
+    label: "Medeni Hukuk",
+    slug: "medeni-hukuk",
+    description: "Aile hukuku, miras hukuku, eşya hukuku, borçlar hukuku ve kişiler hukuku alanlarında bireysel ve kurumsal müvekkillere kapsamlı hukuki danışmanlık ve dava takibi hizmeti verilmektedir.",
+  },
+  {
+    icon: Heart,
+    label: "Sağlık Hukuku",
+    slug: "saglik-hukuku",
+    description: "Tıbbi malpraktis davaları, hasta hakları, sağlık kuruluşlarının hukuki düzenlemelere uyumu, ilaç ve tıbbi cihaz hukuku alanlarında uzman hukuki danışmanlık sunulmaktadır.",
+  },
+  {
+    icon: TrendingUp,
+    label: "Sermaye Piyasası Hukuku",
+    slug: "sermaye-piyasasi-hukuku",
+    description: "Halka arz süreçleri, SPK düzenlemelerine uyum, yatırım fonları, portföy yönetimi, tahvil ihracı ve sermaye piyasası araçları konularında kapsamlı hukuki danışmanlık verilmektedir.",
+  },
+  {
+    icon: Trophy,
+    label: "Spor Hukuku",
+    slug: "spor-hukuku",
+    description: "Sporcu sözleşmeleri, transfer işlemleri, spor kulübü yönetimi, tahkim süreçleri, spor anonim şirketleri ve uluslararası spor hukuku alanlarında uzman hukuki hizmet sunulmaktadır.",
+  },
+  {
+    icon: Users,
+    label: "STK Hukuku",
+    slug: "stk-hukuku",
+    description: "Dernek ve vakıf kuruluşu, sivil toplum kuruluşlarının hukuki yapılandırması, tüzük hazırlanması, kamu yararı statüsü ve STK faaliyetlerinin mevzuata uygunluğu konularında danışmanlık verilmektedir.",
+  },
+  {
+    icon: Briefcase,
+    label: "Şirketler Hukuku",
+    slug: "sirketler-hukuku",
+    description: "Şirket kuruluşu, birleşme ve devralma, genel kurul işlemleri, yönetim kurulu sorumlulukları, pay devri, sermaye artırımı ve şirketlerin yeniden yapılandırılması konularında kapsamlı hukuki danışmanlık sunulmaktadır.",
+  },
+];
