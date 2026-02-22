@@ -63,10 +63,9 @@ const Contact = () => {
               <div>
                 <h3 className="font-serif text-lg text-foreground font-semibold mb-1">Adres</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Cumhuriyet Mah. Silahşör Cad. Yeni Yol Sok.<br />
-                  Kat: 19 No:8-79<br />
-                  Bomonti Business İş Merkezi<br />
-                  Şişli/İstanbul
+                  Burhaniye, Neşet Bey Sk. NO:12<br />
+                  Kat:3 D:5, 34676<br />
+                  Üsküdar/İstanbul, Türkiye
                 </p>
               </div>
             </div>
@@ -80,7 +79,7 @@ const Contact = () => {
             className="rounded overflow-hidden border border-border"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.5!2d28.98!3d41.06!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAzJzM2LjAiTiAyOMKwNTgnNDguMCJF!5e0!3m2!1str!2str!4v1640000000000"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.5!2d29.035!3d41.025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7a3c5f8b0f1%3A0x0!2sBurhaniye%2C+Ne%C5%9Fet+Bey+Sk.+No%3A12%2C+34676+%C3%9Csk%C3%BCdar%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1700000000000"
               width="100%"
               height="400"
               style={{ border: 0 }}
