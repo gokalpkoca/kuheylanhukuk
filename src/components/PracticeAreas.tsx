@@ -34,32 +34,56 @@ const PracticeAreas = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-6"
         >
-          <p className="text-gold uppercase tracking-[0.2em] text-sm font-medium mb-4">
-            Uzmanlık Alanlarımız
-          </p>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground font-bold">
-            Faaliyet Alanları
+            Faaliyet <span className="text-primary italic">Alanları</span>
           </h2>
-          <div className="w-16 h-px bg-gold mx-auto mt-6" />
+          <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+            Büromuz, iş ahlakı ve güvenilirliğiyle öne çıkarak, müvekkillerimizin değişen ihtiyaçlarına farklı hukuk alanlarında çözümler sunmaktadır.
+          </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-          {areas.map((area, i) => (
-            <motion.div
-              key={area.label}
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.4, delay: i * 0.05 }}
-              className="group cursor-pointer border border-border rounded bg-card p-6 text-center hover:border-gold hover:-translate-y-1 hover:shadow-lg hover:shadow-gold/5 transition-all duration-300"
-            >
-              <area.icon className="w-8 h-8 text-gold mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
-              <h3 className="font-serif text-sm lg:text-base text-foreground font-medium">
-                {area.label}
-              </h3>
-            </motion.div>
-          ))}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-center mb-12"
+        >
+          <a
+            href="#faaliyet-alanlari"
+            className="inline-flex items-center gap-2 text-primary text-sm font-medium hover:underline"
+          >
+            Tüm Faaliyet Alanları
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+        </motion.div>
+
+        {/* Horizontal scrollable cards like Bayraktar */}
+        <div className="overflow-x-auto pb-4 -mx-4 px-4">
+          <div className="flex gap-5 min-w-max">
+            {areas.map((area, i) => (
+              <motion.div
+                key={area.label}
+                initial={{ opacity: 0, y: 20 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.4, delay: i * 0.04 }}
+                className="group cursor-pointer w-48 shrink-0"
+              >
+                <div className="aspect-[3/4] bg-card border border-border rounded overflow-hidden relative hover:border-primary hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300">
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+                  <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
+                    <area.icon className="w-10 h-10 text-primary mb-4 group-hover:scale-110 transition-transform duration-300" />
+                    <h3 className="font-serif text-sm text-foreground text-center font-medium leading-snug">
+                      {area.label}
+                    </h3>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

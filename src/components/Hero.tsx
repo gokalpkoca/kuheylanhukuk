@@ -1,44 +1,70 @@
+import { motion } from "framer-motion";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBg})` }}
       >
-        <div className="absolute inset-0 bg-background/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/40" />
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <div className="mb-6">
-          <div className="w-16 h-px bg-gold mx-auto mb-8" />
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight mb-2">
-            KÜHEYLAN
-          </h1>
-          <p className="font-serif text-2xl sm:text-3xl md:text-4xl font-light text-gold tracking-[0.2em]">
-            HUKUK
-          </p>
-          <div className="w-16 h-px bg-gold mx-auto mt-8 mb-8" />
-        </div>
-
-        <p className="font-serif text-lg sm:text-xl md:text-2xl text-foreground/90 italic leading-relaxed max-w-2xl mx-auto">
-          "Uzmanlık, Deneyim, Çözüm Odaklı Yaklaşım"
-        </p>
-
-        <a
-          href="#hakkimizda"
-          className="inline-block mt-12 px-8 py-3 border border-gold text-gold uppercase text-sm tracking-[0.15em] font-medium hover:bg-gold hover:text-primary-foreground transition-all duration-300"
+      {/* Content - Left aligned like Bayraktar */}
+      <div className="relative z-10 container mx-auto px-4 lg:px-8 pt-20">
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="max-w-2xl"
         >
-          Keşfedin
-        </a>
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-12 h-px bg-primary" />
+            <p className="text-primary uppercase tracking-[0.2em] text-sm font-medium">
+              KÜHEYLAN HUKUK BÜROSU
+            </p>
+          </div>
+
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-[1.1] mb-4">
+            Profesyonel
+            <br />
+            <span className="text-primary italic">Hukuk</span> Ekibi
+          </h1>
+
+          <p className="text-muted-foreground text-lg md:text-xl mb-10 max-w-lg leading-relaxed">
+            Uzmanlık, Deneyim, Çözüm Odaklı Yaklaşım
+          </p>
+
+          <a
+            href="#ekibimiz"
+            className="inline-flex items-center gap-3 px-8 py-3.5 bg-primary/10 border border-primary text-foreground uppercase text-sm tracking-[0.15em] font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300 rounded"
+          >
+            Ekibimizi İnceleyin
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+        </motion.div>
+
+        {/* Experience Badge */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="absolute bottom-12 right-8 lg:right-16 hidden md:block"
+        >
+          <div className="bg-card/80 backdrop-blur border border-border rounded-lg px-6 py-4 text-center">
+            <span className="font-serif text-4xl font-bold text-primary">46</span>
+            <p className="text-muted-foreground text-xs mt-1 tracking-wide">yıllık<br/>tecrübe</p>
+          </div>
+        </motion.div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
-        <div className="w-px h-12 bg-gold/40 animate-pulse" />
+      {/* Slide indicator */}
+      <div className="absolute bottom-8 left-8 lg:left-16 text-muted-foreground text-sm font-medium">
+        01
       </div>
     </section>
   );
