@@ -38,22 +38,22 @@ const ITEMS_PER_PAGE = 9;
 const Blog = () => {
   const [searchParams] = useSearchParams();
   const [currentPage, setCurrentPage] = useState(1);
-  const initialDept = searchParams.get("dept") || "Tümü";
+  const initialDept = searchParams.get("dept") || "";
   const [selectedDept, setSelectedDept] = useState(initialDept);
   const { t } = useLanguage();
 
   useEffect(() => {
-    const dept = searchParams.get("dept") || "Tümü";
+    const dept = searchParams.get("dept") || "";
     setSelectedDept(dept);
     setCurrentPage(1);
   }, [searchParams]);
 
-  const filtered = selectedDept === "Tümü" ? allArticles : allArticles.filter((a) => a.category === selectedDept);
+  const filtered = selectedDept === "" ? allArticles : allArticles.filter((a) => a.category === selectedDept);
   const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
   const paginated = filtered.slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE);
 
   const handleDeptChange = (dept: string) => {
-    setSelectedDept(dept);
+    setSelectedDept(prev => prev === dept ? "" : dept);
     setCurrentPage(1);
   };
 
@@ -84,16 +84,6 @@ const Blog = () => {
 
           {/* Category Filter */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 mb-10 auto-rows-fr">
-            <button
-              onClick={() => handleDeptChange("Tümü")}
-              className={`flex items-center gap-2.5 px-4 py-3 text-xs uppercase tracking-wider rounded border transition-all duration-200 min-h-[52px] ${
-                selectedDept === "Tümü"
-                  ? "bg-primary text-primary-foreground border-primary"
-                  : "border-border text-muted-foreground hover:border-primary hover:text-primary"
-              }`}
-            >
-              {t("news.view_all")}
-            </button>
             {practiceAreas.map((area) => {
               const Icon = area.icon;
               return (
