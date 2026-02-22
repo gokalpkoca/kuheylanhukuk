@@ -83,10 +83,10 @@ const Blog = () => {
           </motion.div>
 
           {/* Category Filter */}
-          <div className="flex flex-wrap gap-2 mb-10">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 mb-10">
             <button
               onClick={() => handleDeptChange("Tümü")}
-              className={`px-4 py-2 text-xs uppercase tracking-wider rounded border transition-all duration-200 ${
+              className={`flex items-center gap-2.5 px-4 py-3 text-xs uppercase tracking-wider rounded border transition-all duration-200 ${
                 selectedDept === "Tümü"
                   ? "bg-primary text-primary-foreground border-primary"
                   : "border-border text-muted-foreground hover:border-primary hover:text-primary"
@@ -94,19 +94,23 @@ const Blog = () => {
             >
               {t("news.view_all")}
             </button>
-            {practiceAreas.map((area) => (
-              <button
-                key={area.slug}
-                onClick={() => handleDeptChange(area.slug)}
-                className={`px-4 py-2 text-xs uppercase tracking-wider rounded border transition-all duration-200 ${
-                  selectedDept === area.slug
-                    ? "bg-primary text-primary-foreground border-primary"
-                    : "border-border text-muted-foreground hover:border-primary hover:text-primary"
-                }`}
-              >
-                {t(`pa.${area.slug}`)}
-              </button>
-            ))}
+            {practiceAreas.map((area) => {
+              const Icon = area.icon;
+              return (
+                <button
+                  key={area.slug}
+                  onClick={() => handleDeptChange(area.slug)}
+                  className={`flex items-center gap-2.5 px-4 py-3 text-xs uppercase tracking-wider rounded border transition-all duration-200 text-left ${
+                    selectedDept === area.slug
+                      ? "bg-primary text-primary-foreground border-primary"
+                      : "border-border text-muted-foreground hover:border-primary hover:text-primary"
+                  }`}
+                >
+                  <Icon className="w-4 h-4 shrink-0" />
+                  <span>{t(`pa.${area.slug}`)}</span>
+                </button>
+              );
+            })}
           </div>
 
           {/* Articles Grid */}
