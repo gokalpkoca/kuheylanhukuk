@@ -1,4 +1,4 @@
-import { Phone } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
 
 const footerLinks = [
   { label: "Kurumsal", href: "#hakkimizda" },
@@ -58,7 +58,30 @@ const Footer = () => {
               <Phone className="w-4 h-4" />
               <span className="text-sm font-medium">+90 535 227 96 96</span>
             </a>
-            <div className="flex gap-4 text-xs text-muted-foreground mt-4">
+
+            {/* Address - visible on mobile too */}
+            <div className="flex items-start gap-2 mt-4 mb-4">
+              <MapPin className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Burhaniye, Neşet Bey Sk. NO:12 Kat:3 D:5, 34676 Üsküdar/İstanbul, Türkiye
+              </p>
+            </div>
+
+            {/* Embedded Map */}
+            <div className="w-full h-40 rounded overflow-hidden border border-border mb-4">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.5!2d29.034!3d41.023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAxJzIzLjAiTiAyOcKwMDInMDIuNCJF!5e0!3m2!1str!2str!4v1700000000000"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Küheylan Hukuk Bürosu Konum"
+              />
+            </div>
+
+            <div className="flex gap-4 text-xs text-muted-foreground">
               <a href="#" className="hover:text-primary transition-colors">Yasal Uyarı</a>
               <span>|</span>
               <a href="#" className="hover:text-primary transition-colors">Çerezler</a>
