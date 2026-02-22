@@ -23,7 +23,7 @@ const Navbar = () => {
   const navItems = [
     { label: t("nav.kurumsal"), href: "#hakkimizda" },
     { label: t("nav.ekibimiz"), href: "#ekibimiz" },
-    { label: t("nav.faaliyet_alanlari"), href: "#faaliyet-alanlari", dropdown: "practiceAreas" },
+    { label: t("nav.faaliyet_alanlari"), href: "/faaliyet-alanlari", dropdown: "practiceAreas", isPage: true },
     { label: t("nav.makaleler"), href: "/blog", dropdown: "articles" },
     { label: t("nav.kariyer"), href: "#kariyer" },
     { label: t("nav.iletisim"), href: "/iletisim", isPage: true },
@@ -74,14 +74,21 @@ const Navbar = () => {
           <div className="hidden xl:flex items-center gap-1">
             {navItems.map((item) =>
               item.dropdown === "practiceAreas" ? (
-                <div key={item.href} className="relative" ref={dropdownRef}>
-                  <button
-                    onClick={() => setDropdownOpen(!dropdownOpen)}
-                    className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200 tracking-wide uppercase"
-                  >
-                    {item.label}
-                    <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""}`} />
-                  </button>
+              <div key={item.href} className="relative" ref={dropdownRef}>
+                  <div className="flex items-center">
+                    <Link
+                      to="/faaliyet-alanlari"
+                      className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200 tracking-wide uppercase"
+                    >
+                      {item.label}
+                    </Link>
+                    <button
+                      onClick={() => setDropdownOpen(!dropdownOpen)}
+                      className="text-muted-foreground hover:text-primary transition-colors -ml-1"
+                    >
+                      <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""}`} />
+                    </button>
+                  </div>
                   {dropdownOpen && (
                     <div className="absolute top-full left-0 mt-1 w-72 bg-card border border-border rounded shadow-xl shadow-black/30 z-50 py-2 max-h-[70vh] overflow-y-auto">
                       {practiceAreaData.map((area) => (

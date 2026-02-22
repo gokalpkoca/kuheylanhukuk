@@ -7,6 +7,7 @@ import { LanguageProvider } from "@/context/LanguageContext";
 import Index from "./pages/Index";
 import Blog from "./pages/Blog";
 import PracticeAreaDetail from "./pages/PracticeAreaDetail";
+import PracticeAreasPage from "./pages/PracticeAreasPage";
 import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
 
@@ -22,6 +23,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/faaliyet-alanlari" element={<PracticeAreasPage />} />
             <Route path="/faaliyet-alanlari/:slug" element={<PracticeAreaDetail />} />
             <Route path="/iletisim" element={<ContactPage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
