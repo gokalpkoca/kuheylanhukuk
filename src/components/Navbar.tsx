@@ -110,11 +110,11 @@ const Navbar = () => {
           {/* Right side: Phone + Language */}
           <div className="hidden xl:flex items-center gap-4">
             <a
-              href="tel:+902122227622"
+              href="tel:+905352279696"
               className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
             >
               <Phone className="w-4 h-4 text-primary" />
-              <span>0 (212) 222 76 22</span>
+              <span>0 (535) 227 96 96</span>
             </a>
 
             <div className="h-5 w-px bg-border" />
@@ -200,9 +200,9 @@ const Navbar = () => {
 
             {/* Mobile phone & language */}
             <div className="border-t border-border mt-2 pt-3 px-4 space-y-3">
-              <a href="tel:+902122227622" className="flex items-center gap-2 text-sm text-muted-foreground">
+              <a href="tel:+905352279696" className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Phone className="w-4 h-4 text-primary" />
-                0 (212) 222 76 22
+                0 (535) 227 96 96
               </a>
               <div className="flex items-center gap-1">
                 <Globe className="w-4 h-4 text-primary mr-1" />

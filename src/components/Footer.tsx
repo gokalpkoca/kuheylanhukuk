@@ -52,11 +52,11 @@ const Footer = () => {
           <div>
             <h4 className="font-serif text-lg text-foreground font-semibold mb-6">İletişim</h4>
             <a
-              href="tel:+902122227622"
+              href="tel:+905352279696"
               className="inline-flex items-center gap-3 px-6 py-3 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 rounded mb-6"
             >
               <Phone className="w-4 h-4" />
-              <span className="text-sm font-medium">+90 212 222 76 22</span>
+              <span className="text-sm font-medium">+90 535 227 96 96</span>
             </a>
             <div className="flex gap-4 text-xs text-muted-foreground mt-4">
               <a href="#" className="hover:text-primary transition-colors">Yasal Uyarı</a>
