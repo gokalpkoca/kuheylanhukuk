@@ -1,13 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Menu, X, Globe, Phone, ChevronDown } from "lucide-react";
-
-const practiceAreas = [
-  "Banka Hukuku", "Basın Hukuku", "Ceza Hukuku", "Çevre Hukuku",
-  "Gümrük Hukuku", "İcra & İflas Hukuku", "İş Hukuku",
-  "Kültür ve Tabiat Varlıkları Hukuku", "Marka & Patent Hukuku",
-  "Medeni Hukuk", "Sağlık Hukuku", "Sermaye Piyasası Hukuku",
-  "Spor Hukuku", "STK Hukuku", "Şirketler Hukuku",
-];
+import { Link } from "react-router-dom";
+import { practiceAreas as practiceAreaData } from "@/data/practiceAreas";
 
 const navItems = [
   { label: "Kurumsal", href: "#hakkimizda" },
@@ -83,15 +77,15 @@ const Navbar = () => {
                   </button>
                   {dropdownOpen && (
                     <div className="absolute top-full left-0 mt-1 w-72 bg-card border border-border rounded shadow-xl shadow-black/30 z-50 py-2 max-h-[70vh] overflow-y-auto">
-                      {practiceAreas.map((area) => (
-                        <a
-                          key={area}
-                          href="#faaliyet-alanlari"
+                      {practiceAreaData.map((area) => (
+                        <Link
+                          key={area.slug}
+                          to={`/faaliyet-alanlari/${area.slug}`}
                           onClick={() => setDropdownOpen(false)}
                           className="block px-4 py-2.5 text-sm text-muted-foreground hover:text-primary hover:bg-secondary transition-colors"
                         >
-                          {area}
-                        </a>
+                          {area.label}
+                        </Link>
                       ))}
                     </div>
                   )}
@@ -174,15 +168,15 @@ const Navbar = () => {
                   </button>
                   {mobileDropdownOpen && (
                     <div className="bg-secondary border-t border-b border-border">
-                      {practiceAreas.map((area) => (
-                        <a
-                          key={area}
-                          href="#faaliyet-alanlari"
+                      {practiceAreaData.map((area) => (
+                        <Link
+                          key={area.slug}
+                          to={`/faaliyet-alanlari/${area.slug}`}
                           onClick={() => { setIsOpen(false); setMobileDropdownOpen(false); }}
                           className="block py-2.5 px-8 text-sm text-muted-foreground hover:text-primary transition-colors"
                         >
-                          {area}
-                        </a>
+                          {area.label}
+                        </Link>
                       ))}
                     </div>
                   )}

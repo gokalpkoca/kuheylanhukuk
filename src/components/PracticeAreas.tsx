@@ -1,27 +1,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import {
-  Scale, Gavel, Heart, Newspaper, TreePine, Landmark, Building2,
-  TrendingUp, Package, Award, Trophy, Users, Briefcase, FileText, HardHat
-} from "lucide-react";
-
-const areas = [
-  { icon: Landmark, label: "Banka Hukuku" },
-  { icon: Newspaper, label: "Basın Hukuku" },
-  { icon: Gavel, label: "Ceza Hukuku" },
-  { icon: TreePine, label: "Çevre Hukuku" },
-  { icon: Package, label: "Gümrük Hukuku" },
-  { icon: FileText, label: "İcra & İflas Hukuku" },
-  { icon: HardHat, label: "İş Hukuku" },
-  { icon: Building2, label: "Kültür ve Tabiat Varlıkları Hukuku" },
-  { icon: Award, label: "Marka & Patent Hukuku" },
-  { icon: Scale, label: "Medeni Hukuk" },
-  { icon: Heart, label: "Sağlık Hukuku" },
-  { icon: TrendingUp, label: "Sermaye Piyasası Hukuku" },
-  { icon: Trophy, label: "Spor Hukuku" },
-  { icon: Users, label: "STK Hukuku" },
-  { icon: Briefcase, label: "Şirketler Hukuku" },
-];
+import { Link } from "react-router-dom";
+import { practiceAreas } from "@/data/practiceAreas";
 
 const PracticeAreas = () => {
   const ref = useRef(null);
@@ -61,10 +41,9 @@ const PracticeAreas = () => {
           </a>
         </motion.div>
 
-        {/* Horizontal scrollable cards like Bayraktar */}
         <div className="overflow-x-auto pb-4 -mx-4 px-4">
           <div className="flex gap-5 min-w-max">
-            {areas.map((area, i) => (
+            {practiceAreas.map((area, i) => (
               <motion.div
                 key={area.label}
                 initial={{ opacity: 0, y: 20 }}
@@ -72,15 +51,17 @@ const PracticeAreas = () => {
                 transition={{ duration: 0.4, delay: i * 0.04 }}
                 className="group cursor-pointer w-48 shrink-0"
               >
-                <div className="aspect-[3/4] bg-card border border-border rounded overflow-hidden relative hover:border-primary hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300">
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
-                  <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
-                    <area.icon className="w-10 h-10 text-primary mb-4 group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="font-serif text-sm text-foreground text-center font-medium leading-snug">
-                      {area.label}
-                    </h3>
+                <Link to={`/faaliyet-alanlari/${area.slug}`}>
+                  <div className="aspect-[3/4] bg-card border border-border rounded overflow-hidden relative hover:border-primary hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300">
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+                    <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
+                      <area.icon className="w-10 h-10 text-primary mb-4 group-hover:scale-110 transition-transform duration-300" />
+                      <h3 className="font-serif text-sm text-foreground text-center font-medium leading-snug">
+                        {area.label}
+                      </h3>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </motion.div>
             ))}
           </div>
