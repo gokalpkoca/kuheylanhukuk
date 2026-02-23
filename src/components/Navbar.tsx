@@ -297,7 +297,7 @@ const Navbar = () => {
             <div className="border-t border-border mt-2 pt-3 px-4 space-y-3">
               <a href="tel:+905352279696" className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Phone className="w-4 h-4 text-primary" />
-                0 (535) 227 96 96
+                +90 535 227 96 96
               </a>
               <div className="flex items-center gap-1">
                 <Globe className="w-4 h-4 text-primary mr-1" />
