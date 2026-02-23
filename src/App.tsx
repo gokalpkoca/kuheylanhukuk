@@ -11,6 +11,7 @@ import PracticeAreasPage from "./pages/PracticeAreasPage";
 import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
+import LoadingScreen from "./components/LoadingScreen";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <ScrollToTop />
+          <LoadingScreen />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/blog" element={<Blog />} />
