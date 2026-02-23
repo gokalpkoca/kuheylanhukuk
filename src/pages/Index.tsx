@@ -7,12 +7,11 @@ import News from "@/components/News";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
-import LoadingScreen from "@/components/LoadingScreen";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <LoadingScreen />
+      <Navbar />
       <Navbar />
       <main>
         <Hero />

@@ -1,19 +1,23 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useLocation } from "react-router-dom";
 import loadingLogo from "@/assets/loading-logo.png";
 
 const LoadingScreen = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const location = useLocation();
 
   useEffect(() => {
+    setIsLoading(true);
     const timer = setTimeout(() => setIsLoading(false), 2500);
     return () => clearTimeout(timer);
-  }, []);
+  }, [location.pathname]);
 
   return (
     <AnimatePresence>
       {isLoading && (
         <motion.div
+          key={location.pathname}
           className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-white"
           exit={{ opacity: 0 }}
           transition={{ duration: 0.6, ease: "easeInOut" }}
