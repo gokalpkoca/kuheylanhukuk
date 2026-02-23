@@ -267,14 +267,14 @@ const Navbar = () => {
                   {item.label}
                 </Link>
               ) : (
-                <Link
+                <a
                   key={item.href}
-                  to={item.href.startsWith("#") ? `/${item.href}` : item.href}
+                  href={item.href.startsWith("#") ? `/${item.href}` : item.href}
                   onClick={() => setIsOpen(false)}
                   className="block py-3 px-4 text-sm uppercase tracking-wide text-muted-foreground hover:text-primary transition-colors"
                 >
                   {item.label}
-                </Link>
+                </a>
               )
             )}
 
