@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Mail, Globe } from "lucide-react";
+import mertDenizPhoto from "@/assets/mert-deniz.jpeg";
 import { useLanguage } from "@/context/LanguageContext";
 
 const Team = () => {
@@ -55,8 +56,8 @@ const Team = () => {
               transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
               className="border border-white/10 rounded bg-white/5 p-8 hover:border-gold transition-colors duration-300"
             >
-              <div className="w-24 h-24 rounded-full bg-navy-light border-2 border-gold flex items-center justify-center mx-auto mb-6">
-                <span className="font-serif text-2xl text-gold font-bold">{member.initials}</span>
+              <div className="w-24 h-24 rounded-full border-2 border-gold overflow-hidden mx-auto mb-6">
+                <img src={mertDenizPhoto} alt={member.name} className="w-full h-full object-cover" />
               </div>
 
               <div className="text-center">
