@@ -89,7 +89,7 @@ const Footer = () => {
           <p className="text-dark-surface-muted text-xs tracking-wide">
             {t("footer.copyright")}
           </p>
-          <p className="text-dark-surface-muted text-xs tracking-wide">
+          <p className="text-white/80 text-xs tracking-wide">
             Designed by gokalpkoca
           </p>
         </div>
