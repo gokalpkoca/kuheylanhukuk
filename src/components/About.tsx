@@ -43,7 +43,7 @@ const About = () => {
               <span className="text-primary italic">{t("about.title2")}</span>
             </h2>
 
-            <div className="w-12 h-px bg-primary mt-6 mb-8" />
+            <div className="w-12 h-px bg-muted-foreground/40 mt-6 mb-8" />
 
             <p className="text-muted-foreground leading-relaxed text-base lg:text-lg mb-6">
               {t("about.description1")}

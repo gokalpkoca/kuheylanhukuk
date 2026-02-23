@@ -21,7 +21,7 @@ const Hero = () => {
           className="max-w-2xl">
 
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-12 h-px bg-primary" />
+            <div className="w-12 h-px bg-muted-foreground/40" />
             <p className="text-primary uppercase tracking-[0.2em] text-sm font-medium">
               {t("hero.subtitle")}
             </p>

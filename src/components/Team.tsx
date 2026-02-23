@@ -35,7 +35,7 @@ const Team = () => {
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-dark-surface-foreground font-bold">
             {t("team.title")}
           </h2>
-          <div className="w-16 h-px bg-gold mx-auto mt-6 mb-8" />
+          <div className="w-16 h-px bg-white/30 mx-auto mt-6 mb-8" />
         </motion.div>
 
         <motion.p
