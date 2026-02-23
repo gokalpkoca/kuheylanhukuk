@@ -57,7 +57,7 @@ const Team = () => {
               className="border border-white/10 rounded bg-white/5 p-8 hover:border-gold transition-colors duration-300"
             >
               <div className="w-24 h-24 rounded-full border-2 border-gold overflow-hidden mx-auto mb-6">
-                <img src={mertDenizPhoto} alt={member.name} className="w-full h-full object-cover" />
+                <img src={mertDenizPhoto} alt={member.name} className="w-full h-full object-cover object-top" />
               </div>
 
               <div className="text-center">
