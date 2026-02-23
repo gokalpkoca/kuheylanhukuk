@@ -82,11 +82,11 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-serif text-lg text-foreground font-semibold mb-1">{t("contact.address")}</h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <a href="https://maps.google.com/?q=Burhaniye,+Neşet+Bey+Sk.+NO:12+Kat:3+D:5,+34676+Üsküdar/İstanbul" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-gold transition-colors leading-relaxed block">
                   Burhaniye, Neşet Bey Sk. NO:12<br />
                   Kat:3 D:5, 34676<br />
                   Üsküdar/İstanbul, Türkiye
-                </p>
+                </a>
               </div>
             </div>
 
