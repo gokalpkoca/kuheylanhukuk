@@ -30,7 +30,7 @@ const PracticeAreasPage = () => {
             <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground font-bold">
               {t("nav.faaliyet_alanlari")}
             </h1>
-            <div className="w-16 h-px bg-primary mt-6" />
+            <div className="w-16 h-px bg-muted-foreground/40 mt-6" />
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

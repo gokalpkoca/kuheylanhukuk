@@ -58,7 +58,7 @@ const PracticeAreaDetail = () => {
               </h1>
             </div>
 
-            <div className="w-16 h-px bg-primary mb-10" />
+            <div className="w-16 h-px bg-muted-foreground/40 mb-10" />
 
             <p className="text-muted-foreground text-lg leading-relaxed mb-12">
               {area.description}

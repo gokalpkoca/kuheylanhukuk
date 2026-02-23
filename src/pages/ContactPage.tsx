@@ -62,7 +62,7 @@ const ContactPage = () => {
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-dark-surface-foreground font-bold">
             {t("contact_page.title")}
           </h1>
-          <div className="w-16 h-px bg-primary mx-auto mt-6" />
+          <div className="w-16 h-px bg-muted-foreground/40 mx-auto mt-6" />
         </motion.div>
       </section>
 

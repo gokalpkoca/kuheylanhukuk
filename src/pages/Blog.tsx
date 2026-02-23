@@ -87,7 +87,7 @@ const Blog = () => {
             <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground font-bold">
               {t("nav.makaleler")}
             </h1>
-            <div className="w-16 h-px bg-primary mt-6" />
+            <div className="w-16 h-px bg-muted-foreground/40 mt-6" />
           </motion.div>
 
           {/* Search */}
