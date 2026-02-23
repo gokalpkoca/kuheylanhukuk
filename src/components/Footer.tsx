@@ -64,12 +64,12 @@ const Footer = () => {
               </a>
             </div>
 
-            <div className="flex items-start gap-2 mb-4">
+            <a href="https://maps.google.com/?q=Burhaniye,+Neşet+Bey+Sk.+NO:12+Kat:3+D:5,+34676+Üsküdar/İstanbul" target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 mb-4 group">
               <MapPin className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-              <p className="text-sm text-dark-surface-muted leading-relaxed">
+              <p className="text-sm text-dark-surface-muted leading-relaxed group-hover:text-primary transition-colors">
                 Burhaniye, Neşet Bey Sk. NO:12 Kat:3 D:5, 34676 Üsküdar/İstanbul, Türkiye
               </p>
-            </div>
+            </a>
 
             <div className="w-full h-40 rounded overflow-hidden border border-white/10 mb-4">
               <iframe
