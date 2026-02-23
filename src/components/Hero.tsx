@@ -1,17 +1,12 @@
 import { motion } from "framer-motion";
-import heroBg from "@/assets/hero-bg.jpg";
+
 import { useLanguage } from "@/context/LanguageContext";
 
 const Hero = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg})` }}>
-        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/40" />
-      </div>
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-background">
 
       <div className="relative z-10 container mx-auto px-4 lg:px-8 pt-20">
         <motion.div
