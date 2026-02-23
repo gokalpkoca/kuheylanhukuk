@@ -1,4 +1,4 @@
-import { Phone, MapPin } from "lucide-react";
+import { Phone, MapPin, Mail } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 const Footer = () => {
@@ -57,7 +57,14 @@ const Footer = () => {
               <span className="text-sm font-medium">+90 535 227 96 96</span>
             </a>
 
-            <div className="flex items-start gap-2 mt-4 mb-4">
+            <div className="flex items-center gap-2 mt-4 mb-4">
+              <Mail className="w-4 h-4 text-primary shrink-0" />
+              <a href="mailto:info@kuheylanhukuk.com" className="text-sm text-dark-surface-muted hover:text-primary transition-colors">
+                info@kuheylanhukuk.com
+              </a>
+            </div>
+
+            <div className="flex items-start gap-2 mb-4">
               <MapPin className="w-4 h-4 text-primary shrink-0 mt-0.5" />
               <p className="text-sm text-dark-surface-muted leading-relaxed">
                 Burhaniye, Neşet Bey Sk. NO:12 Kat:3 D:5, 34676 Üsküdar/İstanbul, Türkiye
