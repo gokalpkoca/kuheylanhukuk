@@ -52,7 +52,7 @@ const es: Record<string, string> = {
   "team.subtitle": "Nuestro Equipo Jurídico",
   "team.title": "Nuestra Fortaleza — Nuestro Equipo",
   "team.description": "La prioridad de nuestro despacho es anticipar los riesgos jurídicos que puedan afectar a nuestros clientes y ofrecerles las soluciones más adecuadas y precisas.",
-  "team.founder": "Socio Fundador",
+  "team.founder": "SOCIO FUNDADOR",
   "team.bio": "Especializado en derecho mercantil internacional y derecho societario, asesora a una amplia cartera de clientes. Posee un profundo dominio de la legislación turca e internacional.",
 
   // Publications

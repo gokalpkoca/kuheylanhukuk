@@ -52,7 +52,7 @@ const en: Record<string, string> = {
   "team.subtitle": "Our Legal Team",
   "team.title": "Our Strength — Our Team",
   "team.description": "Our firm's priority is to anticipate legal risks that our clients may face and to provide the most suitable and precise solutions.",
-  "team.founder": "Founding Partner",
+  "team.founder": "FOUNDING PARTNER",
   "team.bio": "Specialised in international trade law and corporate law, advising a broad portfolio of clients. Proficient in Turkish and international legal frameworks.",
 
   // Publications

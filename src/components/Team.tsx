@@ -64,7 +64,7 @@ const Team = () => {
                 <h3 className="font-serif text-xl text-dark-surface-foreground font-semibold mb-1">
                   {member.name}
                 </h3>
-                <p className="text-gold text-sm uppercase tracking-wider mb-4">{member.title}</p>
+                <p className="text-gold text-sm tracking-wider mb-4">{member.title}</p>
                 <p className="text-dark-surface-muted text-sm leading-relaxed mb-6">
                   {member.bio}
                 </p>

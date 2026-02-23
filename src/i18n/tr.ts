@@ -52,7 +52,7 @@ const tr: Record<string, string> = {
   "team.subtitle": "Kadromuz",
   "team.title": "Gücümüz — Ekibimiz",
   "team.description": "Büromuzun önceliği, müvekkillerinin karşılaşabileceği hukuki riskleri henüz ortaya çıkmadan önlemek, müvekkillerine en uygun ve en doğru çözümleri sunmaktır.",
-  "team.founder": "Kurucu Ortak",
+  "team.founder": "KURUCU ORTAK",
   "team.bio": "Uluslararası ticaret hukuku ve şirketler hukuku alanında uzmanlaşmış, geniş bir müvekkil portföyüne hizmet vermektedir. Türk ve uluslararası hukuk düzenlemelerine hâkimdir.",
 
   // Publications
