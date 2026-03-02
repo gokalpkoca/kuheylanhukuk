@@ -30,7 +30,7 @@ const CookieConsent = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 40 }}
           transition={{ duration: 0.4 }}
-          className="fixed bottom-4 left-4 right-4 md:left-auto md:right-6 md:max-w-lg z-[100] bg-card border border-border rounded-lg shadow-2xl shadow-black/30 p-6"
+          className="fixed bottom-4 left-4 right-4 md:left-auto md:right-6 md:max-w-xl z-[100] bg-card border border-border rounded-lg shadow-2xl shadow-black/30 p-6"
         >
           <button
             onClick={accept}
@@ -41,18 +41,32 @@ const CookieConsent = () => {
           </button>
 
           <h3 className="font-serif text-base font-semibold text-foreground mb-3">
-            {t("cookie.title")}
+            KİŞİSEL VERİLERİN İŞLENMESİ VE ÇEREZ POLİTİKASINA İLİŞKİN AYDINLATMA METNİ
           </h3>
 
-          <p className="text-xs text-muted-foreground leading-relaxed mb-1">
-            {t("cookie.description")}
-          </p>
-          <a
-            href="/aydinlatma-metni"
-            className="text-xs text-primary hover:underline"
-          >
-            {t("cookie.learn_more")}
-          </a>
+          <div className="text-xs text-muted-foreground leading-relaxed space-y-3 max-h-60 overflow-y-auto pr-2 scrollbar-thin">
+            <p>
+              Küheylan Hukuk Bürosu ("Büro") tarafından işletilen web sitesinde kullanılan çerezlere ve bu yolla işlenen kişisel verilere ilişkin bu Aydınlatma Metni, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") uyarınca veri sahiplerini bilgilendirmek amacıyla hazırlanmıştır.
+            </p>
+            <p>
+              <strong className="text-foreground">Veri Sorumlusu:</strong> İstanbul Barosu'na kayıtlı, Burhaniye, Neşet Bey Sk. NO:12 Kat:3 D:5, 34676 Üsküdar/İstanbul adresinde mukim Küheylan Hukuk Bürosu (Vergi No: 6050532173).
+            </p>
+            <p>
+              <strong className="text-foreground">Çerezler:</strong> Sitenin temel fonksiyonlarının yerine getirilmesi, performans analizi, kullanıcı tercihlerinin hatırlanması ve hukuki güvenliğin sağlanması amacıyla kullanılmaktadır.
+            </p>
+            <p>
+              <strong className="text-foreground">İşlenen Veriler:</strong> IP adresi, tarayıcı bilgileri, giriş-çıkış kayıtları, dil seçimi ve site içi gezinme hareketleri.
+            </p>
+            <p>
+              <strong className="text-foreground">Haklarınız (KVKK Md. 11):</strong> Kişisel verilerinizin işlenip işlenmediğini öğrenme, düzeltme, silme ve itiraz etme haklarına sahipsiniz.
+            </p>
+            <p>
+              Detaylı bilgi için{" "}
+              <a href="/aydinlatma-metni" className="text-primary hover:underline">
+                Aydınlatma Metninin tamamını okuyunuz
+              </a>.
+            </p>
+          </div>
 
           <div className="flex gap-3 mt-4">
             <button
