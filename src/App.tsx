@@ -14,7 +14,6 @@ import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 import LoadingScreen from "./components/LoadingScreen";
 
-
 const queryClient = new QueryClient();
 
 const App = () => (
