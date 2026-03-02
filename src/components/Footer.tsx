@@ -85,9 +85,9 @@ const Footer = () => {
             </div>
 
             <div className="flex gap-4 text-xs text-dark-surface-muted">
-              <a href="#" className="hover:text-primary transition-colors">{t("footer.legal")}</a>
+              <a href="/aydinlatma-metni" className="hover:text-primary transition-colors">{t("footer.legal")}</a>
               <span>|</span>
-              <a href="#" className="hover:text-primary transition-colors">{t("footer.cookies")}</a>
+              <a href="/aydinlatma-metni" className="hover:text-primary transition-colors">{t("footer.cookies")}</a>
             </div>
           </div>
         </div>

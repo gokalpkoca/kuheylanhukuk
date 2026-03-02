@@ -99,6 +99,8 @@ const en: Record<string, string> = {
 
   // Cookie Consent
   "cookie.title": "Cookie Policy",
+  "cookie.description": "This website uses cookies to improve your experience. By using our site, you accept our cookie policy.",
+  "cookie.learn_more": "Read Privacy Notice",
   "cookie.accept": "Accept",
   "cookie.reject": "Decline",
 

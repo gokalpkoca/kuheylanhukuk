@@ -99,6 +99,8 @@ const ar: Record<string, string> = {
 
   // Cookie Consent
   "cookie.title": "سياسة ملفات تعريف الارتباط",
+  "cookie.description": "يستخدم هذا الموقع ملفات تعريف الارتباط لتحسين تجربتك. باستخدامك لموقعنا، فإنك توافق على سياسة ملفات تعريف الارتباط.",
+  "cookie.learn_more": "اقرأ إشعار الخصوصية",
   "cookie.accept": "قبول",
   "cookie.reject": "رفض",
 

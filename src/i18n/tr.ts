@@ -99,6 +99,8 @@ const tr: Record<string, string> = {
 
   // Cookie Consent
   "cookie.title": "Çerez Politikası",
+  "cookie.description": "Bu web sitesi, deneyiminizi iyileştirmek için çerezler kullanmaktadır. Sitemizi kullanarak çerez politikamızı kabul etmiş olursunuz.",
+  "cookie.learn_more": "Aydınlatma Metnini Oku",
   "cookie.accept": "Kabul Et",
   "cookie.reject": "Reddet",
 
