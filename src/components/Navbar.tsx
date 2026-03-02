@@ -10,8 +10,9 @@ const languageFlags: Record<Language, string> = {
   AR: "🇸🇦",
   RU: "🇷🇺",
   ES: "🇪🇸",
+  FR: "🇫🇷",
 };
-const languages: Language[] = ["TR", "EN", "AR", "RU", "ES"];
+const languages: Language[] = ["TR", "EN", "AR", "RU", "ES", "FR"];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
