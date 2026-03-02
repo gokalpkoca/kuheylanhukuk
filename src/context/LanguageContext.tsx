@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useCallback, ReactNode } from "react";
 
-export type Language = "TR" | "EN" | "AR" | "RU" | "ES";
+export type Language = "TR" | "EN" | "AR" | "RU" | "ES" | "FR";
 
 interface LanguageContextType {
   language: Language;
@@ -18,6 +18,7 @@ const translationModules: Record<Language, () => Promise<{ default: Record<strin
   AR: () => import("@/i18n/ar"),
   RU: () => import("@/i18n/ru"),
   ES: () => import("@/i18n/es"),
+  FR: () => import("@/i18n/fr"),
 };
 
 // Pre-loaded TR translations (default)
