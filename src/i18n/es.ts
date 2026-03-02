@@ -99,6 +99,8 @@ const es: Record<string, string> = {
 
   // Cookie Consent
   "cookie.title": "Política de Cookies",
+  "cookie.description": "Este sitio web utiliza cookies para mejorar su experiencia. Al utilizar nuestro sitio, acepta nuestra política de cookies.",
+  "cookie.learn_more": "Leer Aviso de Privacidad",
   "cookie.accept": "Aceptar",
   "cookie.reject": "Rechazar",
 

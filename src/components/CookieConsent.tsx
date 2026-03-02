@@ -44,17 +44,15 @@ const CookieConsent = () => {
             {t("cookie.title")}
           </h3>
 
-          <div className="text-xs text-muted-foreground leading-relaxed space-y-2 max-h-48 overflow-y-auto pr-2">
-            <p>
-              Use the classic 1990s anime production pipeline: hand-painted background art (背景美術), cel-layered compositing (セル合成), analog cel shading with a limited muted palette (リミテッドアニメ), thin hand-inked lineart (線撮), optical film grain from scanned animation cels, slight multi-plane depth (多層合成), soft atmospheric haze used by studios like Madhouse and Sunrise.
-            </p>
-            <p>
-              Retain all original reflections, shadows, and lighting direction exactly as they are. Convert natural highlights (including water reflections, metallic shine, glass glare, etc.) into 1990s-style specular cel highlights.
-            </p>
-            <p>
-              Color grading: Use low-saturation, muted late-afternoon tones with grounded realism — no modern digital vibrancy. Match the palettes of Perfect Blue, Cowboy Bebop, early Madhouse works, and 90s Sunrise realism.
-            </p>
-          </div>
+          <p className="text-xs text-muted-foreground leading-relaxed mb-1">
+            {t("cookie.description")}
+          </p>
+          <a
+            href="/aydinlatma-metni"
+            className="text-xs text-primary hover:underline"
+          >
+            {t("cookie.learn_more")}
+          </a>
 
           <div className="flex gap-3 mt-4">
             <button

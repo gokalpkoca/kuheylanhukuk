@@ -9,6 +9,7 @@ import Blog from "./pages/Blog";
 import PracticeAreaDetail from "./pages/PracticeAreaDetail";
 import PracticeAreasPage from "./pages/PracticeAreasPage";
 import ContactPage from "./pages/ContactPage";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 import LoadingScreen from "./components/LoadingScreen";
@@ -31,6 +32,7 @@ const App = () => (
             <Route path="/faaliyet-alanlari" element={<PracticeAreasPage />} />
             <Route path="/faaliyet-alanlari/:slug" element={<PracticeAreaDetail />} />
             <Route path="/iletisim" element={<ContactPage />} />
+            <Route path="/aydinlatma-metni" element={<PrivacyPolicy />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

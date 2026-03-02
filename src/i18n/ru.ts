@@ -99,6 +99,8 @@ const ru: Record<string, string> = {
 
   // Cookie Consent
   "cookie.title": "Политика файлов cookie",
+  "cookie.description": "Этот сайт использует файлы cookie для улучшения вашего опыта. Используя наш сайт, вы принимаете нашу политику cookie.",
+  "cookie.learn_more": "Читать Уведомление о конфиденциальности",
   "cookie.accept": "Принять",
   "cookie.reject": "Отклонить",
 
