@@ -54,7 +54,7 @@ const PracticeAreas = () => {
                 className="group cursor-pointer w-48 shrink-0"
               >
                 <Link to={`/faaliyet-alanlari/${area.slug}`}>
-                  <div className="aspect-[3/4] bg-card border border-border rounded overflow-hidden relative hover:border-primary hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300">
+                  <div className="aspect-[3/4] bg-card border border-border rounded overflow-hidden relative hover:border-primary hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10 transition-[transform,box-shadow,border-color] duration-300">
                     <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
                     <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
                       <area.icon className="w-10 h-10 text-primary mb-4 group-hover:scale-110 transition-transform duration-300" />
