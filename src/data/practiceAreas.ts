@@ -62,9 +62,9 @@ export const practiceAreas: PracticeArea[] = [
   },
   {
     icon: Award,
-    label: "Marka & Patent Hukuku",
-    slug: "marka-patent-hukuku",
-    description: "Marka ve patent tescili, fikri mülkiyet hakları koruması, lisans sözleşmeleri, tecavüz davaları, endüstriyel tasarım ve coğrafi işaret tescili konularında kapsamlı hukuki hizmet sunulmaktadır.",
+    label: "Fikri Mülkiyet Hukuku",
+    slug: "fikri-mulkiyet-hukuku",
+    description: "Küheylan Hukuk Bürosu, fikri ve sınai mülkiyet hukuku alanında müvekkillerinin hak ve menfaatlerini etkin biçimde korumak ve bu haklardan azami ölçüde yararlanmalarını sağlamak amacıyla kapsamlı hukuki danışmanlık hizmeti sunmaktadır. Patent, faydalı model, marka, tasarım, coğrafi işaret ve telif hakları başta olmak üzere fikri mülkiyet hukukunun tüm alanlarında profesyonel destek sağlanmaktadır.\n\nBüromuz; hakların tescili, devri, lisanslanması ve korunmasına ilişkin süreçleri yürütmekte, uluslararası marka tescili dahil olmak üzere mülkiyetin ulusal ve uluslararası düzeyde güvence altına alınmasına yönelik hukuki çözümler üretmektedir.\n\nHak ihlallerinden doğan uyuşmazlıklarda dava ve takip süreçleri titizlikle yürütülmekte; marka stratejilerinin oluşturulması, ilgili sözleşmelerin hazırlanması ve müzakere süreçlerinin yönetilmesi hususlarında bütüncül bir yaklaşım benimsenmektedir.",
   },
   {
     icon: Scale,

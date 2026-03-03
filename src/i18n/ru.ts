@@ -40,7 +40,7 @@ const ru: Record<string, string> = {
   "pa.icra-iflas-hukuku": "Исполнительное производство и банкротство",
   "pa.is-hukuku": "Трудовое право",
   "pa.kultur-tabiat-varliklari-hukuku": "Право охраны культурного и природного наследия",
-  "pa.marka-patent-hukuku": "Право товарных знаков и патентов",
+  "pa.fikri-mulkiyet-hukuku": "Право интеллектуальной собственности",
   "pa.medeni-hukuk": "Гражданское право",
   "pa.saglik-hukuku": "Медицинское право",
   "pa.sermaye-piyasasi-hukuku": "Право рынков капитала",
