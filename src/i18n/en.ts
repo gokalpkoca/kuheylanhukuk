@@ -40,7 +40,7 @@ const en: Record<string, string> = {
   "pa.icra-iflas-hukuku": "Enforcement & Insolvency Law",
   "pa.is-hukuku": "Employment Law",
   "pa.kultur-tabiat-varliklari-hukuku": "Cultural & Natural Heritage Law",
-  "pa.marka-patent-hukuku": "Trademark & Patent Law",
+  "pa.fikri-mulkiyet-hukuku": "Intellectual Property Law",
   "pa.medeni-hukuk": "Civil Law",
   "pa.saglik-hukuku": "Healthcare Law",
   "pa.sermaye-piyasasi-hukuku": "Capital Markets Law",
