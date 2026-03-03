@@ -22,7 +22,7 @@ export const practiceAreas: PracticeArea[] = [
     icon: Newspaper,
     label: "Basın Hukuku",
     slug: "basin-hukuku",
-    description: "Basın ve medya kuruluşlarına yönelik yayın hukuku, kişilik hakları, cevap ve düzeltme hakkı, basın özgürlüğü sınırları ve dijital medya hukuku alanlarında uzman hukuki destek sağlanmaktadır.",
+    description: "Küheylan Hukuk Bürosu, basın ve medya hukuku alanında müvekkillerine kapsamlı hukuki danışmanlık hizmeti sunmaktadır. Bu alan, yapımcılar, yayıncılar ve sektör çalışanları arasında ortaya çıkan uyuşmazlıkların yanı sıra basın ve medya kuruluşları ile idari merciler arasındaki anlaşmazlıkların çözümünü hedeflemektedir. Yazılı, görsel ve işitsel medya faaliyetlerine ilişkin hukuki süreçlerde de danışmanlık sağlanmaktadır.\n\nBüromuz, basın ve medya hukuku alanındaki uzman kadrosu ile sürekli değişen ve hızla gelişen sektör dinamiklerini takip ederek, medya organlarına ve bu alanda faaliyet gösteren kişi ve kurumlara etkin ve sürekli hukuki destek sunmaktadır.",
   },
   {
     icon: Gavel,
