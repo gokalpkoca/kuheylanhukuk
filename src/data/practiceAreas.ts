@@ -100,7 +100,7 @@ export const practiceAreas: PracticeArea[] = [
     icon: Trophy,
     label: "Spor Hukuku",
     slug: "spor-hukuku",
-    description: "Sporcu sözleşmeleri, transfer işlemleri, spor kulübü yönetimi, tahkim süreçleri, spor anonim şirketleri ve uluslararası spor hukuku alanlarında uzman hukuki hizmet sunulmaktadır.",
+    description: "Küheylan Hukuk Bürosu, spor hukuku alanında müvekkillerine kapsamlı danışmanlık hizmeti sunmaktadır. Spor hukuku, dinamik ve sürekli değişen kurallar gerektirdiğinden uzmanlık ve mevzuat takibi zorunludur.\n\nBu alanda sağladığımız hizmetler; oyuncular, teknik direktörler ve kulüpler arasındaki ihtilafların çözümü ile kulüpler ve federasyonlar arasındaki ilişkilerin düzenlenmesini kapsamaktadır. Spor hukukundaki hatalı uygulamalar telafisi güç zararlara yol açabileceği için süreçlerin mevzuata uygun şekilde yürütülmesi büyük önem taşır.\n\nSpor kulüplerinin çok uluslu yapısı ve ulusal ile uluslararası federasyonların (FIFA, TFF) varlığı, spor hukukunu diğer hukuk dallarından daha karmaşık ve uzmanlık gerektiren bir alan haline getirmektedir.",
   },
   {
     icon: Users,
