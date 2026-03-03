@@ -44,6 +44,7 @@ const ru: Record<string, string> = {
   "pa.kultur-tabiat-varliklari-hukuku": "Право охраны культурного и природного наследия",
   "pa.fikri-mulkiyet-hukuku": "Право интеллектуальной собственности",
   "pa.medeni-hukuk": "Гражданское право",
+  "pa.miras-hukuku": "Наследственное право",
   "pa.saglik-hukuku": "Медицинское право",
   "pa.sermaye-piyasasi-hukuku": "Право рынков капитала",
   "pa.spor-hukuku": "Спортивное право",

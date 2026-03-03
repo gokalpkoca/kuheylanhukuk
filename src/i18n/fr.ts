@@ -44,6 +44,7 @@ const fr: Record<string, string> = {
   "pa.kultur-tabiat-varliklari-hukuku": "Droit du Patrimoine Culturel et Naturel",
   "pa.fikri-mulkiyet-hukuku": "Droit de la Propriété Intellectuelle",
   "pa.medeni-hukuk": "Droit Civil",
+  "pa.miras-hukuku": "Droit des Successions",
   "pa.saglik-hukuku": "Droit de la Santé",
   "pa.sermaye-piyasasi-hukuku": "Droit des Marchés de Capitaux",
   "pa.spor-hukuku": "Droit du Sport",
