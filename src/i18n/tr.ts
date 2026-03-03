@@ -17,11 +17,18 @@ const tr: Record<string, string> = {
   "hero.cta": "Ekibimizi İnceleyin",
 
   // About
+  "about.tagline": "Stratejik Hukuki Çözümler, Kurumsal Güvence",
+  "about.main_title": "Hakkımızda",
   "about.subtitle": "KÜHEYLAN HUKUK BÜROSU",
   "about.title1": "Bilgi, Tecrübe, Deneyimli",
   "about.title2": "Kadro",
-  "about.description1": "Büromuzun önceliği, müvekkillerinin karşılaşabileceği hukuki riskleri henüz ortaya çıkmadan önlemek, müvekkillerine en uygun ve en doğru çözümleri sunmaktır.",
-  "about.description2": "İngilizce, Almanca, İspanyolca, Fransızca ve Rusça, Arapça dillerinde hizmet veren deneyimli ortakları, danışmanları ve avukatları ile müvekkillerine en üst düzeyde hukuki destek sağlamaktadır.",
+  "about.description1": "Küheylan Hukuk Bürosu, gerçek ve tüzel kişilere, çok disiplinli bir perspektifle ve uluslararası standartlara uygun biçimde, kapsamlı hukuki danışmanlık ve temsil hizmeti sunan bir hukuk kuruluşudur. Her dosya, yalnızca hukuki bir mesele olarak değil, stratejik önemi haiz bir süreç olarak ele alınır; müvekkillerimize sağlam temellere dayanan, uygulanabilir ve sürdürülebilir çözüm önerileri sunmak temel ilkemizdir.",
+  "about.section2_title": "Hukuki Yetkinlik ve Analitik Yaklaşım",
+  "about.section2_desc": "Büromuz, hukukun farklı disiplinlerindeki derin bilgi birikimini analitik yaklaşım ve ileri düzey hukuki öngörü ile bütünleştirerek, etkin, sonuç odaklı ve ihtiyatlı bir temsil sağlar. Mevzuat ve içtihatlarda meydana gelen gelişmeleri sürekli ve titizlikle takip eden proaktif yapımız, risklerin erken aşamada tespitini mümkün kılar ve müvekkillerimize çok boyutlu, entegre çözümler sunma imkânı verir.",
+  "about.section3_title": "Çalışma Kültürümüz",
+  "about.section3_desc": "Titizlik, sürat ve yüksek mesleki standartlar, büromuzun çalışma kültürünün temel taşlarını oluşturur. Küheylan Hukuk Bürosu, yalnızca uyuşmazlıkların çözümüne odaklanmakla kalmayıp, müvekkillerine uzun vadeli hukuki güvence, kurumsal istikrar ve sürdürülebilir kurumsal güç kazandırmayı da amaç edinir.",
+  "about.section4_title": "Vizyonumuz",
+  "about.section4_desc": "Hedefimiz, müvekkillerimizin hukuki süreçlerini yalnızca yönetmek değil, stratejik bir avantaj haline dönüştürmektir. Hukuki danışmanlığın ötesinde, kurumsal değer ve güvenin sürekliliğini tesis etmeye odaklanırız.",
   "about.cta": "Tarihçemiz",
 
   // Practice Areas

@@ -17,11 +17,18 @@ const fr: Record<string, string> = {
   "hero.cta": "Découvrez Notre Équipe",
 
   // About
+  "about.tagline": "Solutions Juridiques Stratégiques, Assurance Institutionnelle",
+  "about.main_title": "À Propos",
   "about.subtitle": "CABINET D'AVOCATS KÜHEYLAN",
   "about.title1": "Savoir, Expérience, Équipe",
   "about.title2": "Qualifiée",
-  "about.description1": "La priorité de notre cabinet est d'anticiper les risques juridiques auxquels nos clients pourraient être confrontés et de leur proposer les solutions les plus adaptées et les plus précises.",
-  "about.description2": "Avec des associés, des conseillers et des avocats expérimentés exerçant en anglais, allemand, espagnol, français, russe et arabe, nous offrons à nos clients le plus haut niveau d'assistance juridique.",
+  "about.description1": "Le Cabinet Küheylan est un établissement juridique offrant des services complets de conseil et de représentation juridiques aux personnes physiques et morales, dans une perspective multidisciplinaire et conforme aux standards internationaux. Chaque dossier est traité non seulement comme une question juridique, mais comme un processus d'importance stratégique ; offrir à nos clients des solutions fondées, applicables et durables est notre principe fondamental.",
+  "about.section2_title": "Compétence Juridique et Approche Analytique",
+  "about.section2_desc": "Notre cabinet intègre une connaissance approfondie des différentes disciplines juridiques avec une approche analytique et une vision juridique avancée, assurant une représentation efficace, orientée résultats et prudente. Notre structure proactive, qui suit en permanence les évolutions législatives et jurisprudentielles, permet l'identification précoce des risques et offre à nos clients des solutions multidimensionnelles et intégrées.",
+  "about.section3_title": "Notre Culture de Travail",
+  "about.section3_desc": "La rigueur, la rapidité et les hauts standards professionnels constituent les piliers de notre culture de travail. Le Cabinet Küheylan ne se concentre pas uniquement sur la résolution des litiges, mais vise également à offrir à ses clients une assurance juridique à long terme, une stabilité institutionnelle et une force durable.",
+  "about.section4_title": "Notre Vision",
+  "about.section4_desc": "Notre objectif n'est pas simplement de gérer les processus juridiques de nos clients, mais de les transformer en un avantage stratégique. Au-delà du conseil juridique, nous nous concentrons sur l'établissement de la continuité de la valeur et de la confiance institutionnelles.",
   "about.cta": "Notre Histoire",
 
   // Practice Areas

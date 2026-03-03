@@ -17,11 +17,18 @@ const en: Record<string, string> = {
   "hero.cta": "Meet Our Team",
 
   // About
+  "about.tagline": "Strategic Legal Solutions, Corporate Assurance",
+  "about.main_title": "About Us",
   "about.subtitle": "KÜHEYLAN LAW FIRM",
   "about.title1": "Knowledge, Expertise, Experienced",
   "about.title2": "Counsel",
-  "about.description1": "Our firm's priority is to anticipate legal risks that our clients may face and to provide the most suitable and precise solutions.",
-  "about.description2": "With experienced partners, counsel and attorneys serving in English, German, Spanish, French, Russian and Arabic, we provide the highest level of legal representation to our clients.",
+  "about.description1": "Küheylan Law Firm is a legal institution providing comprehensive legal consultancy and representation services to individuals and legal entities, with a multidisciplinary perspective and in accordance with international standards. Each case is treated not merely as a legal matter, but as a process of strategic importance; offering our clients well-founded, applicable and sustainable solutions is our fundamental principle.",
+  "about.section2_title": "Legal Competence and Analytical Approach",
+  "about.section2_desc": "Our firm integrates deep knowledge across various legal disciplines with an analytical approach and advanced legal foresight, ensuring effective, result-oriented and prudent representation. Our proactive structure, which continuously and meticulously monitors developments in legislation and case law, enables early identification of risks and provides our clients with multidimensional, integrated solutions.",
+  "about.section3_title": "Our Work Culture",
+  "about.section3_desc": "Meticulousness, speed and high professional standards form the cornerstones of our firm's work culture. Küheylan Law Firm not only focuses on resolving disputes but also aims to provide its clients with long-term legal assurance, corporate stability and sustainable institutional strength.",
+  "about.section4_title": "Our Vision",
+  "about.section4_desc": "Our goal is not merely to manage our clients' legal processes, but to transform them into a strategic advantage. Beyond legal consultancy, we focus on establishing the continuity of corporate value and trust.",
   "about.cta": "Our History",
 
   // Practice Areas
