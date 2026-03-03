@@ -1,7 +1,7 @@
 import {
   Scale, Gavel, Heart, Newspaper, TreePine, Landmark, Building2, Home,
   TrendingUp, Package, Award, Trophy, Users, Briefcase, FileText, HardHat,
-  ShieldCheck, ShoppingCart, LucideIcon
+  ShieldCheck, ShoppingCart, ScrollText, LucideIcon
 } from "lucide-react";
 
 export interface PracticeArea {
@@ -83,6 +83,12 @@ export const practiceAreas: PracticeArea[] = [
     label: "Medeni Hukuk",
     slug: "medeni-hukuk",
     description: "Aile hukuku, miras hukuku, eşya hukuku, borçlar hukuku ve kişiler hukuku alanlarında bireysel ve kurumsal müvekkillere kapsamlı hukuki danışmanlık ve dava takibi hizmeti verilmektedir.",
+  },
+  {
+    icon: ScrollText,
+    label: "Miras Hukuku",
+    slug: "miras-hukuku",
+    description: "Küheylan Hukuk Bürosu, miras hukuku alanında müvekkillerine kapsamlı danışmanlık ve dava takibi hizmeti sunmaktadır. Vasiyetname ve miras sözleşmelerinin hazırlanmasından, ölüme bağlı tasarrufların iptali veya tenkisine ve miras paylaşımına ilişkin davalara kadar tüm süreçlerde etkin destek sağlamaktayız.\n\nBüromuz, miras hukuku ile ilişkili konularda aile şirketlerine de özel hizmetler sunmaktadır. Bu kapsamda hem miras hem de şirket varlıklarının yönetimi ve korunması, medenî hukuk ve şirketler hukuku perspektifiyle bütüncül bir yaklaşımla ele alınmaktadır. Müvekkillerimizin haklarının güvence altına alınması ve miras süreçlerinin sağlıklı yürütülmesi temel önceliğimizdir.",
   },
   {
     icon: Heart,

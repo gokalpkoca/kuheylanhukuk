@@ -44,6 +44,7 @@ const ar: Record<string, string> = {
   "pa.kultur-tabiat-varliklari-hukuku": "قانون التراث الثقافي والطبيعي",
   "pa.fikri-mulkiyet-hukuku": "قانون الملكية الفكرية",
   "pa.medeni-hukuk": "القانون المدني",
+  "pa.miras-hukuku": "قانون الإرث",
   "pa.saglik-hukuku": "قانون الرعاية الصحية",
   "pa.sermaye-piyasasi-hukuku": "قانون أسواق رأس المال",
   "pa.spor-hukuku": "القانون الرياضي",
