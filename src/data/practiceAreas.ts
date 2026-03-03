@@ -1,7 +1,7 @@
 import {
   Scale, Gavel, Heart, Newspaper, TreePine, Landmark, Building2,
   TrendingUp, Package, Award, Trophy, Users, Briefcase, FileText, HardHat,
-  LucideIcon
+  ShieldCheck, LucideIcon
 } from "lucide-react";
 
 export interface PracticeArea {
@@ -47,6 +47,12 @@ export const practiceAreas: PracticeArea[] = [
     label: "İcra & İflas Hukuku",
     slug: "icra-iflas-hukuku",
     description: "Alacak tahsili, icra takibi, iflas ve konkordato süreçleri, yeniden yapılandırma, haciz işlemleri ve borçlu-alacaklı ilişkilerinin hukuki yönetimi konularında deneyimli kadromuzla hizmet sunulmaktadır.",
+  },
+  {
+    icon: ShieldCheck,
+    label: "İdare Hukuku",
+    slug: "idare-hukuku",
+    description: "Küheylan Hukuk Bürosu, idare hukuku alanında idari işlemlerden kaynaklanan uyuşmazlıkların çözümü, tam yargı davalarının yürütülmesi ve hukuka aykırı idari işlemlere karşı iptal davalarının takibi hususlarında hukuki danışmanlık ve temsil hizmeti sunmaktadır.\n\nBu kapsamda kamulaştırma işlemlerine ilişkin uzlaşma süreçleri ve kamulaştırma bedelinin tespiti davaları başta olmak üzere; inşaat ve kamulaştırma mevzuatından doğan uyuşmazlıkların çözümünde etkin hukuki destek sağlanmaktadır.\n\nBüromuz ayrıca vergi hukuku alanında; vergi uyuşmazlıklarının çözümü, vergi cezalarına karşı iptal ve düzeltme başvuruları, yargı öncesi uzlaşma süreçleri ile yargılama aşamasında müvekkillerin temsil edilmesi konularında kapsamlı hizmet vermektedir.",
   },
   {
     icon: HardHat,

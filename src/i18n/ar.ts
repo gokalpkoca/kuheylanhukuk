@@ -38,6 +38,7 @@ const ar: Record<string, string> = {
   "pa.cevre-hukuku": "القانون البيئي",
   "pa.gumruk-hukuku": "قانون الجمارك",
   "pa.icra-iflas-hukuku": "قانون التنفيذ والإفلاس",
+  "pa.idare-hukuku": "القانون الإداري",
   "pa.is-hukuku": "قانون العمل",
   "pa.kultur-tabiat-varliklari-hukuku": "قانون التراث الثقافي والطبيعي",
   "pa.fikri-mulkiyet-hukuku": "قانون الملكية الفكرية",
