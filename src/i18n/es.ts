@@ -17,11 +17,18 @@ const es: Record<string, string> = {
   "hero.cta": "Conozca a Nuestro Equipo",
 
   // About
+  "about.tagline": "Soluciones Jurídicas Estratégicas, Garantía Corporativa",
+  "about.main_title": "Sobre Nosotros",
   "about.subtitle": "DESPACHO DE ABOGADOS KÜHEYLAN",
   "about.title1": "Conocimiento, Experiencia, Equipo",
   "about.title2": "Cualificado",
-  "about.description1": "La prioridad de nuestro despacho es anticipar los riesgos jurídicos que puedan afectar a nuestros clientes y ofrecerles las soluciones más adecuadas y precisas.",
-  "about.description2": "Contamos con socios, asesores y abogados de amplia trayectoria que prestan servicios en inglés, alemán, español, francés, ruso y árabe, garantizando el más alto nivel de asistencia jurídica.",
+  "about.description1": "El Despacho Küheylan es una institución jurídica que ofrece servicios integrales de asesoría y representación legal a personas físicas y jurídicas, con una perspectiva multidisciplinar y conforme a estándares internacionales. Cada expediente se trata no solo como una cuestión legal, sino como un proceso de importancia estratégica; ofrecer a nuestros clientes soluciones bien fundamentadas, aplicables y sostenibles es nuestro principio fundamental.",
+  "about.section2_title": "Competencia Jurídica y Enfoque Analítico",
+  "about.section2_desc": "Nuestro despacho integra un profundo conocimiento en diversas disciplinas jurídicas con un enfoque analítico y una visión legal avanzada, garantizando una representación eficaz, orientada a resultados y prudente. Nuestra estructura proactiva, que sigue de manera continua y meticulosa la evolución legislativa y jurisprudencial, permite la identificación temprana de riesgos y ofrece a nuestros clientes soluciones multidimensionales e integradas.",
+  "about.section3_title": "Nuestra Cultura de Trabajo",
+  "about.section3_desc": "La meticulosidad, la rapidez y los altos estándares profesionales constituyen los pilares de nuestra cultura de trabajo. El Despacho Küheylan no solo se enfoca en la resolución de conflictos, sino que también busca proporcionar a sus clientes seguridad jurídica a largo plazo, estabilidad corporativa y fortaleza institucional sostenible.",
+  "about.section4_title": "Nuestra Visión",
+  "about.section4_desc": "Nuestro objetivo no es simplemente gestionar los procesos jurídicos de nuestros clientes, sino transformarlos en una ventaja estratégica. Más allá de la asesoría legal, nos enfocamos en establecer la continuidad del valor y la confianza institucional.",
   "about.cta": "Nuestra Trayectoria",
 
   // Practice Areas
