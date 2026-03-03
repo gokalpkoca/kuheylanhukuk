@@ -3,18 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { ArrowRight, Calendar } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/context/LanguageContext";
-
-const allArticles = [
-  { title: "Lorem Ipsum Dolor Sit Amet Consectetur", date: "16 Şubat 2026", category: "bankacilik-finans" },
-  { title: "Sed Ut Perspiciatis Unde Omnis Iste Natus", date: "09 Şubat 2026", category: "sirketler-hukuku" },
-  { title: "Nemo Enim Ipsam Voluptatem Quia Voluptas", date: "02 Şubat 2026", category: "ceza-hukuku" },
-  { title: "Ut Enim Ad Minima Veniam Quis Nostrum", date: "26 Ocak 2026", category: "gayrimenkul-hukuku" },
-  { title: "Quis Autem Vel Eum Iure Reprehenderit", date: "20 Ocak 2026", category: "gumruk-hukuku" },
-  { title: "At Vero Eos Et Accusamus Et Iusto Odio", date: "05 Ocak 2026", category: "icra-iflas-hukuku" },
-  { title: "Temporibus Autem Quibusdam Et Aut Officiis", date: "26 Aralık 2025", category: "idare-hukuku" },
-  { title: "Nam Libero Tempore Cum Soluta Nobis Est", date: "23 Aralık 2025", category: "is-hukuku" },
-  { title: "Itaque Earum Rerum Hic Tenetur A Sapiente", date: "15 Aralık 2025", category: "fikri-mulkiyet-hukuku" },
-];
+import { allArticles } from "@/data/articles";
 
 const News = () => {
   const ref = useRef(null);
