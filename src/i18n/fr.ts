@@ -37,6 +37,7 @@ const fr: Record<string, string> = {
   "pa.ceza-hukuku": "Droit Pénal",
   "pa.cevre-hukuku": "Droit de l'Environnement",
   "pa.gumruk-hukuku": "Droit Douanier",
+  "pa.gayrimenkul-hukuku": "Droit Immobilier",
   "pa.icra-iflas-hukuku": "Droit de l'Exécution et des Faillites",
   "pa.idare-hukuku": "Droit Administratif",
   "pa.is-hukuku": "Droit du Travail",
