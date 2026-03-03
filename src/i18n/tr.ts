@@ -51,6 +51,7 @@ const tr: Record<string, string> = {
   "pa.stk-hukuku": "STK Hukuku",
   "pa.sirketler-hukuku": "Şirketler Hukuku",
   "pa.tuketici-hukuku": "Tüketici Hukuku",
+  "pa.yabancilar-vatandaslik-hukuku": "Yabancılar ve Vatandaşlık Hukuku",
 
   // Team
   "team.subtitle": "Kadromuz",

@@ -1,7 +1,7 @@
 import {
   Scale, Gavel, Heart, Newspaper, TreePine, Landmark, Building2, Home,
   TrendingUp, Package, Award, Trophy, Users, Briefcase, FileText, HardHat,
-  ShieldCheck, ShoppingCart, ScrollText, LucideIcon
+  ShieldCheck, ShoppingCart, ScrollText, Globe, LucideIcon
 } from "lucide-react";
 
 export interface PracticeArea {
@@ -125,5 +125,11 @@ export const practiceAreas: PracticeArea[] = [
     label: "Tüketici Hukuku",
     slug: "tuketici-hukuku",
     description: "Küheylan Hukuk Bürosu, tüketici hakları alanında bireyler ve işletmeler için kapsamlı danışmanlık hizmeti sunmaktadır. Eğitim, sağlık, konut, bankacılık ve diğer hizmet ve mal alımlarında ortaya çıkan haklar, tüketici mevzuatı çerçevesinde korunmaktadır.\n\nDeneyimli ekibimiz, tüketici hakem heyetleri ve mahkemelerde kazandığı yüzlerce dosya ile hem tüketici hem de üretici, ithalatçı ve sağlayıcı taraflar için hukuki destek sağlamaktadır. Hazırlık sürecinde söz sahibi olunmayan sözleşmelerdeki haksız şartların iptali, kanuna aykırı tahsilatlar, bankaların haksız işlemleri, rekabet ihlallerinden kaynaklanan zararlar ve konut teslim sorunları gibi tüm tüketici işlemleri titizlikle takip edilmektedir.",
+  },
+  {
+    icon: Globe,
+    label: "Yabancılar ve Vatandaşlık Hukuku",
+    slug: "yabancilar-vatandaslik-hukuku",
+    description: "Küheylan Hukuk Bürosu, yabancılar ve vatandaşlık hukuku alanında müvekkillerine kapsamlı danışmanlık ve temsil hizmeti sunmaktadır. Türkiye sınırları içinde yabancı gerçek ve tüzel kişilerin ikamet, çalışma, giriş-çıkış, sınır dışı edilme, vatandaşlık kazanma veya kaybetme süreçleri ile ilgili tüm hukuki konularda destek sağlıyoruz.\n\nArtan bireysel başvurular ve idari işlemlerdeki yoğunluk nedeniyle süreçler teknik ve detaylı bir uzmanlık gerektirmektedir. Bu kapsamda büromuz, Türkiye'de yasal ikamet ve çalışma izinlerinin alınması, taşınmaz edinimi, vatandaşlık kazanımı gibi işlemlerde hukuki danışmanlık sağlarken, idari makamların tesis ettiği işlemlere karşı açılan davalarda da müvekkillerimizi etkin şekilde temsil etmektedir.",
   },
 ];

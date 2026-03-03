@@ -51,6 +51,7 @@ const es: Record<string, string> = {
   "pa.stk-hukuku": "Derecho de Organizaciones Sin Ánimo de Lucro",
   "pa.sirketler-hukuku": "Derecho Societario",
   "pa.tuketici-hukuku": "Derecho del Consumidor",
+  "pa.yabancilar-vatandaslik-hukuku": "Derecho de Extranjería y Nacionalidad",
 
   // Team
   "team.subtitle": "Nuestro Equipo Jurídico",
