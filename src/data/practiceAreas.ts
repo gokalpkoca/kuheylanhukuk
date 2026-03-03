@@ -64,7 +64,7 @@ export const practiceAreas: PracticeArea[] = [
     icon: HardHat,
     label: "İş Hukuku",
     slug: "is-hukuku",
-    description: "İş sözleşmeleri, işçi-işveren uyuşmazlıkları, iş güvenliği, toplu iş hukuku, işe iade davaları ve sosyal güvenlik hukuku alanlarında işveren ve çalışanlara kapsamlı hukuki danışmanlık sağlanmaktadır.",
+    description: "Küheylan Hukuk Bürosu, iş hukuku alanında müvekkillerine kapsamlı hukuki danışmanlık hizmeti sunmakta; işe alım sürecinden iş ilişkisinin sona ermesine kadar tüm aşamalarda süreçlerin yürürlükteki mevzuata uygun şekilde yürütülmesini sağlamaktadır.\n\nBu çerçevede iş sözleşmelerinin hazırlanması ve feshi, işten çıkarma süreçlerinin yönetimi ve işçilik alacaklarına ilişkin uyuşmazlıkların takibi konularında hukuki destek verilmektedir.\n\nAyrıca iş kazaları ve meslek hastalıklarından doğan hukuki ve cezai sorumlulukların değerlendirilmesi, işe iade davaları ile zorunlu arabuluculuk süreçlerinin yürütülmesi hususlarında da müvekkillere etkin ve çözüm odaklı temsil hizmeti sunulmaktadır.",
   },
   {
     icon: Building2,
