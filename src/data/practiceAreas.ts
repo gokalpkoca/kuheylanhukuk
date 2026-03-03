@@ -46,7 +46,7 @@ export const practiceAreas: PracticeArea[] = [
     icon: Package,
     label: "Gümrük Hukuku",
     slug: "gumruk-hukuku",
-    description: "İthalat ve ihracat işlemlerinde gümrük mevzuatına uyum, gümrük vergisi uyuşmazlıkları, antrepo işlemleri, menşe kuralları ve serbest bölge hukuku alanlarında kapsamlı hukuki hizmet verilmektedir.",
+    description: "Küheylan Hukuk Bürosu, gümrük hukuku alanında müvekkillerine kapsamlı danışmanlık ve temsil hizmeti sunmaktadır. Dış ticaret yapan kişi ve şirketlerin karşılaşabileceği hukuki riskleri önceden tespit ediyor ve olası uyuşmazlıklarda hızlı, etkili çözümler üretiyoruz.\n\nGümrük idareleriyle yaşanan sorunlar, idari para cezalarıyla sınırlı kalmayıp ceza soruşturmaları, eşya alıkoymaları ve ticari faaliyetlerin durmasına kadar varabilecek sonuçlar doğurabilir. Bu nedenle deneyimli bir gümrük avukatıyla çalışmak, hem hukuki güvence hem de ticari sürdürülebilirlik sağlar.\n\nAlanında uzman ekibimiz ve çözüm odaklı yaklaşımımız ile gümrük işlemlerinde ortaya çıkan tüm hukuki ihtilaflarda aktif rol alıyor, hem danışmanlık hem de dava süreçlerinde müvekkillerimizi etkin şekilde temsil ediyoruz.",
   },
   {
     icon: FileText,
