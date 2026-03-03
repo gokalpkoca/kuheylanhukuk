@@ -48,7 +48,7 @@ const tr: Record<string, string> = {
   "pa.idare-hukuku": "İdare Hukuku",
   "pa.is-hukuku": "İş Hukuku",
   "pa.fikri-mulkiyet-hukuku": "Fikri Mülkiyet Hukuku",
-  "pa.medeni-hukuk": "Medeni Hukuk",
+  "pa.aile-hukuku": "Aile Hukuku",
   "pa.miras-hukuku": "Miras Hukuku",
   "pa.spor-hukuku": "Spor Hukuku",
   "pa.sirketler-hukuku": "Şirketler Hukuku",

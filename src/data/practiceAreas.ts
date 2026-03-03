@@ -68,8 +68,8 @@ export const practiceAreas: PracticeArea[] = [
   },
   {
     icon: Scale,
-    label: "Medeni Hukuk",
-    slug: "medeni-hukuk",
+    label: "Aile Hukuku",
+    slug: "aile-hukuku",
     description: "Aile hukuku, miras hukuku, eşya hukuku, borçlar hukuku ve kişiler hukuku alanlarında bireysel ve kurumsal müvekkillere kapsamlı hukuki danışmanlık ve dava takibi hizmeti verilmektedir.",
   },
   {

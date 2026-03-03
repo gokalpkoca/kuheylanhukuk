@@ -48,7 +48,7 @@ const ar: Record<string, string> = {
   "pa.idare-hukuku": "القانون الإداري",
   "pa.is-hukuku": "قانون العمل",
   "pa.fikri-mulkiyet-hukuku": "قانون الملكية الفكرية",
-  "pa.medeni-hukuk": "القانون المدني",
+  "pa.aile-hukuku": "قانون الأسرة",
   "pa.miras-hukuku": "قانون الإرث",
   "pa.spor-hukuku": "القانون الرياضي",
   "pa.sirketler-hukuku": "قانون الشركات",
