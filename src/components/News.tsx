@@ -5,29 +5,15 @@ import { Link } from "react-router-dom";
 import { useLanguage } from "@/context/LanguageContext";
 
 const allArticles = [
-  { title: "Halka Arz Yol Haritası: SPK Mevzuatı Kapsamında Uyum Süreci", date: "16 Şubat 2026", category: "sermaye-piyasasi-hukuku" },
-  { title: "TTK Çerçevesinde Acentelik ve Distribütörlük", date: "09 Şubat 2026", category: "sirketler-hukuku" },
-  { title: "Kira Sertifikaları ve Varlık Kiralama Şirketleri Çerçevesinde Türk Hukukunda Faizsiz Finansman Yapısı", date: "02 Şubat 2026", category: "sermaye-piyasasi-hukuku" },
-  { title: "Limited Şirket Pay Devri Süreci ve Şartları", date: "26 Ocak 2026", category: "sirketler-hukuku" },
-  { title: "Sermaye Şirketlerinde Bölünme: Tam ve Kısmi Bölünme", date: "20 Ocak 2026", category: "sirketler-hukuku" },
-  { title: "Kripto Varlık Hizmet Sağlayıcılarının Kuruluş ve Faaliyet Esasları", date: "05 Ocak 2026", category: "sermaye-piyasasi-hukuku" },
-  { title: "Portföy Yönetim Şirketlerinin Kuruluşu, Faaliyet Alanları ve Düzenleyici Rejimi", date: "26 Aralık 2025", category: "sermaye-piyasasi-hukuku" },
-  { title: "Yönetim Kurulu Sorumluluk Serisi-3: Yönetim Kurulu Üyelerinin Cezai Sorumluluğu", date: "23 Aralık 2025", category: "sirketler-hukuku" },
-  { title: "Pay Sahipleri Sözleşmelerinin Hukukî Niteliği, Esas Sözleşme ile İlişkisi ve Üçüncü Kişilere Etkisi", date: "15 Aralık 2025", category: "sirketler-hukuku" },
-  { title: "Halka Açık Ortaklıklarda Pay Devri Rejimi", date: "04 Aralık 2025", category: "sermaye-piyasasi-hukuku" },
-  { title: "Zorunlu Pay Alım Teklifi: Yönetim Kontrolü Değişikliklerinde Yatırımcı Koruma Mekanizması", date: "01 Aralık 2025", category: "sermaye-piyasasi-hukuku" },
-  { title: "Yönetim Kurulu Üyeleri Sorumluluk Serisi – 2: İbra Kurumu", date: "21 Kasım 2025", category: "sirketler-hukuku" },
-  { title: "TTK Anlamında Birleşme: Kavram, Usul ve Uygulamada Kırılma Noktaları", date: "31 Ekim 2025", category: "sirketler-hukuku" },
-  { title: "Türk Madencilik Hukukunda Ruhsat ve İzin Rejiminin Esasları", date: "30 Ekim 2025", category: "cevre-hukuku" },
-  { title: "Halka Açık Ortaklıklarda İlişkili Taraf İşlemleri ve Örtülü Kazanç Aktarımına Karşı Hukuki Çerçeve", date: "17 Ekim 2025", category: "sermaye-piyasasi-hukuku" },
-  { title: "Kaydileştirilmiş Sermaye Piyasası Araçları Üzerinde Rehin Hakkı ve Paraya Çevrilmesi", date: "14 Ekim 2025", category: "sermaye-piyasasi-hukuku" },
-  { title: "Yönetim Kurulu Üyeleri Sorumluluk Serisi-1: TTK Çerçevesinde Kurumsal Yönetim Perspektifi", date: "10 Ekim 2025", category: "sirketler-hukuku" },
-  { title: "Aracı Kurumların Kuruluş ve Faaliyet Esasları", date: "12 Eylül 2025", category: "sermaye-piyasasi-hukuku" },
-  { title: "Fikri ve Sınai Haklarda Hükümsüzlük: Kavram, Sebepler ve Sonuçlar", date: "23 Eylül 2025", category: "marka-patent-hukuku" },
-  { title: "Spor Anonim Şirketlerinde İşlem Yasakları: Mali Disiplinin Hukuki Çerçevesi", date: "20 Ağustos 2025", category: "spor-hukuku" },
-  { title: "Şirket Devralamalarında Gizli Riskleri Ortaya Çıkarmak: Due Diligence'ın Önemi", date: "20 Ağustos 2025", category: "sirketler-hukuku" },
-  { title: "Tahvil İhracı Süreci: Hukuki Çerçeve ve Uygulama Esasları", date: "20 Ağustos 2025", category: "sermaye-piyasasi-hukuku" },
-  { title: "Türkiye'de Gayrimenkul Yatırım Fonlarının Evrimi", date: "20 Ağustos 2025", category: "sermaye-piyasasi-hukuku" },
+  { title: "Lorem Ipsum Dolor Sit Amet Consectetur", date: "16 Şubat 2026", category: "bankacilik-finans" },
+  { title: "Sed Ut Perspiciatis Unde Omnis Iste Natus", date: "09 Şubat 2026", category: "sirketler-hukuku" },
+  { title: "Nemo Enim Ipsam Voluptatem Quia Voluptas", date: "02 Şubat 2026", category: "ceza-hukuku" },
+  { title: "Ut Enim Ad Minima Veniam Quis Nostrum", date: "26 Ocak 2026", category: "gayrimenkul-hukuku" },
+  { title: "Quis Autem Vel Eum Iure Reprehenderit", date: "20 Ocak 2026", category: "gumruk-hukuku" },
+  { title: "At Vero Eos Et Accusamus Et Iusto Odio", date: "05 Ocak 2026", category: "icra-iflas-hukuku" },
+  { title: "Temporibus Autem Quibusdam Et Aut Officiis", date: "26 Aralık 2025", category: "idare-hukuku" },
+  { title: "Nam Libero Tempore Cum Soluta Nobis Est", date: "23 Aralık 2025", category: "is-hukuku" },
+  { title: "Itaque Earum Rerum Hic Tenetur A Sapiente", date: "15 Aralık 2025", category: "fikri-mulkiyet-hukuku" },
 ];
 
 const News = () => {
