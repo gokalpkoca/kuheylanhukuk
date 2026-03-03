@@ -32,7 +32,7 @@ const fr: Record<string, string> = {
   "practice.back": "Retour aux Domaines d'Activité",
 
   // Practice Area Labels
-  "pa.banka-hukuku": "Droit Bancaire",
+  "pa.bankacilik-finans": "Banque & Finance",
   "pa.basin-hukuku": "Droit des Médias",
   "pa.ceza-hukuku": "Droit Pénal",
   "pa.cevre-hukuku": "Droit de l'Environnement",

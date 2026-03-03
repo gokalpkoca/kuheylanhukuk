@@ -32,7 +32,7 @@ const tr: Record<string, string> = {
   "practice.back": "Faaliyet Alanlarına Dön",
 
   // Practice Area Labels
-  "pa.banka-hukuku": "Banka Hukuku",
+  "pa.bankacilik-finans": "Bankacılık & Finans",
   "pa.basin-hukuku": "Basın Hukuku",
   "pa.ceza-hukuku": "Ceza Hukuku",
   "pa.cevre-hukuku": "Çevre Hukuku",
