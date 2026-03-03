@@ -49,6 +49,7 @@ const ru: Record<string, string> = {
   "pa.spor-hukuku": "Спортивное право",
   "pa.stk-hukuku": "Право некоммерческих организаций",
   "pa.sirketler-hukuku": "Корпоративное право",
+  "pa.tuketici-hukuku": "Право защиты потребителей",
 
   // Team
   "team.subtitle": "Наша юридическая команда",

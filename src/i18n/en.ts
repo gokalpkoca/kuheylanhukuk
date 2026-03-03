@@ -49,6 +49,7 @@ const en: Record<string, string> = {
   "pa.spor-hukuku": "Sports Law",
   "pa.stk-hukuku": "Non-Profit Organizations Law",
   "pa.sirketler-hukuku": "Corporate Law",
+  "pa.tuketici-hukuku": "Consumer Law",
 
   // Team
   "team.subtitle": "Our Legal Team",
