@@ -14,7 +14,7 @@ export const allArticles: Article[] = [
   { title: "Temporibus Autem Quibusdam Et Aut Officiis", date: "26 Aralık 2025", category: "idare-hukuku" },
   { title: "Nam Libero Tempore Cum Soluta Nobis Est", date: "23 Aralık 2025", category: "is-hukuku" },
   { title: "Itaque Earum Rerum Hic Tenetur A Sapiente", date: "15 Aralık 2025", category: "fikri-mulkiyet-hukuku" },
-  { title: "Duis Aute Irure Dolor In Reprehenderit", date: "04 Aralık 2025", category: "medeni-hukuk" },
+  { title: "Duis Aute Irure Dolor In Reprehenderit", date: "04 Aralık 2025", category: "aile-hukuku" },
   { title: "Excepteur Sint Occaecat Cupidatat Non Proident", date: "01 Aralık 2025", category: "miras-hukuku" },
   { title: "Sunt In Culpa Qui Officia Deserunt Mollit", date: "21 Kasım 2025", category: "spor-hukuku" },
   { title: "Neque Porro Quisquam Est Qui Dolorem Ipsum", date: "31 Ekim 2025", category: "sirketler-hukuku" },

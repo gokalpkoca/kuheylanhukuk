@@ -48,7 +48,7 @@ const ru: Record<string, string> = {
   "pa.idare-hukuku": "Административное право",
   "pa.is-hukuku": "Трудовое право",
   "pa.fikri-mulkiyet-hukuku": "Право интеллектуальной собственности",
-  "pa.medeni-hukuk": "Гражданское право",
+  "pa.aile-hukuku": "Семейное право",
   "pa.miras-hukuku": "Наследственное право",
   "pa.spor-hukuku": "Спортивное право",
   "pa.sirketler-hukuku": "Корпоративное право",
