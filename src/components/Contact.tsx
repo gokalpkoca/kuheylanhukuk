@@ -111,35 +111,42 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="lg:col-span-2"
           >
-            <div className="bg-card border border-border rounded-lg p-8">
-              <h3 className="font-serif text-xl text-foreground font-semibold mb-6">{t("contact.form_title")}</h3>
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                  <div>
-                    <label className="text-sm font-medium text-foreground mb-2 block">{t("contact.name")}</label>
-                    <Input name="name" value={formData.name} onChange={handleChange} placeholder={t("contact.name_placeholder")} required className="bg-background border-border" />
+            <div className="relative bg-card border border-border rounded-lg p-8 md:p-10 overflow-hidden">
+              {/* Decorative accent line */}
+              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent" />
+              
+              <h3 className="font-serif text-2xl text-foreground font-semibold mb-2">{t("contact.form_title")}</h3>
+              <p className="text-muted-foreground text-sm mb-8">{t("contact.form_subtitle")}</p>
+              
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{t("contact.name")}</label>
+                    <Input name="name" value={formData.name} onChange={handleChange} placeholder={t("contact.name_placeholder")} required className="bg-background/50 border-border/80 h-12 text-sm focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all duration-300" />
                   </div>
-                  <div>
-                    <label className="text-sm font-medium text-foreground mb-2 block">{t("contact.email_label")}</label>
-                    <Input name="email" type="email" value={formData.email} onChange={handleChange} placeholder={t("contact.email_placeholder")} required className="bg-background border-border" />
+                  <div className="space-y-2">
+                    <label className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{t("contact.email_label")}</label>
+                    <Input name="email" type="email" value={formData.email} onChange={handleChange} placeholder={t("contact.email_placeholder")} required className="bg-background/50 border-border/80 h-12 text-sm focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all duration-300" />
                   </div>
-                  <div>
-                    <label className="text-sm font-medium text-foreground mb-2 block">{t("contact.phone_label")}</label>
-                    <Input name="phone" value={formData.phone} onChange={handleChange} placeholder={t("contact.phone_placeholder")} className="bg-background border-border" />
+                  <div className="space-y-2">
+                    <label className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{t("contact.phone_label")}</label>
+                    <Input name="phone" value={formData.phone} onChange={handleChange} placeholder={t("contact.phone_placeholder")} className="bg-background/50 border-border/80 h-12 text-sm focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all duration-300" />
                   </div>
-                  <div>
-                    <label className="text-sm font-medium text-foreground mb-2 block">{t("contact.subject")}</label>
-                    <Input name="subject" value={formData.subject} onChange={handleChange} placeholder={t("contact.subject_placeholder")} required className="bg-background border-border" />
+                  <div className="space-y-2">
+                    <label className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{t("contact.subject")}</label>
+                    <Input name="subject" value={formData.subject} onChange={handleChange} placeholder={t("contact.subject_placeholder")} required className="bg-background/50 border-border/80 h-12 text-sm focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all duration-300" />
                   </div>
                 </div>
-                <div>
-                  <label className="text-sm font-medium text-foreground mb-2 block">{t("contact.message")}</label>
-                  <Textarea name="message" value={formData.message} onChange={handleChange} placeholder={t("contact.message_placeholder")} rows={5} required className="bg-background border-border" />
+                <div className="space-y-2">
+                  <label className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{t("contact.message")}</label>
+                  <Textarea name="message" value={formData.message} onChange={handleChange} placeholder={t("contact.message_placeholder")} rows={5} required className="bg-background/50 border-border/80 text-sm focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all duration-300 resize-none" />
                 </div>
-                <Button type="submit" className="w-full md:w-auto gap-2">
-                  <Send className="w-4 h-4" />
-                  {t("contact.send")}
-                </Button>
+                <div className="pt-2">
+                  <Button type="submit" size="lg" className="gap-3 px-8 h-12 text-sm font-semibold uppercase tracking-wider shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300">
+                    <Send className="w-4 h-4" />
+                    {t("contact.send")}
+                  </Button>
+                </div>
               </form>
             </div>
           </motion.div>
