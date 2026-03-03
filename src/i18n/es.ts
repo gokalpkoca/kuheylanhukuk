@@ -38,6 +38,7 @@ const es: Record<string, string> = {
   "pa.cevre-hukuku": "Derecho Medioambiental",
   "pa.gumruk-hukuku": "Derecho Aduanero",
   "pa.icra-iflas-hukuku": "Derecho Concursal y de Ejecución",
+  "pa.idare-hukuku": "Derecho Administrativo",
   "pa.is-hukuku": "Derecho Laboral",
   "pa.kultur-tabiat-varliklari-hukuku": "Derecho del Patrimonio Cultural y Natural",
   "pa.fikri-mulkiyet-hukuku": "Derecho de la Propiedad Intelectual",

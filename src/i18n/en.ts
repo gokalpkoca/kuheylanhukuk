@@ -38,6 +38,7 @@ const en: Record<string, string> = {
   "pa.cevre-hukuku": "Environmental Law",
   "pa.gumruk-hukuku": "Customs Law",
   "pa.icra-iflas-hukuku": "Enforcement & Insolvency Law",
+  "pa.idare-hukuku": "Administrative Law",
   "pa.is-hukuku": "Employment Law",
   "pa.kultur-tabiat-varliklari-hukuku": "Cultural & Natural Heritage Law",
   "pa.fikri-mulkiyet-hukuku": "Intellectual Property Law",
