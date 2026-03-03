@@ -31,7 +31,7 @@ const Team = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-dark-surface-muted text-center max-w-3xl mx-auto mb-16 leading-relaxed"
+          className="text-dark-surface-muted text-justify max-w-3xl mx-auto mb-16 leading-relaxed"
         >
           {t("team.description")}
         </motion.p>
@@ -74,7 +74,7 @@ const Team = () => {
             </div>
 
             {/* Bio Intro */}
-            <p className="text-dark-surface-muted leading-relaxed mb-8">
+            <p className="text-dark-surface-muted leading-relaxed mb-8 text-justify">
               {t("team.bio_intro")}
             </p>
 
@@ -83,10 +83,10 @@ const Team = () => {
               <h4 className="font-serif text-lg text-dark-surface-foreground font-semibold mb-3 border-l-2 border-gold pl-4">
                 {t("team.bio_experience_title")}
               </h4>
-              <p className="text-dark-surface-muted leading-relaxed mb-3">
+              <p className="text-dark-surface-muted leading-relaxed mb-3 text-justify">
                 {t("team.bio_experience_1")}
               </p>
-              <p className="text-dark-surface-muted leading-relaxed">
+              <p className="text-dark-surface-muted leading-relaxed text-justify">
                 {t("team.bio_experience_2")}
               </p>
             </div>
@@ -96,7 +96,7 @@ const Team = () => {
               <h4 className="font-serif text-lg text-dark-surface-foreground font-semibold mb-3 border-l-2 border-gold pl-4">
                 {t("team.bio_strategy_title")}
               </h4>
-              <p className="text-dark-surface-muted leading-relaxed">
+              <p className="text-dark-surface-muted leading-relaxed text-justify">
                 {t("team.bio_strategy_desc")}
               </p>
             </div>
@@ -106,7 +106,7 @@ const Team = () => {
               <h4 className="font-serif text-lg text-dark-surface-foreground font-semibold mb-3 border-l-2 border-gold pl-4">
                 {t("team.bio_civil_title")}
               </h4>
-              <p className="text-dark-surface-muted leading-relaxed mb-4">
+              <p className="text-dark-surface-muted leading-relaxed mb-4 text-justify">
                 {t("team.bio_civil_intro")}
               </p>
 
@@ -115,7 +115,7 @@ const Team = () => {
                   <h5 className="text-dark-surface-foreground text-sm font-semibold mb-1">
                     {t("team.bio_civil_uni_title")}
                   </h5>
-                  <p className="text-dark-surface-muted text-sm leading-relaxed">
+                  <p className="text-dark-surface-muted text-sm leading-relaxed text-justify">
                     {t("team.bio_civil_uni_desc")}
                   </p>
                 </div>
@@ -136,7 +136,7 @@ const Team = () => {
 
             {/* Closing */}
             <div className="border-t border-white/10 pt-6">
-              <p className="text-dark-surface-muted leading-relaxed">
+              <p className="text-dark-surface-muted leading-relaxed text-justify">
                 {t("team.bio_closing")}
               </p>
             </div>

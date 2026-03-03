@@ -31,7 +31,7 @@ const About = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <p className="text-muted-foreground leading-relaxed text-base lg:text-lg">
+            <p className="text-muted-foreground leading-relaxed text-base lg:text-lg text-justify">
               {t("about.description1")}
             </p>
           </motion.div>
@@ -44,7 +44,7 @@ const About = () => {
             <h3 className="font-serif text-xl md:text-2xl text-foreground font-bold mb-4">
               {t("about.section2_title")}
             </h3>
-            <p className="text-muted-foreground leading-relaxed text-base lg:text-lg">
+            <p className="text-muted-foreground leading-relaxed text-base lg:text-lg text-justify">
               {t("about.section2_desc")}
             </p>
           </motion.div>
@@ -59,7 +59,7 @@ const About = () => {
             <h3 className="font-serif text-xl md:text-2xl text-foreground font-bold mb-4">
               {t("about.section3_title")}
             </h3>
-            <p className="text-muted-foreground leading-relaxed text-base lg:text-lg">
+            <p className="text-muted-foreground leading-relaxed text-base lg:text-lg text-justify">
               {t("about.section3_desc")}
             </p>
           </motion.div>
@@ -72,7 +72,7 @@ const About = () => {
             <h3 className="font-serif text-xl md:text-2xl text-foreground font-bold mb-4">
               {t("about.section4_title")}
             </h3>
-            <p className="text-muted-foreground leading-relaxed text-base lg:text-lg">
+            <p className="text-muted-foreground leading-relaxed text-base lg:text-lg text-justify">
               {t("about.section4_desc")}
             </p>
           </motion.div>

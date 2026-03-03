@@ -33,7 +33,7 @@ const Hero = () => {
             <span className="text-primary italic">{t("hero.title2")}</span> {t("hero.title3")}
           </h1>
 
-          <p className="text-muted-foreground text-lg md:text-xl mb-10 max-w-lg leading-relaxed">
+          <p className="text-muted-foreground text-lg md:text-xl mb-10 max-w-lg leading-relaxed text-justify">
             {t("hero.description")}
           </p>
 
