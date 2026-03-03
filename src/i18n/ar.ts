@@ -51,6 +51,7 @@ const ar: Record<string, string> = {
   "pa.stk-hukuku": "قانون المنظمات غير الربحية",
   "pa.sirketler-hukuku": "قانون الشركات",
   "pa.tuketici-hukuku": "قانون حماية المستهلك",
+  "pa.yabancilar-vatandaslik-hukuku": "قانون الأجانب والجنسية",
 
   // Team
   "team.subtitle": "فريقنا القانوني",
