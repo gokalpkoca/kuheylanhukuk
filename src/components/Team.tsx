@@ -9,17 +9,6 @@ const Team = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const { t } = useLanguage();
 
-  const team = [
-    {
-      name: "Mert Deniz Küheylan",
-      title: t("team.founder"),
-      initials: "MDK",
-      bio: t("team.bio"),
-      email: "av.mdkuheylan@hotmail.com",
-      languages: ["Türkçe", "İngilizce", "Almanca"],
-    },
-  ];
-
   return (
     <section id="ekibimiz" className="py-24 lg:py-32 bg-dark-surface">
       <div className="container mx-auto px-4 lg:px-8" ref={ref}>
@@ -47,48 +36,112 @@ const Team = () => {
           {t("team.description")}
         </motion.p>
 
-        <div className="flex justify-center max-w-md mx-auto">
-          {team.map((member, i) => (
-            <motion.div
-              key={member.name}
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
-              className="border border-white/10 rounded bg-white/5 p-8 hover:border-gold transition-colors duration-300"
-            >
-              <div className="w-24 h-24 rounded-full border-2 border-gold overflow-hidden mx-auto mb-6">
-                <img src={mertDenizPhoto} alt={member.name} className="w-full h-full object-cover object-[center_15%]" />
+        {/* Profile Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="max-w-4xl mx-auto"
+        >
+          <div className="border border-white/10 rounded bg-white/5 p-8 lg:p-12">
+            {/* Top: Photo + Name + Contact */}
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-10">
+              <div className="w-32 h-32 rounded-full border-2 border-gold overflow-hidden shrink-0">
+                <img
+                  src={mertDenizPhoto}
+                  alt="Mert Deniz Küheylan"
+                  className="w-full h-full object-cover object-[center_15%]"
+                />
               </div>
-
-              <div className="text-center">
-                <h3 className="font-serif text-xl text-dark-surface-foreground font-semibold mb-1">
-                  {member.name}
+              <div className="text-center md:text-left">
+                <h3 className="font-serif text-2xl lg:text-3xl text-dark-surface-foreground font-bold mb-1">
+                  {t("team.member_name")}
                 </h3>
-                <p className="text-gold text-sm tracking-wider mb-4">{member.title}</p>
-                <p className="text-dark-surface-muted text-sm leading-relaxed mb-6">
-                  {member.bio}
+                <p className="text-gold text-sm tracking-wider mb-4">
+                  {t("team.founder")}
                 </p>
-
-                <div className="flex items-center justify-center gap-2 text-dark-surface-muted text-xs mb-4">
-                  <Mail className="w-3.5 h-3.5 text-gold" />
-                  <span>{member.email}</span>
-                </div>
-
-                <div className="flex items-center justify-center gap-2 flex-wrap">
-                  <Globe className="w-3.5 h-3.5 text-gold" />
-                  {member.languages.map((lang) => (
-                    <span
-                      key={lang}
-                      className="text-xs px-2 py-0.5 bg-white/10 text-dark-surface-muted rounded"
-                    >
-                      {lang}
-                    </span>
-                  ))}
+                <div className="flex flex-col sm:flex-row items-center gap-4 text-dark-surface-muted text-sm">
+                  <div className="flex items-center gap-2">
+                    <Mail className="w-4 h-4 text-gold" />
+                    <span>av.mdkuheylan@hotmail.com</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Globe className="w-4 h-4 text-gold" />
+                    <span>{t("team.languages_spoken")}</span>
+                  </div>
                 </div>
               </div>
-            </motion.div>
-          ))}
-        </div>
+            </div>
+
+            {/* Bio Intro */}
+            <p className="text-dark-surface-muted leading-relaxed mb-8">
+              {t("team.bio_intro")}
+            </p>
+
+            {/* Section: Mesleki Tecrübe */}
+            <div className="mb-8">
+              <h4 className="font-serif text-lg text-dark-surface-foreground font-semibold mb-3 border-l-2 border-gold pl-4">
+                {t("team.bio_experience_title")}
+              </h4>
+              <p className="text-dark-surface-muted leading-relaxed mb-3">
+                {t("team.bio_experience_1")}
+              </p>
+              <p className="text-dark-surface-muted leading-relaxed">
+                {t("team.bio_experience_2")}
+              </p>
+            </div>
+
+            {/* Section: Çok Yönlü Bakış */}
+            <div className="mb-8">
+              <h4 className="font-serif text-lg text-dark-surface-foreground font-semibold mb-3 border-l-2 border-gold pl-4">
+                {t("team.bio_strategy_title")}
+              </h4>
+              <p className="text-dark-surface-muted leading-relaxed">
+                {t("team.bio_strategy_desc")}
+              </p>
+            </div>
+
+            {/* Section: Sivil Toplum */}
+            <div className="mb-8">
+              <h4 className="font-serif text-lg text-dark-surface-foreground font-semibold mb-3 border-l-2 border-gold pl-4">
+                {t("team.bio_civil_title")}
+              </h4>
+              <p className="text-dark-surface-muted leading-relaxed mb-4">
+                {t("team.bio_civil_intro")}
+              </p>
+
+              <div className="space-y-4 pl-4">
+                <div>
+                  <h5 className="text-dark-surface-foreground text-sm font-semibold mb-1">
+                    {t("team.bio_civil_uni_title")}
+                  </h5>
+                  <p className="text-dark-surface-muted text-sm leading-relaxed">
+                    {t("team.bio_civil_uni_desc")}
+                  </p>
+                </div>
+                <div>
+                  <h5 className="text-dark-surface-foreground text-sm font-semibold mb-1">
+                    {t("team.bio_civil_pro_title")}
+                  </h5>
+                  <ul className="text-dark-surface-muted text-sm leading-relaxed space-y-1.5 list-disc list-inside">
+                    <li>{t("team.bio_civil_pro_1")}</li>
+                    <li>{t("team.bio_civil_pro_2")}</li>
+                    <li>{t("team.bio_civil_pro_3")}</li>
+                    <li>{t("team.bio_civil_pro_4")}</li>
+                    <li>{t("team.bio_civil_pro_5")}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Closing */}
+            <div className="border-t border-white/10 pt-6">
+              <p className="text-dark-surface-muted leading-relaxed">
+                {t("team.bio_closing")}
+              </p>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
