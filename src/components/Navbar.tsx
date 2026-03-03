@@ -43,6 +43,9 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
+  const navBarRef = useRef<HTMLButtonElement>(null);
+
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
@@ -54,10 +57,14 @@ const Navbar = () => {
       if (langRef.current && !langRef.current.contains(e.target as Node)) {
         setLangDropdownOpen(false);
       }
+      // Close mobile menu when clicking outside
+      if (isOpen && mobileMenuRef.current && navBarRef.current && !mobileMenuRef.current.contains(e.target as Node) && !navBarRef.current.contains(e.target as Node)) {
+        setIsOpen(false);
+      }
     };
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+  }, [isOpen]);
 
   return (
     <nav
@@ -206,7 +213,9 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Hamburger */}
+          {/* Mobile Hamburger */}
           <button
+            ref={navBarRef}
             className="xl:hidden text-foreground p-2"
             onClick={() => setIsOpen(!isOpen)}
           >
@@ -216,7 +225,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="xl:hidden bg-card border-t border-border pb-4 rounded-b shadow-xl shadow-black/20">
+          <div ref={mobileMenuRef} className="xl:hidden bg-card border-t border-border pb-4 rounded-b shadow-xl shadow-black/20">
             {navItems.map((item) =>
               item.dropdown === "practiceAreas" ? (
                 <Link
