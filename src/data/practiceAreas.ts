@@ -14,9 +14,9 @@ export interface PracticeArea {
 export const practiceAreas: PracticeArea[] = [
   {
     icon: Landmark,
-    label: "Banka Hukuku",
-    slug: "banka-hukuku",
-    description: "Bankacılık sektörüne yönelik düzenleyici uyum, kredi sözleşmeleri, teminat hukuku, mevduat ilişkileri ve bankacılık işlemlerinden doğan uyuşmazlıkların çözümü konularında kapsamlı hukuki danışmanlık sunulmaktadır.",
+    label: "Bankacılık & Finans",
+    slug: "bankacilik-finans",
+    description: "Küheylan Hukuk Bürosu, bankacılık ve finans hukuku alanında; ticari ve kurumsal kredi işlemleri, proje finansmanı, kamu kurumları ve ihracat kredi kuruluşları destekli finansmanlar, İslami finansman yapıları, satın alım finansmanları, menkul kıymet ihraçları ve yapılandırılmış finansman işlemleri dahil olmak üzere geniş bir yelpazede hukuki danışmanlık hizmeti sunmaktadır.\n\nBunun yanı sıra türev işlemler, teminatlı ve teminatsız kredi yapılandırmaları ile mevzuata uyum süreçlerine ilişkin hukuki destek sağlanmakta; işlemlerin yapılandırılması ve yürütülmesi titizlikle takip edilmektedir.\n\nEkibimiz; kredi alanlar ve kredi verenler, sponsorlar, yerli ve yabancı bankalar, kalkınma finansman kuruluşları, özel ve kurumsal yatırımcılar ile ihracat kredi kuruluşları dahil olmak üzere finans piyasasının çeşitli aktörlerini farklı ölçeklerdeki işlemlerde temsil etmiş olup, bu alanda kapsamlı deneyime sahiptir.",
   },
   {
     icon: Newspaper,
