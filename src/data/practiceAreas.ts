@@ -1,5 +1,5 @@
 import {
-  Scale, Gavel, Heart, Newspaper, TreePine, Landmark, Building2,
+  Scale, Gavel, Heart, Newspaper, TreePine, Landmark, Building2, Home,
   TrendingUp, Package, Award, Trophy, Users, Briefcase, FileText, HardHat,
   ShieldCheck, LucideIcon
 } from "lucide-react";
@@ -35,6 +35,12 @@ export const practiceAreas: PracticeArea[] = [
     label: "Çevre Hukuku",
     slug: "cevre-hukuku",
     description: "Çevresel etki değerlendirmesi, çevre izinleri, atık yönetimi, emisyon düzenlemeleri ve çevre mevzuatına uyum konularında hukuki danışmanlık ve dava takibi hizmetleri sunulmaktadır.",
+  },
+  {
+    icon: Home,
+    label: "Gayrimenkul Hukuku",
+    slug: "gayrimenkul-hukuku",
+    description: "Küheylan Hukuk Bürosu, gayrimenkul hukuku alanında müvekkillerinin ihtiyaç ve yatırım hedefleri doğrultusunda kapsamlı hukuki danışmanlık hizmeti sunmaktadır. Stratejik yatırım kararlarının hukuki güvence altına alınması amacıyla süreçler bütüncül bir yaklaşımla değerlendirilmektedir.\n\nBu kapsamda taşınmazlara ilişkin yasal kayıtların incelenmesi, mülkiyet ve hukuki statünün tespiti, durum tespiti (due diligence) raporlarının hazırlanması ile sözleşme süreçlerinin yapılandırılması ve müzakerelerin yürütülmesi konularında profesyonel destek sağlanmaktadır.\n\nBüromuz, gayrimenkul hukukundaki uzmanlığını farklı sektörlerdeki deneyimiyle birleştirerek müvekkillerine etkin, hızlı ve çözüm odaklı hukuki hizmet sunmaktadır.",
   },
   {
     icon: Package,

@@ -37,6 +37,7 @@ const en: Record<string, string> = {
   "pa.ceza-hukuku": "Criminal Law",
   "pa.cevre-hukuku": "Environmental Law",
   "pa.gumruk-hukuku": "Customs Law",
+  "pa.gayrimenkul-hukuku": "Real Estate Law",
   "pa.icra-iflas-hukuku": "Enforcement & Insolvency Law",
   "pa.idare-hukuku": "Administrative Law",
   "pa.is-hukuku": "Employment Law",
