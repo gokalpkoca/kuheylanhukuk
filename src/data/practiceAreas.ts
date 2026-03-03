@@ -112,6 +112,6 @@ export const practiceAreas: PracticeArea[] = [
     icon: Briefcase,
     label: "Şirketler Hukuku",
     slug: "sirketler-hukuku",
-    description: "Şirket kuruluşu, birleşme ve devralma, genel kurul işlemleri, yönetim kurulu sorumlulukları, pay devri, sermaye artırımı ve şirketlerin yeniden yapılandırılması konularında kapsamlı hukuki danışmanlık sunulmaktadır.",
+    description: "Küheylan Hukuk Bürosu, şirketler hukuku alanında uzmanlaşmış ekibiyle yerli ve yabancı sermayeli şirketler, şirketler toplulukları ve holding yapılanmalarına ticaret hukuku kapsamında kapsamlı hukuki danışmanlık hizmeti sunmaktadır.\n\nBüromuz; ticaret hukuku mevzuatına ilişkin günlük hukuki görüşlerin hazırlanması, yönetim kurulu ve genel kurul karar süreçlerinin yürütülmesi, pay devri işlemleri, kurumsal yönetim uygulamaları, şirket yapılanmaları ve tasfiye süreçleri gibi konularda etkin ve çözüm odaklı destek sağlamaktadır.\n\nBu çerçevede anonim ve limited şirketler başta olmak üzere holdingler, özel izne tabi şirketler ile adi ortaklık ve iş birliği modellerinin (JV, SPV) kuruluş süreçleri yürütülmekte; hisse rehin ve hesap rehni sözleşmeleri dahil olmak üzere ilgili tüm sözleşmelerin hazırlanması, incelenmesi ve müzakere edilmesi süreçleri titizlikle yönetilmektedir.",
   },
 ];
