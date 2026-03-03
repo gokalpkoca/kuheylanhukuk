@@ -28,7 +28,7 @@ export const practiceAreas: PracticeArea[] = [
     icon: Gavel,
     label: "Ceza Hukuku",
     slug: "ceza-hukuku",
-    description: "Ceza davalarının her aşamasında etkin savunma, soruşturma sürecinde hukuki danışmanlık, tutukluluk itirazları, temyiz başvuruları ve beyaz yaka suçları dahil tüm ceza hukuku alanlarında temsil hizmeti verilmektedir.",
+    description: "Küheylan Hukuk Bürosu, ceza hukuku alanında müvekkillerine kapsamlı danışmanlık ve temsil hizmeti sunmaktadır. Yakalama, arama, tutuklama gibi süreçlerde şüphelilerin haklarını koruyor ve soruşturma aşamasından yargılama ve infaza kadar tüm süreçlerde hukuki destek sağlıyoruz.\n\nSanık, yargılamanın her aşamasında avukat desteğinden yararlanabilir. Mahkemeler adli para cezası, hapis veya güvenlik tedbiri uygulayabilir; hapis cezaları ertelenebilir, hükmün açıklanması geri bırakılabilir veya adli para cezasına çevrilebilir.\n\nSoruşturma, kovuşturma ve infaz aşamalarını kapsayan ceza hukuku süreçlerinde, müvekkillerimizin haklarını güvence altına almak ve etkin temsil sağlamak temel önceliğimizdir.",
   },
   {
     icon: TreePine,
