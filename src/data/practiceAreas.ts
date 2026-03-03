@@ -1,7 +1,7 @@
 import {
   Scale, Gavel, Heart, Newspaper, TreePine, Landmark, Building2, Home,
   TrendingUp, Package, Award, Trophy, Users, Briefcase, FileText, HardHat,
-  ShieldCheck, LucideIcon
+  ShieldCheck, ShoppingCart, LucideIcon
 } from "lucide-react";
 
 export interface PracticeArea {
@@ -113,5 +113,11 @@ export const practiceAreas: PracticeArea[] = [
     label: "Şirketler Hukuku",
     slug: "sirketler-hukuku",
     description: "Küheylan Hukuk Bürosu, şirketler hukuku alanında uzmanlaşmış ekibiyle yerli ve yabancı sermayeli şirketler, şirketler toplulukları ve holding yapılanmalarına ticaret hukuku kapsamında kapsamlı hukuki danışmanlık hizmeti sunmaktadır.\n\nBüromuz; ticaret hukuku mevzuatına ilişkin günlük hukuki görüşlerin hazırlanması, yönetim kurulu ve genel kurul karar süreçlerinin yürütülmesi, pay devri işlemleri, kurumsal yönetim uygulamaları, şirket yapılanmaları ve tasfiye süreçleri gibi konularda etkin ve çözüm odaklı destek sağlamaktadır.\n\nBu çerçevede anonim ve limited şirketler başta olmak üzere holdingler, özel izne tabi şirketler ile adi ortaklık ve iş birliği modellerinin (JV, SPV) kuruluş süreçleri yürütülmekte; hisse rehin ve hesap rehni sözleşmeleri dahil olmak üzere ilgili tüm sözleşmelerin hazırlanması, incelenmesi ve müzakere edilmesi süreçleri titizlikle yönetilmektedir.",
+  },
+  {
+    icon: ShoppingCart,
+    label: "Tüketici Hukuku",
+    slug: "tuketici-hukuku",
+    description: "Küheylan Hukuk Bürosu, tüketici hakları alanında bireyler ve işletmeler için kapsamlı danışmanlık hizmeti sunmaktadır. Eğitim, sağlık, konut, bankacılık ve diğer hizmet ve mal alımlarında ortaya çıkan haklar, tüketici mevzuatı çerçevesinde korunmaktadır.\n\nDeneyimli ekibimiz, tüketici hakem heyetleri ve mahkemelerde kazandığı yüzlerce dosya ile hem tüketici hem de üretici, ithalatçı ve sağlayıcı taraflar için hukuki destek sağlamaktadır. Hazırlık sürecinde söz sahibi olunmayan sözleşmelerdeki haksız şartların iptali, kanuna aykırı tahsilatlar, bankaların haksız işlemleri, rekabet ihlallerinden kaynaklanan zararlar ve konut teslim sorunları gibi tüm tüketici işlemleri titizlikle takip edilmektedir.",
   },
 ];
