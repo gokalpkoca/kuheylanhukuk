@@ -1,6 +1,6 @@
 import {
-  Scale, Gavel, Heart, Newspaper, TreePine, Landmark, Building2, Home,
-  TrendingUp, Package, Award, Trophy, Users, Briefcase, FileText, HardHat,
+  Scale, Gavel, Newspaper, Landmark, Home,
+  Package, Award, Trophy, Briefcase, FileText, HardHat,
   ShieldCheck, ShoppingCart, ScrollText, Globe, LucideIcon
 } from "lucide-react";
 
@@ -29,12 +29,6 @@ export const practiceAreas: PracticeArea[] = [
     label: "Ceza Hukuku",
     slug: "ceza-hukuku",
     description: "Küheylan Hukuk Bürosu, ceza hukuku alanında müvekkillerine kapsamlı danışmanlık ve temsil hizmeti sunmaktadır. Yakalama, arama, tutuklama gibi süreçlerde şüphelilerin haklarını koruyor ve soruşturma aşamasından yargılama ve infaza kadar tüm süreçlerde hukuki destek sağlıyoruz.\n\nSanık, yargılamanın her aşamasında avukat desteğinden yararlanabilir. Mahkemeler adli para cezası, hapis veya güvenlik tedbiri uygulayabilir; hapis cezaları ertelenebilir, hükmün açıklanması geri bırakılabilir veya adli para cezasına çevrilebilir.\n\nSoruşturma, kovuşturma ve infaz aşamalarını kapsayan ceza hukuku süreçlerinde, müvekkillerimizin haklarını güvence altına almak ve etkin temsil sağlamak temel önceliğimizdir.",
-  },
-  {
-    icon: TreePine,
-    label: "Çevre Hukuku",
-    slug: "cevre-hukuku",
-    description: "Çevresel etki değerlendirmesi, çevre izinleri, atık yönetimi, emisyon düzenlemeleri ve çevre mevzuatına uyum konularında hukuki danışmanlık ve dava takibi hizmetleri sunulmaktadır.",
   },
   {
     icon: Home,
@@ -67,12 +61,6 @@ export const practiceAreas: PracticeArea[] = [
     description: "Küheylan Hukuk Bürosu, iş hukuku alanında müvekkillerine kapsamlı hukuki danışmanlık hizmeti sunmakta; işe alım sürecinden iş ilişkisinin sona ermesine kadar tüm aşamalarda süreçlerin yürürlükteki mevzuata uygun şekilde yürütülmesini sağlamaktadır.\n\nBu çerçevede iş sözleşmelerinin hazırlanması ve feshi, işten çıkarma süreçlerinin yönetimi ve işçilik alacaklarına ilişkin uyuşmazlıkların takibi konularında hukuki destek verilmektedir.\n\nAyrıca iş kazaları ve meslek hastalıklarından doğan hukuki ve cezai sorumlulukların değerlendirilmesi, işe iade davaları ile zorunlu arabuluculuk süreçlerinin yürütülmesi hususlarında da müvekkillere etkin ve çözüm odaklı temsil hizmeti sunulmaktadır.",
   },
   {
-    icon: Building2,
-    label: "Kültür ve Tabiat Varlıkları Hukuku",
-    slug: "kultur-tabiat-varliklari-hukuku",
-    description: "Kültürel miras ve tabiat varlıklarının korunması, tescil süreçleri, restorasyon izinleri, sit alanı düzenlemeleri ve kültürel varlık ticareti konularında uzman hukuki danışmanlık verilmektedir.",
-  },
-  {
     icon: Award,
     label: "Fikri Mülkiyet Hukuku",
     slug: "fikri-mulkiyet-hukuku",
@@ -91,28 +79,10 @@ export const practiceAreas: PracticeArea[] = [
     description: "Küheylan Hukuk Bürosu, miras hukuku alanında müvekkillerine kapsamlı danışmanlık ve dava takibi hizmeti sunmaktadır. Vasiyetname ve miras sözleşmelerinin hazırlanmasından, ölüme bağlı tasarrufların iptali veya tenkisine ve miras paylaşımına ilişkin davalara kadar tüm süreçlerde etkin destek sağlamaktayız.\n\nBüromuz, miras hukuku ile ilişkili konularda aile şirketlerine de özel hizmetler sunmaktadır. Bu kapsamda hem miras hem de şirket varlıklarının yönetimi ve korunması, medenî hukuk ve şirketler hukuku perspektifiyle bütüncül bir yaklaşımla ele alınmaktadır. Müvekkillerimizin haklarının güvence altına alınması ve miras süreçlerinin sağlıklı yürütülmesi temel önceliğimizdir.",
   },
   {
-    icon: Heart,
-    label: "Sağlık Hukuku",
-    slug: "saglik-hukuku",
-    description: "Tıbbi malpraktis davaları, hasta hakları, sağlık kuruluşlarının hukuki düzenlemelere uyumu, ilaç ve tıbbi cihaz hukuku alanlarında uzman hukuki danışmanlık sunulmaktadır.",
-  },
-  {
-    icon: TrendingUp,
-    label: "Sermaye Piyasası Hukuku",
-    slug: "sermaye-piyasasi-hukuku",
-    description: "Halka arz süreçleri, SPK düzenlemelerine uyum, yatırım fonları, portföy yönetimi, tahvil ihracı ve sermaye piyasası araçları konularında kapsamlı hukuki danışmanlık verilmektedir.",
-  },
-  {
     icon: Trophy,
     label: "Spor Hukuku",
     slug: "spor-hukuku",
     description: "Küheylan Hukuk Bürosu, spor hukuku alanında müvekkillerine kapsamlı danışmanlık hizmeti sunmaktadır. Spor hukuku, dinamik ve sürekli değişen kurallar gerektirdiğinden uzmanlık ve mevzuat takibi zorunludur.\n\nBu alanda sağladığımız hizmetler; oyuncular, teknik direktörler ve kulüpler arasındaki ihtilafların çözümü ile kulüpler ve federasyonlar arasındaki ilişkilerin düzenlenmesini kapsamaktadır. Spor hukukundaki hatalı uygulamalar telafisi güç zararlara yol açabileceği için süreçlerin mevzuata uygun şekilde yürütülmesi büyük önem taşır.\n\nSpor kulüplerinin çok uluslu yapısı ve ulusal ile uluslararası federasyonların (FIFA, TFF) varlığı, spor hukukunu diğer hukuk dallarından daha karmaşık ve uzmanlık gerektiren bir alan haline getirmektedir.",
-  },
-  {
-    icon: Users,
-    label: "STK Hukuku",
-    slug: "stk-hukuku",
-    description: "Dernek ve vakıf kuruluşu, sivil toplum kuruluşlarının hukuki yapılandırması, tüzük hazırlanması, kamu yararı statüsü ve STK faaliyetlerinin mevzuata uygunluğu konularında danışmanlık verilmektedir.",
   },
   {
     icon: Briefcase,
