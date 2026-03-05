@@ -7,6 +7,7 @@ import loadingLogo from "@/assets/loading-logo.png";
 const LoadingScreen = () => {
   const [isLoading, setIsLoading] = useState(true);
   const location = useLocation();
+  const { t } = useLanguage();
 
   useEffect(() => {
     setIsLoading(true);
