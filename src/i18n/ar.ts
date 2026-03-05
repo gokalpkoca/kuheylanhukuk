@@ -132,6 +132,9 @@ const ar: Record<string, string> = {
   // Contact Page
   "contact_page.title": "تواصل معنا",
   "contact_page.reach_us": "تواصل معنا",
+
+  // Loading Screen
+  "loading.title": "كوهيلان للمحاماة",
 };
 
 export default ar;

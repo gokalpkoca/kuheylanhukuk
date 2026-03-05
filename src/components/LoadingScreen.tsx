@@ -38,7 +38,7 @@ const LoadingScreen = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.6 }}
           >
-            KÜHEYLAN HUKUK
+            {t("loading.title")}
           </motion.p>
           <motion.div
             className="mt-8 h-0.5 bg-primary rounded-full"

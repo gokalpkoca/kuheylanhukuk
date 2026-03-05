@@ -132,6 +132,9 @@ const fr: Record<string, string> = {
   // Contact Page
   "contact_page.title": "Contact",
   "contact_page.reach_us": "Contactez-Nous",
+
+  // Loading Screen
+  "loading.title": "KÜHEYLAN CABINET D'AVOCATS",
 };
 
 export default fr;

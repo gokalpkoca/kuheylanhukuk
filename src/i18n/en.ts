@@ -132,6 +132,9 @@ const en: Record<string, string> = {
   // Contact Page
   "contact_page.title": "Contact",
   "contact_page.reach_us": "Get in Touch",
+
+  // Loading Screen
+  "loading.title": "KÜHEYLAN LAW FIRM",
 };
 
 export default en;
