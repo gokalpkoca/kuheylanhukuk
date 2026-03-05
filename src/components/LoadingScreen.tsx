@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import { useLanguage } from "@/context/LanguageContext";
 import loadingLogo from "@/assets/loading-logo.png";
 
 const LoadingScreen = () => {
