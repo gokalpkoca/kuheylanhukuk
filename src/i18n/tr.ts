@@ -132,6 +132,9 @@ const tr: Record<string, string> = {
   // Contact Page
   "contact_page.title": "İletişim",
   "contact_page.reach_us": "Bize Ulaşın",
+
+  // Loading Screen
+  "loading.title": "KÜHEYLAN HUKUK",
 };
 
 export default tr;

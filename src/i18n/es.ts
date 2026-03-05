@@ -2,10 +2,10 @@ const es: Record<string, string> = {
   // Navbar
   "nav.kurumsal": "El Despacho",
   "nav.ekibimiz": "Nuestro Equipo",
-  "nav.faaliyet_alanlari": "Áreas de Práctica",
-  "nav.makaleler": "Base de Conocimiento",
-  "nav.tum_makaleler": "Base de Conocimiento",
-  "nav.kariyer": "Oportunidades Profesionales",
+  "nav.faaliyet_alanlari": "Áreas",
+  "nav.makaleler": "Publicaciones",
+  "nav.tum_makaleler": "Publicaciones",
+  "nav.kariyer": "Empleo",
   "nav.iletisim": "Contacto",
 
   // Hero
@@ -132,6 +132,9 @@ const es: Record<string, string> = {
   // Contact Page
   "contact_page.title": "Contacto",
   "contact_page.reach_us": "Póngase en Contacto",
+
+  // Loading Screen
+  "loading.title": "KÜHEYLAN ABOGADOS",
 };
 
 export default es;

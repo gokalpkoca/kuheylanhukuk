@@ -86,7 +86,7 @@ const Navbar = () => {
             </span>
           </a>
 
-          <div className="hidden xl:flex items-center gap-1">
+          <div className="hidden xl:flex items-center gap-1 whitespace-nowrap">
             {navItems.map((item) =>
               item.dropdown === "practiceAreas" ? (
               <div key={item.href} className="relative" ref={dropdownRef}>

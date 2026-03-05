@@ -132,6 +132,9 @@ const ru: Record<string, string> = {
   // Contact Page
   "contact_page.title": "Контакты",
   "contact_page.reach_us": "Свяжитесь с нами",
+
+  // Loading Screen
+  "loading.title": "КЮХЕЙЛАН ЮРИДИЧЕСКАЯ ФИРМА",
 };
 
 export default ru;

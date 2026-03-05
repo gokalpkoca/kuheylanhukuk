@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import { useLanguage } from "@/context/LanguageContext";
 import loadingLogo from "@/assets/loading-logo.png";
 
 const LoadingScreen = () => {
   const [isLoading, setIsLoading] = useState(true);
   const location = useLocation();
+  const { t } = useLanguage();
 
   useEffect(() => {
     setIsLoading(true);
@@ -36,7 +38,7 @@ const LoadingScreen = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.6 }}
           >
-            KÜHEYLAN HUKUK
+            {t("loading.title")}
           </motion.p>
           <motion.div
             className="mt-8 h-0.5 bg-primary rounded-full"

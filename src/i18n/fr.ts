@@ -2,10 +2,10 @@ const fr: Record<string, string> = {
   // Navbar
   "nav.kurumsal": "Le Cabinet",
   "nav.ekibimiz": "Notre Équipe",
-  "nav.faaliyet_alanlari": "Domaines d'Activité",
-  "nav.makaleler": "Base de Connaissances",
-  "nav.tum_makaleler": "Base de Connaissances",
-  "nav.kariyer": "Opportunités de Carrière",
+  "nav.faaliyet_alanlari": "Domaines",
+  "nav.makaleler": "Publications",
+  "nav.tum_makaleler": "Publications",
+  "nav.kariyer": "Carrière",
   "nav.iletisim": "Contact",
 
   // Hero
@@ -132,6 +132,9 @@ const fr: Record<string, string> = {
   // Contact Page
   "contact_page.title": "Contact",
   "contact_page.reach_us": "Contactez-Nous",
+
+  // Loading Screen
+  "loading.title": "KÜHEYLAN CABINET D'AVOCATS",
 };
 
 export default fr;
