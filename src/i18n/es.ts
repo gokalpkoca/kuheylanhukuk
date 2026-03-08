@@ -136,6 +136,40 @@ const es: Record<string, string> = {
 
   // Loading Screen
   "loading.title": "KÜHEYLAN ABOGADOS",
-};
 
-export default es;
+  // Career Page
+  "career.title": "Empleo",
+  "career.subtitle": "Únase a la familia Küheylan y crezcamos juntos.",
+  "career.why_title": "¿Por qué Küheylan?",
+  "career.why1_title": "Crecimiento Profesional",
+  "career.why1_desc": "Invertimos en su carrera con programas de formación continua y apoyo de mentoría.",
+  "career.why2_title": "Enfoque Académico",
+  "career.why2_desc": "Desarróllese en un entorno que combina la academia con la práctica.",
+  "career.why3_title": "Espíritu de Equipo",
+  "career.why3_desc": "Sea parte de un equipo colaborativo, solidario y dinámico.",
+  "career.positions_title": "Puestos Abiertos",
+  "career.fulltime": "Tiempo Completo",
+  "career.istanbul": "Estambul",
+  "career.requirements": "Requisitos",
+  "career.apply_now": "Aplicar",
+  "career.pos_lawyer": "Abogado",
+  "career.pos_lawyer_desc": "Buscamos un abogado experimentado para participar activamente en procesos de litigación y asesoría.",
+  "career.pos_lawyer_req1": "Título en derecho de una universidad acreditada",
+  "career.pos_lawyer_req2": "Mínimo 2 años de experiencia profesional",
+  "career.pos_lawyer_req3": "Buen dominio del inglés",
+  "career.pos_lawyer_req4": "Orientado al trabajo en equipo con habilidades analíticas",
+  "career.pos_intern": "Abogado Pasante",
+  "career.pos_intern_desc": "Invitamos a graduados de derecho o estudiantes de último año a nuestro programa de pasantías.",
+  "career.pos_intern_req1": "Estudiante de último año de derecho o graduado",
+  "career.pos_intern_req2": "Habilidades de investigación y análisis",
+  "career.pos_intern_req3": "Con ganas de aprender y altamente motivado",
+  "career.form_title": "Formulario de Solicitud",
+  "career.form_subtitle": "Envíe su solicitud completando el formulario a continuación.",
+  "career.position_label": "Puesto",
+  "career.position_placeholder": "Puesto al que aplica",
+  "career.cover_letter": "Carta de Presentación",
+  "career.cover_letter_placeholder": "Preséntese brevemente y explique por qué aplica...",
+  "career.send_application": "Enviar Solicitud",
+  "career.application": "Solicitud de Empleo",
+  "career.general_application": "Solicitud General",
+};

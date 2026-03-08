@@ -136,6 +136,40 @@ const ru: Record<string, string> = {
 
   // Loading Screen
   "loading.title": "КЮХЕЙЛАН ЮРИДИЧЕСКАЯ ФИРМА",
-};
 
-export default ru;
+  // Career Page
+  "career.title": "Вакансии",
+  "career.subtitle": "Присоединяйтесь к семье Küheylan и давайте расти вместе.",
+  "career.why_title": "Почему Küheylan?",
+  "career.why1_title": "Профессиональный Рост",
+  "career.why1_desc": "Мы инвестируем в вашу карьеру с помощью программ непрерывного обучения и менторской поддержки.",
+  "career.why2_title": "Академический Подход",
+  "career.why2_desc": "Развивайтесь в среде, сочетающей академические знания с практикой.",
+  "career.why3_title": "Командный Дух",
+  "career.why3_desc": "Станьте частью сплочённой, поддерживающей и динамичной команды.",
+  "career.positions_title": "Открытые Вакансии",
+  "career.fulltime": "Полная Занятость",
+  "career.istanbul": "Стамбул",
+  "career.requirements": "Требования",
+  "career.apply_now": "Подать заявку",
+  "career.pos_lawyer": "Адвокат",
+  "career.pos_lawyer_desc": "Мы ищем опытного адвоката для активного участия в судебных и консультационных процессах.",
+  "career.pos_lawyer_req1": "Юридическое образование в аккредитованном университете",
+  "career.pos_lawyer_req2": "Минимум 2 года профессионального опыта",
+  "career.pos_lawyer_req3": "Хорошее знание английского языка",
+  "career.pos_lawyer_req4": "Командная работа и аналитическое мышление",
+  "career.pos_intern": "Стажёр-Адвокат",
+  "career.pos_intern_desc": "Мы приглашаем выпускников юридических факультетов или студентов последнего курса на нашу программу стажировки.",
+  "career.pos_intern_req1": "Студент последнего курса юридического факультета или выпускник",
+  "career.pos_intern_req2": "Навыки исследования и анализа",
+  "career.pos_intern_req3": "Стремление к обучению и высокая мотивация",
+  "career.form_title": "Форма Заявки",
+  "career.form_subtitle": "Отправьте заявку, заполнив форму ниже.",
+  "career.position_label": "Должность",
+  "career.position_placeholder": "Должность, на которую вы претендуете",
+  "career.cover_letter": "Сопроводительное Письмо",
+  "career.cover_letter_placeholder": "Кратко представьтесь и объясните, почему вы подаёте заявку...",
+  "career.send_application": "Отправить Заявку",
+  "career.application": "Заявка на Вакансию",
+  "career.general_application": "Общая Заявка",
+};

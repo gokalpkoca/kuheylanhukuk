@@ -136,6 +136,40 @@ const tr: Record<string, string> = {
 
   // Loading Screen
   "loading.title": "KÜHEYLAN HUKUK",
-};
 
-export default tr;
+  // Career Page
+  "career.title": "Kariyer",
+  "career.subtitle": "Küheylan Hukuk ailesine katılın, birlikte büyüyelim.",
+  "career.why_title": "Neden Küheylan Hukuk?",
+  "career.why1_title": "Profesyonel Gelişim",
+  "career.why1_desc": "Sürekli eğitim programları ve mentorluk desteğiyle mesleki gelişiminize yatırım yapıyoruz.",
+  "career.why2_title": "Akademik Yaklaşım",
+  "career.why2_desc": "Akademi ile pratiği birleştiren bir çalışma ortamında kendinizi geliştirebilirsiniz.",
+  "career.why3_title": "Takım Ruhu",
+  "career.why3_desc": "İşbirliğine dayalı, destekleyici ve dinamik bir ekibin parçası olursunuz.",
+  "career.positions_title": "Açık Pozisyonlar",
+  "career.fulltime": "Tam Zamanlı",
+  "career.istanbul": "İstanbul",
+  "career.requirements": "Aranan Nitelikler",
+  "career.apply_now": "Başvur",
+  "career.pos_lawyer": "Avukat",
+  "career.pos_lawyer_desc": "Büromuzda çeşitli hukuk alanlarında dava ve danışmanlık süreçlerinde aktif rol alacak deneyimli avukat arayışındayız.",
+  "career.pos_lawyer_req1": "Hukuk Fakültesi mezunu olmak",
+  "career.pos_lawyer_req2": "En az 2 yıl mesleki deneyim",
+  "career.pos_lawyer_req3": "İyi derecede İngilizce bilgisi",
+  "career.pos_lawyer_req4": "Takım çalışmasına yatkın, analitik düşünce yapısına sahip olmak",
+  "career.pos_intern": "Stajyer Avukat",
+  "career.pos_intern_desc": "Hukuk Fakültesi mezunu veya son sınıf öğrencilerini staj programımıza davet ediyoruz.",
+  "career.pos_intern_req1": "Hukuk Fakültesi son sınıf öğrencisi veya mezunu olmak",
+  "career.pos_intern_req2": "Araştırma ve analiz becerisine sahip olmak",
+  "career.pos_intern_req3": "Öğrenmeye açık ve motivasyonu yüksek olmak",
+  "career.form_title": "Başvuru Formu",
+  "career.form_subtitle": "Aşağıdaki formu doldurarak başvurunuzu iletebilirsiniz.",
+  "career.position_label": "Pozisyon",
+  "career.position_placeholder": "Başvurmak istediğiniz pozisyon",
+  "career.cover_letter": "Ön Yazı",
+  "career.cover_letter_placeholder": "Kendinizi kısaca tanıtın ve neden başvurduğunuzu belirtin...",
+  "career.send_application": "Başvuruyu Gönder",
+  "career.application": "Kariyer Başvurusu",
+  "career.general_application": "Genel Başvuru",
+};

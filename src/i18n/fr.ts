@@ -136,6 +136,40 @@ const fr: Record<string, string> = {
 
   // Loading Screen
   "loading.title": "KÜHEYLAN CABINET D'AVOCATS",
-};
 
-export default fr;
+  // Career Page
+  "career.title": "Carrière",
+  "career.subtitle": "Rejoignez la famille Küheylan et grandissons ensemble.",
+  "career.why_title": "Pourquoi Küheylan?",
+  "career.why1_title": "Développement Professionnel",
+  "career.why1_desc": "Nous investissons dans votre carrière avec des programmes de formation continue et un soutien de mentorat.",
+  "career.why2_title": "Approche Académique",
+  "career.why2_desc": "Développez-vous dans un environnement qui allie l'académie à la pratique.",
+  "career.why3_title": "Esprit d'Équipe",
+  "career.why3_desc": "Faites partie d'une équipe collaborative, solidaire et dynamique.",
+  "career.positions_title": "Postes Ouverts",
+  "career.fulltime": "Temps Plein",
+  "career.istanbul": "Istanbul",
+  "career.requirements": "Qualifications Requises",
+  "career.apply_now": "Postuler",
+  "career.pos_lawyer": "Avocat",
+  "career.pos_lawyer_desc": "Nous recherchons un avocat expérimenté pour participer activement aux procédures judiciaires et de conseil.",
+  "career.pos_lawyer_req1": "Diplôme en droit d'une université accréditée",
+  "career.pos_lawyer_req2": "Minimum 2 ans d'expérience professionnelle",
+  "career.pos_lawyer_req3": "Bonne maîtrise de l'anglais",
+  "career.pos_lawyer_req4": "Esprit d'équipe et capacité d'analyse",
+  "career.pos_intern": "Avocat Stagiaire",
+  "career.pos_intern_desc": "Nous invitons les diplômés en droit ou les étudiants en dernière année à notre programme de stage.",
+  "career.pos_intern_req1": "Étudiant en dernière année de droit ou diplômé",
+  "career.pos_intern_req2": "Compétences en recherche et en analyse",
+  "career.pos_intern_req3": "Désireux d'apprendre et très motivé",
+  "career.form_title": "Formulaire de Candidature",
+  "career.form_subtitle": "Soumettez votre candidature en remplissant le formulaire ci-dessous.",
+  "career.position_label": "Poste",
+  "career.position_placeholder": "Poste pour lequel vous postulez",
+  "career.cover_letter": "Lettre de Motivation",
+  "career.cover_letter_placeholder": "Présentez-vous brièvement et expliquez pourquoi vous postulez...",
+  "career.send_application": "Envoyer la Candidature",
+  "career.application": "Candidature de Carrière",
+  "career.general_application": "Candidature Générale",
+};

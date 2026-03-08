@@ -136,6 +136,40 @@ const ar: Record<string, string> = {
 
   // Loading Screen
   "loading.title": "كوهيلان للمحاماة",
-};
 
-export default ar;
+  // Career Page
+  "career.title": "الفرص المهنية",
+  "career.subtitle": "انضم إلى عائلة كوهيلان للمحاماة ولننمو معاً.",
+  "career.why_title": "لماذا كوهيلان للمحاماة؟",
+  "career.why1_title": "التطوير المهني",
+  "career.why1_desc": "نستثمر في مسيرتك المهنية من خلال برامج التدريب المستمر ودعم التوجيه.",
+  "career.why2_title": "النهج الأكاديمي",
+  "career.why2_desc": "طوّر نفسك في بيئة تجمع بين الأكاديميا والممارسة.",
+  "career.why3_title": "روح الفريق",
+  "career.why3_desc": "كن جزءاً من فريق تعاوني وداعم وديناميكي.",
+  "career.positions_title": "الوظائف المتاحة",
+  "career.fulltime": "دوام كامل",
+  "career.istanbul": "إسطنبول",
+  "career.requirements": "المتطلبات",
+  "career.apply_now": "تقدم الآن",
+  "career.pos_lawyer": "محامي",
+  "career.pos_lawyer_desc": "نبحث عن محامٍ ذي خبرة للمشاركة الفعالة في إجراءات التقاضي والاستشارات.",
+  "career.pos_lawyer_req1": "شهادة في القانون من جامعة معتمدة",
+  "career.pos_lawyer_req2": "خبرة مهنية لا تقل عن سنتين",
+  "career.pos_lawyer_req3": "إتقان جيد للغة الإنجليزية",
+  "career.pos_lawyer_req4": "روح العمل الجماعي ومهارات التفكير التحليلي",
+  "career.pos_intern": "محامي متدرب",
+  "career.pos_intern_desc": "ندعو خريجي كليات القانون أو طلاب السنة الأخيرة للانضمام إلى برنامج التدريب.",
+  "career.pos_intern_req1": "طالب في السنة الأخيرة في القانون أو خريج",
+  "career.pos_intern_req2": "مهارات بحث وتحليل قوية",
+  "career.pos_intern_req3": "شغوف بالتعلم وذو حافز عالٍ",
+  "career.form_title": "نموذج التقديم",
+  "career.form_subtitle": "قدم طلبك عن طريق ملء النموذج أدناه.",
+  "career.position_label": "المنصب",
+  "career.position_placeholder": "المنصب الذي تتقدم له",
+  "career.cover_letter": "خطاب التقديم",
+  "career.cover_letter_placeholder": "قدم نفسك باختصار واشرح سبب تقدمك...",
+  "career.send_application": "إرسال الطلب",
+  "career.application": "طلب توظيف",
+  "career.general_application": "طلب عام",
+};
