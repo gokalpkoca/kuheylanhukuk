@@ -33,7 +33,7 @@ const Navbar = () => {
     { label: t("nav.ekibimiz"), href: "#ekibimiz" },
     { label: t("nav.faaliyet_alanlari"), href: "/faaliyet-alanlari", dropdown: "practiceAreas", isPage: true },
     { label: t("nav.makaleler"), href: "/blog", dropdown: "articles" },
-    { label: t("nav.kariyer"), href: "#kariyer" },
+    { label: t("nav.kariyer"), href: "/kariyer", isPage: true },
     { label: t("nav.iletisim"), href: "/iletisim", isPage: true },
   ];
 
