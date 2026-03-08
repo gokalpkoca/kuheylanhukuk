@@ -136,6 +136,42 @@ const en: Record<string, string> = {
 
   // Loading Screen
   "loading.title": "KÜHEYLAN LAW FIRM",
+
+  // Career Page
+  "career.title": "Careers",
+  "career.subtitle": "Join the Küheylan Law family and grow together.",
+  "career.why_title": "Why Küheylan Law?",
+  "career.why1_title": "Professional Growth",
+  "career.why1_desc": "We invest in your career with continuous training programs and mentorship support.",
+  "career.why2_title": "Academic Approach",
+  "career.why2_desc": "Develop yourself in an environment that combines academia with practice.",
+  "career.why3_title": "Team Spirit",
+  "career.why3_desc": "Be part of a collaborative, supportive, and dynamic team.",
+  "career.positions_title": "Open Positions",
+  "career.fulltime": "Full-Time",
+  "career.istanbul": "Istanbul",
+  "career.requirements": "Requirements",
+  "career.apply_now": "Apply",
+  "career.pos_lawyer": "Attorney",
+  "career.pos_lawyer_desc": "We are looking for an experienced attorney to actively participate in litigation and advisory processes across various legal fields.",
+  "career.pos_lawyer_req1": "Law degree from an accredited university",
+  "career.pos_lawyer_req2": "Minimum 2 years of professional experience",
+  "career.pos_lawyer_req3": "Good command of English",
+  "career.pos_lawyer_req4": "Team-oriented with strong analytical thinking skills",
+  "career.pos_intern": "Intern Attorney",
+  "career.pos_intern_desc": "We invite law school graduates or final-year students to our internship program.",
+  "career.pos_intern_req1": "Final-year law student or law graduate",
+  "career.pos_intern_req2": "Strong research and analytical skills",
+  "career.pos_intern_req3": "Eager to learn and highly motivated",
+  "career.form_title": "Application Form",
+  "career.form_subtitle": "Submit your application by filling out the form below.",
+  "career.position_label": "Position",
+  "career.position_placeholder": "Position you are applying for",
+  "career.cover_letter": "Cover Letter",
+  "career.cover_letter_placeholder": "Briefly introduce yourself and explain why you are applying...",
+  "career.send_application": "Submit Application",
+  "career.application": "Career Application",
+  "career.general_application": "General Application",
 };
 
 export default en;
