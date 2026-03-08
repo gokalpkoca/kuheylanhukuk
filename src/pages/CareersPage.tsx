@@ -128,16 +128,9 @@ const CareersPage = () => {
       {/* Open Positions */}
       <section className="pb-16 lg:pb-20">
         <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-center mb-10"
-          >
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground font-bold">
-              {t("career.positions_title")}
-            </h2>
-          </motion.div>
+          <h2 className="font-serif text-2xl md:text-3xl text-foreground font-bold text-center mb-10">
+            {t("career.positions_title")}
+          </h2>
 
           <div className="space-y-4">
             {positions.map((pos, i) => (
