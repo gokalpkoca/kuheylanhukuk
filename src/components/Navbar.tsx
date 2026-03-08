@@ -90,22 +90,22 @@ const Navbar = () => {
             {navItems.map((item) =>
               item.dropdown === "practiceAreas" ? (
               <div key={item.href} className="relative" ref={dropdownRef}>
-                  <div className="flex items-center">
-                    <Link
-                      to="/faaliyet-alanlari"
-                      className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200 tracking-wide uppercase"
-                    >
-                      {item.label}
-                    </Link>
-                    <button
-                      onClick={() => setDropdownOpen(!dropdownOpen)}
-                      className="text-muted-foreground hover:text-primary transition-colors -ml-1"
-                    >
-                      <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""}`} />
-                    </button>
-                  </div>
+                  <button
+                    onClick={() => setDropdownOpen(!dropdownOpen)}
+                    className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200 tracking-wide uppercase"
+                  >
+                    {item.label}
+                    <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""}`} />
+                  </button>
                   {dropdownOpen && (
                     <div className="absolute top-full left-0 mt-1 w-72 bg-card border border-border rounded shadow-xl shadow-black/30 z-50 py-2 max-h-[70vh] overflow-y-auto">
+                      <Link
+                        to="/faaliyet-alanlari"
+                        onClick={() => setDropdownOpen(false)}
+                        className="block px-4 py-2.5 text-sm font-medium text-foreground hover:text-primary hover:bg-secondary transition-colors border-b border-border"
+                      >
+                        {t("nav.tum_faaliyet_alanlari")}
+                      </Link>
                       {practiceAreaData.map((area) => (
                         <Link
                           key={area.slug}
@@ -228,14 +228,36 @@ const Navbar = () => {
           <div ref={mobileMenuRef} className="xl:hidden bg-card border-t border-border pb-4 rounded-b shadow-xl shadow-black/20">
             {navItems.map((item) =>
               item.dropdown === "practiceAreas" ? (
-                <Link
-                  key={item.href}
-                  to="/faaliyet-alanlari"
-                  onClick={() => setIsOpen(false)}
-                  className="block py-3 px-4 text-sm uppercase tracking-wide text-muted-foreground hover:text-primary transition-colors"
-                >
-                  {item.label}
-                </Link>
+                <div key={item.href}>
+                  <button
+                    onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
+                    className="flex items-center justify-between w-full py-3 px-4 text-sm uppercase tracking-wide text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    {item.label}
+                    <ChevronDown className={`w-4 h-4 transition-transform ${mobileDropdownOpen ? "rotate-180" : ""}`} />
+                  </button>
+                  {mobileDropdownOpen && (
+                    <div className="bg-secondary border-t border-b border-border">
+                      <Link
+                        to="/faaliyet-alanlari"
+                        onClick={() => { setIsOpen(false); setMobileDropdownOpen(false); }}
+                        className="block py-2.5 px-8 text-sm font-medium text-foreground hover:text-primary transition-colors"
+                      >
+                        {t("nav.tum_faaliyet_alanlari")}
+                      </Link>
+                      {practiceAreaData.map((area) => (
+                        <Link
+                          key={area.slug}
+                          to={`/faaliyet-alanlari/${area.slug}`}
+                          onClick={() => { setIsOpen(false); setMobileDropdownOpen(false); }}
+                          className="block py-2.5 px-8 text-sm text-muted-foreground hover:text-primary transition-colors"
+                        >
+                          {t(`pa.${area.slug}`)}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
               ) : item.dropdown === "articles" ? (
                 <div key={item.href}>
                   <button
