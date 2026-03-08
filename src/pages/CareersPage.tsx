@@ -95,9 +95,6 @@ const CareersPage = () => {
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-dark-surface-foreground font-bold">
             {t("career.title")}
           </h1>
-          <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
-            {t("career.subtitle")}
-          </p>
           <div className="w-16 h-px bg-muted-foreground/40 mx-auto mt-6" />
         </motion.div>
       </section>
@@ -105,16 +102,6 @@ const CareersPage = () => {
       {/* Why Join Us */}
       <section className="py-16 lg:py-20">
         <div className="container mx-auto px-4 lg:px-8 max-w-5xl">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-12"
-          >
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground font-bold">
-              {t("career.why_title")}
-            </h2>
-          </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { icon: <Briefcase className="w-8 h-8" />, title: t("career.why1_title"), desc: t("career.why1_desc") },
@@ -128,11 +115,10 @@ const CareersPage = () => {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="bg-card border border-border rounded-lg p-8 text-center"
               >
-                <div className="w-16 h-16 rounded-full bg-muted border border-border flex items-center justify-center mx-auto mb-5 text-primary">
+                <div className="w-14 h-14 rounded-full bg-muted border border-border flex items-center justify-center mx-auto mb-4 text-primary">
                   {item.icon}
                 </div>
-                <h3 className="font-serif text-lg text-foreground font-semibold mb-3">{item.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+                <h3 className="font-serif text-base text-foreground font-semibold">{item.title}</h3>
               </motion.div>
             ))}
           </div>
@@ -142,16 +128,9 @@ const CareersPage = () => {
       {/* Open Positions */}
       <section className="pb-16 lg:pb-20">
         <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-center mb-10"
-          >
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground font-bold">
-              {t("career.positions_title")}
-            </h2>
-          </motion.div>
+          <h2 className="font-serif text-2xl md:text-3xl text-foreground font-bold text-center mb-10">
+            {t("career.positions_title")}
+          </h2>
 
           <div className="space-y-4">
             {positions.map((pos, i) => (
@@ -214,12 +193,9 @@ const CareersPage = () => {
             <div className="relative bg-card border border-border rounded-lg p-8 md:p-12 overflow-hidden">
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent" />
 
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground font-bold text-center mb-2">
+              <h2 className="font-serif text-2xl md:text-3xl text-foreground font-bold text-center mb-10">
                 {t("career.form_title")}
               </h2>
-              <p className="text-muted-foreground text-center text-sm mb-10">
-                {t("career.form_subtitle")}
-              </p>
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
