@@ -193,12 +193,9 @@ const CareersPage = () => {
             <div className="relative bg-card border border-border rounded-lg p-8 md:p-12 overflow-hidden">
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent" />
 
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground font-bold text-center mb-2">
+              <h2 className="font-serif text-2xl md:text-3xl text-foreground font-bold text-center mb-10">
                 {t("career.form_title")}
               </h2>
-              <p className="text-muted-foreground text-center text-sm mb-10">
-                {t("career.form_subtitle")}
-              </p>
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
