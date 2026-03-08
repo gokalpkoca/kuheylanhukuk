@@ -10,6 +10,7 @@ import PracticeAreaDetail from "./pages/PracticeAreaDetail";
 import PracticeAreasPage from "./pages/PracticeAreasPage";
 import ContactPage from "./pages/ContactPage";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import CareersPage from "./pages/CareersPage";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 import LoadingScreen from "./components/LoadingScreen";
