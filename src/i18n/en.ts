@@ -5,6 +5,7 @@ const en: Record<string, string> = {
   "nav.faaliyet_alanlari": "Practice Areas",
   "nav.makaleler": "Knowledge Base",
   "nav.tum_makaleler": "Knowledge Base",
+  "nav.tum_faaliyet_alanlari": "All Practice Areas",
   "nav.kariyer": "Careers",
   "nav.iletisim": "Contact",
 
