@@ -115,11 +115,10 @@ const CareersPage = () => {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="bg-card border border-border rounded-lg p-8 text-center"
               >
-                <div className="w-16 h-16 rounded-full bg-muted border border-border flex items-center justify-center mx-auto mb-5 text-primary">
+                <div className="w-14 h-14 rounded-full bg-muted border border-border flex items-center justify-center mx-auto mb-4 text-primary">
                   {item.icon}
                 </div>
-                <h3 className="font-serif text-lg text-foreground font-semibold mb-3">{item.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+                <h3 className="font-serif text-base text-foreground font-semibold">{item.title}</h3>
               </motion.div>
             ))}
           </div>
