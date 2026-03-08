@@ -173,3 +173,5 @@ const en: Record<string, string> = {
   "career.application": "Career Application",
   "career.general_application": "General Application",
 };
+
+export default en;

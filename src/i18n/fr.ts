@@ -173,3 +173,5 @@ const fr: Record<string, string> = {
   "career.application": "Candidature de Carrière",
   "career.general_application": "Candidature Générale",
 };
+
+export default fr;

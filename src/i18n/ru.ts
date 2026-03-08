@@ -173,3 +173,5 @@ const ru: Record<string, string> = {
   "career.application": "Заявка на Вакансию",
   "career.general_application": "Общая Заявка",
 };
+
+export default ru;

@@ -173,3 +173,5 @@ const ar: Record<string, string> = {
   "career.application": "طلب توظيف",
   "career.general_application": "طلب عام",
 };
+
+export default ar;
