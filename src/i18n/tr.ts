@@ -173,3 +173,5 @@ const tr: Record<string, string> = {
   "career.application": "Kariyer Başvurusu",
   "career.general_application": "Genel Başvuru",
 };
+
+export default tr;
