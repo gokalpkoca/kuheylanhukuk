@@ -161,7 +161,7 @@ const Navbar = () => {
               ) : (
                 <a
                   key={item.href}
-                  href={item.href}
+                  href={item.href.startsWith("#") ? `/${item.href}` : item.href}
                   className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200 tracking-wide uppercase"
                 >
                   {item.label}
