@@ -228,14 +228,36 @@ const Navbar = () => {
           <div ref={mobileMenuRef} className="xl:hidden bg-card border-t border-border pb-4 rounded-b shadow-xl shadow-black/20">
             {navItems.map((item) =>
               item.dropdown === "practiceAreas" ? (
-                <Link
-                  key={item.href}
-                  to="/faaliyet-alanlari"
-                  onClick={() => setIsOpen(false)}
-                  className="block py-3 px-4 text-sm uppercase tracking-wide text-muted-foreground hover:text-primary transition-colors"
-                >
-                  {item.label}
-                </Link>
+                <div key={item.href}>
+                  <button
+                    onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
+                    className="flex items-center justify-between w-full py-3 px-4 text-sm uppercase tracking-wide text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    {item.label}
+                    <ChevronDown className={`w-4 h-4 transition-transform ${mobileDropdownOpen ? "rotate-180" : ""}`} />
+                  </button>
+                  {mobileDropdownOpen && (
+                    <div className="bg-secondary border-t border-b border-border">
+                      <Link
+                        to="/faaliyet-alanlari"
+                        onClick={() => { setIsOpen(false); setMobileDropdownOpen(false); }}
+                        className="block py-2.5 px-8 text-sm font-medium text-foreground hover:text-primary transition-colors"
+                      >
+                        {t("nav.tum_faaliyet_alanlari")}
+                      </Link>
+                      {practiceAreaData.map((area) => (
+                        <Link
+                          key={area.slug}
+                          to={`/faaliyet-alanlari/${area.slug}`}
+                          onClick={() => { setIsOpen(false); setMobileDropdownOpen(false); }}
+                          className="block py-2.5 px-8 text-sm text-muted-foreground hover:text-primary transition-colors"
+                        >
+                          {t(`pa.${area.slug}`)}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
               ) : item.dropdown === "articles" ? (
                 <div key={item.href}>
                   <button
