@@ -78,13 +78,8 @@ const Navbar = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-1.5 shrink-0">
-            <span className="font-serif text-lg lg:text-xl font-bold text-foreground tracking-wide">
-              KÜHEYLAN
-            </span>
-            <span className="font-serif text-lg lg:text-xl font-light text-primary">
-              HUKUK BÜROSU
-            </span>
+          <a href="/" className="shrink-0">
+            <img src={logo} alt="Küheylan Hukuk Bürosu" className="h-8 lg:h-10 w-auto" />
           </a>
 
           <div className="hidden xl:flex items-center gap-1 whitespace-nowrap">

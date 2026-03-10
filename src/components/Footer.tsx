@@ -19,13 +19,8 @@ const Footer = () => {
       <div className="container mx-auto px-4 lg:px-8 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-1.5 mb-6">
-              <span className="font-serif text-xl font-bold text-dark-surface-foreground tracking-wide">
-                KÜHEYLAN
-              </span>
-              <span className="font-serif text-xl font-light text-primary">
-                HUKUK
-              </span>
+            <div className="mb-6">
+              <img src={logo} alt="Küheylan Hukuk Bürosu" className="h-10 w-auto brightness-0 invert" />
             </div>
             <p className="text-dark-surface-muted text-sm leading-relaxed">
               {t("footer.description")}
