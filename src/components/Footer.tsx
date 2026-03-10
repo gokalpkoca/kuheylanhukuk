@@ -1,4 +1,5 @@
 import { Phone, MapPin, Mail } from "lucide-react";
+import logo from "@/assets/logo.png";
 import { useLanguage } from "@/context/LanguageContext";
 
 const Footer = () => {
