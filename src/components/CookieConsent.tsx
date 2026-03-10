@@ -22,6 +22,11 @@ const CookieConsent = () => {
     setVisible(false);
   };
 
+  const reject = () => {
+    localStorage.setItem(COOKIE_KEY, "rejected");
+    setVisible(false);
+  };
+
   return (
     <AnimatePresence>
       {visible && (
@@ -70,7 +75,7 @@ const CookieConsent = () => {
 
           <div className="flex gap-3 mt-4">
             <button
-              onClick={accept}
+              onClick={reject}
               className="px-6 py-2 bg-primary text-primary-foreground text-sm font-medium rounded hover:opacity-90 transition-opacity"
             >
               {t("cookie.accept")}
