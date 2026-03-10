@@ -22,6 +22,11 @@ const CookieConsent = () => {
     setVisible(false);
   };
 
+  const reject = () => {
+    localStorage.setItem(COOKIE_KEY, "rejected");
+    setVisible(false);
+  };
+
   return (
     <AnimatePresence>
       {visible && (
