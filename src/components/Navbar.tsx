@@ -129,7 +129,7 @@ const Navbar = () => {
                     <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${articleDropdownOpen ? "rotate-180" : ""}`} />
                   </button>
                   {articleDropdownOpen && (
-                    <div className="absolute top-full left-0 mt-1 w-80 bg-card border border-border rounded shadow-xl shadow-black/30 z-50 py-2">
+                    <div className="absolute top-full left-0 mt-1 w-80 bg-card border border-border rounded shadow-xl shadow-black/30 z-50 py-2 max-h-[70vh] overflow-y-auto">
                       <Link
                         to="/blog"
                         onClick={() => setArticleDropdownOpen(false)}
