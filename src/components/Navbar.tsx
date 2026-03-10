@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import logo from "@/assets/logo.png";
 import { Menu, X, Globe, Phone, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import { practiceAreas as practiceAreaData } from "@/data/practiceAreas";
