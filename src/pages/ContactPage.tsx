@@ -23,6 +23,14 @@ const ContactPage = () => {
   const { t } = useLanguage();
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", subject: "", message: "" });
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [mapDialogOpen, setMapDialogOpen] = useState(false);
+
+  const ADDRESS = "Burhaniye, Neşet Bey Sk. NO:12 Kat:3 D:5, 34676 Üsküdar/İstanbul, Türkiye";
+  const mapOptions = [
+    { name: "Google Maps", url: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ADDRESS)}` },
+    { name: "Apple Maps", url: `https://maps.apple.com/?q=${encodeURIComponent(ADDRESS)}` },
+    { name: "Yandex Haritalar", url: `https://yandex.com/maps/?text=${encodeURIComponent(ADDRESS)}` },
+  ];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
