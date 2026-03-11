@@ -54,7 +54,7 @@ const Team = () => {
                 />
               </div>
               <div className="text-center md:text-left">
-                <h3 className="font-serif text-2xl lg:text-3xl text-dark-surface-foreground font-bold mb-1">
+                <h3 className="font-serif text-2xl lg:text-3xl text-dark-surface-foreground font-bold mb-1 transition-all duration-300 hover:scale-105 hover:text-primary cursor-default">
                   {t("team.member_name")}
                 </h3>
                 <p className="text-gold text-sm tracking-wider mb-4">
