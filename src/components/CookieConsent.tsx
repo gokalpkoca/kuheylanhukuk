@@ -75,13 +75,13 @@ const CookieConsent = () => {
 
           <div className="flex gap-3 mt-4">
             <button
-              onClick={reject}
+              onClick={accept}
               className="px-6 py-2 bg-primary text-primary-foreground text-sm font-medium rounded hover:opacity-90 transition-opacity"
             >
               {t("cookie.accept")}
             </button>
             <button
-              onClick={accept}
+              onClick={reject}
               className="px-6 py-2 border border-border text-muted-foreground text-sm font-medium rounded hover:border-primary hover:text-primary transition-colors"
             >
               {t("cookie.reject")}
