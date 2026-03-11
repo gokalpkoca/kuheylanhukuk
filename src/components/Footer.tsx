@@ -22,7 +22,7 @@ const Footer = () => {
             <div className="mb-6">
               <img src={logo} alt="Küheylan Hukuk Bürosu" className="h-10 w-auto brightness-0 invert" />
             </div>
-            <p className="text-dark-surface-muted text-sm leading-relaxed">
+            <p className="text-dark-surface-muted text-sm leading-relaxed text-justify">
               {t("footer.description")}
             </p>
           </div>
