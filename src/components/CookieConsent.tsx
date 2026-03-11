@@ -38,7 +38,7 @@ const CookieConsent = () => {
           className="fixed bottom-4 left-4 right-4 md:left-auto md:right-6 md:max-w-xl z-[100] bg-card border border-border rounded-lg shadow-2xl shadow-black/30 p-6"
         >
           <button
-            onClick={accept}
+            onClick={() => setVisible(false)}
             className="absolute top-3 right-3 text-muted-foreground hover:text-foreground transition-colors"
             aria-label="Kapat"
           >
@@ -75,13 +75,13 @@ const CookieConsent = () => {
 
           <div className="flex gap-3 mt-4">
             <button
-              onClick={reject}
+              onClick={accept}
               className="px-6 py-2 bg-primary text-primary-foreground text-sm font-medium rounded hover:opacity-90 transition-opacity"
             >
               {t("cookie.accept")}
             </button>
             <button
-              onClick={accept}
+              onClick={reject}
               className="px-6 py-2 border border-border text-muted-foreground text-sm font-medium rounded hover:border-primary hover:text-primary transition-colors"
             >
               {t("cookie.reject")}
