@@ -32,15 +32,15 @@ const PracticeAreas = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-center mb-12"
         >
-          <a
-            href="#faaliyet-alanlari"
+          <Link
+            to="/faaliyet-alanlari"
             className="inline-flex items-center gap-2 text-primary text-sm font-medium hover:underline"
           >
             {t("practice.view_all")}
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-          </a>
+          </Link>
         </motion.div>
 
         <div className="overflow-x-auto pb-4 pt-2 -mx-4 px-4">
