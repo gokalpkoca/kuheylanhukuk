@@ -1,6 +1,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin, Send } from "lucide-react";
+import { Phone, Mail, MapPin, Send, Navigation } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
@@ -17,6 +23,14 @@ const ContactPage = () => {
   const { t } = useLanguage();
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", subject: "", message: "" });
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [mapDialogOpen, setMapDialogOpen] = useState(false);
+
+  const ADDRESS = "Burhaniye, Neşet Bey Sk. NO:12 Kat:3 D:5, 34676 Üsküdar/İstanbul, Türkiye";
+  const mapOptions = [
+    { name: "Google Maps", url: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ADDRESS)}` },
+    { name: "Apple Maps", url: `https://maps.apple.com/?q=${encodeURIComponent(ADDRESS)}` },
+    { name: "Yandex Haritalar", url: `https://yandex.com/maps/?text=${encodeURIComponent(ADDRESS)}` },
+  ];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -62,8 +76,8 @@ const ContactPage = () => {
     {
       icon: <MapPin className="w-8 h-8" />,
       title: t("contact.address"),
-      detail: "Burhaniye, Neşet Bey Sk. NO:12 Kat:3 D:5, 34676 Üsküdar/İstanbul, Türkiye",
-      href: "https://maps.google.com/?q=Burhaniye,+Ne%C5%9Fet+Bey+Sk.+NO:12+Kat:3+D:5,+34676+%C3%9Csk%C3%BCdar/%C4%B0stanbul",
+      detail: ADDRESS,
+      onClick: () => setMapDialogOpen(true),
     },
   ];
 
@@ -108,13 +122,17 @@ const ContactPage = () => {
                     <p className="text-muted-foreground text-sm leading-relaxed">{card.detail}</p>
                   </a>
                 ) : (
-                  <div className="bg-card border border-border rounded-lg p-8 text-center h-full">
+                  <button
+                    type="button"
+                    onClick={card.onClick}
+                    className="w-full bg-card border border-border rounded-lg p-8 text-center hover:border-primary/50 hover:shadow-lg transition-all duration-300 h-full cursor-pointer"
+                  >
                     <div className="w-16 h-16 rounded-full bg-muted border border-border flex items-center justify-center mx-auto mb-5 text-primary">
                       {card.icon}
                     </div>
                     <h3 className="font-serif text-xl text-foreground font-semibold mb-3">{card.title}</h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">{card.detail}</p>
-                  </div>
+                  </button>
                 )}
               </motion.div>
             ))}
@@ -207,6 +225,32 @@ const ContactPage = () => {
       </section>
 
       <Footer />
+
+      <Dialog open={mapDialogOpen} onOpenChange={setMapDialogOpen}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle className="font-serif text-xl flex items-center gap-2">
+              <Navigation className="w-5 h-5 text-primary" />
+              Harita Uygulaması Seçin
+            </DialogTitle>
+          </DialogHeader>
+          <div className="grid gap-3 pt-2">
+            {mapOptions.map((option) => (
+              <a
+                key={option.name}
+                href={option.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 p-4 rounded-lg border border-border bg-muted/30 hover:bg-muted hover:border-primary/50 transition-all duration-200"
+                onClick={() => setMapDialogOpen(false)}
+              >
+                <MapPin className="w-5 h-5 text-primary shrink-0" />
+                <span className="text-sm font-medium text-foreground">{option.name}</span>
+              </a>
+            ))}
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
