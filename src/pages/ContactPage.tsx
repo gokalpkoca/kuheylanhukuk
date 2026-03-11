@@ -76,8 +76,8 @@ const ContactPage = () => {
     {
       icon: <MapPin className="w-8 h-8" />,
       title: t("contact.address"),
-      detail: "Burhaniye, Neşet Bey Sk. NO:12 Kat:3 D:5, 34676 Üsküdar/İstanbul, Türkiye",
-      href: "https://maps.google.com/?q=Burhaniye,+Ne%C5%9Fet+Bey+Sk.+NO:12+Kat:3+D:5,+34676+%C3%9Csk%C3%BCdar/%C4%B0stanbul",
+      detail: ADDRESS,
+      onClick: () => setMapDialogOpen(true),
     },
   ];
 
