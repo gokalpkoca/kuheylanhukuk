@@ -16,23 +16,23 @@ const Team = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-6"
-        >
+          className="text-center mb-6">
+          
           <p className="text-gold uppercase tracking-[0.2em] text-sm font-medium mb-4">
             {t("team.subtitle")}
           </p>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-dark-surface-foreground font-bold">
             {t("team.title")}
           </h2>
-          <div className="w-16 h-px bg-white/30 mx-auto mt-6 mb-8" />
+          
         </motion.div>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-dark-surface-muted text-justify max-w-3xl mx-auto mb-16 leading-relaxed"
-        >
+          className="text-dark-surface-muted text-justify max-w-3xl mx-auto mb-16 leading-relaxed">
+          
           {t("team.description")}
         </motion.p>
 
@@ -41,8 +41,8 @@ const Team = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="max-w-4xl mx-auto"
-        >
+          className="max-w-4xl mx-auto">
+          
           <div className="border border-white/10 rounded bg-white/5 p-8 lg:p-12">
             {/* Top: Photo + Name + Contact */}
             <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-10">
@@ -50,8 +50,8 @@ const Team = () => {
                 <img
                   src={mertDenizPhoto}
                   alt="Mert Deniz Küheylan"
-                  className="w-full h-full object-cover object-[center_15%]"
-                />
+                  className="w-full h-full object-cover object-[center_15%]" />
+                
               </div>
               <div className="text-center md:text-left">
                 <h3 className="font-serif text-2xl lg:text-3xl text-dark-surface-foreground font-bold mb-1">
@@ -143,8 +143,8 @@ const Team = () => {
           </div>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Team;
