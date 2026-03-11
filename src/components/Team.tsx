@@ -57,7 +57,7 @@ const Team = () => {
                 <h3 className="font-serif text-2xl lg:text-3xl text-dark-surface-foreground font-bold mb-1 transition-all duration-300 hover:scale-105 hover:text-primary cursor-default">
                   {t("team.member_name")}
                 </h3>
-                <p className="text-gold text-sm tracking-wider mb-4">
+                <p className="text-gold text-sm tracking-wider mb-4 transition-all duration-300 hover:scale-105 hover:text-primary cursor-default">
                   {t("team.founder")}
                 </p>
                 <div className="flex flex-col sm:flex-row items-center gap-4 text-dark-surface-muted text-sm">
