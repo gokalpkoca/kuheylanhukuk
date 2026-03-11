@@ -225,6 +225,32 @@ const ContactPage = () => {
       </section>
 
       <Footer />
+
+      <Dialog open={mapDialogOpen} onOpenChange={setMapDialogOpen}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle className="font-serif text-xl flex items-center gap-2">
+              <Navigation className="w-5 h-5 text-primary" />
+              Harita Uygulaması Seçin
+            </DialogTitle>
+          </DialogHeader>
+          <div className="grid gap-3 pt-2">
+            {mapOptions.map((option) => (
+              <a
+                key={option.name}
+                href={option.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 p-4 rounded-lg border border-border bg-muted/30 hover:bg-muted hover:border-primary/50 transition-all duration-200"
+                onClick={() => setMapDialogOpen(false)}
+              >
+                <MapPin className="w-5 h-5 text-primary shrink-0" />
+                <span className="text-sm font-medium text-foreground">{option.name}</span>
+              </a>
+            ))}
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
