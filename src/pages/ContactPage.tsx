@@ -122,13 +122,17 @@ const ContactPage = () => {
                     <p className="text-muted-foreground text-sm leading-relaxed">{card.detail}</p>
                   </a>
                 ) : (
-                  <div className="bg-card border border-border rounded-lg p-8 text-center h-full">
+                  <button
+                    type="button"
+                    onClick={card.onClick}
+                    className="w-full bg-card border border-border rounded-lg p-8 text-center hover:border-primary/50 hover:shadow-lg transition-all duration-300 h-full cursor-pointer"
+                  >
                     <div className="w-16 h-16 rounded-full bg-muted border border-border flex items-center justify-center mx-auto mb-5 text-primary">
                       {card.icon}
                     </div>
                     <h3 className="font-serif text-xl text-foreground font-semibold mb-3">{card.title}</h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">{card.detail}</p>
-                  </div>
+                  </button>
                 )}
               </motion.div>
             ))}
