@@ -63,7 +63,7 @@ const Team = () => {
                 <div className="flex flex-col sm:flex-row items-center gap-4 text-dark-surface-muted text-sm">
                   <div className="flex items-center gap-2">
                     <Mail className="w-4 h-4 text-gold" />
-                    <span>av.mdkuheylan@hotmail.com</span>
+                    <a href="mailto:av.mdkuheylan@hotmail.com" className="hover:text-gold transition-colors duration-300">av.mdkuheylan@hotmail.com</a>
                   </div>
                   <div className="flex items-center gap-2">
                     <Globe className="w-4 h-4 text-gold" />
