@@ -93,7 +93,7 @@ const Team = () => {
 
             {/* Section: Çok Yönlü Bakış */}
             <div className="mb-8">
-              <h4 className="font-serif text-lg text-dark-surface-foreground font-semibold mb-3 border-l-2 border-gold pl-4">
+              <h4 className="font-serif text-lg text-dark-surface-foreground font-semibold mb-3 border-l-2 border-gold pl-4 transition-all duration-300 hover:scale-[1.03] hover:text-primary origin-left cursor-default">
                 {t("team.bio_strategy_title")}
               </h4>
               <p className="text-dark-surface-muted leading-relaxed text-justify">
