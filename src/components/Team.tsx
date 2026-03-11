@@ -103,7 +103,7 @@ const Team = () => {
 
             {/* Section: Sivil Toplum */}
             <div className="mb-8">
-              <h4 className="font-serif text-lg text-dark-surface-foreground font-semibold mb-3 border-l-2 border-gold pl-4">
+              <h4 className="font-serif text-lg text-dark-surface-foreground font-semibold mb-3 border-l-2 border-gold pl-4 transition-all duration-500 hover:border-l-4 hover:text-gold hover:pl-5 cursor-default">
                 {t("team.bio_civil_title")}
               </h4>
               <p className="text-dark-surface-muted leading-relaxed mb-4 text-justify">
