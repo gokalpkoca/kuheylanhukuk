@@ -121,7 +121,7 @@ const en: Record<string, string> = {
   "footer.legal": "Legal Disclaimer",
   "footer.cookies": "Cookie Policy",
   "footer.copyright": "© 2026 — All Rights Reserved.",
-  "footer.description": "Our firm's priority is to anticipate legal risks and provide the most suitable solutions to our clients. Services are rendered in English, German, Spanish, French, Arabic and Russian.",
+  "footer.description": "Our firm's priority is to anticipate legal risks and provide the most suitable solutions to our clients. Services are rendered in English, German, Arabic and Russian.",
 
   // Cookie Consent
   "cookie.title": "Cookie Policy",

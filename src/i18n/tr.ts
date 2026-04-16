@@ -121,7 +121,7 @@ const tr: Record<string, string> = {
   "footer.legal": "Yasal Uyarı",
   "footer.cookies": "Çerezler",
   "footer.copyright": "© Copyright 2026 — Tüm Hakları Saklıdır.",
-  "footer.description": "Büromuzun önceliği, müvekkillerinin karşılaşabileceği hukuki riskleri henüz ortaya çıkmadan önlemek, müvekkillerine en uygun ve en doğru çözümleri sunmaktır. İngilizce, Almanca, İspanyolca, Fransızca, Arapça ve Rusça dillerinde hizmet verilmektedir.",
+  "footer.description": "Büromuzun önceliği, müvekkillerinin karşılaşabileceği hukuki riskleri henüz ortaya çıkmadan önlemek, müvekkillerine en uygun ve en doğru çözümleri sunmaktır. İngilizce, Almanca, Arapça ve Rusça dillerinde hizmet verilmektedir.",
 
   // Cookie Consent
   "cookie.title": "Çerez Politikası",
