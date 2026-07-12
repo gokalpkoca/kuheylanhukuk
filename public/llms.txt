@@ -1,0 +1,32 @@
+# Küheylan Hukuk Bürosu
+
+> İstanbul merkezli, uluslararası deneyime sahip hukuk bürosu. Ceza hukuku, gayrimenkul, şirketler hukuku, iş hukuku ve daha birçok alanda uzman avukat kadrosuyla hizmet vermektedir.
+
+Küheylan Hukuk Bürosu, İstanbul Üsküdar'da faaliyet gösteren; bireysel ve kurumsal müvekkillere danışmanlık ve dava takibi hizmeti sunan bir hukuk bürosudur. Türkçe, İngilizce, Arapça ve Rusça olmak üzere birden çok dilde hizmet verilmektedir.
+
+## Pages
+
+- [Ana Sayfa](/): Büro hakkında genel bilgiler, ekip, faaliyet alanları ve iletişim.
+- [Faaliyet Alanları](/faaliyet-alanlari): Büronun uzmanlık alanlarının tam listesi.
+- [Makaleler](/blog): Hukuki konularda güncel makaleler ve yayınlar.
+- [Kariyer](/kariyer): Açık pozisyonlar ve başvuru bilgileri.
+- [İletişim](/iletisim): Adres, telefon ve iletişim formu.
+- [Aydınlatma Metni](/aydinlatma-metni): KVKK aydınlatma ve çerez politikası.
+
+## Faaliyet Alanları
+
+- [Bankacılık ve Finans Hukuku](/faaliyet-alanlari/bankacilik-finans)
+- [Basın Hukuku](/faaliyet-alanlari/basin-hukuku)
+- [Ceza Hukuku](/faaliyet-alanlari/ceza-hukuku)
+- [Gayrimenkul Hukuku](/faaliyet-alanlari/gayrimenkul-hukuku)
+- [Gümrük Hukuku](/faaliyet-alanlari/gumruk-hukuku)
+- [İcra ve İflas Hukuku](/faaliyet-alanlari/icra-iflas)
+- [İdare Hukuku](/faaliyet-alanlari/idare-hukuku)
+- [İş Hukuku](/faaliyet-alanlari/is-hukuku)
+- [Fikri Mülkiyet Hukuku](/faaliyet-alanlari/fikri-mulkiyet)
+- [Aile Hukuku](/faaliyet-alanlari/aile-hukuku)
+- [Miras Hukuku](/faaliyet-alanlari/miras-hukuku)
+- [Spor Hukuku](/faaliyet-alanlari/spor-hukuku)
+- [Şirketler Hukuku](/faaliyet-alanlari/sirketler-hukuku)
+- [Tüketici Hukuku](/faaliyet-alanlari/tuketici-hukuku)
+- [Yabancılar ve Vatandaşlık Hukuku](/faaliyet-alanlari/yabancilar-vatandaslik)
