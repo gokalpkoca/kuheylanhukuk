@@ -11,6 +11,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { careerApplicationSchema } from "@/lib/careerValidation";
+import { supabase } from "@/integrations/supabase/client";
 
 const CAREER_EMAIL = "kariyer@kuheylanhukuk.com";
 
@@ -19,6 +20,7 @@ const CareersPage = () => {
   const { t } = useLanguage();
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", position: "", message: "" });
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [submitting, setSubmitting] = useState(false);
   const [expandedPosition, setExpandedPosition] = useState<string | null>(null);
 
   const positions = [
@@ -49,7 +51,7 @@ const CareersPage = () => {
     },
   ];
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const result = careerApplicationSchema.safeParse(formData);
     if (!result.success) {
@@ -61,14 +63,33 @@ const CareersPage = () => {
       return;
     }
     setErrors({});
+    setSubmitting(true);
     const validated = result.data;
-    const mailtoLink = `mailto:${CAREER_EMAIL}?subject=${encodeURIComponent(
-      `${t("career.application")}: ${validated.position || t("career.general_application")}`
-    )}&body=${encodeURIComponent(
-      `${t("contact.name")}: ${validated.name}\n${t("contact.email_label")}: ${validated.email}\n${t("contact.phone_label")}: ${validated.phone || ""}\n${t("career.position_label")}: ${validated.position || t("career.general_application")}\n\n${validated.message}`
-    )}`;
-    window.location.href = mailtoLink;
-    toast({ title: t("contact.redirecting"), description: t("contact.redirect_desc") });
+
+    const { error } = await supabase.from("career_applications").insert({
+      name: validated.name,
+      email: validated.email,
+      phone: validated.phone || null,
+      position: validated.position || null,
+      message: validated.message,
+    });
+
+    setSubmitting(false);
+
+    if (error) {
+      toast({
+        title: "Bir hata oluştu",
+        description: "Başvurunuz kaydedilemedi. Lütfen tekrar deneyin.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    toast({
+      title: "Başvurunuz alındı",
+      description: "En kısa sürede sizinle iletişime geçeceğiz.",
+    });
+    setFormData({ name: "", email: "", phone: "", position: "", message: "" });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
