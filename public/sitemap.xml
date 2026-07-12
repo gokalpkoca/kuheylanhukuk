@@ -1,97 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://kuheylanhukuk.lovable.app/</loc>
+    <loc>https://kuheylanhukuk.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://kuheylanhukuk.lovable.app/faaliyet-alanlari</loc>
+    <loc>https://kuheylanhukuk.com/faaliyet-alanlari</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kuheylanhukuk.lovable.app/blog</loc>
+    <loc>https://kuheylanhukuk.com/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kuheylanhukuk.lovable.app/iletisim</loc>
+    <loc>https://kuheylanhukuk.com/iletisim</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kuheylanhukuk.lovable.app/faaliyet-alanlari/bankacilik-finans</loc>
+    <loc>https://kuheylanhukuk.com/kariyer</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kuheylanhukuk.com/aydinlatma-metni</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kuheylanhukuk.com/faaliyet-alanlari/bankacilik-finans</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kuheylanhukuk.lovable.app/faaliyet-alanlari/basin-hukuku</loc>
+    <loc>https://kuheylanhukuk.com/faaliyet-alanlari/basin-hukuku</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kuheylanhukuk.lovable.app/faaliyet-alanlari/ceza-hukuku</loc>
+    <loc>https://kuheylanhukuk.com/faaliyet-alanlari/ceza-hukuku</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kuheylanhukuk.lovable.app/faaliyet-alanlari/gayrimenkul-hukuku</loc>
+    <loc>https://kuheylanhukuk.com/faaliyet-alanlari/gayrimenkul-hukuku</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kuheylanhukuk.lovable.app/faaliyet-alanlari/gumruk-hukuku</loc>
+    <loc>https://kuheylanhukuk.com/faaliyet-alanlari/gumruk-hukuku</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kuheylanhukuk.lovable.app/faaliyet-alanlari/icra-iflas</loc>
+    <loc>https://kuheylanhukuk.com/faaliyet-alanlari/icra-iflas</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kuheylanhukuk.lovable.app/faaliyet-alanlari/idare-hukuku</loc>
+    <loc>https://kuheylanhukuk.com/faaliyet-alanlari/idare-hukuku</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kuheylanhukuk.lovable.app/faaliyet-alanlari/is-hukuku</loc>
+    <loc>https://kuheylanhukuk.com/faaliyet-alanlari/is-hukuku</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kuheylanhukuk.lovable.app/faaliyet-alanlari/fikri-mulkiyet</loc>
+    <loc>https://kuheylanhukuk.com/faaliyet-alanlari/fikri-mulkiyet</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kuheylanhukuk.lovable.app/faaliyet-alanlari/aile-hukuku</loc>
+    <loc>https://kuheylanhukuk.com/faaliyet-alanlari/aile-hukuku</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kuheylanhukuk.lovable.app/faaliyet-alanlari/miras-hukuku</loc>
+    <loc>https://kuheylanhukuk.com/faaliyet-alanlari/miras-hukuku</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kuheylanhukuk.lovable.app/faaliyet-alanlari/spor-hukuku</loc>
+    <loc>https://kuheylanhukuk.com/faaliyet-alanlari/spor-hukuku</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kuheylanhukuk.lovable.app/faaliyet-alanlari/sirketler-hukuku</loc>
+    <loc>https://kuheylanhukuk.com/faaliyet-alanlari/sirketler-hukuku</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kuheylanhukuk.lovable.app/faaliyet-alanlari/tuketici-hukuku</loc>
+    <loc>https://kuheylanhukuk.com/faaliyet-alanlari/tuketici-hukuku</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kuheylanhukuk.lovable.app/faaliyet-alanlari/yabancilar-vatandaslik</loc>
+    <loc>https://kuheylanhukuk.com/faaliyet-alanlari/yabancilar-vatandaslik</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

@@ -212,6 +212,8 @@ const Navbar = () => {
             ref={navBarRef}
             className="xl:hidden text-foreground p-2"
             onClick={() => setIsOpen(!isOpen)}
+            aria-label={isOpen ? "Menüyü kapat" : "Menüyü aç"}
+            aria-expanded={isOpen}
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>

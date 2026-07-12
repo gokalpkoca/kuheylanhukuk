@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kuheylanhukuk.lovable.app/sitemap.xml
+Sitemap: https://kuheylanhukuk.com/sitemap.xml
