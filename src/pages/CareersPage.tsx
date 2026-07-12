@@ -247,9 +247,9 @@ const CareersPage = () => {
                   {errors.message && <p className="text-destructive text-xs mt-1">{errors.message}</p>}
                 </div>
                 <div className="text-center pt-2">
-                  <Button type="submit" size="lg" className="gap-3 px-10 h-12 text-sm font-semibold uppercase tracking-wider shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300">
+                  <Button type="submit" size="lg" disabled={submitting} className="gap-3 px-10 h-12 text-sm font-semibold uppercase tracking-wider shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300">
                     <Send className="w-4 h-4" />
-                    {t("career.send_application")}
+                    {submitting ? "Gönderiliyor..." : t("career.send_application")}
                   </Button>
                 </div>
               </form>
