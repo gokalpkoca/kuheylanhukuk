@@ -172,6 +172,17 @@ const ar: Record<string, string> = {
   "career.send_application": "إرسال الطلب",
   "career.application": "طلب توظيف",
   "career.general_application": "طلب عام",
+
+  // Blog / Article
+  "blog.back_home": "الصفحة الرئيسية",
+  "blog.back_to_list": "العودة إلى قاعدة المعرفة",
+  "blog.search_placeholder": "ابحث في المقالات...",
+  "blog.no_results": "لا توجد نتائج.",
+  "blog.read_more": "اقرأ المزيد",
+  "months.1": "يناير", "months.2": "فبراير", "months.3": "مارس", "months.4": "أبريل",
+  "months.5": "مايو", "months.6": "يونيو", "months.7": "يوليو", "months.8": "أغسطس",
+  "months.9": "سبتمبر", "months.10": "أكتوبر", "months.11": "نوفمبر", "months.12": "ديسمبر",
 };
+
 
 export default ar;
