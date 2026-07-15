@@ -94,7 +94,15 @@ const Footer = () => {
             {t("footer.copyright")}
           </p>
           <p className="text-white/60 text-xs tracking-wide">
-            Designed by gokalpkoca
+            Designed by{" "}
+            <a
+              href="https://alphy.studio"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors"
+            >
+              alphy.studio
+            </a>
           </p>
         </div>
       </div>
