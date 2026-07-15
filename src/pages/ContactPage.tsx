@@ -14,6 +14,7 @@ import { useToast } from "@/hooks/use-toast";
 import { useLanguage } from "@/context/LanguageContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { contactSchema } from "@/lib/contactValidation";
 
 const CONTACT_EMAIL = "info@kuheylanhukuk.com";
