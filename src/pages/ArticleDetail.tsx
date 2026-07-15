@@ -6,10 +6,7 @@ import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { allArticles } from "@/data/articles";
 import { useLanguage } from "@/context/LanguageContext";
-import articleContent from "@/data/articleContent.json";
-
-type Block = { lines: string[]; text: string };
-const content = articleContent as Record<string, Block[]>;
+import { translatedTitle, translatedBlocks, formatDate } from "@/lib/articleI18n";
 
 function slugFromPdf(pdfUrl?: string) {
   if (!pdfUrl) return "";
@@ -26,11 +23,15 @@ const isHeading = (text: string) =>
 
 const ArticleDetail = () => {
   const { slug = "" } = useParams();
-  const { t } = useLanguage();
+  const { t, language, dir } = useLanguage();
   const article = allArticles.find((a) => slugFromPdf(a.pdfUrl) === slug);
-  const blocks = content[slug];
+  const blocks = article ? translatedBlocks(slug, language) : [];
 
-  if (!article || !blocks) return <Navigate to="/blog" replace />;
+  if (!article || !blocks.length) return <Navigate to="/blog" replace />;
+
+  const title = translatedTitle(slug, language, article.title);
+  const displayDate = formatDate(article.date, language, t);
+
 
   // First block is usually a category label; drop it if short & matches
   const rendered = blocks.slice();
