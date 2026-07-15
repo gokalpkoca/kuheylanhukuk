@@ -172,6 +172,17 @@ const ru: Record<string, string> = {
   "career.send_application": "Отправить Заявку",
   "career.application": "Заявка на Вакансию",
   "career.general_application": "Общая Заявка",
+
+  // Blog / Article
+  "blog.back_home": "Главная",
+  "blog.back_to_list": "Вернуться в базу знаний",
+  "blog.search_placeholder": "Поиск по статьям...",
+  "blog.no_results": "Ничего не найдено.",
+  "blog.read_more": "Читать далее",
+  "months.1": "января", "months.2": "февраля", "months.3": "марта", "months.4": "апреля",
+  "months.5": "мая", "months.6": "июня", "months.7": "июля", "months.8": "августа",
+  "months.9": "сентября", "months.10": "октября", "months.11": "ноября", "months.12": "декабря",
 };
+
 
 export default ru;
