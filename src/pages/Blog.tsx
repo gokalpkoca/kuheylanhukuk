@@ -30,10 +30,20 @@ const Blog = () => {
   }, [searchParams]);
 
   const filtered = allArticles
+    .map((a) => {
+      const slug = a.pdfUrl ? a.pdfUrl.split("/").pop()!.replace(/\.pdf$/i, "") : "";
+      return {
+        ...a,
+        slug,
+        displayTitle: slug ? translatedTitle(slug, language, a.title) : a.title,
+        displayDate: formatDate(a.date, language, t),
+      };
+    })
     .filter((a) => selectedDept === "" || a.category === selectedDept)
-    .filter((a) => searchQuery === "" || a.title.toLocaleLowerCase("tr").includes(searchQuery.toLocaleLowerCase("tr")));
+    .filter((a) => searchQuery === "" || a.displayTitle.toLocaleLowerCase().includes(searchQuery.toLocaleLowerCase()));
   const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
   const paginated = filtered.slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE);
+
 
   const handleDeptChange = (dept: string) => {
     setSelectedDept(prev => prev === dept ? "" : dept);
