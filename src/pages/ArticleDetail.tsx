@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, Calendar } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { allArticles } from "@/data/articles";
 import { useLanguage } from "@/context/LanguageContext";
 import articleContent from "@/data/articleContent.json";
