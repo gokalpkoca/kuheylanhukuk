@@ -40,6 +40,11 @@ const ArticleDetail = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title={`${article.title} | Küheylan Hukuk Bürosu`}
+        description={(blocks.find((b) => b.text.length > 80)?.text || article.title).slice(0, 155)}
+        path={`/blog/${slug}`}
+      />
       <Navbar />
       <main className="pt-24 lg:pt-32 pb-20">
         <div className="container mx-auto px-4 lg:px-8 max-w-3xl">
