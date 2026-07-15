@@ -13,6 +13,11 @@ const PrivacyPolicy = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO
+        title="Aydınlatma Metni | Küheylan Hukuk Bürosu"
+        description="KVKK kapsamında kişisel verilerin işlenmesine ilişkin aydınlatma ve çerez politikası."
+        path="/aydinlatma-metni"
+      />
       <Navbar />
 
       <section className="pt-32 pb-20">
