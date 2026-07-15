@@ -131,7 +131,7 @@ const Blog = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {paginated.map((article, i) => (
               <motion.article
-                key={article.title}
+                key={article.slug || article.title}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: i * 0.05 }}
@@ -139,28 +139,29 @@ const Blog = () => {
               >
                 <div className="flex items-center gap-2 text-xs text-muted-foreground mb-3">
                   <Calendar className="w-3.5 h-3.5 text-primary" />
-                  <span>{article.date}</span>
+                  <span>{article.displayDate}</span>
                 </div>
                 <h2 className="font-serif text-base text-foreground font-medium leading-snug mb-3 flex-1">
-                  {article.title}
+                  {article.displayTitle}
                 </h2>
                 <p className="text-xs text-primary/80 mb-4">{t(`pa.${article.category}`)}</p>
                 {article.pdfUrl ? (
                   <Link
-                    to={`/blog/${article.pdfUrl.split("/").pop()!.replace(/\.pdf$/i, "")}`}
+                    to={`/blog/${article.slug}`}
                     className="inline-flex items-center gap-1.5 text-primary text-sm font-medium hover:gap-3 transition-all duration-200 self-start"
                   >
-                    Devamını Oku
+                    {t("blog.read_more")}
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 ) : (
                   <button className="inline-flex items-center gap-1.5 text-primary text-sm font-medium hover:gap-3 transition-all duration-200 self-start">
-                    Devamını Oku
+                    {t("blog.read_more")}
                     <ArrowRight className="w-4 h-4" />
                   </button>
                 )}
               </motion.article>
             ))}
+
           </div>
 
           {filtered.length === 0 && (
