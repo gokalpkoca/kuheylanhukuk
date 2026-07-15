@@ -103,6 +103,11 @@ const CareersPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Kariyer | Küheylan Hukuk Bürosu"
+        description="Küheylan Hukuk Bürosu'nda kariyer fırsatları, staj ve iş başvuruları."
+        path="/kariyer"
+      />
       <Navbar />
 
       {/* Hero */}
