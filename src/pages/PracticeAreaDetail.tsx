@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { practiceAreas } from "@/data/practiceAreas";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -33,6 +34,11 @@ const PracticeAreaDetail = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title={`${t(`pa.${area.slug}`)} | Küheylan Hukuk Bürosu`}
+        description={area.description.slice(0, 155)}
+        path={`/faaliyet-alanlari/${area.slug}`}
+      />
       <Navbar />
       <main className="pt-24 lg:pt-32 pb-20">
         <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
