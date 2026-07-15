@@ -43,6 +43,11 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Makaleler | Küheylan Hukuk Bürosu"
+        description="Küheylan Hukuk Bürosu avukatlarının kaleme aldığı hukuki rehberler ve güncel makaleler."
+        path="/blog"
+      />
       <Navbar />
       <main className="pt-24 lg:pt-32 pb-20">
         <div className="container mx-auto px-4 lg:px-8">
