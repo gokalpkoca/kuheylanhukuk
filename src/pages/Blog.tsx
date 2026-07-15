@@ -6,8 +6,10 @@ import SEO from "@/components/SEO";
 import { Calendar, ArrowRight, ArrowLeft, Search, X } from "lucide-react";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
+import { practiceAreas } from "@/data/practiceAreas";
 import { allArticles } from "@/data/articles";
 import { translatedTitle, formatDate } from "@/lib/articleI18n";
+
 
 
 const ITEMS_PER_PAGE = 9;
