@@ -84,6 +84,11 @@ const ContactPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="İletişim | Küheylan Hukuk Bürosu"
+        description="Küheylan Hukuk Bürosu ile iletişime geçin. Üsküdar / İstanbul ofisimiz, telefon, e-posta ve iletişim formu."
+        path="/iletisim"
+      />
       <Navbar />
 
       <section className="relative h-[280px] md:h-[340px] flex items-center justify-center bg-dark-surface overflow-hidden">
