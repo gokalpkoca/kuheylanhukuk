@@ -39,15 +39,15 @@ const ArticleDetail = () => {
     rendered.shift();
   }
 
-  const description = (blocks.find((b) => b.text.length > 80)?.text || article.title).slice(0, 155);
+  const description = (blocks.find((b) => b.text.length > 80)?.text || title).slice(0, 155);
   const url = `https://kuheylanhukuk.com/blog/${slug}`;
   const articleLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: article.title,
+    headline: title,
     description,
     datePublished: article.date,
-    inLanguage: "tr-TR",
+    inLanguage: language.toLowerCase(),
     mainEntityOfPage: url,
     author: { "@type": "Organization", name: "Küheylan Hukuk Bürosu" },
     publisher: {
@@ -60,11 +60,12 @@ const ArticleDetail = () => {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Anasayfa", item: "https://kuheylanhukuk.com/" },
-      { "@type": "ListItem", position: 2, name: "Bilgi Havuzu", item: "https://kuheylanhukuk.com/blog" },
-      { "@type": "ListItem", position: 3, name: article.title, item: url },
+      { "@type": "ListItem", position: 1, name: t("blog.back_home"), item: "https://kuheylanhukuk.com/" },
+      { "@type": "ListItem", position: 2, name: t("nav.makaleler"), item: "https://kuheylanhukuk.com/blog" },
+      { "@type": "ListItem", position: 3, name: title, item: url },
     ],
   };
+
 
   return (
     <div className="min-h-screen bg-background">
