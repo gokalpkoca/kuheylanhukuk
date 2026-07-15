@@ -2,9 +2,28 @@ export interface Article {
   title: string;
   date: string;
   category: string;
+  pdfUrl?: string;
 }
 
 export const allArticles: Article[] = [
+  {
+    title: "5607 Sayılı Kanun Kapsamında Kaçakçılık Suçları Rehberi",
+    date: "15 Temmuz 2026",
+    category: "gumruk-hukuku",
+    pdfUrl: "/articles/5607-sayili-kanun-kacakcilik-suclari-rehberi.pdf",
+  },
+  {
+    title: "Anlaşmalı Boşanma Rehberi ve Protokol Örneği",
+    date: "15 Temmuz 2026",
+    category: "aile-hukuku",
+    pdfUrl: "/articles/anlasmali-bosanma-rehberi-ve-protokolu.pdf",
+  },
+  {
+    title: "Banka Hesabına Konulan Haksız Bloke Rehberi",
+    date: "15 Temmuz 2026",
+    category: "bankacilik-finans",
+    pdfUrl: "/articles/banka-hesabina-konulan-haksiz-bloke-rehberi.pdf",
+  },
   { title: "Lorem Ipsum Dolor Sit Amet Consectetur", date: "16 Şubat 2026", category: "bankacilik-finans" },
   { title: "Sed Ut Perspiciatis Unde Omnis Iste Natus", date: "09 Şubat 2026", category: "sirketler-hukuku" },
   { title: "Nemo Enim Ipsam Voluptatem Quia Voluptas", date: "02 Şubat 2026", category: "ceza-hukuku" },
