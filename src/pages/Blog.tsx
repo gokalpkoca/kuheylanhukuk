@@ -20,7 +20,8 @@ const Blog = () => {
   const initialDept = searchParams.get("dept") || "";
   const [selectedDept, setSelectedDept] = useState(initialDept);
   const [searchQuery, setSearchQuery] = useState("");
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+
 
   useEffect(() => {
     const dept = searchParams.get("dept") || "";
