@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "@/context/LanguageContext";
 import Index from "./pages/Index";
 import Blog from "./pages/Blog";
+import ArticleDetail from "./pages/ArticleDetail";
 import PracticeAreaDetail from "./pages/PracticeAreaDetail";
 import PracticeAreasPage from "./pages/PracticeAreasPage";
 import ContactPage from "./pages/ContactPage";
