@@ -144,6 +144,31 @@ export const allArticles: Article[] = [
     category: "gayrimenkul-hukuku",
     pdfUrl: "/articles/tahliye-taahhutnamesi-ile-kiraci-tahliyesi.pdf",
   },
+  {
+    title: "Unutulma Hakkı ve Google'dan İsim Sildirme Rehberi",
+    date: "15 Temmuz 2026",
+    category: "basin-hukuku",
+    pdfUrl: "/articles/unutulma-hakki-ve-google-isim-sildirme.pdf",
+  },
+  {
+    title: "Uyuşturucu Suçları Rehberi",
+    date: "15 Temmuz 2026",
+    category: "ceza-hukuku",
+    pdfUrl: "/articles/uyusturucu-suclari-rehberi.pdf",
+  },
+  {
+    title: "Vasiyetname Hazırlanması, Geçerlilik Şartları ve İptali Rehberi",
+    date: "15 Temmuz 2026",
+    category: "miras-hukuku",
+    pdfUrl: "/articles/vasiyetname-hazirlanmasi-gecerlilik-ve-iptali-rehberi.pdf",
+  },
+  {
+    title: "Veraset İlamı, Mirasçılık Belgesi ve Miras İntikal İşlemleri Rehberi",
+    date: "15 Temmuz 2026",
+    category: "miras-hukuku",
+    pdfUrl: "/articles/veraset-ilami-ve-miras-intikal-islemleri-rehberi.pdf",
+  },
+
 
 
 
