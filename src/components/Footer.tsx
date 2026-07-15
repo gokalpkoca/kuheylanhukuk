@@ -6,13 +6,14 @@ const Footer = () => {
   const { t } = useLanguage();
 
   const footerLinks = [
-    { label: t("nav.kurumsal"), href: "#hakkimizda" },
-    { label: t("nav.ekibimiz"), href: "#ekibimiz" },
+    { label: t("nav.kurumsal"), href: "/#hakkimizda" },
+    { label: t("nav.ekibimiz"), href: "/#ekibimiz" },
     { label: t("nav.makaleler"), href: "/blog" },
-    { label: t("nav.faaliyet_alanlari"), href: "#faaliyet-alanlari" },
+    { label: t("nav.faaliyet_alanlari"), href: "/faaliyet-alanlari" },
     { label: t("nav.kariyer"), href: "/kariyer" },
-    { label: t("nav.iletisim"), href: "#iletisim" },
+    { label: t("nav.iletisim"), href: "/iletisim" },
   ];
+
 
   return (
     <footer className="bg-dark-surface border-t border-dark-surface">
