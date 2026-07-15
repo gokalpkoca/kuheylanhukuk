@@ -126,15 +126,13 @@ const Blog = () => {
                 </h2>
                 <p className="text-xs text-primary/80 mb-4">{t(`pa.${article.category}`)}</p>
                 {article.pdfUrl ? (
-                  <a
-                    href={article.pdfUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    to={`/blog/${article.pdfUrl.split("/").pop()!.replace(/\.pdf$/i, "")}`}
                     className="inline-flex items-center gap-1.5 text-primary text-sm font-medium hover:gap-3 transition-all duration-200 self-start"
                   >
                     Devamını Oku
                     <ArrowRight className="w-4 h-4" />
-                  </a>
+                  </Link>
                 ) : (
                   <button className="inline-flex items-center gap-1.5 text-primary text-sm font-medium hover:gap-3 transition-all duration-200 self-start">
                     Devamını Oku
