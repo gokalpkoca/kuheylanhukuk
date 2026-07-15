@@ -4,12 +4,15 @@ interface SEOProps {
   title: string;
   description: string;
   path: string;
+  type?: "website" | "article";
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 const BASE = "https://kuheylanhukuk.com";
 
-const SEO = ({ title, description, path }: SEOProps) => {
+const SEO = ({ title, description, path, type = "website", jsonLd }: SEOProps) => {
   const url = `${BASE}${path}`;
+  const ldArray = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
   return (
     <Helmet>
       <title>{title}</title>
@@ -18,8 +21,14 @@ const SEO = ({ title, description, path }: SEOProps) => {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={url} />
+      <meta property="og:type" content={type} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
+      {ldArray.map((data, i) => (
+        <script key={i} type="application/ld+json">
+          {JSON.stringify(data)}
+        </script>
+      ))}
     </Helmet>
   );
 };
