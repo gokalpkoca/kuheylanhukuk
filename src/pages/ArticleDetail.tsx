@@ -38,13 +38,43 @@ const ArticleDetail = () => {
     rendered.shift();
   }
 
+  const description = (blocks.find((b) => b.text.length > 80)?.text || article.title).slice(0, 155);
+  const url = `https://kuheylanhukuk.com/blog/${slug}`;
+  const articleLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description,
+    datePublished: article.date,
+    inLanguage: "tr-TR",
+    mainEntityOfPage: url,
+    author: { "@type": "Organization", name: "Küheylan Hukuk Bürosu" },
+    publisher: {
+      "@type": "Organization",
+      name: "Küheylan Hukuk Bürosu",
+      logo: { "@type": "ImageObject", url: "https://kuheylanhukuk.com/favicon.png" },
+    },
+  };
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Anasayfa", item: "https://kuheylanhukuk.com/" },
+      { "@type": "ListItem", position: 2, name: "Bilgi Havuzu", item: "https://kuheylanhukuk.com/blog" },
+      { "@type": "ListItem", position: 3, name: article.title, item: url },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <SEO
         title={`${article.title} | Küheylan Hukuk Bürosu`}
-        description={(blocks.find((b) => b.text.length > 80)?.text || article.title).slice(0, 155)}
+        description={description}
         path={`/blog/${slug}`}
+        type="article"
+        jsonLd={[articleLd, breadcrumbLd]}
       />
+
       <Navbar />
       <main className="pt-24 lg:pt-32 pb-20">
         <div className="container mx-auto px-4 lg:px-8 max-w-3xl">
