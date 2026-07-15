@@ -68,9 +68,9 @@ const ArticleDetail = () => {
 
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background" dir={dir}>
       <SEO
-        title={`${article.title} | Küheylan Hukuk Bürosu`}
+        title={`${title} | Küheylan Hukuk Bürosu`}
         description={description}
         path={`/blog/${slug}`}
         type="article"
@@ -90,20 +90,21 @@ const ArticleDetail = () => {
               className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-6"
             >
               <ArrowLeft className="w-4 h-4" />
-              Makaleler
+              {t("blog.back_to_list")}
             </Link>
 
             <p className="text-xs uppercase tracking-wider text-primary mb-3">
               {t(`pa.${article.category}`)}
             </p>
             <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground font-bold leading-tight">
-              {article.title}
+              {title}
             </h1>
             <div className="flex items-center gap-2 text-sm text-muted-foreground mt-6">
               <Calendar className="w-4 h-4 text-primary" />
-              <span>{article.date}</span>
+              <span>{displayDate}</span>
             </div>
             <div className="w-16 h-px bg-muted-foreground/40 mt-6 mb-10" />
+
 
             <article className="space-y-5 text-justify text-foreground/90 leading-relaxed">
               {rendered.map((b, i) => {
