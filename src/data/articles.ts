@@ -84,6 +84,68 @@ export const allArticles: Article[] = [
     category: "basin-hukuku",
     pdfUrl: "/articles/internetten-icerik-kaldirma-rehberi.pdf",
   },
+  {
+    title: "Kasten Yaralama Suçu ve Cezası Rehberi",
+    date: "15 Temmuz 2026",
+    category: "ceza-hukuku",
+    pdfUrl: "/articles/kasten-yaralama-sucu-ve-cezasi.pdf",
+  },
+  {
+    title: "Kentsel Dönüşümde Kat Maliklerinin Hakları",
+    date: "15 Temmuz 2026",
+    category: "gayrimenkul-hukuku",
+    pdfUrl: "/articles/kentsel-donusum-kat-malikleri-haklari.pdf",
+  },
+  {
+    title: "Kira Tespit ve Uyarlama Davaları Rehberi",
+    date: "15 Temmuz 2026",
+    category: "gayrimenkul-hukuku",
+    pdfUrl: "/articles/kira-tespit-ve-uyarlama-davalari-rehberi.pdf",
+  },
+  {
+    title: "Maaş ve Banka Hesabı Haczi Nasıl Kaldırılır",
+    date: "15 Temmuz 2026",
+    category: "icra-iflas-hukuku",
+    pdfUrl: "/articles/maas-ve-banka-hesabi-haczi-nasil-kaldirilir.pdf",
+  },
+  {
+    title: "Miras Ortaklığının Giderilmesi ve Tasfiye Süreci Rehberi",
+    date: "15 Temmuz 2026",
+    category: "miras-hukuku",
+    pdfUrl: "/articles/miras-ortakliginin-giderilmesi-rehberi.pdf",
+  },
+  {
+    title: "Nafaka Türleri ve Artırım/Azaltım Davası Rehberi",
+    date: "15 Temmuz 2026",
+    category: "aile-hukuku",
+    pdfUrl: "/articles/nafaka-turleri-ve-artirim-azaltim-davasi-rehberi.pdf",
+  },
+  {
+    title: "Örgütlü Suçlar ve Etkin Pişmanlık Rehberi",
+    date: "15 Temmuz 2026",
+    category: "ceza-hukuku",
+    pdfUrl: "/articles/orgutlu-suclar-ve-etkin-pismanlik.pdf",
+  },
+  {
+    title: "Reddi Miras Nasıl Yapılır? Süresi ve Hukuki Sonuçları",
+    date: "15 Temmuz 2026",
+    category: "miras-hukuku",
+    pdfUrl: "/articles/reddi-miras-nasil-yapilir-rehberi.pdf",
+  },
+  {
+    title: "Saklı Pay ve Tenkis Davası Rehberi",
+    date: "15 Temmuz 2026",
+    category: "miras-hukuku",
+    pdfUrl: "/articles/sakli-pay-ve-tenkis-davasi-rehberi.pdf",
+  },
+  {
+    title: "Tahliye Taahhütnamesi ile Kiracı Tahliyesi Rehberi",
+    date: "15 Temmuz 2026",
+    category: "gayrimenkul-hukuku",
+    pdfUrl: "/articles/tahliye-taahhutnamesi-ile-kiraci-tahliyesi.pdf",
+  },
+
+
 
   { title: "Lorem Ipsum Dolor Sit Amet Consectetur", date: "16 Şubat 2026", category: "bankacilik-finans" },
   { title: "Sed Ut Perspiciatis Unde Omnis Iste Natus", date: "09 Şubat 2026", category: "sirketler-hukuku" },
