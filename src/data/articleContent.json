@@ -6917,5 +6917,1428 @@
       ],
       "text": "Yazar: Av. Mert Deniz Küheylan Küheylan Hukuk Bürosu — Burhaniye Mh. Neşetbey Sk. No:12/5 Kat:5 Daire:3 Üsküdar/İstanbul — info@kuheylan.av.tr — kuheylanhukuk.com"
     }
+  ],
+  "unutulma-hakki-ve-google-isim-sildirme": [
+    {
+      "lines": [
+        "Kişisel Verilerin Korunması Hukuku"
+      ],
+      "text": "Kişisel Verilerin Korunması Hukuku"
+    },
+    {
+      "lines": [
+        "Unutulma Hakkı Nedir? Google Arama Sonuçlarından İsim"
+      ],
+      "text": "Unutulma Hakkı Nedir? Google Arama Sonuçlarından İsim"
+    },
+    {
+      "lines": [
+        "Sildirme"
+      ],
+      "text": "Sildirme"
+    },
+    {
+      "lines": [
+        "KVKK Düzenlemeleri ve Yüksek Mahkeme İçtihatları Işığında Arama Motorundan İndeks Kaldırma",
+        "Bu rehber, 6698 sayılı Kişisel Verilerin Korunması Kanunu ve güncel yargı içtihatları esas alınarak 2026 yılı itibarıyla hazırlanmıştır."
+      ],
+      "text": "KVKK Düzenlemeleri ve Yüksek Mahkeme İçtihatları Işığında Arama Motorundan İndeks Kaldırma Bu rehber, 6698 sayılı Kişisel Verilerin Korunması Kanunu ve güncel yargı içtihatları esas alınarak 2026 yılı itibarıyla hazırlanmıştır."
+    },
+    {
+      "lines": [
+        "Özet",
+        "Unutulma hakkı, bireyin geçmişte yaşadığı ve güncelliğini yitirmiş olumsuz bir haberin veya adli vakanın",
+        "internette süresiz erişilebilir kalmasını engelleme yetkisidir. Bu hak, haberin kaynağından silinmesinden farklı",
+        "olarak genellikle arama motorundaki indeksin kaldırılması yoluyla uygulanır. Google'a doğrudan başvuru,",
+        "reddedilirse Kişisel Verilerin Korunması Kurulu'na şikayet veya Sulh Ceza Hakimliği'ne başvuru olmak üzere üç",
+        "ayrı yol izlenebilir."
+      ],
+      "text": "Özet Unutulma hakkı, bireyin geçmişte yaşadığı ve güncelliğini yitirmiş olumsuz bir haberin veya adli vakanın internette süresiz erişilebilir kalmasını engelleme yetkisidir. Bu hak, haberin kaynağından silinmesinden farklı olarak genellikle arama motorundaki indeksin kaldırılması yoluyla uygulanır. Google'a doğrudan başvuru, reddedilirse Kişisel Verilerin Korunması Kurulu'na şikayet veya Sulh Ceza Hakimliği'ne başvuru olmak üzere üç ayrı yol izlenebilir."
+    },
+    {
+      "lines": [
+        "Haber Doğruydu, Peki Neden Hâlâ İlk Sırada Çıkıyor?",
+        "Yıllar önce yaşanmış ve o dönem doğru şekilde haberleştirilmiş bir olay, aradan geçen zamana rağmen bir",
+        "kişinin adını arattığında karşısına çıkmaya devam edebilir. Haberin doğruluğu tartışma konusu değildir;",
+        "tartışma konusu olan, bu bilginin bugün hâlâ kamuoyunun bilmesi gereken bir değer taşıyıp taşımadığıdır."
+      ],
+      "text": "Haber Doğruydu, Peki Neden Hâlâ İlk Sırada Çıkıyor? Yıllar önce yaşanmış ve o dönem doğru şekilde haberleştirilmiş bir olay, aradan geçen zamana rağmen bir kişinin adını arattığında karşısına çıkmaya devam edebilir. Haberin doğruluğu tartışma konusu değildir; tartışma konusu olan, bu bilginin bugün hâlâ kamuoyunun bilmesi gereken bir değer taşıyıp taşımadığıdır."
+    },
+    {
+      "lines": [
+        "İşte bu noktada unutulma hakkı devreye girer.",
+        "Bu rehberde unutulma hakkının hukuki temeli, kabul edilme kriterleri, Google'dan isim sildirme",
+        "prosedürü ve başvurunun reddedilmesi hâlinde izlenebilecek yollar ele alınmaktadır."
+      ],
+      "text": "İşte bu noktada unutulma hakkı devreye girer. Bu rehberde unutulma hakkının hukuki temeli, kabul edilme kriterleri, Google'dan isim sildirme prosedürü ve başvurunun reddedilmesi hâlinde izlenebilecek yollar ele alınmaktadır."
+    },
+    {
+      "lines": [
+        "İçerik Silme ile Arama Motorundan İndeks Kaldırma Arasındaki Fark",
+        "Dijital itibar yönetiminde en çok karıştırılan nokta, web sitesindeki içeriği silmek ile arama motorundaki",
+        "bağlantıyı kaldırmak arasındaki farktır. Kaynağından içerik silme, ihlale yol açan yazının yayınlandığı",
+        "sitenin sunucusundan tamamen kaldırılmasıdır; bu durumda arama motorlarında da içerik otomatik olarak",
+        "kaybolur, ancak yerel gazeteler veya dijital arşivler bu talebi her zaman kabul etmeyebilir. Arama",
+        "motorundan indeks kaldırma ise haber sitede kalmaya devam ederken, kişinin adı arandığında o sonucun",
+        "listelenmemesidir. Unutulma hakkının özünü bu ikinci yöntem oluşturur; böylece basın özgürlüğü",
+        "tamamen kısıtlanmaz, birey de dijital kimliğini korur."
+      ],
+      "text": "İçerik Silme ile Arama Motorundan İndeks Kaldırma Arasındaki Fark Dijital itibar yönetiminde en çok karıştırılan nokta, web sitesindeki içeriği silmek ile arama motorundaki bağlantıyı kaldırmak arasındaki farktır. Kaynağından içerik silme, ihlale yol açan yazının yayınlandığı sitenin sunucusundan tamamen kaldırılmasıdır; bu durumda arama motorlarında da içerik otomatik olarak kaybolur, ancak yerel gazeteler veya dijital arşivler bu talebi her zaman kabul etmeyebilir. Arama motorundan indeks kaldırma ise haber sitede kalmaya devam ederken, kişinin adı arandığında o sonucun listelenmemesidir. Unutulma hakkının özünü bu ikinci yöntem oluşturur; böylece basın özgürlüğü tamamen kısıtlanmaz, birey de dijital kimliğini korur."
+    },
+    {
+      "lines": [
+        "Unutulma Hakkının Kabul Edilme Kriterleri",
+        "Arama motorlarına yapılan her başvuru olumlu sonuçlanmaz. Yüksek mahkemelerin yerleşik içtihadına",
+        "göre şu kriterler birlikte değerlendirilir:",
+        "Zaman aşımı ve güncellik yitimi: Yayının üzerinden makul ve uzun bir süre geçmiş olmalıdır."
+      ],
+      "text": "Unutulma Hakkının Kabul Edilme Kriterleri Arama motorlarına yapılan her başvuru olumlu sonuçlanmaz. Yüksek mahkemelerin yerleşik içtihadına göre şu kriterler birlikte değerlendirilir: Zaman aşımı ve güncellik yitimi: Yayının üzerinden makul ve uzun bir süre geçmiş olmalıdır."
+    },
+    {
+      "lines": [
+        "Kamu yararı dengesi: Bilginin kamuoyu tarafından hâlâ bilinmesinde toplumsal bir fayda kalmamış",
+        "olmalıdır.",
+        "Verinin niteliği: Bilginin magazinel, asılsız veya eski bir adli dosyaya dair olması talebi güçlendirir."
+      ],
+      "text": "Kamu yararı dengesi: Bilginin kamuoyu tarafından hâlâ bilinmesinde toplumsal bir fayda kalmamış olmalıdır. Verinin niteliği: Bilginin magazinel, asılsız veya eski bir adli dosyaya dair olması talebi güçlendirir."
+    },
+    {
+      "lines": [
+        "Kişinin toplumsal rolü: Hakkında içerik bulunan kişinin siyasetçi veya tanınmış bir figür olmaması,",
+        "sıradan bir vatandaş olması durumunda unutulma hakkı daha hızlı uygulanır.",
+        "Yargılama sonucu: İçerik eski bir ceza davasına dayanıyorsa, kişinin beraat etmiş veya adli sicilini",
+        "temizletmiş olması en güçlü dayanaktır."
+      ],
+      "text": "Kişinin toplumsal rolü: Hakkında içerik bulunan kişinin siyasetçi veya tanınmış bir figür olmaması, sıradan bir vatandaş olması durumunda unutulma hakkı daha hızlı uygulanır. Yargılama sonucu: İçerik eski bir ceza davasına dayanıyorsa, kişinin beraat etmiş veya adli sicilini temizletmiş olması en güçlü dayanaktır."
+    },
+    {
+      "lines": [
+        "Olay Özeti"
+      ],
+      "text": "Olay Özeti"
+    },
+    {
+      "lines": [
+        "Mimar Ahmet Bey, 2012 yılında ticari bir anlaşmazlık nedeniyle güveni kötüye kullanma",
+        "suçlamasıyla yargılanmış ve dava 2015 yılında beraatle sonuçlanmıştır. Aradan geçen uzun yıllara",
+        "rağmen, adı arandığında 2012 yılına ait haberler ilk sırada çıkmaya devam etmektedir. Bu durum",
+        "yeni iş projeleri almasını zorlaştırmaktadır."
+      ],
+      "text": "Mimar Ahmet Bey, 2012 yılında ticari bir anlaşmazlık nedeniyle güveni kötüye kullanma suçlamasıyla yargılanmış ve dava 2015 yılında beraatle sonuçlanmıştır. Aradan geçen uzun yıllara rağmen, adı arandığında 2012 yılına ait haberler ilk sırada çıkmaya devam etmektedir. Bu durum yeni iş projeleri almasını zorlaştırmaktadır."
+    },
+    {
+      "lines": [
+        "Hukuki Değerlendirme",
+        "Davanın beraatle sonuçlanmış olması ve aradan geçen uzun süre, unutulma hakkının koşullarını",
+        "karşılamaktadır. Ahmet Bey, beraat kararını ve zaman aşımını belgeleyerek bu sonuçların arama",
+        "motorundan kaldırılmasını talep edebilir."
+      ],
+      "text": "Hukuki Değerlendirme Davanın beraatle sonuçlanmış olması ve aradan geçen uzun süre, unutulma hakkının koşullarını karşılamaktadır. Ahmet Bey, beraat kararını ve zaman aşımını belgeleyerek bu sonuçların arama motorundan kaldırılmasını talep edebilir."
+    },
+    {
+      "lines": [
+        "Google Arama Sonuçlarından İsim Sildirme Prosedürü",
+        "İnternet aramalarının büyük çoğunluğu Google üzerinden yapıldığı için süreç genellikle bu platform odaklı",
+        "yürütülür. Öncelikle Google'ın \"Kişisel Verilerin Korunması Mevzuatı Kapsamında Arama Sonuçlarının",
+        "Kaldırılması\" başlıklı resmi başvuru formu doldurulur. Bu formda kaldırılması istenen URL adresleri tek",
+        "tek ve eksiksiz eklenmeli, aramanın hangi isim-soyisim kombinasyonuyla yapıldığı belirtilmeli ve içeriğin",
+        "neden kaldırılması gerektiği yukarıdaki kriterlere dayandırılarak açıklanmalı, destekleyici belgeler",
+        "(örneğin mahkeme kararı) PDF olarak yüklenmelidir."
+      ],
+      "text": "Google Arama Sonuçlarından İsim Sildirme Prosedürü İnternet aramalarının büyük çoğunluğu Google üzerinden yapıldığı için süreç genellikle bu platform odaklı yürütülür. Öncelikle Google'ın \"Kişisel Verilerin Korunması Mevzuatı Kapsamında Arama Sonuçlarının Kaldırılması\" başlıklı resmi başvuru formu doldurulur. Bu formda kaldırılması istenen URL adresleri tek tek ve eksiksiz eklenmeli, aramanın hangi isim-soyisim kombinasyonuyla yapıldığı belirtilmeli ve içeriğin neden kaldırılması gerektiği yukarıdaki kriterlere dayandırılarak açıklanmalı, destekleyici belgeler (örneğin mahkeme kararı) PDF olarak yüklenmelidir."
+    },
+    {
+      "lines": [
+        "Google'ın yasal ekibi başvuruyu incelerken ifade özgürlüğü ile kişilik hakları arasında bir denge testi",
+        "uygular. Başvuru haklı bulunursa ilgili bağlantılar isim aramalarından kaldırılır; reddedilirse yasal yollara",
+        "başvurmak gerekir."
+      ],
+      "text": "Google'ın yasal ekibi başvuruyu incelerken ifade özgürlüğü ile kişilik hakları arasında bir denge testi uygular. Başvuru haklı bulunursa ilgili bağlantılar isim aramalarından kaldırılır; reddedilirse yasal yollara başvurmak gerekir."
+    },
+    {
+      "lines": [
+        "Google Talebi Reddederse Hangi Yollar İzlenir?",
+        "Arama motorları ticari şirketler olduğu için başvuruları reddetme ihtimali her zaman vardır. Bu durumda",
+        "iki ayrı hukuki yol izlenebilir.",
+        "6698 sayılı Kanun kapsamında arama motorları veri sorumlusu, indeksleme faaliyeti ise veri işleme olarak",
+        "kabul edilir. Google'a yapılan başvurunun reddedilmesi veya 30 gün içinde cevap verilmemesi hâlinde,",
+        "birey Kişisel Verilerin Korunması Kurulu'na şikayette bulunabilir. Kurul, unutulma hakkı kriterlerinin",
+        "karşılandığını tespit ederse arama motoruna içeriğin indeksini kaldırması yönünde bağlayıcı talimat verir."
+      ],
+      "text": "Google Talebi Reddederse Hangi Yollar İzlenir? Arama motorları ticari şirketler olduğu için başvuruları reddetme ihtimali her zaman vardır. Bu durumda iki ayrı hukuki yol izlenebilir. 6698 sayılı Kanun kapsamında arama motorları veri sorumlusu, indeksleme faaliyeti ise veri işleme olarak kabul edilir. Google'a yapılan başvurunun reddedilmesi veya 30 gün içinde cevap verilmemesi hâlinde, birey Kişisel Verilerin Korunması Kurulu'na şikayette bulunabilir. Kurul, unutulma hakkı kriterlerinin karşılandığını tespit ederse arama motoruna içeriğin indeksini kaldırması yönünde bağlayıcı talimat verir."
+    },
+    {
+      "lines": [
+        "Diğer bir yol, doğrudan yerleşim yerindeki Sulh Ceza Hakimliği'ne başvurmaktır. Dilekçede, ismin arama",
+        "sonuçlarında çıkmasının kişilik haklarını ihlal ettiği ve unutulma hakkının doğduğu somut biçimde",
+        "anlatılır. Hakimlik talebi haklı bulursa, içeriğin arama motoru indeksinden çıkarılmasına karar verir; bu",
+        "yol genellikle en hızlı sonucu veren koridordur."
+      ],
+      "text": "Diğer bir yol, doğrudan yerleşim yerindeki Sulh Ceza Hakimliği'ne başvurmaktır. Dilekçede, ismin arama sonuçlarında çıkmasının kişilik haklarını ihlal ettiği ve unutulma hakkının doğduğu somut biçimde anlatılır. Hakimlik talebi haklı bulursa, içeriğin arama motoru indeksinden çıkarılmasına karar verir; bu yol genellikle en hızlı sonucu veren koridordur."
+    },
+    {
+      "lines": [
+        "Aşama Gerekli Belge Yetkili Makam Ortalama Süre",
+        "1. Doğrudan URL listesi, kimlik belgesi, gerekçe metni Google Yasal Birimi 2-6 hafta"
+      ],
+      "text": "Aşama Gerekli Belge Yetkili Makam Ortalama Süre 1. Doğrudan URL listesi, kimlik belgesi, gerekçe metni Google Yasal Birimi 2-6 hafta"
+    },
+    {
+      "lines": [
+        "Başvuru",
+        "2. İdari Şikayet Google'ın red cevabı veya 30 günlük sürenin Kişisel Verilerin Korunması 3-6 ay"
+      ],
+      "text": "Başvuru 2. İdari Şikayet Google'ın red cevabı veya 30 günlük sürenin Kişisel Verilerin Korunması 3-6 ay"
+    },
+    {
+      "lines": [
+        "dolması Kurulu",
+        "3. Yargısal Kişilik hakları ihlali ve unutulma hakkı Sulh Ceza Hakimliği 7-15 gün"
+      ],
+      "text": "dolması Kurulu 3. Yargısal Kişilik hakları ihlali ve unutulma hakkı Sulh Ceza Hakimliği 7-15 gün"
+    },
+    {
+      "lines": [
+        "Başvuru dilekçesi"
+      ],
+      "text": "Başvuru dilekçesi"
+    },
+    {
+      "lines": [
+        "4. Kararın İnfazı Olumlu karar ESB ve Google Tebliğden itibaren 4",
+        "saat"
+      ],
+      "text": "4. Kararın İnfazı Olumlu karar ESB ve Google Tebliğden itibaren 4 saat"
+    },
+    {
+      "lines": [
+        "Sıkça Sorulan Sorular"
+      ],
+      "text": "Sıkça Sorulan Sorular"
+    },
+    {
+      "lines": [
+        "Google'a yapılan başvuru ile Sulh Ceza Hakimliği'ne başvuru aynı anda yapılabilir mi?",
+        "Evet, birbirini engelleyen yollar değildir; ancak genellikle önce Google'a doğrudan başvurulması, sonuç",
+        "alınamaması hâlinde diğer yollara geçilmesi önerilir. Aciliyet varsa doğrudan Sulh Ceza Hakimliği'ne",
+        "başvurmak da mümkündür."
+      ],
+      "text": "Google'a yapılan başvuru ile Sulh Ceza Hakimliği'ne başvuru aynı anda yapılabilir mi? Evet, birbirini engelleyen yollar değildir; ancak genellikle önce Google'a doğrudan başvurulması, sonuç alınamaması hâlinde diğer yollara geçilmesi önerilir. Aciliyet varsa doğrudan Sulh Ceza Hakimliği'ne başvurmak da mümkündür."
+    },
+    {
+      "lines": [
+        "Ünlü veya tanınmış biri unutulma hakkından hiç yararlanamaz mı?",
+        "Yararlanabilir, ancak kriterler daha katı uygulanır. Toplumsal rolü nedeniyle kamuoyunun bilgi edinme",
+        "menfaati daha ağır bastığından, aynı içerik sıradan bir vatandaş için kabul görürken tanınmış bir kişi için",
+        "reddedilebilir."
+      ],
+      "text": "Ünlü veya tanınmış biri unutulma hakkından hiç yararlanamaz mı? Yararlanabilir, ancak kriterler daha katı uygulanır. Toplumsal rolü nedeniyle kamuoyunun bilgi edinme menfaati daha ağır bastığından, aynı içerik sıradan bir vatandaş için kabul görürken tanınmış bir kişi için reddedilebilir."
+    },
+    {
+      "lines": [
+        "Dikkat: Süreçte Sık Yapılan Hatalar",
+        "URL listesinin eksik hazırlanması: Kaldırılması istenen bağlantıların tek tek ve doğru biçimde",
+        "listelenmemesi, başvurunun teknik gerekçeyle reddedilmesine yol açar."
+      ],
+      "text": "Dikkat: Süreçte Sık Yapılan Hatalar URL listesinin eksik hazırlanması: Kaldırılması istenen bağlantıların tek tek ve doğru biçimde listelenmemesi, başvurunun teknik gerekçeyle reddedilmesine yol açar."
+    },
+    {
+      "lines": [
+        "Belgesiz gerekçelendirme: Beraat kararı gibi destekleyici belgeler eklenmeden yapılan",
+        "başvurular, hem Google hem KVKK hem de hakimlik nezdinde büyük oranda reddedilir."
+      ],
+      "text": "Belgesiz gerekçelendirme: Beraat kararı gibi destekleyici belgeler eklenmeden yapılan başvurular, hem Google hem KVKK hem de hakimlik nezdinde büyük oranda reddedilir."
+    },
+    {
+      "lines": [
+        "Sonuç",
+        "Unutulma hakkı, bireyin dijital dünyada geçmişiyle sürekli anılmasının önüne geçen güçlü bir araçtır;",
+        "ancak mutlak değildir ve her olayın kendine özgü zaman, kamu yararı ve kişinin toplumsal rolü dengesi",
+        "içinde değerlendirilir. Google formunun eksik doldurulması veya dilekçedeki usul hataları, hakkın",
+        "tamamen kaybedilmesine yol açabilir."
+      ],
+      "text": "Sonuç Unutulma hakkı, bireyin dijital dünyada geçmişiyle sürekli anılmasının önüne geçen güçlü bir araçtır; ancak mutlak değildir ve her olayın kendine özgü zaman, kamu yararı ve kişinin toplumsal rolü dengesi içinde değerlendirilir. Google formunun eksik doldurulması veya dilekçedeki usul hataları, hakkın tamamen kaybedilmesine yol açabilir."
+    },
+    {
+      "lines": [
+        "Önemli Yasal Uyarı: Bu rehberde yer alan hukuki açıklamalar ve örnek olay Küheylan Hukuk Bürosu tarafından genel bilgilendirme",
+        "amacıyla hazırlanmıştır ve hukuki danışmanlık niteliği taşımaz. Her olayın kendine özgü koşulları sonucu değiştirebileceğinden,",
+        "sürecin bir bilişim hukuku avukatından destek alınarak yürütülmesi tavsiye olunur. © 2026 Küheylan Hukuk Bürosu. Tüm Hakları",
+        "Saklıdır."
+      ],
+      "text": "Önemli Yasal Uyarı: Bu rehberde yer alan hukuki açıklamalar ve örnek olay Küheylan Hukuk Bürosu tarafından genel bilgilendirme amacıyla hazırlanmıştır ve hukuki danışmanlık niteliği taşımaz. Her olayın kendine özgü koşulları sonucu değiştirebileceğinden, sürecin bir bilişim hukuku avukatından destek alınarak yürütülmesi tavsiye olunur. © 2026 Küheylan Hukuk Bürosu. Tüm Hakları Saklıdır."
+    },
+    {
+      "lines": [
+        "Yazar: Av. Mert Deniz Küheylan",
+        "Küheylan Hukuk Bürosu — Burhaniye Mh. Neşetbey Sk. No:12/5 Kat:5 Daire:3 Üsküdar/İstanbul — info@kuheylan.av.tr — kuheylanhukuk.com"
+      ],
+      "text": "Yazar: Av. Mert Deniz Küheylan Küheylan Hukuk Bürosu — Burhaniye Mh. Neşetbey Sk. No:12/5 Kat:5 Daire:3 Üsküdar/İstanbul — info@kuheylan.av.tr — kuheylanhukuk.com"
+    }
+  ],
+  "uyusturucu-suclari-rehberi": [
+    {
+      "lines": [
+        "Ceza Hukuku"
+      ],
+      "text": "Ceza Hukuku"
+    },
+    {
+      "lines": [
+        "Uyuşturucu Kullanma ve Ticareti Suçu: Sınır Nerede, Ceza"
+      ],
+      "text": "Uyuşturucu Kullanma ve Ticareti Suçu: Sınır Nerede, Ceza"
+    },
+    {
+      "lines": [
+        "Nedir?",
+        "Türk Ceza Kanunu m.188, 191 ve 192 Kapsamında Kullanma, Ticaret ve Etkin Pişmanlık",
+        "Bu rehber, Türk Ceza Kanunu ve Yargıtay'ın yerleşik içtihadı esas alınarak 2026 yılı itibarıyla güncellenmiştir."
+      ],
+      "text": "Nedir? Türk Ceza Kanunu m.188, 191 ve 192 Kapsamında Kullanma, Ticaret ve Etkin Pişmanlık Bu rehber, Türk Ceza Kanunu ve Yargıtay'ın yerleşik içtihadı esas alınarak 2026 yılı itibarıyla güncellenmiştir."
+    },
+    {
+      "lines": [
+        "Özet",
+        "Türk hukukunda uyuşturucu ticareti suçu için matematiksel bir gram sınırı yoktur; ancak Yargıtay, madde türüne",
+        "göre yıllık ortalama kişisel kullanım miktarları belirlemiştir. Yakalanan miktar bu sınırların üzerindeyse veya",
+        "miktar az olsa dahi fişekleme, hassas terazi, madde çeşitliliği ya da küçük banknotlar halinde yüksek nakit gibi yan",
+        "deliller varsa eylem uyuşturucu ticareti sayılır. Ticaret suçunun cezası en az 10 yıl hapisten başlar; kullanma",
+        "amacıyla bulundurma ise 2-5 yıl hapis cezası gerektirir ve ilk defa işlenmişse kamu davası ertelenir."
+      ],
+      "text": "Özet Türk hukukunda uyuşturucu ticareti suçu için matematiksel bir gram sınırı yoktur; ancak Yargıtay, madde türüne göre yıllık ortalama kişisel kullanım miktarları belirlemiştir. Yakalanan miktar bu sınırların üzerindeyse veya miktar az olsa dahi fişekleme, hassas terazi, madde çeşitliliği ya da küçük banknotlar halinde yüksek nakit gibi yan deliller varsa eylem uyuşturucu ticareti sayılır. Ticaret suçunun cezası en az 10 yıl hapisten başlar; kullanma amacıyla bulundurma ise 2-5 yıl hapis cezası gerektirir ve ilk defa işlenmişse kamu davası ertelenir."
+    },
+    {
+      "lines": [
+        "\"Az Miktardı, Ticaret Sayılmaz\" Savunması Neden Çoğu Zaman Yetersiz Kalır?",
+        "Uyuşturucu davalarında en yaygın yanılgı, üzerinde çıkan miktarın azlığının kişiyi otomatik olarak",
+        "\"kullanıcı\" statüsünde tutacağı inancıdır. Oysa mahkemeler yalnızca gramaja değil, maddenin nasıl",
+        "paketlendiğine, yanında ne bulunduğuna ve bulunduğu yere de bakar. Bir kişinin üzerinde birkaç gram",
+        "madde çıkması, o maddenin küçük paketlere bölünmüş olması halinde ticaret suçlamasına dönüşebilir."
+      ],
+      "text": "\"Az Miktardı, Ticaret Sayılmaz\" Savunması Neden Çoğu Zaman Yetersiz Kalır? Uyuşturucu davalarında en yaygın yanılgı, üzerinde çıkan miktarın azlığının kişiyi otomatik olarak \"kullanıcı\" statüsünde tutacağı inancıdır. Oysa mahkemeler yalnızca gramaja değil, maddenin nasıl paketlendiğine, yanında ne bulunduğuna ve bulunduğu yere de bakar. Bir kişinin üzerinde birkaç gram madde çıkması, o maddenin küçük paketlere bölünmüş olması halinde ticaret suçlamasına dönüşebilir."
+    },
+    {
+      "lines": [
+        "Bu rehberde Yargıtay'ın kabul ettiği kişisel kullanım sınırları, ticarete işaret eden yan deliller, uyuşturucu",
+        "ticareti ve kullanma suçlarının cezaları ile etkin pişmanlık hükümleri ele alınmaktadır."
+      ],
+      "text": "Bu rehberde Yargıtay'ın kabul ettiği kişisel kullanım sınırları, ticarete işaret eden yan deliller, uyuşturucu ticareti ve kullanma suçlarının cezaları ile etkin pişmanlık hükümleri ele alınmaktadır."
+    },
+    {
+      "lines": [
+        "Yargıtay'a Göre Kişisel Kullanım Sınırları",
+        "Yargıtay Ceza Genel Kurulu, her uyuşturucu türü için bir kişinin bir yıl boyunca tüketebileceği ortalama",
+        "miktarları bilimsel ve tıbbi verilere dayanarak belirlemiştir. Bu sınırlar aşılmadığı sürece eylemin",
+        "kullanma amacıyla bulundurma olduğu varsayılır; ancak sınırlar mutlak değildir ve somut olayın",
+        "özelliklerine göre değişebilir."
+      ],
+      "text": "Yargıtay'a Göre Kişisel Kullanım Sınırları Yargıtay Ceza Genel Kurulu, her uyuşturucu türü için bir kişinin bir yıl boyunca tüketebileceği ortalama miktarları bilimsel ve tıbbi verilere dayanarak belirlemiştir. Bu sınırlar aşılmadığı sürece eylemin kullanma amacıyla bulundurma olduğu varsayılır; ancak sınırlar mutlak değildir ve somut olayın özelliklerine göre değişebilir."
+    },
+    {
+      "lines": [
+        "Madde Türü Günlük Kullanım Kabulü Yıllık Maksimum Sınır"
+      ],
+      "text": "Madde Türü Günlük Kullanım Kabulü Yıllık Maksimum Sınır"
+    },
+    {
+      "lines": [
+        "Esrar (toz veya kubar) 1-2 gram 600-700 gram"
+      ],
+      "text": "Esrar (toz veya kubar) 1-2 gram 600-700 gram"
+    },
+    {
+      "lines": [
+        "Metamfetamin Eser miktar 15-20 gram"
+      ],
+      "text": "Metamfetamin Eser miktar 15-20 gram"
+    },
+    {
+      "lines": [
+        "Kokain Eser miktar 20-30 gram"
+      ],
+      "text": "Kokain Eser miktar 20-30 gram"
+    },
+    {
+      "lines": [
+        "Eroin / Morfin Eser miktar 20 gram"
+      ],
+      "text": "Eroin / Morfin Eser miktar 20 gram"
+    },
+    {
+      "lines": [
+        "Sentetik kannabinoid (bonzai) Eser miktar 10-15 gram"
+      ],
+      "text": "Sentetik kannabinoid (bonzai) Eser miktar 10-15 gram"
+    },
+    {
+      "lines": [
+        "Sentetik haplar (ecstasy, lyrica, xanax vb.) 1-2 adet 50-60 adet (yıllık)"
+      ],
+      "text": "Sentetik haplar (ecstasy, lyrica, xanax vb.) 1-2 adet 50-60 adet (yıllık)"
+    },
+    {
+      "lines": [
+        "Miktar Az Olsa Bile Hangi Durumlarda Ticaret Suçu Oluşur?",
+        "Yakalanan miktar tablodaki sınırların çok altında olsa dahi, belirli yan delillerin varlığı hâlinde eylemin",
+        "niteliği kullanmadan ticarete dönüşür. Ağır ceza mahkemeleri bu değerlendirmeyi yaparken dört kritere",
+        "bakar."
+      ],
+      "text": "Miktar Az Olsa Bile Hangi Durumlarda Ticaret Suçu Oluşur? Yakalanan miktar tablodaki sınırların çok altında olsa dahi, belirli yan delillerin varlığı hâlinde eylemin niteliği kullanmadan ticarete dönüşür. Ağır ceza mahkemeleri bu değerlendirmeyi yaparken dört kritere bakar."
+    },
+    {
+      "lines": [
+        "Paketleme şekli (fişekleme): Maddenin tek bir blok yerine küçük kağıtlara, alüminyum folyolara veya",
+        "kilitli poşetlere bölünerek saklanması, satışa hazırlandığının güçlü bir göstergesidir. Üzerinde 5 gram",
+        "esrar bulunan ve bunu 5 ayrı pakete bölmüş bir kişinin ticaretle yargılanma ihtimali yüksektir."
+      ],
+      "text": "Paketleme şekli (fişekleme): Maddenin tek bir blok yerine küçük kağıtlara, alüminyum folyolara veya kilitli poşetlere bölünerek saklanması, satışa hazırlandığının güçlü bir göstergesidir. Üzerinde 5 gram esrar bulunan ve bunu 5 ayrı pakete bölmüş bir kişinin ticaretle yargılanma ihtimali yüksektir."
+    },
+    {
+      "lines": [
+        "Hassas terazi ve paketleme malzemesi: Uyuşturucuyla birlikte hassas terazi, boş kilitli poşet veya",
+        "presleme aleti ele geçirilmişse, yakalanan miktar 1 gram dahi olsa mahkemeler bunu ticaret olarak",
+        "değerlendirebilir."
+      ],
+      "text": "Hassas terazi ve paketleme malzemesi: Uyuşturucuyla birlikte hassas terazi, boş kilitli poşet veya presleme aleti ele geçirilmişse, yakalanan miktar 1 gram dahi olsa mahkemeler bunu ticaret olarak değerlendirebilir."
+    },
+    {
+      "lines": [
+        "Madde çeşitliliği ve saklama yeri: Aynı anda birden fazla türde uyuşturucu bulunması kullanım",
+        "savunmasını zayıflatır. Maddelerin yatak odası gibi kişisel alanlar yerine dükkan tezgahı altı veya araç",
+        "torpidosu gibi gizli noktalarda bulunması da ticari amaca işaret eder."
+      ],
+      "text": "Madde çeşitliliği ve saklama yeri: Aynı anda birden fazla türde uyuşturucu bulunması kullanım savunmasını zayıflatır. Maddelerin yatak odası gibi kişisel alanlar yerine dükkan tezgahı altı veya araç torpidosu gibi gizli noktalarda bulunması da ticari amaca işaret eder."
+    },
+    {
+      "lines": [
+        "Gelirle orantısız nakit para: Uyuşturucuyla birlikte küçük banknotlar halinde yüksek miktarda nakit",
+        "bulunması ve bu paranın kaynağının meşru bir işle açıklanamaması, satıştan elde edilen hasılat olarak",
+        "değerlendirilir."
+      ],
+      "text": "Gelirle orantısız nakit para: Uyuşturucuyla birlikte küçük banknotlar halinde yüksek miktarda nakit bulunması ve bu paranın kaynağının meşru bir işle açıklanamaması, satıştan elde edilen hasılat olarak değerlendirilir."
+    },
+    {
+      "lines": [
+        "Uyuşturucu Ticareti ve Kullanma Suçlarının Cezaları",
+        "Dosyanın uyuşturucu ticareti mi yoksa kullanma suçu mu sayılacağı, failin özgürlüğünü doğrudan belirler.",
+        "Uyuşturucu maddeleri ruhsatsız imal eden, ithal veya ihraç eden kişi, Türk Ceza Kanunu'nun 188."
+      ],
+      "text": "Uyuşturucu Ticareti ve Kullanma Suçlarının Cezaları Dosyanın uyuşturucu ticareti mi yoksa kullanma suçu mu sayılacağı, failin özgürlüğünü doğrudan belirler. Uyuşturucu maddeleri ruhsatsız imal eden, ithal veya ihraç eden kişi, Türk Ceza Kanunu'nun 188."
+    },
+    {
+      "lines": [
+        "maddesinin birinci fıkrası uyarınca 20 yıldan 30 yıla kadar hapis cezası alır. Bu maddeleri satan, satışa arz",
+        "eden, başkasına veren, nakleden veya depolayan kişi ise aynı maddenin üçüncü fıkrası uyarınca en az 10",
+        "yıl hapis ve adli para cezasıyla cezalandırılır."
+      ],
+      "text": "maddesinin birinci fıkrası uyarınca 20 yıldan 30 yıla kadar hapis cezası alır. Bu maddeleri satan, satışa arz eden, başkasına veren, nakleden veya depolayan kişi ise aynı maddenin üçüncü fıkrası uyarınca en az 10 yıl hapis ve adli para cezasıyla cezalandırılır."
+    },
+    {
+      "lines": [
+        "Ceza, ticarete konu maddenin eroin, kokain, morfin, bonzai veya metamfetamin olması hâlinde yarı",
+        "oranında artırılır; bu durumda taban ceza doğrudan 15 yıl hapse çıkar. Ticaretin okul, yurt, ibadethane,",
+        "hastane veya kışla gibi yerlere 200 metreden daha yakın bir mesafede işlenmesi hâlinde de ceza aynı",
+        "oranda artırılır."
+      ],
+      "text": "Ceza, ticarete konu maddenin eroin, kokain, morfin, bonzai veya metamfetamin olması hâlinde yarı oranında artırılır; bu durumda taban ceza doğrudan 15 yıl hapse çıkar. Ticaretin okul, yurt, ibadethane, hastane veya kışla gibi yerlere 200 metreden daha yakın bir mesafede işlenmesi hâlinde de ceza aynı oranda artırılır."
+    },
+    {
+      "lines": [
+        "Kullanmak için uyuşturucu satın alan, kabul eden veya bulunduran kişi ise Türk Ceza Kanunu'nun 191.",
+        "maddesi uyarınca 2 yıldan 5 yıla kadar hapis cezası alır. Ancak kanun koyucu bu suçta doğrudan",
+        "cezalandırma yerine bir fırsat tanır: ilk kez işlenen bu suçta dava açılmaz, 5 yıl süreyle kamu davasının",
+        "açılması ertelenir. Bu süre içinde şüpheliye en az 1 yıl denetimli serbestlik uygulanır ve gerekirse tedaviye",
+        "yönlendirilir. Kişi yükümlülüklere uyar ve uyuşturucu kullanmazsa hakkında takipsizlik kararı verilir ve",
+        "sicili temiz kalır; ihlal hâlinde ceza davası açılır."
+      ],
+      "text": "Kullanmak için uyuşturucu satın alan, kabul eden veya bulunduran kişi ise Türk Ceza Kanunu'nun 191. maddesi uyarınca 2 yıldan 5 yıla kadar hapis cezası alır. Ancak kanun koyucu bu suçta doğrudan cezalandırma yerine bir fırsat tanır: ilk kez işlenen bu suçta dava açılmaz, 5 yıl süreyle kamu davasının açılması ertelenir. Bu süre içinde şüpheliye en az 1 yıl denetimli serbestlik uygulanır ve gerekirse tedaviye yönlendirilir. Kişi yükümlülüklere uyar ve uyuşturucu kullanmazsa hakkında takipsizlik kararı verilir ve sicili temiz kalır; ihlal hâlinde ceza davası açılır."
+    },
+    {
+      "lines": [
+        "Etkin Pişmanlık: Ceza Nasıl Büyük Oranda Azalır?",
+        "Uyuşturucu davalarında tutukluluğun kaldırılması veya cezanın alt sınıra çekilmesi bakımından en güçlü",
+        "mekanizma, Türk Ceza Kanunu'nun 192. maddesinde düzenlenen etkin pişmanlık hükümleridir."
+      ],
+      "text": "Etkin Pişmanlık: Ceza Nasıl Büyük Oranda Azalır? Uyuşturucu davalarında tutukluluğun kaldırılması veya cezanın alt sınıra çekilmesi bakımından en güçlü mekanizma, Türk Ceza Kanunu'nun 192. maddesinde düzenlenen etkin pişmanlık hükümleridir."
+    },
+    {
+      "lines": [
+        "Uyuşturucu imal veya ticaretine katılan kişi, resmi makamlarca haber alınmadan önce diğer suç",
+        "ortaklarını ve maddenin saklandığı yeri ihbar ederse hiç ceza almaz. Yakalandıktan sonra ise, mahkeme",
+        "veya savcılığa diğer kişilerin kimliklerini açıklayarak suç şebekesinin çökertilmesine somut katkı sağlayan",
+        "kişinin cezası dörtte birden dörtte üçe kadar indirilir. Soyut isimler veya bilinen sahte lakaplar vermek bu",
+        "indirim için yeterli değildir; verilen bilginin operasyonel olarak kullanılabilir olması şarttır."
+      ],
+      "text": "Uyuşturucu imal veya ticaretine katılan kişi, resmi makamlarca haber alınmadan önce diğer suç ortaklarını ve maddenin saklandığı yeri ihbar ederse hiç ceza almaz. Yakalandıktan sonra ise, mahkeme veya savcılığa diğer kişilerin kimliklerini açıklayarak suç şebekesinin çökertilmesine somut katkı sağlayan kişinin cezası dörtte birden dörtte üçe kadar indirilir. Soyut isimler veya bilinen sahte lakaplar vermek bu indirim için yeterli değildir; verilen bilginin operasyonel olarak kullanılabilir olması şarttır."
+    },
+    {
+      "lines": [
+        "Olay Özeti",
+        "Bir kişinin üst aramasında 4 gram esrar ele geçirilmiştir. Madde, tek bir paket hâlinde değil, her biri",
+        "yaklaşık 0,5 gram olacak şekilde 8 ayrı küçük kağıda sarılmış olarak bulunmuştur. Aynı aramada",
+        "ceketinin cebinde 100'er ve 50'şer TL'lik küçük banknotlar halinde 3.000 TL nakit para çıkmıştır."
+      ],
+      "text": "Olay Özeti Bir kişinin üst aramasında 4 gram esrar ele geçirilmiştir. Madde, tek bir paket hâlinde değil, her biri yaklaşık 0,5 gram olacak şekilde 8 ayrı küçük kağıda sarılmış olarak bulunmuştur. Aynı aramada ceketinin cebinde 100'er ve 50'şer TL'lik küçük banknotlar halinde 3.000 TL nakit para çıkmıştır."
+    },
+    {
+      "lines": [
+        "Hukuki Değerlendirme",
+        "Ele geçirilen miktar, esrar için kabul edilen yıllık kişisel kullanım sınırının (600-700 gram) çok",
+        "altındadır. Ancak maddenin fişeklenmiş olması ve gelirle orantısız görünen küçük banknotlar",
+        "halindeki nakit, ticarete işaret eden yan deliller olarak değerlendirilir. Bu nedenle olay, Türk Ceza"
+      ],
+      "text": "Hukuki Değerlendirme Ele geçirilen miktar, esrar için kabul edilen yıllık kişisel kullanım sınırının (600-700 gram) çok altındadır. Ancak maddenin fişeklenmiş olması ve gelirle orantısız görünen küçük banknotlar halindeki nakit, ticarete işaret eden yan deliller olarak değerlendirilir. Bu nedenle olay, Türk Ceza"
+    },
+    {
+      "lines": [
+        "Kanunu'nun 191. maddesindeki kullanma suçu değil, 188. maddedeki uyuşturucu ticareti suçu",
+        "kapsamında incelenmeye açıktır."
+      ],
+      "text": "Kanunu'nun 191. maddesindeki kullanma suçu değil, 188. maddedeki uyuşturucu ticareti suçu kapsamında incelenmeye açıktır."
+    },
+    {
+      "lines": [
+        "Sıkça Sorulan Sorular"
+      ],
+      "text": "Sıkça Sorulan Sorular"
+    },
+    {
+      "lines": [
+        "\"Satmadım, arkadaşıma ikram ettim\" savunması cezayı düşürür mü?",
+        "Hayır. Türk Ceza Kanunu'nun 188. maddesinin üçüncü fıkrası uyarınca uyuşturucuyu başkasına vermek",
+        "veya ikram etmek de satışla aynı cezaya tabidir. Maddi bir kazanç elde edilmemiş olması, eylemin ticaret",
+        "sayılmasını engellemez."
+      ],
+      "text": "\"Satmadım, arkadaşıma ikram ettim\" savunması cezayı düşürür mü? Hayır. Türk Ceza Kanunu'nun 188. maddesinin üçüncü fıkrası uyarınca uyuşturucuyu başkasına vermek veya ikram etmek de satışla aynı cezaya tabidir. Maddi bir kazanç elde edilmemiş olması, eylemin ticaret sayılmasını engellemez."
+    },
+    {
+      "lines": [
+        "Evde bulunan hassas terazi tek başına ticarete kanıt sayılır mı?",
+        "Terazi üzerinde uyuşturucu kalıntısı tespit edilirse veya terazi uyuşturucu maddeyle aynı noktada ele",
+        "geçirilirse, farklı bir amaçla kullanıldığı savunması genellikle kabul görmez. Ancak terazi temizse ve başka",
+        "hiçbir delil yoksa, yalnızca terazinin varlığı tek başına cezalandırmaya yetmez."
+      ],
+      "text": "Evde bulunan hassas terazi tek başına ticarete kanıt sayılır mı? Terazi üzerinde uyuşturucu kalıntısı tespit edilirse veya terazi uyuşturucu maddeyle aynı noktada ele geçirilirse, farklı bir amaçla kullanıldığı savunması genellikle kabul görmez. Ancak terazi temizse ve başka hiçbir delil yoksa, yalnızca terazinin varlığı tek başına cezalandırmaya yetmez."
+    },
+    {
+      "lines": [
+        "Kullanım sınırları içinde madde bulunan kişi tutuklanır mı?",
+        "Yakalanan miktar kişisel kullanım sınırları içindeyse ve fişekleme veya terazi gibi ticarete işaret eden",
+        "başka delil yoksa, şüpheli genellikle tutuklanmaz. Ancak eylem ticaret suçu kapsamında değerlendirilirse,",
+        "bu suç katalog suçlar arasında yer aldığından tutuklanma ihtimali yüksektir."
+      ],
+      "text": "Kullanım sınırları içinde madde bulunan kişi tutuklanır mı? Yakalanan miktar kişisel kullanım sınırları içindeyse ve fişekleme veya terazi gibi ticarete işaret eden başka delil yoksa, şüpheli genellikle tutuklanmaz. Ancak eylem ticaret suçu kapsamında değerlendirilirse, bu suç katalog suçlar arasında yer aldığından tutuklanma ihtimali yüksektir."
+    },
+    {
+      "lines": [
+        "Dikkat: Süreçte Sık Yapılan Hatalar",
+        "İlk ifadenin önemsenmemesi: Kolluk aşamasında verilen ilk ifade, dosyanın kullanma mı yoksa",
+        "ticaret mi sayılacağını doğrudan etkiler; hazırlıksız verilen ifadeler aleyhe delil oluşturabilir."
+      ],
+      "text": "Dikkat: Süreçte Sık Yapılan Hatalar İlk ifadenin önemsenmemesi: Kolluk aşamasında verilen ilk ifade, dosyanın kullanma mı yoksa ticaret mi sayılacağını doğrudan etkiler; hazırlıksız verilen ifadeler aleyhe delil oluşturabilir."
+    },
+    {
+      "lines": [
+        "Etkin pişmanlık beyanının zamanında yapılmaması: Bu hakkın ne zaman ve ne şekilde",
+        "kullanılacağının doğru tespit edilmemesi, sağlanabilecek ciddi bir ceza indiriminin kaybedilmesine",
+        "yol açar."
+      ],
+      "text": "Etkin pişmanlık beyanının zamanında yapılmaması: Bu hakkın ne zaman ve ne şekilde kullanılacağının doğru tespit edilmemesi, sağlanabilecek ciddi bir ceza indiriminin kaybedilmesine yol açar."
+    },
+    {
+      "lines": [
+        "Sonuç",
+        "Uyuşturucu suçlarında \"kullanıcı\" ile \"ticaret yapan fail\" arasındaki çizgi son derece incedir ve",
+        "mahkemenin değerlendirmesi doğrudan dosyadaki teknik delillere bağlıdır. Kriminal raporların",
+        "incelenmesi, svab ve idrar tahlili sonuçlarının analizi, Yargıtay'ın güncel miktar kriterlerinin dosyaya",
+        "uyarlanması ve etkin pişmanlık hakkının doğru zamanda kullanılması uzmanlık gerektiren konulardır."
+      ],
+      "text": "Sonuç Uyuşturucu suçlarında \"kullanıcı\" ile \"ticaret yapan fail\" arasındaki çizgi son derece incedir ve mahkemenin değerlendirmesi doğrudan dosyadaki teknik delillere bağlıdır. Kriminal raporların incelenmesi, svab ve idrar tahlili sonuçlarının analizi, Yargıtay'ın güncel miktar kriterlerinin dosyaya uyarlanması ve etkin pişmanlık hakkının doğru zamanda kullanılması uzmanlık gerektiren konulardır."
+    },
+    {
+      "lines": [
+        "Önemli Yasal Uyarı: Bu rehberde yer alan hukuki açıklamalar ve örnek olay Küheylan Hukuk Bürosu tarafından genel bilgilendirme",
+        "amacıyla hazırlanmıştır ve hukuki danışmanlık niteliği taşımaz. Her dosyanın kendine özgü koşulları sonucu değiştirebileceğinden,",
+        "soruşturma aşamasından itibaren bir ceza avukatından hukuki destek alınması tavsiye olunur. © 2026 Küheylan Hukuk Bürosu. Tüm",
+        "Hakları Saklıdır."
+      ],
+      "text": "Önemli Yasal Uyarı: Bu rehberde yer alan hukuki açıklamalar ve örnek olay Küheylan Hukuk Bürosu tarafından genel bilgilendirme amacıyla hazırlanmıştır ve hukuki danışmanlık niteliği taşımaz. Her dosyanın kendine özgü koşulları sonucu değiştirebileceğinden, soruşturma aşamasından itibaren bir ceza avukatından hukuki destek alınması tavsiye olunur. © 2026 Küheylan Hukuk Bürosu. Tüm Hakları Saklıdır."
+    },
+    {
+      "lines": [
+        "Yazar: Av. Mert Deniz Küheylan",
+        "Küheylan Hukuk Bürosu — Burhaniye Mh. Neşetbey Sk. No:12/5 Kat:5 Daire:3 Üsküdar/İstanbul — info@kuheylan.av.tr — kuheylanhukuk.com"
+      ],
+      "text": "Yazar: Av. Mert Deniz Küheylan Küheylan Hukuk Bürosu — Burhaniye Mh. Neşetbey Sk. No:12/5 Kat:5 Daire:3 Üsküdar/İstanbul — info@kuheylan.av.tr — kuheylanhukuk.com"
+    }
+  ],
+  "vasiyetname-hazirlanmasi-gecerlilik-ve-iptali-rehberi": [
+    {
+      "lines": [
+        "Miras Hukuku Serisi"
+      ],
+      "text": "Miras Hukuku Serisi"
+    },
+    {
+      "lines": [
+        "Vasiyetname Nasıl Hazırlanır? Geçerlilik Şartları ve Vasiyetnamenin"
+      ],
+      "text": "Vasiyetname Nasıl Hazırlanır? Geçerlilik Şartları ve Vasiyetnamenin"
+    },
+    {
+      "lines": [
+        "İptali",
+        "TMK m.531-559 çerçevesinde vasiyetname türleri, geçerlilik şartları ve iptal davası uygulama rehberi.",
+        "Bu rehber, 2026 yılı itibarıyla yürürlükte bulunan Türk Medeni Kanunu hükümleri ve güncel Yargıtay uygulaması esas alınarak hazırlanmıştır."
+      ],
+      "text": "İptali TMK m.531-559 çerçevesinde vasiyetname türleri, geçerlilik şartları ve iptal davası uygulama rehberi. Bu rehber, 2026 yılı itibarıyla yürürlükte bulunan Türk Medeni Kanunu hükümleri ve güncel Yargıtay uygulaması esas alınarak hazırlanmıştır."
+    },
+    {
+      "lines": [
+        "Vasiyetname, bir kimsenin ölümünden sonra malvarlığının nasıl paylaştırılacağını belirlediği, tek taraflı ve her zaman geri alınabilir",
+        "bir ölüme bağlı tasarruftur. Kanun, vasiyetçinin gerçek iradesini güvence altına almak amacıyla resmi, el yazılı ve sözlü olmak üzere",
+        "üç vasiyetname türü öngörmüş ve her biri için sıkı şekil şartları getirmiştir. Bu şartlardan birinin eksik olması vasiyetnameyi",
+        "kendiliğinden geçersiz kılmaz; vasiyetname, iptal davası açılıp kesinleşmiş bir mahkeme kararı alınmadıkça hüküm doğurmaya devam",
+        "eder. Vasiyetnamenin iptali davası ehliyetsizlik, irade sakatlığı, hukuka veya ahlaka aykırılık ile şekil eksikliği sebeplerine",
+        "dayanabilir; saklı pay ihlali ise iptal değil, ayrı bir dava türü olan tenkis davasının konusudur. Bu ayrımın doğru yapılması, sürecin",
+        "başında yanlış dava türünün açılmasını ve hak kaybını önler."
+      ],
+      "text": "Vasiyetname, bir kimsenin ölümünden sonra malvarlığının nasıl paylaştırılacağını belirlediği, tek taraflı ve her zaman geri alınabilir bir ölüme bağlı tasarruftur. Kanun, vasiyetçinin gerçek iradesini güvence altına almak amacıyla resmi, el yazılı ve sözlü olmak üzere üç vasiyetname türü öngörmüş ve her biri için sıkı şekil şartları getirmiştir. Bu şartlardan birinin eksik olması vasiyetnameyi kendiliğinden geçersiz kılmaz; vasiyetname, iptal davası açılıp kesinleşmiş bir mahkeme kararı alınmadıkça hüküm doğurmaya devam eder. Vasiyetnamenin iptali davası ehliyetsizlik, irade sakatlığı, hukuka veya ahlaka aykırılık ile şekil eksikliği sebeplerine dayanabilir; saklı pay ihlali ise iptal değil, ayrı bir dava türü olan tenkis davasının konusudur. Bu ayrımın doğru yapılması, sürecin başında yanlış dava türünün açılmasını ve hak kaybını önler."
+    },
+    {
+      "lines": [
+        "1. Vasiyetname Nedir ve Kimler Düzenleyebilir?",
+        "Vasiyetname, mirasbırakanın ölümünden sonra hüküm doğurmak üzere yaptığı, karşı tarafın kabulüne ihtiyaç duyulmayan tek taraflı bir",
+        "irade beyanıdır. Vasiyetçi, sağlığında dilediği zaman yeni bir vasiyetname düzenleyerek eskisini değiştirebilir veya tamamen ortadan",
+        "kaldırabilir. Vasiyetname düzenleyebilmek için iki şartın birlikte gerçekleşmesi gerekir: on beş yaşını doldurmuş olmak ve ayırt etme",
+        "gücüne sahip bulunmak. Ayırt etme gücünden yoksun kişilerin düzenlediği vasiyetname kendiliğinden hükümsüz olmaz; mirasçılar bu",
+        "vasiyetnameye geçerlilik tanıyabilecekleri gibi, iptal davası açarak da geçersizliğini talep edebilir."
+      ],
+      "text": "1. Vasiyetname Nedir ve Kimler Düzenleyebilir? Vasiyetname, mirasbırakanın ölümünden sonra hüküm doğurmak üzere yaptığı, karşı tarafın kabulüne ihtiyaç duyulmayan tek taraflı bir irade beyanıdır. Vasiyetçi, sağlığında dilediği zaman yeni bir vasiyetname düzenleyerek eskisini değiştirebilir veya tamamen ortadan kaldırabilir. Vasiyetname düzenleyebilmek için iki şartın birlikte gerçekleşmesi gerekir: on beş yaşını doldurmuş olmak ve ayırt etme gücüne sahip bulunmak. Ayırt etme gücünden yoksun kişilerin düzenlediği vasiyetname kendiliğinden hükümsüz olmaz; mirasçılar bu vasiyetnameye geçerlilik tanıyabilecekleri gibi, iptal davası açarak da geçersizliğini talep edebilir."
+    },
+    {
+      "lines": [
+        "2. Vasiyetname Türleri",
+        "Türk Medeni Kanunu, vasiyetnamenin resmi, el yazılı veya sözlü şekilde düzenlenebileceğini öngörür. Her türün kendine özgü şekil şartları",
+        "vardır ve bu şartlara uyulmaması, ilgili vasiyetnamenin iptaline yol açabilir."
+      ],
+      "text": "2. Vasiyetname Türleri Türk Medeni Kanunu, vasiyetnamenin resmi, el yazılı veya sözlü şekilde düzenlenebileceğini öngörür. Her türün kendine özgü şekil şartları vardır ve bu şartlara uyulmaması, ilgili vasiyetnamenin iptaline yol açabilir."
+    },
+    {
+      "lines": [
+        "Tür Nasıl Düzenlenir Öne Çıkan Özellik",
+        "Resmi Vasiyetname (TMK Sulh hakimi, noter veya yetkili memur önünde, iki tanık En güvenli ve ispat gücü en yüksek türdür",
+        "m.532) huzurunda düzenlenir",
+        "El Yazılı Vasiyetname (TMK Vasiyetçi tarafından baştan sona kendi el yazısıyla yazılır, Resmi makam gerektirmez, ancak kaybolma ve tahrif",
+        "m.538) tarih atılır ve imzalanır riski taşır",
+        "Sözlü Vasiyetname (TMK Olağanüstü hallerde, iki tanığa sözlü beyanla yapılır Yalnızca diğer türlerin imkânsız olduğu istisnai",
+        "m.539-541) durumlarda geçerlidir"
+      ],
+      "text": "Tür Nasıl Düzenlenir Öne Çıkan Özellik Resmi Vasiyetname (TMK Sulh hakimi, noter veya yetkili memur önünde, iki tanık En güvenli ve ispat gücü en yüksek türdür m.532) huzurunda düzenlenir El Yazılı Vasiyetname (TMK Vasiyetçi tarafından baştan sona kendi el yazısıyla yazılır, Resmi makam gerektirmez, ancak kaybolma ve tahrif m.538) tarih atılır ve imzalanır riski taşır Sözlü Vasiyetname (TMK Olağanüstü hallerde, iki tanığa sözlü beyanla yapılır Yalnızca diğer türlerin imkânsız olduğu istisnai m.539-541) durumlarda geçerlidir"
+    },
+    {
+      "lines": [
+        "3. Resmi Vasiyetname Nasıl Düzenlenir?",
+        "Resmi vasiyetname, vasiyetçinin iradesini resmi memura -sulh hakimi, noter veya kanunla yetkilendirilmiş diğer bir görevliye- sözlü veya",
+        "yazılı olarak bildirmesiyle başlar. Resmi memur vasiyetnameyi yazar, vasiyetçiye okur, vasiyetçi metnin iradesine uygun olduğunu beyan",
+        "eder ve son olarak iki tanık, vasiyetçinin bu işlemi özgür iradesiyle yaptığını doğrulayarak imza atar. TMK m.536 uyarınca mirasbırakanın",
+        "eşi, altsoy ve üstsoy kan hısımları, kardeşleri ile bunların eşleri resmi memur veya tanık olarak bu işleme katılamaz; katılırlarsa",
+        "vasiyetname şekil yönünden sakatlanır. Ayrıca işleme katılan resmi memura, tanıklara veya bunların yakınlarına yapılan kazandırmalar,",
+        "vasiyetnamenin tamamı değil yalnızca bu kısmı yönünden iptal edilir."
+      ],
+      "text": "3. Resmi Vasiyetname Nasıl Düzenlenir? Resmi vasiyetname, vasiyetçinin iradesini resmi memura -sulh hakimi, noter veya kanunla yetkilendirilmiş diğer bir görevliye- sözlü veya yazılı olarak bildirmesiyle başlar. Resmi memur vasiyetnameyi yazar, vasiyetçiye okur, vasiyetçi metnin iradesine uygun olduğunu beyan eder ve son olarak iki tanık, vasiyetçinin bu işlemi özgür iradesiyle yaptığını doğrulayarak imza atar. TMK m.536 uyarınca mirasbırakanın eşi, altsoy ve üstsoy kan hısımları, kardeşleri ile bunların eşleri resmi memur veya tanık olarak bu işleme katılamaz; katılırlarsa vasiyetname şekil yönünden sakatlanır. Ayrıca işleme katılan resmi memura, tanıklara veya bunların yakınlarına yapılan kazandırmalar, vasiyetnamenin tamamı değil yalnızca bu kısmı yönünden iptal edilir."
+    },
+    {
+      "lines": [
+        "4. El Yazılı Vasiyetname Nasıl Düzenlenir?",
+        "El yazılı vasiyetnamenin geçerli olabilmesi için metnin başından sonuna kadar bizzat vasiyetçinin kendi el yazısıyla yazılmış olması",
+        "zorunludur; bilgisayar çıktısı, daktilo ürünü veya başkasının yazdığı bir metne atılan imza kesinlikle geçersizdir. Vasiyetname üzerinde yıl,",
+        "ay ve gün olarak açık bir tarih bulunmalı ve metnin sonuna vasiyetçinin el yazısıyla adı, soyadı yazılıp ıslak imza atılmalıdır. Tarihin veya",
+        "imzanın eksik olması, vasiyetnamenin şekil yönünden sakat sayılmasına ve iptaline yol açar. El yazılı vasiyetnamenin okunaklı olmaması tek",
+        "başına iptal sebebi değildir; ancak metnin büyük kısmının karalanmış veya okunamaz durumda olması hükümsüzlük sonucu doğurabilir."
+      ],
+      "text": "4. El Yazılı Vasiyetname Nasıl Düzenlenir? El yazılı vasiyetnamenin geçerli olabilmesi için metnin başından sonuna kadar bizzat vasiyetçinin kendi el yazısıyla yazılmış olması zorunludur; bilgisayar çıktısı, daktilo ürünü veya başkasının yazdığı bir metne atılan imza kesinlikle geçersizdir. Vasiyetname üzerinde yıl, ay ve gün olarak açık bir tarih bulunmalı ve metnin sonuna vasiyetçinin el yazısıyla adı, soyadı yazılıp ıslak imza atılmalıdır. Tarihin veya imzanın eksik olması, vasiyetnamenin şekil yönünden sakat sayılmasına ve iptaline yol açar. El yazılı vasiyetnamenin okunaklı olmaması tek başına iptal sebebi değildir; ancak metnin büyük kısmının karalanmış veya okunamaz durumda olması hükümsüzlük sonucu doğurabilir."
+    },
+    {
+      "lines": [
+        "Düzenlendikten sonra bu vasiyetname açık veya kapalı zarfla bir notere, sulh hukuk mahkemesine ya da güvenilir bir kişiye teslim",
+        "edilebilir."
+      ],
+      "text": "Düzenlendikten sonra bu vasiyetname açık veya kapalı zarfla bir notere, sulh hukuk mahkemesine ya da güvenilir bir kişiye teslim edilebilir."
+    },
+    {
+      "lines": [
+        "5. Sözlü Vasiyetname Hangi Hallerde Geçerlidir?",
+        "Sözlü vasiyetname, ancak yakın ölüm tehlikesi, ulaşımın kesilmesi, salgın hastalık veya savaş gibi olağanüstü durumlar yüzünden resmi ya",
+        "da el yazılı vasiyetname yapma imkânı bulunmayan kişiler için öngörülen istisnai bir yoldur. Vasiyetçi son isteklerini iki tanığa sözlü olarak",
+        "Burhaniye Mh. Neşetbey Sk. No:12/5 Kat:5 Daire:3 Üsküdar/İstanbul — info@kuheylan.av.tr — kuheylanhukuk.com"
+      ],
+      "text": "5. Sözlü Vasiyetname Hangi Hallerde Geçerlidir? Sözlü vasiyetname, ancak yakın ölüm tehlikesi, ulaşımın kesilmesi, salgın hastalık veya savaş gibi olağanüstü durumlar yüzünden resmi ya da el yazılı vasiyetname yapma imkânı bulunmayan kişiler için öngörülen istisnai bir yoldur. Vasiyetçi son isteklerini iki tanığa sözlü olarak Burhaniye Mh. Neşetbey Sk. No:12/5 Kat:5 Daire:3 Üsküdar/İstanbul — info@kuheylan.av.tr — kuheylanhukuk.com"
+    },
+    {
+      "lines": [
+        "Küheylan Hukuk Bürosu © 2026 Sayfa 1 / 4"
+      ],
+      "text": "Küheylan Hukuk Bürosu © 2026 Sayfa 1 / 4"
+    },
+    {
+      "lines": [
+        "Miras Hukuku Serisi",
+        "bildirir; tanıklardan biri bu beyanı hemen yazıya geçirip sulh hukuk mahkemesine teslim eder veya her iki tanık mahkemeye giderek beyanı",
+        "tutanağa geçirtir. Olağanüstü durum ortadan kalktıktan sonra vasiyetçinin resmi veya el yazılı vasiyetname yapma imkânı bir ay boyunca",
+        "devam ederse, sözlü vasiyetname kendiliğinden hükümsüz hale gelir; bunun için ayrıca bir iptal davası açılmasına gerek yoktur."
+      ],
+      "text": "Miras Hukuku Serisi bildirir; tanıklardan biri bu beyanı hemen yazıya geçirip sulh hukuk mahkemesine teslim eder veya her iki tanık mahkemeye giderek beyanı tutanağa geçirtir. Olağanüstü durum ortadan kalktıktan sonra vasiyetçinin resmi veya el yazılı vasiyetname yapma imkânı bir ay boyunca devam ederse, sözlü vasiyetname kendiliğinden hükümsüz hale gelir; bunun için ayrıca bir iptal davası açılmasına gerek yoktur."
+    },
+    {
+      "lines": [
+        "6. Vasiyetnamenin Açılması",
+        "Vasiyetçinin ölümünden sonra elinde el yazılı vasiyetname bulunan kişi, bunu gecikmeksizin sulh hukuk mahkemesine teslim etmekle",
+        "yükümlüdür. Noterde düzenlenen resmi vasiyetnameler ise noter tarafından nüfus sistemine bildirilir ve vefat bilgisi sisteme düştüğünde",
+        "ilgili sulh hukuk mahkemesine resen ulaştırılır. Mahkeme, vasiyetnameyi ilgililerin huzurunda açar ve içeriğini tutanağa geçirir;",
+        "vasiyetnamenin açılıp ilgililere usulünce tebliğ edilmesinden önce iptal davası için öngörülen bir yıllık süre işlemeye başlamaz."
+      ],
+      "text": "6. Vasiyetnamenin Açılması Vasiyetçinin ölümünden sonra elinde el yazılı vasiyetname bulunan kişi, bunu gecikmeksizin sulh hukuk mahkemesine teslim etmekle yükümlüdür. Noterde düzenlenen resmi vasiyetnameler ise noter tarafından nüfus sistemine bildirilir ve vefat bilgisi sisteme düştüğünde ilgili sulh hukuk mahkemesine resen ulaştırılır. Mahkeme, vasiyetnameyi ilgililerin huzurunda açar ve içeriğini tutanağa geçirir; vasiyetnamenin açılıp ilgililere usulünce tebliğ edilmesinden önce iptal davası için öngörülen bir yıllık süre işlemeye başlamaz."
+    },
+    {
+      "lines": [
+        "7. Vasiyetnamenin İptali Sebepleri",
+        "TMK m.557, vasiyetnamenin iptaline yol açan sebepleri sınırlı sayıda düzenlemiştir; bu sebepler dışında bir gerekçeyle iptal davası",
+        "açılamaz. Buna göre vasiyetname; vasiyetçi tasarruf ehliyetine sahip değilken düzenlenmişse, yanılma, aldatma, korkutma veya zorlama",
+        "sonucu yapılmışsa, içeriği ya da bağlandığı koşul ve yüklemeler hukuka veya ahlaka aykırıysa, ya da kanunda öngörülen şekil şartlarına",
+        "uyulmadan düzenlenmişse iptal edilebilir. Bu sebeplerden birinin varlığı vasiyetnameyi kendiliğinden hükümsüz kılmaz; mirasbırakanın son",
+        "iradesine saygı ilkesi gereği, iptal ancak dava açılıp mahkemece karar verilmesiyle sonuç doğurur."
+      ],
+      "text": "7. Vasiyetnamenin İptali Sebepleri TMK m.557, vasiyetnamenin iptaline yol açan sebepleri sınırlı sayıda düzenlemiştir; bu sebepler dışında bir gerekçeyle iptal davası açılamaz. Buna göre vasiyetname; vasiyetçi tasarruf ehliyetine sahip değilken düzenlenmişse, yanılma, aldatma, korkutma veya zorlama sonucu yapılmışsa, içeriği ya da bağlandığı koşul ve yüklemeler hukuka veya ahlaka aykırıysa, ya da kanunda öngörülen şekil şartlarına uyulmadan düzenlenmişse iptal edilebilir. Bu sebeplerden birinin varlığı vasiyetnameyi kendiliğinden hükümsüz kılmaz; mirasbırakanın son iradesine saygı ilkesi gereği, iptal ancak dava açılıp mahkemece karar verilmesiyle sonuç doğurur."
+    },
+    {
+      "lines": [
+        "8. Vasiyetnamenin İptali Davası: Kim, Nerede, Ne Zaman Açar?",
+        "Vasiyetnamenin iptali davasını, iptalde hukuki menfaati bulunan her mirasçı veya vasiyet alacaklısı açabilir; bu sıfata sahip olmayan",
+        "kişilerin dava açma hakkı yoktur. Dava, vasiyetnamenin tamamının iptali için açılabileceği gibi, yalnızca sakat olan bir bölümünün iptali için",
+        "de açılabilir. Görevli mahkeme Asliye Hukuk Mahkemesi, yetkili mahkeme ise mirasbırakanın son yerleşim yeri mahkemesidir. TMK m.559",
+        "uyarınca dava, davacının vasiyetnameyi, iptal sebebini ve kendi hak sahipliğini öğrendiği tarihten itibaren bir yıl, her hâlükârda",
+        "vasiyetnamenin açıldığı tarihten itibaren on yıl içinde açılmalıdır; bu süreler hak düşürücü olup hâkim tarafından resen gözetilir. Vasiyetçi",
+        "hayattayken mirasçıların iptal davası açma hakkı doğmaz; bu hak ancak mirasbırakanın ölümüyle ve dava tarihinde mirasçılık sıfatının",
+        "kazanılmış olmasıyla kullanılabilir."
+      ],
+      "text": "8. Vasiyetnamenin İptali Davası: Kim, Nerede, Ne Zaman Açar? Vasiyetnamenin iptali davasını, iptalde hukuki menfaati bulunan her mirasçı veya vasiyet alacaklısı açabilir; bu sıfata sahip olmayan kişilerin dava açma hakkı yoktur. Dava, vasiyetnamenin tamamının iptali için açılabileceği gibi, yalnızca sakat olan bir bölümünün iptali için de açılabilir. Görevli mahkeme Asliye Hukuk Mahkemesi, yetkili mahkeme ise mirasbırakanın son yerleşim yeri mahkemesidir. TMK m.559 uyarınca dava, davacının vasiyetnameyi, iptal sebebini ve kendi hak sahipliğini öğrendiği tarihten itibaren bir yıl, her hâlükârda vasiyetnamenin açıldığı tarihten itibaren on yıl içinde açılmalıdır; bu süreler hak düşürücü olup hâkim tarafından resen gözetilir. Vasiyetçi hayattayken mirasçıların iptal davası açma hakkı doğmaz; bu hak ancak mirasbırakanın ölümüyle ve dava tarihinde mirasçılık sıfatının kazanılmış olmasıyla kullanılabilir."
+    },
+    {
+      "lines": [
+        "9. Vasiyetnamenin İptali ile Tenkis Davası Arasındaki Fark",
+        "Uygulamada en sık karıştırılan ayrım, vasiyetnamenin iptali davası ile tenkis davası arasındadır. İptal davası, vasiyetnamenin kendisinin",
+        "ehliyet, irade veya şekil yönünden sakat olduğu iddiasına dayanır ve kabul edilirse vasiyetname kısmen veya tamamen geçersiz sayılır."
+      ],
+      "text": "9. Vasiyetnamenin İptali ile Tenkis Davası Arasındaki Fark Uygulamada en sık karıştırılan ayrım, vasiyetnamenin iptali davası ile tenkis davası arasındadır. İptal davası, vasiyetnamenin kendisinin ehliyet, irade veya şekil yönünden sakat olduğu iddiasına dayanır ve kabul edilirse vasiyetname kısmen veya tamamen geçersiz sayılır."
+    },
+    {
+      "lines": [
+        "Tenkis davasında ise vasiyetname tamamen geçerlidir; sorun, içeriğinin saklı paylı mirasçıların yasal güvence altındaki paylarını aşmasıdır.",
+        "Bu nedenle saklı pay ihlali iddiasıyla vasiyetnamenin iptali istenemez; doğru dava türü tenkistir."
+      ],
+      "text": "Tenkis davasında ise vasiyetname tamamen geçerlidir; sorun, içeriğinin saklı paylı mirasçıların yasal güvence altındaki paylarını aşmasıdır. Bu nedenle saklı pay ihlali iddiasıyla vasiyetnamenin iptali istenemez; doğru dava türü tenkistir."
+    },
+    {
+      "lines": [
+        "Kriter Vasiyetnamenin İptali Davası Tenkis Davası",
+        "Dayanağı Ehliyetsizlik, irade sakatlığı, hukuka/ahlaka aykırılık, şekil Geçerli bir vasiyetnamenin saklı payı aşan içeriği",
+        "eksikliği",
+        "Davacı İptalde menfaati bulunan her mirasçı veya vasiyet alacaklısı Yalnızca saklı payı ihlal edilen saklı paylı mirasçı",
+        "Süre Öğrenmeden itibaren 1 yıl, açılmadan itibaren 10 yıl Öğrenmeden itibaren 1 yıl, açılmadan itibaren 10 yıl",
+        "Sonuç Vasiyetname kısmen veya tamamen geçersiz sayılır Saklı payı aşan kısım yasal sınıra indirilir, vasiyetname geçerliliğini",
+        "korur"
+      ],
+      "text": "Kriter Vasiyetnamenin İptali Davası Tenkis Davası Dayanağı Ehliyetsizlik, irade sakatlığı, hukuka/ahlaka aykırılık, şekil Geçerli bir vasiyetnamenin saklı payı aşan içeriği eksikliği Davacı İptalde menfaati bulunan her mirasçı veya vasiyet alacaklısı Yalnızca saklı payı ihlal edilen saklı paylı mirasçı Süre Öğrenmeden itibaren 1 yıl, açılmadan itibaren 10 yıl Öğrenmeden itibaren 1 yıl, açılmadan itibaren 10 yıl Sonuç Vasiyetname kısmen veya tamamen geçersiz sayılır Saklı payı aşan kısım yasal sınıra indirilir, vasiyetname geçerliliğini korur"
+    },
+    {
+      "lines": [
+        "10. Somut Uygulama Senaryosu"
+      ],
+      "text": "10. Somut Uygulama Senaryosu"
+    },
+    {
+      "lines": [
+        "OLAY ÖZET FORMU",
+        "85 yaşındaki Hikmet Bey, vefatından altı ay önce evinde, kendisine bakan komşusu Serap Hanım'ın da bulunduğu bir ortamda noter çağırtarak",
+        "resmi vasiyetname düzenletmiş ve tüm malvarlığını Serap Hanım'a bırakmıştır. İşleme tanık olarak Serap Hanım'ın kız kardeşi de katılmıştır."
+      ],
+      "text": "OLAY ÖZET FORMU 85 yaşındaki Hikmet Bey, vefatından altı ay önce evinde, kendisine bakan komşusu Serap Hanım'ın da bulunduğu bir ortamda noter çağırtarak resmi vasiyetname düzenletmiş ve tüm malvarlığını Serap Hanım'a bırakmıştır. İşleme tanık olarak Serap Hanım'ın kız kardeşi de katılmıştır."
+    },
+    {
+      "lines": [
+        "Hikmet Bey'in tek çocuğu Murat Bey, babasının vefatından ve vasiyetnamenin sulh hukuk mahkemesinde açılıp kendisine tebliğ edilmesinden",
+        "sonra durumu öğrenmiştir."
+      ],
+      "text": "Hikmet Bey'in tek çocuğu Murat Bey, babasının vefatından ve vasiyetnamenin sulh hukuk mahkemesinde açılıp kendisine tebliğ edilmesinden sonra durumu öğrenmiştir."
+    },
+    {
+      "lines": [
+        "BAŞVURU VE HUKUKİ SÜREÇ",
+        "Murat Bey'in avukatı, öncelikle vasiyetnameye tanık olarak katılan kişinin lehtar Serap Hanım'ın kız kardeşi olması nedeniyle TMK m.536",
+        "kapsamında yasaklı bir kişi olduğunu, bu nedenle şekil yönünden sakatlık bulunduğunu tespit etmiştir. Ayrıca dosyaya, Hikmet Bey'in",
+        "vasiyetname tarihinde ileri derecede unutkanlık yaşadığını gösteren hastane kayıtları sunularak ayırt etme gücünün tartışmalı olduğu ileri",
+        "sürülmüştür. Vasiyetnamenin açıldığı tarihten itibaren bir yıllık süre dolmadan Asliye Hukuk Mahkemesinde iptal davası açılmış, mahkeme tanık",
+        "beyanlarını ve hastane kayıtlarını değerlendirmek üzere bilirkişi incelemesine başvurmuştur."
+      ],
+      "text": "BAŞVURU VE HUKUKİ SÜREÇ Murat Bey'in avukatı, öncelikle vasiyetnameye tanık olarak katılan kişinin lehtar Serap Hanım'ın kız kardeşi olması nedeniyle TMK m.536 kapsamında yasaklı bir kişi olduğunu, bu nedenle şekil yönünden sakatlık bulunduğunu tespit etmiştir. Ayrıca dosyaya, Hikmet Bey'in vasiyetname tarihinde ileri derecede unutkanlık yaşadığını gösteren hastane kayıtları sunularak ayırt etme gücünün tartışmalı olduğu ileri sürülmüştür. Vasiyetnamenin açıldığı tarihten itibaren bir yıllık süre dolmadan Asliye Hukuk Mahkemesinde iptal davası açılmış, mahkeme tanık beyanlarını ve hastane kayıtlarını değerlendirmek üzere bilirkişi incelemesine başvurmuştur."
+    },
+    {
+      "lines": [
+        "Burhaniye Mh. Neşetbey Sk. No:12/5 Kat:5 Daire:3 Üsküdar/İstanbul — info@kuheylan.av.tr — kuheylanhukuk.com"
+      ],
+      "text": "Burhaniye Mh. Neşetbey Sk. No:12/5 Kat:5 Daire:3 Üsküdar/İstanbul — info@kuheylan.av.tr — kuheylanhukuk.com"
+    },
+    {
+      "lines": [
+        "Küheylan Hukuk Bürosu © 2026 Sayfa 2 / 4"
+      ],
+      "text": "Küheylan Hukuk Bürosu © 2026 Sayfa 2 / 4"
+    },
+    {
+      "lines": [
+        "Miras Hukuku Serisi"
+      ],
+      "text": "Miras Hukuku Serisi"
+    },
+    {
+      "lines": [
+        "SONUÇ",
+        "Mahkeme, tanıklık yasağına ilişkin şekil eksikliğinin tek başına tüm vasiyetnameyi değil yalnızca Serap Hanım lehine yapılan kazandırmayı",
+        "sakatlayabileceğini, ancak ehliyetsizlik iddiasının da bilirkişi raporuyla doğrulandığını değerlendirerek vasiyetnamenin tamamının iptaline karar",
+        "vermiştir. Karar kesinleştikten sonra Murat Bey, babasının tek yasal mirasçısı sıfatıyla terekenin tamamına hak kazanmıştır. Dosya, hem şekil",
+        "hem ehliyet sakatlığının bir arada ileri sürülmesinin ispat gücünü artırdığını gösteren tipik bir örnek olmuştur."
+      ],
+      "text": "SONUÇ Mahkeme, tanıklık yasağına ilişkin şekil eksikliğinin tek başına tüm vasiyetnameyi değil yalnızca Serap Hanım lehine yapılan kazandırmayı sakatlayabileceğini, ancak ehliyetsizlik iddiasının da bilirkişi raporuyla doğrulandığını değerlendirerek vasiyetnamenin tamamının iptaline karar vermiştir. Karar kesinleştikten sonra Murat Bey, babasının tek yasal mirasçısı sıfatıyla terekenin tamamına hak kazanmıştır. Dosya, hem şekil hem ehliyet sakatlığının bir arada ileri sürülmesinin ispat gücünü artırdığını gösteren tipik bir örnek olmuştur."
+    },
+    {
+      "lines": [
+        "11. Sürece İlişkin Pratik Bilgiler"
+      ],
+      "text": "11. Sürece İlişkin Pratik Bilgiler"
+    },
+    {
+      "lines": [
+        "Aşama Yapılacak İşlem Sahadan Not",
+        "1. Vasiyetnamenin Sulh hukuk mahkemesinden açılan vasiyetnamenin ve tutanağın Tebliğ tarihi, 1 yıllık sürenin başlangıcı için kritik öneme",
+        "Temini örneğinin alınması sahiptir."
+      ],
+      "text": "Aşama Yapılacak İşlem Sahadan Not 1. Vasiyetnamenin Sulh hukuk mahkemesinden açılan vasiyetnamenin ve tutanağın Tebliğ tarihi, 1 yıllık sürenin başlangıcı için kritik öneme Temini örneğinin alınması sahiptir."
+    },
+    {
+      "lines": [
+        "2. Delil Toplama Tanıklık yasağı, ehliyetsizlik veya irade sakatlığına ilişkin belge ve Sağlık raporu ve hastane kayıtları ehliyet incelemesinde",
+        "tanık listesinin hazırlanması belirleyicidir.",
+        "3. Dava Türünün Şekil/ehliyet sorunu varsa iptal, saklı pay sorunu varsa tenkis Yanlış dava türü açılması, süre kaçırma riskini artırır."
+      ],
+      "text": "2. Delil Toplama Tanıklık yasağı, ehliyetsizlik veya irade sakatlığına ilişkin belge ve Sağlık raporu ve hastane kayıtları ehliyet incelemesinde tanık listesinin hazırlanması belirleyicidir. 3. Dava Türünün Şekil/ehliyet sorunu varsa iptal, saklı pay sorunu varsa tenkis Yanlış dava türü açılması, süre kaçırma riskini artırır."
+    },
+    {
+      "lines": [
+        "Belirlenmesi davasının seçilmesi",
+        "4. Dava Açılışı Mirasbırakanın son yerleşim yeri Asliye Hukuk Mahkemesinde Davacının mirasçılık sıfatını dava tarihinde taşıması",
+        "dava açılması gerekir.",
+        "5. Bilirkişi Ehliyet iddialarında tıbbi, şekil iddialarında belge incelemesi Tanık beyanları ile sağlık kayıtlarının birlikte",
+        "İncelemesi yapılması değerlendirilmesi ispatı güçlendirir."
+      ],
+      "text": "Belirlenmesi davasının seçilmesi 4. Dava Açılışı Mirasbırakanın son yerleşim yeri Asliye Hukuk Mahkemesinde Davacının mirasçılık sıfatını dava tarihinde taşıması dava açılması gerekir. 5. Bilirkişi Ehliyet iddialarında tıbbi, şekil iddialarında belge incelemesi Tanık beyanları ile sağlık kayıtlarının birlikte İncelemesi yapılması değerlendirilmesi ispatı güçlendirir."
+    },
+    {
+      "lines": [
+        "12. Sıkça Sorulan Sorular"
+      ],
+      "text": "12. Sıkça Sorulan Sorular"
+    },
+    {
+      "lines": [
+        "Noterde düzenlenen vasiyetname iptal edilemez mi?",
+        "Hayır. Resmi şekilde düzenlenmiş olması vasiyetnameyi iptalden muaf tutmaz; ehliyetsizlik, irade sakatlığı veya tanıklık yasağı gibi",
+        "sebeplerle resmi vasiyetname de iptal edilebilir."
+      ],
+      "text": "Noterde düzenlenen vasiyetname iptal edilemez mi? Hayır. Resmi şekilde düzenlenmiş olması vasiyetnameyi iptalden muaf tutmaz; ehliyetsizlik, irade sakatlığı veya tanıklık yasağı gibi sebeplerle resmi vasiyetname de iptal edilebilir."
+    },
+    {
+      "lines": [
+        "El yazılı vasiyetnamede tarih neden bu kadar önemlidir?",
+        "Tarih, vasiyetçinin düzenleme anındaki ehliyet durumunu tespit etmeye yarar; yıl, ay ve gün eksiksiz belirtilmezse vasiyetname şekil",
+        "yönünden sakat sayılır ve iptali gündeme gelir."
+      ],
+      "text": "El yazılı vasiyetnamede tarih neden bu kadar önemlidir? Tarih, vasiyetçinin düzenleme anındaki ehliyet durumunu tespit etmeye yarar; yıl, ay ve gün eksiksiz belirtilmezse vasiyetname şekil yönünden sakat sayılır ve iptali gündeme gelir."
+    },
+    {
+      "lines": [
+        "Vasiyetname saklı payımı ihlal ediyorsa iptalini mi istemeliyim?",
+        "Hayır. Vasiyetname şekil ve ehliyet yönünden geçerliyse, saklı pay ihlali iddiasıyla açılması gereken dava iptal değil tenkis davasıdır."
+      ],
+      "text": "Vasiyetname saklı payımı ihlal ediyorsa iptalini mi istemeliyim? Hayır. Vasiyetname şekil ve ehliyet yönünden geçerliyse, saklı pay ihlali iddiasıyla açılması gereken dava iptal değil tenkis davasıdır."
+    },
+    {
+      "lines": [
+        "Mirasbırakan hayattayken vasiyetnamenin iptali istenebilir mi?",
+        "Hayır. İptal davası açma hakkı ancak mirasbırakanın ölümüyle ve davacının mirasçılık sıfatını kazanmasıyla doğar."
+      ],
+      "text": "Mirasbırakan hayattayken vasiyetnamenin iptali istenebilir mi? Hayır. İptal davası açma hakkı ancak mirasbırakanın ölümüyle ve davacının mirasçılık sıfatını kazanmasıyla doğar."
+    },
+    {
+      "lines": [
+        "Vasiyetnamenin bir kısmı geçersizse tamamı mı iptal edilir?",
+        "Her zaman değil. Örneğin tanıklık yasağına aykırılık, yalnızca yasaklı kişi veya yakınları lehine yapılan kazandırmayı sakatlar;",
+        "vasiyetnamenin geri kalanı geçerliliğini koruyabilir."
+      ],
+      "text": "Vasiyetnamenin bir kısmı geçersizse tamamı mı iptal edilir? Her zaman değil. Örneğin tanıklık yasağına aykırılık, yalnızca yasaklı kişi veya yakınları lehine yapılan kazandırmayı sakatlar; vasiyetnamenin geri kalanı geçerliliğini koruyabilir."
+    },
+    {
+      "lines": [
+        "DİKKAT — SIK YAPILAN HATALAR"
+      ],
+      "text": "DİKKAT — SIK YAPILAN HATALAR"
+    },
+    {
+      "lines": [
+        "El yazılı vasiyetnamede tarihi yalnızca ay ve yıl olarak yazıp günü atlamak,"
+      ],
+      "text": "El yazılı vasiyetnamede tarihi yalnızca ay ve yıl olarak yazıp günü atlamak,"
+    },
+    {
+      "lines": [
+        "Bilgisayarda hazırlanıp yalnızca imzası el yazısıyla atılan metni vasiyetname sanmak,"
+      ],
+      "text": "Bilgisayarda hazırlanıp yalnızca imzası el yazısıyla atılan metni vasiyetname sanmak,"
+    },
+    {
+      "lines": [
+        "Resmi vasiyetnamede lehtarın yakınını tanık olarak kullanmak,",
+        "Saklı pay ihlali durumunda iptal davası yerine yanlışlıkla tenkis, ya da tenkis yerine iptal davası açmak,",
+        "Vasiyetnamenin açılıp tebliğ edildiği tarihi gözden kaçırarak bir yıllık hak düşürücü süreyi kaçırmak."
+      ],
+      "text": "Resmi vasiyetnamede lehtarın yakınını tanık olarak kullanmak, Saklı pay ihlali durumunda iptal davası yerine yanlışlıkla tenkis, ya da tenkis yerine iptal davası açmak, Vasiyetnamenin açılıp tebliğ edildiği tarihi gözden kaçırarak bir yıllık hak düşürücü süreyi kaçırmak."
+    },
+    {
+      "lines": [
+        "13. Sonuç",
+        "Vasiyetname, mirasbırakanın son iradesini güvence altına almanın en etkili yoludur; ancak bu güvence, kanunun öngördüğü şekil ve ehliyet",
+        "şartlarına harfiyen uyulmasına bağlıdır. En küçük bir şekil hatası dahi, yıllar sonra açılacak bir iptal davasıyla vasiyetçinin iradesinin",
+        "tamamen boşa çıkmasına yol açabilir. Küheylan Hukuk Bürosu olarak miras hukuku departmanımız, vasiyetnamenin hazırlanmasından",
+        "Burhaniye Mh. Neşetbey Sk. No:12/5 Kat:5 Daire:3 Üsküdar/İstanbul — info@kuheylan.av.tr — kuheylanhukuk.com"
+      ],
+      "text": "13. Sonuç Vasiyetname, mirasbırakanın son iradesini güvence altına almanın en etkili yoludur; ancak bu güvence, kanunun öngördüğü şekil ve ehliyet şartlarına harfiyen uyulmasına bağlıdır. En küçük bir şekil hatası dahi, yıllar sonra açılacak bir iptal davasıyla vasiyetçinin iradesinin tamamen boşa çıkmasına yol açabilir. Küheylan Hukuk Bürosu olarak miras hukuku departmanımız, vasiyetnamenin hazırlanmasından Burhaniye Mh. Neşetbey Sk. No:12/5 Kat:5 Daire:3 Üsküdar/İstanbul — info@kuheylan.av.tr — kuheylanhukuk.com"
+    },
+    {
+      "lines": [
+        "Küheylan Hukuk Bürosu © 2026 Sayfa 3 / 4"
+      ],
+      "text": "Küheylan Hukuk Bürosu © 2026 Sayfa 3 / 4"
+    },
+    {
+      "lines": [
+        "Miras Hukuku Serisi",
+        "açılmasına, iptal davasının doğru sebep ve sürede açılmasından tenkis talebiyle ayrımının yapılmasına kadar sürecin her aşamasında",
+        "müvekkillerimize kapsamlı hukuki destek sunmaktadır. Vasiyetname düzenlemeyi veya mevcut bir vasiyetnameye itiraz etmeyi",
+        "düşünüyorsanız, hak düşürücü süreler dolmadan büromuzun miras hukuku ekibiyle görüşebilirsiniz."
+      ],
+      "text": "Miras Hukuku Serisi açılmasına, iptal davasının doğru sebep ve sürede açılmasından tenkis talebiyle ayrımının yapılmasına kadar sürecin her aşamasında müvekkillerimize kapsamlı hukuki destek sunmaktadır. Vasiyetname düzenlemeyi veya mevcut bir vasiyetnameye itiraz etmeyi düşünüyorsanız, hak düşürücü süreler dolmadan büromuzun miras hukuku ekibiyle görüşebilirsiniz."
+    },
+    {
+      "lines": [
+        "Av. Mert Deniz Küheylan",
+        "Önemli Yasal Uyarı: Bu rehberde yer alan bilgiler genel bilgilendirme amaçlıdır ve hukuki mütalaa niteliği taşımaz. Her somut olayın kendine özgü koşulları,",
+        "vasiyetnamenin türü ve sunulan delillerin niteliğine göre sonuç değişebilir. Sürecin bir avukat desteğiyle yürütülmesi, hak düşürücü sürelerin kaçırılmaması açısından",
+        "önerilir."
+      ],
+      "text": "Av. Mert Deniz Küheylan Önemli Yasal Uyarı: Bu rehberde yer alan bilgiler genel bilgilendirme amaçlıdır ve hukuki mütalaa niteliği taşımaz. Her somut olayın kendine özgü koşulları, vasiyetnamenin türü ve sunulan delillerin niteliğine göre sonuç değişebilir. Sürecin bir avukat desteğiyle yürütülmesi, hak düşürücü sürelerin kaçırılmaması açısından önerilir."
+    },
+    {
+      "lines": [
+        "Burhaniye Mh. Neşetbey Sk. No:12/5 Kat:5 Daire:3 Üsküdar/İstanbul — info@kuheylan.av.tr — kuheylanhukuk.com"
+      ],
+      "text": "Burhaniye Mh. Neşetbey Sk. No:12/5 Kat:5 Daire:3 Üsküdar/İstanbul — info@kuheylan.av.tr — kuheylanhukuk.com"
+    },
+    {
+      "lines": [
+        "Küheylan Hukuk Bürosu © 2026 Sayfa 4 / 4"
+      ],
+      "text": "Küheylan Hukuk Bürosu © 2026 Sayfa 4 / 4"
+    }
+  ],
+  "veraset-ilami-ve-miras-intikal-islemleri-rehberi": [
+    {
+      "lines": [
+        "Miras Hukuku Serisi"
+      ],
+      "text": "Miras Hukuku Serisi"
+    },
+    {
+      "lines": [
+        "Veraset İlamı (Mirasçılık Belgesi) Nasıl Alınır? Miras İntikal"
+      ],
+      "text": "Veraset İlamı (Mirasçılık Belgesi) Nasıl Alınır? Miras İntikal"
+    },
+    {
+      "lines": [
+        "İşlemleri",
+        "TMK m.598, HMK m.11/3 ve m.383-384, 1512 sayılı Noterlik Kanunu m.71/A ile Veraset ve İntikal Vergisi Kanunu m.9",
+        "çerçevesinde hazırlanmış uygulama rehberi.",
+        "Bu rehber, 2026 yılı itibarıyla yürürlükte bulunan mevzuat hükümleri ve güncel veraset ve intikal vergisi tarife ve istisna tutarları esas alınarak hazırlanmıştır."
+      ],
+      "text": "İşlemleri TMK m.598, HMK m.11/3 ve m.383-384, 1512 sayılı Noterlik Kanunu m.71/A ile Veraset ve İntikal Vergisi Kanunu m.9 çerçevesinde hazırlanmış uygulama rehberi. Bu rehber, 2026 yılı itibarıyla yürürlükte bulunan mevzuat hükümleri ve güncel veraset ve intikal vergisi tarife ve istisna tutarları esas alınarak hazırlanmıştır."
+    },
+    {
+      "lines": [
+        "Bir yakınını kaybeden mirasçıların önündeki ilk hukuki eşik, mirasçılık sıfatını resmî olarak ispatlayan veraset ilamının temin",
+        "edilmesidir. Bu belge, nüfus kayıtlarında herhangi bir çelişki bulunmayan ve mirasçılık durumu tartışmasız olan hallerde noterlikten",
+        "kısa sürede alınabilirken; yabancılık unsuru, çekişmeli mirasçılık veya vasiyetname gibi hukuki değerlendirme gerektiren durumlarda",
+        "Sulh Hukuk Mahkemesine başvurulması zorunludur. Veraset ilamı alındıktan sonra süreç burada bitmez; mirasçılar, ölüm tarihinden",
+        "itibaren dört ay içinde vergi dairesine veraset ve intikal vergisi beyannamesi vermek, ardından tapu müdürlüğü nezdinde",
+        "taşınmazların kendi adlarına intikalini sağlamak zorundadır. Her aşamada uygulanan süreler, istisna tutarları ve usul kuralları farklı",
+        "olduğundan, sürecin bir avukat rehberliğinde yürütülmesi hem zaman kaybını hem de hak kayıplarını önler."
+      ],
+      "text": "Bir yakınını kaybeden mirasçıların önündeki ilk hukuki eşik, mirasçılık sıfatını resmî olarak ispatlayan veraset ilamının temin edilmesidir. Bu belge, nüfus kayıtlarında herhangi bir çelişki bulunmayan ve mirasçılık durumu tartışmasız olan hallerde noterlikten kısa sürede alınabilirken; yabancılık unsuru, çekişmeli mirasçılık veya vasiyetname gibi hukuki değerlendirme gerektiren durumlarda Sulh Hukuk Mahkemesine başvurulması zorunludur. Veraset ilamı alındıktan sonra süreç burada bitmez; mirasçılar, ölüm tarihinden itibaren dört ay içinde vergi dairesine veraset ve intikal vergisi beyannamesi vermek, ardından tapu müdürlüğü nezdinde taşınmazların kendi adlarına intikalini sağlamak zorundadır. Her aşamada uygulanan süreler, istisna tutarları ve usul kuralları farklı olduğundan, sürecin bir avukat rehberliğinde yürütülmesi hem zaman kaybını hem de hak kayıplarını önler."
+    },
+    {
+      "lines": [
+        "1. Veraset İlamı (Mirasçılık Belgesi) Nedir?",
+        "Veraset ilamı, halk arasında mirasçılık belgesi olarak da bilinen ve Türk Medeni Kanunu'nun 598. maddesinde düzenlenen resmî bir",
+        "belgedir. Mirasbırakanın ölümü üzerine kimlerin mirasçı olduğunu ve her bir mirasçının miras payının hangi oranda bulunduğunu gösterir."
+      ],
+      "text": "1. Veraset İlamı (Mirasçılık Belgesi) Nedir? Veraset ilamı, halk arasında mirasçılık belgesi olarak da bilinen ve Türk Medeni Kanunu'nun 598. maddesinde düzenlenen resmî bir belgedir. Mirasbırakanın ölümü üzerine kimlerin mirasçı olduğunu ve her bir mirasçının miras payının hangi oranda bulunduğunu gösterir."
+    },
+    {
+      "lines": [
+        "Bu belge olmaksızın mirasçıların tapu işlemleri, banka hesaplarına erişimi, araç devirleri ve veraset ve intikal vergisi beyanı gibi terekeye",
+        "ilişkin hiçbir resmî işlemi gerçekleştirmesi mümkün değildir."
+      ],
+      "text": "Bu belge olmaksızın mirasçıların tapu işlemleri, banka hesaplarına erişimi, araç devirleri ve veraset ve intikal vergisi beyanı gibi terekeye ilişkin hiçbir resmî işlemi gerçekleştirmesi mümkün değildir."
+    },
+    {
+      "lines": [
+        "Veraset ilamının hukuki niteliği kesin hüküm teşkil etmez; aksi ispat edilinceye kadar geçerli sayılır. Bu nedenle belgede yer alan bilgilerin",
+        "hatalı olduğunun sonradan anlaşılması, yeni bir mirasçının ortaya çıkması veya miras paylarının yanlış hesaplanmış olması hallerinde,",
+        "veraset ilamının düzeltilmesi veya iptali her zaman talep edilebilir."
+      ],
+      "text": "Veraset ilamının hukuki niteliği kesin hüküm teşkil etmez; aksi ispat edilinceye kadar geçerli sayılır. Bu nedenle belgede yer alan bilgilerin hatalı olduğunun sonradan anlaşılması, yeni bir mirasçının ortaya çıkması veya miras paylarının yanlış hesaplanmış olması hallerinde, veraset ilamının düzeltilmesi veya iptali her zaman talep edilebilir."
+    },
+    {
+      "lines": [
+        "2. Veraset İlamı Noterden Nasıl Alınır?",
+        "1512 sayılı Noterlik Kanunu'nun 71/A maddesi, mirasçılık durumunun nüfus kayıtlarından açık ve tereddütsüz biçimde anlaşılabildiği",
+        "hallerde noterlerin de veraset ilamı düzenlemesine imkân tanımaktadır. Bu düzenlemenin amacı, çekişmesiz mirasçılık ilişkilerinde",
+        "vatandaşların mahkemeye başvurmaksızın daha hızlı sonuç almasını sağlamaktır."
+      ],
+      "text": "2. Veraset İlamı Noterden Nasıl Alınır? 1512 sayılı Noterlik Kanunu'nun 71/A maddesi, mirasçılık durumunun nüfus kayıtlarından açık ve tereddütsüz biçimde anlaşılabildiği hallerde noterlerin de veraset ilamı düzenlemesine imkân tanımaktadır. Bu düzenlemenin amacı, çekişmesiz mirasçılık ilişkilerinde vatandaşların mahkemeye başvurmaksızın daha hızlı sonuç almasını sağlamaktır."
+    },
+    {
+      "lines": [
+        "2.1. Noterden Veraset İlamı Alınabilen Haller"
+      ],
+      "text": "2.1. Noterden Veraset İlamı Alınabilen Haller"
+    },
+    {
+      "lines": [
+        "Mirasbırakanın Türkiye Cumhuriyeti vatandaşı olması,"
+      ],
+      "text": "Mirasbırakanın Türkiye Cumhuriyeti vatandaşı olması,"
+    },
+    {
+      "lines": [
+        "Nüfus kayıtlarının eksiksiz ve birbiriyle uyumlu olması,"
+      ],
+      "text": "Nüfus kayıtlarının eksiksiz ve birbiriyle uyumlu olması,"
+    },
+    {
+      "lines": [
+        "Yasal mirasçıların nüfus sisteminden açıkça belirlenebilmesi,"
+      ],
+      "text": "Yasal mirasçıların nüfus sisteminden açıkça belirlenebilmesi,"
+    },
+    {
+      "lines": [
+        "Mirasçılık konusunda herhangi bir çekişmenin bulunmaması,",
+        "Vasiyetname, miras sözleşmesi veya atanmış mirasçılık gibi özel bir durumun mevcut olmaması.",
+        "Noterlik, MERNİS sistemi üzerinden yaptığı inceleme sonucunda mirasçıları ve miras paylarını belirleyerek işlemi genellikle aynı gün",
+        "içinde sonuçlandırır. Uygulamada eş, çocuklar ve anne-baba gibi klasik mirasçılık ilişkilerinde bu yol tercih edilmektedir."
+      ],
+      "text": "Mirasçılık konusunda herhangi bir çekişmenin bulunmaması, Vasiyetname, miras sözleşmesi veya atanmış mirasçılık gibi özel bir durumun mevcut olmaması. Noterlik, MERNİS sistemi üzerinden yaptığı inceleme sonucunda mirasçıları ve miras paylarını belirleyerek işlemi genellikle aynı gün içinde sonuçlandırır. Uygulamada eş, çocuklar ve anne-baba gibi klasik mirasçılık ilişkilerinde bu yol tercih edilmektedir."
+    },
+    {
+      "lines": [
+        "2.2. Noterin İşlem Yapamayacağı Durumlar",
+        "Kanun koyucu, hukuki değerlendirme ve yargısal inceleme gerektiren mirasçılık durumlarında noterlerin işlem yapamayacağını açıkça",
+        "düzenlemiştir. Yabancılık unsurunun bulunması, nüfus kayıtlarında çelişki veya eksiklik olması, soybağı veya evlatlık ilişkisine dair",
+        "uyuşmazlık, vasiyetname ya da miras sözleşmesinin varlığı, atanmış mirasçı iddiası veya mirasçılar arasında çekişme bulunması hallerinde",
+        "noter başvuruyu reddetmek zorundadır. Bu durumlarda tek yol Sulh Hukuk Mahkemesine başvurmaktır."
+      ],
+      "text": "2.2. Noterin İşlem Yapamayacağı Durumlar Kanun koyucu, hukuki değerlendirme ve yargısal inceleme gerektiren mirasçılık durumlarında noterlerin işlem yapamayacağını açıkça düzenlemiştir. Yabancılık unsurunun bulunması, nüfus kayıtlarında çelişki veya eksiklik olması, soybağı veya evlatlık ilişkisine dair uyuşmazlık, vasiyetname ya da miras sözleşmesinin varlığı, atanmış mirasçı iddiası veya mirasçılar arasında çekişme bulunması hallerinde noter başvuruyu reddetmek zorundadır. Bu durumlarda tek yol Sulh Hukuk Mahkemesine başvurmaktır."
+    },
+    {
+      "lines": [
+        "3. Veraset İlamı Sulh Hukuk Mahkemesinden Nasıl Alınır?",
+        "Noterlikçe düzenlenemeyen veya hukuki inceleme gerektiren mirasçılık durumlarında veraset ilamı, Sulh Hukuk Mahkemesinden talep",
+        "edilir. Mirasçılık belgesi verilmesi talebi çekişmesiz yargı işi niteliğinde olup, mahkeme nüfus kayıtlarını, ölüm kayıtlarını ve varsa",
+        "vasiyetnameyi inceleyerek mirasçıları ve paylarını tespit eder."
+      ],
+      "text": "3. Veraset İlamı Sulh Hukuk Mahkemesinden Nasıl Alınır? Noterlikçe düzenlenemeyen veya hukuki inceleme gerektiren mirasçılık durumlarında veraset ilamı, Sulh Hukuk Mahkemesinden talep edilir. Mirasçılık belgesi verilmesi talebi çekişmesiz yargı işi niteliğinde olup, mahkeme nüfus kayıtlarını, ölüm kayıtlarını ve varsa vasiyetnameyi inceleyerek mirasçıları ve paylarını tespit eder."
+    },
+    {
+      "lines": [
+        "6100 sayılı Hukuk Muhakemeleri Kanunu'nun 11. maddesinin 3. fıkrası ile 383 ve 384. maddeleri uyarınca yetkili mahkeme, mirasbırakanın",
+        "son yerleşim yeri Sulh Hukuk Mahkemesi olabileceği gibi, mirasçılardan herhangi birinin kendi yerleşim yerindeki Sulh Hukuk Mahkemesi",
+        "de olabilir. Dolayısıyla başvuru, yalnızca murisin son ikametgâhı mahkemesinde yapılmak zorunda değildir."
+      ],
+      "text": "6100 sayılı Hukuk Muhakemeleri Kanunu'nun 11. maddesinin 3. fıkrası ile 383 ve 384. maddeleri uyarınca yetkili mahkeme, mirasbırakanın son yerleşim yeri Sulh Hukuk Mahkemesi olabileceği gibi, mirasçılardan herhangi birinin kendi yerleşim yerindeki Sulh Hukuk Mahkemesi de olabilir. Dolayısıyla başvuru, yalnızca murisin son ikametgâhı mahkemesinde yapılmak zorunda değildir."
+    },
+    {
+      "lines": [
+        "Yabancılık unsuru taşıyan dosyalarda mahkeme, yabancı doğum ve ölüm kayıtlarını, yabancı mahkeme kararlarını ve vatandaşlık kayıtlarını",
+        "da değerlendirmeye alır. Bu belgelerin Türkiye'de kullanılabilmesi için çoğu durumda apostil şerhi, konsolosluk tasdiki veya yeminli",
+        "tercüme gerekmektedir."
+      ],
+      "text": "Yabancılık unsuru taşıyan dosyalarda mahkeme, yabancı doğum ve ölüm kayıtlarını, yabancı mahkeme kararlarını ve vatandaşlık kayıtlarını da değerlendirmeye alır. Bu belgelerin Türkiye'de kullanılabilmesi için çoğu durumda apostil şerhi, konsolosluk tasdiki veya yeminli tercüme gerekmektedir."
+    },
+    {
+      "lines": [
+        "Burhaniye Mh. Neşetbey Sk. No:12/5 Kat:5 Daire:3 Üsküdar/İstanbul — info@kuheylan.av.tr — kuheylanhukuk.com"
+      ],
+      "text": "Burhaniye Mh. Neşetbey Sk. No:12/5 Kat:5 Daire:3 Üsküdar/İstanbul — info@kuheylan.av.tr — kuheylanhukuk.com"
+    },
+    {
+      "lines": [
+        "Küheylan Hukuk Bürosu © 2026 Sayfa 1 / 4"
+      ],
+      "text": "Küheylan Hukuk Bürosu © 2026 Sayfa 1 / 4"
+    },
+    {
+      "lines": [
+        "Miras Hukuku Serisi"
+      ],
+      "text": "Miras Hukuku Serisi"
+    },
+    {
+      "lines": [
+        "4. Kimler Veraset İlamı Talep Edebilir?",
+        "Veraset ilamı talebinde yalnızca mirasçılar değil, hukuki yararı bulunan üçüncü kişiler de bulunabilir. Sağ kalan eş, çocuklar ve altsoy,",
+        "anne-baba, kardeşler ile büyük anne ve büyükbaba gibi yasal mirasçılar kanunda öngörülen sıraya göre talepte bulunabilir; başvurunun",
+        "tüm mirasçılar tarafından birlikte yapılması zorunlu değildir, mirasçılardan yalnızca birinin başvurusu üzerine tüm mirasçıları gösteren",
+        "belge düzenlenebilir."
+      ],
+      "text": "4. Kimler Veraset İlamı Talep Edebilir? Veraset ilamı talebinde yalnızca mirasçılar değil, hukuki yararı bulunan üçüncü kişiler de bulunabilir. Sağ kalan eş, çocuklar ve altsoy, anne-baba, kardeşler ile büyük anne ve büyükbaba gibi yasal mirasçılar kanunda öngörülen sıraya göre talepte bulunabilir; başvurunun tüm mirasçılar tarafından birlikte yapılması zorunlu değildir, mirasçılardan yalnızca birinin başvurusu üzerine tüm mirasçıları gösteren belge düzenlenebilir."
+    },
+    {
+      "lines": [
+        "Vasiyetname veya miras sözleşmesiyle atanmış mirasçılar da mirasçılık sıfatlarının tespiti için başvurabilir; bu durumda noterin işlem",
+        "yapamaması nedeniyle çoğunlukla Sulh Hukuk Mahkemesine gidilmesi gerekir. Ayrıca tereke alacaklıları, icra takip alacaklıları ve",
+        "ortaklığın giderilmesi davasındaki paydaşlar da hukuki menfaatlerini ispatlamaları koşuluyla mirasçılık durumunun tespitini talep edebilir."
+      ],
+      "text": "Vasiyetname veya miras sözleşmesiyle atanmış mirasçılar da mirasçılık sıfatlarının tespiti için başvurabilir; bu durumda noterin işlem yapamaması nedeniyle çoğunlukla Sulh Hukuk Mahkemesine gidilmesi gerekir. Ayrıca tereke alacaklıları, icra takip alacaklıları ve ortaklığın giderilmesi davasındaki paydaşlar da hukuki menfaatlerini ispatlamaları koşuluyla mirasçılık durumunun tespitini talep edebilir."
+    },
+    {
+      "lines": [
+        "Kriter Noterden Veraset İlamı Mahkemeden Veraset İlamı",
+        "Uygun Olduğu Nüfus kayıtları açık, çekişmesiz klasik mirasçılık Yabancılık unsuru, çelişkili kayıt, vasiyetname, çekişmeli"
+      ],
+      "text": "Kriter Noterden Veraset İlamı Mahkemeden Veraset İlamı Uygun Olduğu Nüfus kayıtları açık, çekişmesiz klasik mirasçılık Yabancılık unsuru, çelişkili kayıt, vasiyetname, çekişmeli"
+    },
+    {
+      "lines": [
+        "Haller ilişkileri mirasçılık",
+        "Ortalama Süre Aynı gün ile birkaç iş günü arası Birkaç haftadan birkaç aya kadar değişebilir",
+        "İnceleme Yetkisi Yalnızca MERNİS kaydı üzerinden teknik inceleme Hukuki değerlendirme, ek belge ve duruşma imkânı"
+      ],
+      "text": "Haller ilişkileri mirasçılık Ortalama Süre Aynı gün ile birkaç iş günü arası Birkaç haftadan birkaç aya kadar değişebilir İnceleme Yetkisi Yalnızca MERNİS kaydı üzerinden teknik inceleme Hukuki değerlendirme, ek belge ve duruşma imkânı"
+    },
+    {
+      "lines": [
+        "Belge Niteliği Aksi ispat edilene kadar geçerli Aksi ispat edilene kadar geçerli"
+      ],
+      "text": "Belge Niteliği Aksi ispat edilene kadar geçerli Aksi ispat edilene kadar geçerli"
+    },
+    {
+      "lines": [
+        "5. Veraset ve İntikal Vergisi Beyanı ve Süreler",
+        "Veraset ilamı alındıktan sonra mirasçıların İnteraktif Vergi Dairesi üzerinden veya bizzat başvuru ile Veraset ve İntikal Vergisi Kanunu'nun",
+        "9. maddesi uyarınca beyanname vermesi gerekir. Ölüm Türkiye'de gerçekleşmiş ve mirasçılar da Türkiye'de ise beyanname süresi ölüm",
+        "tarihinden itibaren dört aydır; mirasçıların yurt dışında bulunması halinde bu süre altı aya, hem ölümün hem mirasçının yurt dışında olduğu",
+        "hallerde ise sekiz aya kadar uzayabilir."
+      ],
+      "text": "5. Veraset ve İntikal Vergisi Beyanı ve Süreler Veraset ilamı alındıktan sonra mirasçıların İnteraktif Vergi Dairesi üzerinden veya bizzat başvuru ile Veraset ve İntikal Vergisi Kanunu'nun 9. maddesi uyarınca beyanname vermesi gerekir. Ölüm Türkiye'de gerçekleşmiş ve mirasçılar da Türkiye'de ise beyanname süresi ölüm tarihinden itibaren dört aydır; mirasçıların yurt dışında bulunması halinde bu süre altı aya, hem ölümün hem mirasçının yurt dışında olduğu hallerde ise sekiz aya kadar uzayabilir."
+    },
+    {
+      "lines": [
+        "2026 yılı için altsoy ve eşin her birine düşen miras payının 2.907.136 TL'lik kısmı, eşin tek başına mirasçı olması halinde ise 5.817.845",
+        "TL'lik kısmı vergiden istisnadır. İstisna tutarının altında kalan miraslarda dahi beyanname verilmesi zorunludur; sadece tahakkuk eden",
+        "vergi çıkmayabilir."
+      ],
+      "text": "2026 yılı için altsoy ve eşin her birine düşen miras payının 2.907.136 TL'lik kısmı, eşin tek başına mirasçı olması halinde ise 5.817.845 TL'lik kısmı vergiden istisnadır. İstisna tutarının altında kalan miraslarda dahi beyanname verilmesi zorunludur; sadece tahakkuk eden vergi çıkmayabilir."
+    },
+    {
+      "lines": [
+        "Vergi, matrahın dilimlerine göre kademeli olarak hesaplanır: ilk 3.000.000 TL için %1, sonraki 7.000.000 TL için %3, sonraki 15.000.000 TL",
+        "için %5, sonraki 30.000.000 TL için %7 ve 55.000.000 TL'yi aşan kısım için %10 oranı uygulanır. Ana, baba, eş ve çocuklara yapılan ivazsız",
+        "(karşılıksız) intikallerde bu oranların yarısı geçerlidir. Tahakkuk eden vergi, beyannamenin verildiği yılı izleyen üç yıl boyunca her yıl Mayıs",
+        "ve Kasım aylarında olmak üzere toplam altı eşit taksitte, faizsiz olarak ödenebilir."
+      ],
+      "text": "Vergi, matrahın dilimlerine göre kademeli olarak hesaplanır: ilk 3.000.000 TL için %1, sonraki 7.000.000 TL için %3, sonraki 15.000.000 TL için %5, sonraki 30.000.000 TL için %7 ve 55.000.000 TL'yi aşan kısım için %10 oranı uygulanır. Ana, baba, eş ve çocuklara yapılan ivazsız (karşılıksız) intikallerde bu oranların yarısı geçerlidir. Tahakkuk eden vergi, beyannamenin verildiği yılı izleyen üç yıl boyunca her yıl Mayıs ve Kasım aylarında olmak üzere toplam altı eşit taksitte, faizsiz olarak ödenebilir."
+    },
+    {
+      "lines": [
+        "Vergi tamamen ödenmeden veya 6183 sayılı Kanun'un 10. maddesinde sayılan bir teminat gösterilmeden, mirasa konu taşınmazlarda tapu",
+        "devri yapılamaz ve banka hesaplarındaki bakiyeler mirasçılara ödenemez. Bu nedenle vergi dairesinden alınacak ilişik kesme yazısı, tapu ve",
+        "banka işlemlerinin önkoşuludur."
+      ],
+      "text": "Vergi tamamen ödenmeden veya 6183 sayılı Kanun'un 10. maddesinde sayılan bir teminat gösterilmeden, mirasa konu taşınmazlarda tapu devri yapılamaz ve banka hesaplarındaki bakiyeler mirasçılara ödenemez. Bu nedenle vergi dairesinden alınacak ilişik kesme yazısı, tapu ve banka işlemlerinin önkoşuludur."
+    },
+    {
+      "lines": [
+        "6. Miras Kalan Taşınmazların Tapuda İntikali",
+        "Tapu ve Kadastro Genel Müdürlüğü'nün resmî uygulamasına göre miras intikali için kimlik belgesi, varsa temsil belgesi, noterden veya",
+        "mahkemeden alınan veraset belgesinin aslı ya da onaylı örneği ve bina niteliğindeki taşınmazlar için zorunlu deprem sigortası poliçesi",
+        "(DASK) ibraz edilmesi gerekir. Yurt dışındaki mahkemelerden alınan veraset belgelerinin Tapu Kanunu'nun 37. maddesi uyarınca Türk",
+        "mahkemelerince tanınması (tenfizi) şarttır."
+      ],
+      "text": "6. Miras Kalan Taşınmazların Tapuda İntikali Tapu ve Kadastro Genel Müdürlüğü'nün resmî uygulamasına göre miras intikali için kimlik belgesi, varsa temsil belgesi, noterden veya mahkemeden alınan veraset belgesinin aslı ya da onaylı örneği ve bina niteliğindeki taşınmazlar için zorunlu deprem sigortası poliçesi (DASK) ibraz edilmesi gerekir. Yurt dışındaki mahkemelerden alınan veraset belgelerinin Tapu Kanunu'nun 37. maddesi uyarınca Türk mahkemelerince tanınması (tenfizi) şarttır."
+    },
+    {
+      "lines": [
+        "Başvuru, mirasçılardan biri tarafından Web Tapu üzerinden yapılabilir; tapu müdürlüğü döner sermaye ücretini SMS ile bildirir, ücret",
+        "yatırıldıktan sonra verilen randevu saatinde ilgili müdürlükte imza aşaması tamamlanır. Vergi dairesinden alınan ilişik kesme yazısı da bu",
+        "aşamada sunulur. Birden fazla mirasçı bulunması halinde taşınmaz, mirasçılar arasında elbirliği mülkiyeti şeklinde tescil edilir; bu mülkiyet",
+        "türünde tek bir mirasçının payını bağımsız olarak satması mümkün değildir, tasarruf işlemleri için tüm mirasçıların birlikte hareket etmesi",
+        "gerekir. Elbirliği mülkiyetinin paylı mülkiyete çevrilmesi veya doğrudan paylaşım için ayrı bir anlaşma ya da sulh hukuk mahkemesinde",
+        "ortaklığın giderilmesi davası gerekebilir."
+      ],
+      "text": "Başvuru, mirasçılardan biri tarafından Web Tapu üzerinden yapılabilir; tapu müdürlüğü döner sermaye ücretini SMS ile bildirir, ücret yatırıldıktan sonra verilen randevu saatinde ilgili müdürlükte imza aşaması tamamlanır. Vergi dairesinden alınan ilişik kesme yazısı da bu aşamada sunulur. Birden fazla mirasçı bulunması halinde taşınmaz, mirasçılar arasında elbirliği mülkiyeti şeklinde tescil edilir; bu mülkiyet türünde tek bir mirasçının payını bağımsız olarak satması mümkün değildir, tasarruf işlemleri için tüm mirasçıların birlikte hareket etmesi gerekir. Elbirliği mülkiyetinin paylı mülkiyete çevrilmesi veya doğrudan paylaşım için ayrı bir anlaşma ya da sulh hukuk mahkemesinde ortaklığın giderilmesi davası gerekebilir."
+    },
+    {
+      "lines": [
+        "7. Veraset İlamına İtiraz ve İptali",
+        "Veraset ilamı kesin hüküm niteliğinde olmadığından, hatalı düzenlendiği veya gerçeği yansıtmadığı iddiasıyla her zaman itiraz edilmesi",
+        "mümkündür. Bir mirasçının belgede yer almaması, miras paylarının yanlış hesaplanması, sağ kalan eşin payının hatalı belirlenmesi, önceki",
+        "evlilikten olan çocukların dikkate alınmaması veya soybağı ilişkisinin sonradan kurulması gibi durumlar, mirasçılık belgesinin iptali",
+        "davasının konusunu oluşturur."
+      ],
+      "text": "7. Veraset İlamına İtiraz ve İptali Veraset ilamı kesin hüküm niteliğinde olmadığından, hatalı düzenlendiği veya gerçeği yansıtmadığı iddiasıyla her zaman itiraz edilmesi mümkündür. Bir mirasçının belgede yer almaması, miras paylarının yanlış hesaplanması, sağ kalan eşin payının hatalı belirlenmesi, önceki evlilikten olan çocukların dikkate alınmaması veya soybağı ilişkisinin sonradan kurulması gibi durumlar, mirasçılık belgesinin iptali davasının konusunu oluşturur."
+    },
+    {
+      "lines": [
+        "Mirasçılık belgesi verilmesi talebi çekişmesiz yargı işi iken, düzenlenmiş belgenin gerçeğe aykırı olduğu iddiasıyla açılan iptal davası",
+        "çekişmeli yargı işidir; bu nedenle görevli mahkeme kural olarak Asliye Hukuk Mahkemesidir. Yetki bakımından HMK m.11/3 uyarınca",
+        "mirasçılardan birinin veya davalılardan birinin yerleşim yeri mahkemesinde dava açılabilir. Davalı olarak, hatalı belgede haksız pay sahibi",
+        "Burhaniye Mh. Neşetbey Sk. No:12/5 Kat:5 Daire:3 Üsküdar/İstanbul — info@kuheylan.av.tr — kuheylanhukuk.com"
+      ],
+      "text": "Mirasçılık belgesi verilmesi talebi çekişmesiz yargı işi iken, düzenlenmiş belgenin gerçeğe aykırı olduğu iddiasıyla açılan iptal davası çekişmeli yargı işidir; bu nedenle görevli mahkeme kural olarak Asliye Hukuk Mahkemesidir. Yetki bakımından HMK m.11/3 uyarınca mirasçılardan birinin veya davalılardan birinin yerleşim yeri mahkemesinde dava açılabilir. Davalı olarak, hatalı belgede haksız pay sahibi Burhaniye Mh. Neşetbey Sk. No:12/5 Kat:5 Daire:3 Üsküdar/İstanbul — info@kuheylan.av.tr — kuheylanhukuk.com"
+    },
+    {
+      "lines": [
+        "Küheylan Hukuk Bürosu © 2026 Sayfa 2 / 4"
+      ],
+      "text": "Küheylan Hukuk Bürosu © 2026 Sayfa 2 / 4"
+    },
+    {
+      "lines": [
+        "Miras Hukuku Serisi",
+        "görünen diğer mirasçılar gösterilir."
+      ],
+      "text": "Miras Hukuku Serisi görünen diğer mirasçılar gösterilir."
+    },
+    {
+      "lines": [
+        "8. Somut Uygulama Senaryosu"
+      ],
+      "text": "8. Somut Uygulama Senaryosu"
+    },
+    {
+      "lines": [
+        "OLAY ÖZET FORMU",
+        "Mühendis olan Barış Bey'in babası vefat etmiş, geriye Kadıköy'de bir daire, bir banka hesabı ve Barış Bey ile Almanya'da yaşayan kız kardeşi",
+        "Ceren Hanım mirasçı olarak kalmıştır. Barış Bey, notere başvurarak hızlıca veraset ilamı çıkarmak istemiş, ancak noterlik, Ceren Hanım'ın",
+        "Almanya'da doğum yapmış olması ve çocuğunun nüfusa Almanya makamlarınca bildirilen doğum kaydına dayanması nedeniyle nüfus kayıtlarında",
+        "tam bir netlik bulunmadığı gerekçesiyle başvuruyu reddetmiştir."
+      ],
+      "text": "OLAY ÖZET FORMU Mühendis olan Barış Bey'in babası vefat etmiş, geriye Kadıköy'de bir daire, bir banka hesabı ve Barış Bey ile Almanya'da yaşayan kız kardeşi Ceren Hanım mirasçı olarak kalmıştır. Barış Bey, notere başvurarak hızlıca veraset ilamı çıkarmak istemiş, ancak noterlik, Ceren Hanım'ın Almanya'da doğum yapmış olması ve çocuğunun nüfusa Almanya makamlarınca bildirilen doğum kaydına dayanması nedeniyle nüfus kayıtlarında tam bir netlik bulunmadığı gerekçesiyle başvuruyu reddetmiştir."
+    },
+    {
+      "lines": [
+        "BAŞVURU VE HUKUKİ SÜREÇ",
+        "Barış Bey'in avukatı, dosyayı Kadıköy Sulh Hukuk Mahkemesine taşımış; mahkemeden Ceren Hanım'ın Almanya'daki doğum kaydına ilişkin",
+        "apostilli ve yeminli tercümeli belgenin sunulmasını talep etmiştir. Belgeler dosyaya eklendikten sonra mahkeme, nüfus müdürlüğünden ek kayıt",
+        "istemiş ve altı hafta içinde her iki kardeşi de mirasçı olarak gösteren veraset ilamını düzenlemiştir. Ardından avukat, ölüm tarihinden itibaren",
+        "dört aylık süre dolmadan İnteraktif Vergi Dairesi üzerinden veraset ve intikal vergisi beyannamesini vermiş ve daireye isabet eden vergiyi",
+        "hesaplatmıştır."
+      ],
+      "text": "BAŞVURU VE HUKUKİ SÜREÇ Barış Bey'in avukatı, dosyayı Kadıköy Sulh Hukuk Mahkemesine taşımış; mahkemeden Ceren Hanım'ın Almanya'daki doğum kaydına ilişkin apostilli ve yeminli tercümeli belgenin sunulmasını talep etmiştir. Belgeler dosyaya eklendikten sonra mahkeme, nüfus müdürlüğünden ek kayıt istemiş ve altı hafta içinde her iki kardeşi de mirasçı olarak gösteren veraset ilamını düzenlemiştir. Ardından avukat, ölüm tarihinden itibaren dört aylık süre dolmadan İnteraktif Vergi Dairesi üzerinden veraset ve intikal vergisi beyannamesini vermiş ve daireye isabet eden vergiyi hesaplatmıştır."
+    },
+    {
+      "lines": [
+        "SONUÇ",
+        "Vergi dairesinden alınan ilişik kesme yazısı ile birlikte Web Tapu üzerinden başvuru yapılmış, daire Barış Bey ve Ceren Hanım adına elbirliği",
+        "mülkiyeti olarak tescil edilmiştir. Taraflar daha sonra noter huzurunda anlaşarak daireyi paylı mülkiyete çevirmiş ve Barış Bey, kız kardeşinin",
+        "payını satın alarak süreci tek taraflı mülkiyetle sonuçlandırmıştır. Yabancılık unsuru içeren dosyanın doğrudan mahkemeye yönlendirilmesi,",
+        "sürecin baştan hatasız ilerlemesini sağlamıştır."
+      ],
+      "text": "SONUÇ Vergi dairesinden alınan ilişik kesme yazısı ile birlikte Web Tapu üzerinden başvuru yapılmış, daire Barış Bey ve Ceren Hanım adına elbirliği mülkiyeti olarak tescil edilmiştir. Taraflar daha sonra noter huzurunda anlaşarak daireyi paylı mülkiyete çevirmiş ve Barış Bey, kız kardeşinin payını satın alarak süreci tek taraflı mülkiyetle sonuçlandırmıştır. Yabancılık unsuru içeren dosyanın doğrudan mahkemeye yönlendirilmesi, sürecin baştan hatasız ilerlemesini sağlamıştır."
+    },
+    {
+      "lines": [
+        "9. Sürece İlişkin Pratik Bilgiler"
+      ],
+      "text": "9. Sürece İlişkin Pratik Bilgiler"
+    },
+    {
+      "lines": [
+        "Aşama Yapılacak İşlem Sahadan Not",
+        "1. Veraset Nüfus kayıtları uygunsa noterden, aksi halde Sulh Hukuk Notere başvuru öncesi nüfus kayıtlarının uyumlu olup olmadığı e-",
+        "İlamı Mahkemesinden veraset ilamı temini Devlet üzerinden kontrol edilmelidir."
+      ],
+      "text": "Aşama Yapılacak İşlem Sahadan Not 1. Veraset Nüfus kayıtları uygunsa noterden, aksi halde Sulh Hukuk Notere başvuru öncesi nüfus kayıtlarının uyumlu olup olmadığı e- İlamı Mahkemesinden veraset ilamı temini Devlet üzerinden kontrol edilmelidir."
+    },
+    {
+      "lines": [
+        "2. Vergi Ölüm tarihinden itibaren süresi içinde veraset ve intikal vergisi İstisna tutarının altında kalınsa dahi beyanname verilmemesi cezai",
+        "Beyanı beyannamesinin verilmesi sonuç doğurur.",
+        "3. Vergi Tahakkuk eden verginin peşin veya altı taksitte ödenmesi Taksit hakkı kanunen tanınır, ayrıca başvuru gerektirmez."
+      ],
+      "text": "2. Vergi Ölüm tarihinden itibaren süresi içinde veraset ve intikal vergisi İstisna tutarının altında kalınsa dahi beyanname verilmemesi cezai Beyanı beyannamesinin verilmesi sonuç doğurur. 3. Vergi Tahakkuk eden verginin peşin veya altı taksitte ödenmesi Taksit hakkı kanunen tanınır, ayrıca başvuru gerektirmez."
+    },
+    {
+      "lines": [
+        "Ödemesi",
+        "4. İlişik Vergi dairesinden borcu yoktur / ilişik kesme yazısının alınması Bu belge olmadan tapu ve banka işlemleri fiilen mümkün değildir."
+      ],
+      "text": "Ödemesi 4. İlişik Vergi dairesinden borcu yoktur / ilişik kesme yazısının alınması Bu belge olmadan tapu ve banka işlemleri fiilen mümkün değildir."
+    },
+    {
+      "lines": [
+        "Kesme",
+        "5. Tapu Web Tapu üzerinden başvuru, döner sermaye ödemesi ve Birden fazla mirasçı varsa tescil elbirliği mülkiyeti şeklinde yapılır."
+      ],
+      "text": "Kesme 5. Tapu Web Tapu üzerinden başvuru, döner sermaye ödemesi ve Birden fazla mirasçı varsa tescil elbirliği mülkiyeti şeklinde yapılır."
+    },
+    {
+      "lines": [
+        "İntikali randevu ile işlemin tamamlanması"
+      ],
+      "text": "İntikali randevu ile işlemin tamamlanması"
+    },
+    {
+      "lines": [
+        "10. Sıkça Sorulan Sorular"
+      ],
+      "text": "10. Sıkça Sorulan Sorular"
+    },
+    {
+      "lines": [
+        "Veraset ilamı almadan miras malına dokunabilir miyim?",
+        "Hayır. Veraset ilamı alınmadan mirasçıların tapuda, bankada veya vergi dairesinde herhangi bir işlem yapması hukuken mümkün değildir."
+      ],
+      "text": "Veraset ilamı almadan miras malına dokunabilir miyim? Hayır. Veraset ilamı alınmadan mirasçıların tapuda, bankada veya vergi dairesinde herhangi bir işlem yapması hukuken mümkün değildir."
+    },
+    {
+      "lines": [
+        "Veraset ilamı almanın bir süre sınırı var mıdır?",
+        "Hayır, veraset ilamı talebi zamanaşımına veya hak düşürücü süreye tabi değildir; ancak gecikme, veraset ve intikal vergisi cezası ve tapu",
+        "işlemlerinde aksama gibi sonuçlar doğurabilir."
+      ],
+      "text": "Veraset ilamı almanın bir süre sınırı var mıdır? Hayır, veraset ilamı talebi zamanaşımına veya hak düşürücü süreye tabi değildir; ancak gecikme, veraset ve intikal vergisi cezası ve tapu işlemlerinde aksama gibi sonuçlar doğurabilir."
+    },
+    {
+      "lines": [
+        "Yurt dışındaki mirasçı süreci nasıl yürütür?",
+        "Yurt dışındaki mirasçı, Türkiye'deki bir avukata düzenleteceği vekaletname ile süreci temsilci aracılığıyla yürütebilir; beyanname süresi bu",
+        "durumda altı aya uzar."
+      ],
+      "text": "Yurt dışındaki mirasçı süreci nasıl yürütür? Yurt dışındaki mirasçı, Türkiye'deki bir avukata düzenleteceği vekaletname ile süreci temsilci aracılığıyla yürütebilir; beyanname süresi bu durumda altı aya uzar."
+    },
+    {
+      "lines": [
+        "Veraset ve intikal vergisi ödenmeden tapu devri yapılabilir mi?",
+        "Kural olarak hayır; ancak 6183 sayılı Kanun'un 10. maddesinde sayılan nakit, teminat mektubu veya ipotek gibi teminatlardan biri",
+        "gösterilirse kısmi devre izin verilebilir."
+      ],
+      "text": "Veraset ve intikal vergisi ödenmeden tapu devri yapılabilir mi? Kural olarak hayır; ancak 6183 sayılı Kanun'un 10. maddesinde sayılan nakit, teminat mektubu veya ipotek gibi teminatlardan biri gösterilirse kısmi devre izin verilebilir."
+    },
+    {
+      "lines": [
+        "Burhaniye Mh. Neşetbey Sk. No:12/5 Kat:5 Daire:3 Üsküdar/İstanbul — info@kuheylan.av.tr — kuheylanhukuk.com"
+      ],
+      "text": "Burhaniye Mh. Neşetbey Sk. No:12/5 Kat:5 Daire:3 Üsküdar/İstanbul — info@kuheylan.av.tr — kuheylanhukuk.com"
+    },
+    {
+      "lines": [
+        "Küheylan Hukuk Bürosu © 2026 Sayfa 3 / 4"
+      ],
+      "text": "Küheylan Hukuk Bürosu © 2026 Sayfa 3 / 4"
+    },
+    {
+      "lines": [
+        "Miras Hukuku Serisi"
+      ],
+      "text": "Miras Hukuku Serisi"
+    },
+    {
+      "lines": [
+        "Sonradan bir mirasçı daha ortaya çıkarsa ne olur?",
+        "Mevcut veraset ilamı gerçeği yansıtmadığından, yeni mirasçı veya diğer ilgililer belgenin düzeltilmesi ya da iptali için Asliye Hukuk",
+        "Mahkemesinde dava açabilir."
+      ],
+      "text": "Sonradan bir mirasçı daha ortaya çıkarsa ne olur? Mevcut veraset ilamı gerçeği yansıtmadığından, yeni mirasçı veya diğer ilgililer belgenin düzeltilmesi ya da iptali için Asliye Hukuk Mahkemesinde dava açabilir."
+    },
+    {
+      "lines": [
+        "DİKKAT — SIK YAPILAN HATALAR",
+        "Yabancılık unsuru veya çelişkili nüfus kaydı bulunmasına rağmen doğrudan notere başvurup zaman kaybetmek,",
+        "Veraset ve intikal vergisi beyannamesini dört aylık süre içinde vermemek ve gecikme cezasıyla karşılaşmak,",
+        "Yurt dışından alınan doğum, ölüm veya mahkeme kararlarını apostil ve yeminli tercüme olmadan dosyaya sunmak,"
+      ],
+      "text": "DİKKAT — SIK YAPILAN HATALAR Yabancılık unsuru veya çelişkili nüfus kaydı bulunmasına rağmen doğrudan notere başvurup zaman kaybetmek, Veraset ve intikal vergisi beyannamesini dört aylık süre içinde vermemek ve gecikme cezasıyla karşılaşmak, Yurt dışından alınan doğum, ölüm veya mahkeme kararlarını apostil ve yeminli tercüme olmadan dosyaya sunmak,"
+    },
+    {
+      "lines": [
+        "İlişik kesme yazısı alınmadan tapu müdürlüğüne başvurup işlemin reddiyle karşılaşmak,",
+        "Elbirliği mülkiyetindeki bir taşınmazı diğer mirasçıların onayı olmadan tek başına satmaya çalışmak."
+      ],
+      "text": "İlişik kesme yazısı alınmadan tapu müdürlüğüne başvurup işlemin reddiyle karşılaşmak, Elbirliği mülkiyetindeki bir taşınmazı diğer mirasçıların onayı olmadan tek başına satmaya çalışmak."
+    },
+    {
+      "lines": [
+        "11. Sonuç",
+        "Veraset ilamının alınmasından tapu intikaline kadar uzanan süreç, birbirine bağlı sıkı usul kurallarından oluşur; herhangi bir aşamadaki",
+        "gecikme veya hatalı belge sunumu, hem vergi cezasına hem de mirasçılar arasında yıllarca sürebilecek uyuşmazlıklara yol açabilir."
+      ],
+      "text": "11. Sonuç Veraset ilamının alınmasından tapu intikaline kadar uzanan süreç, birbirine bağlı sıkı usul kurallarından oluşur; herhangi bir aşamadaki gecikme veya hatalı belge sunumu, hem vergi cezasına hem de mirasçılar arasında yıllarca sürebilecek uyuşmazlıklara yol açabilir."
+    },
+    {
+      "lines": [
+        "Küheylan Hukuk Bürosu olarak miras hukuku departmanımız, veraset ilamı başvurusundan veraset ve intikal vergisi beyanına, tapu",
+        "intikalinden mirasçılık belgesine itiraz davalarına kadar sürecin her aşamasında müvekkillerimize kapsamlı hukuki destek sunmaktadır."
+      ],
+      "text": "Küheylan Hukuk Bürosu olarak miras hukuku departmanımız, veraset ilamı başvurusundan veraset ve intikal vergisi beyanına, tapu intikalinden mirasçılık belgesine itiraz davalarına kadar sürecin her aşamasında müvekkillerimize kapsamlı hukuki destek sunmaktadır."
+    },
+    {
+      "lines": [
+        "Sürecinizin usul hatası yapılmadan ve en kısa sürede sonuçlandırılması için büromuzun miras hukuku ekibiyle görüşebilirsiniz."
+      ],
+      "text": "Sürecinizin usul hatası yapılmadan ve en kısa sürede sonuçlandırılması için büromuzun miras hukuku ekibiyle görüşebilirsiniz."
+    },
+    {
+      "lines": [
+        "Av. Mert Deniz Küheylan",
+        "Önemli Yasal Uyarı: Bu rehberde yer alan bilgiler genel bilgilendirme amaçlıdır ve hukuki mütalaa niteliği taşımaz. Her somut olayın kendine özgü koşulları, sunulan",
+        "delillerin niteliği ve mirasçılar arasındaki nüfus kayıt durumuna göre sonuç değişebilir. Sürecin bir avukat desteğiyle yürütülmesi, telafisi güç hak kayıplarının önüne",
+        "geçilmesi açısından önerilir."
+      ],
+      "text": "Av. Mert Deniz Küheylan Önemli Yasal Uyarı: Bu rehberde yer alan bilgiler genel bilgilendirme amaçlıdır ve hukuki mütalaa niteliği taşımaz. Her somut olayın kendine özgü koşulları, sunulan delillerin niteliği ve mirasçılar arasındaki nüfus kayıt durumuna göre sonuç değişebilir. Sürecin bir avukat desteğiyle yürütülmesi, telafisi güç hak kayıplarının önüne geçilmesi açısından önerilir."
+    },
+    {
+      "lines": [
+        "Burhaniye Mh. Neşetbey Sk. No:12/5 Kat:5 Daire:3 Üsküdar/İstanbul — info@kuheylan.av.tr — kuheylanhukuk.com"
+      ],
+      "text": "Burhaniye Mh. Neşetbey Sk. No:12/5 Kat:5 Daire:3 Üsküdar/İstanbul — info@kuheylan.av.tr — kuheylanhukuk.com"
+    },
+    {
+      "lines": [
+        "Küheylan Hukuk Bürosu © 2026 Sayfa 4 / 4"
+      ],
+      "text": "Küheylan Hukuk Bürosu © 2026 Sayfa 4 / 4"
+    }
   ]
 }
