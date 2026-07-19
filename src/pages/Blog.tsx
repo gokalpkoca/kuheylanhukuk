@@ -160,7 +160,7 @@ const Blog = () => {
                   transition={{ duration: 0.4, delay: i * 0.05 }}
                 >
                   {article.pdfUrl ? (
-                    <Link to={`/blog/${article.slug}`} className={className}>
+                    <Link to={`/blog/${article.slug}`} className={className} aria-label={`${t("blog.read_more")}: ${article.displayTitle}`}>
                       {CardInner}
                     </Link>
                   ) : (
