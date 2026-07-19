@@ -145,7 +145,8 @@ const Blog = () => {
                   <p className="text-xs text-primary/80 mb-4">{t(`pa.${article.category}`)}</p>
                   <span className="inline-flex items-center gap-1.5 text-primary text-sm font-medium group-hover:gap-3 transition-all duration-200 self-start">
                     {t("blog.read_more")}
-                    <ArrowRight className="w-4 h-4" />
+                    <span className="sr-only"> — {article.displayTitle}</span>
+                    <ArrowRight className="w-4 h-4" aria-hidden="true" />
                   </span>
                 </>
               );
