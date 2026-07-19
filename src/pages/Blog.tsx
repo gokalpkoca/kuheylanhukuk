@@ -87,12 +87,15 @@ const Blog = () => {
 
           {/* Search */}
           <div className="relative mb-6">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+            <label htmlFor="blog-search" className="sr-only">Makalelerde ara</label>
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" aria-hidden="true" />
             <input
-              type="text"
+              id="blog-search"
+              type="search"
               value={searchQuery}
               onChange={(e) => handleSearch(e.target.value)}
               placeholder="Makale ara..."
+              aria-label="Makalelerde ara"
               className="w-full pl-11 pr-10 py-3 border border-border rounded bg-card text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors"
             />
             {searchQuery && (
