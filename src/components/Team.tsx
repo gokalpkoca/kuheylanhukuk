@@ -50,7 +50,7 @@ const Team = () => {
                 <img
                   src={mertDenizPhoto}
                   alt="Mert Deniz Küheylan"
-                  width={500}
+                  width={327}
                   height={500}
                   className="w-full h-full object-cover object-[center_15%]" />
                 
