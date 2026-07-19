@@ -93,7 +93,7 @@ const Footer = () => {
           <p className="text-dark-surface-muted text-xs tracking-wide">
             {t("footer.copyright")}
           </p>
-          <p className="text-white/60 text-xs tracking-wide">
+          <p className="text-white/90 text-xs tracking-wide">
             Designed by{" "}
             <a
               href="https://alphy.studio"
