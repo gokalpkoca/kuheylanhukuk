@@ -7,11 +7,16 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg})` }}>
-        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/40" />
-      </div>
+      <img
+        src={heroBg}
+        alt=""
+        width={1920}
+        height={1080}
+        fetchPriority="high"
+        decoding="async"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/40" />
 
       <div className="relative z-10 container mx-auto px-4 lg:px-8 pt-20">
         <motion.div
