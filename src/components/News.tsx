@@ -47,9 +47,12 @@ const News = () => {
                 {article.title}
               </h3>
               <p className="text-xs text-gold/80 mb-4">{t(`pa.${article.category}`)}</p>
-              <button className="inline-flex items-center gap-1.5 text-gold text-sm font-medium hover:gap-3 transition-all duration-200 self-start">
+              <button
+                aria-label={`${t("news.read_more")}: ${article.title}`}
+                className="inline-flex items-center gap-1.5 text-gold text-sm font-medium hover:gap-3 transition-all duration-200 self-start"
+              >
                 {t("news.read_more")}
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-4 h-4" aria-hidden="true" />
               </button>
             </motion.article>
           ))}

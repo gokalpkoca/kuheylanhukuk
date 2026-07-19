@@ -87,12 +87,15 @@ const Blog = () => {
 
           {/* Search */}
           <div className="relative mb-6">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+            <label htmlFor="blog-search" className="sr-only">Makalelerde ara</label>
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" aria-hidden="true" />
             <input
-              type="text"
+              id="blog-search"
+              type="search"
               value={searchQuery}
               onChange={(e) => handleSearch(e.target.value)}
               placeholder="Makale ara..."
+              aria-label="Makalelerde ara"
               className="w-full pl-11 pr-10 py-3 border border-border rounded bg-card text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors"
             />
             {searchQuery && (
@@ -142,7 +145,8 @@ const Blog = () => {
                   <p className="text-xs text-primary/80 mb-4">{t(`pa.${article.category}`)}</p>
                   <span className="inline-flex items-center gap-1.5 text-primary text-sm font-medium group-hover:gap-3 transition-all duration-200 self-start">
                     {t("blog.read_more")}
-                    <ArrowRight className="w-4 h-4" />
+                    <span className="sr-only"> — {article.displayTitle}</span>
+                    <ArrowRight className="w-4 h-4" aria-hidden="true" />
                   </span>
                 </>
               );
@@ -156,7 +160,7 @@ const Blog = () => {
                   transition={{ duration: 0.4, delay: i * 0.05 }}
                 >
                   {article.pdfUrl ? (
-                    <Link to={`/blog/${article.slug}`} className={className}>
+                    <Link to={`/blog/${article.slug}`} className={className} aria-label={`${t("blog.read_more")}: ${article.displayTitle}`}>
                       {CardInner}
                     </Link>
                   ) : (
