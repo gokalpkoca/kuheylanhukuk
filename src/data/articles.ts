@@ -168,5 +168,65 @@ export const allArticles: Article[] = [
     category: "miras-hukuku",
     pdfUrl: "/articles/veraset-ilami-ve-miras-intikal-islemleri-rehberi.pdf",
   },
+  {
+    title: "Ayıplı Mal ve Tüketicinin Seçimlik Hakları Rehberi",
+    date: "15 Temmuz 2026",
+    category: "tuketici-hukuku",
+    pdfUrl: "/articles/ayipli-mal-tuketici-secimlik-haklari-rehberi.pdf",
+  },
+  {
+    title: "Evlilik Yoluyla Türk Vatandaşlığı Kazanmak Rehberi",
+    date: "15 Temmuz 2026",
+    category: "yabancilar-vatandaslik-hukuku",
+    pdfUrl: "/articles/evlilik-yoluyla-turk-vatandasligi-kazanmak-rehberi.pdf",
+  },
+  {
+    title: "Gizli Ayıplı İkinci El Araç ve KM Düşürme Rehberi",
+    date: "15 Temmuz 2026",
+    category: "tuketici-hukuku",
+    pdfUrl: "/articles/gizli-ayipli-ikinci-el-arac-km-dusurme-rehberi.pdf",
+  },
+  {
+    title: "İkamet İzni Çeşitleri ve Reddine İtiraz Davası Rehberi",
+    date: "15 Temmuz 2026",
+    category: "yabancilar-vatandaslik-hukuku",
+    pdfUrl: "/articles/ikamet-izni-cesitleri-ve-reddine-itiraz-davasi-rehberi.pdf",
+  },
+  {
+    title: "İnternet Alışverişlerinde Cayma Hakkı Rehberi",
+    date: "15 Temmuz 2026",
+    category: "tuketici-hukuku",
+    pdfUrl: "/articles/internet-alisverislerinde-cayma-hakki-rehberi.pdf",
+  },
+  {
+    title: "Konut ve Tüketici Kredilerinde Dosya Masrafı İadesi Rehberi",
+    date: "15 Temmuz 2026",
+    category: "tuketici-hukuku",
+    pdfUrl: "/articles/konut-ve-tuketici-kredilerinde-dosya-masrafi-iadesi-rehberi.pdf",
+  },
+  {
+    title: "Sınır Dışı Etme Kararı ve İdari Gözetim İtiraz Süreci Rehberi",
+    date: "15 Temmuz 2026",
+    category: "yabancilar-vatandaslik-hukuku",
+    pdfUrl: "/articles/sinir-disi-etme-karari-ve-idari-gozetim-itiraz-sureci-rehberi.pdf",
+  },
+  {
+    title: "Tüketici Hakem Heyeti Başvuru Sınırları Rehberi",
+    date: "15 Temmuz 2026",
+    category: "tuketici-hukuku",
+    pdfUrl: "/articles/tuketici-hakem-heyeti-basvuru-sinirlari-rehberi.pdf",
+  },
+  {
+    title: "Yabancıların Çalışma İzni Alması ve Yasal Prosedürler Rehberi",
+    date: "15 Temmuz 2026",
+    category: "yabancilar-vatandaslik-hukuku",
+    pdfUrl: "/articles/yabancilarin-calisma-izni-almasi-ve-yasal-prosedurler-rehberi.pdf",
+  },
+  {
+    title: "Yabancıların Gayrimenkul Alımı Yoluyla Türk Vatandaşlığı Rehberi",
+    date: "15 Temmuz 2026",
+    category: "yabancilar-vatandaslik-hukuku",
+    pdfUrl: "/articles/yabancilarin-gayrimenkul-alimi-yoluyla-turk-vatandasligi-rehberi.pdf",
+  },
 ];
 
