@@ -12,9 +12,9 @@ const ru: Record<string, string> = {
 
   // Hero
   "hero.subtitle": "ЮРИДИЧЕСКАЯ ФИРМА КЮХЕЙЛАН",
-  "hero.title1": "Профессиональная",
-  "hero.title2": "Юридическая",
-  "hero.title3": "Команда",
+  "hero.title1": "Высокие стандарты",
+  "hero.title2": "юридических",
+  "hero.title3": "консультаций",
   "hero.description": "Экспертиза, Опыт, Ориентация на результат",
   "hero.cta": "О нас",
 

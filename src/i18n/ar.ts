@@ -12,9 +12,9 @@ const ar: Record<string, string> = {
 
   // Hero
   "hero.subtitle": "مكتب كوهيلان للمحاماة",
-  "hero.title1": "فريق",
-  "hero.title2": "قانوني",
-  "hero.title3": "متخصص",
+  "hero.title1": "بأعلى المعايير",
+  "hero.title2": "استشارات",
+  "hero.title3": "قانونية",
   "hero.description": "الخبرة والتجربة والنهج الموجّه نحو الحلول",
   "hero.cta": "من نحن",
 

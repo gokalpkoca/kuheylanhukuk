@@ -12,9 +12,9 @@ const tr: Record<string, string> = {
 
   // Hero
   "hero.subtitle": "KÜHEYLAN HUKUK BÜROSU",
-  "hero.title1": "Profesyonel",
-  "hero.title2": "Hukuk",
-  "hero.title3": "Ekibi",
+  "hero.title1": "Yüksek Standartlarda",
+  "hero.title2": "Hukuki Danışmanlık",
+  "hero.title3": "",
   "hero.description": "Uzmanlık, Deneyim, Çözüm Odaklı Yaklaşım",
   "hero.cta": "Hakkımızda",
 
