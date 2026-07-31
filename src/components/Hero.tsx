@@ -19,8 +19,9 @@ const Hero = () => {
           src={logoK}
           alt=""
           aria-hidden="true"
-          className="pointer-events-none select-none absolute -bottom-12 -left-6 h-[22rem] lg:h-[30rem] w-auto opacity-[0.06] z-0"
+          className="pointer-events-none select-none absolute -bottom-8 -left-4 h-[16rem] lg:h-[22rem] w-auto opacity-[0.035] z-0"
         />
+
 
 
         {/* Content side */}
@@ -70,7 +71,7 @@ const Hero = () => {
         </div>
 
         {/* Imagery side */}
-        <div className="lg:w-2/5 relative min-h-[280px] lg:min-h-full overflow-hidden group">
+        <div className="lg:w-2/5 relative min-h-[280px] lg:min-h-full overflow-hidden group border-t lg:border-t-0 lg:border-l border-foreground/10">
           <img
             src={heroBg}
             alt=""
@@ -80,11 +81,9 @@ const Hero = () => {
             decoding="async"
             className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-105"
           />
-          <div className="absolute inset-0 z-10 bg-gradient-to-r from-background/80 via-background/10 to-transparent" />
-
-          
-          <div className="absolute bottom-0 left-0 w-1/2 h-1 bg-primary z-30" />
+          <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-primary z-30" />
         </div>
+
       </motion.div>
     </section>
   );
