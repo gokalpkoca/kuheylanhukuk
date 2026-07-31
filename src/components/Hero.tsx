@@ -19,8 +19,9 @@ const Hero = () => {
           src={logoK}
           alt=""
           aria-hidden="true"
-          className="pointer-events-none select-none absolute -bottom-12 -left-6 h-[22rem] lg:h-[30rem] w-auto opacity-[0.06] z-0"
+          className="pointer-events-none select-none absolute -bottom-8 -left-4 h-[16rem] lg:h-[22rem] w-auto opacity-[0.035] z-0"
         />
+
 
 
         {/* Content side */}
