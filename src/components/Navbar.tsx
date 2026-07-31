@@ -167,31 +167,30 @@ const Navbar = () => {
           </div>
 
           {/* Right side: Phone + Language */}
-          <div className="hidden xl:flex items-center gap-4 shrink-0">
+          <div className="hidden xl:flex items-center gap-3 shrink-0">
             <a
               href="tel:+905352279696"
               aria-label="Telefon ile arayın: +90 535 227 96 96"
-              className="group flex items-center gap-2 rounded-full border border-border/80 bg-secondary/40 pl-3 pr-4 py-1.5 hover:border-primary/60 hover:bg-secondary transition-colors"
+              className="group flex items-center gap-2 rounded-sm bg-primary/[0.06] border border-primary/25 px-3.5 h-9 hover:bg-primary/10 hover:border-primary/50 transition-colors"
             >
               <Phone className="w-3.5 h-3.5 text-primary shrink-0" />
-              <span className="text-sm font-medium tabular-nums tracking-wide leading-none text-foreground group-hover:text-primary transition-colors whitespace-nowrap">
+              <span className="text-[0.8rem] font-medium tabular-nums tracking-[0.04em] leading-none text-foreground group-hover:text-primary transition-colors whitespace-nowrap">
                 +90 535 227 96 96
               </span>
             </a>
-
-
-            <div className="h-5 w-px bg-border" />
 
             {/* Language Dropdown */}
             <div className="relative" ref={langRef}>
               <button
                 onClick={() => setLangDropdownOpen(!langDropdownOpen)}
-                className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Dil seçimi"
+                className="flex items-center gap-1.5 h-9 px-2.5 rounded-sm border border-transparent text-[0.8rem] tracking-wide text-foreground/75 hover:text-primary hover:border-border transition-colors"
               >
                 <span className="text-base leading-none">{languageFlags[language]}</span>
                 <span>{language}</span>
                 <ChevronDown className={`w-3 h-3 transition-transform ${langDropdownOpen ? "rotate-180" : ""}`} />
               </button>
+
               {langDropdownOpen && (
                 <div className="absolute top-full right-0 mt-2 w-20 bg-card border border-border rounded shadow-xl shadow-black/30 z-50 py-1">
                   {languages.map((lang) => (
