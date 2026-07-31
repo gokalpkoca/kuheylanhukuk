@@ -6,52 +6,83 @@ const Hero = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
-      <img
-        src={heroBg}
-        alt=""
-        width={1920}
-        height={1080}
-        fetchPriority="high"
-        decoding="async"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
-      <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/40" />
+    <section className="relative min-h-screen flex items-center justify-center bg-secondary px-4 pt-24 pb-8 lg:px-8 lg:pt-28 lg:pb-12">
+      <motion.div
+        initial={{ opacity: 0, y: 24 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        className="relative w-full max-w-7xl bg-background shadow-[0_40px_80px_-15px_hsl(var(--foreground)/0.14)] flex flex-col lg:flex-row overflow-hidden min-h-[620px] lg:min-h-[720px]"
+      >
+        {/* Decorative monogram */}
+        <span
+          aria-hidden="true"
+          className="pointer-events-none select-none absolute -bottom-16 -left-8 font-serif font-bold text-[16rem] lg:text-[20rem] leading-none text-foreground/[0.03] z-0"
+        >
+          KH
+        </span>
 
-      <div className="relative z-10 container mx-auto px-4 lg:px-8 pt-20">
-        <motion.div
-          initial={{ opacity: 0, x: -40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="max-w-2xl">
-
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-12 h-px bg-muted-foreground/40" />
-            <p className="text-primary uppercase tracking-[0.2em] text-sm font-medium">
+        {/* Content side */}
+        <div className="lg:w-3/5 p-8 sm:p-12 lg:p-20 flex flex-col justify-center relative z-20">
+          <div className="mb-8 flex items-center gap-4">
+            <div className="w-8 h-px bg-primary" />
+            <p className="text-foreground uppercase tracking-[0.35em] text-[10px] font-medium">
               {t("hero.subtitle")}
             </p>
           </div>
 
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-[1.1] mb-4">
+          <h1 className="font-serif text-foreground text-5xl sm:text-6xl lg:text-[6.5rem] font-bold leading-[0.95] tracking-tight mb-8">
             {t("hero.title1")}
             <br />
-            <span className="text-primary italic">{t("hero.title2")}</span> {t("hero.title3")}
+            <span className="italic text-primary">{t("hero.title2")}</span>{" "}
+            {t("hero.title3")}
           </h1>
 
-          <p className="text-muted-foreground text-lg md:text-xl mb-10 max-w-lg leading-relaxed text-justify">
+          <p className="max-w-md text-foreground/75 text-lg lg:text-xl font-light leading-relaxed mb-12">
             {t("hero.description")}
           </p>
 
-          <a
-            href="#hakkimizda"
-            className="inline-flex items-center gap-3 px-8 py-3.5 bg-primary/10 border border-primary text-foreground uppercase text-sm tracking-[0.15em] font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300 rounded">
-            {t("hero.cta")}
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </a>
-        </motion.div>
-      </div>
+          <div>
+            <a
+              href="#hakkimizda"
+              className="group relative inline-flex items-center px-10 py-4 lg:px-12 lg:py-5 border border-foreground overflow-hidden transition-colors duration-500 hover:border-primary"
+            >
+              <span className="absolute inset-0 bg-primary translate-y-full transition-transform duration-500 ease-out group-hover:translate-y-0" />
+              <span className="relative text-foreground text-sm font-bold uppercase tracking-[0.2em] transition-colors duration-500 group-hover:text-primary-foreground">
+                {t("hero.cta")}
+              </span>
+              <svg
+                className="relative ml-4 w-5 h-5 text-foreground transition-all duration-500 group-hover:text-primary-foreground group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1.5}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        {/* Imagery side */}
+        <div className="lg:w-2/5 relative min-h-[280px] lg:min-h-full overflow-hidden group">
+          <img
+            src={heroBg}
+            alt=""
+            width={1920}
+            height={1080}
+            fetchPriority="high"
+            decoding="async"
+            className="absolute inset-0 w-full h-full object-cover grayscale brightness-[0.45] contrast-125 transition-transform duration-[1200ms] group-hover:scale-105"
+          />
+          <div className="absolute inset-0 z-10 bg-gradient-to-r from-background via-background/25 to-transparent lg:to-transparent" />
+          <div className="absolute top-0 bottom-0 right-0 w-24 bg-foreground/5 backdrop-blur-[2px] z-20 hidden lg:block" />
+          <div className="absolute bottom-0 left-0 w-1/2 h-1 bg-primary z-30" />
+        </div>
+      </motion.div>
     </section>
   );
 };
