@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Mail, Globe } from "lucide-react";
-import mertDenizPhoto from "@/assets/mert-deniz.jpeg";
+import mertDenizPhoto from "@/assets/mert-deniz-avatar.jpg";
 import { useLanguage } from "@/context/LanguageContext";
 
 const Team = () => {
