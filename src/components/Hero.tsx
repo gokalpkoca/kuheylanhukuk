@@ -73,17 +73,17 @@ const Hero = () => {
         </div>
 
         {/* Imagery side */}
-        <div className="lg:w-[34%] relative min-h-[280px] lg:min-h-full overflow-hidden group border-t lg:border-t-0 lg:border-l border-foreground/10">
+        <div className="lg:w-[34%] relative h-[220px] sm:h-[320px] lg:h-auto lg:min-h-full overflow-hidden group border-t lg:border-t-0 lg:border-l border-foreground/10">
           <img
             src={heroBg}
             alt=""
             width={1280}
             height={1920}
-
             fetchPriority="high"
             decoding="async"
-            className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-105"
+            className="absolute inset-0 w-full h-full object-cover object-[center_35%] lg:object-center transition-transform duration-[1200ms] group-hover:scale-105"
           />
+
           <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-primary z-30" />
         </div>
 
