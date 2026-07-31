@@ -20,9 +20,35 @@ const CareersPage = () => {
   const { toast } = useToast();
   const { t } = useLanguage();
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", position: "", message: "" });
+  const [cvFile, setCvFile] = useState<File | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitting, setSubmitting] = useState(false);
   const [expandedPosition, setExpandedPosition] = useState<string | null>(null);
+
+  const ALLOWED_CV_EXT = ["pdf", "doc", "docx"];
+  const MAX_CV_SIZE = 5 * 1024 * 1024;
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0] ?? null;
+    if (!file) {
+      setCvFile(null);
+      return;
+    }
+    const ext = file.name.split(".").pop()?.toLowerCase() ?? "";
+    if (!ALLOWED_CV_EXT.includes(ext)) {
+      setCvFile(null);
+      setErrors((prev) => ({ ...prev, cv: "Yalnızca PDF, DOC veya DOCX dosyası yükleyebilirsiniz." }));
+      return;
+    }
+    if (file.size > MAX_CV_SIZE) {
+      setCvFile(null);
+      setErrors((prev) => ({ ...prev, cv: "Dosya boyutu en fazla 5 MB olabilir." }));
+      return;
+    }
+    setErrors((prev) => ({ ...prev, cv: "" }));
+    setCvFile(file);
+  };
+
 
   const positions = [
     {
