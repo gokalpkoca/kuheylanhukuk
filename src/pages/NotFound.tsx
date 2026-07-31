@@ -13,12 +13,14 @@ const NotFound = () => {
   return (
     <div className="flex min-h-screen items-center justify-center bg-muted">
       <SEO
-        title="Sayfa Bulunamadı | Küheylan Hukuk Bürosu"
+        title="Sayfa Bulunamadı (404) | Küheylan Hukuk Bürosu"
         description="Aradığınız sayfa bulunamadı veya taşınmış olabilir. Küheylan Hukuk Bürosu ana sayfasına dönerek faaliyet alanlarımıza ve bilgi havuzuna ulaşabilirsiniz."
         path={location.pathname}
+        type="website"
       />
       <Helmet>
         <meta name="robots" content="noindex, follow" />
+        <meta name="twitter:card" content="summary" />
       </Helmet>
       <div className="text-center">
         <h1 className="mb-4 font-serif text-4xl font-bold">404</h1>
