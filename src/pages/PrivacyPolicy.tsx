@@ -15,7 +15,7 @@ const PrivacyPolicy = () => {
     <div className="min-h-screen bg-background text-foreground">
       <SEO
         title="Aydınlatma Metni | Küheylan Hukuk Bürosu"
-        description="KVKK kapsamında kişisel verilerin işlenmesine ilişkin aydınlatma ve çerez politikası."
+        description="6698 sayılı KVKK kapsamında kişisel verilerin işlenmesi, saklanması ve haklarınıza ilişkin aydınlatma metni ile çerez politikamızın tam metni."
         path="/aydinlatma-metni"
       />
       <Navbar />

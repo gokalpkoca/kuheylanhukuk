@@ -59,7 +59,7 @@ const Blog = () => {
     <div className="min-h-screen bg-background">
       <SEO
         title="Makaleler | Küheylan Hukuk Bürosu"
-        description="Küheylan Hukuk Bürosu avukatlarının kaleme aldığı hukuki rehberler ve güncel makaleler."
+        description="Küheylan Hukuk Bürosu avukatlarının kaleme aldığı hukuki rehberler, güncel içtihat değerlendirmeleri ve uygulamaya dönük makaleler bilgi havuzumuzda."
         path="/blog"
       />
       <Navbar />
