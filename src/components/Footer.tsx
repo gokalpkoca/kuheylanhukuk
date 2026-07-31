@@ -36,7 +36,7 @@ const Footer = () => {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-dark-surface-muted text-sm hover:text-primary transition-colors"
+                    className="text-dark-surface-muted text-sm hover:text-dark-surface-accent transition-colors"
                   >
                     {link.label}
                   </a>
@@ -49,22 +49,22 @@ const Footer = () => {
             <h4 className="font-serif text-lg text-dark-surface-foreground font-semibold mb-6">{t("footer.contact")}</h4>
             <a
               href="tel:+905352279696"
-              className="inline-flex items-center gap-3 px-6 py-3 border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 rounded mb-6"
+              className="inline-flex items-center gap-3 px-6 py-3 border border-dark-surface-accent text-dark-surface-accent hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 rounded mb-6"
             >
               <Phone className="w-4 h-4" />
               <span className="text-sm font-medium">+90 535 227 96 96</span>
             </a>
 
             <div className="flex items-center gap-2 mt-4 mb-4">
-              <Mail className="w-4 h-4 text-primary shrink-0" />
-              <a href="mailto:info@kuheylanhukuk.com" className="text-sm text-dark-surface-muted hover:text-primary transition-colors">
+              <Mail className="w-4 h-4 text-dark-surface-accent shrink-0" />
+              <a href="mailto:info@kuheylanhukuk.com" className="text-sm text-dark-surface-muted hover:text-dark-surface-accent transition-colors">
                 info@kuheylanhukuk.com
               </a>
             </div>
 
             <a href="https://maps.google.com/?q=Burhaniye,+Neşet+Bey+Sk.+NO:12+Kat:3+D:5,+34676+Üsküdar/İstanbul" target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 mb-4 group">
-              <MapPin className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-              <p className="text-sm text-dark-surface-muted leading-relaxed group-hover:text-primary transition-colors">
+              <MapPin className="w-4 h-4 text-dark-surface-accent shrink-0 mt-0.5" />
+              <p className="text-sm text-dark-surface-muted leading-relaxed group-hover:text-dark-surface-accent transition-colors">
                 Burhaniye, Neşet Bey Sk. NO:12 Kat:3 D:5, 34676 Üsküdar/İstanbul, Türkiye
               </p>
             </a>
@@ -83,9 +83,9 @@ const Footer = () => {
             </div>
 
             <div className="flex gap-4 text-xs text-dark-surface-muted">
-              <a href="/aydinlatma-metni" className="hover:text-primary transition-colors">{t("footer.legal")}</a>
+              <a href="/aydinlatma-metni" className="hover:text-dark-surface-accent transition-colors">{t("footer.legal")}</a>
               <span>|</span>
-              <a href="/aydinlatma-metni" className="hover:text-primary transition-colors">{t("footer.cookies")}</a>
+              <a href="/aydinlatma-metni" className="hover:text-dark-surface-accent transition-colors">{t("footer.cookies")}</a>
             </div>
           </div>
         </div>
@@ -100,7 +100,7 @@ const Footer = () => {
               href="https://alphy.studio"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-primary transition-colors"
+              className="hover:text-dark-surface-accent transition-colors"
             >
               alphy.studio
             </a>
