@@ -49,7 +49,7 @@ const Hero = () => {
           <div>
             <a
               href="#hakkimizda"
-              className="group relative inline-flex items-center px-10 py-4 lg:px-12 lg:py-5 border border-foreground overflow-hidden transition-colors duration-500 hover:border-primary"
+              className="group relative inline-flex items-center px-8 py-3.5 sm:px-10 sm:py-4 lg:px-12 lg:py-5 border border-foreground overflow-hidden transition-colors duration-500 hover:border-primary"
             >
               <span className="absolute inset-0 bg-primary translate-y-full transition-transform duration-500 ease-out group-hover:translate-y-0" />
               <span className="relative text-foreground text-sm font-bold uppercase tracking-[0.2em] transition-colors duration-500 group-hover:text-primary-foreground">
