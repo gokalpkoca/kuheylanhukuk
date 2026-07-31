@@ -1,10 +1,36 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Calculator as CalcIcon, ArrowRight } from "lucide-react";
+import {
+  ArrowRight,
+  Percent,
+  Car,
+  Clock,
+  Gavel,
+  FileEdit,
+  Wallet,
+  BadgeDollarSign,
+  Home,
+  Receipt,
+  Globe2,
+  Calculator as CalcIcon,
+} from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { calculators } from "@/data/calculators";
+
+const icons: Record<string, React.ElementType> = {
+  "adi-faiz-hesaplama": Percent,
+  "arac-deger-kaybi-hesaplama": Car,
+  "fazla-mesai-hesaplama": Clock,
+  "icra-masrafi-hesaplama": Gavel,
+  "islah-harci-hesaplama": FileEdit,
+  "kidem-tazminati-hesaplama": Wallet,
+  "kidem-ve-ihbar-tazminati-hesaplama": BadgeDollarSign,
+  "kira-stopaj-hesaplama": Home,
+  "serbest-meslek-makbuzu-hesaplama": Receipt,
+  "yurt-disi-borclanma-hesaplama": Globe2,
+};
 
 const CalculatorsPage = () => {
   return (
@@ -39,7 +65,9 @@ const CalculatorsPage = () => {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {calculators.map((calc, i) => (
+            {calculators.map((calc, i) => {
+              const Icon = icons[calc.slug] ?? CalcIcon;
+              return (
               <motion.div
                 key={calc.slug}
                 initial={{ opacity: 0, y: 24 }}
@@ -52,7 +80,7 @@ const CalculatorsPage = () => {
                   className="group block h-full bg-card border border-border rounded-lg p-7 transition-all hover:border-primary/50 hover:shadow-lg"
                 >
                   <div className="w-12 h-12 rounded-full bg-muted border border-border flex items-center justify-center mb-5 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
-                    <CalcIcon className="w-5 h-5" />
+                    <Icon className="w-5 h-5" />
                   </div>
                   <h2 className="font-serif text-lg text-foreground font-semibold mb-3 group-hover:text-primary transition-colors">
                     {calc.title}
@@ -64,7 +92,8 @@ const CalculatorsPage = () => {
                   </span>
                 </Link>
               </motion.div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
