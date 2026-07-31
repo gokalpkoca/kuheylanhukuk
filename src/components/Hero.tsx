@@ -20,6 +20,8 @@ const Hero = () => {
           src={logoK}
           alt=""
           aria-hidden="true"
+          width={410}
+          height={460}
           className="pointer-events-none select-none absolute -bottom-8 -left-4 h-[16rem] lg:h-[22rem] w-auto opacity-[0.035] z-0"
         />
 
