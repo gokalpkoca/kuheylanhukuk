@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
 import heroBgWide from "@/assets/hero-bg-wide.jpg";
+import heroBgWide600 from "@/assets/hero-bg-wide-600.jpg";
 import heroBgTall from "@/assets/hero-bg-tall.jpg";
+import heroBgTall412 from "@/assets/hero-bg-tall-412.jpg";
 import logoK from "@/assets/logo-k.png";
+import logoKSmall from "@/assets/logo-k-360.png";
 import { useLanguage } from "@/context/LanguageContext";
 
 const Hero = () => {
@@ -81,9 +84,17 @@ const Hero = () => {
         {/* Imagery side */}
         <div className="lg:w-[34%] relative h-[220px] sm:h-[320px] lg:h-auto lg:min-h-full overflow-hidden group border-t lg:border-t-0 lg:border-l border-foreground/10">
           <picture>
-            <source media="(min-width: 1024px)" srcSet={heroBgTall} width={824} height={1440} />
+            <source
+              media="(min-width: 1024px)"
+              srcSet={`${heroBgTall412} 412w, ${heroBgTall} 824w`}
+              sizes="34vw"
+              width={824}
+              height={1440}
+            />
             <img
               src={heroBgWide}
+              srcSet={`${heroBgWide600} 600w, ${heroBgWide} 1200w`}
+              sizes="100vw"
               alt=""
               width={1200}
               height={720}
