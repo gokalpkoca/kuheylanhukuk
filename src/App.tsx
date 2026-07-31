@@ -12,6 +12,8 @@ import PracticeAreasPage from "./pages/PracticeAreasPage";
 import ContactPage from "./pages/ContactPage";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import CareersPage from "./pages/CareersPage";
+import CalculatorsPage from "./pages/CalculatorsPage";
+import CalculatorDetail from "./pages/CalculatorDetail";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 import LoadingScreen from "./components/LoadingScreen";
@@ -34,6 +36,8 @@ const App = () => (
             <Route path="/faaliyet-alanlari" element={<PracticeAreasPage />} />
             <Route path="/faaliyet-alanlari/:slug" element={<PracticeAreaDetail />} />
             <Route path="/iletisim" element={<ContactPage />} />
+            <Route path="/hesaplama-araclarimiz" element={<CalculatorsPage />} />
+            <Route path="/hesaplama-araclarimiz/:slug" element={<CalculatorDetail />} />
             <Route path="/kariyer" element={<CareersPage />} />
             <Route path="/aydinlatma-metni" element={<PrivacyPolicy />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

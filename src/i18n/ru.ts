@@ -6,6 +6,7 @@ const ru: Record<string, string> = {
   "nav.makaleler": "База знаний",
   "nav.tum_makaleler": "База знаний",
   "nav.tum_faaliyet_alanlari": "Все области практики",
+  "nav.hesaplama": "Калькуляторы",
   "nav.kariyer": "Вакансии",
   "nav.iletisim": "Контакты",
 
