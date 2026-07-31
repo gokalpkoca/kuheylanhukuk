@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Briefcase, Clock, MapPin, Send, ChevronDown, GraduationCap, Users } from "lucide-react";
+import { Briefcase, Clock, MapPin, Send, ChevronDown, GraduationCap, Users, Paperclip } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Input } from "@/components/ui/input";
@@ -252,6 +252,30 @@ const CareersPage = () => {
                   <Textarea name="message" value={formData.message} onChange={handleChange} placeholder={t("career.cover_letter_placeholder")} rows={6} maxLength={2000} required className="bg-background/50 border-border/80 text-sm focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all duration-300 resize-none" />
                   {errors.message && <p className="text-destructive text-xs mt-1">{errors.message}</p>}
                 </div>
+                <div className="space-y-2">
+                  <label htmlFor="cv-upload" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{t("career.cv_label")}</label>
+                  <div className="flex flex-wrap items-center gap-3">
+                    <input
+                      id="cv-upload"
+                      type="file"
+                      accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                      onChange={handleFileChange}
+                      className="sr-only"
+                    />
+                    <label
+                      htmlFor="cv-upload"
+                      className="inline-flex items-center gap-2 h-12 px-5 rounded-md border border-border/80 bg-background/50 text-sm text-foreground cursor-pointer hover:border-primary/50 hover:text-primary transition-colors"
+                    >
+                      <Paperclip className="w-4 h-4" />
+                      {t("career.cv_button")}
+                    </label>
+                    <span className="text-xs text-muted-foreground">
+                      {cvFile ? cvFile.name : t("career.cv_hint")}
+                    </span>
+                  </div>
+                  {errors.cv && <p className="text-destructive text-xs mt-1">{errors.cv}</p>}
+                </div>
+
                 <div className="text-center pt-2">
                   <Button type="submit" size="lg" disabled={submitting} className="gap-3 px-10 h-12 text-sm font-semibold uppercase tracking-wider shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300">
                     <Send className="w-4 h-4" />
