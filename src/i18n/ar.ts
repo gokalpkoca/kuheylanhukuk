@@ -6,6 +6,7 @@ const ar: Record<string, string> = {
   "nav.makaleler": "قاعدة المعرفة",
   "nav.tum_makaleler": "قاعدة المعرفة",
   "nav.tum_faaliyet_alanlari": "جميع مجالات الممارسة",
+  "nav.hesaplama": "أدوات الحساب",
   "nav.kariyer": "الفرص المهنية",
   "nav.iletisim": "تواصل معنا",
 
