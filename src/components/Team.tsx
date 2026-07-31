@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Mail, Globe } from "lucide-react";
-import mertDenizPhoto from "@/assets/mert-deniz.jpeg";
+import mertDenizPhoto from "@/assets/mert-deniz-avatar.jpg";
 import { useLanguage } from "@/context/LanguageContext";
 
 const Team = () => {
@@ -50,9 +50,9 @@ const Team = () => {
                 <img
                   src={mertDenizPhoto}
                   alt="Mert Deniz Küheylan"
-                  width={327}
-                  height={500}
-                  className="w-full h-full object-cover object-[center_15%]" />
+                  width={512}
+                  height={512}
+                  className="w-full h-full object-cover" />
                 
               </div>
               <div className="text-center md:text-left">
