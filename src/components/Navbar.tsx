@@ -75,13 +75,14 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex items-center justify-between gap-6 h-16 lg:h-24">
           {/* Logo */}
-          <a href="/" className="shrink-0">
-            <img src={logo} alt="Küheylan Hukuk Bürosu" width={640} height={52} className="h-5 lg:h-[1.375rem] w-auto" />
+          <a href="/" className="shrink-0 mr-2">
+            <img src={logo} alt="Küheylan Hukuk Bürosu" width={640} height={52} className="h-5 lg:h-[1.5rem] w-auto" />
           </a>
 
-          <div className="hidden xl:flex items-center gap-1 whitespace-nowrap">
+          <div className="hidden xl:flex flex-1 items-center justify-center gap-1 whitespace-nowrap">
+
             {navItems.map((item) =>
               item.dropdown === "practiceAreas" ? (
               <div key={item.href} className="relative" ref={dropdownRef}>
