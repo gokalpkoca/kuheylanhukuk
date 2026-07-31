@@ -19,9 +19,11 @@ const Team = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-6">
           
-          <p className="text-gold uppercase tracking-[0.2em] text-sm font-medium mb-4">
-            {t("team.subtitle")}
-          </p>
+          {t("team.subtitle") && (
+            <p className="text-gold uppercase tracking-[0.2em] text-sm font-medium mb-4">
+              {t("team.subtitle")}
+            </p>
+          )}
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-dark-surface-foreground font-bold">
             {t("team.title")}
           </h2>

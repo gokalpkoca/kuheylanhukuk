@@ -58,7 +58,7 @@ const en: Record<string, string> = {
   "pa.yabancilar-vatandaslik-hukuku": "Immigration & Citizenship Law",
 
   // Team
-  "team.subtitle": "Our Legal Team",
+  "team.subtitle": "",
   "team.title": "Our Strength — Our Team",
   "team.description": "Our firm's priority is to anticipate legal risks that our clients may face and to provide the most suitable and precise solutions.",
   "team.founder": "FOUNDING PARTNER",
