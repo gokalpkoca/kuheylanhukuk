@@ -137,8 +137,8 @@ html {
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -146,7 +146,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(var(--primary) / 0.55);
+  background: hsl(var(--primary));
   border-radius: 999px;
 }
 
@@ -156,5 +156,5 @@ html {
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: hsl(var(--primary) / 0.55) hsl(var(--muted));
+  scrollbar-color: hsl(var(--primary)) hsl(var(--muted));
 }
