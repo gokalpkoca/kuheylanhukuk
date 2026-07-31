@@ -82,7 +82,7 @@ const Hero = () => {
           />
           <div className="absolute inset-0 z-10 bg-gradient-to-r from-background/80 via-background/10 to-transparent" />
 
-          <div className="absolute top-0 bottom-0 right-0 w-24 bg-foreground/5 backdrop-blur-[2px] z-20 hidden lg:block" />
+          
           <div className="absolute bottom-0 left-0 w-1/2 h-1 bg-primary z-30" />
         </div>
       </motion.div>
