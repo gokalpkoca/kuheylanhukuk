@@ -146,15 +146,15 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(var(--foreground) / 0.25);
+  background: hsl(var(--primary) / 0.55);
   border-radius: 999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(var(--primary) / 0.7);
+  background: hsl(var(--primary));
 }
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: hsl(var(--foreground) / 0.25) hsl(var(--muted));
+  scrollbar-color: hsl(var(--primary) / 0.55) hsl(var(--muted));
 }
