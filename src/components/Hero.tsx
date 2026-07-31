@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import heroBg from "@/assets/hero-bg.jpg";
+import logoK from "@/assets/logo-k.png";
 import { useLanguage } from "@/context/LanguageContext";
 
 const Hero = () => {
@@ -13,13 +14,14 @@ const Hero = () => {
         transition={{ duration: 0.7 }}
         className="relative w-full max-w-7xl bg-background shadow-[0_40px_80px_-15px_hsl(var(--foreground)/0.14)] flex flex-col lg:flex-row overflow-hidden min-h-[620px] lg:min-h-[720px]"
       >
-        {/* Decorative monogram */}
-        <span
+        {/* Decorative logo mark */}
+        <img
+          src={logoK}
+          alt=""
           aria-hidden="true"
-          className="pointer-events-none select-none absolute -bottom-16 -left-8 font-serif font-bold text-[16rem] lg:text-[20rem] leading-none text-foreground/[0.03] z-0"
-        >
-          KH
-        </span>
+          className="pointer-events-none select-none absolute -bottom-12 -left-6 h-[22rem] lg:h-[30rem] w-auto opacity-[0.06] z-0"
+        />
+
 
         {/* Content side */}
         <div className="lg:w-3/5 p-8 sm:p-12 lg:p-20 flex flex-col justify-center relative z-20">
@@ -76,9 +78,10 @@ const Hero = () => {
             height={1080}
             fetchPriority="high"
             decoding="async"
-            className="absolute inset-0 w-full h-full object-cover grayscale brightness-[0.45] contrast-125 transition-transform duration-[1200ms] group-hover:scale-105"
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-105"
           />
-          <div className="absolute inset-0 z-10 bg-gradient-to-r from-background via-background/25 to-transparent lg:to-transparent" />
+          <div className="absolute inset-0 z-10 bg-gradient-to-r from-background/80 via-background/10 to-transparent" />
+
           <div className="absolute top-0 bottom-0 right-0 w-24 bg-foreground/5 backdrop-blur-[2px] z-20 hidden lg:block" />
           <div className="absolute bottom-0 left-0 w-1/2 h-1 bg-primary z-30" />
         </div>
