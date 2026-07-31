@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBgWide from "@/assets/hero-bg-wide.jpg";
+import heroBgTall from "@/assets/hero-bg-tall.jpg";
 import logoK from "@/assets/logo-k.png";
 import { useLanguage } from "@/context/LanguageContext";
 
