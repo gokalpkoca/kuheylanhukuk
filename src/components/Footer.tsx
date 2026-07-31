@@ -10,6 +10,7 @@ const Footer = () => {
     { label: t("nav.ekibimiz"), href: "/#ekibimiz" },
     { label: t("nav.makaleler"), href: "/blog" },
     { label: t("nav.faaliyet_alanlari"), href: "/faaliyet-alanlari" },
+    { label: t("nav.hesaplama"), href: "/hesaplama-araclarimiz" },
     { label: t("nav.kariyer"), href: "/kariyer" },
     { label: t("nav.iletisim"), href: "/iletisim" },
   ];
