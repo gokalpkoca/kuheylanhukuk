@@ -62,7 +62,7 @@ const seniorityText = (days: number) => {
   return `${y} yıl ${m} ay ${d} gün`;
 };
 
-export const calculators: Calculator[] = [
+const calculatorList: Calculator[] = [
   {
     slug: "adi-faiz-hesaplama",
     title: "Adi Faiz Hesaplama",
@@ -352,6 +352,8 @@ export const calculators: Calculator[] = [
       ];
     },
   },
-].sort((a, b) => a.title.localeCompare(b.title, "tr"));
+];
+
+export const calculators = [...calculatorList].sort((a, b) => a.title.localeCompare(b.title, "tr"));
 
 export const getCalculator = (slug?: string) => calculators.find((c) => c.slug === slug);
