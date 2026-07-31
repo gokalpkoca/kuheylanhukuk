@@ -27,7 +27,9 @@ const LoadingScreen = () => {
           <motion.img
             src={loadingLogo}
             alt="Küheylan Hukuk"
-            className="w-32 h-32 object-contain"
+            width={320}
+            height={400}
+            className="w-32 h-40 object-contain"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
