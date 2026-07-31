@@ -18,11 +18,15 @@ const Hero = () => {
       >
         {/* Decorative logo mark */}
         <img
-          src={logoK}
+          src={logoKSmall}
+          srcSet={`${logoKSmall} 321w, ${logoK} 410w`}
+          sizes="(min-width: 1024px) 314px, 228px"
           alt=""
           aria-hidden="true"
           width={410}
           height={460}
+          loading="lazy"
+          decoding="async"
           className="pointer-events-none select-none absolute -bottom-8 -left-4 h-[16rem] lg:h-[22rem] w-auto opacity-[0.035] z-0"
         />
 
