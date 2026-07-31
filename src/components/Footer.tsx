@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="lg:col-span-1">
             <div className="mb-6">
-              <img src={logo} alt="Küheylan Hukuk Bürosu" width={640} height={52} className="h-auto w-full max-w-[340px] object-contain brightness-0 invert" />
+              <img src={logo} alt="Küheylan Hukuk Bürosu" width={640} height={52} loading="lazy" decoding="async" sizes="(min-width: 1024px) 340px, 90vw" className="h-auto w-full max-w-[340px] object-contain brightness-0 invert" />
             </div>
             <p className="text-dark-surface-muted text-sm leading-relaxed text-justify">
               {t("footer.description")}
