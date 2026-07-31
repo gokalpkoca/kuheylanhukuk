@@ -10,7 +10,7 @@ type Lang = keyof typeof LANGS;
 
 const articlesTs = fs.readFileSync("src/data/articles.ts", "utf8");
 const titles: Record<string, string> = {};
-const re = /title:\s*"([^"]+)",\s*date:[^]]*?pdfUrl:\s*"\/articles\/([^"]+)\.pdf"/g;
+const re = /title:\s*"([^"]+)",[\s\S]*?pdfUrl:\s*"\/articles\/([^"]+)\.pdf"/g;
 for (const m of articlesTs.matchAll(re)) titles[m[2]] = m[1];
 
 type Block = { lines: string[]; text: string };
