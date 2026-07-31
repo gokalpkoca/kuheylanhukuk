@@ -43,7 +43,7 @@ const Hero = () => {
           </p>
 
           <a
-            href="#ekibimiz"
+            href="#hakkimizda"
             className="inline-flex items-center gap-3 px-8 py-3.5 bg-primary/10 border border-primary text-foreground uppercase text-sm tracking-[0.15em] font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300 rounded">
             {t("hero.cta")}
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

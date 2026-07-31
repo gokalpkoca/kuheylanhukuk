@@ -11,7 +11,7 @@ export interface PracticeArea {
   description: string;
 }
 
-export const practiceAreas: PracticeArea[] = [
+const practiceAreasUnsorted: PracticeArea[] = [
   {
     icon: Landmark,
     label: "Bankacılık & Finans",
@@ -103,3 +103,9 @@ export const practiceAreas: PracticeArea[] = [
     description: "Küheylan Hukuk Bürosu, yabancılar ve vatandaşlık hukuku alanında müvekkillerine kapsamlı danışmanlık ve temsil hizmeti sunmaktadır. Türkiye sınırları içinde yabancı gerçek ve tüzel kişilerin ikamet, çalışma, giriş-çıkış, sınır dışı edilme, vatandaşlık kazanma veya kaybetme süreçleri ile ilgili tüm hukuki konularda destek sağlıyoruz.\n\nArtan bireysel başvurular ve idari işlemlerdeki yoğunluk nedeniyle süreçler teknik ve detaylı bir uzmanlık gerektirmektedir. Bu kapsamda büromuz, Türkiye'de yasal ikamet ve çalışma izinlerinin alınması, taşınmaz edinimi, vatandaşlık kazanımı gibi işlemlerde hukuki danışmanlık sağlarken, idari makamların tesis ettiği işlemlere karşı açılan davalarda da müvekkillerimizi etkin şekilde temsil etmektedir.",
   },
 ];
+
+// Alfabetik sıralama (Türkçe alfabeye göre) — Bilgi Havuzu ve Faaliyet Alanları
+// bölümleri aynı diziyi kullandığı için her iki taraftaki sıra birebir aynı olur.
+export const practiceAreas: PracticeArea[] = [...practiceAreasUnsorted].sort((a, b) =>
+  a.label.localeCompare(b.label, "tr")
+);
