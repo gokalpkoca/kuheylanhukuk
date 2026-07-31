@@ -27,8 +27,7 @@ const Hero = () => {
 
         {/* Content side */}
         <div className="lg:w-[66%] px-6 py-10 sm:px-10 sm:py-14 lg:p-20 flex flex-col justify-center relative z-20">
-          <div className="mb-6 lg:mb-8 flex items-center gap-3 lg:gap-4">
-            <div className="w-6 lg:w-8 h-px bg-primary" />
+          <div className="mb-6 lg:mb-8 flex items-center">
             <p className="text-foreground uppercase tracking-[0.25em] sm:tracking-[0.35em] text-[9px] sm:text-[10px] font-medium">
               {t("hero.subtitle")}
             </p>
