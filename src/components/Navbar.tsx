@@ -75,20 +75,20 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-between gap-2 2xl:gap-6 h-16 lg:h-24">
+        <div className="flex items-center justify-between gap-2 min-[1700px]:gap-6 h-16 lg:h-24">
           {/* Logo */}
           <a href="/" className="shrink-0">
             <img src={logo} alt="Küheylan Hukuk Bürosu" width={640} height={52} className="h-5 lg:h-[1.5rem] w-auto" />
           </a>
 
-          <div className="hidden xl:flex flex-1 min-w-0 items-center justify-center gap-0 2xl:gap-1 whitespace-nowrap">
+          <div className="hidden xl:flex flex-1 min-w-0 items-center justify-center gap-0 min-[1700px]:gap-1 whitespace-nowrap">
 
             {navItems.map((item) =>
               item.dropdown === "practiceAreas" ? (
               <div key={item.href} className="relative" ref={dropdownRef}>
                   <button
                     onClick={() => setDropdownOpen(!dropdownOpen)}
-                    className="flex items-center gap-1 relative px-1.5 2xl:px-3 py-2 text-[0.72rem] 2xl:text-[0.8rem] font-medium text-foreground/75 hover:text-primary transition-colors duration-200 tracking-[0.04em] 2xl:tracking-[0.08em] uppercase after:absolute after:left-1.5 2xl:after:left-3 after:right-1.5 2xl:after:right-3 after:-bottom-0.5 after:h-px after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
+                    className="flex items-center gap-1 relative px-1.5 min-[1700px]:px-3 py-2 text-[0.72rem] min-[1700px]:text-[0.8rem] font-medium text-foreground/75 hover:text-primary transition-colors duration-200 tracking-[0.04em] min-[1700px]:tracking-[0.08em] uppercase after:absolute after:left-1.5 min-[1700px]:after:left-3 after:right-1.5 min-[1700px]:after:right-3 after:-bottom-0.5 after:h-px after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
                   >
                     {item.label}
                     <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""}`} />
@@ -119,7 +119,7 @@ const Navbar = () => {
                 <div key={item.href} className="relative" ref={articleDropdownRef}>
                   <button
                     onClick={() => setArticleDropdownOpen(!articleDropdownOpen)}
-                    className="flex items-center gap-1 relative px-1.5 2xl:px-3 py-2 text-[0.72rem] 2xl:text-[0.8rem] font-medium text-foreground/75 hover:text-primary transition-colors duration-200 tracking-[0.04em] 2xl:tracking-[0.08em] uppercase after:absolute after:left-1.5 2xl:after:left-3 after:right-1.5 2xl:after:right-3 after:-bottom-0.5 after:h-px after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
+                    className="flex items-center gap-1 relative px-1.5 min-[1700px]:px-3 py-2 text-[0.72rem] min-[1700px]:text-[0.8rem] font-medium text-foreground/75 hover:text-primary transition-colors duration-200 tracking-[0.04em] min-[1700px]:tracking-[0.08em] uppercase after:absolute after:left-1.5 min-[1700px]:after:left-3 after:right-1.5 min-[1700px]:after:right-3 after:-bottom-0.5 after:h-px after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
                   >
                     {item.label}
                     <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${articleDropdownOpen ? "rotate-180" : ""}`} />
@@ -150,7 +150,7 @@ const Navbar = () => {
                 <Link
                   key={item.href}
                   to={item.href}
-                  className="relative px-1.5 2xl:px-3 py-2 text-[0.72rem] 2xl:text-[0.8rem] font-medium text-foreground/75 hover:text-primary transition-colors duration-200 tracking-[0.04em] 2xl:tracking-[0.08em] uppercase after:absolute after:left-1.5 2xl:after:left-3 after:right-1.5 2xl:after:right-3 after:-bottom-0.5 after:h-px after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
+                  className="relative px-1.5 min-[1700px]:px-3 py-2 text-[0.72rem] min-[1700px]:text-[0.8rem] font-medium text-foreground/75 hover:text-primary transition-colors duration-200 tracking-[0.04em] min-[1700px]:tracking-[0.08em] uppercase after:absolute after:left-1.5 min-[1700px]:after:left-3 after:right-1.5 min-[1700px]:after:right-3 after:-bottom-0.5 after:h-px after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
                 >
                   {item.label}
                 </Link>
@@ -158,7 +158,7 @@ const Navbar = () => {
                 <a
                   key={item.href}
                   href={item.href.startsWith("#") ? `/${item.href}` : item.href}
-                  className="relative px-1.5 2xl:px-3 py-2 text-[0.72rem] 2xl:text-[0.8rem] font-medium text-foreground/75 hover:text-primary transition-colors duration-200 tracking-[0.04em] 2xl:tracking-[0.08em] uppercase after:absolute after:left-1.5 2xl:after:left-3 after:right-1.5 2xl:after:right-3 after:-bottom-0.5 after:h-px after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
+                  className="relative px-1.5 min-[1700px]:px-3 py-2 text-[0.72rem] min-[1700px]:text-[0.8rem] font-medium text-foreground/75 hover:text-primary transition-colors duration-200 tracking-[0.04em] min-[1700px]:tracking-[0.08em] uppercase after:absolute after:left-1.5 min-[1700px]:after:left-3 after:right-1.5 min-[1700px]:after:right-3 after:-bottom-0.5 after:h-px after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
                 >
                   {item.label}
                 </a>
@@ -167,14 +167,14 @@ const Navbar = () => {
           </div>
 
           {/* Right side: Phone + Language */}
-          <div className="hidden xl:flex items-center gap-1 2xl:gap-3 shrink-0">
+          <div className="hidden xl:flex items-center gap-1 min-[1700px]:gap-3 shrink-0">
             <a
               href="tel:+905352279696"
               aria-label="Telefon ile arayın: +90 535 227 96 96"
-              className="group flex items-center gap-2 rounded-sm bg-primary/[0.06] border border-primary/25 px-2.5 2xl:px-3.5 h-9 hover:bg-primary/10 hover:border-primary/50 transition-colors"
+              className="group flex items-center gap-2 rounded-sm bg-primary/[0.06] border border-primary/25 px-2.5 min-[1700px]:px-3.5 h-9 hover:bg-primary/10 hover:border-primary/50 transition-colors"
             >
               <Phone className="w-3.5 h-3.5 text-primary shrink-0" />
-              <span className="hidden 2xl:inline text-[0.8rem] font-medium tabular-nums tracking-[0.04em] leading-none text-foreground group-hover:text-primary transition-colors whitespace-nowrap">
+              <span className="hidden min-[1700px]:inline text-[0.8rem] font-medium tabular-nums tracking-[0.04em] leading-none text-foreground group-hover:text-primary transition-colors whitespace-nowrap">
                 +90 535 227 96 96
               </span>
             </a>
