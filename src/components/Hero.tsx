@@ -75,8 +75,9 @@ const Hero = () => {
           <img
             src={heroBg}
             alt=""
-            width={1920}
-            height={1080}
+            width={1280}
+            height={1920}
+
             fetchPriority="high"
             decoding="async"
             className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-105"
