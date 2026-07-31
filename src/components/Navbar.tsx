@@ -75,19 +75,20 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex items-center justify-between gap-6 h-16 lg:h-24">
           {/* Logo */}
-          <a href="/" className="shrink-0">
-            <img src={logo} alt="Küheylan Hukuk Bürosu" width={640} height={52} className="h-5 lg:h-[1.375rem] w-auto" />
+          <a href="/" className="shrink-0 mr-2">
+            <img src={logo} alt="Küheylan Hukuk Bürosu" width={640} height={52} className="h-5 lg:h-[1.5rem] w-auto" />
           </a>
 
-          <div className="hidden xl:flex items-center gap-1 whitespace-nowrap">
+          <div className="hidden xl:flex flex-1 items-center justify-center gap-1 whitespace-nowrap">
+
             {navItems.map((item) =>
               item.dropdown === "practiceAreas" ? (
               <div key={item.href} className="relative" ref={dropdownRef}>
                   <button
                     onClick={() => setDropdownOpen(!dropdownOpen)}
-                    className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200 tracking-wide uppercase"
+                    className="flex items-center gap-1 relative px-3 py-2 text-[0.8rem] font-medium text-foreground/75 hover:text-primary transition-colors duration-200 tracking-[0.08em] uppercase after:absolute after:left-3 after:right-3 after:-bottom-0.5 after:h-px after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
                   >
                     {item.label}
                     <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""}`} />
@@ -118,7 +119,7 @@ const Navbar = () => {
                 <div key={item.href} className="relative" ref={articleDropdownRef}>
                   <button
                     onClick={() => setArticleDropdownOpen(!articleDropdownOpen)}
-                    className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200 tracking-wide uppercase"
+                    className="flex items-center gap-1 relative px-3 py-2 text-[0.8rem] font-medium text-foreground/75 hover:text-primary transition-colors duration-200 tracking-[0.08em] uppercase after:absolute after:left-3 after:right-3 after:-bottom-0.5 after:h-px after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
                   >
                     {item.label}
                     <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${articleDropdownOpen ? "rotate-180" : ""}`} />
@@ -149,7 +150,7 @@ const Navbar = () => {
                 <Link
                   key={item.href}
                   to={item.href}
-                  className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200 tracking-wide uppercase"
+                  className="relative px-3 py-2 text-[0.8rem] font-medium text-foreground/75 hover:text-primary transition-colors duration-200 tracking-[0.08em] uppercase after:absolute after:left-3 after:right-3 after:-bottom-0.5 after:h-px after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
                 >
                   {item.label}
                 </Link>
@@ -157,7 +158,7 @@ const Navbar = () => {
                 <a
                   key={item.href}
                   href={item.href.startsWith("#") ? `/${item.href}` : item.href}
-                  className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200 tracking-wide uppercase"
+                  className="relative px-3 py-2 text-[0.8rem] font-medium text-foreground/75 hover:text-primary transition-colors duration-200 tracking-[0.08em] uppercase after:absolute after:left-3 after:right-3 after:-bottom-0.5 after:h-px after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
                 >
                   {item.label}
                 </a>
@@ -166,31 +167,30 @@ const Navbar = () => {
           </div>
 
           {/* Right side: Phone + Language */}
-          <div className="hidden xl:flex items-center gap-4 shrink-0">
+          <div className="hidden xl:flex items-center gap-3 shrink-0">
             <a
               href="tel:+905352279696"
               aria-label="Telefon ile arayın: +90 535 227 96 96"
-              className="group flex items-center gap-2 rounded-full border border-border/80 bg-secondary/40 pl-3 pr-4 py-1.5 hover:border-primary/60 hover:bg-secondary transition-colors"
+              className="group flex items-center gap-2 rounded-sm bg-primary/[0.06] border border-primary/25 px-3.5 h-9 hover:bg-primary/10 hover:border-primary/50 transition-colors"
             >
               <Phone className="w-3.5 h-3.5 text-primary shrink-0" />
-              <span className="text-sm font-medium tabular-nums tracking-wide leading-none text-foreground group-hover:text-primary transition-colors whitespace-nowrap">
+              <span className="text-[0.8rem] font-medium tabular-nums tracking-[0.04em] leading-none text-foreground group-hover:text-primary transition-colors whitespace-nowrap">
                 +90 535 227 96 96
               </span>
             </a>
-
-
-            <div className="h-5 w-px bg-border" />
 
             {/* Language Dropdown */}
             <div className="relative" ref={langRef}>
               <button
                 onClick={() => setLangDropdownOpen(!langDropdownOpen)}
-                className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Dil seçimi"
+                className="flex items-center gap-1.5 h-9 px-2.5 rounded-sm border border-transparent text-[0.8rem] tracking-wide text-foreground/75 hover:text-primary hover:border-border transition-colors"
               >
                 <span className="text-base leading-none">{languageFlags[language]}</span>
                 <span>{language}</span>
                 <ChevronDown className={`w-3 h-3 transition-transform ${langDropdownOpen ? "rotate-180" : ""}`} />
               </button>
+
               {langDropdownOpen && (
                 <div className="absolute top-full right-0 mt-2 w-20 bg-card border border-border rounded shadow-xl shadow-black/30 z-50 py-1">
                   {languages.map((lang) => (
