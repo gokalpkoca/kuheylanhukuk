@@ -25,7 +25,7 @@ const Hero = () => {
 
 
         {/* Content side */}
-        <div className="lg:w-3/5 p-8 sm:p-12 lg:p-20 flex flex-col justify-center relative z-20">
+        <div className="lg:w-[66%] p-8 sm:p-12 lg:p-20 flex flex-col justify-center relative z-20">
           <div className="mb-8 flex items-center gap-4">
             <div className="w-8 h-px bg-primary" />
             <p className="text-foreground uppercase tracking-[0.35em] text-[10px] font-medium">
@@ -71,7 +71,7 @@ const Hero = () => {
         </div>
 
         {/* Imagery side */}
-        <div className="lg:w-2/5 relative min-h-[280px] lg:min-h-full overflow-hidden group border-t lg:border-t-0 lg:border-l border-foreground/10">
+        <div className="lg:w-[34%] relative min-h-[280px] lg:min-h-full overflow-hidden group border-t lg:border-t-0 lg:border-l border-foreground/10">
           <img
             src={heroBg}
             alt=""
