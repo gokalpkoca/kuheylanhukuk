@@ -49,7 +49,7 @@ const Footer = () => {
             <h4 className="font-serif text-lg text-dark-surface-foreground font-semibold mb-6">{t("footer.contact")}</h4>
             <a
               href="tel:+905352279696"
-              className="inline-flex items-center gap-3 px-6 py-3 border border-dark-surface-accent text-dark-surface-accent hover:bg-primary hover:text-dark-surface-accent-foreground transition-all duration-300 rounded mb-6"
+              className="inline-flex items-center gap-3 px-6 py-3 border border-dark-surface-accent text-dark-surface-accent hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 rounded mb-6"
             >
               <Phone className="w-4 h-4" />
               <span className="text-sm font-medium">+90 535 227 96 96</span>
