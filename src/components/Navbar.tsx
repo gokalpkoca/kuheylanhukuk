@@ -165,14 +165,18 @@ const Navbar = () => {
           </div>
 
           {/* Right side: Phone + Language */}
-          <div className="hidden xl:flex items-center gap-4">
+          <div className="hidden xl:flex items-center gap-4 shrink-0">
             <a
               href="tel:+905352279696"
-              className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+              aria-label="Telefon ile arayın: +90 535 227 96 96"
+              className="group flex items-center gap-2 rounded-full border border-border/80 bg-secondary/40 pl-3 pr-4 py-1.5 hover:border-primary/60 hover:bg-secondary transition-colors"
             >
-              <Phone className="w-4 h-4 text-primary" />
-              <span>0 (535) 227 96 96</span>
+              <Phone className="w-3.5 h-3.5 text-primary shrink-0" />
+              <span className="text-sm font-medium tabular-nums tracking-wide leading-none text-foreground group-hover:text-primary transition-colors whitespace-nowrap">
+                +90 535 227 96 96
+              </span>
             </a>
+
 
             <div className="h-5 w-px bg-border" />
 
