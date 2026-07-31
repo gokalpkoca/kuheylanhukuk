@@ -33,11 +33,11 @@ const Hero = () => {
             </p>
           </div>
 
-          <h1 className="font-serif text-foreground text-[2.5rem] sm:text-5xl md:text-6xl lg:text-[6.5rem] font-bold leading-[1] lg:leading-[0.95] tracking-tight mb-6 lg:mb-8">
+          <h1 className="font-serif text-foreground text-[2.25rem] sm:text-4xl md:text-5xl lg:text-[4.5rem] font-bold leading-[1.05] lg:leading-[1] tracking-tight mb-6 lg:mb-8">
             {t("hero.title1")}
             <br />
-            <span className="italic text-primary">{t("hero.title2")}</span>{" "}
-            {t("hero.title3")}
+            <span className="italic text-primary">{t("hero.title2")}</span>
+            {t("hero.title3") && t("hero.title3") !== "hero.title3" ? ` ${t("hero.title3")}` : ""}
           </h1>
 
           <p className="max-w-md text-foreground/75 text-base sm:text-lg lg:text-xl font-light leading-relaxed mb-8 lg:mb-12">
