@@ -43,7 +43,7 @@ const PracticeAreas = () => {
           </Link>
         </motion.div>
 
-        <div className="overflow-x-auto pb-4 pt-2 -mx-4 px-4">
+        <div className="overflow-x-scroll pb-4 pt-2 -mx-4 px-4">
           <div className="flex gap-5 min-w-max">
             {practiceAreas.map((area, i) => (
               <motion.div
