@@ -13,13 +13,14 @@ const Hero = () => {
         transition={{ duration: 0.7 }}
         className="relative w-full max-w-7xl bg-background shadow-[0_40px_80px_-15px_hsl(var(--foreground)/0.14)] flex flex-col lg:flex-row overflow-hidden min-h-[620px] lg:min-h-[720px]"
       >
-        {/* Decorative monogram */}
-        <span
+        {/* Decorative logo mark */}
+        <img
+          src={logoK}
+          alt=""
           aria-hidden="true"
-          className="pointer-events-none select-none absolute -bottom-16 -left-8 font-serif font-bold text-[16rem] lg:text-[20rem] leading-none text-foreground/[0.03] z-0"
-        >
-          KH
-        </span>
+          className="pointer-events-none select-none absolute -bottom-12 -left-6 h-[22rem] lg:h-[30rem] w-auto opacity-[0.06] z-0"
+        />
+
 
         {/* Content side */}
         <div className="lg:w-3/5 p-8 sm:p-12 lg:p-20 flex flex-col justify-center relative z-20">
