@@ -7,12 +7,13 @@ const Hero = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-secondary px-4 pt-24 pb-8 lg:px-8 lg:pt-28 lg:pb-12">
+    <section className="relative flex items-center justify-center bg-secondary px-3 pt-20 pb-6 sm:px-6 sm:pt-24 sm:pb-10 lg:min-h-screen lg:px-8 lg:pt-28 lg:pb-12">
       <motion.div
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
-        className="relative w-full max-w-7xl bg-background shadow-[0_40px_80px_-15px_hsl(var(--foreground)/0.14)] flex flex-col lg:flex-row overflow-hidden min-h-[620px] lg:min-h-[720px]"
+        className="relative w-full max-w-7xl bg-background shadow-[0_40px_80px_-15px_hsl(var(--foreground)/0.14)] flex flex-col lg:flex-row overflow-hidden lg:min-h-[720px]"
+
       >
         {/* Decorative logo mark */}
         <img
