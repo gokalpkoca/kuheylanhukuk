@@ -26,24 +26,25 @@ const Hero = () => {
 
 
         {/* Content side */}
-        <div className="lg:w-[66%] p-8 sm:p-12 lg:p-20 flex flex-col justify-center relative z-20">
-          <div className="mb-8 flex items-center gap-4">
-            <div className="w-8 h-px bg-primary" />
-            <p className="text-foreground uppercase tracking-[0.35em] text-[10px] font-medium">
+        <div className="lg:w-[66%] px-6 py-10 sm:px-10 sm:py-14 lg:p-20 flex flex-col justify-center relative z-20">
+          <div className="mb-6 lg:mb-8 flex items-center gap-3 lg:gap-4">
+            <div className="w-6 lg:w-8 h-px bg-primary" />
+            <p className="text-foreground uppercase tracking-[0.25em] sm:tracking-[0.35em] text-[9px] sm:text-[10px] font-medium">
               {t("hero.subtitle")}
             </p>
           </div>
 
-          <h1 className="font-serif text-foreground text-5xl sm:text-6xl lg:text-[6.5rem] font-bold leading-[0.95] tracking-tight mb-8">
+          <h1 className="font-serif text-foreground text-[2.5rem] sm:text-5xl md:text-6xl lg:text-[6.5rem] font-bold leading-[1] lg:leading-[0.95] tracking-tight mb-6 lg:mb-8">
             {t("hero.title1")}
             <br />
             <span className="italic text-primary">{t("hero.title2")}</span>{" "}
             {t("hero.title3")}
           </h1>
 
-          <p className="max-w-md text-foreground/75 text-lg lg:text-xl font-light leading-relaxed mb-12">
+          <p className="max-w-md text-foreground/75 text-base sm:text-lg lg:text-xl font-light leading-relaxed mb-8 lg:mb-12">
             {t("hero.description")}
           </p>
+
 
           <div>
             <a
