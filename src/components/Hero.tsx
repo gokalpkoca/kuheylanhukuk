@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import heroBg from "@/assets/hero-bg.jpg";
+import logoK from "@/assets/logo-k.png";
 import { useLanguage } from "@/context/LanguageContext";
 
 const Hero = () => {
