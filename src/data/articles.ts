@@ -9,7 +9,7 @@ export const allArticles: Article[] = [
   {
     title: "5607 Sayılı Kanun Kapsamında Kaçakçılık Suçları Rehberi",
     date: "15 Temmuz 2026",
-    category: "gumruk-hukuku",
+    category: "ceza-hukuku",
     pdfUrl: "/articles/5607-sayili-kanun-kacakcilik-suclari-rehberi.pdf",
   },
   {
@@ -75,7 +75,7 @@ export const allArticles: Article[] = [
   {
     title: "IBAN Kullandırma Cezası Rehberi",
     date: "15 Temmuz 2026",
-    category: "bankacilik-finans",
+    category: "ceza-hukuku",
     pdfUrl: "/articles/iban-kullandirma-cezasi-rehberi.pdf",
   },
   {

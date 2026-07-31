@@ -15,7 +15,7 @@ const ru: Record<string, string> = {
   "hero.title2": "Юридическая",
   "hero.title3": "Команда",
   "hero.description": "Экспертиза, Опыт, Ориентация на результат",
-  "hero.cta": "Познакомьтесь с нашей командой",
+  "hero.cta": "О нас",
 
   // About
   "about.tagline": "Стратегические правовые решения, корпоративная надёжность",
@@ -167,6 +167,9 @@ const ru: Record<string, string> = {
   "career.form_subtitle": "Отправьте заявку, заполнив форму ниже.",
   "career.position_label": "Должность",
   "career.position_placeholder": "Должность, на которую вы претендуете",
+  "career.cv_label": "Резюме (CV)",
+  "career.cv_button": "Прикрепить файл",
+  "career.cv_hint": "PDF, DOC или DOCX · до 5 МБ",
   "career.cover_letter": "Сопроводительное Письмо",
   "career.cover_letter_placeholder": "Кратко представьтесь и объясните, почему вы подаёте заявку...",
   "career.send_application": "Отправить Заявку",

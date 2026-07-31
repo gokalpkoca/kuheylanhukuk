@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Briefcase, Clock, MapPin, Send, ChevronDown, GraduationCap, Users } from "lucide-react";
+import { Briefcase, Clock, MapPin, Send, ChevronDown, GraduationCap, Users, Paperclip } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Input } from "@/components/ui/input";
@@ -20,9 +20,35 @@ const CareersPage = () => {
   const { toast } = useToast();
   const { t } = useLanguage();
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", position: "", message: "" });
+  const [cvFile, setCvFile] = useState<File | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitting, setSubmitting] = useState(false);
   const [expandedPosition, setExpandedPosition] = useState<string | null>(null);
+
+  const ALLOWED_CV_EXT = ["pdf", "doc", "docx"];
+  const MAX_CV_SIZE = 5 * 1024 * 1024;
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0] ?? null;
+    if (!file) {
+      setCvFile(null);
+      return;
+    }
+    const ext = file.name.split(".").pop()?.toLowerCase() ?? "";
+    if (!ALLOWED_CV_EXT.includes(ext)) {
+      setCvFile(null);
+      setErrors((prev) => ({ ...prev, cv: "Yalnızca PDF, DOC veya DOCX dosyası yükleyebilirsiniz." }));
+      return;
+    }
+    if (file.size > MAX_CV_SIZE) {
+      setCvFile(null);
+      setErrors((prev) => ({ ...prev, cv: "Dosya boyutu en fazla 5 MB olabilir." }));
+      return;
+    }
+    setErrors((prev) => ({ ...prev, cv: "" }));
+    setCvFile(file);
+  };
+
 
   const positions = [
     {
@@ -67,13 +93,34 @@ const CareersPage = () => {
     setSubmitting(true);
     const validated = result.data;
 
+    let cvPath: string | null = null;
+    if (cvFile) {
+      const ext = cvFile.name.split(".").pop()?.toLowerCase() ?? "pdf";
+      const safeName = `${Date.now()}-${crypto.randomUUID()}.${ext}`;
+      const { error: uploadError } = await supabase.storage
+        .from("career-cvs")
+        .upload(safeName, cvFile, { contentType: cvFile.type || undefined });
+      if (uploadError) {
+        setSubmitting(false);
+        toast({
+          title: "Dosya yüklenemedi",
+          description: "CV dosyanız yüklenemedi. Lütfen tekrar deneyin.",
+          variant: "destructive",
+        });
+        return;
+      }
+      cvPath = safeName;
+    }
+
     const { error } = await supabase.from("career_applications").insert({
       name: validated.name,
       email: validated.email,
       phone: validated.phone || null,
       position: validated.position || null,
       message: validated.message,
+      cv_url: cvPath,
     });
+
 
     setSubmitting(false);
 
@@ -91,6 +138,9 @@ const CareersPage = () => {
       description: "En kısa sürede sizinle iletişime geçeceğiz.",
     });
     setFormData({ name: "", email: "", phone: "", position: "", message: "" });
+    setCvFile(null);
+    const cvInput = document.getElementById("cv-upload") as HTMLInputElement | null;
+    if (cvInput) cvInput.value = "";
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -252,6 +302,30 @@ const CareersPage = () => {
                   <Textarea name="message" value={formData.message} onChange={handleChange} placeholder={t("career.cover_letter_placeholder")} rows={6} maxLength={2000} required className="bg-background/50 border-border/80 text-sm focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all duration-300 resize-none" />
                   {errors.message && <p className="text-destructive text-xs mt-1">{errors.message}</p>}
                 </div>
+                <div className="space-y-2">
+                  <label htmlFor="cv-upload" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{t("career.cv_label")}</label>
+                  <div className="flex flex-wrap items-center gap-3">
+                    <input
+                      id="cv-upload"
+                      type="file"
+                      accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                      onChange={handleFileChange}
+                      className="sr-only"
+                    />
+                    <label
+                      htmlFor="cv-upload"
+                      className="inline-flex items-center gap-2 h-12 px-5 rounded-md border border-border/80 bg-background/50 text-sm text-foreground cursor-pointer hover:border-primary/50 hover:text-primary transition-colors"
+                    >
+                      <Paperclip className="w-4 h-4" />
+                      {t("career.cv_button")}
+                    </label>
+                    <span className="text-xs text-muted-foreground">
+                      {cvFile ? cvFile.name : t("career.cv_hint")}
+                    </span>
+                  </div>
+                  {errors.cv && <p className="text-destructive text-xs mt-1">{errors.cv}</p>}
+                </div>
+
                 <div className="text-center pt-2">
                   <Button type="submit" size="lg" disabled={submitting} className="gap-3 px-10 h-12 text-sm font-semibold uppercase tracking-wider shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300">
                     <Send className="w-4 h-4" />

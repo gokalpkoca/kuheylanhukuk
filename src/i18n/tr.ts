@@ -15,7 +15,7 @@ const tr: Record<string, string> = {
   "hero.title2": "Hukuk",
   "hero.title3": "Ekibi",
   "hero.description": "Uzmanlık, Deneyim, Çözüm Odaklı Yaklaşım",
-  "hero.cta": "Ekibimizi İnceleyin",
+  "hero.cta": "Hakkımızda",
 
   // About
   "about.tagline": "Stratejik Hukuki Çözümler, Kurumsal Güvence",
@@ -167,6 +167,9 @@ const tr: Record<string, string> = {
   "career.form_subtitle": "Aşağıdaki formu doldurarak başvurunuzu iletebilirsiniz.",
   "career.position_label": "Pozisyon",
   "career.position_placeholder": "Başvurmak istediğiniz pozisyon",
+  "career.cv_label": "CV / Özgeçmiş",
+  "career.cv_button": "Dosya Ekle",
+  "career.cv_hint": "PDF, DOC veya DOCX · en fazla 5 MB",
   "career.cover_letter": "Ön Yazı",
   "career.cover_letter_placeholder": "Kendinizi kısaca tanıtın ve neden başvurduğunuzu belirtin...",
   "career.send_application": "Başvuruyu Gönder",
