@@ -12,9 +12,9 @@ const en: Record<string, string> = {
 
   // Hero
   "hero.subtitle": "KÜHEYLAN LAW FIRM",
-  "hero.title1": "Professional",
-  "hero.title2": "Legal",
-  "hero.title3": "Team",
+  "hero.title1": "High Standards in",
+  "hero.title2": "Legal Counsel",
+  "hero.title3": "",
   "hero.description": "Expertise, Experience, Solution-Oriented Approach",
   "hero.cta": "About Us",
 
