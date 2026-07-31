@@ -9,3 +9,8 @@ createRoot(rootElement).render(
     <App />
   </HelmetProvider>
 );
+
+// Remove the static HTML splash once React (and its own loading screen) is mounted
+requestAnimationFrame(() => {
+  document.getElementById("initial-splash")?.remove();
+});
