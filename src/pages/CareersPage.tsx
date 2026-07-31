@@ -138,6 +138,9 @@ const CareersPage = () => {
       description: "En kısa sürede sizinle iletişime geçeceğiz.",
     });
     setFormData({ name: "", email: "", phone: "", position: "", message: "" });
+    setCvFile(null);
+    const cvInput = document.getElementById("cv-upload") as HTMLInputElement | null;
+    if (cvInput) cvInput.value = "";
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
