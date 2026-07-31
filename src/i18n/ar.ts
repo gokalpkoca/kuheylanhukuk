@@ -15,7 +15,7 @@ const ar: Record<string, string> = {
   "hero.title2": "قانوني",
   "hero.title3": "متخصص",
   "hero.description": "الخبرة والتجربة والنهج الموجّه نحو الحلول",
-  "hero.cta": "تعرّف على فريقنا",
+  "hero.cta": "من نحن",
 
   // About
   "about.tagline": "حلول قانونية استراتيجية، ضمان مؤسسي",

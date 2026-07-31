@@ -15,7 +15,7 @@ const en: Record<string, string> = {
   "hero.title2": "Legal",
   "hero.title3": "Team",
   "hero.description": "Expertise, Experience, Solution-Oriented Approach",
-  "hero.cta": "Meet Our Team",
+  "hero.cta": "About Us",
 
   // About
   "about.tagline": "Strategic Legal Solutions, Corporate Assurance",

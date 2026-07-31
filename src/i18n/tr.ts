@@ -15,7 +15,7 @@ const tr: Record<string, string> = {
   "hero.title2": "Hukuk",
   "hero.title3": "Ekibi",
   "hero.description": "Uzmanlık, Deneyim, Çözüm Odaklı Yaklaşım",
-  "hero.cta": "Ekibimizi İnceleyin",
+  "hero.cta": "Hakkımızda",
 
   // About
   "about.tagline": "Stratejik Hukuki Çözümler, Kurumsal Güvence",
