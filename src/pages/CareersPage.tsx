@@ -93,13 +93,34 @@ const CareersPage = () => {
     setSubmitting(true);
     const validated = result.data;
 
+    let cvPath: string | null = null;
+    if (cvFile) {
+      const ext = cvFile.name.split(".").pop()?.toLowerCase() ?? "pdf";
+      const safeName = `${Date.now()}-${crypto.randomUUID()}.${ext}`;
+      const { error: uploadError } = await supabase.storage
+        .from("career-cvs")
+        .upload(safeName, cvFile, { contentType: cvFile.type || undefined });
+      if (uploadError) {
+        setSubmitting(false);
+        toast({
+          title: "Dosya yüklenemedi",
+          description: "CV dosyanız yüklenemedi. Lütfen tekrar deneyin.",
+          variant: "destructive",
+        });
+        return;
+      }
+      cvPath = safeName;
+    }
+
     const { error } = await supabase.from("career_applications").insert({
       name: validated.name,
       email: validated.email,
       phone: validated.phone || null,
       position: validated.position || null,
       message: validated.message,
+      cv_url: cvPath,
     });
+
 
     setSubmitting(false);
 
