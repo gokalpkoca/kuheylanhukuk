@@ -88,7 +88,7 @@ const Navbar = () => {
               <div key={item.href} className="relative" ref={dropdownRef}>
                   <button
                     onClick={() => setDropdownOpen(!dropdownOpen)}
-                    className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200 tracking-wide uppercase"
+                    className="flex items-center gap-1 relative px-3 py-2 text-[0.8rem] font-medium text-foreground/75 hover:text-primary transition-colors duration-200 tracking-[0.08em] uppercase after:absolute after:left-3 after:right-3 after:-bottom-0.5 after:h-px after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
                   >
                     {item.label}
                     <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""}`} />
@@ -119,7 +119,7 @@ const Navbar = () => {
                 <div key={item.href} className="relative" ref={articleDropdownRef}>
                   <button
                     onClick={() => setArticleDropdownOpen(!articleDropdownOpen)}
-                    className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200 tracking-wide uppercase"
+                    className="flex items-center gap-1 relative px-3 py-2 text-[0.8rem] font-medium text-foreground/75 hover:text-primary transition-colors duration-200 tracking-[0.08em] uppercase after:absolute after:left-3 after:right-3 after:-bottom-0.5 after:h-px after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
                   >
                     {item.label}
                     <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${articleDropdownOpen ? "rotate-180" : ""}`} />
@@ -150,7 +150,7 @@ const Navbar = () => {
                 <Link
                   key={item.href}
                   to={item.href}
-                  className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200 tracking-wide uppercase"
+                  className="relative px-3 py-2 text-[0.8rem] font-medium text-foreground/75 hover:text-primary transition-colors duration-200 tracking-[0.08em] uppercase after:absolute after:left-3 after:right-3 after:-bottom-0.5 after:h-px after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
                 >
                   {item.label}
                 </Link>
@@ -158,7 +158,7 @@ const Navbar = () => {
                 <a
                   key={item.href}
                   href={item.href.startsWith("#") ? `/${item.href}` : item.href}
-                  className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200 tracking-wide uppercase"
+                  className="relative px-3 py-2 text-[0.8rem] font-medium text-foreground/75 hover:text-primary transition-colors duration-200 tracking-[0.08em] uppercase after:absolute after:left-3 after:right-3 after:-bottom-0.5 after:h-px after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
                 >
                   {item.label}
                 </a>
