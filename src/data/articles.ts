@@ -228,5 +228,52 @@ export const allArticles: Article[] = [
     category: "yabancilar-vatandaslik-hukuku",
     pdfUrl: "/articles/yabancilarin-gayrimenkul-alimi-yoluyla-turk-vatandasligi-rehberi.pdf",
   },
+  {
+    title: "İcra Takibinde Menfi Tespit Davası Rehberi",
+    date: "15 Temmuz 2026",
+    category: "icra-iflas-hukuku",
+    pdfUrl: "/articles/icra-takibinde-menfi-tespit-davasi-rehberi.pdf",
+  },
+  {
+    title: "İhtiyati Haciz Kararı Rehberi",
+    date: "15 Temmuz 2026",
+    category: "icra-iflas-hukuku",
+    pdfUrl: "/articles/ihtiyati-haciz-karari-rehberi.pdf",
+  },
+  {
+    title: "İlamsız İcra Takibine İtiraz Rehberi",
+    date: "15 Temmuz 2026",
+    category: "icra-iflas-hukuku",
+    pdfUrl: "/articles/ilamsiz-icra-takibine-itiraz-rehberi.pdf",
+  },
+  {
+    title: "Konkordato Nedir? Süreç ve Sonuçları Rehberi",
+    date: "15 Temmuz 2026",
+    category: "icra-iflas-hukuku",
+    pdfUrl: "/articles/konkordato-nedir-rehberi.pdf",
+  },
+  {
+    title: "İdari İşlemin İptali Davası ve Yürütmenin Durdurulması Talebi",
+    date: "15 Temmuz 2026",
+    category: "idare-hukuku",
+    pdfUrl: "/articles/idari-islemin-iptali-davasi-ve-yurutmenin-durdurulmasi-talebi.pdf",
+  },
+  {
+    title: "Memur Disiplin Cezaları, Atama ve İhraç Kararlarına Karşı İptal Davası",
+    date: "15 Temmuz 2026",
+    category: "idare-hukuku",
+    pdfUrl: "/articles/memur-disiplin-cezalari-atama-ve-ihrac-kararlarina-karsi-iptal-davasi.pdf",
+  },
+  {
+    title: "Kamu İhale Kararlarına KİK İtiraz ve Şikayet Başvurusu Nasıl Yapılır",
+    date: "15 Temmuz 2026",
+    category: "idare-hukuku",
+    pdfUrl: "/articles/kamu-ihale-kararlarina-kik-itiraz-ve-sikayet-basvurusu.pdf",
+  },
+  {
+    title: "Kaçak Yapı Yıkım Kararı ve İmar Para Cezalarına Karşı Hukuki Yollar",
+    date: "15 Temmuz 2026",
+    category: "idare-hukuku",
+    pdfUrl: "/articles/kacak-yapi-yikim-karari-ve-imar-para-cezalarina-karsi-hukuki-yollar.pdf",
+  },
 ];
-
