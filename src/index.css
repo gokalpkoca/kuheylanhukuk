@@ -44,7 +44,8 @@
 
     --dark-surface: 0 8% 18%;
     --dark-surface-foreground: 30 15% 88%;
-    --dark-surface-muted: 30 10% 65%;
+    --dark-surface-muted: 30 10% 72%;
+    --dark-surface-accent: 4 85% 72%;
 
     --sidebar-background: 0 0% 100%;
     --sidebar-foreground: 8 13% 22%;
