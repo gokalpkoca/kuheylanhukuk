@@ -250,4 +250,44 @@
   <url><loc>https://kuheylanhukuk.com/blog/tuketici-hakem-heyeti-basvuru-sinirlari-rehberi</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://kuheylanhukuk.com/blog/yabancilarin-calisma-izni-almasi-ve-yasal-prosedurler-rehberi</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://kuheylanhukuk.com/blog/yabancilarin-gayrimenkul-alimi-yoluyla-turk-vatandasligi-rehberi</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url>
+    <loc>https://kuheylanhukuk.com/blog/icra-takibinde-menfi-tespit-davasi-rehberi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kuheylanhukuk.com/blog/ihtiyati-haciz-karari-rehberi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kuheylanhukuk.com/blog/ilamsiz-icra-takibine-itiraz-rehberi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kuheylanhukuk.com/blog/konkordato-nedir-rehberi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kuheylanhukuk.com/blog/idari-islemin-iptali-davasi-ve-yurutmenin-durdurulmasi-talebi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kuheylanhukuk.com/blog/memur-disiplin-cezalari-atama-ve-ihrac-kararlarina-karsi-iptal-davasi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kuheylanhukuk.com/blog/kamu-ihale-kararlarina-kik-itiraz-ve-sikayet-basvurusu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kuheylanhukuk.com/blog/kacak-yapi-yikim-karari-ve-imar-para-cezalarina-karsi-hukuki-yollar</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
