@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Mail, Globe } from "lucide-react";
 import mertDenizPhoto from "@/assets/mert-deniz-avatar.jpg";
+import mertDenizPhoto256 from "@/assets/mert-deniz-avatar-256.jpg";
 import { useLanguage } from "@/context/LanguageContext";
 
 const Team = () => {
@@ -48,10 +49,14 @@ const Team = () => {
             <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-10">
               <div className="w-32 h-32 rounded-full border-2 border-gold overflow-hidden shrink-0">
                 <img
-                  src={mertDenizPhoto}
+                  src={mertDenizPhoto256}
+                  srcSet={`${mertDenizPhoto256} 256w, ${mertDenizPhoto} 512w`}
+                  sizes="128px"
                   alt="Mert Deniz Küheylan"
                   width={512}
                   height={512}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover" />
                 
               </div>
