@@ -58,7 +58,7 @@ const ar: Record<string, string> = {
   "pa.yabancilar-vatandaslik-hukuku": "قانون الأجانب والجنسية",
 
   // Team
-  "team.subtitle": "فريقنا القانوني",
+  "team.subtitle": "",
   "team.title": "قوّتنا — فريقنا",
   "team.description": "تتمثّل أولوية مكتبنا في استباق المخاطر القانونية التي قد يواجهها موكلونا وتقديم الحلول الأنسب والأدق لهم.",
   "team.founder": "الشريك المؤسّس",

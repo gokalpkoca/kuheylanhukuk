@@ -58,7 +58,7 @@ const tr: Record<string, string> = {
   "pa.yabancilar-vatandaslik-hukuku": "Yabancılar ve Vatandaşlık Hukuku",
 
   // Team
-  "team.subtitle": "Kadromuz",
+  "team.subtitle": "",
   "team.title": "Gücümüz — Ekibimiz",
   "team.description": "Büromuzun önceliği, müvekkillerinin karşılaşabileceği hukuki riskleri henüz ortaya çıkmadan önlemek, müvekkillerine en uygun ve en doğru çözümleri sunmaktır.",
   "team.founder": "KURUCU ORTAK",
