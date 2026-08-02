@@ -43,9 +43,9 @@ const RouteTransition = () => {
         alt=""
         width={320}
         height={400}
-        className="h-40 w-32 object-contain animate-fade-in"
+        className="route-transition-logo h-40 w-32 object-contain"
       />
-      <p className="mt-6 h-7 font-serif text-xl leading-7 tracking-[0.1em] text-[#413432]">
+      <p className="route-transition-text mt-6 h-7 font-serif text-xl leading-7 tracking-[0.1em] text-[#413432]">
         KÜHEYLAN HUKUK
       </p>
       <div className="route-rule mt-8 h-0.5 w-[220px] rounded-full bg-[#A80B06]" />

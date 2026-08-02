@@ -264,3 +264,26 @@ html {
     will-change: auto;
   }
 }
+
+/* Route transition loader */
+@keyframes route-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes route-rule {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+.route-transition-logo {
+  opacity: 0;
+  animation: route-fade-in 0.4s ease-out 0.05s forwards;
+}
+.route-transition-text {
+  opacity: 0;
+  animation: route-fade-in 0.4s ease-out 0.3s forwards;
+}
+.route-rule {
+  transform: scaleX(0);
+  transform-origin: center;
+  animation: route-rule 0.55s ease-in-out 0.5s forwards;
+}
