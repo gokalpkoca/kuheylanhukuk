@@ -7,6 +7,9 @@ const en: Record<string, string> = {
   "nav.tum_makaleler": "Knowledge Base",
   "nav.tum_faaliyet_alanlari": "All Practice Areas",
   "nav.hesaplama": "Legal Calculators",
+  "calc.subtitle": "Practical Tools",
+  "calc.compute": "Calculate",
+  "calc.view_all": "All Tools",
   "nav.kariyer": "Careers",
   "nav.iletisim": "Contact",
 
