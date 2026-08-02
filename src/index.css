@@ -208,5 +208,6 @@ html {
   .page-header-glow,
   .page-header-rule {
     animation: none;
+    will-change: auto;
   }
 }
