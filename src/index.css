@@ -177,20 +177,31 @@ html {
 }
 
 .page-header-lines {
-  background-image: linear-gradient(90deg, hsl(var(--border)) 1px, transparent 1px);
-  background-size: 160px 100%;
-  animation: header-drift 32s linear infinite;
+  background-image: repeating-linear-gradient(
+    90deg,
+    hsl(var(--border)) 0 1px,
+    transparent 1px 160px
+  );
   width: calc(100% + 160px);
+  animation: header-drift 32s linear infinite;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  contain: strict;
 }
 
 .page-header-glow {
   animation: header-glow 14s ease-in-out infinite;
+  will-change: transform, opacity;
+  transform: translate3d(0, 0, 0);
+  contain: strict;
 }
 
 .page-header-rule {
   transform-origin: left center;
   animation: header-rule 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.25s both;
 }
+
 
 @media (prefers-reduced-motion: reduce) {
   .page-header-lines,
