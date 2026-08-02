@@ -375,7 +375,44 @@ const Navbar = () => {
                   </button>
                 ))}
               </div>
+
+              {/* Theme toggle */}
+              <button
+                type="button"
+                onClick={toggleTheme}
+                aria-label={theme === "dark" ? themeLabels[language].light : themeLabels[language].dark}
+                aria-pressed={theme === "dark"}
+                className="w-full flex items-center justify-between gap-3 rounded-full border border-border px-4 py-2 text-sm text-foreground transition-colors hover:border-primary hover:text-primary"
+              >
+                <span className="flex items-center gap-2">
+                  <span className="relative w-4 h-4 shrink-0">
+                    <Sun
+                      className={`absolute inset-0 w-4 h-4 text-primary transition-all duration-300 ${
+                        theme === "dark" ? "opacity-0 rotate-90 scale-50" : "opacity-100 rotate-0 scale-100"
+                      }`}
+                    />
+                    <Moon
+                      className={`absolute inset-0 w-4 h-4 text-primary transition-all duration-300 ${
+                        theme === "dark" ? "opacity-100 rotate-0 scale-100" : "opacity-0 -rotate-90 scale-50"
+                      }`}
+                    />
+                  </span>
+                  {theme === "dark" ? themeLabels[language].light : themeLabels[language].dark}
+                </span>
+                <span
+                  className={`relative h-5 w-9 shrink-0 rounded-full transition-colors ${
+                    theme === "dark" ? "bg-primary" : "bg-muted"
+                  }`}
+                >
+                  <span
+                    className={`absolute top-0.5 h-4 w-4 rounded-full bg-background shadow transition-all duration-300 ${
+                      theme === "dark" ? "left-[1.125rem]" : "left-0.5"
+                    }`}
+                  />
+                </span>
+              </button>
             </div>
+
           </div>
         )}
       </div>
