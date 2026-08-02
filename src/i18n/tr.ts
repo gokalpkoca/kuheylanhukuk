@@ -183,6 +183,8 @@ const tr: Record<string, string> = {
   "blog.search_placeholder": "Makalelerde ara...",
   "blog.no_results": "Sonuç bulunamadı.",
   "blog.read_more": "Devamını Oku",
+  "blog.sort_newest": "Yeniden Eskiye",
+  "blog.sort_alpha": "Alfabetik",
   "months.1": "Ocak", "months.2": "Şubat", "months.3": "Mart", "months.4": "Nisan",
   "months.5": "Mayıs", "months.6": "Haziran", "months.7": "Temmuz", "months.8": "Ağustos",
   "months.9": "Eylül", "months.10": "Ekim", "months.11": "Kasım", "months.12": "Aralık",
