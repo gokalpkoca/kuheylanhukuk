@@ -3,7 +3,7 @@ import { Link, useSearchParams } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import { Calendar, ArrowRight, ArrowLeft, Search, X } from "lucide-react";
+import { Calendar, ArrowRight, ArrowLeft, Search, X, ArrowDownAZ, ArrowDownWideNarrow } from "lucide-react";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
 import { practiceAreas } from "@/data/practiceAreas";
