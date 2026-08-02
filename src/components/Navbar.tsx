@@ -89,7 +89,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between gap-2 h-16 lg:h-24">
           {/* Logo */}
           <a href="/" className="shrink-0">
-            <img src={logo} alt="Küheylan Hukuk Bürosu" width={640} height={52} className="h-5 lg:h-[1.5rem] w-auto" />
+            <img src={logo} alt="Küheylan Hukuk Bürosu" width={640} height={52} className="h-5 lg:h-[1.5rem] w-auto dark:brightness-0 dark:invert" />
           </a>
 
           <div className="hidden xl:flex flex-1 min-w-0 items-center justify-center gap-0 whitespace-nowrap">
