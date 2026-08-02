@@ -1,9 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 import logo from "@/assets/logo.png";
-import { Globe, Phone, ChevronDown } from "lucide-react";
+import { Globe, Phone, ChevronDown, Sun, Moon } from "lucide-react";
 import { Link } from "react-router-dom";
 import { practiceAreas as practiceAreaData } from "@/data/practiceAreas";
 import { useLanguage, Language } from "@/context/LanguageContext";
+import { useTheme } from "@/hooks/use-theme";
 
 const languageFlags: Record<Language, string> = {
   TR: "🇹🇷",
@@ -12,6 +13,14 @@ const languageFlags: Record<Language, string> = {
   RU: "🇷🇺",
 };
 const languages: Language[] = ["TR", "EN", "AR", "RU"];
+
+const themeLabels: Record<Language, { light: string; dark: string }> = {
+  TR: { light: "Aydınlık Mod", dark: "Karanlık Mod" },
+  EN: { light: "Light Mode", dark: "Dark Mode" },
+  AR: { light: "الوضع الفاتح", dark: "الوضع الداكن" },
+  RU: { light: "Светлая тема", dark: "Тёмная тема" },
+};
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
