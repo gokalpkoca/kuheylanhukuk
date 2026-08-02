@@ -290,29 +290,36 @@ const Navbar = () => {
                     className="flex items-center justify-between w-full py-3 px-4 text-sm uppercase tracking-wide text-muted-foreground hover:text-primary transition-colors"
                   >
                     {item.label}
-                    <ChevronDown className={`w-4 h-4 transition-transform ${mobileArticleDropdownOpen ? "rotate-180" : ""}`} />
+                    <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${mobileArticleDropdownOpen ? "rotate-180" : ""}`} />
                   </button>
-                  {mobileArticleDropdownOpen && (
-                    <div className="bg-secondary border-t border-b border-border">
-                      <Link
-                        to="/blog"
-                        onClick={() => { setIsOpen(false); setMobileArticleDropdownOpen(false); }}
-                        className="block py-2.5 px-8 text-sm font-medium text-foreground hover:text-primary transition-colors"
-                      >
-                        {t("nav.tum_makaleler")}
-                      </Link>
-                      {practiceAreaData.map((area) => (
+                  <div
+                    className={`grid transition-[grid-template-rows,opacity] duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] ${
+                      mobileArticleDropdownOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                    }`}
+                  >
+                    <div className="overflow-hidden">
+                      <div className="bg-secondary border-t border-b border-border">
                         <Link
-                          key={area.slug}
-                          to={`/blog?dept=${encodeURIComponent(area.slug)}`}
+                          to="/blog"
                           onClick={() => { setIsOpen(false); setMobileArticleDropdownOpen(false); }}
-                          className="block py-2.5 px-8 text-sm text-muted-foreground hover:text-primary transition-colors"
+                          className="block py-2.5 px-8 text-sm font-medium text-foreground hover:text-primary hover:px-9 transition-all duration-200"
                         >
-                          {t(`pa.${area.slug}`)}
+                          {t("nav.tum_makaleler")}
                         </Link>
-                      ))}
+                        {practiceAreaData.map((area) => (
+                          <Link
+                            key={area.slug}
+                            to={`/blog?dept=${encodeURIComponent(area.slug)}`}
+                            onClick={() => { setIsOpen(false); setMobileArticleDropdownOpen(false); }}
+                            className="block py-2.5 px-8 text-sm text-muted-foreground hover:text-primary hover:px-9 transition-all duration-200"
+                          >
+                            {t(`pa.${area.slug}`)}
+                          </Link>
+                        ))}
+                      </div>
                     </div>
-                  )}
+                  </div>
+
                 </div>
               ) : (item as any).isPage ? (
                 <Link
