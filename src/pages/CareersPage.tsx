@@ -1,3 +1,4 @@
+import PageHeader from "@/components/PageHeader";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Briefcase, Clock, MapPin, Send, ChevronDown, GraduationCap, Users, Paperclip } from "lucide-react";
