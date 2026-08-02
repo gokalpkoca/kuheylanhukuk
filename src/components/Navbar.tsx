@@ -31,6 +31,8 @@ const Navbar = () => {
   const dropdownRef = useRef<HTMLDivElement>(null);
   const langRef = useRef<HTMLDivElement>(null);
   const { language, setLanguage, t } = useLanguage();
+  const { theme, toggleTheme } = useTheme();
+
 
   const [articleDropdownOpen, setArticleDropdownOpen] = useState(false);
   const [mobileArticleDropdownOpen, setMobileArticleDropdownOpen] = useState(false);
