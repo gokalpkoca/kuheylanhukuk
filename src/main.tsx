@@ -10,7 +10,11 @@ createRoot(rootElement).render(
   </HelmetProvider>
 );
 
-// Remove the static HTML splash once React (and its own loading screen) is mounted
-requestAnimationFrame(() => {
-  document.getElementById("initial-splash")?.remove();
-});
+// Single, seamless splash: fade out the static HTML splash after the first paint.
+const splash = document.getElementById("initial-splash");
+if (splash) {
+  window.setTimeout(() => {
+    splash.classList.add("is-hidden");
+    window.setTimeout(() => splash.remove(), 450);
+  }, 1200);
+}
