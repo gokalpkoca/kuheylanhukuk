@@ -183,6 +183,8 @@ const en: Record<string, string> = {
   "blog.search_placeholder": "Search articles...",
   "blog.no_results": "No results found.",
   "blog.read_more": "Read More",
+  "blog.sort_newest": "Newest First",
+  "blog.sort_alpha": "Alphabetical",
   "months.1": "January", "months.2": "February", "months.3": "March", "months.4": "April",
   "months.5": "May", "months.6": "June", "months.7": "July", "months.8": "August",
   "months.9": "September", "months.10": "October", "months.11": "November", "months.12": "December",
