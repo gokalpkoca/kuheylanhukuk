@@ -89,17 +89,17 @@ const Navbar = () => {
         <div className="flex items-center justify-between gap-2 h-16 lg:h-24">
           {/* Logo */}
           <a href="/" className="shrink-0">
-            <img src={logo} alt="Küheylan Hukuk Bürosu" width={640} height={52} className="h-5 lg:h-[1.5rem] w-auto dark:brightness-0 dark:invert" />
+            <img src={logo} alt="Küheylan Hukuk Bürosu" width={640} height={52} className="h-5 lg:h-[1.5rem] w-auto -translate-y-[2px] dark:brightness-0 dark:invert" />
           </a>
 
-          <div className="hidden xl:flex flex-1 min-w-0 items-center justify-center gap-0 whitespace-nowrap">
+          <div className="hidden xl:flex flex-1 min-w-0 items-center justify-center gap-0.5 whitespace-nowrap">
 
             {navItems.map((item) =>
               item.dropdown === "practiceAreas" ? (
               <div key={item.href} className="relative" ref={dropdownRef}>
                   <button
                     onClick={() => setDropdownOpen(!dropdownOpen)}
-                    className="flex items-center gap-1 relative px-1.5 py-2 text-[0.72rem] font-medium text-foreground/75 hover:text-primary transition-colors duration-200 tracking-[0.04em] uppercase after:absolute after:left-1.5 after:right-1.5 after:-bottom-0.5 after:h-px after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
+                    className="flex items-center gap-1 relative px-2 lg:px-3 py-2 text-[0.72rem] font-medium text-foreground/75 hover:text-primary transition-colors duration-200 tracking-[0.04em] uppercase after:absolute after:left-2 lg:after:left-3 after:right-2 lg:after:right-3 after:-bottom-0.5 after:h-px after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
                   >
                     {item.label}
                     <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""}`} />
@@ -130,7 +130,7 @@ const Navbar = () => {
                 <div key={item.href} className="relative" ref={articleDropdownRef}>
                   <button
                     onClick={() => setArticleDropdownOpen(!articleDropdownOpen)}
-                    className="flex items-center gap-1 relative px-1.5 py-2 text-[0.72rem] font-medium text-foreground/75 hover:text-primary transition-colors duration-200 tracking-[0.04em] uppercase after:absolute after:left-1.5 after:right-1.5 after:-bottom-0.5 after:h-px after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
+                    className="flex items-center gap-1 relative px-2 lg:px-3 py-2 text-[0.72rem] font-medium text-foreground/75 hover:text-primary transition-colors duration-200 tracking-[0.04em] uppercase after:absolute after:left-2 lg:after:left-3 after:right-2 lg:after:right-3 after:-bottom-0.5 after:h-px after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
                   >
                     {item.label}
                     <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${articleDropdownOpen ? "rotate-180" : ""}`} />
@@ -161,7 +161,7 @@ const Navbar = () => {
                 <Link
                   key={item.href}
                   to={item.href}
-                  className="relative px-1.5 py-2 text-[0.72rem] font-medium text-foreground/75 hover:text-primary transition-colors duration-200 tracking-[0.04em] uppercase after:absolute after:left-1.5 after:right-1.5 after:-bottom-0.5 after:h-px after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
+                  className="relative px-2 lg:px-3 py-2 text-[0.72rem] font-medium text-foreground/75 hover:text-primary transition-colors duration-200 tracking-[0.04em] uppercase after:absolute after:left-2 lg:after:left-3 after:right-2 lg:after:right-3 after:-bottom-0.5 after:h-px after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
                 >
                   {item.label}
                 </Link>
@@ -169,7 +169,7 @@ const Navbar = () => {
                 <a
                   key={item.href}
                   href={item.href.startsWith("#") ? `/${item.href}` : item.href}
-                  className="relative px-1.5 py-2 text-[0.72rem] font-medium text-foreground/75 hover:text-primary transition-colors duration-200 tracking-[0.04em] uppercase after:absolute after:left-1.5 after:right-1.5 after:-bottom-0.5 after:h-px after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
+                  className="relative px-2 lg:px-3 py-2 text-[0.72rem] font-medium text-foreground/75 hover:text-primary transition-colors duration-200 tracking-[0.04em] uppercase after:absolute after:left-2 lg:after:left-3 after:right-2 lg:after:right-3 after:-bottom-0.5 after:h-px after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
                 >
                   {item.label}
                 </a>
