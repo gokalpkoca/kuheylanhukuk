@@ -82,16 +82,20 @@
       #initial-splash .splash-rule {
         margin-top: 32px;
         height: 2px;
-        width: 0;
+        width: 220px;
         background: #A80B06;
         border-radius: 999px;
+        transform: scaleX(0);
+        transform-origin: center;
         animation: splash-rule 1.1s ease-in-out forwards;
       }
-      @keyframes splash-rule { to { width: 120px; } }
+      @keyframes splash-rule { to { transform: scaleX(1); } }
       #initial-splash p {
         margin: 24px 0 0;
         font-family: "Playfair Display", Georgia, "Times New Roman", serif;
         font-size: 20px;
+        line-height: 28px;
+        height: 28px;
         letter-spacing: 0.1em;
         color: #413432;
       }
