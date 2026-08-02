@@ -26,6 +26,8 @@ const Index = () => {
         <Team />
         
         <News />
+        <Calculators />
+
         <Contact />
       </main>
       <Footer />
