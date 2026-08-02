@@ -13,7 +13,7 @@ const News = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="haberler" className="py-24 lg:py-32 bg-white">
+    <section id="haberler" className="py-24 lg:py-32 bg-background">
       <div className="container mx-auto px-4 lg:px-8" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -37,7 +37,7 @@ const News = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.4, delay: Math.min(i, 5) * 0.08 }}
-              className="border border-border rounded bg-white p-6 hover:border-gold hover:-translate-y-1 transition-all duration-300 group flex flex-col shadow-sm"
+              className="border border-border rounded bg-card p-6 hover:border-gold hover:-translate-y-1 transition-all duration-300 group flex flex-col shadow-sm"
             >
               <div className="flex items-center gap-2 text-xs text-muted-foreground mb-3">
                 <Calendar className="w-3.5 h-3.5 text-gold" />
