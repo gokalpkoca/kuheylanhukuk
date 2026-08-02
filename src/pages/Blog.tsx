@@ -150,6 +150,30 @@ const Blog = () => {
             })}
           </div>
 
+          {/* Sort */}
+          <div className="flex items-center gap-2 mb-8">
+            {([
+              { key: "newest" as SortMode, label: t("blog.sort_newest"), Icon: ArrowDownWideNarrow },
+              { key: "alpha" as SortMode, label: t("blog.sort_alpha"), Icon: ArrowDownAZ },
+            ]).map(({ key, label, Icon }) => (
+              <button
+                key={key}
+                onClick={() => { setSortMode(key); setCurrentPage(1); }}
+                aria-pressed={sortMode === key}
+                className={`inline-flex items-center gap-2 px-4 py-2 text-xs uppercase tracking-wider rounded border transition-all duration-200 ${
+                  sortMode === key
+                    ? "bg-primary text-primary-foreground border-primary"
+                    : "border-border text-muted-foreground hover:border-primary hover:text-primary"
+                }`}
+              >
+                <Icon className="w-4 h-4 shrink-0" aria-hidden="true" />
+                <span>{label}</span>
+              </button>
+            ))}
+          </div>
+
+
+
           {/* Articles Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {paginated.map((article, i) => {
