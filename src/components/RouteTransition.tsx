@@ -20,8 +20,8 @@ const RouteTransition = () => {
     setFading(false);
     setVisible(true);
 
-    const fadeTimer = window.setTimeout(() => setFading(true), 900);
-    const hideTimer = window.setTimeout(() => setVisible(false), 1250);
+    const fadeTimer = window.setTimeout(() => setFading(true), 1080);
+    const hideTimer = window.setTimeout(() => setVisible(false), 1500);
 
     return () => {
       window.clearTimeout(fadeTimer);
@@ -34,7 +34,7 @@ const RouteTransition = () => {
   return (
     <div
       aria-hidden="true"
-      className={`fixed inset-0 z-[9997] flex flex-col items-center justify-center bg-white transition-opacity duration-[350ms] ${
+      className={`fixed inset-0 z-[9997] flex flex-col items-center justify-center bg-white transition-opacity duration-[420ms] ${
         fading ? "opacity-0" : "opacity-100"
       }`}
     >
@@ -48,7 +48,7 @@ const RouteTransition = () => {
       <p className="route-transition-text mt-6 h-7 font-serif text-xl leading-7 tracking-[0.1em] text-[#413432]">
         KÜHEYLAN HUKUK
       </p>
-      <div className="route-rule mt-8 h-0.5 w-[220px] rounded-full bg-[#A80B06]" />
+      <div className="route-rule mt-8 h-0.5 w-[264px] rounded-full bg-[#A80B06]" />
     </div>
   );
 };

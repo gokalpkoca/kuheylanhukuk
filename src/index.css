@@ -276,14 +276,14 @@ html {
 }
 .route-transition-logo {
   opacity: 0;
-  animation: route-fade-in 0.4s ease-out 0.05s forwards;
+  animation: route-fade-in 0.48s ease-out 0.06s forwards;
 }
 .route-transition-text {
   opacity: 0;
-  animation: route-fade-in 0.4s ease-out 0.3s forwards;
+  animation: route-fade-in 0.48s ease-out 0.36s forwards;
 }
 .route-rule {
   transform: scaleX(0);
   transform-origin: center;
-  animation: route-rule 0.55s ease-in-out 0.5s forwards;
+  animation: route-rule 0.66s ease-in-out 0.6s forwards;
 }
