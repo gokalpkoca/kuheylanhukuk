@@ -183,6 +183,8 @@ const ru: Record<string, string> = {
   "blog.search_placeholder": "Поиск по статьям...",
   "blog.no_results": "Ничего не найдено.",
   "blog.read_more": "Читать далее",
+  "blog.sort_newest": "Сначала новые",
+  "blog.sort_alpha": "По алфавиту",
   "months.1": "января", "months.2": "февраля", "months.3": "марта", "months.4": "апреля",
   "months.5": "мая", "months.6": "июня", "months.7": "июля", "months.8": "августа",
   "months.9": "сентября", "months.10": "октября", "months.11": "ноября", "months.12": "декабря",
