@@ -16,7 +16,6 @@ import CalculatorsPage from "./pages/CalculatorsPage";
 import CalculatorDetail from "./pages/CalculatorDetail";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
-import LoadingScreen from "./components/LoadingScreen";
 import FloatingActions from "./components/FloatingActions";
 
 const queryClient = new QueryClient();
@@ -29,7 +28,6 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <ScrollToTop />
-          <LoadingScreen />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/blog" element={<Blog />} />
