@@ -17,6 +17,7 @@ import CalculatorDetail from "./pages/CalculatorDetail";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 import LoadingScreen from "./components/LoadingScreen";
+import FloatingActions from "./components/FloatingActions";
 
 const queryClient = new QueryClient();
 
@@ -43,6 +44,7 @@ const App = () => (
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <FloatingActions />
         </BrowserRouter>
       </TooltipProvider>
     </LanguageProvider>
