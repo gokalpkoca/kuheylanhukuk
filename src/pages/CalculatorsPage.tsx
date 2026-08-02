@@ -42,20 +42,7 @@ const CalculatorsPage = () => {
       />
       <Navbar />
 
-      <section className="relative h-[280px] md:h-[340px] flex items-center justify-center bg-dark-surface overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(0,8%,18%)] via-[hsl(0,8%,18%)]/95 to-background" />
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="relative z-10 text-center px-4"
-        >
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-dark-surface-foreground font-bold">
-            Hesaplama Araçlarımız
-          </h1>
-          <div className="w-16 h-px bg-muted-foreground/40 mx-auto mt-6" />
-        </motion.div>
-      </section>
+      <PageHeader eyebrow="Küheylan Hukuk" title="Hesaplama Araçlarımız" />
 
       <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4 lg:px-8 max-w-6xl">
