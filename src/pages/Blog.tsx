@@ -14,12 +14,26 @@ import { translatedTitle, formatDate } from "@/lib/articleI18n";
 
 const ITEMS_PER_PAGE = 9;
 
+const MONTHS_TR = ["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"];
+
+const dateValue = (trDate: string): number => {
+  const m = trDate.match(/^(\d{1,2})\s+(\S+)\s+(\d{4})$/);
+  if (!m) return 0;
+  const [, day, monthName, year] = m;
+  const monthIdx = MONTHS_TR.findIndex(x => x.toLocaleLowerCase("tr") === monthName.toLocaleLowerCase("tr"));
+  if (monthIdx < 0) return 0;
+  return new Date(Number(year), monthIdx, Number(day)).getTime();
+};
+
+type SortMode = "newest" | "alpha";
+
 const Blog = () => {
   const [searchParams] = useSearchParams();
   const [currentPage, setCurrentPage] = useState(1);
   const initialDept = searchParams.get("dept") || "";
   const [selectedDept, setSelectedDept] = useState(initialDept);
   const [searchQuery, setSearchQuery] = useState("");
+  const [sortMode, setSortMode] = useState<SortMode>("newest");
   const { t, language } = useLanguage();
 
 
@@ -40,9 +54,15 @@ const Blog = () => {
       };
     })
     .filter((a) => selectedDept === "" || a.category === selectedDept)
-    .filter((a) => searchQuery === "" || a.displayTitle.toLocaleLowerCase().includes(searchQuery.toLocaleLowerCase()));
+    .filter((a) => searchQuery === "" || a.displayTitle.toLocaleLowerCase().includes(searchQuery.toLocaleLowerCase()))
+    .sort((a, b) =>
+      sortMode === "newest"
+        ? dateValue(b.date) - dateValue(a.date)
+        : a.displayTitle.localeCompare(b.displayTitle, language === "TR" ? "tr" : undefined)
+    );
   const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
   const paginated = filtered.slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE);
+
 
 
   const handleDeptChange = (dept: string) => {
