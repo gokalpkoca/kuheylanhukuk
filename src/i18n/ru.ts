@@ -7,6 +7,9 @@ const ru: Record<string, string> = {
   "nav.tum_makaleler": "База знаний",
   "nav.tum_faaliyet_alanlari": "Все области практики",
   "nav.hesaplama": "Калькуляторы",
+  "calc.subtitle": "Практические инструменты",
+  "calc.compute": "Рассчитать",
+  "calc.view_all": "Все инструменты",
   "nav.kariyer": "Вакансии",
   "nav.iletisim": "Контакты",
 

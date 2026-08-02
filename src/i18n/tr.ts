@@ -7,6 +7,9 @@ const tr: Record<string, string> = {
   "nav.tum_makaleler": "Bilgi Havuzu",
   "nav.tum_faaliyet_alanlari": "Tüm Faaliyet Alanları",
   "nav.hesaplama": "Hesaplama Araçları",
+  "calc.subtitle": "Pratik Araçlar",
+  "calc.compute": "Hesapla",
+  "calc.view_all": "Tüm Araçlar",
   "nav.kariyer": "Kariyer",
   "nav.iletisim": "İletişim",
 
