@@ -1,15 +1,16 @@
 import { useState } from "react";
-import { Phone, MessageCircle, Info, X } from "lucide-react";
+import { Phone, MessageCircle, Info, X, Mail } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 const PHONE = "+905352279696";
 const WHATSAPP = "905352279696";
+const EMAIL = "av.mdkuheylan@hotmail.com";
 
 const labels = {
-  TR: { open: "İletişim seçenekleri", call: "Bizi arayın", wa: "WhatsApp'tan yazın" },
-  EN: { open: "Contact options", call: "Call us", wa: "Message on WhatsApp" },
-  AR: { open: "خيارات الاتصال", call: "اتصل بنا", wa: "راسلنا على واتساب" },
-  RU: { open: "Способы связи", call: "Позвонить", wa: "Написать в WhatsApp" },
+  TR: { open: "İletişim seçenekleri", call: "Bizi arayın", wa: "WhatsApp'tan yazın", mail: "E-posta gönderin" },
+  EN: { open: "Contact options", call: "Call us", wa: "Message on WhatsApp", mail: "Send an email" },
+  AR: { open: "خيارات الاتصال", call: "اتصل بنا", wa: "راسلنا على واتساب", mail: "أرسل بريدًا إلكترونيًا" },
+  RU: { open: "Способы связи", call: "Позвонить", wa: "Написать в WhatsApp", mail: "Написать на e-mail" },
 } as const;
 
 const FloatingActions = () => {
@@ -17,14 +18,14 @@ const FloatingActions = () => {
   const { language } = useLanguage();
   const l = labels[(language as keyof typeof labels)] ?? labels.TR;
 
-  // Radial positions (up and up-left)
+  // Radial positions (up, up-left diagonal, left)
   const items = [
     {
       key: "call",
       href: `tel:${PHONE}`,
       label: l.call,
       Icon: Phone,
-      style: { transform: open ? "translate(0, -68px)" : "translate(0,0)" },
+      style: { transform: open ? "translate(0, -72px)" : "translate(0,0)" },
       delay: "0ms",
     },
     {
@@ -32,10 +33,19 @@ const FloatingActions = () => {
       href: `https://wa.me/${WHATSAPP}`,
       label: l.wa,
       Icon: MessageCircle,
-      style: { transform: open ? "translate(-48px, -48px)" : "translate(0,0)" },
+      style: { transform: open ? "translate(-51px, -51px)" : "translate(0,0)" },
       delay: "60ms",
     },
+    {
+      key: "mail",
+      href: `mailto:${EMAIL}`,
+      label: l.mail,
+      Icon: Mail,
+      style: { transform: open ? "translate(-72px, 0)" : "translate(0,0)" },
+      delay: "120ms",
+    },
   ];
+
 
   return (
     <div className="fixed bottom-6 right-6 z-40">
