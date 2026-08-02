@@ -4,14 +4,17 @@ import { useLocation } from "react-router-dom";
 import { useLanguage } from "@/context/LanguageContext";
 import loadingLogo from "@/assets/loading-logo.png";
 
+let hasShownOnce = false;
+
 const LoadingScreen = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(!hasShownOnce);
   const location = useLocation();
   const { t } = useLanguage();
 
   useEffect(() => {
-    setIsLoading(true);
-    const timer = setTimeout(() => setIsLoading(false), 2500);
+    if (hasShownOnce) return;
+    hasShownOnce = true;
+    const timer = setTimeout(() => setIsLoading(false), 1600);
     return () => clearTimeout(timer);
   }, [location.pathname]);
 
