@@ -242,7 +242,8 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div ref={mobileMenuRef} className="xl:hidden bg-card border-t border-border pb-4 rounded-b shadow-xl shadow-black/20">
+          <div ref={mobileMenuRef} className="xl:hidden bg-card border-t border-border pb-4 rounded-b shadow-xl shadow-black/20 animate-fade-in origin-top">
+
             {navItems.map((item) =>
               item.dropdown === "practiceAreas" ? (
                 <div key={item.href}>
