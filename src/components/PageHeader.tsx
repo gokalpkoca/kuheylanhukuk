@@ -13,14 +13,18 @@ interface PageHeaderProps {
 const PageHeader = ({ title, eyebrow, description }: PageHeaderProps) => {
   return (
     <header className="relative pt-32 pb-12 md:pt-40 md:pb-16 bg-background border-b border-border overflow-hidden">
-      {/* subtle vertical rules for an editorial grid feel */}
+      {/* slowly drifting editorial grid rules */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 opacity-[0.35]"
+        className="pointer-events-none absolute inset-0 opacity-[0.3] page-header-lines"
+      />
+      {/* soft breathing accent haze */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -top-24 right-[-10%] w-[560px] h-[560px] rounded-full page-header-glow"
         style={{
-          backgroundImage:
-            "linear-gradient(90deg, hsl(var(--border)) 1px, transparent 1px)",
-          backgroundSize: "160px 100%",
+          background:
+            "radial-gradient(circle, hsl(var(--primary) / 0.10) 0%, transparent 65%)",
         }}
       />
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
@@ -38,7 +42,7 @@ const PageHeader = ({ title, eyebrow, description }: PageHeaderProps) => {
           <h1 className="font-serif text-3xl md:text-5xl lg:text-[3.25rem] leading-tight text-foreground">
             {title}
           </h1>
-          <div className="w-14 h-[3px] bg-primary mt-6" />
+          <div className="w-14 h-[3px] bg-primary mt-6 page-header-rule" />
           {description && (
             <p className="text-muted-foreground mt-6 max-w-2xl text-justify">
               {description}
