@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, MessageCircle, Plus } from "lucide-react";
+import { Phone, MessageCircle, Info, X } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 const PHONE = "+905352279696";
@@ -64,7 +64,16 @@ const FloatingActions = () => {
           aria-label={l.open}
           className="relative w-14 h-14 rounded-full bg-primary text-primary-foreground shadow-xl flex items-center justify-center transition-transform duration-300 hover:scale-105 active:scale-95"
         >
-          <Plus className={`w-6 h-6 transition-transform duration-300 ${open ? "rotate-[135deg]" : ""}`} />
+          <Info
+            className={`absolute w-6 h-6 transition-all duration-300 ${
+              open ? "opacity-0 scale-50 rotate-90" : "opacity-100 scale-100 rotate-0"
+            }`}
+          />
+          <X
+            className={`absolute w-6 h-6 transition-all duration-300 ${
+              open ? "opacity-100 scale-100 rotate-0" : "opacity-0 scale-50 -rotate-90"
+            }`}
+          />
         </button>
       </div>
     </div>
