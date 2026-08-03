@@ -174,7 +174,7 @@ const ArticleDetail = () => {
                     continue;
                   }
                   nodes.push(
-                    <p key={`p-${i}`} className="text-base">
+                    <p key={`p-${i}`} className="text-base whitespace-pre-line">
                       {b.text}
                     </p>
                   );
