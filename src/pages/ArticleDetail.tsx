@@ -4,6 +4,13 @@ import { ArrowLeft, Calendar } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
 import { allArticles } from "@/data/articles";
 import { useLanguage } from "@/context/LanguageContext";
 import { translatedTitle, translatedBlocks, formatDate } from "@/lib/articleI18n";
@@ -20,6 +27,12 @@ const isHeading = (text: string) =>
   text.split(" ").length <= 12 &&
   !text.startsWith('"') &&
   text !== text.toLowerCase();
+
+const isFaqHeading = (text: string) =>
+  /(sıkça\s+sorulan|sikca\s+sorulan|frequently\s+asked|faq|часто\s+задаваемые|الأسئلة|أسئلة)/i.test(
+    text
+  );
+
 
 const ArticleDetail = () => {
   const { slug = "" } = useParams();
@@ -107,24 +120,70 @@ const ArticleDetail = () => {
 
 
             <article className="space-y-5 text-justify text-foreground/90 leading-relaxed">
-              {rendered.map((b, i) => {
-                if (isHeading(b.text)) {
-                  return (
-                    <h2
-                      key={i}
-                      className="font-serif text-xl md:text-2xl text-foreground font-semibold mt-8 mb-2 text-left"
-                    >
+              {(() => {
+                const nodes: JSX.Element[] = [];
+                let i = 0;
+                while (i < rendered.length) {
+                  const b = rendered[i];
+                  if (isHeading(b.text)) {
+                    const heading = (
+                      <h2
+                        key={`h-${i}`}
+                        className="font-serif text-xl md:text-2xl text-foreground font-semibold mt-8 mb-2 text-left"
+                      >
+                        {b.text}
+                      </h2>
+                    );
+                    nodes.push(heading);
+                    if (isFaqHeading(b.text)) {
+                      const items: { q: string; a: string }[] = [];
+                      let j = i + 1;
+                      while (j < rendered.length && !isHeading(rendered[j].text)) {
+                        const text = rendered[j].text;
+                        const qEnd = text.indexOf("?");
+                        if (qEnd > 0) {
+                          items.push({
+                            q: text.slice(0, qEnd + 1).trim(),
+                            a: text.slice(qEnd + 1).trim(),
+                          });
+                        } else {
+                          items.push({ q: text.slice(0, 90).trim(), a: text.slice(90).trim() });
+                        }
+                        j++;
+                      }
+                      if (items.length) {
+                        nodes.push(
+                          <Accordion key={`faq-${i}`} type="single" collapsible className="mt-2">
+                            {items.map((item, k) => (
+                              <AccordionItem key={k} value={`faq-${i}-${k}`}>
+                                <AccordionTrigger className="text-left text-base font-medium">
+                                  {item.q}
+                                </AccordionTrigger>
+                                <AccordionContent className="text-base text-justify text-foreground/90 leading-relaxed">
+                                  {item.a}
+                                </AccordionContent>
+                              </AccordionItem>
+                            ))}
+                          </Accordion>
+                        );
+                        i = j;
+                        continue;
+                      }
+                    }
+                    i++;
+                    continue;
+                  }
+                  nodes.push(
+                    <p key={`p-${i}`} className="text-base">
                       {b.text}
-                    </h2>
+                    </p>
                   );
+                  i++;
                 }
-                return (
-                  <p key={i} className="text-base">
-                    {b.text}
-                  </p>
-                );
-              })}
+                return nodes;
+              })()}
             </article>
+
           </motion.div>
         </div>
       </main>
