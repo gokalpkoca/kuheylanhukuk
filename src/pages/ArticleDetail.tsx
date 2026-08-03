@@ -4,6 +4,13 @@ import { ArrowLeft, Calendar } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
 import { allArticles } from "@/data/articles";
 import { useLanguage } from "@/context/LanguageContext";
 import { translatedTitle, translatedBlocks, formatDate } from "@/lib/articleI18n";
