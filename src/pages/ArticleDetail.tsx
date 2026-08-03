@@ -21,6 +21,12 @@ const isHeading = (text: string) =>
   !text.startsWith('"') &&
   text !== text.toLowerCase();
 
+const isFaqHeading = (text: string) =>
+  /(sıkça\s+sorulan|sikca\s+sorulan|frequently\s+asked|faq|часто\s+задаваемые|الأسئلة|أسئلة)/i.test(
+    text
+  );
+
+
 const ArticleDetail = () => {
   const { slug = "" } = useParams();
   const { t, language, dir } = useLanguage();
