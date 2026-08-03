@@ -5,6 +5,13 @@ import { Link } from "react-router-dom";
 import { useLanguage } from "@/context/LanguageContext";
 import { allArticles } from "@/data/articles";
 
+function slugFromPdf(pdfUrl?: string) {
+  if (!pdfUrl) return "";
+  const base = pdfUrl.split("/").pop() || "";
+  return base.replace(/\.pdf$/i, "");
+}
+
+
 const News = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -37,26 +44,30 @@ const News = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.4, delay: Math.min(i, 5) * 0.08 }}
-              className="border border-border rounded bg-card p-6 hover:border-gold hover:-translate-y-1 transition-all duration-300 group flex flex-col shadow-sm"
+              className="border border-border rounded bg-card hover:border-gold hover:-translate-y-1 transition-all duration-300 group flex flex-col shadow-sm"
             >
-              <div className="flex items-center gap-2 text-xs text-muted-foreground mb-3">
-                <Calendar className="w-3.5 h-3.5 text-gold" />
-                <span>{article.date}</span>
-              </div>
-              <h3 className="font-serif text-base text-foreground font-medium leading-snug mb-3 flex-1">
-                {article.title}
-              </h3>
-              <p className="text-xs text-gold/80 mb-4">{t(`pa.${article.category}`)}</p>
-              <button
+              <Link
+                to={`/blog/${slugFromPdf(article.pdfUrl)}`}
                 aria-label={`${t("news.read_more")}: ${article.title}`}
-                className="inline-flex items-center gap-1.5 text-gold text-sm font-medium hover:gap-3 transition-all duration-200 self-start"
+                className="flex flex-col flex-1 p-6"
               >
-                {t("news.read_more")}
-                <ArrowRight className="w-4 h-4" aria-hidden="true" />
-              </button>
+                <div className="flex items-center gap-2 text-xs text-muted-foreground mb-3">
+                  <Calendar className="w-3.5 h-3.5 text-gold" />
+                  <span>{article.date}</span>
+                </div>
+                <h3 className="font-serif text-base text-foreground font-medium leading-snug mb-3 flex-1">
+                  {article.title}
+                </h3>
+                <p className="text-xs text-gold/80 mb-4">{t(`pa.${article.category}`)}</p>
+                <span className="inline-flex items-center gap-1.5 text-gold text-sm font-medium group-hover:gap-3 transition-all duration-200 self-start">
+                  {t("news.read_more")}
+                  <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                </span>
+              </Link>
             </motion.article>
           ))}
         </div>
+
 
         {!showAll && allArticles.length > 6 && (
           <div className="text-center mt-12">
