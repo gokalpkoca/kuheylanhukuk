@@ -5,6 +5,13 @@ import { Link } from "react-router-dom";
 import { useLanguage } from "@/context/LanguageContext";
 import { allArticles } from "@/data/articles";
 
+function slugFromPdf(pdfUrl?: string) {
+  if (!pdfUrl) return "";
+  const base = pdfUrl.split("/").pop() || "";
+  return base.replace(/\.pdf$/i, "");
+}
+
+
 const News = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
