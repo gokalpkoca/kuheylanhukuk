@@ -49,7 +49,7 @@ const PracticeAreas = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="relative -mx-4 px-0 overflow-hidden py-2"
         >
-          <div className="pa-marquee-track gap-5">
+          <div className="pa-marquee-track">
             {[0, 1].map((copy) => (
               <div key={copy} className="flex gap-5 pr-5" aria-hidden={copy === 1}>
                 {practiceAreas.map((area) => (
