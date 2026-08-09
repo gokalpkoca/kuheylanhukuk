@@ -282,4 +282,22 @@ export const allArticles: Article[] = [
     category: "idare-hukuku",
     pdfUrl: "/articles/tam-yargi-davasi-nedir-rehberi.pdf",
   },
+  {
+    title: "Ceza Hukukunun Önleyici Fonksiyonu Bağlamında Yapay Zeka ile Suç Tahmini",
+    date: "10 Ağustos 2026",
+    category: "ceza-hukuku",
+    pdfUrl: "/articles/ceza-hukukunun-onleyici-fonksiyonu-yapay-zeka-ile-suc-tahmini.pdf",
+  },
+  {
+    title: "Gizlilik Kararı Bulunan Dosyalarda Tutuklamaya İtiraz",
+    date: "9 Ağustos 2026",
+    category: "ceza-hukuku",
+    pdfUrl: "/articles/gizlilik-karari-bulunan-dosyalarda-tutuklamaya-itiraz.pdf",
+  },
+  {
+    title: "TCK m. 188/1-2 Kapsamında Uyuşturucu veya Uyarıcı Madde İmal, İthal ve İhraç Suçları",
+    date: "8 Ağustos 2026",
+    category: "ceza-hukuku",
+    pdfUrl: "/articles/uyusturucu-madde-imal-ithal-ve-ihrac-suclari.pdf",
+  },
 ];
