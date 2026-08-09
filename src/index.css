@@ -287,3 +287,22 @@ html {
   transform-origin: center;
   animation: route-rule 0.66s ease-in-out 0.6s forwards;
 }
+
+/* Practice areas infinite marquee */
+@keyframes pa-marquee {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
+}
+.pa-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: pa-marquee 60s linear infinite;
+  will-change: transform;
+}
+.pa-marquee-track:hover,
+.pa-marquee-track:focus-within {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pa-marquee-track { animation: none; }
+}
