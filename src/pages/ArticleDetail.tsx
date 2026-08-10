@@ -125,7 +125,7 @@ const ArticleDetail = () => {
         description={description}
         path={`/blog/${slug}`}
         type="article"
-        jsonLd={[articleLd, breadcrumbLd]}
+        jsonLd={structuredData}
       />
 
       <Navbar />
