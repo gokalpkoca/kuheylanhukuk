@@ -41,6 +41,8 @@ const tr: Record<string, string> = {
   "practice.title2": "Alanları",
   "practice.description": "Büromuz, iş ahlakı ve güvenilirliğiyle öne çıkarak, müvekkillerimizin değişen ihtiyaçlarına farklı hukuk alanlarında çözümler sunmaktadır.",
   "practice.view_all": "Tüm Faaliyet Alanları",
+  "practice.related": "İlgili Makaleler",
+  "practice.related_none": "Bu alanda henüz makale bulunmuyor.",
   "practice.back": "Faaliyet Alanlarına Dön",
 
   // Practice Area Labels
