@@ -41,6 +41,8 @@ const en: Record<string, string> = {
   "practice.title2": "Areas",
   "practice.description": "Our firm is distinguished by its professional ethics and reliability, offering solutions across various fields of law to meet the evolving needs of our clients.",
   "practice.view_all": "All Practice Areas",
+  "practice.related": "Related Articles",
+  "practice.related_none": "No articles in this area yet.",
   "practice.back": "Back to Practice Areas",
 
   // Practice Area Labels

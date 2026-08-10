@@ -41,6 +41,8 @@ const ar: Record<string, string> = {
   "practice.title2": "الممارسة",
   "practice.description": "يتميّز مكتبنا بالالتزام المهني والموثوقية، حيث يقدّم حلولاً قانونية متنوعة تلبّي الاحتياجات المتطوّرة لموكلينا.",
   "practice.view_all": "جميع مجالات الممارسة",
+  "practice.related": "مقالات ذات صلة",
+  "practice.related_none": "لا توجد مقالات في هذا المجال بعد.",
   "practice.back": "العودة إلى مجالات الممارسة",
 
   // Practice Area Labels

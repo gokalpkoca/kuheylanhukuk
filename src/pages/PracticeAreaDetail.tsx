@@ -1,15 +1,17 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, Calendar } from "lucide-react";
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { practiceAreas } from "@/data/practiceAreas";
+import { allArticles } from "@/data/articles";
+import { translatedTitle, formatDate } from "@/lib/articleI18n";
 import { useLanguage } from "@/context/LanguageContext";
 
 const PracticeAreaDetail = () => {
   const { slug } = useParams<{ slug: string }>();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const area = practiceAreas.find((a) => a.slug === slug);
   const currentIndex = practiceAreas.findIndex((a) => a.slug === slug);
   const prev = currentIndex > 0 ? practiceAreas[currentIndex - 1] : null;
@@ -31,6 +33,9 @@ const PracticeAreaDetail = () => {
   }
 
   const Icon = area.icon;
+  const slugFromPdf = (pdfUrl?: string) =>
+    pdfUrl ? (pdfUrl.split("/").pop() || "").replace(/\.pdf$/i, "") : "";
+  const relatedArticles = allArticles.filter((a) => a.category === area.slug);
 
   return (
     <div className="min-h-screen bg-background">
@@ -69,6 +74,36 @@ const PracticeAreaDetail = () => {
             <p className="text-muted-foreground text-lg leading-relaxed mb-12">
               {area.description}
             </p>
+
+            <div className="border-t border-border pt-10 mb-12">
+              <h3 className="font-serif text-xl text-foreground font-semibold mb-6">
+                {t("practice.related")}
+              </h3>
+              {relatedArticles.length ? (
+                <div className="space-y-3">
+                  {relatedArticles.map((a) => {
+                    const aSlug = slugFromPdf(a.pdfUrl);
+                    return (
+                      <Link
+                        key={aSlug}
+                        to={`/blog/${aSlug}`}
+                        className="group block border border-border rounded p-4 hover:border-primary transition-all"
+                      >
+                        <h4 className="font-serif text-base md:text-lg text-foreground font-semibold group-hover:text-primary transition-colors">
+                          {translatedTitle(aSlug, language, a.title)}
+                        </h4>
+                        <div className="flex items-center gap-2 text-xs text-muted-foreground mt-2">
+                          <Calendar className="w-3.5 h-3.5 text-primary" />
+                          <span>{formatDate(a.date, language, t)}</span>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+              ) : (
+                <p className="text-sm text-muted-foreground">{t("practice.related_none")}</p>
+              )}
+            </div>
 
             <div className="border-t border-border pt-10">
               <h3 className="font-serif text-xl text-foreground font-semibold mb-6">
