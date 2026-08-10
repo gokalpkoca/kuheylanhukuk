@@ -79,6 +79,44 @@ const ArticleDetail = () => {
     ],
   };
 
+  // Collect Q&A pairs from any FAQ section for FAQPage structured data
+  const faqItems: { q: string; a: string }[] = [];
+  for (let i = 0; i < rendered.length; i++) {
+    if (!isHeading(rendered[i].text) || !isFaqHeading(rendered[i].text)) continue;
+    let j = i + 1;
+    while (j < rendered.length && !isHeading(rendered[j].text)) {
+      const text = rendered[j].text;
+      const qEnd = text.indexOf("?");
+      if (qEnd > 0) {
+        faqItems.push({ q: text.slice(0, qEnd + 1).trim(), a: text.slice(qEnd + 1).trim() });
+      } else {
+        faqItems.push({ q: text.slice(0, 90).trim(), a: text.slice(90).trim() });
+      }
+      j++;
+    }
+    i = j - 1;
+  }
+  const faqLd =
+    faqItems.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          inLanguage: language.toLowerCase(),
+          mainEntity: faqItems
+            .filter((item) => item.q && item.a)
+            .map((item) => ({
+              "@type": "Question",
+              name: item.q,
+              acceptedAnswer: { "@type": "Answer", text: item.a },
+            })),
+        }
+      : null;
+  const structuredData = faqLd && faqLd.mainEntity.length > 0
+    ? [articleLd, breadcrumbLd, faqLd]
+    : [articleLd, breadcrumbLd];
+
+
+
 
   return (
     <div className="min-h-screen bg-background" dir={dir}>
@@ -87,7 +125,7 @@ const ArticleDetail = () => {
         description={description}
         path={`/blog/${slug}`}
         type="article"
-        jsonLd={[articleLd, breadcrumbLd]}
+        jsonLd={structuredData}
       />
 
       <Navbar />
