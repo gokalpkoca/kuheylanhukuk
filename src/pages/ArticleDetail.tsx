@@ -109,7 +109,12 @@ const ArticleDetail = () => {
     () =>
       rendered
         .map((b, i) => ({ text: b.text, id: slugifyHeading(b.text, i) }))
-        .filter((_, i) => isHeading(rendered[i].text) && !isSignature(rendered[i].text)),
+        .filter(
+          (_, i) =>
+            isHeading(rendered[i].text) &&
+            !isSignature(rendered[i].text) &&
+            !((rendered[i] as { cells?: string[] }).cells?.length ?? 0 > 1)
+        ),
     [rendered]
   );
 
