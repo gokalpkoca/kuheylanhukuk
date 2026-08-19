@@ -616,19 +616,35 @@ const CareersPage = () => {
       </section>
 
       {/* Internship Application Form */}
-      <section id="internship-application-form" className="pb-24 lg:pb-32">
+      <section id="internship-application-form" className="py-24 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8 max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.4 }}
+            transition={{ duration: 0.5 }}
+            className="text-center mb-12"
+          >
+            <p className="text-primary uppercase tracking-[0.2em] text-sm font-medium mb-3">
+              {t("career.title")}
+            </p>
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground font-bold">
+              {t("intern.title")}
+            </h2>
+            <div className="w-16 h-px bg-border mx-auto mt-6" />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
           >
             <div className="relative bg-card border border-border rounded-lg p-8 md:p-12 overflow-hidden">
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent" />
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground font-bold text-center mb-10">
+              <h3 className="font-serif text-2xl md:text-3xl text-foreground font-bold text-center mb-10">
                 {t("intern.form_title")}
-              </h2>
+              </h3>
 
               <form onSubmit={handleInternSubmit} className="space-y-6 font-['Roboto']">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
