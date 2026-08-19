@@ -300,7 +300,7 @@ const CareersPage = () => {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: -24, scale: 0.96 }}
                     transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-                    className="absolute inset-0 bg-card border border-border rounded-lg p-8 text-center flex flex-col items-center justify-center"
+                    className="absolute inset-0 bg-card border border-border rounded-xl p-8 text-center flex flex-col items-center justify-center"
                   >
                     <motion.div
                       initial={{ opacity: 0, scale: 0.7 }}
@@ -363,7 +363,7 @@ const CareersPage = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.3 + i * 0.1 }}
-                className="bg-card border border-border rounded-lg overflow-hidden"
+                className="bg-card border border-border rounded-xl overflow-hidden"
               >
                 <button
                   onClick={() => setExpandedPosition(expandedPosition === pos.id ? null : pos.id)}
@@ -422,7 +422,7 @@ const CareersPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <div className="relative bg-card border border-border rounded-lg p-8 md:p-12 overflow-hidden">
+            <div className="relative bg-card border border-border rounded-xl p-8 md:p-12 overflow-hidden">
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent" />
 
               <h2 className="font-serif text-2xl md:text-3xl text-foreground font-bold text-center mb-10">
@@ -596,7 +596,7 @@ const CareersPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.45, delay: i * 0.1 }}
-                className="group h-full bg-card border border-border rounded-lg p-7 transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1"
+                className="group h-full bg-card border border-border rounded-xl p-7 transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1"
               >
                 <div className="w-12 h-12 rounded-full bg-muted border border-border flex items-center justify-center mb-5 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
                   <Icon className="w-5 h-5" aria-hidden="true" />
@@ -636,7 +636,7 @@ const CareersPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.07 }}
-                className="flex items-start gap-4 bg-card border border-border rounded-lg p-6"
+                className="flex items-start gap-4 bg-card border border-border rounded-xl p-6"
               >
                 <span className="shrink-0 font-serif text-xl text-primary/70 font-bold">0{id}</span>
                 <p className="text-sm text-muted-foreground leading-relaxed">{t(`intern.gain${id}`)}</p>
@@ -660,7 +660,7 @@ const CareersPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.08 }}
-                className="bg-card border border-border rounded-lg p-7"
+                className="bg-card border border-border rounded-xl p-7"
               >
                 <div className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4">
                   <Icon className="w-5 h-5" aria-hidden="true" />
@@ -698,7 +698,7 @@ const CareersPage = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <div className="relative bg-card border border-border rounded-lg p-8 md:p-12 overflow-hidden">
+            <div className="relative bg-card border border-border rounded-xl p-8 md:p-12 overflow-hidden">
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent" />
               <h3 className="font-serif text-2xl md:text-3xl text-foreground font-bold text-center mb-10">
                 {t("intern.form_title")}

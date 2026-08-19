@@ -65,7 +65,7 @@ const CalculatorsPage = () => {
               >
                 <Link
                   to={`/hesaplama-araclarimiz/${calc.slug}`}
-                  className="group block h-full bg-card border border-border rounded-lg p-7 transition-all hover:border-primary/50 hover:shadow-lg"
+                  className="group block h-full bg-card border border-border rounded-xl p-7 transition-all hover:border-primary/50 hover:shadow-lg"
                 >
                   <div className="w-12 h-12 rounded-full bg-muted border border-border flex items-center justify-center mb-5 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
                     <Icon className="w-5 h-5" />

@@ -92,7 +92,7 @@ const FloatingActions = () => {
 
         {/* Desktop label hint */}
         <span
-          className={`hidden lg:block absolute right-full mr-3 top-1/2 -translate-y-1/2 whitespace-nowrap px-3 py-1.5 text-xs font-medium tracking-wide bg-card border border-border rounded shadow-md text-foreground transition-all duration-300 pointer-events-none ${
+          className={`hidden lg:block absolute right-full mr-3 top-1/2 -translate-y-1/2 whitespace-nowrap px-3 py-1.5 text-xs font-medium tracking-wide bg-card border border-border rounded-lg shadow-md text-foreground transition-all duration-300 pointer-events-none ${
             open ? "opacity-0 translate-x-2" : "opacity-100 translate-x-0"
           }`}
         >

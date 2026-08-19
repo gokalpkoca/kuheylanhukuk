@@ -65,7 +65,7 @@ const CalculatorDetail = () => {
             <div className="w-14 h-px bg-primary/60 mt-5 mb-6" />
             <p className="text-muted-foreground text-justify mb-10">{calculator.description}</p>
 
-            <form onSubmit={handleSubmit} className="bg-card border border-border rounded-lg p-6 md:p-8 space-y-5">
+            <form onSubmit={handleSubmit} className="bg-card border border-border rounded-xl p-6 md:p-8 space-y-5">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 {calculator.fields.map((field) => (
                   <div key={field.name} className="space-y-2">
@@ -115,7 +115,7 @@ const CalculatorDetail = () => {
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.35 }}
-                className="mt-8 bg-muted/40 border border-border rounded-lg p-6 md:p-8"
+                className="mt-8 bg-muted/40 border border-border rounded-xl p-6 md:p-8"
               >
                 <h2 className="font-serif text-xl text-foreground font-semibold mb-5">Hesaplama Sonucu</h2>
                 <dl className="divide-y divide-border">

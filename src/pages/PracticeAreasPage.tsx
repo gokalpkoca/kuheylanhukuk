@@ -52,7 +52,7 @@ const PracticeAreasPage = () => {
                 >
                   <Link
                     to={`/faaliyet-alanlari/${area.slug}`}
-                    className="group flex items-center gap-4 p-6 border border-border rounded bg-card hover:border-primary hover:-translate-y-1 transition-all duration-300"
+                    className="group flex items-center gap-4 p-6 border border-border rounded-lg bg-card hover:border-primary hover:-translate-y-1 transition-all duration-300"
                   >
                     <div className="w-12 h-12 rounded bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
                       <Icon className={`w-6 h-6 text-primary ${paIconAnim(area.slug)}`} />

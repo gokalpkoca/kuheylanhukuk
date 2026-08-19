@@ -409,7 +409,7 @@ const ArticleDetail = () => {
                               key={`faq-${i}`}
                               type="single"
                               collapsible
-                              className="mt-4 rounded border border-border bg-card px-4"
+                              className="mt-4 rounded-lg border border-border bg-card px-4"
                             >
                               {items.map((item, k) => (
                                 <AccordionItem key={k} value={`faq-${i}-${k}`} className="last:border-0">
@@ -443,7 +443,7 @@ const ArticleDetail = () => {
                         nodes.push(
                           <div
                             key={`tbl-${i}`}
-                            className="my-8 overflow-x-auto rounded-lg border border-border bg-card shadow-sm"
+                            className="my-8 overflow-x-auto rounded-xl border border-border bg-card shadow-sm"
                           >
                             <table className="w-full border-collapse text-sm">
                               <thead>
@@ -556,7 +556,7 @@ const ArticleDetail = () => {
                         <Link
                           key={s}
                           to={`/blog/${s}`}
-                          className="group flex flex-col rounded border border-border bg-card p-5 hover:border-primary hover:-translate-y-1 transition-all duration-300"
+                          className="group flex flex-col rounded-lg border border-border bg-card p-5 hover:border-primary hover:-translate-y-1 transition-all duration-300"
                         >
                           <span className="text-xs text-muted-foreground mb-3">
                             {formatDate(a.date, language, t)}
@@ -579,7 +579,7 @@ const ArticleDetail = () => {
             {/* Table of contents */}
             {toc.length > 1 && (
               <aside className="no-print order-first lg:order-last min-w-0">
-                <nav className="lg:sticky lg:top-28 border border-border rounded-lg bg-card/50 backdrop-blur-sm overflow-hidden">
+                <nav className="lg:sticky lg:top-28 border border-border rounded-xl bg-card/50 backdrop-blur-sm overflow-hidden">
                   <details className="group" open={tocOpen} onToggle={(e) => setTocOpen(e.currentTarget.open)}>
                     <summary className="flex cursor-pointer list-none items-center justify-between px-5 py-4 hover:bg-secondary/50 transition-colors">
                       <span className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-muted-foreground">

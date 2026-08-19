@@ -35,7 +35,7 @@ const CookieConsent = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 40 }}
           transition={{ duration: 0.4 }}
-          className="fixed bottom-4 left-4 right-4 md:left-auto md:right-6 md:max-w-xl z-[100] bg-card border border-border rounded-lg shadow-2xl shadow-black/30 p-6"
+          className="fixed bottom-4 left-4 right-4 md:left-auto md:right-6 md:max-w-xl z-[100] bg-card border border-border rounded-xl shadow-2xl shadow-black/30 p-6"
         >
           <button
             onClick={() => setVisible(false)}
@@ -82,7 +82,7 @@ const CookieConsent = () => {
             </button>
             <button
               onClick={reject}
-              className="px-6 py-2 border border-border text-muted-foreground text-sm font-medium rounded hover:border-primary hover:text-primary transition-colors"
+              className="px-6 py-2 border border-border text-muted-foreground text-sm font-medium rounded-lg hover:border-primary hover:text-primary transition-colors"
             >
               {t("cookie.reject")}
             </button>

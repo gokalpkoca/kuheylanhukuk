@@ -136,7 +136,7 @@ const ContactPage = () => {
                 {card.href ? (
                   <a
                     href={card.href}
-                    className="block bg-card border border-border rounded-lg p-8 text-center hover:border-primary/50 hover:shadow-lg transition-all duration-300 h-full"
+                    className="block bg-card border border-border rounded-xl p-8 text-center hover:border-primary/50 hover:shadow-lg transition-all duration-300 h-full"
                   >
                     <div className="w-16 h-16 rounded-full bg-muted border border-border flex items-center justify-center mx-auto mb-5 text-primary">
                       {card.icon}
@@ -148,7 +148,7 @@ const ContactPage = () => {
                   <button
                     type="button"
                     onClick={card.onClick}
-                    className="w-full bg-card border border-border rounded-lg p-8 text-center hover:border-primary/50 hover:shadow-lg transition-all duration-300 h-full cursor-pointer"
+                    className="w-full bg-card border border-border rounded-xl p-8 text-center hover:border-primary/50 hover:shadow-lg transition-all duration-300 h-full cursor-pointer"
                   >
                     <div className="w-16 h-16 rounded-full bg-muted border border-border flex items-center justify-center mx-auto mb-5 text-primary">
                       {card.icon}
@@ -173,7 +173,7 @@ const ContactPage = () => {
             <h2 className="font-serif text-2xl md:text-3xl text-foreground font-bold text-center mb-8">
               {t("contact.map_title")}
             </h2>
-            <div className="rounded-lg overflow-hidden border border-border">
+            <div className="rounded-xl overflow-hidden border border-border">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.5!2d29.035!3d41.025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7a3c5f8b0f1%3A0x0!2sBurhaniye%2C+Ne%C5%9Fet+Bey+Sk.+No%3A12%2C+34676+%C3%9Csk%C3%BCdar%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1700000000000"
                 width="100%"
@@ -197,7 +197,7 @@ const ContactPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <div className="relative bg-card border border-border rounded-lg p-8 md:p-12 overflow-hidden">
+            <div className="relative bg-card border border-border rounded-xl p-8 md:p-12 overflow-hidden">
               {/* Decorative accent line */}
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent" />
               
@@ -269,7 +269,7 @@ const ContactPage = () => {
                 href={option.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 rounded-lg border border-border bg-muted/30 hover:bg-muted hover:border-primary/50 transition-all duration-200"
+                className="flex items-center gap-4 p-4 rounded-xl border border-border bg-muted/30 hover:bg-muted hover:border-primary/50 transition-all duration-200"
                 onClick={() => setMapDialogOpen(false)}
               >
                 <MapPin className="w-5 h-5 text-primary shrink-0" />

@@ -63,7 +63,7 @@ const Process = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="group relative h-full bg-card border border-border rounded-lg p-7 transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1"
+              className="group relative h-full bg-card border border-border rounded-xl p-7 transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1"
             >
               <span className="absolute top-5 right-6 font-serif text-4xl text-primary/15 font-bold select-none">
                 0{key}
@@ -97,7 +97,7 @@ const Process = () => {
               initial={{ opacity: 0, y: 16 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.4, delay: 0.25 + i * 0.07 }}
-              className="flex items-start gap-4 bg-card border border-border rounded-lg p-6 transition-colors hover:border-primary/50"
+              className="flex items-start gap-4 bg-card border border-border rounded-xl p-6 transition-colors hover:border-primary/50"
             >
               <span className="shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center">
                 <Icon className="w-5 h-5" aria-hidden="true" />

@@ -100,7 +100,7 @@ const Contact = () => {
             className="space-y-8"
           >
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded bg-navy-light border border-border flex items-center justify-center shrink-0">
+              <div className="w-12 h-12 rounded-lg bg-navy-light border border-border flex items-center justify-center shrink-0">
                 <Phone className="w-5 h-5 text-gold" />
               </div>
               <div>
@@ -112,7 +112,7 @@ const Contact = () => {
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded bg-navy-light border border-border flex items-center justify-center shrink-0">
+              <div className="w-12 h-12 rounded-lg bg-navy-light border border-border flex items-center justify-center shrink-0">
                 <Mail className="w-5 h-5 text-gold" />
               </div>
               <div>
@@ -124,7 +124,7 @@ const Contact = () => {
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded bg-navy-light border border-border flex items-center justify-center shrink-0">
+              <div className="w-12 h-12 rounded-lg bg-navy-light border border-border flex items-center justify-center shrink-0">
                 <MapPin className="w-5 h-5 text-gold" />
               </div>
               <div>
@@ -137,7 +137,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="rounded overflow-hidden border border-border">
+            <div className="rounded-lg overflow-hidden border border-border">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.5!2d29.035!3d41.025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7a3c5f8b0f1%3A0x0!2sBurhaniye%2C+Ne%C5%9Fet+Bey+Sk.+No%3A12%2C+34676+%C3%9Csk%C3%BCdar%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1700000000000"
                 width="100%"
@@ -158,7 +158,7 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="lg:col-span-2"
           >
-            <div className="relative bg-card border border-border rounded-lg p-8 md:p-10 overflow-hidden">
+            <div className="relative bg-card border border-border rounded-xl p-8 md:p-10 overflow-hidden">
               {/* Decorative accent line */}
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent" />
               

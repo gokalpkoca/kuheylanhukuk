@@ -160,7 +160,7 @@ const PracticeAreaDetail = () => {
                       >
                         <Link
                           to={`/blog/${aSlug}`}
-                          className="group relative flex h-full flex-col justify-between overflow-hidden rounded-lg border border-border bg-card p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:shadow-lg hover:shadow-primary/10"
+                          className="group relative flex h-full flex-col justify-between overflow-hidden rounded-xl border border-border bg-card p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:shadow-lg hover:shadow-primary/10"
                         >
                           <span className="absolute left-0 top-0 h-full w-0.5 origin-top scale-y-0 bg-primary transition-transform duration-300 group-hover:scale-y-100" />
                           <h3 className="font-serif text-base md:text-lg text-foreground font-semibold leading-snug transition-colors group-hover:text-primary">
@@ -182,7 +182,7 @@ const PracticeAreaDetail = () => {
                   })}
                 </div>
               ) : (
-                <p className="rounded-lg border border-dashed border-border bg-card/50 p-6 text-sm text-muted-foreground">
+                <p className="rounded-xl border border-dashed border-border bg-card/50 p-6 text-sm text-muted-foreground">
                   {query ? t("practice.search_none") : t("practice.related_none")}
                 </p>
               )}
@@ -205,7 +205,7 @@ const PracticeAreaDetail = () => {
                       <Link
                         key={a.slug}
                         to={`/faaliyet-alanlari/${a.slug}`}
-                        className="group flex items-center gap-3 rounded-lg border border-border bg-card px-4 py-3 transition-all duration-300 hover:-translate-y-0.5 hover:border-primary hover:shadow-md hover:shadow-primary/10"
+                        className="group flex items-center gap-3 rounded-xl border border-border bg-card px-4 py-3 transition-all duration-300 hover:-translate-y-0.5 hover:border-primary hover:shadow-md hover:shadow-primary/10"
                       >
                         <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded bg-primary/10 transition-colors group-hover:bg-primary/20">
                           <AIcon className={`h-4 w-4 text-primary ${paIconAnim(a.slug)}`} />
@@ -225,7 +225,7 @@ const PracticeAreaDetail = () => {
               {prev ? (
                 <Link
                   to={`/faaliyet-alanlari/${prev.slug}`}
-                  className="group flex items-center gap-3 rounded-lg border border-border bg-card p-4 transition-all duration-300 hover:border-primary hover:shadow-md hover:shadow-primary/10"
+                  className="group flex items-center gap-3 rounded-xl border border-border bg-card p-4 transition-all duration-300 hover:border-primary hover:shadow-md hover:shadow-primary/10"
                 >
                   <ArrowLeft className="h-4 w-4 shrink-0 text-primary transition-transform duration-300 group-hover:-translate-x-1" />
                   <span className="min-w-0">
@@ -243,7 +243,7 @@ const PracticeAreaDetail = () => {
               {next && (
                 <Link
                   to={`/faaliyet-alanlari/${next.slug}`}
-                  className="group flex items-center justify-end gap-3 rounded-lg border border-border bg-card p-4 text-right transition-all duration-300 hover:border-primary hover:shadow-md hover:shadow-primary/10"
+                  className="group flex items-center justify-end gap-3 rounded-xl border border-border bg-card p-4 text-right transition-all duration-300 hover:border-primary hover:shadow-md hover:shadow-primary/10"
                 >
                   <span className="min-w-0">
                     <span className="block text-[11px] uppercase tracking-widest text-muted-foreground">
