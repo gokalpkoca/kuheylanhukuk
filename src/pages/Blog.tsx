@@ -124,10 +124,17 @@ const Blog = () => {
               <ArrowLeft className="w-4 h-4" />
               Ana Sayfa
             </Link>
-            <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground font-bold">
-              {t("nav.makaleler")}
-            </h1>
-            <div className="w-16 h-px bg-muted-foreground/40 mt-6" />
+            <div className="relative">
+              <span className="absolute left-0 top-1 bottom-1 w-1.5 bg-primary rounded-full" aria-hidden="true" />
+              <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground font-bold pl-5 md:pl-6">
+                {t("nav.makaleler")}
+              </h1>
+            </div>
+            <div className="flex items-center gap-3 mt-6">
+              <span className="h-px flex-1 bg-gradient-to-r from-primary/60 to-transparent" />
+              <span className="text-primary text-[10px]">◆</span>
+              <span className="h-px w-16 bg-primary/30" />
+            </div>
           </motion.div>
 
           {/* Search */}
