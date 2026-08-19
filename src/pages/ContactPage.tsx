@@ -178,7 +178,7 @@ const ContactPage = () => {
               <p className="text-muted-foreground text-center text-sm mb-10">
                 {t("contact.form_subtitle")}
               </p>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6 font-['Roboto']">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label htmlFor="cp-name" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{t("contact.name")}</label>
