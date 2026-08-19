@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, ArrowRight, Calendar, ChevronDown, Clock, Link2, List, ChevronDown as TocChevronDown } from "lucide-react";
+import { ArrowLeft, ArrowRight, Calendar, ChevronDown, Clock, Download, Link2, List, ChevronDown as TocChevronDown } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
@@ -230,6 +230,15 @@ const ArticleDetail = () => {
     }
   };
 
+  const downloadPdf = () => {
+    const prev = document.title;
+    document.title = title;
+    window.print();
+    setTimeout(() => {
+      document.title = prev;
+    }, 500);
+  };
+
   const scrollTocDown = () => {
     const list = tocListRef.current;
     if (list) list.scrollBy({ top: list.clientHeight * 0.75, behavior: "smooth" });
@@ -253,7 +262,7 @@ const ArticleDetail = () => {
       <Navbar />
 
       {/* Reading progress */}
-      <div className="fixed top-0 left-0 right-0 z-40 h-0.5 bg-transparent" aria-hidden="true">
+      <div className="no-print fixed top-0 left-0 right-0 z-40 h-0.5 bg-transparent" aria-hidden="true">
         <div
           className="h-full bg-primary transition-[width] duration-150 ease-out"
           style={{ width: `${progress}%` }}
@@ -262,10 +271,10 @@ const ArticleDetail = () => {
 
       <main className="pb-24">
         {/* Header */}
-        <header className="relative overflow-hidden border-b border-border bg-secondary/40 pt-28 lg:pt-36 pb-12">
+        <header className="print-header relative overflow-hidden border-b border-border bg-secondary/40 pt-28 lg:pt-36 pb-12">
           <div className="absolute inset-0 opacity-[0.35] page-header-lines" aria-hidden="true" />
           <div className="container relative mx-auto px-4 lg:px-8 max-w-3xl">
-            <nav className="flex items-center gap-2 text-xs text-muted-foreground mb-6" aria-label="breadcrumb">
+            <nav className="no-print flex items-center gap-2 text-xs text-muted-foreground mb-6" aria-label="breadcrumb">
               <Link to="/" className="hover:text-primary transition-colors">
                 {t("blog.back_home")}
               </Link>
@@ -308,14 +317,22 @@ const ArticleDetail = () => {
                 <Link2 className="w-3.5 h-3.5" />
                 {copied ? t("article.copied") : t("article.share")}
               </button>
+              <button
+                type="button"
+                onClick={downloadPdf}
+                className="no-print inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/5 px-3 py-1.5 text-xs font-medium text-primary hover:bg-primary hover:text-white transition-colors"
+              >
+                <Download className="w-3.5 h-3.5" />
+                {t("article.download_pdf")}
+              </button>
             </div>
           </div>
         </header>
 
-        <div className="container mx-auto px-4 lg:px-8 max-w-6xl mt-12">
+        <div className="print-container container mx-auto px-4 lg:px-8 max-w-6xl mt-12">
           <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_260px]">
             <div className="min-w-0">
-              <article className="space-y-6 text-foreground/90 leading-relaxed">
+              <article className="print-article space-y-6 text-foreground/90 leading-relaxed">
                 {(() => {
                   const nodes: JSX.Element[] = [];
                   let i = 0;
@@ -434,23 +451,33 @@ const ArticleDetail = () => {
               <div className="mt-14 flex flex-wrap items-center justify-between gap-4 border-t border-border pt-6">
                 <Link
                   to="/blog"
-                  className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                  className="no-print inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   <ArrowLeft className="w-4 h-4" />
                   {t("blog.back_to_list")}
                 </Link>
-                <button
-                  type="button"
-                  onClick={share}
-                  className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-xs font-medium hover:border-primary hover:text-primary transition-colors"
-                >
-                  <Link2 className="w-3.5 h-3.5" />
-                  {copied ? t("article.copied") : t("article.share")}
-                </button>
+                <div className="flex flex-wrap items-center gap-3">
+                  <button
+                    type="button"
+                    onClick={share}
+                    className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-xs font-medium hover:border-primary hover:text-primary transition-colors"
+                  >
+                    <Link2 className="w-3.5 h-3.5" />
+                    {copied ? t("article.copied") : t("article.share")}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={downloadPdf}
+                    className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/5 px-4 py-2 text-xs font-medium text-primary hover:bg-primary hover:text-white transition-colors"
+                  >
+                    <Download className="w-3.5 h-3.5" />
+                    {t("article.download_pdf")}
+                  </button>
+                </div>
               </div>
 
               {related.length > 0 && (
-                <section className="mt-16">
+                <section className="no-print mt-16">
                   <h2 className="font-serif text-xl md:text-2xl text-foreground font-semibold mb-6">
                     {t("article.related")}
                   </h2>
@@ -483,7 +510,7 @@ const ArticleDetail = () => {
 
             {/* Table of contents */}
             {toc.length > 1 && (
-              <aside className="order-first lg:order-last min-w-0">
+              <aside className="no-print order-first lg:order-last min-w-0">
                 <nav className="lg:sticky lg:top-28 border border-border rounded-lg bg-card/50 backdrop-blur-sm overflow-hidden">
                   <details className="group" open={tocOpen} onToggle={(e) => setTocOpen(e.currentTarget.open)}>
                     <summary className="flex cursor-pointer list-none items-center justify-between px-5 py-4 hover:bg-secondary/50 transition-colors">
