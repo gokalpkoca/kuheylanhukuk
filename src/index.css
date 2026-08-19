@@ -306,3 +306,50 @@ html {
 @media (prefers-reduced-motion: reduce) {
   .pa-marquee-track { animation: none; }
 }
+
+/* ---- Print / PDF export ---- */
+@media print {
+  @page {
+    size: A4;
+    margin: 18mm 16mm;
+  }
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  nav, footer, .no-print,
+  [data-print-hide="true"] {
+    display: none !important;
+  }
+  main {
+    padding: 0 !important;
+  }
+  .print-container {
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .print-article h1, .print-article h2, .print-article h3 {
+    break-after: avoid;
+    page-break-after: avoid;
+    color: #000 !important;
+  }
+  .print-article p, .print-article li {
+    orphans: 3;
+    widows: 3;
+    color: #111 !important;
+  }
+  a[href]::after {
+    content: "";
+  }
+  .print-header {
+    border-bottom: 1px solid #999;
+    padding-bottom: 8mm;
+    margin-bottom: 8mm;
+  }
+  * {
+    box-shadow: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}

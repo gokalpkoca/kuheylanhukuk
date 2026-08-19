@@ -263,6 +263,7 @@ const ar: Record<string, string> = {
   "article.reading_time": "دقيقة قراءة",
   "article.share": "مشاركة",
   "article.copied": "تم نسخ الرابط",
+  "article.download_pdf": "تنزيل كملف PDF",
   "article.related": "مقالات ذات صلة",
   "months.1": "يناير", "months.2": "فبراير", "months.3": "مارس", "months.4": "أبريل",
   "months.5": "مايو", "months.6": "يونيو", "months.7": "يوليو", "months.8": "أغسطس",

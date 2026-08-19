@@ -263,6 +263,7 @@ const tr: Record<string, string> = {
   "article.reading_time": "dk okuma",
   "article.share": "Paylaş",
   "article.copied": "Bağlantı kopyalandı",
+  "article.download_pdf": "PDF olarak indir",
   "article.related": "Benzer Makaleler",
   "months.1": "Ocak", "months.2": "Şubat", "months.3": "Mart", "months.4": "Nisan",
   "months.5": "Mayıs", "months.6": "Haziran", "months.7": "Temmuz", "months.8": "Ağustos",
