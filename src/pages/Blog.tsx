@@ -227,7 +227,7 @@ const Blog = () => {
                 </>
               );
               const className =
-                "border border-border rounded bg-card p-6 hover:border-primary hover:-translate-y-1 transition-all duration-300 group flex flex-col cursor-pointer";
+                "border border-border rounded-lg bg-card p-6 hover:border-primary hover:-translate-y-1 transition-all duration-300 group flex flex-col cursor-pointer";
               return (
                 <motion.article
                   key={article.slug || article.title}

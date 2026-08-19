@@ -35,7 +35,7 @@ const CookieConsent = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 40 }}
           transition={{ duration: 0.4 }}
-          className="fixed bottom-4 left-4 right-4 md:left-auto md:right-6 md:max-w-xl z-[100] bg-card border border-border rounded-lg shadow-2xl shadow-black/30 p-6"
+          className="fixed bottom-4 left-4 right-4 md:left-auto md:right-6 md:max-w-xl z-[100] bg-card border border-border rounded-xl shadow-2xl shadow-black/30 p-6"
         >
           <button
             onClick={() => setVisible(false)}

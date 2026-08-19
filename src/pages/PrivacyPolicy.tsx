@@ -143,7 +143,7 @@ const PrivacyPolicy = () => {
                   adresine e-posta göndererek iletebilirsiniz.
                 </p>
 
-                <div className="mt-6 p-6 bg-card border border-border rounded-lg space-y-2">
+                <div className="mt-6 p-6 bg-card border border-border rounded-xl space-y-2">
                   <h3 className="font-serif text-base font-semibold text-foreground mb-3">
                     Veri Sorumlusu Bilgileri
                   </h3>

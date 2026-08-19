@@ -158,7 +158,7 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="lg:col-span-2"
           >
-            <div className="relative bg-card border border-border rounded-lg p-8 md:p-10 overflow-hidden">
+            <div className="relative bg-card border border-border rounded-xl p-8 md:p-10 overflow-hidden">
               {/* Decorative accent line */}
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent" />
               

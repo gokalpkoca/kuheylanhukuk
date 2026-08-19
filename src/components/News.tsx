@@ -62,7 +62,7 @@ const News = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.4, delay: Math.min(i, 5) * 0.08 }}
-              className="border border-border rounded bg-card hover:border-gold hover:-translate-y-1 transition-all duration-300 group flex flex-col shadow-sm"
+              className="border border-border rounded-xl bg-card hover:border-gold hover:-translate-y-1 transition-all duration-300 group flex flex-col shadow-sm"
             >
               <Link
                 to={`/blog/${slugFromPdf(article.pdfUrl)}`}
