@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useSearchParams } from "react-router-dom";
+import { Link, useSearchParams, useNavigate } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
@@ -27,12 +27,20 @@ const dateValue = (trDate: string): number => {
 
 type SortMode = "newest" | "alpha";
 
+// Dış sitelerden (Google, Bing vb.) gelen arama parametreleri
+const QUERY_KEYS = ["q", "s", "search", "query", "keyword"];
+
+const normalize = (v: string) =>
+  v.toLocaleLowerCase("tr").replace(/[^\p{L}\p{N}\s]/gu, " ").replace(/\s+/g, " ").trim();
+
 const Blog = () => {
   const [searchParams] = useSearchParams();
+  const navigate = useNavigate();
   const [currentPage, setCurrentPage] = useState(1);
   const initialDept = searchParams.get("dept") || "";
   const [selectedDept, setSelectedDept] = useState(initialDept);
-  const [searchQuery, setSearchQuery] = useState("");
+  const incomingQuery = QUERY_KEYS.map((k) => searchParams.get(k)).find((v) => v && v.trim()) || "";
+  const [searchQuery, setSearchQuery] = useState(incomingQuery);
   const [sortMode, setSortMode] = useState<SortMode>("newest");
   const { t, language } = useLanguage();
 
@@ -42,6 +50,23 @@ const Blog = () => {
     setSelectedDept(dept);
     setCurrentPage(1);
   }, [searchParams]);
+
+  // Dış aramadan gelen sorgu tek bir makaleyle eşleşiyorsa doğrudan o makaleye yönlendir
+  useEffect(() => {
+    const q = normalize(incomingQuery);
+    if (!q) return;
+    setSearchQuery(incomingQuery);
+    const matches = allArticles
+      .map((a) => {
+        const slug = a.pdfUrl ? a.pdfUrl.split("/").pop()!.replace(/\.pdf$/i, "") : "";
+        return { slug, title: slug ? translatedTitle(slug, language, a.title) : a.title };
+      })
+      .filter((a) => a.slug && (normalize(a.title).includes(q) || normalize(a.slug.replace(/-/g, " ")).includes(q)));
+    if (matches.length === 1) {
+      navigate(`/blog/${matches[0].slug}`, { replace: true });
+    }
+  }, [incomingQuery, language, navigate]);
+
 
   const filtered = allArticles
     .map((a) => {
