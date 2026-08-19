@@ -300,4 +300,34 @@ export const allArticles: Article[] = [
     category: "ceza-hukuku",
     pdfUrl: "/articles/uyusturucu-madde-imal-ithal-ve-ihrac-suclari.pdf",
   },
+  {
+    title: "Hakaret Suçu ve Cezası (TCK m.125) Rehberi",
+    date: "19 Ağustos 2026",
+    category: "ceza-hukuku",
+    pdfUrl: "/articles/hakaret-sucu-ve-cezasi-tck-125-rehberi.pdf",
+  },
+  {
+    title: "Kanun Yararına Bozma (CMK m.309) Rehberi",
+    date: "18 Ağustos 2026",
+    category: "ceza-hukuku",
+    pdfUrl: "/articles/kanun-yararina-bozma-cmk-309-rehberi.pdf",
+  },
+  {
+    title: "Kasten Öldürme Suçu ve Cezası (TCK m.81) Rehberi",
+    date: "17 Ağustos 2026",
+    category: "ceza-hukuku",
+    pdfUrl: "/articles/kasten-oldurme-sucu-ve-cezasi-tck-81-rehberi.pdf",
+  },
+  {
+    title: "Kişisel Veri Suçları (TCK m.135-140) ve KVKK Rehberi",
+    date: "16 Ağustos 2026",
+    category: "ceza-hukuku",
+    pdfUrl: "/articles/kisisel-veri-suclari-tck-135-140-ve-kvkk-rehberi.pdf",
+  },
+  {
+    title: "Taksirle Öldürme Suçu ve Cezası (TCK m.85) Rehberi",
+    date: "15 Ağustos 2026",
+    category: "ceza-hukuku",
+    pdfUrl: "/articles/taksirle-oldurme-sucu-ve-cezasi-tck-85-rehberi.pdf",
+  },
 ];
