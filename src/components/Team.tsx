@@ -46,7 +46,7 @@ const Team = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="max-w-4xl mx-auto">
           
-          <div className="border border-white/10 rounded bg-white/5 p-8 lg:p-12">
+          <div className="border border-white/10 rounded-lg bg-white/5 p-8 lg:p-12">
             {/* Top: Photo + Name + Contact */}
             <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-10">
               <div className="w-32 h-32 rounded-full border-2 border-gold overflow-hidden shrink-0">

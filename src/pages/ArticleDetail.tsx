@@ -409,7 +409,7 @@ const ArticleDetail = () => {
                               key={`faq-${i}`}
                               type="single"
                               collapsible
-                              className="mt-4 rounded-lg border border-border bg-card px-4"
+                              className="mt-4 rounded-xl border border-border bg-card px-4"
                             >
                               {items.map((item, k) => (
                                 <AccordionItem key={k} value={`faq-${i}-${k}`} className="last:border-0">
@@ -487,7 +487,7 @@ const ArticleDetail = () => {
                       nodes.push(
                         <aside
                           key={`sig-${i}`}
-                          className="mt-12 rounded border-l-2 border-primary bg-secondary/50 p-6 text-sm text-muted-foreground whitespace-pre-line"
+                          className="mt-12 rounded-lg border-l-2 border-primary bg-secondary/50 p-6 text-sm text-muted-foreground whitespace-pre-line"
                         >
                           {b.text}
                         </aside>
@@ -556,7 +556,7 @@ const ArticleDetail = () => {
                         <Link
                           key={s}
                           to={`/blog/${s}`}
-                          className="group flex flex-col rounded-lg border border-border bg-card p-5 hover:border-primary hover:-translate-y-1 transition-all duration-300"
+                          className="group flex flex-col rounded-xl border border-border bg-card p-5 hover:border-primary hover:-translate-y-1 transition-all duration-300"
                         >
                           <span className="text-xs text-muted-foreground mb-3">
                             {formatDate(a.date, language, t)}

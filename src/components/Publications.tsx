@@ -42,7 +42,7 @@ const Publications = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="w-56 shrink-0 border border-border rounded-lg bg-card hover:border-gold transition-all duration-300 group cursor-pointer">
+              className="w-56 shrink-0 border border-border rounded-xl bg-card hover:border-gold transition-all duration-300 group cursor-pointer">
 
                 {/* Book Cover */}
                 <div className="aspect-[3/4] bg-navy-light flex flex-col items-center justify-center p-6 relative overflow-hidden">
