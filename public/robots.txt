@@ -14,3 +14,4 @@ User-agent: Googlebot-Image
 Allow: /
 
 Sitemap: https://kuheylanhukuk.com/sitemap.xml
+Sitemap: https://kuheylanhukuk.com/sitemap-blog.xml
