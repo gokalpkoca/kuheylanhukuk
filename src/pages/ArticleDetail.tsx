@@ -280,14 +280,14 @@ const ArticleDetail = () => {
                     const b = rendered[i];
                     if (isHeading(b.text) && !isSignature(b.text)) {
                       nodes.push(
-                        <h2
-                          key={`h-${i}`}
-                          id={slugifyHeading(b.text, i)}
-                          className="scroll-mt-28 font-serif text-xl md:text-2xl text-foreground font-semibold pt-8 mb-1 border-t border-border text-left"
-                        >
-                          <span className="block h-px w-10 -mt-8 mb-6 bg-primary" aria-hidden="true" />
-                          {b.text}
-                        </h2>
+                      <h2
+                        key={`h-${i}`}
+                        id={slugifyHeading(b.text, i)}
+                        className="scroll-mt-28 font-serif text-xl md:text-2xl text-foreground font-semibold leading-tight tracking-tight pt-6 pb-2 pl-4 border-l-4 border-primary bg-secondary/30 rounded-r text-left break-words text-balance"
+                      >
+                        {b.text}
+                      </h2>
+
                       );
                       if (isFaqHeading(b.text)) {
                         const items: { q: string; a: string }[] = [];
