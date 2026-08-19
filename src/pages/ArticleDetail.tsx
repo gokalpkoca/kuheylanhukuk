@@ -50,7 +50,9 @@ const ArticleDetail = () => {
   const [progress, setProgress] = useState(0);
   const [copied, setCopied] = useState(false);
   const [tocHasMore, setTocHasMore] = useState(false);
+  const [tocOpen, setTocOpen] = useState(false);
   const tocListRef = useRef<HTMLUListElement>(null);
+
 
 
   const article = allArticles.find((a) => slugFromPdf(a.pdfUrl) === slug);
