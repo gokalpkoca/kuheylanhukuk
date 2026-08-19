@@ -261,7 +261,7 @@ const CareersPage = () => {
   };
 
   const inputClass =
-    "bg-background/50 border-border/80 h-12 text-sm focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all duration-300";
+    "bg-background/50 border-border/80 h-12 text-sm font-['Roboto'] focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all duration-300";
 
   return (
     <div className="min-h-screen bg-background">
