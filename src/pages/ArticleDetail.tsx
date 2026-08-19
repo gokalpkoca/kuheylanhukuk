@@ -269,14 +269,17 @@ const ArticleDetail = () => {
               {t(`pa.${article.category}`)}
             </span>
 
-            <motion.h1
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="font-serif text-3xl md:text-4xl lg:text-[2.75rem] text-foreground font-bold leading-[1.15] mt-5"
-            >
-              {title}
-            </motion.h1>
+            <div className="relative mt-6">
+              <span className="absolute left-0 top-1.5 bottom-1.5 w-1.5 bg-primary rounded-full" aria-hidden="true" />
+              <motion.h1
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className="font-serif text-3xl md:text-4xl lg:text-[2.85rem] text-foreground font-bold leading-[1.12] pl-5 md:pl-6"
+              >
+                {title}
+              </motion.h1>
+            </div>
 
             <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-muted-foreground">
               <span className="inline-flex items-center gap-2">
@@ -312,27 +315,32 @@ const ArticleDetail = () => {
                     if (isHeading(b.text) && !isSignature(b.text)) {
                       headingNo += 1;
                       nodes.push(
-                      <h2
+                      <motion.h2
                         key={`h-${i}`}
                         id={slugifyHeading(b.text, i)}
-                        className="scroll-mt-28 group relative pt-10 first:pt-2 text-left"
+                        initial={{ opacity: 0, x: -24 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true, margin: "-80px" }}
+                        transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+                        className="scroll-mt-28 group relative pt-12 first:pt-2 text-left"
                       >
-                        <span className="flex items-baseline gap-3 md:gap-4">
+                        <span className="flex items-start gap-4 md:gap-5">
                           <span
                             aria-hidden="true"
-                            className="shrink-0 font-serif text-base md:text-lg font-bold text-primary/70 tabular-nums"
+                            className="shrink-0 inline-flex items-center justify-center rounded-lg bg-primary text-primary-foreground font-serif font-bold text-lg md:text-xl w-12 h-12 md:w-14 md:h-14 shadow-md tracking-tight rotate-2 group-hover:rotate-0 transition-transform duration-300"
                           >
                             {String(headingNo).padStart(2, "0")}
                           </span>
-                          <span className="font-serif text-2xl md:text-[2rem] font-bold text-foreground leading-[1.2] tracking-[-0.01em] break-words text-balance">
+                          <span className="font-serif text-2xl md:text-[2.125rem] font-bold text-foreground leading-[1.15] tracking-[-0.01em] break-words text-balance mt-1.5 md:mt-2">
                             {b.text}
                           </span>
                         </span>
-                        <span
-                          aria-hidden="true"
-                          className="mt-4 block h-px w-full bg-gradient-to-r from-primary/60 via-border to-transparent"
-                        />
-                      </h2>
+                        <span className="mt-5 flex items-center gap-3" aria-hidden="true">
+                          <span className="h-px flex-1 bg-gradient-to-r from-primary/70 to-transparent" />
+                          <span className="text-primary text-xs">◆</span>
+                          <span className="h-px w-12 md:w-16 bg-primary/40" />
+                        </span>
+                      </motion.h2>
 
                       );
 
