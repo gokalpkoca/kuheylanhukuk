@@ -236,6 +236,16 @@ const ArticleDetail = () => {
   };
 
   const downloadPdf = () => {
+    if (article?.pdfUrl) {
+      const a = document.createElement("a");
+      a.href = article.pdfUrl;
+      a.download = `${slug}.pdf`;
+      a.rel = "noopener";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      return;
+    }
     const prev = document.title;
     document.title = title;
     window.print();
