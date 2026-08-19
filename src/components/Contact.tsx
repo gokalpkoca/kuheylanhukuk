@@ -18,6 +18,7 @@ const Contact = () => {
   const { t } = useLanguage();
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", subject: "", message: "" });
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const bot = useBotProtection();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -30,6 +31,7 @@ const Contact = () => {
       setErrors(fieldErrors);
       return;
     }
+    if (!bot.verify()) return;
     setErrors({});
     const validated = result.data;
     const mailtoLink = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(validated.subject)}&body=${encodeURIComponent(
