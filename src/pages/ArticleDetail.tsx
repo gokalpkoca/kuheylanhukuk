@@ -69,6 +69,14 @@ const ArticleDetail = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, [slug]);
 
+  useEffect(() => {
+    const onResize = () => setTocOpen(window.innerWidth >= 1024);
+    onResize();
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
+
+
 
 
   const related = useMemo(
