@@ -263,6 +263,18 @@ const CareersPage = () => {
   const inputClass =
     "bg-background/50 border-border/80 h-12 text-sm font-['Roboto'] focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all duration-300";
 
+  const whyJoin = [
+    { icon: <Briefcase className="w-8 h-8" />, title: t("career.why1_title"), desc: t("career.why1_desc") },
+    { icon: <GraduationCap className="w-8 h-8" />, title: t("career.why2_title"), desc: t("career.why2_desc") },
+    { icon: <Users className="w-8 h-8" />, title: t("career.why3_title"), desc: t("career.why3_desc") },
+  ];
+  const [whyIndex, setWhyIndex] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => setWhyIndex((p) => (p + 1) % 3), 3800);
+    return () => clearInterval(id);
+  }, []);
+
+
   return (
     <div className="min-h-screen bg-background">
       <SEO
