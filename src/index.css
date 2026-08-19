@@ -122,13 +122,13 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Urbanist', serif;
+    font-family: 'Playfair Display', serif;
   }
 }
 
 @layer utilities {
   .font-serif-heading {
-    font-family: 'Urbanist', serif;
+    font-family: 'Playfair Display', serif;
   }
 
   .font-sans-body {
