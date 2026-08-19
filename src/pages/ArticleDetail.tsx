@@ -49,6 +49,9 @@ const ArticleDetail = () => {
   const { t, language, dir } = useLanguage();
   const [progress, setProgress] = useState(0);
   const [copied, setCopied] = useState(false);
+  const [tocHasMore, setTocHasMore] = useState(false);
+  const tocListRef = useRef<HTMLUListElement>(null);
+
 
   const article = allArticles.find((a) => slugFromPdf(a.pdfUrl) === slug);
   const blocks = article ? translatedBlocks(slug, language) : [];
