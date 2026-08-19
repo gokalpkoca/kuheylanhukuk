@@ -269,14 +269,17 @@ const ArticleDetail = () => {
               {t(`pa.${article.category}`)}
             </span>
 
-            <motion.h1
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="font-serif text-3xl md:text-4xl lg:text-[2.75rem] text-foreground font-bold leading-[1.15] mt-5"
-            >
-              {title}
-            </motion.h1>
+            <div className="relative mt-6">
+              <span className="absolute left-0 top-1.5 bottom-1.5 w-1.5 bg-primary rounded-full" aria-hidden="true" />
+              <motion.h1
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className="font-serif text-3xl md:text-4xl lg:text-[2.85rem] text-foreground font-bold leading-[1.12] pl-5 md:pl-6"
+              >
+                {title}
+              </motion.h1>
+            </div>
 
             <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-muted-foreground">
               <span className="inline-flex items-center gap-2">
