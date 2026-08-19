@@ -182,7 +182,7 @@ const PracticeAreaDetail = () => {
                 </div>
               ) : (
                 <p className="rounded-lg border border-dashed border-border bg-card/50 p-6 text-sm text-muted-foreground">
-                  {t("practice.related_none")}
+                  {query ? t("practice.search_none") : t("practice.related_none")}
                 </p>
               )}
             </section>
