@@ -1,6 +1,7 @@
+import { useEffect, useMemo, useState } from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, Calendar } from "lucide-react";
+import { ArrowLeft, ArrowRight, Calendar, Clock, Link2, List } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
@@ -33,24 +34,63 @@ const isFaqHeading = (text: string) =>
     text
   );
 
+const isSignature = (text: string) =>
+  /(kuheylanhukuk\.com|info@kuheylan)/i.test(text);
+
+const slugifyHeading = (text: string, i: number) =>
+  `s-${i}-${text
+    .toLocaleLowerCase("tr")
+    .replace(/[^a-z0-9çğıöşü]+/gi, "-")
+    .replace(/^-|-$/g, "")
+    .slice(0, 40)}`;
 
 const ArticleDetail = () => {
   const { slug = "" } = useParams();
   const { t, language, dir } = useLanguage();
+  const [progress, setProgress] = useState(0);
+  const [copied, setCopied] = useState(false);
+
   const article = allArticles.find((a) => slugFromPdf(a.pdfUrl) === slug);
   const blocks = article ? translatedBlocks(slug, language) : [];
+
+  useEffect(() => {
+    const onScroll = () => {
+      const h = document.documentElement;
+      const max = h.scrollHeight - h.clientHeight;
+      setProgress(max > 0 ? Math.min(100, (h.scrollTop / max) * 100) : 0);
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [slug]);
+
+  const related = useMemo(
+    () =>
+      article
+        ? allArticles
+            .filter((a) => a.category === article.category && slugFromPdf(a.pdfUrl) !== slug)
+            .slice(0, 3)
+        : [],
+    [article, slug]
+  );
 
   if (!article || !blocks.length) return <Navigate to="/blog" replace />;
 
   const title = translatedTitle(slug, language, article.title);
   const displayDate = formatDate(article.date, language, t);
 
-
   // First block is usually a category label; drop it if short & matches
   const rendered = blocks.slice();
   if (rendered[0] && rendered[0].text.length < 40 && !rendered[0].text.includes(".")) {
     rendered.shift();
   }
+
+  const words = rendered.reduce((n, b) => n + b.text.split(/\s+/).length, 0);
+  const readingMinutes = Math.max(1, Math.round(words / 200));
+
+  const toc = rendered
+    .map((b, i) => ({ text: b.text, id: slugifyHeading(b.text, i) }))
+    .filter((_, i) => isHeading(rendered[i].text) && !isSignature(rendered[i].text));
 
   const description = (blocks.find((b) => b.text.length > 80)?.text || title).slice(0, 155);
   const url = `https://kuheylanhukuk.com/blog/${slug}`;
@@ -111,12 +151,20 @@ const ArticleDetail = () => {
             })),
         }
       : null;
-  const structuredData = faqLd && faqLd.mainEntity.length > 0
-    ? [articleLd, breadcrumbLd, faqLd]
-    : [articleLd, breadcrumbLd];
+  const structuredData =
+    faqLd && faqLd.mainEntity.length > 0 ? [articleLd, breadcrumbLd, faqLd] : [articleLd, breadcrumbLd];
 
+  const share = async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      /* noop */
+    }
+  };
 
-
+  let paragraphIndex = 0;
 
   return (
     <div className="min-h-screen bg-background" dir={dir}>
@@ -129,100 +177,235 @@ const ArticleDetail = () => {
       />
 
       <Navbar />
-      <main className="pt-24 lg:pt-32 pb-20">
-        <div className="container mx-auto px-4 lg:px-8 max-w-3xl">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <Link
-              to="/blog"
-              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-6"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              {t("blog.back_to_list")}
-            </Link>
 
-            <p className="text-xs uppercase tracking-wider text-primary mb-3">
+      {/* Reading progress */}
+      <div className="fixed top-0 left-0 right-0 z-40 h-0.5 bg-transparent" aria-hidden="true">
+        <div
+          className="h-full bg-primary transition-[width] duration-150 ease-out"
+          style={{ width: `${progress}%` }}
+        />
+      </div>
+
+      <main className="pb-24">
+        {/* Header */}
+        <header className="relative overflow-hidden border-b border-border bg-secondary/40 pt-28 lg:pt-36 pb-12">
+          <div className="absolute inset-0 opacity-[0.35] page-header-lines" aria-hidden="true" />
+          <div className="container relative mx-auto px-4 lg:px-8 max-w-3xl">
+            <nav className="flex items-center gap-2 text-xs text-muted-foreground mb-6" aria-label="breadcrumb">
+              <Link to="/" className="hover:text-primary transition-colors">
+                {t("blog.back_home")}
+              </Link>
+              <span>/</span>
+              <Link to="/blog" className="hover:text-primary transition-colors">
+                {t("nav.makaleler")}
+              </Link>
+            </nav>
+
+            <span className="inline-flex items-center rounded-full border border-primary/30 bg-primary/5 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-primary">
               {t(`pa.${article.category}`)}
-            </p>
-            <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground font-bold leading-tight">
+            </span>
+
+            <motion.h1
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="font-serif text-3xl md:text-4xl lg:text-[2.75rem] text-foreground font-bold leading-[1.15] mt-5"
+            >
               {title}
-            </h1>
-            <div className="flex items-center gap-2 text-sm text-muted-foreground mt-6">
-              <Calendar className="w-4 h-4 text-primary" />
-              <span>{displayDate}</span>
+            </motion.h1>
+
+            <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-muted-foreground">
+              <span className="inline-flex items-center gap-2">
+                <Calendar className="w-4 h-4 text-primary" />
+                {displayDate}
+              </span>
+              <span className="inline-flex items-center gap-2">
+                <Clock className="w-4 h-4 text-primary" />
+                {readingMinutes} {t("article.reading_time")}
+              </span>
+              <button
+                type="button"
+                onClick={share}
+                className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1.5 text-xs font-medium text-foreground hover:border-primary hover:text-primary transition-colors"
+              >
+                <Link2 className="w-3.5 h-3.5" />
+                {copied ? t("article.copied") : t("article.share")}
+              </button>
             </div>
-            <div className="w-16 h-px bg-muted-foreground/40 mt-6 mb-10" />
+          </div>
+        </header>
 
+        <div className="container mx-auto px-4 lg:px-8 max-w-6xl mt-12">
+          <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_260px]">
+            <div className="min-w-0">
+              <article className="space-y-6 text-foreground/90 leading-relaxed">
+                {(() => {
+                  const nodes: JSX.Element[] = [];
+                  let i = 0;
+                  while (i < rendered.length) {
+                    const b = rendered[i];
+                    if (isHeading(b.text) && !isSignature(b.text)) {
+                      nodes.push(
+                        <h2
+                          key={`h-${i}`}
+                          id={slugifyHeading(b.text, i)}
+                          className="scroll-mt-28 font-serif text-xl md:text-2xl text-foreground font-semibold pt-8 mb-1 border-t border-border text-left"
+                        >
+                          <span className="block h-px w-10 -mt-8 mb-6 bg-primary" aria-hidden="true" />
+                          {b.text}
+                        </h2>
+                      );
+                      if (isFaqHeading(b.text)) {
+                        const items: { q: string; a: string }[] = [];
+                        let j = i + 1;
+                        while (j < rendered.length && !isHeading(rendered[j].text)) {
+                          const text = rendered[j].text;
+                          const qEnd = text.indexOf("?");
+                          if (qEnd > 0) {
+                            items.push({
+                              q: text.slice(0, qEnd + 1).trim(),
+                              a: text.slice(qEnd + 1).trim(),
+                            });
+                          } else {
+                            items.push({ q: text.slice(0, 90).trim(), a: text.slice(90).trim() });
+                          }
+                          j++;
+                        }
+                        if (items.length) {
+                          nodes.push(
+                            <Accordion
+                              key={`faq-${i}`}
+                              type="single"
+                              collapsible
+                              className="mt-4 rounded border border-border bg-card px-4"
+                            >
+                              {items.map((item, k) => (
+                                <AccordionItem key={k} value={`faq-${i}-${k}`} className="last:border-0">
+                                  <AccordionTrigger className="text-left text-base font-medium hover:text-primary">
+                                    {item.q}
+                                  </AccordionTrigger>
+                                  <AccordionContent className="text-base text-justify text-foreground/85 leading-relaxed">
+                                    {item.a}
+                                  </AccordionContent>
+                                </AccordionItem>
+                              ))}
+                            </Accordion>
+                          );
+                          i = j;
+                          continue;
+                        }
+                      }
+                      i++;
+                      continue;
+                    }
 
-            <article className="space-y-5 text-justify text-foreground/90 leading-relaxed">
-              {(() => {
-                const nodes: JSX.Element[] = [];
-                let i = 0;
-                while (i < rendered.length) {
-                  const b = rendered[i];
-                  if (isHeading(b.text)) {
-                    const heading = (
-                      <h2
-                        key={`h-${i}`}
-                        className="font-serif text-xl md:text-2xl text-foreground font-semibold mt-8 mb-2 text-left"
+                    if (isSignature(b.text)) {
+                      nodes.push(
+                        <aside
+                          key={`sig-${i}`}
+                          className="mt-12 rounded border-l-2 border-primary bg-secondary/50 p-6 text-sm text-muted-foreground whitespace-pre-line"
+                        >
+                          {b.text}
+                        </aside>
+                      );
+                      i++;
+                      continue;
+                    }
+
+                    paragraphIndex++;
+                    const isLede = paragraphIndex === 1;
+                    nodes.push(
+                      <p
+                        key={`p-${i}`}
+                        className={
+                          isLede
+                            ? "text-lg md:text-xl leading-relaxed text-foreground font-light text-justify whitespace-pre-line"
+                            : "text-base md:text-[1.0625rem] leading-[1.85] text-justify whitespace-pre-line"
+                        }
                       >
                         {b.text}
-                      </h2>
+                      </p>
                     );
-                    nodes.push(heading);
-                    if (isFaqHeading(b.text)) {
-                      const items: { q: string; a: string }[] = [];
-                      let j = i + 1;
-                      while (j < rendered.length && !isHeading(rendered[j].text)) {
-                        const text = rendered[j].text;
-                        const qEnd = text.indexOf("?");
-                        if (qEnd > 0) {
-                          items.push({
-                            q: text.slice(0, qEnd + 1).trim(),
-                            a: text.slice(qEnd + 1).trim(),
-                          });
-                        } else {
-                          items.push({ q: text.slice(0, 90).trim(), a: text.slice(90).trim() });
-                        }
-                        j++;
-                      }
-                      if (items.length) {
-                        nodes.push(
-                          <Accordion key={`faq-${i}`} type="single" collapsible className="mt-2">
-                            {items.map((item, k) => (
-                              <AccordionItem key={k} value={`faq-${i}-${k}`}>
-                                <AccordionTrigger className="text-left text-base font-medium">
-                                  {item.q}
-                                </AccordionTrigger>
-                                <AccordionContent className="text-base text-justify text-foreground/90 leading-relaxed">
-                                  {item.a}
-                                </AccordionContent>
-                              </AccordionItem>
-                            ))}
-                          </Accordion>
-                        );
-                        i = j;
-                        continue;
-                      }
-                    }
                     i++;
-                    continue;
                   }
-                  nodes.push(
-                    <p key={`p-${i}`} className="text-base whitespace-pre-line">
-                      {b.text}
-                    </p>
-                  );
-                  i++;
-                }
-                return nodes;
-              })()}
-            </article>
+                  return nodes;
+                })()}
+              </article>
 
-          </motion.div>
+              <div className="mt-14 flex flex-wrap items-center justify-between gap-4 border-t border-border pt-6">
+                <Link
+                  to="/blog"
+                  className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <ArrowLeft className="w-4 h-4" />
+                  {t("blog.back_to_list")}
+                </Link>
+                <button
+                  type="button"
+                  onClick={share}
+                  className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-xs font-medium hover:border-primary hover:text-primary transition-colors"
+                >
+                  <Link2 className="w-3.5 h-3.5" />
+                  {copied ? t("article.copied") : t("article.share")}
+                </button>
+              </div>
+
+              {related.length > 0 && (
+                <section className="mt-16">
+                  <h2 className="font-serif text-xl md:text-2xl text-foreground font-semibold mb-6">
+                    {t("article.related")}
+                  </h2>
+                  <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    {related.map((a) => {
+                      const s = slugFromPdf(a.pdfUrl);
+                      return (
+                        <Link
+                          key={s}
+                          to={`/blog/${s}`}
+                          className="group flex flex-col rounded border border-border bg-card p-5 hover:border-primary hover:-translate-y-1 transition-all duration-300"
+                        >
+                          <span className="text-xs text-muted-foreground mb-3">
+                            {formatDate(a.date, language, t)}
+                          </span>
+                          <span className="font-serif text-base text-foreground font-medium leading-snug flex-1">
+                            {translatedTitle(s, language, a.title)}
+                          </span>
+                          <span className="mt-4 inline-flex items-center gap-1.5 text-primary text-sm group-hover:gap-3 transition-all">
+                            {t("blog.read_more")}
+                            <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                          </span>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </section>
+              )}
+            </div>
+
+            {/* Table of contents */}
+            {toc.length > 1 && (
+              <aside className="hidden lg:block">
+                <nav className="sticky top-28 border-l border-border pl-5">
+                  <p className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-muted-foreground mb-4">
+                    <List className="w-3.5 h-3.5 text-primary" />
+                    {t("article.toc")}
+                  </p>
+                  <ul className="space-y-3 max-h-[60vh] overflow-y-auto pr-2">
+                    {toc.map((item) => (
+                      <li key={item.id}>
+                        <a
+                          href={`#${item.id}`}
+                          className="block text-sm leading-snug text-muted-foreground hover:text-primary transition-colors"
+                        >
+                          {item.text}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
+              </aside>
+            )}
+          </div>
         </div>
       </main>
       <Footer />
