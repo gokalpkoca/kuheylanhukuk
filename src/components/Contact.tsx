@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { useLanguage } from "@/context/LanguageContext";
 import { contactSchema } from "@/lib/contactValidation";
+import { useBotProtection, BotProtectionField } from "@/components/BotProtection";
 
 const CONTACT_EMAIL = "info@kuheylanhukuk.com";
 
@@ -17,6 +18,7 @@ const Contact = () => {
   const { t } = useLanguage();
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", subject: "", message: "" });
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const bot = useBotProtection();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -29,6 +31,7 @@ const Contact = () => {
       setErrors(fieldErrors);
       return;
     }
+    if (!bot.verify()) return;
     setErrors({});
     const validated = result.data;
     const mailtoLink = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(validated.subject)}&body=${encodeURIComponent(
@@ -165,6 +168,7 @@ const Contact = () => {
                   <Textarea id="ch-message" name="message" value={formData.message} onChange={handleChange} placeholder={t("contact.message_placeholder")} rows={5} maxLength={2000} required className="bg-background/50 border-border/80 text-sm focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all duration-300 resize-none" />
                   {errors.message && <p className="text-destructive text-xs mt-1">{errors.message}</p>}
                 </div>
+                <BotProtectionField {...bot.fieldProps} idPrefix="ch" />
                 <div className="pt-2">
                   <Button type="submit" size="lg" className="gap-3 px-8 h-12 text-sm font-semibold uppercase tracking-wider shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300">
                     <Send className="w-4 h-4" />
