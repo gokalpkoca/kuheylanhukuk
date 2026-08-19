@@ -16,7 +16,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import { contactSchema } from "@/lib/contactValidation";
+import { getContactSchema, getContactCopy, validateContactField, type ContactFormData } from "@/lib/contactValidation";
 import { useBotProtection, BotProtectionField } from "@/components/BotProtection";
 
 const CONTACT_EMAIL = "info@kuheylanhukuk.com";
