@@ -277,28 +277,65 @@ const CareersPage = () => {
       {/* Why Join Us */}
       <section className="py-16 lg:py-20">
         <div className="container mx-auto px-4 lg:px-8 max-w-5xl">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { icon: <Briefcase className="w-8 h-8" />, title: t("career.why1_title"), desc: t("career.why1_desc") },
-              { icon: <GraduationCap className="w-8 h-8" />, title: t("career.why2_title"), desc: t("career.why2_desc") },
-              { icon: <Users className="w-8 h-8" />, title: t("career.why3_title"), desc: t("career.why3_desc") },
-            ].map((item, i) => (
-              <motion.div
+          <div className="relative mx-auto max-w-xl h-[220px] flex items-center justify-center">
+            <AnimatePresence mode="wait">
+              {(() => {
+                const item = whyJoin[whyIndex];
+                return (
+                  <motion.div
+                    key={whyIndex}
+                    initial={{ opacity: 0, y: 24, scale: 0.96 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: -24, scale: 0.96 }}
+                    transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+                    className="absolute inset-0 bg-card border border-border rounded-lg p-8 text-center flex flex-col items-center justify-center"
+                  >
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.7 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 0.5, delay: 0.1 }}
+                      className="w-14 h-14 rounded-full bg-muted border border-border flex items-center justify-center mx-auto mb-4 text-primary"
+                    >
+                      {item.icon}
+                    </motion.div>
+                    <motion.h3
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.18 }}
+                      className="font-serif text-lg md:text-xl text-foreground font-semibold"
+                    >
+                      {item.title}
+                    </motion.h3>
+                    <motion.p
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.26 }}
+                      className="text-muted-foreground text-sm mt-3 max-w-md"
+                    >
+                      {item.desc}
+                    </motion.p>
+                  </motion.div>
+                );
+              })()}
+            </AnimatePresence>
+          </div>
+
+          <div className="flex items-center justify-center gap-2 mt-6">
+            {whyJoin.map((_, i) => (
+              <button
                 key={i}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="bg-card border border-border rounded-lg p-8 text-center"
-              >
-                <div className="w-14 h-14 rounded-full bg-muted border border-border flex items-center justify-center mx-auto mb-4 text-primary">
-                  {item.icon}
-                </div>
-                <h3 className="font-serif text-base text-foreground font-semibold">{item.title}</h3>
-              </motion.div>
+                type="button"
+                onClick={() => setWhyIndex(i)}
+                aria-label={`${i + 1}. içerik`}
+                className={`h-1.5 rounded-full transition-all duration-500 ${
+                  i === whyIndex ? "w-8 bg-primary" : "w-3 bg-border hover:bg-muted-foreground/40"
+                }`}
+              />
             ))}
           </div>
         </div>
       </section>
+
 
       {/* Open Positions */}
       <section className="pb-16 lg:pb-20">
