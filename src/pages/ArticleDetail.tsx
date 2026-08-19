@@ -289,12 +289,12 @@ const ArticleDetail = () => {
             </span>
 
             <div className="relative mt-6">
-              <span className="absolute left-0 top-1.5 bottom-1.5 w-1.5 bg-primary rounded-full" aria-hidden="true" />
+              <span className="absolute -left-4 md:-left-5 top-1.5 bottom-1.5 w-1.5 bg-primary rounded-full hidden sm:block" aria-hidden="true" />
               <motion.h1
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="font-serif text-3xl md:text-4xl lg:text-[2.85rem] text-foreground font-bold leading-[1.12] pl-5 md:pl-6"
+                className="font-serif text-3xl md:text-4xl lg:text-[2.85rem] text-foreground font-bold leading-[1.12]"
               >
                 {title}
               </motion.h1>
