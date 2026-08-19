@@ -67,6 +67,23 @@ const ArticleDetail = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, [slug]);
 
+  useEffect(() => {
+    const list = tocListRef.current;
+    if (!list) return;
+    const update = () => {
+      setTocHasMore(list.scrollTop + list.clientHeight < list.scrollHeight - 4);
+    };
+    update();
+    list.addEventListener("scroll", update, { passive: true });
+    const ro = new ResizeObserver(update);
+    ro.observe(list);
+    return () => {
+      list.removeEventListener("scroll", update);
+      ro.disconnect();
+    };
+  }, [toc]);
+
+
   const related = useMemo(
     () =>
       article
