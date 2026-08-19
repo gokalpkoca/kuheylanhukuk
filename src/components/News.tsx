@@ -5,11 +5,26 @@ import { Link } from "react-router-dom";
 import { useLanguage } from "@/context/LanguageContext";
 import { allArticles } from "@/data/articles";
 
+const MONTHS_TR: Record<string, number> = {
+  "Ocak": 1, "Şubat": 2, "Mart": 3, "Nisan": 4, "Mayıs": 5, "Haziran": 6,
+  "Temmuz": 7, "Ağustos": 8, "Eylül": 9, "Ekim": 10, "Kasım": 11, "Aralık": 12,
+};
+
+function parseTrDate(dateStr: string): number {
+  const parts = dateStr.split(" ");
+  if (parts.length !== 3) return 0;
+  const [day, monthName, year] = parts;
+  const month = MONTHS_TR[monthName];
+  if (!month || !year || !day) return 0;
+  return new Date(Number(year), month - 1, Number(day)).getTime();
+}
+
 function slugFromPdf(pdfUrl?: string) {
   if (!pdfUrl) return "";
   const base = pdfUrl.split("/").pop() || "";
   return base.replace(/\.pdf$/i, "");
 }
+
 
 
 const News = () => {
