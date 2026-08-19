@@ -36,8 +36,6 @@ const News = () => {
   );
   const displayed = showAll ? sortedArticles : sortedArticles.slice(0, 6);
   const { t } = useLanguage();
-  const displayed = showAll ? sortedArticles : sortedArticles.slice(0, 6);
-  const { t } = useLanguage();
 
   return (
     <section id="haberler" className="py-24 lg:py-32 bg-background">
