@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { useLanguage } from "@/context/LanguageContext";
-import { contactSchema } from "@/lib/contactValidation";
+import { getContactSchema, getContactCopy, validateContactField, type ContactFormData } from "@/lib/contactValidation";
 import { useBotProtection, BotProtectionField } from "@/components/BotProtection";
 
 const CONTACT_EMAIL = "info@kuheylanhukuk.com";
