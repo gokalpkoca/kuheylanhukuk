@@ -45,6 +45,7 @@ const Navbar = () => {
     { label: t("nav.makaleler"), href: "/blog", dropdown: "articles" },
     { label: t("nav.hesaplama"), href: "/hesaplama-araclarimiz", isPage: true },
     { label: t("nav.kariyer"), href: "/kariyer", isPage: true },
+    { label: t("nav.staj"), href: "/staj", isPage: true },
     { label: t("nav.iletisim"), href: "/iletisim", isPage: true },
   ];
 
@@ -92,7 +93,7 @@ const Navbar = () => {
             <img src={logo} alt="Küheylan Hukuk Bürosu" width={640} height={52} className="h-5 lg:h-[1.5rem] w-auto -translate-y-[2px] dark:brightness-0 dark:invert" />
           </a>
 
-          <div className="hidden xl:flex flex-1 min-w-0 items-center justify-center gap-0.5 whitespace-nowrap">
+          <div className="hidden xl:flex flex-1 min-w-0 items-center justify-center gap-0.5 whitespace-nowrap xl:pl-6 2xl:pl-10">
 
             {navItems.map((item) =>
               item.dropdown === "practiceAreas" ? (
@@ -178,7 +179,7 @@ const Navbar = () => {
           </div>
 
           {/* Right side: Phone + Language */}
-          <div className="hidden xl:flex items-center gap-1 shrink-0">
+          <div className="hidden xl:flex items-center gap-1 shrink-0 xl:ml-3">
             <a
               href="tel:+905352279696"
               aria-label="Telefon ile arayın: +90 535 227 96 96"

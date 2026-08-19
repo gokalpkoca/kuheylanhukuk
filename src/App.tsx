@@ -12,6 +12,7 @@ import PracticeAreasPage from "./pages/PracticeAreasPage";
 import ContactPage from "./pages/ContactPage";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import CareersPage from "./pages/CareersPage";
+import InternshipPage from "./pages/InternshipPage";
 import CalculatorsPage from "./pages/CalculatorsPage";
 import CalculatorDetail from "./pages/CalculatorDetail";
 import NotFound from "./pages/NotFound";
@@ -40,6 +41,7 @@ const App = () => (
             <Route path="/hesaplama-araclarimiz" element={<CalculatorsPage />} />
             <Route path="/hesaplama-araclarimiz/:slug" element={<CalculatorDetail />} />
             <Route path="/kariyer" element={<CareersPage />} />
+            <Route path="/staj" element={<InternshipPage />} />
             <Route path="/aydinlatma-metni" element={<PrivacyPolicy />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
