@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, ArrowRight, Calendar } from "lucide-react";
+import { useMemo, useState } from "react";
+import { ArrowLeft, ArrowRight, Calendar, Search, X } from "lucide-react";
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -9,13 +10,40 @@ import { allArticles } from "@/data/articles";
 import { translatedTitle, formatDate } from "@/lib/articleI18n";
 import { useLanguage } from "@/context/LanguageContext";
 
+const slugFromPdf = (pdfUrl?: string) =>
+  pdfUrl ? (pdfUrl.split("/").pop() || "").replace(/\.pdf$/i, "") : "";
+
+const normalize = (v: string) =>
+  v.toLocaleLowerCase("tr").replace(/\s+/g, " ").trim();
+
 const PracticeAreaDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const { t, language } = useLanguage();
+  const [query, setQuery] = useState("");
   const area = practiceAreas.find((a) => a.slug === slug);
   const currentIndex = practiceAreas.findIndex((a) => a.slug === slug);
   const prev = currentIndex > 0 ? practiceAreas[currentIndex - 1] : null;
   const next = currentIndex < practiceAreas.length - 1 ? practiceAreas[currentIndex + 1] : null;
+
+  const areaArticles = useMemo(
+    () =>
+      allArticles
+        .filter((a) => a.category === slug)
+        .map((a) => {
+          const aSlug = slugFromPdf(a.pdfUrl);
+          return { ...a, aSlug, displayTitle: translatedTitle(aSlug, language, a.title) };
+        }),
+    [slug, language]
+  );
+
+  const filteredArticles = useMemo(() => {
+    const q = normalize(query);
+    if (!q) return areaArticles;
+    return areaArticles.filter(
+      (a) => normalize(a.displayTitle).includes(q) || normalize(a.aSlug.replace(/-/g, " ")).includes(q)
+    );
+  }, [areaArticles, query]);
+
 
   if (!area) {
     return (
