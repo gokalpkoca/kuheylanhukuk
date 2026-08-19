@@ -306,19 +306,36 @@ const ArticleDetail = () => {
                 {(() => {
                   const nodes: JSX.Element[] = [];
                   let i = 0;
+                  let headingNo = 0;
                   while (i < rendered.length) {
                     const b = rendered[i];
                     if (isHeading(b.text) && !isSignature(b.text)) {
+                      headingNo += 1;
                       nodes.push(
                       <h2
                         key={`h-${i}`}
                         id={slugifyHeading(b.text, i)}
-                        className="scroll-mt-28 font-serif text-xl md:text-2xl text-foreground font-semibold leading-tight tracking-tight pt-6 pb-2 pl-4 border-l-4 border-primary bg-secondary/30 rounded-r text-left break-words text-balance"
+                        className="scroll-mt-28 group relative pt-10 first:pt-2 text-left"
                       >
-                        {b.text}
+                        <span className="flex items-baseline gap-3 md:gap-4">
+                          <span
+                            aria-hidden="true"
+                            className="shrink-0 font-serif text-base md:text-lg font-bold text-primary/70 tabular-nums"
+                          >
+                            {String(headingNo).padStart(2, "0")}
+                          </span>
+                          <span className="font-serif text-2xl md:text-[2rem] font-bold text-foreground leading-[1.2] tracking-[-0.01em] break-words text-balance">
+                            {b.text}
+                          </span>
+                        </span>
+                        <span
+                          aria-hidden="true"
+                          className="mt-4 block h-px w-full bg-gradient-to-r from-primary/60 via-border to-transparent"
+                        />
                       </h2>
 
                       );
+
                       if (isFaqHeading(b.text)) {
                         const items: { q: string; a: string }[] = [];
                         let j = i + 1;
