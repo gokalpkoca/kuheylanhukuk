@@ -351,22 +351,20 @@ const ArticleDetail = () => {
                         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
                         className="scroll-mt-28 group relative pt-12 first:pt-2 text-left"
                       >
-                        <span className="flex items-start gap-4 md:gap-5">
-                          <span
-                            aria-hidden="true"
-                            className="shrink-0 inline-flex items-center justify-center rounded-lg bg-primary text-primary-foreground font-serif font-bold text-lg md:text-xl w-12 h-12 md:w-14 md:h-14 shadow-md tracking-tight rotate-2 group-hover:rotate-0 transition-transform duration-300"
-                          >
+                        <span className="flex items-center gap-3" aria-hidden="true">
+                          <span className="h-px w-6 bg-primary" />
+                          <span className="font-sans text-[11px] font-medium uppercase tracking-[0.28em] text-primary">
                             {String(headingNo).padStart(2, "0")}
                           </span>
-                          <span className="font-serif text-2xl md:text-[2.125rem] font-bold text-foreground leading-[1.15] tracking-[-0.01em] break-words text-balance mt-1.5 md:mt-2">
-                            {b.text}
-                          </span>
                         </span>
-                        <span className="mt-5 flex items-center gap-3" aria-hidden="true">
-                          <span className="h-px flex-1 bg-gradient-to-r from-primary/70 to-transparent" />
-                          <span className="text-primary text-xs">◆</span>
-                          <span className="h-px w-12 md:w-16 bg-primary/40" />
+                        <span className="mt-2.5 block font-serif text-2xl md:text-[2.125rem] font-bold text-foreground leading-[1.15] tracking-[-0.01em] break-words text-balance">
+                          {b.text}
                         </span>
+                        <span
+                          className="mt-4 block h-px w-full bg-border group-hover:bg-primary/40 transition-colors duration-300"
+                          aria-hidden="true"
+                        />
+
                       </motion.h2>
 
                       );
