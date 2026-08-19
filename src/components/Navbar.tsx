@@ -179,7 +179,7 @@ const Navbar = () => {
           </div>
 
           {/* Right side: Phone + Language */}
-          <div className="hidden xl:flex items-center gap-1 shrink-0">
+          <div className="hidden xl:flex items-center gap-1 shrink-0 xl:ml-3">
             <a
               href="tel:+905352279696"
               aria-label="Telefon ile arayın: +90 535 227 96 96"
