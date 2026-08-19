@@ -263,6 +263,7 @@ const ru: Record<string, string> = {
   "article.reading_time": "мин чтения",
   "article.share": "Поделиться",
   "article.copied": "Ссылка скопирована",
+  "article.download_pdf": "Скачать в PDF",
   "article.related": "Похожие статьи",
   "months.1": "января", "months.2": "февраля", "months.3": "марта", "months.4": "апреля",
   "months.5": "мая", "months.6": "июня", "months.7": "июля", "months.8": "августа",

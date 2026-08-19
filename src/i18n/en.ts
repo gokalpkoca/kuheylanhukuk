@@ -263,6 +263,7 @@ const en: Record<string, string> = {
   "article.reading_time": "min read",
   "article.share": "Share",
   "article.copied": "Link copied",
+  "article.download_pdf": "Download as PDF",
   "article.related": "Related Articles",
   "months.1": "January", "months.2": "February", "months.3": "March", "months.4": "April",
   "months.5": "May", "months.6": "June", "months.7": "July", "months.8": "August",
