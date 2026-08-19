@@ -413,6 +413,58 @@ const ArticleDetail = () => {
                       continue;
                     }
 
+                    if (b.cells && b.cells.length > 1) {
+                      const rows: string[][] = [];
+                      let j = i;
+                      while (j < rendered.length && rendered[j].cells && rendered[j].cells!.length > 1) {
+                        rows.push(rendered[j].cells!);
+                        j++;
+                      }
+                      if (rows.length >= 2) {
+                        const [head, ...body] = rows;
+                        nodes.push(
+                          <div
+                            key={`tbl-${i}`}
+                            className="my-8 overflow-x-auto rounded-lg border border-border bg-card shadow-sm"
+                          >
+                            <table className="w-full border-collapse text-sm">
+                              <thead>
+                                <tr className="bg-secondary/70">
+                                  {head.map((c, k) => (
+                                    <th
+                                      key={k}
+                                      scope="col"
+                                      className="border-b border-border px-4 py-3 text-start font-serif text-[0.95rem] font-bold text-foreground"
+                                    >
+                                      {c}
+                                    </th>
+                                  ))}
+                                </tr>
+                              </thead>
+                              <tbody>
+                                {body.map((r, k) => (
+                                  <tr key={k} className="even:bg-secondary/25 hover:bg-primary/5 transition-colors">
+                                    {r.map((c, m) => (
+                                      <td
+                                        key={m}
+                                        className={`border-b border-border/70 px-4 py-3 align-top text-foreground/90 ${
+                                          m === 0 ? "font-medium text-foreground" : ""
+                                        }`}
+                                      >
+                                        {c}
+                                      </td>
+                                    ))}
+                                  </tr>
+                                ))}
+                              </tbody>
+                            </table>
+                          </div>
+                        );
+                        i = j;
+                        continue;
+                      }
+                    }
+
                     if (isSignature(b.text)) {
                       nodes.push(
                         <aside
