@@ -430,18 +430,37 @@ const ArticleDetail = () => {
                         <ChevronDown className="w-3.5 h-3.5" />
                       </span>
                     </summary>
-                    <ul className="space-y-3 max-h-[55vh] overflow-y-auto px-5 pb-5 border-t border-border">
-                      {toc.map((item) => (
-                        <li key={item.id}>
-                          <a
-                            href={`#${item.id}`}
-                            className="block text-sm leading-snug text-muted-foreground hover:text-primary transition-colors"
+                    <div className="relative">
+                      <ul
+                        ref={tocListRef}
+                        className="space-y-3 max-h-[55vh] overflow-y-auto px-5 pb-5 border-t border-border"
+                      >
+                        {toc.map((item) => (
+                          <li key={item.id}>
+                            <a
+                              href={`#${item.id}`}
+                              className="block text-sm leading-snug text-muted-foreground hover:text-primary transition-colors"
+                            >
+                              {item.text}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                      {tocHasMore && (
+                        <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-16 flex items-end justify-center bg-gradient-to-t from-card via-card/80 to-transparent pb-2">
+                          <button
+                            type="button"
+                            onClick={scrollTocDown}
+                            className="pointer-events-auto inline-flex items-center rounded-full bg-primary text-white p-1.5 shadow-md hover:bg-primary/90 transition-colors"
+                            aria-label="Daha fazla başlık"
+                            title="Daha fazla başlık"
                           >
-                            {item.text}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
+                            <TocChevronDown className="w-4 h-4" />
+                          </button>
+                        </div>
+                      )}
+                    </div>
+
                   </details>
                 </nav>
               </aside>
