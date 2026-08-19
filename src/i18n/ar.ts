@@ -43,6 +43,14 @@ const ar: Record<string, string> = {
   "practice.view_all": "جميع مجالات الممارسة",
   "practice.related": "مقالات ذات صلة",
   "practice.related_none": "لا توجد مقالات في هذا المجال بعد.",
+
+  "practice.related_desc": "أحدث التحليلات والأدلة القانونية التي أعددناها في هذا المجال.",
+  "practice.read_more": "اقرأ المقال",
+  "practice.other_title": "مجالات عمل أخرى",
+  "practice.other_desc": "اكتشف مجالات خبرتنا الأخرى.",
+  "practice.prev": "المجال السابق",
+  "practice.next": "المجال التالي",
+  "practice.article_count": "مقالات",
   "practice.back": "العودة إلى مجالات الممارسة",
 
   // Practice Area Labels

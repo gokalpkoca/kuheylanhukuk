@@ -43,6 +43,14 @@ const ru: Record<string, string> = {
   "practice.view_all": "Все области практики",
   "practice.related": "Связанные статьи",
   "practice.related_none": "В этой области пока нет статей.",
+
+  "practice.related_desc": "Актуальные правовые обзоры и руководства, подготовленные нами в этой области.",
+  "practice.read_more": "Читать статью",
+  "practice.other_title": "Другие практики",
+  "practice.other_desc": "Ознакомьтесь с другими направлениями нашей практики.",
+  "practice.prev": "Предыдущая область",
+  "practice.next": "Следующая область",
+  "practice.article_count": "статей",
   "practice.back": "Вернуться к областям практики",
 
   // Practice Area Labels

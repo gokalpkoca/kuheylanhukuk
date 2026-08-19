@@ -75,79 +75,133 @@ const PracticeAreaDetail = () => {
               {area.description}
             </p>
 
-            <div className="border-t border-border pt-10 mb-12">
-              <h3 className="font-serif text-xl text-foreground font-semibold mb-6">
-                {t("practice.related")}
-              </h3>
+            {/* İlgili Makaleler */}
+            <section className="border-t border-border pt-10 mb-14">
+              <div className="flex flex-wrap items-end justify-between gap-3 mb-2">
+                <h2 className="font-serif text-xl md:text-2xl text-foreground font-semibold">
+                  {t("practice.related")}
+                </h2>
+                {relatedArticles.length > 0 && (
+                  <span className="text-xs uppercase tracking-widest text-primary">
+                    {relatedArticles.length} {t("practice.article_count")}
+                  </span>
+                )}
+              </div>
+              <p className="text-sm text-muted-foreground mb-6 max-w-xl">
+                {t("practice.related_desc")}
+              </p>
+
               {relatedArticles.length ? (
-                <div className="space-y-3">
-                  {relatedArticles.map((a) => {
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {relatedArticles.map((a, i) => {
                     const aSlug = slugFromPdf(a.pdfUrl);
                     return (
-                      <Link
+                      <motion.div
                         key={aSlug}
-                        to={`/blog/${aSlug}`}
-                        className="group block border border-border rounded p-4 hover:border-primary transition-all"
+                        initial={{ opacity: 0, y: 14 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-60px" }}
+                        transition={{ duration: 0.4, delay: Math.min(i, 6) * 0.05 }}
                       >
-                        <h4 className="font-serif text-base md:text-lg text-foreground font-semibold group-hover:text-primary transition-colors">
-                          {translatedTitle(aSlug, language, a.title)}
-                        </h4>
-                        <div className="flex items-center gap-2 text-xs text-muted-foreground mt-2">
-                          <Calendar className="w-3.5 h-3.5 text-primary" />
-                          <span>{formatDate(a.date, language, t)}</span>
-                        </div>
-                      </Link>
+                        <Link
+                          to={`/blog/${aSlug}`}
+                          className="group relative flex h-full flex-col justify-between overflow-hidden rounded-lg border border-border bg-card p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:shadow-lg hover:shadow-primary/10"
+                        >
+                          <span className="absolute left-0 top-0 h-full w-0.5 origin-top scale-y-0 bg-primary transition-transform duration-300 group-hover:scale-y-100" />
+                          <h3 className="font-serif text-base md:text-lg text-foreground font-semibold leading-snug transition-colors group-hover:text-primary">
+                            {translatedTitle(aSlug, language, a.title)}
+                          </h3>
+                          <div className="mt-4 flex items-center justify-between gap-3">
+                            <span className="flex items-center gap-2 text-xs text-muted-foreground">
+                              <Calendar className="w-3.5 h-3.5 text-primary" />
+                              {formatDate(a.date, language, t)}
+                            </span>
+                            <span className="inline-flex items-center gap-1.5 text-xs font-medium text-primary opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:gap-2.5">
+                              {t("practice.read_more")}
+                              <ArrowRight className="w-3.5 h-3.5" />
+                            </span>
+                          </div>
+                        </Link>
+                      </motion.div>
                     );
                   })}
                 </div>
               ) : (
-                <p className="text-sm text-muted-foreground">{t("practice.related_none")}</p>
+                <p className="rounded-lg border border-dashed border-border bg-card/50 p-6 text-sm text-muted-foreground">
+                  {t("practice.related_none")}
+                </p>
               )}
-            </div>
+            </section>
 
-            <div className="border-t border-border pt-10">
-              <h3 className="font-serif text-xl text-foreground font-semibold mb-6">
-                {t("practice.view_all")}
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            {/* Diğer faaliyet alanları */}
+            <section className="border-t border-border pt-10">
+              <h2 className="font-serif text-xl md:text-2xl text-foreground font-semibold mb-2">
+                {t("practice.other_title")}
+              </h2>
+              <p className="text-sm text-muted-foreground mb-6 max-w-xl">
+                {t("practice.other_desc")}
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 {practiceAreas
                   .filter((a) => a.slug !== slug)
-                  .map((a) => (
-                    <Link
-                      key={a.slug}
-                      to={`/faaliyet-alanlari/${a.slug}`}
-                      className="px-4 py-3 border border-border rounded text-sm text-muted-foreground hover:border-primary hover:text-primary transition-all"
-                    >
-                      {t(`pa.${a.slug}`)}
-                    </Link>
-                  ))}
+                  .map((a) => {
+                    const AIcon = a.icon;
+                    return (
+                      <Link
+                        key={a.slug}
+                        to={`/faaliyet-alanlari/${a.slug}`}
+                        className="group flex items-center gap-3 rounded-lg border border-border bg-card px-4 py-3 transition-all duration-300 hover:-translate-y-0.5 hover:border-primary hover:shadow-md hover:shadow-primary/10"
+                      >
+                        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded bg-primary/10 transition-colors group-hover:bg-primary/20">
+                          <AIcon className="h-4 w-4 text-primary" />
+                        </span>
+                        <span className="font-serif text-sm text-foreground font-medium leading-snug transition-colors group-hover:text-primary">
+                          {t(`pa.${a.slug}`)}
+                        </span>
+                        <ArrowRight className="ml-auto h-4 w-4 shrink-0 text-primary opacity-0 -translate-x-1 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0" />
+                      </Link>
+                    );
+                  })}
               </div>
-            </div>
+            </section>
 
-            <div className="flex justify-between items-center mt-12 pt-8 border-t border-border">
+            {/* Önceki / Sonraki */}
+            <nav className="mt-14 grid grid-cols-1 sm:grid-cols-2 gap-3 border-t border-border pt-8">
               {prev ? (
                 <Link
                   to={`/faaliyet-alanlari/${prev.slug}`}
-                  className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                  className="group flex items-center gap-3 rounded-lg border border-border bg-card p-4 transition-all duration-300 hover:border-primary hover:shadow-md hover:shadow-primary/10"
                 >
-                  <ArrowLeft className="w-4 h-4" />
-                  {t(`pa.${prev.slug}`)}
+                  <ArrowLeft className="h-4 w-4 shrink-0 text-primary transition-transform duration-300 group-hover:-translate-x-1" />
+                  <span className="min-w-0">
+                    <span className="block text-[11px] uppercase tracking-widest text-muted-foreground">
+                      {t("practice.prev")}
+                    </span>
+                    <span className="block font-serif text-sm text-foreground font-medium transition-colors group-hover:text-primary">
+                      {t(`pa.${prev.slug}`)}
+                    </span>
+                  </span>
                 </Link>
               ) : (
-                <div />
+                <div className="hidden sm:block" />
               )}
-              {next ? (
+              {next && (
                 <Link
                   to={`/faaliyet-alanlari/${next.slug}`}
-                  className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                  className="group flex items-center justify-end gap-3 rounded-lg border border-border bg-card p-4 text-right transition-all duration-300 hover:border-primary hover:shadow-md hover:shadow-primary/10"
                 >
-                  {t(`pa.${next.slug}`)}
-                  <ArrowRight className="w-4 h-4" />
+                  <span className="min-w-0">
+                    <span className="block text-[11px] uppercase tracking-widest text-muted-foreground">
+                      {t("practice.next")}
+                    </span>
+                    <span className="block font-serif text-sm text-foreground font-medium transition-colors group-hover:text-primary">
+                      {t(`pa.${next.slug}`)}
+                    </span>
+                  </span>
+                  <ArrowRight className="h-4 w-4 shrink-0 text-primary transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
-              ) : (
-                <div />
               )}
-            </div>
+            </nav>
           </motion.div>
         </div>
       </main>

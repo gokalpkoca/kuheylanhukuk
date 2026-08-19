@@ -43,6 +43,14 @@ const tr: Record<string, string> = {
   "practice.view_all": "Tüm Faaliyet Alanları",
   "practice.related": "İlgili Makaleler",
   "practice.related_none": "Bu alanda henüz makale bulunmuyor.",
+
+  "practice.related_desc": "Bu alanda hazırladığımız güncel hukuki değerlendirmeler ve rehberler.",
+  "practice.read_more": "Yazıyı oku",
+  "practice.other_title": "Diğer Faaliyet Alanları",
+  "practice.other_desc": "Diğer uzmanlık alanlarımızı keşfedin.",
+  "practice.prev": "Önceki alan",
+  "practice.next": "Sonraki alan",
+  "practice.article_count": "makale",
   "practice.back": "Faaliyet Alanlarına Dön",
 
   // Practice Area Labels

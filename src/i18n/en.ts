@@ -43,6 +43,14 @@ const en: Record<string, string> = {
   "practice.view_all": "All Practice Areas",
   "practice.related": "Related Articles",
   "practice.related_none": "No articles in this area yet.",
+
+  "practice.related_desc": "Recent legal commentary and guides we have prepared in this field.",
+  "practice.read_more": "Read article",
+  "practice.other_title": "Other Practice Areas",
+  "practice.other_desc": "Explore our other areas of expertise.",
+  "practice.prev": "Previous area",
+  "practice.next": "Next area",
+  "practice.article_count": "articles",
   "practice.back": "Back to Practice Areas",
 
   // Practice Area Labels
