@@ -3,7 +3,7 @@ import contentI18n from "@/data/articleContent.i18n.json";
 import contentTr from "@/data/articleContent.json";
 import type { Language } from "@/context/LanguageContext";
 
-type Block = { lines: string[]; text: string };
+type Block = { lines: string[]; text: string; cells?: string[] };
 const titles = articlesI18n as Record<string, Record<string, string>>;
 const contents = contentI18n as Record<string, Record<string, Block[]>>;
 const trContent = contentTr as Record<string, Block[]>;
