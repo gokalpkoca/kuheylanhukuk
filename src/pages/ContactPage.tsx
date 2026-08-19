@@ -210,6 +210,7 @@ const ContactPage = () => {
                   <Textarea id="cp-message" name="message" value={formData.message} onChange={handleChange} placeholder={t("contact.message_placeholder")} rows={6} maxLength={2000} required className="bg-background/50 border-border/80 text-sm focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all duration-300 resize-none" />
                   {errors.message && <p className="text-destructive text-xs mt-1">{errors.message}</p>}
                 </div>
+                <BotProtectionField {...bot.fieldProps} idPrefix="cp" />
                 <div className="text-center pt-2">
                   <Button type="submit" size="lg" className="gap-3 px-10 h-12 text-sm font-semibold uppercase tracking-wider shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300">
                     <Send className="w-4 h-4" />
