@@ -169,30 +169,34 @@ const Contact = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label htmlFor="ch-name" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{t("contact.name")}</label>
-                    <Input id="ch-name" name="name" value={formData.name} onChange={handleChange} placeholder={t("contact.name_placeholder")} maxLength={100} required className="bg-background/50 border-border/80 h-12 text-sm focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all duration-300" />
-                    {errors.name && <p className="text-destructive text-xs mt-1">{errors.name}</p>}
+                    <Input id="ch-name" name="name" value={formData.name} onChange={handleChange} {...fieldState("name")} placeholder={t("contact.name_placeholder")} maxLength={100} required className={`bg-background/50 h-12 text-sm focus:ring-1 transition-all duration-300 ${errors.name ? "border-destructive focus:border-destructive focus:ring-destructive/20" : "border-border/80 focus:border-primary/50 focus:ring-primary/20"}`} />
+                    {errors.name && <p id="ch-name-error" role="alert" className="text-destructive text-xs mt-1">{errors.name}</p>}
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="ch-email" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{t("contact.email_label")}</label>
-                    <Input id="ch-email" name="email" type="email" value={formData.email} onChange={handleChange} placeholder={t("contact.email_placeholder")} maxLength={255} required className="bg-background/50 border-border/80 h-12 text-sm focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all duration-300" />
-                    {errors.email && <p className="text-destructive text-xs mt-1">{errors.email}</p>}
+                    <Input id="ch-email" name="email" type="email" value={formData.email} onChange={handleChange} {...fieldState("email")} placeholder={t("contact.email_placeholder")} maxLength={255} required className={`bg-background/50 h-12 text-sm focus:ring-1 transition-all duration-300 ${errors.email ? "border-destructive focus:border-destructive focus:ring-destructive/20" : "border-border/80 focus:border-primary/50 focus:ring-primary/20"}`} />
+                    {errors.email && <p id="ch-email-error" role="alert" className="text-destructive text-xs mt-1">{errors.email}</p>}
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="ch-phone" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{t("contact.phone_label")}</label>
-                    <Input id="ch-phone" name="phone" value={formData.phone} onChange={handleChange} placeholder={t("contact.phone_placeholder")} maxLength={20} className="bg-background/50 border-border/80 h-12 text-sm focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all duration-300" />
-                    {errors.phone && <p className="text-destructive text-xs mt-1">{errors.phone}</p>}
+                    <Input id="ch-phone" name="phone" type="tel" inputMode="tel" value={formData.phone} onChange={handleChange} {...fieldState("phone")} placeholder={t("contact.phone_placeholder")} maxLength={20} className={`bg-background/50 h-12 text-sm focus:ring-1 transition-all duration-300 ${errors.phone ? "border-destructive focus:border-destructive focus:ring-destructive/20" : "border-border/80 focus:border-primary/50 focus:ring-primary/20"}`} />
+                    {errors.phone && <p id="ch-phone-error" role="alert" className="text-destructive text-xs mt-1">{errors.phone}</p>}
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="ch-subject" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{t("contact.subject")}</label>
-                    <Input id="ch-subject" name="subject" value={formData.subject} onChange={handleChange} placeholder={t("contact.subject_placeholder")} maxLength={200} required className="bg-background/50 border-border/80 h-12 text-sm focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all duration-300" />
-                    {errors.subject && <p className="text-destructive text-xs mt-1">{errors.subject}</p>}
+                    <Input id="ch-subject" name="subject" value={formData.subject} onChange={handleChange} {...fieldState("subject")} placeholder={t("contact.subject_placeholder")} maxLength={200} required className={`bg-background/50 h-12 text-sm focus:ring-1 transition-all duration-300 ${errors.subject ? "border-destructive focus:border-destructive focus:ring-destructive/20" : "border-border/80 focus:border-primary/50 focus:ring-primary/20"}`} />
+                    {errors.subject && <p id="ch-subject-error" role="alert" className="text-destructive text-xs mt-1">{errors.subject}</p>}
                   </div>
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="ch-message" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{t("contact.message")}</label>
-                  <Textarea id="ch-message" name="message" value={formData.message} onChange={handleChange} placeholder={t("contact.message_placeholder")} rows={5} maxLength={2000} required className="bg-background/50 border-border/80 text-sm focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all duration-300 resize-none" />
-                  {errors.message && <p className="text-destructive text-xs mt-1">{errors.message}</p>}
+                  <Textarea id="ch-message" name="message" value={formData.message} onChange={handleChange} {...fieldState("message")} placeholder={t("contact.message_placeholder")} rows={5} maxLength={2000} required className={`bg-background/50 text-sm focus:ring-1 transition-all duration-300 resize-none ${errors.message ? "border-destructive focus:border-destructive focus:ring-destructive/20" : "border-border/80 focus:border-primary/50 focus:ring-primary/20"}`} />
+                  <div className="flex items-start justify-between gap-4">
+                    {errors.message ? <p id="ch-message-error" role="alert" className="text-destructive text-xs">{errors.message}</p> : <span />}
+                    <span className="text-muted-foreground text-xs shrink-0">{copy.remaining(2000 - formData.message.length)}</span>
+                  </div>
                 </div>
+
                 <BotProtectionField {...bot.fieldProps} idPrefix="ch" />
                 <div className="pt-2">
                   <Button type="submit" size="lg" className="gap-3 px-8 h-12 text-sm font-semibold uppercase tracking-wider shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300">
