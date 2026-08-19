@@ -376,10 +376,12 @@ const ArticleDetail = () => {
                         <span className="mt-2.5 block font-serif text-2xl md:text-[2.125rem] font-bold text-foreground leading-[1.15] tracking-[-0.01em] break-words text-balance">
                           {b.text}
                         </span>
-                        <span
-                          className="mt-4 block h-px w-full bg-border group-hover:bg-primary/40 transition-colors duration-300"
-                          aria-hidden="true"
-                        />
+                        <span className="mt-5 flex items-center gap-3" aria-hidden="true">
+                          <span className="h-px flex-1 bg-gradient-to-r from-primary/70 to-transparent" />
+                          <span className="text-primary text-xs">◆</span>
+                          <span className="h-px w-12 md:w-16 bg-primary/40" />
+                        </span>
+
 
                       </motion.h2>
 
