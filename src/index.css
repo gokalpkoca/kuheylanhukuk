@@ -118,21 +118,21 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Epilogue', sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Urbanist', serif;
   }
 }
 
 @layer utilities {
   .font-serif-heading {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Urbanist', serif;
   }
 
   .font-sans-body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Epilogue', sans-serif;
   }
 
   .text-gold {
