@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { useLanguage } from "@/context/LanguageContext";
 import { contactSchema } from "@/lib/contactValidation";
+import { useBotProtection, BotProtectionField } from "@/components/BotProtection";
 
 const CONTACT_EMAIL = "info@kuheylanhukuk.com";
 
