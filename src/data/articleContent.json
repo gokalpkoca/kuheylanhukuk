@@ -442,7 +442,11 @@
       "lines": [
         "Bölüm                İçermesi Gereken Detay"
       ],
-      "text": "Bölüm İçermesi Gereken Detay"
+      "text": "Bölüm İçermesi Gereken Detay",
+      "cells": [
+        "Bölüm",
+        "İçermesi Gereken Detay"
+      ]
     },
     {
       "lines": [
@@ -2381,7 +2385,13 @@
       "lines": [
         "Aşama              Başvuru Makamı             Süre                           Not"
       ],
-      "text": "Aşama Başvuru Makamı Süre Not"
+      "text": "Aşama Başvuru Makamı Süre Not",
+      "cells": [
+        "Aşama",
+        "Başvuru Makamı",
+        "Süre",
+        "Not"
+      ]
     },
     {
       "lines": [
@@ -2402,7 +2412,13 @@
         "3. İptal Davası   Vergi Mahkemesi        Ret tebliğinden itibaren   Para cezalarında ayrıca yürütmenin durdurulması",
         "30 gün                     istenmelidir."
       ],
-      "text": "3. İptal Davası Vergi Mahkemesi Ret tebliğinden itibaren Para cezalarında ayrıca yürütmenin durdurulması 30 gün istenmelidir."
+      "text": "3. İptal Davası Vergi Mahkemesi Ret tebliğinden itibaren Para cezalarında ayrıca yürütmenin durdurulması 30 gün istenmelidir.",
+      "cells": [
+        "3. İptal Davası",
+        "Vergi Mahkemesi",
+        "Ret tebliğinden itibaren 30 gün",
+        "Para cezalarında ayrıca yürütmenin durdurulması istenmelidir."
+      ]
     },
     {
       "lines": [
@@ -5191,7 +5207,12 @@
       "lines": [
         "8. Sürece İlişkin Pratik Bilgiler"
       ],
-      "text": "8. Sürece İlişkin Pratik Bilgiler"
+      "text": "8. Sürece İlişkin Pratik Bilgiler",
+      "cells": [
+        "8. Sürece İlişkin Pratik Bilgiler",
+        "",
+        ""
+      ]
     },
     {
       "lines": [
@@ -6107,7 +6128,12 @@
         "iki yolun da usulü, süresi ve ispat yükü farklıdır; yanlış yolun seçilmesi veya sürenin kaçırılması, mirasçının mirasbırakanın",
         "borçlarından kendi malvarlığıyla sorumlu tutulmasına yol açabilir."
       ],
-      "text": "Türk hukukunda miras, mirasbırakanın ölümüyle birlikte kendiliğinden ve bir bütün olarak mirasçılara geçer; bu geçiş yalnızca malvarlığını değil, mirasbırakanın borçlarını da kapsar. Mirasçı, mirası kabul etmek zorunda değildir: kendi iradesiyle üç aylık süre içinde mahkemeye başvurarak mirası kayıtsız ve şartsız reddedebilir. Bunun yanında, terekenin ölüm tarihinde açıkça borca batık olduğu hallerde miras herhangi bir beyana gerek kalmaksızın kendiliğinden reddedilmiş sayılır; bu ikinci yola hükmen ret denir. Her iki yolun da usulü, süresi ve ispat yükü farklıdır; yanlış yolun seçilmesi veya sürenin kaçırılması, mirasçının mirasbırakanın borçlarından kendi malvarlığıyla sorumlu tutulmasına yol açabilir."
+      "text": "Türk hukukunda miras, mirasbırakanın ölümüyle birlikte kendiliğinden ve bir bütün olarak mirasçılara geçer; bu geçiş yalnızca malvarlığını değil, mirasbırakanın borçlarını da kapsar. Mirasçı, mirası kabul etmek zorunda değildir: kendi iradesiyle üç aylık süre içinde mahkemeye başvurarak mirası kayıtsız ve şartsız reddedebilir. Bunun yanında, terekenin ölüm tarihinde açıkça borca batık olduğu hallerde miras herhangi bir beyana gerek kalmaksızın kendiliğinden reddedilmiş sayılır; bu ikinci yola hükmen ret denir. Her iki yolun da usulü, süresi ve ispat yükü farklıdır; yanlış yolun seçilmesi veya sürenin kaçırılması, mirasçının mirasbırakanın borçlarından kendi malvarlığıyla sorumlu tutulmasına yol açabilir.",
+      "cells": [
+        "Türk hukukunda miras, mirasbırakanın ölümüyle birlikte kendiliğinden ve bir bütün olarak mirasçılara geçer; bu geçiş yalnızca malvarlığını değil, mirasbırakanın borçlarını da kapsar. Mirasçı, mirası kabul etmek zorunda değildir: kendi iradesiyle üç aylık süre içinde mahkemeye başvurarak mirası kayıtsız ve şartsız reddedebilir. Bunun yanında, terekenin ölüm tarihinde açıkça borca batık olduğu hallerde miras herhangi bir beyana gerek kalmaksızın kendiliğinden reddedilmiş sayılır; bu ikinci yola hükmen ret denir. Her iki yolun da usulü, süresi ve ispat yükü farklıdır; yanlış yolun seçilmesi veya sürenin kaçırılması, mirasçının mirasbırakanın borçlarından kendi malvarlığıyla sorumlu tutulmasına yol açabilir.",
+        "",
+        ""
+      ]
     },
     {
       "lines": [
@@ -6304,7 +6330,12 @@
       "lines": [
         "11. Sürece İlişkin Pratik Bilgiler"
       ],
-      "text": "11. Sürece İlişkin Pratik Bilgiler"
+      "text": "11. Sürece İlişkin Pratik Bilgiler",
+      "cells": [
+        "11. Sürece İlişkin Pratik Bilgiler",
+        "",
+        ""
+      ]
     },
     {
       "lines": [
@@ -6465,7 +6496,12 @@
         "kesin hukuki şartlara, sıkı bir sıraya ve hak düşürücü sürelere bağlı olduğundan, sürecin bir avukat rehberliğinde yürütülmesi hem",
         "doğru tarafın doğru miktarla dava edilmesini hem de sürenin kaçırılmamasını sağlar."
       ],
-      "text": "Türk hukukunda miras bırakan, malvarlığı üzerinde vasiyetname veya miras sözleşmesiyle dilediği gibi tasarrufta bulunma özgürlüğüne sahiptir; ancak bu özgürlük sınırsız değildir. Kanun, mirasbırakanın en yakın çevresini -altsoyunu, ana babasını ve sağ kalan eşini- saklı pay adı verilen bir güvenceyle korur ve mirasbırakanın bu paylara dokunmasını engeller. Mirasbırakan saklı payları aşacak şekilde bir kısmını üçüncü bir kişiye veya mirasçılardan birine bağışlamış ya da vasiyet etmişse, hakkı ihlal edilen saklı paylı mirasçı, mirasbırakanın ölümünden sonra tenkis davası açarak bu kazandırmanın yasal sınıra çekilmesini talep edebilir. Tenkis davası kesin hukuki şartlara, sıkı bir sıraya ve hak düşürücü sürelere bağlı olduğundan, sürecin bir avukat rehberliğinde yürütülmesi hem doğru tarafın doğru miktarla dava edilmesini hem de sürenin kaçırılmamasını sağlar."
+      "text": "Türk hukukunda miras bırakan, malvarlığı üzerinde vasiyetname veya miras sözleşmesiyle dilediği gibi tasarrufta bulunma özgürlüğüne sahiptir; ancak bu özgürlük sınırsız değildir. Kanun, mirasbırakanın en yakın çevresini -altsoyunu, ana babasını ve sağ kalan eşini- saklı pay adı verilen bir güvenceyle korur ve mirasbırakanın bu paylara dokunmasını engeller. Mirasbırakan saklı payları aşacak şekilde bir kısmını üçüncü bir kişiye veya mirasçılardan birine bağışlamış ya da vasiyet etmişse, hakkı ihlal edilen saklı paylı mirasçı, mirasbırakanın ölümünden sonra tenkis davası açarak bu kazandırmanın yasal sınıra çekilmesini talep edebilir. Tenkis davası kesin hukuki şartlara, sıkı bir sıraya ve hak düşürücü sürelere bağlı olduğundan, sürecin bir avukat rehberliğinde yürütülmesi hem doğru tarafın doğru miktarla dava edilmesini hem de sürenin kaçırılmamasını sağlar.",
+      "cells": [
+        "Türk hukukunda miras bırakan, malvarlığı üzerinde vasiyetname veya miras sözleşmesiyle dilediği gibi tasarrufta bulunma özgürlüğüne sahiptir; ancak bu özgürlük sınırsız değildir. Kanun, mirasbırakanın en yakın çevresini -altsoyunu, ana babasını ve sağ kalan eşini- saklı pay adı verilen bir güvenceyle korur ve mirasbırakanın bu paylara dokunmasını engeller. Mirasbırakan saklı payları aşacak şekilde bir kısmını üçüncü bir kişiye veya mirasçılardan birine bağışlamış ya da vasiyet etmişse, hakkı ihlal edilen saklı paylı mirasçı, mirasbırakanın ölümünden sonra tenkis davası açarak bu kazandırmanın yasal sınıra çekilmesini talep edebilir. Tenkis davası kesin hukuki şartlara, sıkı bir sıraya ve hak düşürücü sürelere bağlı olduğundan, sürecin bir avukat rehberliğinde yürütülmesi hem doğru tarafın doğru miktarla dava edilmesini hem de sürenin kaçırılmamasını sağlar.",
+        "",
+        ""
+      ]
     },
     {
       "lines": [
@@ -6611,7 +6647,14 @@
         "talep şeklinde) birlikte açılabilir: mahkeme önce muvazaa iddiasını inceler, muvazaayı kabul etmezse ikinci sırada tenkis talebini",
         "değerlendirir."
       ],
-      "text": "8. Tenkis Davası ile Muris Muvazaası Davası Arasındaki Fark Uygulamada sıkça karıştırılan bu iki dava, farklı hukuki temellere dayanır. Tenkis davasında mirasbırakanın yaptığı kazandırma hukuken geçerlidir; dava yalnızca bu geçerli kazandırmanın saklı payı aşan kısmının yasal sınıra çekilmesini amaçlar. Muris muvazaası davasında ise iddia edilen, görünürdeki işlemin (örneğin satış) aslında tarafların gerçek iradesini yansıtmadığı, mirastan mal kaçırmak amacıyla yapılan örtülü bir bağışı gizlediğidir; bu davada işlemin tamamen geçersizliğinin tespiti istenir. Uygulamada bu iki dava terditli olarak (kademeli talep şeklinde) birlikte açılabilir: mahkeme önce muvazaa iddiasını inceler, muvazaayı kabul etmezse ikinci sırada tenkis talebini değerlendirir."
+      "text": "8. Tenkis Davası ile Muris Muvazaası Davası Arasındaki Fark Uygulamada sıkça karıştırılan bu iki dava, farklı hukuki temellere dayanır. Tenkis davasında mirasbırakanın yaptığı kazandırma hukuken geçerlidir; dava yalnızca bu geçerli kazandırmanın saklı payı aşan kısmının yasal sınıra çekilmesini amaçlar. Muris muvazaası davasında ise iddia edilen, görünürdeki işlemin (örneğin satış) aslında tarafların gerçek iradesini yansıtmadığı, mirastan mal kaçırmak amacıyla yapılan örtülü bir bağışı gizlediğidir; bu davada işlemin tamamen geçersizliğinin tespiti istenir. Uygulamada bu iki dava terditli olarak (kademeli talep şeklinde) birlikte açılabilir: mahkeme önce muvazaa iddiasını inceler, muvazaayı kabul etmezse ikinci sırada tenkis talebini değerlendirir.",
+      "cells": [
+        "8. Tenkis Davası ile Muris Muvazaası Davası Arasındaki Fark Uygulamada sıkça karıştırılan bu iki dava, farklı hukuki temellere dayanır. Tenkis davasında mirasbırakanın yaptığı kazandırma hukuken geçerlidir; dava yalnızca bu geçerli kazandırmanın saklı payı aşan kısmının yasal sınıra çekilmesini amaçlar. Muris muvazaası davasında ise iddia edilen, görünürdeki işlemin (örneğin satış) aslında tarafların gerçek iradesini yansıtmadığı, mirastan mal kaçırmak amacıyla yapılan örtülü bir bağışı gizlediğidir; bu davada işlemin tamamen geçersizliğinin tespiti istenir. Uygulamada bu iki dava terditli olarak (kademeli talep şeklinde) birlikte açılabilir: mahkeme önce muvazaa iddiasını inceler, muvazaayı kabul etmezse ikinci sırada tenkis talebini değerlendirir.",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     {
       "lines": [
@@ -6678,7 +6721,12 @@
       "lines": [
         "10. Sürece İlişkin Pratik Bilgiler"
       ],
-      "text": "10. Sürece İlişkin Pratik Bilgiler"
+      "text": "10. Sürece İlişkin Pratik Bilgiler",
+      "cells": [
+        "10. Sürece İlişkin Pratik Bilgiler",
+        "",
+        ""
+      ]
     },
     {
       "lines": [
@@ -7691,7 +7739,12 @@
         "dayanabilir; saklı pay ihlali ise iptal değil, ayrı bir dava türü olan tenkis davasının konusudur. Bu ayrımın doğru yapılması, sürecin",
         "başında yanlış dava türünün açılmasını ve hak kaybını önler."
       ],
-      "text": "Vasiyetname, bir kimsenin ölümünden sonra malvarlığının nasıl paylaştırılacağını belirlediği, tek taraflı ve her zaman geri alınabilir bir ölüme bağlı tasarruftur. Kanun, vasiyetçinin gerçek iradesini güvence altına almak amacıyla resmi, el yazılı ve sözlü olmak üzere üç vasiyetname türü öngörmüş ve her biri için sıkı şekil şartları getirmiştir. Bu şartlardan birinin eksik olması vasiyetnameyi kendiliğinden geçersiz kılmaz; vasiyetname, iptal davası açılıp kesinleşmiş bir mahkeme kararı alınmadıkça hüküm doğurmaya devam eder. Vasiyetnamenin iptali davası ehliyetsizlik, irade sakatlığı, hukuka veya ahlaka aykırılık ile şekil eksikliği sebeplerine dayanabilir; saklı pay ihlali ise iptal değil, ayrı bir dava türü olan tenkis davasının konusudur. Bu ayrımın doğru yapılması, sürecin başında yanlış dava türünün açılmasını ve hak kaybını önler."
+      "text": "Vasiyetname, bir kimsenin ölümünden sonra malvarlığının nasıl paylaştırılacağını belirlediği, tek taraflı ve her zaman geri alınabilir bir ölüme bağlı tasarruftur. Kanun, vasiyetçinin gerçek iradesini güvence altına almak amacıyla resmi, el yazılı ve sözlü olmak üzere üç vasiyetname türü öngörmüş ve her biri için sıkı şekil şartları getirmiştir. Bu şartlardan birinin eksik olması vasiyetnameyi kendiliğinden geçersiz kılmaz; vasiyetname, iptal davası açılıp kesinleşmiş bir mahkeme kararı alınmadıkça hüküm doğurmaya devam eder. Vasiyetnamenin iptali davası ehliyetsizlik, irade sakatlığı, hukuka veya ahlaka aykırılık ile şekil eksikliği sebeplerine dayanabilir; saklı pay ihlali ise iptal değil, ayrı bir dava türü olan tenkis davasının konusudur. Bu ayrımın doğru yapılması, sürecin başında yanlış dava türünün açılmasını ve hak kaybını önler.",
+      "cells": [
+        "Vasiyetname, bir kimsenin ölümünden sonra malvarlığının nasıl paylaştırılacağını belirlediği, tek taraflı ve her zaman geri alınabilir bir ölüme bağlı tasarruftur. Kanun, vasiyetçinin gerçek iradesini güvence altına almak amacıyla resmi, el yazılı ve sözlü olmak üzere üç vasiyetname türü öngörmüş ve her biri için sıkı şekil şartları getirmiştir. Bu şartlardan birinin eksik olması vasiyetnameyi kendiliğinden geçersiz kılmaz; vasiyetname, iptal davası açılıp kesinleşmiş bir mahkeme kararı alınmadıkça hüküm doğurmaya devam eder. Vasiyetnamenin iptali davası ehliyetsizlik, irade sakatlığı, hukuka veya ahlaka aykırılık ile şekil eksikliği sebeplerine dayanabilir; saklı pay ihlali ise iptal değil, ayrı bir dava türü olan tenkis davasının konusudur. Bu ayrımın doğru yapılması, sürecin başında yanlış dava türünün açılmasını ve hak kaybını önler.",
+        "",
+        ""
+      ]
     },
     {
       "lines": [
@@ -7837,7 +7890,12 @@
       "lines": [
         "10. Somut Uygulama Senaryosu"
       ],
-      "text": "10. Somut Uygulama Senaryosu"
+      "text": "10. Somut Uygulama Senaryosu",
+      "cells": [
+        "10. Somut Uygulama Senaryosu",
+        "",
+        ""
+      ]
     },
     {
       "lines": [
@@ -8217,7 +8275,12 @@
       "lines": [
         "Belge Niteliği Aksi ispat edilene kadar geçerli Aksi ispat edilene kadar geçerli"
       ],
-      "text": "Belge Niteliği Aksi ispat edilene kadar geçerli Aksi ispat edilene kadar geçerli"
+      "text": "Belge Niteliği Aksi ispat edilene kadar geçerli Aksi ispat edilene kadar geçerli",
+      "cells": [
+        "Belge Niteliği Aksi ispat edilene kadar geçerli Aksi ispat edilene kadar geçerli",
+        "",
+        ""
+      ]
     },
     {
       "lines": [
@@ -8342,7 +8405,12 @@
       "lines": [
         "9. Sürece İlişkin Pratik Bilgiler"
       ],
-      "text": "9. Sürece İlişkin Pratik Bilgiler"
+      "text": "9. Sürece İlişkin Pratik Bilgiler",
+      "cells": [
+        "9. Sürece İlişkin Pratik Bilgiler",
+        "",
+        ""
+      ]
     },
     {
       "lines": [
@@ -8904,7 +8972,12 @@
         "Dava/başvuru yolu Uyuşmazlık değerine göre değişir 186.000 TL altı Tüketici Hakem Heyeti, üzeri Tüketici",
         "Mahkemesi."
       ],
-      "text": "Dava/başvuru yolu Uyuşmazlık değerine göre değişir 186.000 TL altı Tüketici Hakem Heyeti, üzeri Tüketici Mahkemesi."
+      "text": "Dava/başvuru yolu Uyuşmazlık değerine göre değişir 186.000 TL altı Tüketici Hakem Heyeti, üzeri Tüketici Mahkemesi.",
+      "cells": [
+        "Dava/başvuru yolu",
+        "Uyuşmazlık değerine göre değişir",
+        "186.000 TL altı Tüketici Hakem Heyeti, üzeri Tüketici Mahkemesi."
+      ]
     },
     {
       "lines": [
@@ -13092,7 +13165,13 @@
       "lines": [
         "İzin Türü Azami Süre Kimlere Verilir Yasal Dayanak"
       ],
-      "text": "İzin Türü Azami Süre Kimlere Verilir Yasal Dayanak"
+      "text": "İzin Türü Azami Süre Kimlere Verilir Yasal Dayanak",
+      "cells": [
+        "İzin Türü",
+        "Azami Süre",
+        "Kimlere Verilir",
+        "Yasal Dayanak"
+      ]
     },
     {
       "lines": [
@@ -13699,7 +13778,13 @@
         "Gayrimenkul Edinimi 400.000 USD veya 3 yıl (tapuya Tapu ve Kadastro Genel Müdürlüğü",
         "muadili şerh)"
       ],
-      "text": "Gayrimenkul Edinimi 400.000 USD veya 3 yıl (tapuya Tapu ve Kadastro Genel Müdürlüğü muadili şerh)"
+      "text": "Gayrimenkul Edinimi 400.000 USD veya 3 yıl (tapuya Tapu ve Kadastro Genel Müdürlüğü muadili şerh)",
+      "cells": [
+        "Gayrimenkul Edinimi",
+        "400.000 USD veya muadili",
+        "3 yıl (tapuya şerh)",
+        "Tapu ve Kadastro Genel Müdürlüğü"
+      ]
     },
     {
       "lines": [
