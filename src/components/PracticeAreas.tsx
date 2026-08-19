@@ -3,6 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { Link } from "react-router-dom";
 import { practiceAreas } from "@/data/practiceAreas";
 import { useLanguage } from "@/context/LanguageContext";
+import { paIconAnim } from "@/lib/practiceAreaIconAnim";
 
 const PracticeAreas = () => {
   const ref = useRef(null);
