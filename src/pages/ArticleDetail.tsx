@@ -119,7 +119,35 @@ const ArticleDetail = () => {
     };
   }, [toc]);
 
-  const description = (blocks.find((b) => b.text.length > 80)?.text || title).slice(0, 155);
+  // --- Auto-generated meta title & description -------------------------------
+  const clean = (s: string) =>
+    s.replace(/\s+/g, " ").replace(/\s*\|\s*/g, " - ").trim();
+
+  const truncate = (s: string, max: number) => {
+    const v = clean(s);
+    if (v.length <= max) return v;
+    const cut = v.slice(0, max);
+    const at = Math.max(cut.lastIndexOf(" "), cut.lastIndexOf(","), cut.lastIndexOf("."));
+    return `${cut.slice(0, at > max * 0.6 ? at : max).replace(/[.,;:\-\s]+$/, "")}…`;
+  };
+
+  const BRAND = "Küheylan Hukuk Bürosu";
+  const metaTitle = (() => {
+    const base = truncate(title, 60 - BRAND.length - 3);
+    return `${base} | ${BRAND}`;
+  })();
+
+  const description = (() => {
+    const body = rendered.find(
+      (b) => !isHeading(b.text) && !isSignature(b.text) && clean(b.text).length > 90
+    );
+    const source =
+      body?.text ||
+      rendered.find((b) => !isHeading(b.text) && clean(b.text).length > 40)?.text ||
+      `${title} hakkında Küheylan Hukuk Bürosu tarafından hazırlanan hukuki rehber.`;
+    return truncate(source, 155);
+  })();
+
 
   const url = `https://kuheylanhukuk.com/blog/${slug}`;
   const articleLd = {
