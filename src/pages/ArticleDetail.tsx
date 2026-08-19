@@ -1,7 +1,7 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, ArrowRight, Calendar, ChevronDown, Clock, Link2, List } from "lucide-react";
+import { ArrowLeft, ArrowRight, Calendar, ChevronDown, Clock, Link2, List, ChevronDown as TocChevronDown } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
@@ -49,6 +49,9 @@ const ArticleDetail = () => {
   const { t, language, dir } = useLanguage();
   const [progress, setProgress] = useState(0);
   const [copied, setCopied] = useState(false);
+  const [tocHasMore, setTocHasMore] = useState(false);
+  const tocListRef = useRef<HTMLUListElement>(null);
+
 
   const article = allArticles.find((a) => slugFromPdf(a.pdfUrl) === slug);
   const blocks = article ? translatedBlocks(slug, language) : [];
@@ -63,6 +66,8 @@ const ArticleDetail = () => {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, [slug]);
+
+
 
   const related = useMemo(
     () =>
@@ -79,20 +84,43 @@ const ArticleDetail = () => {
   const title = translatedTitle(slug, language, article.title);
   const displayDate = formatDate(article.date, language, t);
 
-  // First block is usually a category label; drop it if short & matches
-  const rendered = blocks.slice();
-  if (rendered[0] && rendered[0].text.length < 40 && !rendered[0].text.includes(".")) {
-    rendered.shift();
-  }
+  const rendered = useMemo(() => {
+    const r = blocks.slice();
+    if (r[0] && r[0].text.length < 40 && !r[0].text.includes(".")) {
+      r.shift();
+    }
+    return r;
+  }, [blocks]);
 
   const words = rendered.reduce((n, b) => n + b.text.split(/\s+/).length, 0);
   const readingMinutes = Math.max(1, Math.round(words / 200));
 
-  const toc = rendered
-    .map((b, i) => ({ text: b.text, id: slugifyHeading(b.text, i) }))
-    .filter((_, i) => isHeading(rendered[i].text) && !isSignature(rendered[i].text));
+  const toc = useMemo(
+    () =>
+      rendered
+        .map((b, i) => ({ text: b.text, id: slugifyHeading(b.text, i) }))
+        .filter((_, i) => isHeading(rendered[i].text) && !isSignature(rendered[i].text)),
+    [rendered]
+  );
+
+  useEffect(() => {
+    const list = tocListRef.current;
+    if (!list) return;
+    const update = () => {
+      setTocHasMore(list.scrollTop + list.clientHeight < list.scrollHeight - 4);
+    };
+    update();
+    list.addEventListener("scroll", update, { passive: true });
+    const ro = new ResizeObserver(update);
+    ro.observe(list);
+    return () => {
+      list.removeEventListener("scroll", update);
+      ro.disconnect();
+    };
+  }, [toc]);
 
   const description = (blocks.find((b) => b.text.length > 80)?.text || title).slice(0, 155);
+
   const url = `https://kuheylanhukuk.com/blog/${slug}`;
   const articleLd = {
     "@context": "https://schema.org",
@@ -163,6 +191,12 @@ const ArticleDetail = () => {
       /* noop */
     }
   };
+
+  const scrollTocDown = () => {
+    const list = tocListRef.current;
+    if (list) list.scrollBy({ top: list.clientHeight * 0.75, behavior: "smooth" });
+  };
+
 
   let paragraphIndex = 0;
 
@@ -396,18 +430,37 @@ const ArticleDetail = () => {
                         <ChevronDown className="w-3.5 h-3.5" />
                       </span>
                     </summary>
-                    <ul className="space-y-3 max-h-[55vh] overflow-y-auto px-5 pb-5 border-t border-border">
-                      {toc.map((item) => (
-                        <li key={item.id}>
-                          <a
-                            href={`#${item.id}`}
-                            className="block text-sm leading-snug text-muted-foreground hover:text-primary transition-colors"
+                    <div className="relative">
+                      <ul
+                        ref={tocListRef}
+                        className="space-y-3 max-h-[55vh] overflow-y-auto px-5 pb-5 border-t border-border"
+                      >
+                        {toc.map((item) => (
+                          <li key={item.id}>
+                            <a
+                              href={`#${item.id}`}
+                              className="block text-sm leading-snug text-muted-foreground hover:text-primary transition-colors"
+                            >
+                              {item.text}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                      {tocHasMore && (
+                        <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-16 flex items-end justify-center bg-gradient-to-t from-card via-card/80 to-transparent pb-2">
+                          <button
+                            type="button"
+                            onClick={scrollTocDown}
+                            className="pointer-events-auto inline-flex items-center rounded-full bg-primary text-white p-1.5 shadow-md hover:bg-primary/90 transition-colors"
+                            aria-label="Daha fazla başlık"
+                            title="Daha fazla başlık"
                           >
-                            {item.text}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
+                            <TocChevronDown className="w-4 h-4" />
+                          </button>
+                        </div>
+                      )}
+                    </div>
+
                   </details>
                 </nav>
               </aside>
