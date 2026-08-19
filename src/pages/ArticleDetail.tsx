@@ -339,7 +339,8 @@ const ArticleDetail = () => {
                   let headingNo = 0;
                   while (i < rendered.length) {
                     const b = rendered[i];
-                    if (isHeading(b.text) && !isSignature(b.text)) {
+                    const isTableRow = (x?: { cells?: string[] }) => !!x?.cells && x.cells.length > 1;
+                    if (isHeading(b.text) && !isSignature(b.text) && !isTableRow(b)) {
                       headingNo += 1;
                       nodes.push(
                       <motion.h2
