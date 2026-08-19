@@ -30,8 +30,10 @@ function slugFromPdf(pdfUrl?: string) {
 const News = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const [showAll, setShowAll] = useState(false);
-  const displayed = showAll ? allArticles : allArticles.slice(0, 6);
+  const sortedArticles = [...allArticles].sort(
+    (a, b) => parseTrDate(b.date) - parseTrDate(a.date)
+  );
+  const displayed = showAll ? sortedArticles : sortedArticles.slice(0, 6);
   const { t } = useLanguage();
 
   return (
