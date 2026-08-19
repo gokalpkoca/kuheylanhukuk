@@ -231,10 +231,12 @@ const ArticleDetail = () => {
   return (
     <div className="min-h-screen bg-background" dir={dir}>
       <SEO
-        title={`${title} | Küheylan Hukuk Bürosu`}
+        title={metaTitle}
         description={description}
         path={`/blog/${slug}`}
         type="article"
+        publishedTime={article.date}
+        locale={language.toLowerCase() === "tr" ? "tr_TR" : language.toLowerCase()}
         jsonLd={structuredData}
       />
 
