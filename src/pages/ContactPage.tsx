@@ -35,6 +35,8 @@ const ContactPage = () => {
     { name: "Yandex Haritalar", url: `https://yandex.com/maps/?text=${encodeURIComponent(ADDRESS)}` },
   ];
 
+  const bot = useBotProtection();
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const result = contactSchema.safeParse(formData);
@@ -46,6 +48,7 @@ const ContactPage = () => {
       setErrors(fieldErrors);
       return;
     }
+    if (!bot.verify()) return;
     setErrors({});
     const validated = result.data;
     const mailtoLink = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(validated.subject)}&body=${encodeURIComponent(
