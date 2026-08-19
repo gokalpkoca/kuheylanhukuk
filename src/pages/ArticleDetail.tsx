@@ -99,18 +99,25 @@ const ArticleDetail = () => {
   const title = translatedTitle(slug, language, article.title);
   const displayDate = formatDate(article.date, language, t);
 
-  // First block is usually a category label; drop it if short & matches
-  const rendered = blocks.slice();
-  if (rendered[0] && rendered[0].text.length < 40 && !rendered[0].text.includes(".")) {
-    rendered.shift();
-  }
+  const rendered = useMemo(() => {
+    const r = blocks.slice();
+    if (r[0] && r[0].text.length < 40 && !r[0].text.includes(".")) {
+      r.shift();
+    }
+    return r;
+  }, [blocks]);
 
   const words = rendered.reduce((n, b) => n + b.text.split(/\s+/).length, 0);
   const readingMinutes = Math.max(1, Math.round(words / 200));
 
-  const toc = rendered
-    .map((b, i) => ({ text: b.text, id: slugifyHeading(b.text, i) }))
-    .filter((_, i) => isHeading(rendered[i].text) && !isSignature(rendered[i].text));
+  const toc = useMemo(
+    () =>
+      rendered
+        .map((b, i) => ({ text: b.text, id: slugifyHeading(b.text, i) }))
+        .filter((_, i) => isHeading(rendered[i].text) && !isSignature(rendered[i].text)),
+    [rendered]
+  );
+
 
   const description = (blocks.find((b) => b.text.length > 80)?.text || title).slice(0, 155);
   const url = `https://kuheylanhukuk.com/blog/${slug}`;
