@@ -561,11 +561,20 @@ const CareersPage = () => {
       {/* Internship Intro */}
       <section className="py-16 lg:py-20 bg-muted/40">
         <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
-          <motion.p
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
+            className="font-serif text-2xl md:text-3xl text-foreground font-bold text-center mb-8"
+          >
+            {t("intern.title")}
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
             className="text-muted-foreground leading-relaxed text-justify"
           >
             {t("intern.intro")}
