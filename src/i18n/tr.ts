@@ -30,7 +30,7 @@ const tr: Record<string, string> = {
   "process.principle5.title": "Gizlilik ve Mesleki Sır",
   "process.principle5.desc": "Paylaştığınız tüm bilgi ve belgeler avukatlık mesleğinin sır saklama yükümlülüğü kapsamında korunur.",
   "process.cta": "Ön Görüşme Talep Edin",
-  "nav.staj": "Staj Programları",
+  "nav.staj": "Staj",
   "career.submitting": "Gönderiliyor...",
   "career.cv_error_type": "Yalnızca PDF, DOC veya DOCX dosyası yükleyebilirsiniz.",
   "career.cv_error_size": "Dosya boyutu en fazla 5 MB olabilir.",

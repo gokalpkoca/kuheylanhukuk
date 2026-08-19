@@ -30,7 +30,7 @@ const en: Record<string, string> = {
   "process.principle5.title": "Confidentiality and Professional Secrecy",
   "process.principle5.desc": "All information and documents you share are protected by the attorney's duty of professional secrecy.",
   "process.cta": "Request a Preliminary Meeting",
-  "nav.staj": "Internship Programs",
+  "nav.staj": "Internships",
   "career.submitting": "Sending...",
   "career.cv_error_type": "Only PDF, DOC or DOCX files can be uploaded.",
   "career.cv_error_size": "File size may not exceed 5 MB.",

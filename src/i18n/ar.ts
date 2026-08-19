@@ -30,7 +30,7 @@ const ar: Record<string, string> = {
   "process.principle5.title": "السرية وسر المهنة",
   "process.principle5.desc": "جميع المعلومات والمستندات التي تشاركونها محمية بواجب سر المهنة للمحامي.",
   "process.cta": "اطلب لقاءً تمهيديًا",
-  "nav.staj": "برامج التدريب",
+  "nav.staj": "التدريب",
   "career.submitting": "جارٍ الإرسال...",
   "career.cv_error_type": "يمكن تحميل ملفات PDF أو DOC أو DOCX فقط.",
   "career.cv_error_size": "لا يجوز أن يتجاوز حجم الملف 5 ميغابايت.",

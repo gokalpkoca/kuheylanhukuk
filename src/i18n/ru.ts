@@ -30,7 +30,7 @@ const ru: Record<string, string> = {
   "process.principle5.title": "Конфиденциальность и профессиональная тайна",
   "process.principle5.desc": "Вся переданная вами информация и документы защищены адвокатской тайной.",
   "process.cta": "Запросить предварительную встречу",
-  "nav.staj": "Программы стажировок",
+  "nav.staj": "Стажировки",
   "career.submitting": "Отправка...",
   "career.cv_error_type": "Можно загрузить только файлы PDF, DOC или DOCX.",
   "career.cv_error_size": "Размер файла не должен превышать 5 МБ.",
