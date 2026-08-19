@@ -50,7 +50,9 @@ const ArticleDetail = () => {
   const [progress, setProgress] = useState(0);
   const [copied, setCopied] = useState(false);
   const [tocHasMore, setTocHasMore] = useState(false);
+  const [tocOpen, setTocOpen] = useState(false);
   const tocListRef = useRef<HTMLUListElement>(null);
+
 
 
   const article = allArticles.find((a) => slugFromPdf(a.pdfUrl) === slug);
@@ -66,6 +68,14 @@ const ArticleDetail = () => {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, [slug]);
+
+  useEffect(() => {
+    const onResize = () => setTocOpen(window.innerWidth >= 1024);
+    onResize();
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
+
 
 
 
@@ -475,7 +485,7 @@ const ArticleDetail = () => {
             {toc.length > 1 && (
               <aside className="order-first lg:order-last min-w-0">
                 <nav className="lg:sticky lg:top-28 border border-border rounded-lg bg-card/50 backdrop-blur-sm overflow-hidden">
-                  <details className="group" open>
+                  <details className="group" open={tocOpen} onToggle={(e) => setTocOpen(e.currentTarget.open)}>
                     <summary className="flex cursor-pointer list-none items-center justify-between px-5 py-4 hover:bg-secondary/50 transition-colors">
                       <span className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
                         <List className="w-3.5 h-3.5 text-primary" />
