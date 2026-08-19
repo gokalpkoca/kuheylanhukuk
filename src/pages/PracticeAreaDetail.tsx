@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, ArrowRight, Calendar } from "lucide-react";
+import { useMemo, useState } from "react";
+import { ArrowLeft, ArrowRight, Calendar, Search, X } from "lucide-react";
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -9,13 +10,40 @@ import { allArticles } from "@/data/articles";
 import { translatedTitle, formatDate } from "@/lib/articleI18n";
 import { useLanguage } from "@/context/LanguageContext";
 
+const slugFromPdf = (pdfUrl?: string) =>
+  pdfUrl ? (pdfUrl.split("/").pop() || "").replace(/\.pdf$/i, "") : "";
+
+const normalize = (v: string) =>
+  v.toLocaleLowerCase("tr").replace(/\s+/g, " ").trim();
+
 const PracticeAreaDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const { t, language } = useLanguage();
+  const [query, setQuery] = useState("");
   const area = practiceAreas.find((a) => a.slug === slug);
   const currentIndex = practiceAreas.findIndex((a) => a.slug === slug);
   const prev = currentIndex > 0 ? practiceAreas[currentIndex - 1] : null;
   const next = currentIndex < practiceAreas.length - 1 ? practiceAreas[currentIndex + 1] : null;
+
+  const areaArticles = useMemo(
+    () =>
+      allArticles
+        .filter((a) => a.category === slug)
+        .map((a) => {
+          const aSlug = slugFromPdf(a.pdfUrl);
+          return { ...a, aSlug, displayTitle: translatedTitle(aSlug, language, a.title) };
+        }),
+    [slug, language]
+  );
+
+  const filteredArticles = useMemo(() => {
+    const q = normalize(query);
+    if (!q) return areaArticles;
+    return areaArticles.filter(
+      (a) => normalize(a.displayTitle).includes(q) || normalize(a.aSlug.replace(/-/g, " ")).includes(q)
+    );
+  }, [areaArticles, query]);
+
 
   if (!area) {
     return (
@@ -33,9 +61,7 @@ const PracticeAreaDetail = () => {
   }
 
   const Icon = area.icon;
-  const slugFromPdf = (pdfUrl?: string) =>
-    pdfUrl ? (pdfUrl.split("/").pop() || "").replace(/\.pdf$/i, "") : "";
-  const relatedArticles = allArticles.filter((a) => a.category === area.slug);
+  const relatedArticles = filteredArticles;
 
   return (
     <div className="min-h-screen bg-background">
@@ -91,13 +117,41 @@ const PracticeAreaDetail = () => {
                 {t("practice.related_desc")}
               </p>
 
+              {areaArticles.length > 0 && (
+                <div className="relative mb-6 max-w-md">
+                  <label htmlFor="area-article-search" className="sr-only">
+                    {t("practice.search_placeholder")}
+                  </label>
+                  <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+                  <input
+                    id="area-article-search"
+                    type="search"
+                    value={query}
+                    onChange={(e) => setQuery(e.target.value)}
+                    placeholder={t("practice.search_placeholder")}
+                    className="w-full rounded-full border border-border bg-card py-2.5 pl-10 pr-10 text-sm text-foreground placeholder:text-muted-foreground outline-none transition-colors focus:border-primary"
+                  />
+                  {query && (
+                    <button
+                      type="button"
+                      onClick={() => setQuery("")}
+                      aria-label={t("practice.search_placeholder")}
+                      className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground transition-colors hover:text-primary"
+                    >
+                      <X className="h-4 w-4" />
+                    </button>
+                  )}
+                </div>
+              )}
+
               {relatedArticles.length ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {relatedArticles.map((a, i) => {
-                    const aSlug = slugFromPdf(a.pdfUrl);
+                    const aSlug = a.aSlug;
                     return (
                       <motion.div
                         key={aSlug}
+
                         initial={{ opacity: 0, y: 14 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-60px" }}
@@ -128,7 +182,7 @@ const PracticeAreaDetail = () => {
                 </div>
               ) : (
                 <p className="rounded-lg border border-dashed border-border bg-card/50 p-6 text-sm text-muted-foreground">
-                  {t("practice.related_none")}
+                  {query ? t("practice.search_none") : t("practice.related_none")}
                 </p>
               )}
             </section>
