@@ -9,6 +9,7 @@ import { practiceAreas } from "@/data/practiceAreas";
 import { allArticles } from "@/data/articles";
 import { translatedTitle, formatDate } from "@/lib/articleI18n";
 import { useLanguage } from "@/context/LanguageContext";
+import { paIconAnim } from "@/lib/practiceAreaIconAnim";
 
 const slugFromPdf = (pdfUrl?: string) =>
   pdfUrl ? (pdfUrl.split("/").pop() || "").replace(/\.pdf$/i, "") : "";
@@ -88,7 +89,7 @@ const PracticeAreaDetail = () => {
 
             <div className="flex items-center gap-4 mb-8">
               <div className="w-16 h-16 rounded bg-primary/10 flex items-center justify-center">
-                <Icon className="w-8 h-8 text-primary" />
+                <Icon className={`w-8 h-8 text-primary pa-play ${paIconAnim(area.slug)}`} />
               </div>
               <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground font-bold">
                 {t(`pa.${area.slug}`)}
@@ -207,7 +208,7 @@ const PracticeAreaDetail = () => {
                         className="group flex items-center gap-3 rounded-lg border border-border bg-card px-4 py-3 transition-all duration-300 hover:-translate-y-0.5 hover:border-primary hover:shadow-md hover:shadow-primary/10"
                       >
                         <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded bg-primary/10 transition-colors group-hover:bg-primary/20">
-                          <AIcon className="h-4 w-4 text-primary" />
+                          <AIcon className={`h-4 w-4 text-primary ${paIconAnim(a.slug)}`} />
                         </span>
                         <span className="font-serif text-sm text-foreground font-medium leading-snug transition-colors group-hover:text-primary">
                           {t(`pa.${a.slug}`)}

@@ -353,3 +353,105 @@ html {
     transition: none !important;
   }
 }
+
+/* ---- Practice area icon micro-animations ---- */
+.pa-icon {
+  transform-origin: center;
+  will-change: transform;
+}
+@keyframes pa-swing {
+  0%, 100% { transform: rotate(0deg); }
+  20% { transform: rotate(-9deg); }
+  45% { transform: rotate(7deg); }
+  70% { transform: rotate(-4deg); }
+  88% { transform: rotate(2deg); }
+}
+@keyframes pa-strike {
+  0%, 100% { transform: rotate(0deg) translateY(0); }
+  30% { transform: rotate(-22deg) translateY(-2px); }
+  55% { transform: rotate(8deg) translateY(1px); }
+  75% { transform: rotate(-5deg); }
+}
+@keyframes pa-flip {
+  0%, 100% { transform: perspective(300px) rotateY(0deg); }
+  50% { transform: perspective(300px) rotateY(-32deg) scale(1.04); }
+}
+@keyframes pa-pillars {
+  0%, 100% { transform: translateY(0) scaleY(1); }
+  35% { transform: translateY(-3px) scaleY(1.06); }
+  70% { transform: translateY(1px) scaleY(0.98); }
+}
+@keyframes pa-doorway {
+  0%, 100% { transform: translateY(0) scale(1); }
+  40% { transform: translateY(-4px) scale(1.05); }
+  70% { transform: translateY(0) scale(0.99); }
+}
+@keyframes pa-drop {
+  0% { transform: translateY(-6px) rotate(-6deg); }
+  55% { transform: translateY(2px) rotate(3deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+@keyframes pa-page {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  35% { transform: translateX(2px) rotate(6deg); }
+  70% { transform: translateX(-1px) rotate(-3deg); }
+}
+@keyframes pa-guard {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 0 hsl(var(--primary) / 0)); }
+  45% { transform: scale(1.12); filter: drop-shadow(0 0 6px hsl(var(--primary) / 0.45)); }
+}
+@keyframes pa-tap {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  30% { transform: translateY(-4px) rotate(-8deg); }
+  60% { transform: translateY(0) rotate(4deg); }
+}
+@keyframes pa-shine {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  25% { transform: rotate(-8deg) scale(1.08); }
+  55% { transform: rotate(8deg) scale(1.08); }
+  80% { transform: rotate(-3deg) scale(1.02); }
+}
+@keyframes pa-lift {
+  0%, 100% { transform: translateY(0) scale(1); }
+  40% { transform: translateY(-6px) scale(1.08); }
+  70% { transform: translateY(-1px) scale(1.02); }
+}
+@keyframes pa-unfurl {
+  0%, 100% { transform: scaleX(1) rotate(0deg); }
+  45% { transform: scaleX(1.12) rotate(-4deg); }
+  75% { transform: scaleX(0.98) rotate(2deg); }
+}
+@keyframes pa-case {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  30% { transform: translateY(-3px) rotate(-4deg); }
+  60% { transform: translateY(-1px) rotate(4deg); }
+}
+@keyframes pa-glide {
+  0%, 100% { transform: translateX(0); }
+  30% { transform: translateX(-4px); }
+  65% { transform: translateX(4px); }
+}
+@keyframes pa-roll {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.group:hover .pa-anim-swing,   .pa-anim-swing.pa-play   { animation: pa-swing 0.95s ease-in-out; }
+.group:hover .pa-anim-strike,  .pa-anim-strike.pa-play  { animation: pa-strike 0.8s ease-in-out; }
+.group:hover .pa-anim-flip,    .pa-anim-flip.pa-play    { animation: pa-flip 0.8s ease-in-out; }
+.group:hover .pa-anim-pillars, .pa-anim-pillars.pa-play { animation: pa-pillars 0.85s ease-in-out; }
+.group:hover .pa-anim-doorway, .pa-anim-doorway.pa-play { animation: pa-doorway 0.8s ease-in-out; }
+.group:hover .pa-anim-drop,    .pa-anim-drop.pa-play    { animation: pa-drop 0.7s ease-out; }
+.group:hover .pa-anim-page,    .pa-anim-page.pa-play    { animation: pa-page 0.8s ease-in-out; }
+.group:hover .pa-anim-guard,   .pa-anim-guard.pa-play   { animation: pa-guard 0.9s ease-in-out; }
+.group:hover .pa-anim-tap,     .pa-anim-tap.pa-play     { animation: pa-tap 0.8s ease-in-out; }
+.group:hover .pa-anim-shine,   .pa-anim-shine.pa-play   { animation: pa-shine 0.9s ease-in-out; }
+.group:hover .pa-anim-lift,    .pa-anim-lift.pa-play    { animation: pa-lift 0.8s ease-in-out; }
+.group:hover .pa-anim-unfurl,  .pa-anim-unfurl.pa-play  { animation: pa-unfurl 0.85s ease-in-out; }
+.group:hover .pa-anim-case,    .pa-anim-case.pa-play    { animation: pa-case 0.8s ease-in-out; }
+.group:hover .pa-anim-glide,   .pa-anim-glide.pa-play   { animation: pa-glide 0.8s ease-in-out; }
+.group:hover .pa-anim-roll,    .pa-anim-roll.pa-play    { animation: pa-roll 1.6s ease-in-out; }
+
+@media (prefers-reduced-motion: reduce) {
+  [class*="pa-anim-"] { animation: none !important; }
+}
