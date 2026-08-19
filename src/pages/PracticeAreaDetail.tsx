@@ -153,7 +153,7 @@ const PracticeAreaDetail = () => {
                         className="group flex items-center gap-3 rounded-lg border border-border bg-card px-4 py-3 transition-all duration-300 hover:-translate-y-0.5 hover:border-primary hover:shadow-md hover:shadow-primary/10"
                       >
                         <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded bg-primary/10 transition-colors group-hover:bg-primary/20">
-                          <AIcon className="h-4.5 w-4.5 text-primary" />
+                          <AIcon className="h-4 w-4 text-primary" />
                         </span>
                         <span className="font-serif text-sm text-foreground font-medium leading-snug transition-colors group-hover:text-primary">
                           {t(`pa.${a.slug}`)}
