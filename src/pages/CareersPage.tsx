@@ -380,7 +380,7 @@ const CareersPage = () => {
                 {t("career.form_title")}
               </h2>
 
-              <form onSubmit={handleCareerSubmit} className="space-y-6">
+              <form onSubmit={handleCareerSubmit} className="space-y-6 font-['Roboto']">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
@@ -435,7 +435,7 @@ const CareersPage = () => {
                       name="position"
                       value={careerForm.position}
                       onChange={handleCareerChange}
-                      className="w-full h-12 rounded-md bg-background/50 border border-border/80 px-3 text-sm text-foreground focus:border-primary/50 focus:outline-none focus:ring-1 focus:ring-primary/20 transition-all duration-300"
+                      className="w-full h-12 rounded-md bg-background/50 border border-border/80 px-3 text-sm font-['Roboto'] text-foreground focus:border-primary/50 focus:outline-none focus:ring-1 focus:ring-primary/20 transition-all duration-300"
                     >
                       <option value="">{t("career.general_application")}</option>
                       {positions.map((p) => (
@@ -459,7 +459,7 @@ const CareersPage = () => {
                     rows={6}
                     maxLength={2000}
                     required
-                    className="bg-background/50 border-border/80 text-sm focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all duration-300 resize-none"
+                    className="bg-background/50 border-border/80 text-sm font-['Roboto'] focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all duration-300 resize-none"
                   />
                   {careerErrors.message && <p className="text-destructive text-xs mt-1">{careerErrors.message}</p>}
                 </div>
@@ -480,12 +480,12 @@ const CareersPage = () => {
                     />
                     <label
                       htmlFor="career-cv-upload"
-                      className="inline-flex items-center gap-2 h-12 px-5 rounded-md border border-border/80 bg-background/50 text-sm text-foreground cursor-pointer hover:border-primary/50 hover:text-primary transition-colors"
+                      className="inline-flex items-center gap-2 h-12 px-5 rounded-md border border-border/80 bg-background/50 text-sm font-['Roboto'] text-foreground cursor-pointer hover:border-primary/50 hover:text-primary transition-colors"
                     >
                       <Paperclip className="w-4 h-4" />
                       {t("career.cv_button")}
                     </label>
-                    <span className="text-xs text-muted-foreground">
+                    <span className="text-xs font-['Roboto'] text-muted-foreground">
                       {careerCvFile ? careerCvFile.name : t("career.cv_hint")}
                     </span>
                   </div>
