@@ -43,6 +43,8 @@ const tr: Record<string, string> = {
   "practice.view_all": "Tüm Faaliyet Alanları",
   "practice.related": "İlgili Makaleler",
   "practice.related_none": "Bu alanda henüz makale bulunmuyor.",
+  "practice.search_placeholder": "Bu alandaki makalelerde ara...",
+  "practice.search_none": "Aramanızla eşleşen makale bulunamadı.",
 
   "practice.related_desc": "Bu alanda hazırladığımız güncel hukuki değerlendirmeler ve rehberler.",
   "practice.read_more": "Yazıyı oku",

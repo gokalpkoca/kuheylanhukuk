@@ -43,6 +43,8 @@ const ar: Record<string, string> = {
   "practice.view_all": "جميع مجالات الممارسة",
   "practice.related": "مقالات ذات صلة",
   "practice.related_none": "لا توجد مقالات في هذا المجال بعد.",
+  "practice.search_placeholder": "ابحث في مقالات هذا المجال...",
+  "practice.search_none": "لا توجد مقالات مطابقة لبحثك.",
 
   "practice.related_desc": "أحدث التحليلات والأدلة القانونية التي أعددناها في هذا المجال.",
   "practice.read_more": "اقرأ المقال",

@@ -43,6 +43,8 @@ const en: Record<string, string> = {
   "practice.view_all": "All Practice Areas",
   "practice.related": "Related Articles",
   "practice.related_none": "No articles in this area yet.",
+  "practice.search_placeholder": "Search articles in this area...",
+  "practice.search_none": "No articles match your search.",
 
   "practice.related_desc": "Recent legal commentary and guides we have prepared in this field.",
   "practice.read_more": "Read article",
