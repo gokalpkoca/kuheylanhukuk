@@ -166,7 +166,13 @@
         "Kaçak eşyayı ticari amaçla satmak, taşımak,          m.3/10    1-3 yıl hapis            Değerin iki katı ödenirse indirim hakkı",
         "saklamak                                                                                doğar"
       ],
-      "text": "Kaçak eşyayı ticari amaçla satmak, taşımak, m.3/10 1-3 yıl hapis Değerin iki katı ödenirse indirim hakkı saklamak doğar"
+      "text": "Kaçak eşyayı ticari amaçla satmak, taşımak, m.3/10 1-3 yıl hapis Değerin iki katı ödenirse indirim hakkı saklamak doğar",
+      "cells": [
+        "Kaçak eşyayı ticari amaçla satmak, taşımak, saklamak",
+        "m.3/10",
+        "1-3 yıl hapis",
+        "Değerin iki katı ödenirse indirim hakkı doğar"
+      ]
     },
     {
       "lines": [
@@ -216,7 +222,11 @@
       "lines": [
         "Aşama                          Detay"
       ],
-      "text": "Aşama Detay"
+      "text": "Aşama Detay",
+      "cells": [
+        "Aşama",
+        "Detay"
+      ]
     },
     {
       "lines": [
@@ -234,7 +244,11 @@
         "2a. Etkin Pişmanlık Yolu       Gümrüklenmiş değerin iki katı ödenir; soruşturmada %50 ceza indirimi sağlanır, adli sicil riski",
         "azalır."
       ],
-      "text": "2a. Etkin Pişmanlık Yolu Gümrüklenmiş değerin iki katı ödenir; soruşturmada %50 ceza indirimi sağlanır, adli sicil riski azalır."
+      "text": "2a. Etkin Pişmanlık Yolu Gümrüklenmiş değerin iki katı ödenir; soruşturmada %50 ceza indirimi sağlanır, adli sicil riski azalır.",
+      "cells": [
+        "2a. Etkin Pişmanlık Yolu",
+        "Gümrüklenmiş değerin iki katı ödenir; soruşturmada %50 ceza indirimi sağlanır, adli sicil riski azalır."
+      ]
     },
     {
       "lines": [
@@ -472,7 +486,11 @@
         "Nafaka                İştirak ve yoksulluk nafakasının somut rakamla, ödeme tarihi ve IBAN bilgisiyle, yıllık artış oranı",
         "Hükümleri             (ÜFE/TÜFE) belirtilerek yazılması."
       ],
-      "text": "Nafaka İştirak ve yoksulluk nafakasının somut rakamla, ödeme tarihi ve IBAN bilgisiyle, yıllık artış oranı Hükümleri (ÜFE/TÜFE) belirtilerek yazılması."
+      "text": "Nafaka İştirak ve yoksulluk nafakasının somut rakamla, ödeme tarihi ve IBAN bilgisiyle, yıllık artış oranı Hükümleri (ÜFE/TÜFE) belirtilerek yazılması.",
+      "cells": [
+        "Nafaka Hükümleri",
+        "İştirak ve yoksulluk nafakasının somut rakamla, ödeme tarihi ve IBAN bilgisiyle, yıllık artış oranı (ÜFE/TÜFE) belirtilerek yazılması."
+      ]
     },
     {
       "lines": [
@@ -491,7 +509,11 @@
         "Mal Paylaşımı ve      Ev, araç, nakit ve şirket hisselerinin kimde kalacağının tapu veya hesap numarasıyla tek tek listelenmesi.",
         "Ziynet"
       ],
-      "text": "Mal Paylaşımı ve Ev, araç, nakit ve şirket hisselerinin kimde kalacağının tapu veya hesap numarasıyla tek tek listelenmesi. Ziynet"
+      "text": "Mal Paylaşımı ve Ev, araç, nakit ve şirket hisselerinin kimde kalacağının tapu veya hesap numarasıyla tek tek listelenmesi. Ziynet",
+      "cells": [
+        "Mal Paylaşımı ve Ziynet",
+        "Ev, araç, nakit ve şirket hisselerinin kimde kalacağının tapu veya hesap numarasıyla tek tek listelenmesi."
+      ]
     },
     {
       "lines": [
@@ -547,7 +569,12 @@
         "İmzası           tarafın mutabık kaldığı protokol metni             tarafından ıslak imzalanmalıdır; imza eksikliği duruşmanın",
         "ertelenmesine yol açar."
       ],
-      "text": "2. Protokol En az 3 nüsha halinde hazırlanan, her iki Protokolün ve dava dilekçesinin her sayfası her iki eş İmzası tarafın mutabık kaldığı protokol metni tarafından ıslak imzalanmalıdır; imza eksikliği duruşmanın ertelenmesine yol açar."
+      "text": "2. Protokol En az 3 nüsha halinde hazırlanan, her iki Protokolün ve dava dilekçesinin her sayfası her iki eş İmzası tarafın mutabık kaldığı protokol metni tarafından ıslak imzalanmalıdır; imza eksikliği duruşmanın ertelenmesine yol açar.",
+      "cells": [
+        "2. Protokol İmzası",
+        "En az 3 nüsha halinde hazırlanan, her iki tarafın mutabık kaldığı protokol metni",
+        "Protokolün ve dava dilekçesinin her sayfası her iki eş tarafından ıslak imzalanmalıdır; imza eksikliği duruşmanın ertelenmesine yol açar."
+      ]
     },
     {
       "lines": [
@@ -849,7 +876,13 @@
         "MASAK Blokesi      5549 s.K. m.19/A   Kanunen 7 iş günü                  MASAK Başkanlığı'na itiraz; idari işlemse İdare",
         "(uygulamada 15-60 gün)             Mahkemesi'nde iptal davası"
       ],
-      "text": "MASAK Blokesi 5549 s.K. m.19/A Kanunen 7 iş günü MASAK Başkanlığı'na itiraz; idari işlemse İdare (uygulamada 15-60 gün) Mahkemesi'nde iptal davası"
+      "text": "MASAK Blokesi 5549 s.K. m.19/A Kanunen 7 iş günü MASAK Başkanlığı'na itiraz; idari işlemse İdare (uygulamada 15-60 gün) Mahkemesi'nde iptal davası",
+      "cells": [
+        "MASAK Blokesi",
+        "5549 s.K. m.19/A",
+        "Kanunen 7 iş günü (uygulamada 15-60 gün)",
+        "MASAK Başkanlığı'na itiraz; idari işlemse İdare Mahkemesi'nde iptal davası"
+      ]
     },
     {
       "lines": [
@@ -1190,7 +1223,12 @@
         "Yetkili         davalının yerleşim yeri aile mahkemesi                 mahkemesi, aile mahkemesi sıfatıyla bakar.",
         "Mahkeme"
       ],
-      "text": "Görevli ve Eşlerin son altı aydır birlikte oturdukları yer veya Aile mahkemesi bulunmayan yerlerde asliye hukuk Yetkili davalının yerleşim yeri aile mahkemesi mahkemesi, aile mahkemesi sıfatıyla bakar. Mahkeme"
+      "text": "Görevli ve Eşlerin son altı aydır birlikte oturdukları yer veya Aile mahkemesi bulunmayan yerlerde asliye hukuk Yetkili davalının yerleşim yeri aile mahkemesi mahkemesi, aile mahkemesi sıfatıyla bakar. Mahkeme",
+      "cells": [
+        "Görevli ve Yetkili Mahkeme",
+        "Eşlerin son altı aydır birlikte oturdukları yer veya davalının yerleşim yeri aile mahkemesi",
+        "Aile mahkemesi bulunmayan yerlerde asliye hukuk mahkemesi, aile mahkemesi sıfatıyla bakar."
+      ]
     },
     {
       "lines": [
@@ -1517,7 +1555,11 @@
         "2. Ön        Hakim, dava şartlarını ve ilk itirazları karara bağlar, uyuşmazlık konularını tutanağa geçirir. Taraflara delillerini",
         "İnceleme     sunmaları için 2 haftalık kesin süre verilir."
       ],
-      "text": "2. Ön Hakim, dava şartlarını ve ilk itirazları karara bağlar, uyuşmazlık konularını tutanağa geçirir. Taraflara delillerini İnceleme sunmaları için 2 haftalık kesin süre verilir."
+      "text": "2. Ön Hakim, dava şartlarını ve ilk itirazları karara bağlar, uyuşmazlık konularını tutanağa geçirir. Taraflara delillerini İnceleme sunmaları için 2 haftalık kesin süre verilir.",
+      "cells": [
+        "2. Ön İnceleme",
+        "Hakim, dava şartlarını ve ilk itirazları karara bağlar, uyuşmazlık konularını tutanağa geçirir. Taraflara delillerini sunmaları için 2 haftalık kesin süre verilir."
+      ]
     },
     {
       "lines": [
@@ -1535,7 +1577,11 @@
         "4. Sözlü     Tahkikat tamamlandıktan sonra taraflara esasa ilişkin son beyanları sorulur; avukatlar dosyadaki delilleri özetler.",
         "Yargılama"
       ],
-      "text": "4. Sözlü Tahkikat tamamlandıktan sonra taraflara esasa ilişkin son beyanları sorulur; avukatlar dosyadaki delilleri özetler. Yargılama"
+      "text": "4. Sözlü Tahkikat tamamlandıktan sonra taraflara esasa ilişkin son beyanları sorulur; avukatlar dosyadaki delilleri özetler. Yargılama",
+      "cells": [
+        "4. Sözlü Yargılama",
+        "Tahkikat tamamlandıktan sonra taraflara esasa ilişkin son beyanları sorulur; avukatlar dosyadaki delilleri özetler."
+      ]
     },
     {
       "lines": [
@@ -1909,7 +1955,13 @@
         "İnternet       Yayından itibaren 2 ay, içerik    Başvurudan sonra 24 saat, en az 1 hafta   Sürenin bitiminden",
         "medyası        sağlayıcıya başvuru               yayında kalmalı                           itibaren 15 gün"
       ],
-      "text": "İnternet Yayından itibaren 2 ay, içerik Başvurudan sonra 24 saat, en az 1 hafta Sürenin bitiminden medyası sağlayıcıya başvuru yayında kalmalı itibaren 15 gün"
+      "text": "İnternet Yayından itibaren 2 ay, içerik Başvurudan sonra 24 saat, en az 1 hafta Sürenin bitiminden medyası sağlayıcıya başvuru yayında kalmalı itibaren 15 gün",
+      "cells": [
+        "İnternet medyası",
+        "Yayından itibaren 2 ay, içerik sağlayıcıya başvuru",
+        "Başvurudan sonra 24 saat, en az 1 hafta yayında kalmalı",
+        "Sürenin bitiminden itibaren 15 gün"
+      ]
     },
     {
       "lines": [
@@ -2164,7 +2216,13 @@
         "Külçe/has altın veya    Gizli bölmede veya vücuda   5607 Sayılı Kanun        Kaçakçılık suçu. 1-5 yıl hapis, eşyanın",
         "sınır üstü ziynet       sarılı (Yeşil Hat)          m.3/1                    müsaderesi."
       ],
-      "text": "Külçe/has altın veya Gizli bölmede veya vücuda 5607 Sayılı Kanun Kaçakçılık suçu. 1-5 yıl hapis, eşyanın sınır üstü ziynet sarılı (Yeşil Hat) m.3/1 müsaderesi."
+      "text": "Külçe/has altın veya Gizli bölmede veya vücuda 5607 Sayılı Kanun Kaçakçılık suçu. 1-5 yıl hapis, eşyanın sınır üstü ziynet sarılı (Yeşil Hat) m.3/1 müsaderesi.",
+      "cells": [
+        "Külçe/has altın veya sınır üstü ziynet",
+        "Gizli bölmede veya vücuda sarılı (Yeşil Hat)",
+        "5607 Sayılı Kanun m.3/1",
+        "Kaçakçılık suçu. 1-5 yıl hapis, eşyanın müsaderesi."
+      ]
     },
     {
       "lines": [
@@ -2405,7 +2463,13 @@
         "2. İdarenin       Gümrük Bölge           Başvurudan itibaren 30     Cevap verilmezse zımni ret oluşur.",
         "Cevabı            Müdürlüğü              gün"
       ],
-      "text": "2. İdarenin Gümrük Bölge Başvurudan itibaren 30 Cevap verilmezse zımni ret oluşur. Cevabı Müdürlüğü gün"
+      "text": "2. İdarenin Gümrük Bölge Başvurudan itibaren 30 Cevap verilmezse zımni ret oluşur. Cevabı Müdürlüğü gün",
+      "cells": [
+        "2. İdarenin Cevabı",
+        "Gümrük Bölge Müdürlüğü",
+        "Başvurudan itibaren 30 gün",
+        "Cevap verilmezse zımni ret oluşur."
+      ]
     },
     {
       "lines": [
@@ -2702,7 +2766,12 @@
         "2. Değer Tespiti    Gümrük Müdürlüğü / Ekspertiz    Gümrüklenmiş değer veya kasko değeri raporu; teminat miktarı",
         "resmen belirlenir."
       ],
-      "text": "2. Değer Tespiti Gümrük Müdürlüğü / Ekspertiz Gümrüklenmiş değer veya kasko değeri raporu; teminat miktarı resmen belirlenir."
+      "text": "2. Değer Tespiti Gümrük Müdürlüğü / Ekspertiz Gümrüklenmiş değer veya kasko değeri raporu; teminat miktarı resmen belirlenir.",
+      "cells": [
+        "2. Değer Tespiti",
+        "Gümrük Müdürlüğü / Ekspertiz",
+        "Gümrüklenmiş değer veya kasko değeri raporu; teminat miktarı resmen belirlenir."
+      ]
     },
     {
       "lines": [
@@ -2988,7 +3057,13 @@
         "Muafiyet sınırı üstü, beyan      Kırmızı     4458 Sayılı Kanun       Fazla kısmın vergisi ödenerek ürün yasal olarak",
         "edilmiş                          Hat                                 alınır."
       ],
-      "text": "Muafiyet sınırı üstü, beyan Kırmızı 4458 Sayılı Kanun Fazla kısmın vergisi ödenerek ürün yasal olarak edilmiş Hat alınır."
+      "text": "Muafiyet sınırı üstü, beyan Kırmızı 4458 Sayılı Kanun Fazla kısmın vergisi ödenerek ürün yasal olarak edilmiş Hat alınır.",
+      "cells": [
+        "Muafiyet sınırı üstü, beyan edilmiş",
+        "Kırmızı Hat",
+        "4458 Sayılı Kanun",
+        "Fazla kısmın vergisi ödenerek ürün yasal olarak alınır."
+      ]
     },
     {
       "lines": [
@@ -3248,7 +3323,12 @@
       "lines": [
         "Nitelikli Hırsızlık (m.142/1)   3-7 yıl hapis                            Dava düşmez, kamu davası olarak devam eder."
       ],
-      "text": "Nitelikli Hırsızlık (m.142/1) 3-7 yıl hapis Dava düşmez, kamu davası olarak devam eder."
+      "text": "Nitelikli Hırsızlık (m.142/1) 3-7 yıl hapis Dava düşmez, kamu davası olarak devam eder.",
+      "cells": [
+        "Nitelikli Hırsızlık (m.142/1)",
+        "3-7 yıl hapis",
+        "Dava düşmez, kamu davası olarak devam eder."
+      ]
     },
     {
       "lines": [
@@ -3265,7 +3345,12 @@
       "lines": [
         "Gece Vakti İşlenmesi (m.143)    Yukarıdaki cezalar yarı oranında artar   Dava düşmez."
       ],
-      "text": "Gece Vakti İşlenmesi (m.143) Yukarıdaki cezalar yarı oranında artar Dava düşmez."
+      "text": "Gece Vakti İşlenmesi (m.143) Yukarıdaki cezalar yarı oranında artar Dava düşmez.",
+      "cells": [
+        "Gece Vakti İşlenmesi (m.143)",
+        "Yukarıdaki cezalar yarı oranında artar",
+        "Dava düşmez."
+      ]
     },
     {
       "lines": [
@@ -3569,7 +3654,12 @@
       "lines": [
         "Sadece hesap verme indirimi (1/2)                      Uygulanamaz        2 yıl hapis"
       ],
-      "text": "Sadece hesap verme indirimi (1/2) Uygulanamaz 2 yıl hapis"
+      "text": "Sadece hesap verme indirimi (1/2) Uygulanamaz 2 yıl hapis",
+      "cells": [
+        "Sadece hesap verme indirimi (1/2)",
+        "Uygulanamaz",
+        "2 yıl hapis"
+      ]
     },
     {
       "lines": [
@@ -3931,7 +4021,13 @@
         "Özel hayatın         5651 s.K. m.9/A    Doğrudan BTK, 24 saatte hakime   BTK bildirimiyle derhal",
         "gizliliği                               sunulur"
       ],
-      "text": "Özel hayatın 5651 s.K. m.9/A Doğrudan BTK, 24 saatte hakime BTK bildirimiyle derhal gizliliği sunulur"
+      "text": "Özel hayatın 5651 s.K. m.9/A Doğrudan BTK, 24 saatte hakime BTK bildirimiyle derhal gizliliği sunulur",
+      "cells": [
+        "Özel hayatın gizliliği",
+        "5651 s.K. m.9/A",
+        "Doğrudan BTK, 24 saatte hakime sunulur",
+        "BTK bildirimiyle derhal"
+      ]
     },
     {
       "lines": [
@@ -5207,12 +5303,7 @@
       "lines": [
         "8. Sürece İlişkin Pratik Bilgiler"
       ],
-      "text": "8. Sürece İlişkin Pratik Bilgiler",
-      "cells": [
-        "8. Sürece İlişkin Pratik Bilgiler",
-        "",
-        ""
-      ]
+      "text": "8. Sürece İlişkin Pratik Bilgiler"
     },
     {
       "lines": [
@@ -5898,7 +5989,12 @@
       "lines": [
         "Suç örgütüne üye olmak m.220/2 2-4 yıl hapis"
       ],
-      "text": "Suç örgütüne üye olmak m.220/2 2-4 yıl hapis"
+      "text": "Suç örgütüne üye olmak m.220/2 2-4 yıl hapis",
+      "cells": [
+        "Suç örgütüne üye olmak",
+        "m.220/2",
+        "2-4 yıl hapis"
+      ]
     },
     {
       "lines": [
@@ -6128,12 +6224,7 @@
         "iki yolun da usulü, süresi ve ispat yükü farklıdır; yanlış yolun seçilmesi veya sürenin kaçırılması, mirasçının mirasbırakanın",
         "borçlarından kendi malvarlığıyla sorumlu tutulmasına yol açabilir."
       ],
-      "text": "Türk hukukunda miras, mirasbırakanın ölümüyle birlikte kendiliğinden ve bir bütün olarak mirasçılara geçer; bu geçiş yalnızca malvarlığını değil, mirasbırakanın borçlarını da kapsar. Mirasçı, mirası kabul etmek zorunda değildir: kendi iradesiyle üç aylık süre içinde mahkemeye başvurarak mirası kayıtsız ve şartsız reddedebilir. Bunun yanında, terekenin ölüm tarihinde açıkça borca batık olduğu hallerde miras herhangi bir beyana gerek kalmaksızın kendiliğinden reddedilmiş sayılır; bu ikinci yola hükmen ret denir. Her iki yolun da usulü, süresi ve ispat yükü farklıdır; yanlış yolun seçilmesi veya sürenin kaçırılması, mirasçının mirasbırakanın borçlarından kendi malvarlığıyla sorumlu tutulmasına yol açabilir.",
-      "cells": [
-        "Türk hukukunda miras, mirasbırakanın ölümüyle birlikte kendiliğinden ve bir bütün olarak mirasçılara geçer; bu geçiş yalnızca malvarlığını değil, mirasbırakanın borçlarını da kapsar. Mirasçı, mirası kabul etmek zorunda değildir: kendi iradesiyle üç aylık süre içinde mahkemeye başvurarak mirası kayıtsız ve şartsız reddedebilir. Bunun yanında, terekenin ölüm tarihinde açıkça borca batık olduğu hallerde miras herhangi bir beyana gerek kalmaksızın kendiliğinden reddedilmiş sayılır; bu ikinci yola hükmen ret denir. Her iki yolun da usulü, süresi ve ispat yükü farklıdır; yanlış yolun seçilmesi veya sürenin kaçırılması, mirasçının mirasbırakanın borçlarından kendi malvarlığıyla sorumlu tutulmasına yol açabilir.",
-        "",
-        ""
-      ]
+      "text": "Türk hukukunda miras, mirasbırakanın ölümüyle birlikte kendiliğinden ve bir bütün olarak mirasçılara geçer; bu geçiş yalnızca malvarlığını değil, mirasbırakanın borçlarını da kapsar. Mirasçı, mirası kabul etmek zorunda değildir: kendi iradesiyle üç aylık süre içinde mahkemeye başvurarak mirası kayıtsız ve şartsız reddedebilir. Bunun yanında, terekenin ölüm tarihinde açıkça borca batık olduğu hallerde miras herhangi bir beyana gerek kalmaksızın kendiliğinden reddedilmiş sayılır; bu ikinci yola hükmen ret denir. Her iki yolun da usulü, süresi ve ispat yükü farklıdır; yanlış yolun seçilmesi veya sürenin kaçırılması, mirasçının mirasbırakanın borçlarından kendi malvarlığıyla sorumlu tutulmasına yol açabilir."
     },
     {
       "lines": [
@@ -6332,8 +6423,8 @@
       ],
       "text": "11. Sürece İlişkin Pratik Bilgiler",
       "cells": [
-        "11. Sürece İlişkin Pratik Bilgiler",
-        "",
+        "11. Sürece İlişkin",
+        "Pratik Bilgiler",
         ""
       ]
     },
@@ -6367,7 +6458,12 @@
       "lines": [
         "12. Sıkça Sorulan Sorular"
       ],
-      "text": "12. Sıkça Sorulan Sorular"
+      "text": "12. Sıkça Sorulan Sorular",
+      "cells": [
+        "12. Sıkça Sorulan",
+        "Sorular",
+        ""
+      ]
     },
     {
       "lines": [
@@ -6496,12 +6592,7 @@
         "kesin hukuki şartlara, sıkı bir sıraya ve hak düşürücü sürelere bağlı olduğundan, sürecin bir avukat rehberliğinde yürütülmesi hem",
         "doğru tarafın doğru miktarla dava edilmesini hem de sürenin kaçırılmamasını sağlar."
       ],
-      "text": "Türk hukukunda miras bırakan, malvarlığı üzerinde vasiyetname veya miras sözleşmesiyle dilediği gibi tasarrufta bulunma özgürlüğüne sahiptir; ancak bu özgürlük sınırsız değildir. Kanun, mirasbırakanın en yakın çevresini -altsoyunu, ana babasını ve sağ kalan eşini- saklı pay adı verilen bir güvenceyle korur ve mirasbırakanın bu paylara dokunmasını engeller. Mirasbırakan saklı payları aşacak şekilde bir kısmını üçüncü bir kişiye veya mirasçılardan birine bağışlamış ya da vasiyet etmişse, hakkı ihlal edilen saklı paylı mirasçı, mirasbırakanın ölümünden sonra tenkis davası açarak bu kazandırmanın yasal sınıra çekilmesini talep edebilir. Tenkis davası kesin hukuki şartlara, sıkı bir sıraya ve hak düşürücü sürelere bağlı olduğundan, sürecin bir avukat rehberliğinde yürütülmesi hem doğru tarafın doğru miktarla dava edilmesini hem de sürenin kaçırılmamasını sağlar.",
-      "cells": [
-        "Türk hukukunda miras bırakan, malvarlığı üzerinde vasiyetname veya miras sözleşmesiyle dilediği gibi tasarrufta bulunma özgürlüğüne sahiptir; ancak bu özgürlük sınırsız değildir. Kanun, mirasbırakanın en yakın çevresini -altsoyunu, ana babasını ve sağ kalan eşini- saklı pay adı verilen bir güvenceyle korur ve mirasbırakanın bu paylara dokunmasını engeller. Mirasbırakan saklı payları aşacak şekilde bir kısmını üçüncü bir kişiye veya mirasçılardan birine bağışlamış ya da vasiyet etmişse, hakkı ihlal edilen saklı paylı mirasçı, mirasbırakanın ölümünden sonra tenkis davası açarak bu kazandırmanın yasal sınıra çekilmesini talep edebilir. Tenkis davası kesin hukuki şartlara, sıkı bir sıraya ve hak düşürücü sürelere bağlı olduğundan, sürecin bir avukat rehberliğinde yürütülmesi hem doğru tarafın doğru miktarla dava edilmesini hem de sürenin kaçırılmamasını sağlar.",
-        "",
-        ""
-      ]
+      "text": "Türk hukukunda miras bırakan, malvarlığı üzerinde vasiyetname veya miras sözleşmesiyle dilediği gibi tasarrufta bulunma özgürlüğüne sahiptir; ancak bu özgürlük sınırsız değildir. Kanun, mirasbırakanın en yakın çevresini -altsoyunu, ana babasını ve sağ kalan eşini- saklı pay adı verilen bir güvenceyle korur ve mirasbırakanın bu paylara dokunmasını engeller. Mirasbırakan saklı payları aşacak şekilde bir kısmını üçüncü bir kişiye veya mirasçılardan birine bağışlamış ya da vasiyet etmişse, hakkı ihlal edilen saklı paylı mirasçı, mirasbırakanın ölümünden sonra tenkis davası açarak bu kazandırmanın yasal sınıra çekilmesini talep edebilir. Tenkis davası kesin hukuki şartlara, sıkı bir sıraya ve hak düşürücü sürelere bağlı olduğundan, sürecin bir avukat rehberliğinde yürütülmesi hem doğru tarafın doğru miktarla dava edilmesini hem de sürenin kaçırılmamasını sağlar."
     },
     {
       "lines": [
@@ -6647,14 +6738,7 @@
         "talep şeklinde) birlikte açılabilir: mahkeme önce muvazaa iddiasını inceler, muvazaayı kabul etmezse ikinci sırada tenkis talebini",
         "değerlendirir."
       ],
-      "text": "8. Tenkis Davası ile Muris Muvazaası Davası Arasındaki Fark Uygulamada sıkça karıştırılan bu iki dava, farklı hukuki temellere dayanır. Tenkis davasında mirasbırakanın yaptığı kazandırma hukuken geçerlidir; dava yalnızca bu geçerli kazandırmanın saklı payı aşan kısmının yasal sınıra çekilmesini amaçlar. Muris muvazaası davasında ise iddia edilen, görünürdeki işlemin (örneğin satış) aslında tarafların gerçek iradesini yansıtmadığı, mirastan mal kaçırmak amacıyla yapılan örtülü bir bağışı gizlediğidir; bu davada işlemin tamamen geçersizliğinin tespiti istenir. Uygulamada bu iki dava terditli olarak (kademeli talep şeklinde) birlikte açılabilir: mahkeme önce muvazaa iddiasını inceler, muvazaayı kabul etmezse ikinci sırada tenkis talebini değerlendirir.",
-      "cells": [
-        "8. Tenkis Davası ile Muris Muvazaası Davası Arasındaki Fark Uygulamada sıkça karıştırılan bu iki dava, farklı hukuki temellere dayanır. Tenkis davasında mirasbırakanın yaptığı kazandırma hukuken geçerlidir; dava yalnızca bu geçerli kazandırmanın saklı payı aşan kısmının yasal sınıra çekilmesini amaçlar. Muris muvazaası davasında ise iddia edilen, görünürdeki işlemin (örneğin satış) aslında tarafların gerçek iradesini yansıtmadığı, mirastan mal kaçırmak amacıyla yapılan örtülü bir bağışı gizlediğidir; bu davada işlemin tamamen geçersizliğinin tespiti istenir. Uygulamada bu iki dava terditli olarak (kademeli talep şeklinde) birlikte açılabilir: mahkeme önce muvazaa iddiasını inceler, muvazaayı kabul etmezse ikinci sırada tenkis talebini değerlendirir.",
-        "",
-        "",
-        "",
-        ""
-      ]
+      "text": "8. Tenkis Davası ile Muris Muvazaası Davası Arasındaki Fark Uygulamada sıkça karıştırılan bu iki dava, farklı hukuki temellere dayanır. Tenkis davasında mirasbırakanın yaptığı kazandırma hukuken geçerlidir; dava yalnızca bu geçerli kazandırmanın saklı payı aşan kısmının yasal sınıra çekilmesini amaçlar. Muris muvazaası davasında ise iddia edilen, görünürdeki işlemin (örneğin satış) aslında tarafların gerçek iradesini yansıtmadığı, mirastan mal kaçırmak amacıyla yapılan örtülü bir bağışı gizlediğidir; bu davada işlemin tamamen geçersizliğinin tespiti istenir. Uygulamada bu iki dava terditli olarak (kademeli talep şeklinde) birlikte açılabilir: mahkeme önce muvazaa iddiasını inceler, muvazaayı kabul etmezse ikinci sırada tenkis talebini değerlendirir."
     },
     {
       "lines": [
@@ -6723,8 +6807,8 @@
       ],
       "text": "10. Sürece İlişkin Pratik Bilgiler",
       "cells": [
-        "10. Sürece İlişkin Pratik Bilgiler",
-        "",
+        "10. Sürece",
+        "İlişkin Pratik Bilgiler",
         ""
       ]
     },
@@ -7472,7 +7556,12 @@
       "lines": [
         "Metamfetamin Eser miktar 15-20 gram"
       ],
-      "text": "Metamfetamin Eser miktar 15-20 gram"
+      "text": "Metamfetamin Eser miktar 15-20 gram",
+      "cells": [
+        "Metamfetamin",
+        "Eser miktar",
+        "15-20 gram"
+      ]
     },
     {
       "lines": [
@@ -7489,7 +7578,12 @@
       "lines": [
         "Eroin / Morfin Eser miktar 20 gram"
       ],
-      "text": "Eroin / Morfin Eser miktar 20 gram"
+      "text": "Eroin / Morfin Eser miktar 20 gram",
+      "cells": [
+        "Eroin / Morfin",
+        "Eser miktar",
+        "20 gram"
+      ]
     },
     {
       "lines": [
@@ -7710,9 +7804,9 @@
       ],
       "text": "Miras Hukuku Serisi",
       "cells": [
-        "Miras Hukuku Serisi",
         "",
-        ""
+        "",
+        "Miras Hukuku Serisi"
       ]
     },
     {
@@ -7739,12 +7833,7 @@
         "dayanabilir; saklı pay ihlali ise iptal değil, ayrı bir dava türü olan tenkis davasının konusudur. Bu ayrımın doğru yapılması, sürecin",
         "başında yanlış dava türünün açılmasını ve hak kaybını önler."
       ],
-      "text": "Vasiyetname, bir kimsenin ölümünden sonra malvarlığının nasıl paylaştırılacağını belirlediği, tek taraflı ve her zaman geri alınabilir bir ölüme bağlı tasarruftur. Kanun, vasiyetçinin gerçek iradesini güvence altına almak amacıyla resmi, el yazılı ve sözlü olmak üzere üç vasiyetname türü öngörmüş ve her biri için sıkı şekil şartları getirmiştir. Bu şartlardan birinin eksik olması vasiyetnameyi kendiliğinden geçersiz kılmaz; vasiyetname, iptal davası açılıp kesinleşmiş bir mahkeme kararı alınmadıkça hüküm doğurmaya devam eder. Vasiyetnamenin iptali davası ehliyetsizlik, irade sakatlığı, hukuka veya ahlaka aykırılık ile şekil eksikliği sebeplerine dayanabilir; saklı pay ihlali ise iptal değil, ayrı bir dava türü olan tenkis davasının konusudur. Bu ayrımın doğru yapılması, sürecin başında yanlış dava türünün açılmasını ve hak kaybını önler.",
-      "cells": [
-        "Vasiyetname, bir kimsenin ölümünden sonra malvarlığının nasıl paylaştırılacağını belirlediği, tek taraflı ve her zaman geri alınabilir bir ölüme bağlı tasarruftur. Kanun, vasiyetçinin gerçek iradesini güvence altına almak amacıyla resmi, el yazılı ve sözlü olmak üzere üç vasiyetname türü öngörmüş ve her biri için sıkı şekil şartları getirmiştir. Bu şartlardan birinin eksik olması vasiyetnameyi kendiliğinden geçersiz kılmaz; vasiyetname, iptal davası açılıp kesinleşmiş bir mahkeme kararı alınmadıkça hüküm doğurmaya devam eder. Vasiyetnamenin iptali davası ehliyetsizlik, irade sakatlığı, hukuka veya ahlaka aykırılık ile şekil eksikliği sebeplerine dayanabilir; saklı pay ihlali ise iptal değil, ayrı bir dava türü olan tenkis davasının konusudur. Bu ayrımın doğru yapılması, sürecin başında yanlış dava türünün açılmasını ve hak kaybını önler.",
-        "",
-        ""
-      ]
+      "text": "Vasiyetname, bir kimsenin ölümünden sonra malvarlığının nasıl paylaştırılacağını belirlediği, tek taraflı ve her zaman geri alınabilir bir ölüme bağlı tasarruftur. Kanun, vasiyetçinin gerçek iradesini güvence altına almak amacıyla resmi, el yazılı ve sözlü olmak üzere üç vasiyetname türü öngörmüş ve her biri için sıkı şekil şartları getirmiştir. Bu şartlardan birinin eksik olması vasiyetnameyi kendiliğinden geçersiz kılmaz; vasiyetname, iptal davası açılıp kesinleşmiş bir mahkeme kararı alınmadıkça hüküm doğurmaya devam eder. Vasiyetnamenin iptali davası ehliyetsizlik, irade sakatlığı, hukuka veya ahlaka aykırılık ile şekil eksikliği sebeplerine dayanabilir; saklı pay ihlali ise iptal değil, ayrı bir dava türü olan tenkis davasının konusudur. Bu ayrımın doğru yapılması, sürecin başında yanlış dava türünün açılmasını ve hak kaybını önler."
     },
     {
       "lines": [
@@ -7890,12 +7979,7 @@
       "lines": [
         "10. Somut Uygulama Senaryosu"
       ],
-      "text": "10. Somut Uygulama Senaryosu",
-      "cells": [
-        "10. Somut Uygulama Senaryosu",
-        "",
-        ""
-      ]
+      "text": "10. Somut Uygulama Senaryosu"
     },
     {
       "lines": [
@@ -7943,23 +8027,13 @@
         "vermiştir. Karar kesinleştikten sonra Murat Bey, babasının tek yasal mirasçısı sıfatıyla terekenin tamamına hak kazanmıştır. Dosya, hem şekil",
         "hem ehliyet sakatlığının bir arada ileri sürülmesinin ispat gücünü artırdığını gösteren tipik bir örnek olmuştur."
       ],
-      "text": "SONUÇ Mahkeme, tanıklık yasağına ilişkin şekil eksikliğinin tek başına tüm vasiyetnameyi değil yalnızca Serap Hanım lehine yapılan kazandırmayı sakatlayabileceğini, ancak ehliyetsizlik iddiasının da bilirkişi raporuyla doğrulandığını değerlendirerek vasiyetnamenin tamamının iptaline karar vermiştir. Karar kesinleştikten sonra Murat Bey, babasının tek yasal mirasçısı sıfatıyla terekenin tamamına hak kazanmıştır. Dosya, hem şekil hem ehliyet sakatlığının bir arada ileri sürülmesinin ispat gücünü artırdığını gösteren tipik bir örnek olmuştur.",
-      "cells": [
-        "SONUÇ Mahkeme, tanıklık yasağına ilişkin şekil eksikliğinin tek başına tüm vasiyetnameyi değil yalnızca Serap Hanım lehine yapılan kazandırmayı sakatlayabileceğini, ancak ehliyetsizlik iddiasının da bilirkişi raporuyla doğrulandığını değerlendirerek vasiyetnamenin tamamının iptaline karar vermiştir. Karar kesinleştikten sonra Murat Bey, babasının tek yasal mirasçısı sıfatıyla terekenin tamamına hak kazanmıştır. Dosya, hem şekil hem ehliyet sakatlığının bir arada ileri sürülmesinin ispat gücünü artırdığını gösteren tipik bir örnek olmuştur.",
-        "",
-        ""
-      ]
+      "text": "SONUÇ Mahkeme, tanıklık yasağına ilişkin şekil eksikliğinin tek başına tüm vasiyetnameyi değil yalnızca Serap Hanım lehine yapılan kazandırmayı sakatlayabileceğini, ancak ehliyetsizlik iddiasının da bilirkişi raporuyla doğrulandığını değerlendirerek vasiyetnamenin tamamının iptaline karar vermiştir. Karar kesinleştikten sonra Murat Bey, babasının tek yasal mirasçısı sıfatıyla terekenin tamamına hak kazanmıştır. Dosya, hem şekil hem ehliyet sakatlığının bir arada ileri sürülmesinin ispat gücünü artırdığını gösteren tipik bir örnek olmuştur."
     },
     {
       "lines": [
         "11. Sürece İlişkin Pratik Bilgiler"
       ],
-      "text": "11. Sürece İlişkin Pratik Bilgiler",
-      "cells": [
-        "11. Sürece İlişkin Pratik Bilgiler",
-        "",
-        ""
-      ]
+      "text": "11. Sürece İlişkin Pratik Bilgiler"
     },
     {
       "lines": [
@@ -8277,9 +8351,9 @@
       ],
       "text": "Belge Niteliği Aksi ispat edilene kadar geçerli Aksi ispat edilene kadar geçerli",
       "cells": [
-        "Belge Niteliği Aksi ispat edilene kadar geçerli Aksi ispat edilene kadar geçerli",
-        "",
-        ""
+        "Belge Niteliği",
+        "Aksi ispat edilene kadar geçerli",
+        "Aksi ispat edilene kadar geçerli"
       ]
     },
     {
@@ -8405,12 +8479,7 @@
       "lines": [
         "9. Sürece İlişkin Pratik Bilgiler"
       ],
-      "text": "9. Sürece İlişkin Pratik Bilgiler",
-      "cells": [
-        "9. Sürece İlişkin Pratik Bilgiler",
-        "",
-        ""
-      ]
+      "text": "9. Sürece İlişkin Pratik Bilgiler"
     },
     {
       "lines": [
@@ -8753,7 +8822,12 @@
       "lines": [
         "Bedelden indirim Mal kullanılabilir, ancak değer kaybı var Satıcı"
       ],
-      "text": "Bedelden indirim Mal kullanılabilir, ancak değer kaybı var Satıcı"
+      "text": "Bedelden indirim Mal kullanılabilir, ancak değer kaybı var Satıcı",
+      "cells": [
+        "Bedelden indirim",
+        "Mal kullanılabilir, ancak değer kaybı var",
+        "Satıcı"
+      ]
     },
     {
       "lines": [
@@ -8839,7 +8913,12 @@
       "lines": [
         "Konut/tatil amaçlı taşınmaz 5 yıl Taşınmazın teslimi"
       ],
-      "text": "Konut/tatil amaçlı taşınmaz 5 yıl Taşınmazın teslimi"
+      "text": "Konut/tatil amaçlı taşınmaz 5 yıl Taşınmazın teslimi",
+      "cells": [
+        "Konut/tatil amaçlı taşınmaz",
+        "5 yıl",
+        "Taşınmazın teslimi"
+      ]
     },
     {
       "lines": [
@@ -8965,7 +9044,12 @@
       "lines": [
         "Zamanaşımı 2 yıl (genel kural) Hile veya ağır kusurla gizlenen ayıplarda süre işlemez."
       ],
-      "text": "Zamanaşımı 2 yıl (genel kural) Hile veya ağır kusurla gizlenen ayıplarda süre işlemez."
+      "text": "Zamanaşımı 2 yıl (genel kural) Hile veya ağır kusurla gizlenen ayıplarda süre işlemez.",
+      "cells": [
+        "Zamanaşımı",
+        "2 yıl (genel kural)",
+        "Hile veya ağır kusurla gizlenen ayıplarda süre işlemez."
+      ]
     },
     {
       "lines": [
@@ -9846,7 +9930,12 @@
       "lines": [
         "Görevli mahkeme Tüketici Mahkemesi Asliye Hukuk Mahkemesi"
       ],
-      "text": "Görevli mahkeme Tüketici Mahkemesi Asliye Hukuk Mahkemesi"
+      "text": "Görevli mahkeme Tüketici Mahkemesi Asliye Hukuk Mahkemesi",
+      "cells": [
+        "Görevli mahkeme",
+        "Tüketici Mahkemesi",
+        "Asliye Hukuk Mahkemesi"
+      ]
     },
     {
       "lines": [
@@ -9863,7 +9952,12 @@
       "lines": [
         "Ek koruma Galeriye asgari garanti yükümlülüğü Yok"
       ],
-      "text": "Ek koruma Galeriye asgari garanti yükümlülüğü Yok"
+      "text": "Ek koruma Galeriye asgari garanti yükümlülüğü Yok",
+      "cells": [
+        "Ek koruma",
+        "Galeriye asgari garanti yükümlülüğü",
+        "Yok"
+      ]
     },
     {
       "lines": [
@@ -11009,7 +11103,11 @@
       "lines": [
         "Kategori Örnek"
       ],
-      "text": "Kategori Örnek"
+      "text": "Kategori Örnek",
+      "cells": [
+        "Kategori",
+        "Örnek"
+      ]
     },
     {
       "lines": [
@@ -11025,7 +11123,11 @@
       "lines": [
         "Kişiye özel hazırlanan mallar Ölçüye göre dikilen kıyafet, isme özel gravürlü ürünler"
       ],
-      "text": "Kişiye özel hazırlanan mallar Ölçüye göre dikilen kıyafet, isme özel gravürlü ürünler"
+      "text": "Kişiye özel hazırlanan mallar Ölçüye göre dikilen kıyafet, isme özel gravürlü ürünler",
+      "cells": [
+        "Kişiye özel hazırlanan mallar",
+        "Ölçüye göre dikilen kıyafet, isme özel gravürlü ürünler"
+      ]
     },
     {
       "lines": [
@@ -11057,7 +11159,11 @@
       "lines": [
         "Süreli yayınlar Gazete, dergi (abonelik hariç)"
       ],
-      "text": "Süreli yayınlar Gazete, dergi (abonelik hariç)"
+      "text": "Süreli yayınlar Gazete, dergi (abonelik hariç)",
+      "cells": [
+        "Süreli yayınlar",
+        "Gazete, dergi (abonelik hariç)"
+      ]
     },
     {
       "lines": [
@@ -11073,7 +11179,11 @@
       "lines": [
         "Anında ifa edilen elektronik hizmetler Uzaktan eğitim, anlık dijital erişim hizmetleri"
       ],
-      "text": "Anında ifa edilen elektronik hizmetler Uzaktan eğitim, anlık dijital erişim hizmetleri"
+      "text": "Anında ifa edilen elektronik hizmetler Uzaktan eğitim, anlık dijital erişim hizmetleri",
+      "cells": [
+        "Anında ifa edilen elektronik hizmetler",
+        "Uzaktan eğitim, anlık dijital erişim hizmetleri"
+      ]
     },
     {
       "lines": [
@@ -11143,7 +11253,12 @@
       "lines": [
         "Tüketici Malın geri gönderilmesi Cayma bildiriminden itibaren 10 gün"
       ],
-      "text": "Tüketici Malın geri gönderilmesi Cayma bildiriminden itibaren 10 gün"
+      "text": "Tüketici Malın geri gönderilmesi Cayma bildiriminden itibaren 10 gün",
+      "cells": [
+        "Tüketici",
+        "Malın geri gönderilmesi",
+        "Cayma bildiriminden itibaren 10 gün"
+      ]
     },
     {
       "lines": [
@@ -11568,7 +11683,12 @@
       "lines": [
         "Erken ödeme tazminatı (yasal sınır içi) Meşru Sabit faizli konut kredisinde azami %1 / %2"
       ],
-      "text": "Erken ödeme tazminatı (yasal sınır içi) Meşru Sabit faizli konut kredisinde azami %1 / %2"
+      "text": "Erken ödeme tazminatı (yasal sınır içi) Meşru Sabit faizli konut kredisinde azami %1 / %2",
+      "cells": [
+        "Erken ödeme tazminatı (yasal sınır içi)",
+        "Meşru",
+        "Sabit faizli konut kredisinde azami %1 / %2"
+      ]
     },
     {
       "lines": [
@@ -11736,7 +11856,12 @@
       "lines": [
         "Bankaya başvuru Dava/başvuru öncesi zorunlu adım Yazılı yapılmalı, tercihen noter ihtarnamesiyle."
       ],
-      "text": "Bankaya başvuru Dava/başvuru öncesi zorunlu adım Yazılı yapılmalı, tercihen noter ihtarnamesiyle."
+      "text": "Bankaya başvuru Dava/başvuru öncesi zorunlu adım Yazılı yapılmalı, tercihen noter ihtarnamesiyle.",
+      "cells": [
+        "Bankaya başvuru",
+        "Dava/başvuru öncesi zorunlu adım",
+        "Yazılı yapılmalı, tercihen noter ihtarnamesiyle."
+      ]
     },
     {
       "lines": [
@@ -12597,7 +12722,12 @@
       "lines": [
         "2025 149.000 TL %43,93 (2024 yılı YDO)"
       ],
-      "text": "2025 149.000 TL %43,93 (2024 yılı YDO)"
+      "text": "2025 149.000 TL %43,93 (2024 yılı YDO)",
+      "cells": [
+        "2025",
+        "149.000 TL",
+        "%43,93 (2024 yılı YDO)"
+      ]
     },
     {
       "lines": [
@@ -12748,7 +12878,12 @@
       "lines": [
         "Başvuru ücreti Ücretsiz Harç ve yargılama gideri"
       ],
-      "text": "Başvuru ücreti Ücretsiz Harç ve yargılama gideri"
+      "text": "Başvuru ücreti Ücretsiz Harç ve yargılama gideri",
+      "cells": [
+        "Başvuru ücreti",
+        "Ücretsiz",
+        "Harç ve yargılama gideri"
+      ]
     },
     {
       "lines": [
@@ -12850,7 +12985,12 @@
       "lines": [
         "Kararın tebliği Karardan itibaren 10 iş günü Tebligat Kanunu hükümlerine göre yazılı olarak yapılır."
       ],
-      "text": "Kararın tebliği Karardan itibaren 10 iş günü Tebligat Kanunu hükümlerine göre yazılı olarak yapılır."
+      "text": "Kararın tebliği Karardan itibaren 10 iş günü Tebligat Kanunu hükümlerine göre yazılı olarak yapılır.",
+      "cells": [
+        "Kararın tebliği",
+        "Karardan itibaren 10 iş günü",
+        "Tebligat Kanunu hükümlerine göre yazılı olarak yapılır."
+      ]
     },
     {
       "lines": [
@@ -19900,7 +20040,12 @@
       "lines": [
         "Sesli, yazılı veya görüntülü iletiyle işlenmesi m.125/2 Temel hâlle aynı ceza"
       ],
-      "text": "Sesli, yazılı veya görüntülü iletiyle işlenmesi m.125/2 Temel hâlle aynı ceza"
+      "text": "Sesli, yazılı veya görüntülü iletiyle işlenmesi m.125/2 Temel hâlle aynı ceza",
+      "cells": [
+        "Sesli, yazılı veya görüntülü iletiyle işlenmesi",
+        "m.125/2",
+        "Temel hâlle aynı ceza"
+      ]
     },
     {
       "lines": [
@@ -19917,7 +20062,12 @@
       "lines": [
         "İnanç, düşünce veya kanaat açıklaması nedeniyle m.125/3‑b Cezanın alt sınırı 1 yıldan az olamaz"
       ],
-      "text": "İnanç, düşünce veya kanaat açıklaması nedeniyle m.125/3‑b Cezanın alt sınırı 1 yıldan az olamaz"
+      "text": "İnanç, düşünce veya kanaat açıklaması nedeniyle m.125/3‑b Cezanın alt sınırı 1 yıldan az olamaz",
+      "cells": [
+        "İnanç, düşünce veya kanaat açıklaması nedeniyle",
+        "m.125/3‑b",
+        "Cezanın alt sınırı 1 yıldan az olamaz"
+      ]
     },
     {
       "lines": [
@@ -19936,7 +20086,12 @@
       "lines": [
         "Aleniyet m.125/4 Ceza altıda bir oranında artırılır"
       ],
-      "text": "Aleniyet m.125/4 Ceza altıda bir oranında artırılır"
+      "text": "Aleniyet m.125/4 Ceza altıda bir oranında artırılır",
+      "cells": [
+        "Aleniyet",
+        "m.125/4",
+        "Ceza altıda bir oranında artırılır"
+      ]
     },
     {
       "lines": [
@@ -20100,7 +20255,12 @@
       "lines": [
         "İleti yoluyla hakaret (m.125/2) Uygulanmaz Uygulanır"
       ],
-      "text": "İleti yoluyla hakaret (m.125/2) Uygulanmaz Uygulanır"
+      "text": "İleti yoluyla hakaret (m.125/2) Uygulanmaz Uygulanır",
+      "cells": [
+        "İleti yoluyla hakaret (m.125/2)",
+        "Uygulanmaz",
+        "Uygulanır"
+      ]
     },
     {
       "lines": [
@@ -20117,7 +20277,12 @@
       "lines": [
         "İnanç veya kutsal değerlerden bahisle (m.125/3‑b, c) Uygulanmaz Uygulanır"
       ],
-      "text": "İnanç veya kutsal değerlerden bahisle (m.125/3‑b, c) Uygulanmaz Uygulanır"
+      "text": "İnanç veya kutsal değerlerden bahisle (m.125/3‑b, c) Uygulanmaz Uygulanır",
+      "cells": [
+        "İnanç veya kutsal değerlerden bahisle (m.125/3‑b, c)",
+        "Uygulanmaz",
+        "Uygulanır"
+      ]
     },
     {
       "lines": [
@@ -20873,7 +21038,12 @@
         "hükümdeki cezadan daha ağır olamaz",
         "işlemlerine ilişkinse"
       ],
-      "text": "Mahkûmiyet hükmünün esasını çözmeyen yönüne ya Yeniden yargılama yapılır; verilecek hüküm önceki da savunma hakkını kaldıran veya kısıtlayan usul m.309/4‑b hükümdeki cezadan daha ağır olamaz işlemlerine ilişkinse"
+      "text": "Mahkûmiyet hükmünün esasını çözmeyen yönüne ya Yeniden yargılama yapılır; verilecek hüküm önceki da savunma hakkını kaldıran veya kısıtlayan usul m.309/4‑b hükümdeki cezadan daha ağır olamaz işlemlerine ilişkinse",
+      "cells": [
+        "Mahkûmiyet hükmünün esasını çözmeyen yönüne ya da savunma hakkını kaldıran veya kısıtlayan usul işlemlerine ilişkinse",
+        "m.309/4‑b",
+        "Yeniden yargılama yapılır; verilecek hüküm önceki hükümdeki cezadan daha ağır olamaz"
+      ]
     },
     {
       "lines": [
@@ -20987,7 +21157,13 @@
         "Başvuru Maddi hukuka veya muhakeme hukukuna Daire kararındaki ciddi Yeni delil veya olgunun",
         "sebebi aykırılık hukuka aykırılık ortaya çıkması"
       ],
-      "text": "Başvuru Maddi hukuka veya muhakeme hukukuna Daire kararındaki ciddi Yeni delil veya olgunun sebebi aykırılık hukuka aykırılık ortaya çıkması"
+      "text": "Başvuru Maddi hukuka veya muhakeme hukukuna Daire kararındaki ciddi Yeni delil veya olgunun sebebi aykırılık hukuka aykırılık ortaya çıkması",
+      "cells": [
+        "Başvuru sebebi",
+        "Maddi hukuka veya muhakeme hukukuna aykırılık",
+        "Daire kararındaki ciddi hukuka aykırılık",
+        "Yeni delil veya olgunun ortaya çıkması"
+      ]
     },
     {
       "lines": [
@@ -21008,7 +21184,13 @@
         "Yargıtayın ilgili ceza dairesi Hükmü veren mahkeme",
         "mercii Genel Kurulu"
       ],
-      "text": "İnceleme İlgili daire, ardından Ceza Yargıtayın ilgili ceza dairesi Hükmü veren mahkeme mercii Genel Kurulu"
+      "text": "İnceleme İlgili daire, ardından Ceza Yargıtayın ilgili ceza dairesi Hükmü veren mahkeme mercii Genel Kurulu",
+      "cells": [
+        "İnceleme mercii",
+        "Yargıtayın ilgili ceza dairesi",
+        "İlgili daire, ardından Ceza Genel Kurulu",
+        "Hükmü veren mahkeme"
+      ]
     },
     {
       "lines": [
@@ -21481,7 +21663,11 @@
       "lines": [
         "b Canavarca hisle veya eziyet çektirerek öldürme"
       ],
-      "text": "b Canavarca hisle veya eziyet çektirerek öldürme"
+      "text": "b Canavarca hisle veya eziyet çektirerek öldürme",
+      "cells": [
+        "b",
+        "Canavarca hisle veya eziyet çektirerek öldürme"
+      ]
     },
     {
       "lines": [
@@ -21498,7 +21684,11 @@
       "lines": [
         "d Üstsoy veya altsoydan birine ya da eş, boşandığı eş veya kardeşe karşı"
       ],
-      "text": "d Üstsoy veya altsoydan birine ya da eş, boşandığı eş veya kardeşe karşı"
+      "text": "d Üstsoy veya altsoydan birine ya da eş, boşandığı eş veya kardeşe karşı",
+      "cells": [
+        "d",
+        "Üstsoy veya altsoydan birine ya da eş, boşandığı eş veya kardeşe karşı"
+      ]
     },
     {
       "lines": [
@@ -21514,7 +21704,11 @@
       "lines": [
         "f Kadına karşı"
       ],
-      "text": "f Kadına karşı"
+      "text": "f Kadına karşı",
+      "cells": [
+        "f",
+        "Kadına karşı"
+      ]
     },
     {
       "lines": [
@@ -21530,7 +21724,11 @@
       "lines": [
         "h Bir suçu gizlemek, delillerini ortadan kaldırmak veya işlenmesini kolaylaştırmak ya da yakalanmamak amacıyla"
       ],
-      "text": "h Bir suçu gizlemek, delillerini ortadan kaldırmak veya işlenmesini kolaylaştırmak ya da yakalanmamak amacıyla"
+      "text": "h Bir suçu gizlemek, delillerini ortadan kaldırmak veya işlenmesini kolaylaştırmak ya da yakalanmamak amacıyla",
+      "cells": [
+        "h",
+        "Bir suçu gizlemek, delillerini ortadan kaldırmak veya işlenmesini kolaylaştırmak ya da yakalanmamak amacıyla"
+      ]
     },
     {
       "lines": [
@@ -21546,7 +21744,11 @@
       "lines": [
         "j Kan gütme saikiyle"
       ],
-      "text": "j Kan gütme saikiyle"
+      "text": "j Kan gütme saikiyle",
+      "cells": [
+        "j",
+        "Kan gütme saikiyle"
+      ]
     },
     {
       "lines": [
@@ -22203,7 +22405,13 @@
         "Özel nitelikli verilerin kaydedilmesi m.135/2 Artırımlar birlikte uygulanır",
         "artırılır"
       ],
-      "text": "Ceza yarı oranında Özel nitelikli verilerin kaydedilmesi m.135/2 Artırımlar birlikte uygulanır artırılır"
+      "text": "Ceza yarı oranında Özel nitelikli verilerin kaydedilmesi m.135/2 Artırımlar birlikte uygulanır artırılır",
+      "cells": [
+        "Özel nitelikli verilerin kaydedilmesi",
+        "m.135/2",
+        "Ceza yarı oranında artırılır",
+        "Artırımlar birlikte uygulanır"
+      ]
     },
     {
       "lines": [
@@ -22223,7 +22431,13 @@
         "m.136/2 Ceza bir kat artırılır Artırımlar birlikte uygulanır",
         "olması"
       ],
-      "text": "Suçun konusunun CMK m.236 kayıtları m.136/2 Ceza bir kat artırılır Artırımlar birlikte uygulanır olması"
+      "text": "Suçun konusunun CMK m.236 kayıtları m.136/2 Ceza bir kat artırılır Artırımlar birlikte uygulanır olması",
+      "cells": [
+        "Suçun konusunun CMK m.236 kayıtları olması",
+        "m.136/2",
+        "Ceza bir kat artırılır",
+        "Artırımlar birlikte uygulanır"
+      ]
     },
     {
       "lines": [
@@ -22364,7 +22578,12 @@
       "lines": [
         "Veri güvenliğine ilişkin yükümlülüklerin yerine getirilmemesi 256.357 TL 17.092.242 TL"
       ],
-      "text": "Veri güvenliğine ilişkin yükümlülüklerin yerine getirilmemesi 256.357 TL 17.092.242 TL"
+      "text": "Veri güvenliğine ilişkin yükümlülüklerin yerine getirilmemesi 256.357 TL 17.092.242 TL",
+      "cells": [
+        "Veri güvenliğine ilişkin yükümlülüklerin yerine getirilmemesi",
+        "256.357 TL",
+        "17.092.242 TL"
+      ]
     },
     {
       "lines": [
@@ -22784,7 +23003,12 @@
         "m.85/2 2 yıldan 15 yıla kadar hapis",
         "birden fazla kişinin yaralanması"
       ],
-      "text": "Aynı fiille birden fazla kişinin ölümü ya da bir kişinin ölümüyle birlikte bir veya m.85/2 2 yıldan 15 yıla kadar hapis birden fazla kişinin yaralanması"
+      "text": "Aynı fiille birden fazla kişinin ölümü ya da bir kişinin ölümüyle birlikte bir veya m.85/2 2 yıldan 15 yıla kadar hapis birden fazla kişinin yaralanması",
+      "cells": [
+        "Aynı fiille birden fazla kişinin ölümü ya da bir kişinin ölümüyle birlikte bir veya birden fazla kişinin yaralanması",
+        "m.85/2",
+        "2 yıldan 15 yıla kadar hapis"
+      ]
     },
     {
       "lines": [
@@ -22871,7 +23095,12 @@
       "lines": [
         "Olası kast Evet İstenmemiş, ancak göze alınmış"
       ],
-      "text": "Olası kast Evet İstenmemiş, ancak göze alınmış"
+      "text": "Olası kast Evet İstenmemiş, ancak göze alınmış",
+      "cells": [
+        "Olası kast",
+        "Evet",
+        "İstenmemiş, ancak göze alınmış"
+      ]
     },
     {
       "lines": [
