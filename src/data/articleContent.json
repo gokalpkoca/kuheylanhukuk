@@ -140,28 +140,52 @@
       "lines": [
         "Fiil / Suç Tipi                                      Madde     Ceza                     Etkin Pişmanlık"
       ],
-      "text": "Fiil / Suç Tipi Madde Ceza Etkin Pişmanlık"
+      "text": "Fiil / Suç Tipi Madde Ceza Etkin Pişmanlık",
+      "cells": [
+        "Fiil / Suç Tipi",
+        "Madde",
+        "Ceza",
+        "Etkin Pişmanlık"
+      ]
     },
     {
       "lines": [
         "Gümrük işlemlerine tabi tutmaksızın eşya             m.3/1     1-5 yıl hapis            Soruşturmada 1/2, kovuşturmada 1/3",
         "sokmak                                                                                  indirim"
       ],
-      "text": "Gümrük işlemlerine tabi tutmaksızın eşya m.3/1 1-5 yıl hapis Soruşturmada 1/2, kovuşturmada 1/3 sokmak indirim"
+      "text": "Gümrük işlemlerine tabi tutmaksızın eşya m.3/1 1-5 yıl hapis Soruşturmada 1/2, kovuşturmada 1/3 sokmak indirim",
+      "cells": [
+        "Gümrük işlemlerine tabi tutmaksızın eşya sokmak",
+        "m.3/1",
+        "1-5 yıl hapis",
+        "Soruşturmada 1/2, kovuşturmada 1/3 indirim"
+      ]
     },
     {
       "lines": [
         "Kaçak eşyayı ticari amaçla satmak, taşımak,          m.3/10    1-3 yıl hapis            Değerin iki katı ödenirse indirim hakkı",
         "saklamak                                                                                doğar"
       ],
-      "text": "Kaçak eşyayı ticari amaçla satmak, taşımak, m.3/10 1-3 yıl hapis Değerin iki katı ödenirse indirim hakkı saklamak doğar"
+      "text": "Kaçak eşyayı ticari amaçla satmak, taşımak, m.3/10 1-3 yıl hapis Değerin iki katı ödenirse indirim hakkı saklamak doğar",
+      "cells": [
+        "Kaçak eşyayı ticari amaçla satmak, taşımak, saklamak",
+        "m.3/10",
+        "1-3 yıl hapis",
+        "Değerin iki katı ödenirse indirim hakkı doğar"
+      ]
     },
     {
       "lines": [
         "Transit/antrepo rejimini ihlal etmek                 m.3/5     1-3 yıl hapis            Vergi kaybı ve eşya değerine göre",
         "hesaplanır"
       ],
-      "text": "Transit/antrepo rejimini ihlal etmek m.3/5 1-3 yıl hapis Vergi kaybı ve eşya değerine göre hesaplanır"
+      "text": "Transit/antrepo rejimini ihlal etmek m.3/5 1-3 yıl hapis Vergi kaybı ve eşya değerine göre hesaplanır",
+      "cells": [
+        "Transit/antrepo rejimini ihlal etmek",
+        "m.3/5",
+        "1-3 yıl hapis",
+        "Vergi kaybı ve eşya değerine göre hesaplanır"
+      ]
     },
     {
       "lines": [
@@ -198,28 +222,44 @@
       "lines": [
         "Aşama                          Detay"
       ],
-      "text": "Aşama Detay"
+      "text": "Aşama Detay",
+      "cells": [
+        "Aşama",
+        "Detay"
+      ]
     },
     {
       "lines": [
         "1. Yakalama ve Suç             Gümrükte kaçak eşya tespit edilir, tutanak düzenlenir.",
         "Tutanağı"
       ],
-      "text": "1. Yakalama ve Suç Gümrükte kaçak eşya tespit edilir, tutanak düzenlenir. Tutanağı"
+      "text": "1. Yakalama ve Suç Gümrükte kaçak eşya tespit edilir, tutanak düzenlenir. Tutanağı",
+      "cells": [
+        "1. Yakalama ve Suç Tutanağı",
+        "Gümrükte kaçak eşya tespit edilir, tutanak düzenlenir."
+      ]
     },
     {
       "lines": [
         "2a. Etkin Pişmanlık Yolu       Gümrüklenmiş değerin iki katı ödenir; soruşturmada %50 ceza indirimi sağlanır, adli sicil riski",
         "azalır."
       ],
-      "text": "2a. Etkin Pişmanlık Yolu Gümrüklenmiş değerin iki katı ödenir; soruşturmada %50 ceza indirimi sağlanır, adli sicil riski azalır."
+      "text": "2a. Etkin Pişmanlık Yolu Gümrüklenmiş değerin iki katı ödenir; soruşturmada %50 ceza indirimi sağlanır, adli sicil riski azalır.",
+      "cells": [
+        "2a. Etkin Pişmanlık Yolu",
+        "Gümrüklenmiş değerin iki katı ödenir; soruşturmada %50 ceza indirimi sağlanır, adli sicil riski azalır."
+      ]
     },
     {
       "lines": [
         "2b. Savunma / Yargılama        Kast veya bilgi yokluğu ispatlanmaya çalışılır; beraat hâlinde araç ve eşya iade edilir.",
         "Yolu"
       ],
-      "text": "2b. Savunma / Yargılama Kast veya bilgi yokluğu ispatlanmaya çalışılır; beraat hâlinde araç ve eşya iade edilir. Yolu"
+      "text": "2b. Savunma / Yargılama Kast veya bilgi yokluğu ispatlanmaya çalışılır; beraat hâlinde araç ve eşya iade edilir. Yolu",
+      "cells": [
+        "2b. Savunma / Yargılama Yolu",
+        "Kast veya bilgi yokluğu ispatlanmaya çalışılır; beraat hâlinde araç ve eşya iade edilir."
+      ]
     },
     {
       "lines": [
@@ -416,7 +456,11 @@
       "lines": [
         "Bölüm                İçermesi Gereken Detay"
       ],
-      "text": "Bölüm İçermesi Gereken Detay"
+      "text": "Bölüm İçermesi Gereken Detay",
+      "cells": [
+        "Bölüm",
+        "İçermesi Gereken Detay"
+      ]
     },
     {
       "lines": [
@@ -431,14 +475,22 @@
         "Velayet ve            Velayetin kime verileceği ve görüşme takviminin gün, saat belirtilerek kesin ifadelerle yazılması (\"her ayın",
         "Kişisel İlişki        1. ve 3. hafta sonu Cumartesi 10:00 - Pazar 17:00\" gibi)."
       ],
-      "text": "Velayet ve Velayetin kime verileceği ve görüşme takviminin gün, saat belirtilerek kesin ifadelerle yazılması (\"her ayın Kişisel İlişki 1. ve 3. hafta sonu Cumartesi 10:00 - Pazar 17:00\" gibi)."
+      "text": "Velayet ve Velayetin kime verileceği ve görüşme takviminin gün, saat belirtilerek kesin ifadelerle yazılması (\"her ayın Kişisel İlişki 1. ve 3. hafta sonu Cumartesi 10:00 - Pazar 17:00\" gibi).",
+      "cells": [
+        "Velayet ve Kişisel İlişki",
+        "Velayetin kime verileceği ve görüşme takviminin gün, saat belirtilerek kesin ifadelerle yazılması (\"her ayın 1. ve 3. hafta sonu Cumartesi 10:00 - Pazar 17:00\" gibi)."
+      ]
     },
     {
       "lines": [
         "Nafaka                İştirak ve yoksulluk nafakasının somut rakamla, ödeme tarihi ve IBAN bilgisiyle, yıllık artış oranı",
         "Hükümleri             (ÜFE/TÜFE) belirtilerek yazılması."
       ],
-      "text": "Nafaka İştirak ve yoksulluk nafakasının somut rakamla, ödeme tarihi ve IBAN bilgisiyle, yıllık artış oranı Hükümleri (ÜFE/TÜFE) belirtilerek yazılması."
+      "text": "Nafaka İştirak ve yoksulluk nafakasının somut rakamla, ödeme tarihi ve IBAN bilgisiyle, yıllık artış oranı Hükümleri (ÜFE/TÜFE) belirtilerek yazılması.",
+      "cells": [
+        "Nafaka Hükümleri",
+        "İştirak ve yoksulluk nafakasının somut rakamla, ödeme tarihi ve IBAN bilgisiyle, yıllık artış oranı (ÜFE/TÜFE) belirtilerek yazılması."
+      ]
     },
     {
       "lines": [
@@ -446,21 +498,33 @@
         "Manevi",
         "Tazminat"
       ],
-      "text": "Maddi ve Tazminat tutarı ve ödeme takvimi, ya da karşılıklı feragat beyanı. Manevi Tazminat"
+      "text": "Maddi ve Tazminat tutarı ve ödeme takvimi, ya da karşılıklı feragat beyanı. Manevi Tazminat",
+      "cells": [
+        "Maddi ve Manevi Tazminat",
+        "Tazminat tutarı ve ödeme takvimi, ya da karşılıklı feragat beyanı."
+      ]
     },
     {
       "lines": [
         "Mal Paylaşımı ve      Ev, araç, nakit ve şirket hisselerinin kimde kalacağının tapu veya hesap numarasıyla tek tek listelenmesi.",
         "Ziynet"
       ],
-      "text": "Mal Paylaşımı ve Ev, araç, nakit ve şirket hisselerinin kimde kalacağının tapu veya hesap numarasıyla tek tek listelenmesi. Ziynet"
+      "text": "Mal Paylaşımı ve Ev, araç, nakit ve şirket hisselerinin kimde kalacağının tapu veya hesap numarasıyla tek tek listelenmesi. Ziynet",
+      "cells": [
+        "Mal Paylaşımı ve Ziynet",
+        "Ev, araç, nakit ve şirket hisselerinin kimde kalacağının tapu veya hesap numarasıyla tek tek listelenmesi."
+      ]
     },
     {
       "lines": [
         "Yargılama             Harç ve vekalet ücretinin hangi tarafça karşılanacağının açıkça belirtilmesi.",
         "Giderleri"
       ],
-      "text": "Yargılama Harç ve vekalet ücretinin hangi tarafça karşılanacağının açıkça belirtilmesi. Giderleri"
+      "text": "Yargılama Harç ve vekalet ücretinin hangi tarafça karşılanacağının açıkça belirtilmesi. Giderleri",
+      "cells": [
+        "Yargılama Giderleri",
+        "Harç ve vekalet ücretinin hangi tarafça karşılanacağının açıkça belirtilmesi."
+      ]
     },
     {
       "lines": [
@@ -479,7 +543,12 @@
       "lines": [
         "Aşama            Yapılacak İşlem                                    Sahadan Not"
       ],
-      "text": "Aşama Yapılacak İşlem Sahadan Not"
+      "text": "Aşama Yapılacak İşlem Sahadan Not",
+      "cells": [
+        "Aşama",
+        "Yapılacak İşlem",
+        "Sahadan Not"
+      ]
     },
     {
       "lines": [
@@ -487,7 +556,12 @@
         "Toplama          sureti, çocukların nüfus kayıt örnekleri, güncel   (Aile)\" doğrudan kabul görür.",
         "gelir belgeleri"
       ],
-      "text": "1. Evrak Nüfus cüzdanı fotokopileri, evlilik cüzdanı e-Devlet üzerinden alınan barkodlu \"Nüfus Kayıt Örneği Toplama sureti, çocukların nüfus kayıt örnekleri, güncel (Aile)\" doğrudan kabul görür. gelir belgeleri"
+      "text": "1. Evrak Nüfus cüzdanı fotokopileri, evlilik cüzdanı e-Devlet üzerinden alınan barkodlu \"Nüfus Kayıt Örneği Toplama sureti, çocukların nüfus kayıt örnekleri, güncel (Aile)\" doğrudan kabul görür. gelir belgeleri",
+      "cells": [
+        "1. Evrak Toplama",
+        "Nüfus cüzdanı fotokopileri, evlilik cüzdanı sureti, çocukların nüfus kayıt örnekleri, güncel gelir belgeleri",
+        "e-Devlet üzerinden alınan barkodlu \"Nüfus Kayıt Örneği (Aile)\" doğrudan kabul görür."
+      ]
     },
     {
       "lines": [
@@ -495,14 +569,24 @@
         "İmzası           tarafın mutabık kaldığı protokol metni             tarafından ıslak imzalanmalıdır; imza eksikliği duruşmanın",
         "ertelenmesine yol açar."
       ],
-      "text": "2. Protokol En az 3 nüsha halinde hazırlanan, her iki Protokolün ve dava dilekçesinin her sayfası her iki eş İmzası tarafın mutabık kaldığı protokol metni tarafından ıslak imzalanmalıdır; imza eksikliği duruşmanın ertelenmesine yol açar."
+      "text": "2. Protokol En az 3 nüsha halinde hazırlanan, her iki Protokolün ve dava dilekçesinin her sayfası her iki eş İmzası tarafın mutabık kaldığı protokol metni tarafından ıslak imzalanmalıdır; imza eksikliği duruşmanın ertelenmesine yol açar.",
+      "cells": [
+        "2. Protokol İmzası",
+        "En az 3 nüsha halinde hazırlanan, her iki tarafın mutabık kaldığı protokol metni",
+        "Protokolün ve dava dilekçesinin her sayfası her iki eş tarafından ıslak imzalanmalıdır; imza eksikliği duruşmanın ertelenmesine yol açar."
+      ]
     },
     {
       "lines": [
         "3. Dava          Dilekçe ve ıslak imzalı protokolle adliye tevzi    Protokolün noter onaylı olması zorunlu değildir; mahkemeye",
         "Açılışı          bürosuna veya UYAP üzerinden başvuru               sunulan ıslak imzalı metin yeterlidir."
       ],
-      "text": "3. Dava Dilekçe ve ıslak imzalı protokolle adliye tevzi Protokolün noter onaylı olması zorunlu değildir; mahkemeye Açılışı bürosuna veya UYAP üzerinden başvuru sunulan ıslak imzalı metin yeterlidir."
+      "text": "3. Dava Dilekçe ve ıslak imzalı protokolle adliye tevzi Protokolün noter onaylı olması zorunlu değildir; mahkemeye Açılışı bürosuna veya UYAP üzerinden başvuru sunulan ıslak imzalı metin yeterlidir.",
+      "cells": [
+        "3. Dava Açılışı",
+        "Dilekçe ve ıslak imzalı protokolle adliye tevzi bürosuna veya UYAP üzerinden başvuru",
+        "Protokolün noter onaylı olması zorunlu değildir; mahkemeye sunulan ıslak imzalı metin yeterlidir."
+      ]
     },
     {
       "lines": [
@@ -765,7 +849,13 @@
       "lines": [
         "Bloke Türü         Dayanak            Süre                               İtiraz Mercii"
       ],
-      "text": "Bloke Türü Dayanak Süre İtiraz Mercii"
+      "text": "Bloke Türü Dayanak Süre İtiraz Mercii",
+      "cells": [
+        "Bloke Türü",
+        "Dayanak",
+        "Süre",
+        "İtiraz Mercii"
+      ]
     },
     {
       "lines": [
@@ -773,21 +863,39 @@
         "Blokesi            uyum/risk",
         "politikası"
       ],
-      "text": "Banka İç Risk Bankanın Değişken, genellikle kısa süreli Doğrudan bankaya yazılı itiraz Blokesi uyum/risk politikası"
+      "text": "Banka İç Risk Bankanın Değişken, genellikle kısa süreli Doğrudan bankaya yazılı itiraz Blokesi uyum/risk politikası",
+      "cells": [
+        "Banka İç Risk Blokesi",
+        "Bankanın uyum/risk politikası",
+        "Değişken, genellikle kısa süreli",
+        "Doğrudan bankaya yazılı itiraz"
+      ]
     },
     {
       "lines": [
         "MASAK Blokesi      5549 s.K. m.19/A   Kanunen 7 iş günü                  MASAK Başkanlığı'na itiraz; idari işlemse İdare",
         "(uygulamada 15-60 gün)             Mahkemesi'nde iptal davası"
       ],
-      "text": "MASAK Blokesi 5549 s.K. m.19/A Kanunen 7 iş günü MASAK Başkanlığı'na itiraz; idari işlemse İdare (uygulamada 15-60 gün) Mahkemesi'nde iptal davası"
+      "text": "MASAK Blokesi 5549 s.K. m.19/A Kanunen 7 iş günü MASAK Başkanlığı'na itiraz; idari işlemse İdare (uygulamada 15-60 gün) Mahkemesi'nde iptal davası",
+      "cells": [
+        "MASAK Blokesi",
+        "5549 s.K. m.19/A",
+        "Kanunen 7 iş günü (uygulamada 15-60 gün)",
+        "MASAK Başkanlığı'na itiraz; idari işlemse İdare Mahkemesi'nde iptal davası"
+      ]
     },
     {
       "lines": [
         "Savcılık / SCH     CMK m.128          Soruşturma/kovuşturma              Kararı veren Sulh Ceza Hakimliği'ne, tebliğden",
         "Blokesi                               süresince devam edebilir           itibaren 7 gün içinde itiraz"
       ],
-      "text": "Savcılık / SCH CMK m.128 Soruşturma/kovuşturma Kararı veren Sulh Ceza Hakimliği'ne, tebliğden Blokesi süresince devam edebilir itibaren 7 gün içinde itiraz"
+      "text": "Savcılık / SCH CMK m.128 Soruşturma/kovuşturma Kararı veren Sulh Ceza Hakimliği'ne, tebliğden Blokesi süresince devam edebilir itibaren 7 gün içinde itiraz",
+      "cells": [
+        "Savcılık / SCH Blokesi",
+        "CMK m.128",
+        "Soruşturma/kovuşturma süresince devam edebilir",
+        "Kararı veren Sulh Ceza Hakimliği'ne, tebliğden itibaren 7 gün içinde itiraz"
+      ]
     },
     {
       "lines": [
@@ -1090,14 +1198,24 @@
         "Yasal Süre ve Yetki Kuralı                             Sahadan Not",
         "Unsur"
       ],
-      "text": "Hukuki Yasal Süre ve Yetki Kuralı Sahadan Not Unsur"
+      "text": "Hukuki Yasal Süre ve Yetki Kuralı Sahadan Not Unsur",
+      "cells": [
+        "Hukuki Unsur",
+        "Yasal Süre ve Yetki Kuralı",
+        "Sahadan Not"
+      ]
     },
     {
       "lines": [
         "Zamanaşımı      Boşanma kararının kesinleştiği tarihten itibaren       Süre geçtikten sonra açılan davalar zamanaşımı",
         "Süresi          10 yıl                                                 nedeniyle doğrudan reddedilir."
       ],
-      "text": "Zamanaşımı Boşanma kararının kesinleştiği tarihten itibaren Süre geçtikten sonra açılan davalar zamanaşımı Süresi 10 yıl nedeniyle doğrudan reddedilir."
+      "text": "Zamanaşımı Boşanma kararının kesinleştiği tarihten itibaren Süre geçtikten sonra açılan davalar zamanaşımı Süresi 10 yıl nedeniyle doğrudan reddedilir.",
+      "cells": [
+        "Zamanaşımı Süresi",
+        "Boşanma kararının kesinleştiği tarihten itibaren 10 yıl",
+        "Süre geçtikten sonra açılan davalar zamanaşımı nedeniyle doğrudan reddedilir."
+      ]
     },
     {
       "lines": [
@@ -1105,14 +1223,24 @@
         "Yetkili         davalının yerleşim yeri aile mahkemesi                 mahkemesi, aile mahkemesi sıfatıyla bakar.",
         "Mahkeme"
       ],
-      "text": "Görevli ve Eşlerin son altı aydır birlikte oturdukları yer veya Aile mahkemesi bulunmayan yerlerde asliye hukuk Yetkili davalının yerleşim yeri aile mahkemesi mahkemesi, aile mahkemesi sıfatıyla bakar. Mahkeme"
+      "text": "Görevli ve Eşlerin son altı aydır birlikte oturdukları yer veya Aile mahkemesi bulunmayan yerlerde asliye hukuk Yetkili davalının yerleşim yeri aile mahkemesi mahkemesi, aile mahkemesi sıfatıyla bakar. Mahkeme",
+      "cells": [
+        "Görevli ve Yetkili Mahkeme",
+        "Eşlerin son altı aydır birlikte oturdukları yer veya davalının yerleşim yeri aile mahkemesi",
+        "Aile mahkemesi bulunmayan yerlerde asliye hukuk mahkemesi, aile mahkemesi sıfatıyla bakar."
+      ]
     },
     {
       "lines": [
         "Mal Kaçırmayı   Dava açılır açılmaz araç, tapu ve banka                Tapu kaydına \"davalıdır\" şerhi işlenmesi, malın üçüncü",
         "Önleme          hesaplarına ihtiyati tedbir talep edilebilir           kişiye devrini engeller."
       ],
-      "text": "Mal Kaçırmayı Dava açılır açılmaz araç, tapu ve banka Tapu kaydına \"davalıdır\" şerhi işlenmesi, malın üçüncü Önleme hesaplarına ihtiyati tedbir talep edilebilir kişiye devrini engeller."
+      "text": "Mal Kaçırmayı Dava açılır açılmaz araç, tapu ve banka Tapu kaydına \"davalıdır\" şerhi işlenmesi, malın üçüncü Önleme hesaplarına ihtiyati tedbir talep edilebilir kişiye devrini engeller.",
+      "cells": [
+        "Mal Kaçırmayı Önleme",
+        "Dava açılır açılmaz araç, tapu ve banka hesaplarına ihtiyati tedbir talep edilebilir",
+        "Tapu kaydına \"davalıdır\" şerhi işlenmesi, malın üçüncü kişiye devrini engeller."
+      ]
     },
     {
       "lines": [
@@ -1404,7 +1532,11 @@
       "lines": [
         "Aşama        Süreç Detayı"
       ],
-      "text": "Aşama Süreç Detayı"
+      "text": "Aşama Süreç Detayı",
+      "cells": [
+        "Aşama",
+        "Süreç Detayı"
+      ]
     },
     {
       "lines": [
@@ -1412,35 +1544,55 @@
         "Dilekçeler   davalı ikinci cevap (düplik) dilekçesi sunar. Bu aşamada sunulmayan deliller sonradan dosyaya eklenemez.",
         "Teatisi"
       ],
-      "text": "1. Dava dilekçesinin davalıya tebliğinden itibaren 2 haftalık cevap süresi başlar. Davacı cevaba cevap (replik), Dilekçeler davalı ikinci cevap (düplik) dilekçesi sunar. Bu aşamada sunulmayan deliller sonradan dosyaya eklenemez. Teatisi"
+      "text": "1. Dava dilekçesinin davalıya tebliğinden itibaren 2 haftalık cevap süresi başlar. Davacı cevaba cevap (replik), Dilekçeler davalı ikinci cevap (düplik) dilekçesi sunar. Bu aşamada sunulmayan deliller sonradan dosyaya eklenemez. Teatisi",
+      "cells": [
+        "1. Dilekçeler Teatisi",
+        "Dava dilekçesinin davalıya tebliğinden itibaren 2 haftalık cevap süresi başlar. Davacı cevaba cevap (replik), davalı ikinci cevap (düplik) dilekçesi sunar. Bu aşamada sunulmayan deliller sonradan dosyaya eklenemez."
+      ]
     },
     {
       "lines": [
         "2. Ön        Hakim, dava şartlarını ve ilk itirazları karara bağlar, uyuşmazlık konularını tutanağa geçirir. Taraflara delillerini",
         "İnceleme     sunmaları için 2 haftalık kesin süre verilir."
       ],
-      "text": "2. Ön Hakim, dava şartlarını ve ilk itirazları karara bağlar, uyuşmazlık konularını tutanağa geçirir. Taraflara delillerini İnceleme sunmaları için 2 haftalık kesin süre verilir."
+      "text": "2. Ön Hakim, dava şartlarını ve ilk itirazları karara bağlar, uyuşmazlık konularını tutanağa geçirir. Taraflara delillerini İnceleme sunmaları için 2 haftalık kesin süre verilir.",
+      "cells": [
+        "2. Ön İnceleme",
+        "Hakim, dava şartlarını ve ilk itirazları karara bağlar, uyuşmazlık konularını tutanağa geçirir. Taraflara delillerini sunmaları için 2 haftalık kesin süre verilir."
+      ]
     },
     {
       "lines": [
         "3.           Davanın esasına girilen en uzun aşamadır. Tanıklar dinlenir, tarafların sosyal ve ekonomik durumu kolluk",
         "Tahkikat     marifetiyle araştırılır, velayet söz konusuysa pedagog ve psikologdan uzman raporu alınır."
       ],
-      "text": "3. Davanın esasına girilen en uzun aşamadır. Tanıklar dinlenir, tarafların sosyal ve ekonomik durumu kolluk Tahkikat marifetiyle araştırılır, velayet söz konusuysa pedagog ve psikologdan uzman raporu alınır."
+      "text": "3. Davanın esasına girilen en uzun aşamadır. Tanıklar dinlenir, tarafların sosyal ve ekonomik durumu kolluk Tahkikat marifetiyle araştırılır, velayet söz konusuysa pedagog ve psikologdan uzman raporu alınır.",
+      "cells": [
+        "3. Tahkikat",
+        "Davanın esasına girilen en uzun aşamadır. Tanıklar dinlenir, tarafların sosyal ve ekonomik durumu kolluk marifetiyle araştırılır, velayet söz konusuysa pedagog ve psikologdan uzman raporu alınır."
+      ]
     },
     {
       "lines": [
         "4. Sözlü     Tahkikat tamamlandıktan sonra taraflara esasa ilişkin son beyanları sorulur; avukatlar dosyadaki delilleri özetler.",
         "Yargılama"
       ],
-      "text": "4. Sözlü Tahkikat tamamlandıktan sonra taraflara esasa ilişkin son beyanları sorulur; avukatlar dosyadaki delilleri özetler. Yargılama"
+      "text": "4. Sözlü Tahkikat tamamlandıktan sonra taraflara esasa ilişkin son beyanları sorulur; avukatlar dosyadaki delilleri özetler. Yargılama",
+      "cells": [
+        "4. Sözlü Yargılama",
+        "Tahkikat tamamlandıktan sonra taraflara esasa ilişkin son beyanları sorulur; avukatlar dosyadaki delilleri özetler."
+      ]
     },
     {
       "lines": [
         "5. Hüküm     Kısa karardan sonra 1 ay içinde gerekçeli karar yazılır. Tebliğden itibaren 2 hafta içinde Bölge Adliye",
         "ve Karar     Mahkemesi'nde istinaf yoluna başvurulabilir."
       ],
-      "text": "5. Hüküm Kısa karardan sonra 1 ay içinde gerekçeli karar yazılır. Tebliğden itibaren 2 hafta içinde Bölge Adliye ve Karar Mahkemesi'nde istinaf yoluna başvurulabilir."
+      "text": "5. Hüküm Kısa karardan sonra 1 ay içinde gerekçeli karar yazılır. Tebliğden itibaren 2 hafta içinde Bölge Adliye ve Karar Mahkemesi'nde istinaf yoluna başvurulabilir.",
+      "cells": [
+        "5. Hüküm ve Karar",
+        "Kısa karardan sonra 1 ay içinde gerekçeli karar yazılır. Tebliğden itibaren 2 hafta içinde Bölge Adliye Mahkemesi'nde istinaf yoluna başvurulabilir."
+      ]
     },
     {
       "lines": [
@@ -1777,28 +1929,52 @@
         "Medya Türü     Başvuru Süresi                    Yayın Organının İnfaz Süresi",
         "Süresi"
       ],
-      "text": "Hakimlik Başvuru Medya Türü Başvuru Süresi Yayın Organının İnfaz Süresi Süresi"
+      "text": "Hakimlik Başvuru Medya Türü Başvuru Süresi Yayın Organının İnfaz Süresi Süresi",
+      "cells": [
+        "Medya Türü",
+        "Başvuru Süresi",
+        "Yayın Organının İnfaz Süresi",
+        "Hakimlik Başvuru Süresi"
+      ]
     },
     {
       "lines": [
         "Yazılı basın   Yayından itibaren 2 ay, sorumlu   İhtardan sonra 3 gün (dergide ilk sayı)   Sürenin bitiminden",
         "müdüre ihtar                                                                itibaren 15 gün"
       ],
-      "text": "Yazılı basın Yayından itibaren 2 ay, sorumlu İhtardan sonra 3 gün (dergide ilk sayı) Sürenin bitiminden müdüre ihtar itibaren 15 gün"
+      "text": "Yazılı basın Yayından itibaren 2 ay, sorumlu İhtardan sonra 3 gün (dergide ilk sayı) Sürenin bitiminden müdüre ihtar itibaren 15 gün",
+      "cells": [
+        "Yazılı basın",
+        "Yayından itibaren 2 ay, sorumlu müdüre ihtar",
+        "İhtardan sonra 3 gün (dergide ilk sayı)",
+        "Sürenin bitiminden itibaren 15 gün"
+      ]
     },
     {
       "lines": [
         "İnternet       Yayından itibaren 2 ay, içerik    Başvurudan sonra 24 saat, en az 1 hafta   Sürenin bitiminden",
         "medyası        sağlayıcıya başvuru               yayında kalmalı                           itibaren 15 gün"
       ],
-      "text": "İnternet Yayından itibaren 2 ay, içerik Başvurudan sonra 24 saat, en az 1 hafta Sürenin bitiminden medyası sağlayıcıya başvuru yayında kalmalı itibaren 15 gün"
+      "text": "İnternet Yayından itibaren 2 ay, içerik Başvurudan sonra 24 saat, en az 1 hafta Sürenin bitiminden medyası sağlayıcıya başvuru yayında kalmalı itibaren 15 gün",
+      "cells": [
+        "İnternet medyası",
+        "Yayından itibaren 2 ay, içerik sağlayıcıya başvuru",
+        "Başvurudan sonra 24 saat, en az 1 hafta yayında kalmalı",
+        "Sürenin bitiminden itibaren 15 gün"
+      ]
     },
     {
       "lines": [
         "Radyo ve       Yayından itibaren 2 ay, yayın     İlk ilgili programda veya 3 gün içinde    Red veya sessiz kalmada",
         "televizyon     kuruluşuna başvuru                                                          15 gün"
       ],
-      "text": "Radyo ve Yayından itibaren 2 ay, yayın İlk ilgili programda veya 3 gün içinde Red veya sessiz kalmada televizyon kuruluşuna başvuru 15 gün"
+      "text": "Radyo ve Yayından itibaren 2 ay, yayın İlk ilgili programda veya 3 gün içinde Red veya sessiz kalmada televizyon kuruluşuna başvuru 15 gün",
+      "cells": [
+        "Radyo ve televizyon",
+        "Yayından itibaren 2 ay, yayın kuruluşuna başvuru",
+        "İlk ilgili programda veya 3 gün içinde",
+        "Red veya sessiz kalmada 15 gün"
+      ]
     },
     {
       "lines": [
@@ -2014,28 +2190,52 @@
       "lines": [
         "Eşya Türü / Durumu      Getiriliş Biçimi            Mevzuat                  Hukuki Sonuç"
       ],
-      "text": "Eşya Türü / Durumu Getiriliş Biçimi Mevzuat Hukuki Sonuç"
+      "text": "Eşya Türü / Durumu Getiriliş Biçimi Mevzuat Hukuki Sonuç",
+      "cells": [
+        "Eşya Türü / Durumu",
+        "Getiriliş Biçimi",
+        "Mevzuat",
+        "Hukuki Sonuç"
+      ]
     },
     {
       "lines": [
         "Ziynet altını (15.000   Valizde veya üzerinde,      32 Sayılı Karar / 1567   Yasaldır, ceza gerektirmez.",
         "USD altı)               beyansız                    Sayılı Kanun"
       ],
-      "text": "Ziynet altını (15.000 Valizde veya üzerinde, 32 Sayılı Karar / 1567 Yasaldır, ceza gerektirmez. USD altı) beyansız Sayılı Kanun"
+      "text": "Ziynet altını (15.000 Valizde veya üzerinde, 32 Sayılı Karar / 1567 Yasaldır, ceza gerektirmez. USD altı) beyansız Sayılı Kanun",
+      "cells": [
+        "Ziynet altını (15.000 USD altı)",
+        "Valizde veya üzerinde, beyansız",
+        "32 Sayılı Karar / 1567 Sayılı Kanun",
+        "Yasaldır, ceza gerektirmez."
+      ]
     },
     {
       "lines": [
         "Külçe/has altın veya    Gizli bölmede veya vücuda   5607 Sayılı Kanun        Kaçakçılık suçu. 1-5 yıl hapis, eşyanın",
         "sınır üstü ziynet       sarılı (Yeşil Hat)          m.3/1                    müsaderesi."
       ],
-      "text": "Külçe/has altın veya Gizli bölmede veya vücuda 5607 Sayılı Kanun Kaçakçılık suçu. 1-5 yıl hapis, eşyanın sınır üstü ziynet sarılı (Yeşil Hat) m.3/1 müsaderesi."
+      "text": "Külçe/has altın veya Gizli bölmede veya vücuda 5607 Sayılı Kanun Kaçakçılık suçu. 1-5 yıl hapis, eşyanın sınır üstü ziynet sarılı (Yeşil Hat) m.3/1 müsaderesi.",
+      "cells": [
+        "Külçe/has altın veya sınır üstü ziynet",
+        "Gizli bölmede veya vücuda sarılı (Yeşil Hat)",
+        "5607 Sayılı Kanun m.3/1",
+        "Kaçakçılık suçu. 1-5 yıl hapis, eşyanın müsaderesi."
+      ]
     },
     {
       "lines": [
         "Birden fazla telefon    Beyan edilmeden valizde     5607 Sayılı Kanun /      El koyma, kaçakçılık soruşturması ve ceza",
         "(ticari mahiyette)      saklama                     BTK mevzuatı             davası."
       ],
-      "text": "Birden fazla telefon Beyan edilmeden valizde 5607 Sayılı Kanun / El koyma, kaçakçılık soruşturması ve ceza (ticari mahiyette) saklama BTK mevzuatı davası."
+      "text": "Birden fazla telefon Beyan edilmeden valizde 5607 Sayılı Kanun / El koyma, kaçakçılık soruşturması ve ceza (ticari mahiyette) saklama BTK mevzuatı davası.",
+      "cells": [
+        "Birden fazla telefon (ticari mahiyette)",
+        "Beyan edilmeden valizde saklama",
+        "5607 Sayılı Kanun / BTK mevzuatı",
+        "El koyma, kaçakçılık soruşturması ve ceza davası."
+      ]
     },
     {
       "lines": [
@@ -2243,7 +2443,13 @@
       "lines": [
         "Aşama              Başvuru Makamı             Süre                           Not"
       ],
-      "text": "Aşama Başvuru Makamı Süre Not"
+      "text": "Aşama Başvuru Makamı Süre Not",
+      "cells": [
+        "Aşama",
+        "Başvuru Makamı",
+        "Süre",
+        "Not"
+      ]
     },
     {
       "lines": [
@@ -2257,14 +2463,26 @@
         "2. İdarenin       Gümrük Bölge           Başvurudan itibaren 30     Cevap verilmezse zımni ret oluşur.",
         "Cevabı            Müdürlüğü              gün"
       ],
-      "text": "2. İdarenin Gümrük Bölge Başvurudan itibaren 30 Cevap verilmezse zımni ret oluşur. Cevabı Müdürlüğü gün"
+      "text": "2. İdarenin Gümrük Bölge Başvurudan itibaren 30 Cevap verilmezse zımni ret oluşur. Cevabı Müdürlüğü gün",
+      "cells": [
+        "2. İdarenin Cevabı",
+        "Gümrük Bölge Müdürlüğü",
+        "Başvurudan itibaren 30 gün",
+        "Cevap verilmezse zımni ret oluşur."
+      ]
     },
     {
       "lines": [
         "3. İptal Davası   Vergi Mahkemesi        Ret tebliğinden itibaren   Para cezalarında ayrıca yürütmenin durdurulması",
         "30 gün                     istenmelidir."
       ],
-      "text": "3. İptal Davası Vergi Mahkemesi Ret tebliğinden itibaren Para cezalarında ayrıca yürütmenin durdurulması 30 gün istenmelidir."
+      "text": "3. İptal Davası Vergi Mahkemesi Ret tebliğinden itibaren Para cezalarında ayrıca yürütmenin durdurulması 30 gün istenmelidir.",
+      "cells": [
+        "3. İptal Davası",
+        "Vergi Mahkemesi",
+        "Ret tebliğinden itibaren 30 gün",
+        "Para cezalarında ayrıca yürütmenin durdurulması istenmelidir."
+      ]
     },
     {
       "lines": [
@@ -2524,28 +2742,48 @@
       "lines": [
         "Aşama               Yetkili Makam                   Gerekli Belge"
       ],
-      "text": "Aşama Yetkili Makam Gerekli Belge"
+      "text": "Aşama Yetkili Makam Gerekli Belge",
+      "cells": [
+        "Aşama",
+        "Yetkili Makam",
+        "Gerekli Belge"
+      ]
     },
     {
       "lines": [
         "1. El Koyma         Gümrük Muhafaza / Emniyet       Olay yeri tespit tutanağı; eşya antrepoya çekilir, araç yediemin",
         "Tutanağı                                            otoparkına bağlanır."
       ],
-      "text": "1. El Koyma Gümrük Muhafaza / Emniyet Olay yeri tespit tutanağı; eşya antrepoya çekilir, araç yediemin Tutanağı otoparkına bağlanır."
+      "text": "1. El Koyma Gümrük Muhafaza / Emniyet Olay yeri tespit tutanağı; eşya antrepoya çekilir, araç yediemin Tutanağı otoparkına bağlanır.",
+      "cells": [
+        "1. El Koyma Tutanağı",
+        "Gümrük Muhafaza / Emniyet",
+        "Olay yeri tespit tutanağı; eşya antrepoya çekilir, araç yediemin otoparkına bağlanır."
+      ]
     },
     {
       "lines": [
         "2. Değer Tespiti    Gümrük Müdürlüğü / Ekspertiz    Gümrüklenmiş değer veya kasko değeri raporu; teminat miktarı",
         "resmen belirlenir."
       ],
-      "text": "2. Değer Tespiti Gümrük Müdürlüğü / Ekspertiz Gümrüklenmiş değer veya kasko değeri raporu; teminat miktarı resmen belirlenir."
+      "text": "2. Değer Tespiti Gümrük Müdürlüğü / Ekspertiz Gümrüklenmiş değer veya kasko değeri raporu; teminat miktarı resmen belirlenir.",
+      "cells": [
+        "2. Değer Tespiti",
+        "Gümrük Müdürlüğü / Ekspertiz",
+        "Gümrüklenmiş değer veya kasko değeri raporu; teminat miktarı resmen belirlenir."
+      ]
     },
     {
       "lines": [
         "3. İade Talebi      Sulh Ceza Hakimliği veya Ceza   Gerekçeli dilekçe ve teminat makbuzu.",
         "Mahkemesi"
       ],
-      "text": "3. İade Talebi Sulh Ceza Hakimliği veya Ceza Gerekçeli dilekçe ve teminat makbuzu. Mahkemesi"
+      "text": "3. İade Talebi Sulh Ceza Hakimliği veya Ceza Gerekçeli dilekçe ve teminat makbuzu. Mahkemesi",
+      "cells": [
+        "3. İade Talebi",
+        "Sulh Ceza Hakimliği veya Ceza Mahkemesi",
+        "Gerekçeli dilekçe ve teminat makbuzu."
+      ]
     },
     {
       "lines": [
@@ -2793,28 +3031,52 @@
       "lines": [
         "Durum                            Koridor     Mevzuat                 Sonuç"
       ],
-      "text": "Durum Koridor Mevzuat Sonuç"
+      "text": "Durum Koridor Mevzuat Sonuç",
+      "cells": [
+        "Durum",
+        "Koridor",
+        "Mevzuat",
+        "Sonuç"
+      ]
     },
     {
       "lines": [
         "Muafiyet sınırı altı             Yeşil Hat   4458 Sayılı Kanun Ek-   Ceza yoktur, eşya vergisiz geçirilir.",
         "9"
       ],
-      "text": "Muafiyet sınırı altı Yeşil Hat 4458 Sayılı Kanun Ek- Ceza yoktur, eşya vergisiz geçirilir. 9"
+      "text": "Muafiyet sınırı altı Yeşil Hat 4458 Sayılı Kanun Ek- Ceza yoktur, eşya vergisiz geçirilir. 9",
+      "cells": [
+        "Muafiyet sınırı altı",
+        "Yeşil Hat",
+        "4458 Sayılı Kanun Ek- 9",
+        "Ceza yoktur, eşya vergisiz geçirilir."
+      ]
     },
     {
       "lines": [
         "Muafiyet sınırı üstü, beyan      Kırmızı     4458 Sayılı Kanun       Fazla kısmın vergisi ödenerek ürün yasal olarak",
         "edilmiş                          Hat                                 alınır."
       ],
-      "text": "Muafiyet sınırı üstü, beyan Kırmızı 4458 Sayılı Kanun Fazla kısmın vergisi ödenerek ürün yasal olarak edilmiş Hat alınır."
+      "text": "Muafiyet sınırı üstü, beyan Kırmızı 4458 Sayılı Kanun Fazla kısmın vergisi ödenerek ürün yasal olarak edilmiş Hat alınır.",
+      "cells": [
+        "Muafiyet sınırı üstü, beyan edilmiş",
+        "Kırmızı Hat",
+        "4458 Sayılı Kanun",
+        "Fazla kısmın vergisi ödenerek ürün yasal olarak alınır."
+      ]
     },
     {
       "lines": [
         "Muafiyet sınırı üstü, beyansız   Yeşil Hat   4458 Sayılı Kanun       Vergilerin 2 katı idari para cezası; ödenirse mal",
         "yakalanma                                    m.235/3                 teslim edilir."
       ],
-      "text": "Muafiyet sınırı üstü, beyansız Yeşil Hat 4458 Sayılı Kanun Vergilerin 2 katı idari para cezası; ödenirse mal yakalanma m.235/3 teslim edilir."
+      "text": "Muafiyet sınırı üstü, beyansız Yeşil Hat 4458 Sayılı Kanun Vergilerin 2 katı idari para cezası; ödenirse mal yakalanma m.235/3 teslim edilir.",
+      "cells": [
+        "Muafiyet sınırı üstü, beyansız yakalanma",
+        "Yeşil Hat",
+        "4458 Sayılı Kanun m.235/3",
+        "Vergilerin 2 katı idari para cezası; ödenirse mal teslim edilir."
+      ]
     },
     {
       "lines": [
@@ -3039,37 +3301,67 @@
       "lines": [
         "Suçun İşleniş Biçimi            Ceza                                     Şikayetten Vazgeçmenin Etkisi"
       ],
-      "text": "Suçun İşleniş Biçimi Ceza Şikayetten Vazgeçmenin Etkisi"
+      "text": "Suçun İşleniş Biçimi Ceza Şikayetten Vazgeçmenin Etkisi",
+      "cells": [
+        "Suçun İşleniş Biçimi",
+        "Ceza",
+        "Şikayetten Vazgeçmenin Etkisi"
+      ]
     },
     {
       "lines": [
         "Basit Hırsızlık (m.141)         1-3 yıl hapis                            Dava düşmez, kamu davası olarak devam eder."
       ],
-      "text": "Basit Hırsızlık (m.141) 1-3 yıl hapis Dava düşmez, kamu davası olarak devam eder."
+      "text": "Basit Hırsızlık (m.141) 1-3 yıl hapis Dava düşmez, kamu davası olarak devam eder.",
+      "cells": [
+        "Basit Hırsızlık (m.141)",
+        "1-3 yıl hapis",
+        "Dava düşmez, kamu davası olarak devam eder."
+      ]
     },
     {
       "lines": [
         "Nitelikli Hırsızlık (m.142/1)   3-7 yıl hapis                            Dava düşmez, kamu davası olarak devam eder."
       ],
-      "text": "Nitelikli Hırsızlık (m.142/1) 3-7 yıl hapis Dava düşmez, kamu davası olarak devam eder."
+      "text": "Nitelikli Hırsızlık (m.142/1) 3-7 yıl hapis Dava düşmez, kamu davası olarak devam eder.",
+      "cells": [
+        "Nitelikli Hırsızlık (m.142/1)",
+        "3-7 yıl hapis",
+        "Dava düşmez, kamu davası olarak devam eder."
+      ]
     },
     {
       "lines": [
         "Nitelikli Hırsızlık (m.142/2)   5-10 yıl hapis                           Dava düşmez, kamu davası olarak devam eder."
       ],
-      "text": "Nitelikli Hırsızlık (m.142/2) 5-10 yıl hapis Dava düşmez, kamu davası olarak devam eder."
+      "text": "Nitelikli Hırsızlık (m.142/2) 5-10 yıl hapis Dava düşmez, kamu davası olarak devam eder.",
+      "cells": [
+        "Nitelikli Hırsızlık (m.142/2)",
+        "5-10 yıl hapis",
+        "Dava düşmez, kamu davası olarak devam eder."
+      ]
     },
     {
       "lines": [
         "Gece Vakti İşlenmesi (m.143)    Yukarıdaki cezalar yarı oranında artar   Dava düşmez."
       ],
-      "text": "Gece Vakti İşlenmesi (m.143) Yukarıdaki cezalar yarı oranında artar Dava düşmez."
+      "text": "Gece Vakti İşlenmesi (m.143) Yukarıdaki cezalar yarı oranında artar Dava düşmez.",
+      "cells": [
+        "Gece Vakti İşlenmesi (m.143)",
+        "Yukarıdaki cezalar yarı oranında artar",
+        "Dava düşmez."
+      ]
     },
     {
       "lines": [
         "Kullanma Hırsızlığı (m.146)     Cezada yarı oranında indirim             Şikayete tabidir, vazgeçilirse dava düşer."
       ],
-      "text": "Kullanma Hırsızlığı (m.146) Cezada yarı oranında indirim Şikayete tabidir, vazgeçilirse dava düşer."
+      "text": "Kullanma Hırsızlığı (m.146) Cezada yarı oranında indirim Şikayete tabidir, vazgeçilirse dava düşer.",
+      "cells": [
+        "Kullanma Hırsızlığı (m.146)",
+        "Cezada yarı oranında indirim",
+        "Şikayete tabidir, vazgeçilirse dava düşer."
+      ]
     },
     {
       "lines": [
@@ -3340,25 +3632,45 @@
       "lines": [
         "Aşama                                                  Eski Sistem        12. Yargı Paketi Sonrası"
       ],
-      "text": "Aşama Eski Sistem 12. Yargı Paketi Sonrası"
+      "text": "Aşama Eski Sistem 12. Yargı Paketi Sonrası",
+      "cells": [
+        "Aşama",
+        "Eski Sistem",
+        "12. Yargı Paketi Sonrası"
+      ]
     },
     {
       "lines": [
         "Başlangıç noktası (TCK 158/1-f alt sınır)              4 yıl hapis        4 yıl hapis"
       ],
-      "text": "Başlangıç noktası (TCK 158/1-f alt sınır) 4 yıl hapis 4 yıl hapis"
+      "text": "Başlangıç noktası (TCK 158/1-f alt sınır) 4 yıl hapis 4 yıl hapis",
+      "cells": [
+        "Başlangıç noktası (TCK 158/1-f alt sınır)",
+        "4 yıl hapis",
+        "4 yıl hapis"
+      ]
     },
     {
       "lines": [
         "Sadece hesap verme indirimi (1/2)                      Uygulanamaz        2 yıl hapis"
       ],
-      "text": "Sadece hesap verme indirimi (1/2) Uygulanamaz 2 yıl hapis"
+      "text": "Sadece hesap verme indirimi (1/2) Uygulanamaz 2 yıl hapis",
+      "cells": [
+        "Sadece hesap verme indirimi (1/2)",
+        "Uygulanamaz",
+        "2 yıl hapis"
+      ]
     },
     {
       "lines": [
         "Kovuşturmada zararın ödenmesi (etkin pişmanlık, 1/2)   2 yıl hapis        1 yıl hapis"
       ],
-      "text": "Kovuşturmada zararın ödenmesi (etkin pişmanlık, 1/2) 2 yıl hapis 1 yıl hapis"
+      "text": "Kovuşturmada zararın ödenmesi (etkin pişmanlık, 1/2) 2 yıl hapis 1 yıl hapis",
+      "cells": [
+        "Kovuşturmada zararın ödenmesi (etkin pişmanlık, 1/2)",
+        "2 yıl hapis",
+        "1 yıl hapis"
+      ]
     },
     {
       "lines": [
@@ -3683,21 +3995,39 @@
         "Dayanak            Yetkili Makam                    Uygulama Süresi",
         "Gerekçesi"
       ],
-      "text": "Başvuru Dayanak Yetkili Makam Uygulama Süresi Gerekçesi"
+      "text": "Başvuru Dayanak Yetkili Makam Uygulama Süresi Gerekçesi",
+      "cells": [
+        "Başvuru Gerekçesi",
+        "Dayanak",
+        "Yetkili Makam",
+        "Uygulama Süresi"
+      ]
     },
     {
       "lines": [
         "Kişilik haklarının   5651 s.K. m.9      Sulh Ceza Hakimliği veya site    Hakim kararı sonrası ESB kanalıyla 4",
         "ihlali                                  yönetimi                         saat içinde"
       ],
-      "text": "Kişilik haklarının 5651 s.K. m.9 Sulh Ceza Hakimliği veya site Hakim kararı sonrası ESB kanalıyla 4 ihlali yönetimi saat içinde"
+      "text": "Kişilik haklarının 5651 s.K. m.9 Sulh Ceza Hakimliği veya site Hakim kararı sonrası ESB kanalıyla 4 ihlali yönetimi saat içinde",
+      "cells": [
+        "Kişilik haklarının ihlali",
+        "5651 s.K. m.9",
+        "Sulh Ceza Hakimliği veya site yönetimi",
+        "Hakim kararı sonrası ESB kanalıyla 4 saat içinde"
+      ]
     },
     {
       "lines": [
         "Özel hayatın         5651 s.K. m.9/A    Doğrudan BTK, 24 saatte hakime   BTK bildirimiyle derhal",
         "gizliliği                               sunulur"
       ],
-      "text": "Özel hayatın 5651 s.K. m.9/A Doğrudan BTK, 24 saatte hakime BTK bildirimiyle derhal gizliliği sunulur"
+      "text": "Özel hayatın 5651 s.K. m.9/A Doğrudan BTK, 24 saatte hakime BTK bildirimiyle derhal gizliliği sunulur",
+      "cells": [
+        "Özel hayatın gizliliği",
+        "5651 s.K. m.9/A",
+        "Doğrudan BTK, 24 saatte hakime sunulur",
+        "BTK bildirimiyle derhal"
+      ]
     },
     {
       "lines": [
@@ -4419,7 +4749,12 @@
       "lines": [
         "Kriter Kira Tespit Davası Kira Uyarlama Davası"
       ],
-      "text": "Kriter Kira Tespit Davası Kira Uyarlama Davası"
+      "text": "Kriter Kira Tespit Davası Kira Uyarlama Davası",
+      "cells": [
+        "Kriter",
+        "Kira Tespit Davası",
+        "Kira Uyarlama Davası"
+      ]
     },
     {
       "lines": [
@@ -4447,7 +4782,12 @@
       "lines": [
         "Davacı Taraf Genellikle mülk sahibi Mülk sahibi veya kiracı, eşit ağırlıkta"
       ],
-      "text": "Davacı Taraf Genellikle mülk sahibi Mülk sahibi veya kiracı, eşit ağırlıkta"
+      "text": "Davacı Taraf Genellikle mülk sahibi Mülk sahibi veya kiracı, eşit ağırlıkta",
+      "cells": [
+        "Davacı Taraf",
+        "Genellikle mülk sahibi",
+        "Mülk sahibi veya kiracı, eşit ağırlıkta"
+      ]
     },
     {
       "lines": [
@@ -5627,19 +5967,34 @@
       "lines": [
         "Suç Türü / Failin Konumu Madde Ceza"
       ],
-      "text": "Suç Türü / Failin Konumu Madde Ceza"
+      "text": "Suç Türü / Failin Konumu Madde Ceza",
+      "cells": [
+        "Suç Türü / Failin Konumu",
+        "Madde",
+        "Ceza"
+      ]
     },
     {
       "lines": [
         "Suç örgütü kurmak veya yönetmek m.220/1 4-8 yıl hapis"
       ],
-      "text": "Suç örgütü kurmak veya yönetmek m.220/1 4-8 yıl hapis"
+      "text": "Suç örgütü kurmak veya yönetmek m.220/1 4-8 yıl hapis",
+      "cells": [
+        "Suç örgütü kurmak veya yönetmek",
+        "m.220/1",
+        "4-8 yıl hapis"
+      ]
     },
     {
       "lines": [
         "Suç örgütüne üye olmak m.220/2 2-4 yıl hapis"
       ],
-      "text": "Suç örgütüne üye olmak m.220/2 2-4 yıl hapis"
+      "text": "Suç örgütüne üye olmak m.220/2 2-4 yıl hapis",
+      "cells": [
+        "Suç örgütüne üye olmak",
+        "m.220/2",
+        "2-4 yıl hapis"
+      ]
     },
     {
       "lines": [
@@ -6066,7 +6421,12 @@
       "lines": [
         "11. Sürece İlişkin Pratik Bilgiler"
       ],
-      "text": "11. Sürece İlişkin Pratik Bilgiler"
+      "text": "11. Sürece İlişkin Pratik Bilgiler",
+      "cells": [
+        "11. Sürece İlişkin",
+        "Pratik Bilgiler",
+        ""
+      ]
     },
     {
       "lines": [
@@ -6098,7 +6458,12 @@
       "lines": [
         "12. Sıkça Sorulan Sorular"
       ],
-      "text": "12. Sıkça Sorulan Sorular"
+      "text": "12. Sıkça Sorulan Sorular",
+      "cells": [
+        "12. Sıkça Sorulan",
+        "Sorular",
+        ""
+      ]
     },
     {
       "lines": [
@@ -6440,7 +6805,12 @@
       "lines": [
         "10. Sürece İlişkin Pratik Bilgiler"
       ],
-      "text": "10. Sürece İlişkin Pratik Bilgiler"
+      "text": "10. Sürece İlişkin Pratik Bilgiler",
+      "cells": [
+        "10. Sürece",
+        "İlişkin Pratik Bilgiler",
+        ""
+      ]
     },
     {
       "lines": [
@@ -7164,37 +7534,67 @@
       "lines": [
         "Madde Türü Günlük Kullanım Kabulü Yıllık Maksimum Sınır"
       ],
-      "text": "Madde Türü Günlük Kullanım Kabulü Yıllık Maksimum Sınır"
+      "text": "Madde Türü Günlük Kullanım Kabulü Yıllık Maksimum Sınır",
+      "cells": [
+        "Madde Türü",
+        "Günlük Kullanım Kabulü",
+        "Yıllık Maksimum Sınır"
+      ]
     },
     {
       "lines": [
         "Esrar (toz veya kubar) 1-2 gram 600-700 gram"
       ],
-      "text": "Esrar (toz veya kubar) 1-2 gram 600-700 gram"
+      "text": "Esrar (toz veya kubar) 1-2 gram 600-700 gram",
+      "cells": [
+        "Esrar (toz veya kubar)",
+        "1-2 gram",
+        "600-700 gram"
+      ]
     },
     {
       "lines": [
         "Metamfetamin Eser miktar 15-20 gram"
       ],
-      "text": "Metamfetamin Eser miktar 15-20 gram"
+      "text": "Metamfetamin Eser miktar 15-20 gram",
+      "cells": [
+        "Metamfetamin",
+        "Eser miktar",
+        "15-20 gram"
+      ]
     },
     {
       "lines": [
         "Kokain Eser miktar 20-30 gram"
       ],
-      "text": "Kokain Eser miktar 20-30 gram"
+      "text": "Kokain Eser miktar 20-30 gram",
+      "cells": [
+        "Kokain",
+        "Eser miktar",
+        "20-30 gram"
+      ]
     },
     {
       "lines": [
         "Eroin / Morfin Eser miktar 20 gram"
       ],
-      "text": "Eroin / Morfin Eser miktar 20 gram"
+      "text": "Eroin / Morfin Eser miktar 20 gram",
+      "cells": [
+        "Eroin / Morfin",
+        "Eser miktar",
+        "20 gram"
+      ]
     },
     {
       "lines": [
         "Sentetik kannabinoid (bonzai) Eser miktar 10-15 gram"
       ],
-      "text": "Sentetik kannabinoid (bonzai) Eser miktar 10-15 gram"
+      "text": "Sentetik kannabinoid (bonzai) Eser miktar 10-15 gram",
+      "cells": [
+        "Sentetik kannabinoid (bonzai)",
+        "Eser miktar",
+        "10-15 gram"
+      ]
     },
     {
       "lines": [
@@ -7402,7 +7802,12 @@
       "lines": [
         "Miras Hukuku Serisi"
       ],
-      "text": "Miras Hukuku Serisi"
+      "text": "Miras Hukuku Serisi",
+      "cells": [
+        "",
+        "",
+        "Miras Hukuku Serisi"
+      ]
     },
     {
       "lines": [
@@ -7944,7 +8349,12 @@
       "lines": [
         "Belge Niteliği Aksi ispat edilene kadar geçerli Aksi ispat edilene kadar geçerli"
       ],
-      "text": "Belge Niteliği Aksi ispat edilene kadar geçerli Aksi ispat edilene kadar geçerli"
+      "text": "Belge Niteliği Aksi ispat edilene kadar geçerli Aksi ispat edilene kadar geçerli",
+      "cells": [
+        "Belge Niteliği",
+        "Aksi ispat edilene kadar geçerli",
+        "Aksi ispat edilene kadar geçerli"
+      ]
     },
     {
       "lines": [
@@ -8390,19 +8800,34 @@
       "lines": [
         "Seçimlik Hak Ne Zaman Tercih Edilir Kime Yöneltilir"
       ],
-      "text": "Seçimlik Hak Ne Zaman Tercih Edilir Kime Yöneltilir"
+      "text": "Seçimlik Hak Ne Zaman Tercih Edilir Kime Yöneltilir",
+      "cells": [
+        "Seçimlik Hak",
+        "Ne Zaman Tercih Edilir",
+        "Kime Yöneltilir"
+      ]
     },
     {
       "lines": [
         "Sözleşmeden dönme Ayıp malı kullanılamaz hâle getiriyor veya esaslı nitelikte Satıcı"
       ],
-      "text": "Sözleşmeden dönme Ayıp malı kullanılamaz hâle getiriyor veya esaslı nitelikte Satıcı"
+      "text": "Sözleşmeden dönme Ayıp malı kullanılamaz hâle getiriyor veya esaslı nitelikte Satıcı",
+      "cells": [
+        "Sözleşmeden dönme",
+        "Ayıp malı kullanılamaz hâle getiriyor veya esaslı nitelikte",
+        "Satıcı"
+      ]
     },
     {
       "lines": [
         "Bedelden indirim Mal kullanılabilir, ancak değer kaybı var Satıcı"
       ],
-      "text": "Bedelden indirim Mal kullanılabilir, ancak değer kaybı var Satıcı"
+      "text": "Bedelden indirim Mal kullanılabilir, ancak değer kaybı var Satıcı",
+      "cells": [
+        "Bedelden indirim",
+        "Mal kullanılabilir, ancak değer kaybı var",
+        "Satıcı"
+      ]
     },
     {
       "lines": [
@@ -8466,25 +8891,45 @@
       "lines": [
         "Mal Türü Zamanaşımı Süresi Başlangıç"
       ],
-      "text": "Mal Türü Zamanaşımı Süresi Başlangıç"
+      "text": "Mal Türü Zamanaşımı Süresi Başlangıç",
+      "cells": [
+        "Mal Türü",
+        "Zamanaşımı Süresi",
+        "Başlangıç"
+      ]
     },
     {
       "lines": [
         "Yeni mal (genel kural) 2 yıl Teslim tarihi"
       ],
-      "text": "Yeni mal (genel kural) 2 yıl Teslim tarihi"
+      "text": "Yeni mal (genel kural) 2 yıl Teslim tarihi",
+      "cells": [
+        "Yeni mal (genel kural)",
+        "2 yıl",
+        "Teslim tarihi"
+      ]
     },
     {
       "lines": [
         "Konut/tatil amaçlı taşınmaz 5 yıl Taşınmazın teslimi"
       ],
-      "text": "Konut/tatil amaçlı taşınmaz 5 yıl Taşınmazın teslimi"
+      "text": "Konut/tatil amaçlı taşınmaz 5 yıl Taşınmazın teslimi",
+      "cells": [
+        "Konut/tatil amaçlı taşınmaz",
+        "5 yıl",
+        "Taşınmazın teslimi"
+      ]
     },
     {
       "lines": [
         "İkinci el mal En az 1 yıl Teslim tarihi"
       ],
-      "text": "İkinci el mal En az 1 yıl Teslim tarihi"
+      "text": "İkinci el mal En az 1 yıl Teslim tarihi",
+      "cells": [
+        "İkinci el mal",
+        "En az 1 yıl",
+        "Teslim tarihi"
+      ]
     },
     {
       "lines": [
@@ -8564,13 +9009,23 @@
       "lines": [
         "Aşama Süre Sahadan Not"
       ],
-      "text": "Aşama Süre Sahadan Not"
+      "text": "Aşama Süre Sahadan Not",
+      "cells": [
+        "Aşama",
+        "Süre",
+        "Sahadan Not"
+      ]
     },
     {
       "lines": [
         "Ayıbın bildirimi Öğrenildikten sonra makul süre içinde Yazılı bildirim (ihtarname, e-posta) her zaman tercih edilmelidir."
       ],
-      "text": "Ayıbın bildirimi Öğrenildikten sonra makul süre içinde Yazılı bildirim (ihtarname, e-posta) her zaman tercih edilmelidir."
+      "text": "Ayıbın bildirimi Öğrenildikten sonra makul süre içinde Yazılı bildirim (ihtarname, e-posta) her zaman tercih edilmelidir.",
+      "cells": [
+        "Ayıbın bildirimi",
+        "Öğrenildikten sonra makul süre içinde",
+        "Yazılı bildirim (ihtarname, e-posta) her zaman tercih edilmelidir."
+      ]
     },
     {
       "lines": [
@@ -8589,14 +9044,24 @@
       "lines": [
         "Zamanaşımı 2 yıl (genel kural) Hile veya ağır kusurla gizlenen ayıplarda süre işlemez."
       ],
-      "text": "Zamanaşımı 2 yıl (genel kural) Hile veya ağır kusurla gizlenen ayıplarda süre işlemez."
+      "text": "Zamanaşımı 2 yıl (genel kural) Hile veya ağır kusurla gizlenen ayıplarda süre işlemez.",
+      "cells": [
+        "Zamanaşımı",
+        "2 yıl (genel kural)",
+        "Hile veya ağır kusurla gizlenen ayıplarda süre işlemez."
+      ]
     },
     {
       "lines": [
         "Dava/başvuru yolu Uyuşmazlık değerine göre değişir 186.000 TL altı Tüketici Hakem Heyeti, üzeri Tüketici",
         "Mahkemesi."
       ],
-      "text": "Dava/başvuru yolu Uyuşmazlık değerine göre değişir 186.000 TL altı Tüketici Hakem Heyeti, üzeri Tüketici Mahkemesi."
+      "text": "Dava/başvuru yolu Uyuşmazlık değerine göre değişir 186.000 TL altı Tüketici Hakem Heyeti, üzeri Tüketici Mahkemesi.",
+      "cells": [
+        "Dava/başvuru yolu",
+        "Uyuşmazlık değerine göre değişir",
+        "186.000 TL altı Tüketici Hakem Heyeti, üzeri Tüketici Mahkemesi."
+      ]
     },
     {
       "lines": [
@@ -8897,31 +9362,56 @@
       "lines": [
         "Özellik 403 Sayılı Mülga Kanun 5901 Sayılı Yürürlükteki Kanun"
       ],
-      "text": "Özellik 403 Sayılı Mülga Kanun 5901 Sayılı Yürürlükteki Kanun"
+      "text": "Özellik 403 Sayılı Mülga Kanun 5901 Sayılı Yürürlükteki Kanun",
+      "cells": [
+        "Özellik",
+        "403 Sayılı Mülga Kanun",
+        "5901 Sayılı Yürürlükteki Kanun"
+      ]
     },
     {
       "lines": [
         "Vatandaşlığın Kazanılma Şekli Evlenmeyle doğrudan ve otomatik Şartlara bağlı başvuru üzerine idari karar"
       ],
-      "text": "Vatandaşlığın Kazanılma Şekli Evlenmeyle doğrudan ve otomatik Şartlara bağlı başvuru üzerine idari karar"
+      "text": "Vatandaşlığın Kazanılma Şekli Evlenmeyle doğrudan ve otomatik Şartlara bağlı başvuru üzerine idari karar",
+      "cells": [
+        "Vatandaşlığın Kazanılma Şekli",
+        "Evlenmeyle doğrudan ve otomatik",
+        "Şartlara bağlı başvuru üzerine idari karar"
+      ]
     },
     {
       "lines": [
         "Evlilik Süresi Şartı Aranmaz En az 3 yıl kesintisiz evlilik"
       ],
-      "text": "Evlilik Süresi Şartı Aranmaz En az 3 yıl kesintisiz evlilik"
+      "text": "Evlilik Süresi Şartı Aranmaz En az 3 yıl kesintisiz evlilik",
+      "cells": [
+        "Evlilik Süresi Şartı",
+        "Aranmaz",
+        "En az 3 yıl kesintisiz evlilik"
+      ]
     },
     {
       "lines": [
         "Aile Birliği İncelemesi Aranmaz Mülakat ve araştırmayla incelenir"
       ],
-      "text": "Aile Birliği İncelemesi Aranmaz Mülakat ve araştırmayla incelenir"
+      "text": "Aile Birliği İncelemesi Aranmaz Mülakat ve araştırmayla incelenir",
+      "cells": [
+        "Aile Birliği İncelemesi",
+        "Aranmaz",
+        "Mülakat ve araştırmayla incelenir"
+      ]
     },
     {
       "lines": [
         "İdarenin Takdir Yetkisi Yok Var (millî güvenlik / kamu düzeni)"
       ],
-      "text": "İdarenin Takdir Yetkisi Yok Var (millî güvenlik / kamu düzeni)"
+      "text": "İdarenin Takdir Yetkisi Yok Var (millî güvenlik / kamu düzeni)",
+      "cells": [
+        "İdarenin Takdir Yetkisi",
+        "Yok",
+        "Var (millî güvenlik / kamu düzeni)"
+      ]
     },
     {
       "lines": [
@@ -9122,14 +9612,24 @@
       "lines": [
         "Aşama Süre / Bilgi Sahadan Not"
       ],
-      "text": "Aşama Süre / Bilgi Sahadan Not"
+      "text": "Aşama Süre / Bilgi Sahadan Not",
+      "cells": [
+        "Aşama",
+        "Süre / Bilgi",
+        "Sahadan Not"
+      ]
     },
     {
       "lines": [
         "Asgari evlilik süresi 3 yıl (kesintisiz, başvuru anında devam Yalnızca resmî nikâh tarihinden itibaren işler; dinî nikâh",
         "ediyor olmalı) süreye dahil edilmez."
       ],
-      "text": "Asgari evlilik süresi 3 yıl (kesintisiz, başvuru anında devam Yalnızca resmî nikâh tarihinden itibaren işler; dinî nikâh ediyor olmalı) süreye dahil edilmez."
+      "text": "Asgari evlilik süresi 3 yıl (kesintisiz, başvuru anında devam Yalnızca resmî nikâh tarihinden itibaren işler; dinî nikâh ediyor olmalı) süreye dahil edilmez.",
+      "cells": [
+        "Asgari evlilik süresi",
+        "3 yıl (kesintisiz, başvuru anında devam ediyor olmalı)",
+        "Yalnızca resmî nikâh tarihinden itibaren işler; dinî nikâh süreye dahil edilmez."
+      ]
     },
     {
       "lines": [
@@ -9156,7 +9656,12 @@
       "lines": [
         "Harç ve hizmet bedeli Güncel tarifeye göre değişken Başvuru öncesi güncel tutarın teyit edilmesi önerilir."
       ],
-      "text": "Harç ve hizmet bedeli Güncel tarifeye göre değişken Başvuru öncesi güncel tutarın teyit edilmesi önerilir."
+      "text": "Harç ve hizmet bedeli Güncel tarifeye göre değişken Başvuru öncesi güncel tutarın teyit edilmesi önerilir.",
+      "cells": [
+        "Harç ve hizmet bedeli",
+        "Güncel tarifeye göre değişken",
+        "Başvuru öncesi güncel tutarın teyit edilmesi önerilir."
+      ]
     },
     {
       "lines": [
@@ -9403,37 +9908,67 @@
       "lines": [
         "Kriter Galeri/Bayiden Alım Şahıstan Şahısa Satış"
       ],
-      "text": "Kriter Galeri/Bayiden Alım Şahıstan Şahısa Satış"
+      "text": "Kriter Galeri/Bayiden Alım Şahıstan Şahısa Satış",
+      "cells": [
+        "Kriter",
+        "Galeri/Bayiden Alım",
+        "Şahıstan Şahısa Satış"
+      ]
     },
     {
       "lines": [
         "Uygulanacak kanun 6502 sayılı TKHK 6098 sayılı TBK m.219 vd."
       ],
-      "text": "Uygulanacak kanun 6502 sayılı TKHK 6098 sayılı TBK m.219 vd."
+      "text": "Uygulanacak kanun 6502 sayılı TKHK 6098 sayılı TBK m.219 vd.",
+      "cells": [
+        "Uygulanacak kanun",
+        "6502 sayılı TKHK",
+        "6098 sayılı TBK m.219 vd."
+      ]
     },
     {
       "lines": [
         "Görevli mahkeme Tüketici Mahkemesi Asliye Hukuk Mahkemesi"
       ],
-      "text": "Görevli mahkeme Tüketici Mahkemesi Asliye Hukuk Mahkemesi"
+      "text": "Görevli mahkeme Tüketici Mahkemesi Asliye Hukuk Mahkemesi",
+      "cells": [
+        "Görevli mahkeme",
+        "Tüketici Mahkemesi",
+        "Asliye Hukuk Mahkemesi"
+      ]
     },
     {
       "lines": [
         "Uyuşmazlık değeri düşükse Önce Tüketici Hakem Heyeti Doğrudan dava"
       ],
-      "text": "Uyuşmazlık değeri düşükse Önce Tüketici Hakem Heyeti Doğrudan dava"
+      "text": "Uyuşmazlık değeri düşükse Önce Tüketici Hakem Heyeti Doğrudan dava",
+      "cells": [
+        "Uyuşmazlık değeri düşükse",
+        "Önce Tüketici Hakem Heyeti",
+        "Doğrudan dava"
+      ]
     },
     {
       "lines": [
         "Ek koruma Galeriye asgari garanti yükümlülüğü Yok"
       ],
-      "text": "Ek koruma Galeriye asgari garanti yükümlülüğü Yok"
+      "text": "Ek koruma Galeriye asgari garanti yükümlülüğü Yok",
+      "cells": [
+        "Ek koruma",
+        "Galeriye asgari garanti yükümlülüğü",
+        "Yok"
+      ]
     },
     {
       "lines": [
         "Seçimlik haklar TKHK m.11 (4 hak) TBK m.227 (4 hak)"
       ],
-      "text": "Seçimlik haklar TKHK m.11 (4 hak) TBK m.227 (4 hak)"
+      "text": "Seçimlik haklar TKHK m.11 (4 hak) TBK m.227 (4 hak)",
+      "cells": [
+        "Seçimlik haklar",
+        "TKHK m.11 (4 hak)",
+        "TBK m.227 (4 hak)"
+      ]
     },
     {
       "lines": [
@@ -9618,7 +10153,12 @@
       "lines": [
         "Aşama Süre / Kaynak Sahadan Not"
       ],
-      "text": "Aşama Süre / Kaynak Sahadan Not"
+      "text": "Aşama Süre / Kaynak Sahadan Not",
+      "cells": [
+        "Aşama",
+        "Süre / Kaynak",
+        "Sahadan Not"
+      ]
     },
     {
       "lines": [
@@ -9645,7 +10185,12 @@
       "lines": [
         "Cezai şikâyet Hukuki süreçten bağımsız Cumhuriyet Başsavcılığına suç duyurusuyla başlatılır."
       ],
-      "text": "Cezai şikâyet Hukuki süreçten bağımsız Cumhuriyet Başsavcılığına suç duyurusuyla başlatılır."
+      "text": "Cezai şikâyet Hukuki süreçten bağımsız Cumhuriyet Başsavcılığına suç duyurusuyla başlatılır.",
+      "cells": [
+        "Cezai şikâyet",
+        "Hukuki süreçten bağımsız",
+        "Cumhuriyet Başsavcılığına suç duyurusuyla başlatılır."
+      ]
     },
     {
       "lines": [
@@ -10217,14 +10762,24 @@
       "lines": [
         "Aşama Süre Sahadan Not"
       ],
-      "text": "Aşama Süre Sahadan Not"
+      "text": "Aşama Süre Sahadan Not",
+      "cells": [
+        "Aşama",
+        "Süre",
+        "Sahadan Not"
+      ]
     },
     {
       "lines": [
         "Ret kararına itiraz Tebliğden itibaren 60 İtiraz, dava açma süresini durdurur; süre itirazın sonuçlanmasından sonra",
         "gün kaldığı yerden işlemeye devam eder."
       ],
-      "text": "Ret kararına itiraz Tebliğden itibaren 60 İtiraz, dava açma süresini durdurur; süre itirazın sonuçlanmasından sonra gün kaldığı yerden işlemeye devam eder."
+      "text": "Ret kararına itiraz Tebliğden itibaren 60 İtiraz, dava açma süresini durdurur; süre itirazın sonuçlanmasından sonra gün kaldığı yerden işlemeye devam eder.",
+      "cells": [
+        "Ret kararına itiraz",
+        "Tebliğden itibaren 60 gün",
+        "İtiraz, dava açma süresini durdurur; süre itirazın sonuçlanmasından sonra kaldığı yerden işlemeye devam eder."
+      ]
     },
     {
       "lines": [
@@ -10548,25 +11103,41 @@
       "lines": [
         "Kategori Örnek"
       ],
-      "text": "Kategori Örnek"
+      "text": "Kategori Örnek",
+      "cells": [
+        "Kategori",
+        "Örnek"
+      ]
     },
     {
       "lines": [
         "Fiyatı piyasa dalgalanmalarına bağlı mallar Altın, mücevherat gibi satıcının kontrolünde olmayan fiyatlı ürünler"
       ],
-      "text": "Fiyatı piyasa dalgalanmalarına bağlı mallar Altın, mücevherat gibi satıcının kontrolünde olmayan fiyatlı ürünler"
+      "text": "Fiyatı piyasa dalgalanmalarına bağlı mallar Altın, mücevherat gibi satıcının kontrolünde olmayan fiyatlı ürünler",
+      "cells": [
+        "Fiyatı piyasa dalgalanmalarına bağlı mallar",
+        "Altın, mücevherat gibi satıcının kontrolünde olmayan fiyatlı ürünler"
+      ]
     },
     {
       "lines": [
         "Kişiye özel hazırlanan mallar Ölçüye göre dikilen kıyafet, isme özel gravürlü ürünler"
       ],
-      "text": "Kişiye özel hazırlanan mallar Ölçüye göre dikilen kıyafet, isme özel gravürlü ürünler"
+      "text": "Kişiye özel hazırlanan mallar Ölçüye göre dikilen kıyafet, isme özel gravürlü ürünler",
+      "cells": [
+        "Kişiye özel hazırlanan mallar",
+        "Ölçüye göre dikilen kıyafet, isme özel gravürlü ürünler"
+      ]
     },
     {
       "lines": [
         "Çabuk bozulabilen mallar Çiçek, yaş pasta, gıda ürünleri"
       ],
-      "text": "Çabuk bozulabilen mallar Çiçek, yaş pasta, gıda ürünleri"
+      "text": "Çabuk bozulabilen mallar Çiçek, yaş pasta, gıda ürünleri",
+      "cells": [
+        "Çabuk bozulabilen mallar",
+        "Çiçek, yaş pasta, gıda ürünleri"
+      ]
     },
     {
       "lines": [
@@ -10578,31 +11149,51 @@
       "lines": [
         "Ambalajı açılan dijital/sarf ürünler CD, DVD, toner, kartuş, kitap (ambalaj açıldıysa)"
       ],
-      "text": "Ambalajı açılan dijital/sarf ürünler CD, DVD, toner, kartuş, kitap (ambalaj açıldıysa)"
+      "text": "Ambalajı açılan dijital/sarf ürünler CD, DVD, toner, kartuş, kitap (ambalaj açıldıysa)",
+      "cells": [
+        "Ambalajı açılan dijital/sarf ürünler",
+        "CD, DVD, toner, kartuş, kitap (ambalaj açıldıysa)"
+      ]
     },
     {
       "lines": [
         "Süreli yayınlar Gazete, dergi (abonelik hariç)"
       ],
-      "text": "Süreli yayınlar Gazete, dergi (abonelik hariç)"
+      "text": "Süreli yayınlar Gazete, dergi (abonelik hariç)",
+      "cells": [
+        "Süreli yayınlar",
+        "Gazete, dergi (abonelik hariç)"
+      ]
     },
     {
       "lines": [
         "Belirli tarihli hizmetler Otel rezervasyonu, araç kiralama, düğün/organizasyon hizmeti"
       ],
-      "text": "Belirli tarihli hizmetler Otel rezervasyonu, araç kiralama, düğün/organizasyon hizmeti"
+      "text": "Belirli tarihli hizmetler Otel rezervasyonu, araç kiralama, düğün/organizasyon hizmeti",
+      "cells": [
+        "Belirli tarihli hizmetler",
+        "Otel rezervasyonu, araç kiralama, düğün/organizasyon hizmeti"
+      ]
     },
     {
       "lines": [
         "Anında ifa edilen elektronik hizmetler Uzaktan eğitim, anlık dijital erişim hizmetleri"
       ],
-      "text": "Anında ifa edilen elektronik hizmetler Uzaktan eğitim, anlık dijital erişim hizmetleri"
+      "text": "Anında ifa edilen elektronik hizmetler Uzaktan eğitim, anlık dijital erişim hizmetleri",
+      "cells": [
+        "Anında ifa edilen elektronik hizmetler",
+        "Uzaktan eğitim, anlık dijital erişim hizmetleri"
+      ]
     },
     {
       "lines": [
         "Anında teslim edilen gayri maddi mallar İndirilen müzik, film, yazılım"
       ],
-      "text": "Anında teslim edilen gayri maddi mallar İndirilen müzik, film, yazılım"
+      "text": "Anında teslim edilen gayri maddi mallar İndirilen müzik, film, yazılım",
+      "cells": [
+        "Anında teslim edilen gayri maddi mallar",
+        "İndirilen müzik, film, yazılım"
+      ]
     },
     {
       "lines": [
@@ -10640,25 +11231,45 @@
       "lines": [
         "Taraf Yükümlülük Süre"
       ],
-      "text": "Taraf Yükümlülük Süre"
+      "text": "Taraf Yükümlülük Süre",
+      "cells": [
+        "Taraf",
+        "Yükümlülük",
+        "Süre"
+      ]
     },
     {
       "lines": [
         "Satıcı Ödenen bedelin iadesi Cayma bildiriminin ulaşmasından itibaren 14 gün"
       ],
-      "text": "Satıcı Ödenen bedelin iadesi Cayma bildiriminin ulaşmasından itibaren 14 gün"
+      "text": "Satıcı Ödenen bedelin iadesi Cayma bildiriminin ulaşmasından itibaren 14 gün",
+      "cells": [
+        "Satıcı",
+        "Ödenen bedelin iadesi",
+        "Cayma bildiriminin ulaşmasından itibaren 14 gün"
+      ]
     },
     {
       "lines": [
         "Tüketici Malın geri gönderilmesi Cayma bildiriminden itibaren 10 gün"
       ],
-      "text": "Tüketici Malın geri gönderilmesi Cayma bildiriminden itibaren 10 gün"
+      "text": "Tüketici Malın geri gönderilmesi Cayma bildiriminden itibaren 10 gün",
+      "cells": [
+        "Tüketici",
+        "Malın geri gönderilmesi",
+        "Cayma bildiriminden itibaren 10 gün"
+      ]
     },
     {
       "lines": [
         "Satıcı Sipariş edilen malı gönderme Taahhüt yoksa en geç 30 gün"
       ],
-      "text": "Satıcı Sipariş edilen malı gönderme Taahhüt yoksa en geç 30 gün"
+      "text": "Satıcı Sipariş edilen malı gönderme Taahhüt yoksa en geç 30 gün",
+      "cells": [
+        "Satıcı",
+        "Sipariş edilen malı gönderme",
+        "Taahhüt yoksa en geç 30 gün"
+      ]
     },
     {
       "lines": [
@@ -10724,7 +11335,12 @@
       "lines": [
         "Aşama Süre Sahadan Not"
       ],
-      "text": "Aşama Süre Sahadan Not"
+      "text": "Aşama Süre Sahadan Not",
+      "cells": [
+        "Aşama",
+        "Süre",
+        "Sahadan Not"
+      ]
     },
     {
       "lines": [
@@ -10744,7 +11360,12 @@
       "lines": [
         "Malın iadesi Cayma bildiriminden itibaren 10 gün Satıcının belirttiği anlaşmalı kargo varsa masrafsız iade edilir."
       ],
-      "text": "Malın iadesi Cayma bildiriminden itibaren 10 gün Satıcının belirttiği anlaşmalı kargo varsa masrafsız iade edilir."
+      "text": "Malın iadesi Cayma bildiriminden itibaren 10 gün Satıcının belirttiği anlaşmalı kargo varsa masrafsız iade edilir.",
+      "cells": [
+        "Malın iadesi",
+        "Cayma bildiriminden itibaren 10 gün",
+        "Satıcının belirttiği anlaşmalı kargo varsa masrafsız iade edilir."
+      ]
     },
     {
       "lines": [
@@ -11033,7 +11654,12 @@
       "lines": [
         "Masraf Türü Durum Açıklama"
       ],
-      "text": "Masraf Türü Durum Açıklama"
+      "text": "Masraf Türü Durum Açıklama",
+      "cells": [
+        "Masraf Türü",
+        "Durum",
+        "Açıklama"
+      ]
     },
     {
       "lines": [
@@ -11046,19 +11672,34 @@
       "lines": [
         "Ekspertiz ücreti fazlası Haksız Bankanın fiilen ödediğini aşan kısım"
       ],
-      "text": "Ekspertiz ücreti fazlası Haksız Bankanın fiilen ödediğini aşan kısım"
+      "text": "Ekspertiz ücreti fazlası Haksız Bankanın fiilen ödediğini aşan kısım",
+      "cells": [
+        "Ekspertiz ücreti fazlası",
+        "Haksız",
+        "Bankanın fiilen ödediğini aşan kısım"
+      ]
     },
     {
       "lines": [
         "Erken ödeme tazminatı (yasal sınır içi) Meşru Sabit faizli konut kredisinde azami %1 / %2"
       ],
-      "text": "Erken ödeme tazminatı (yasal sınır içi) Meşru Sabit faizli konut kredisinde azami %1 / %2"
+      "text": "Erken ödeme tazminatı (yasal sınır içi) Meşru Sabit faizli konut kredisinde azami %1 / %2",
+      "cells": [
+        "Erken ödeme tazminatı (yasal sınır içi)",
+        "Meşru",
+        "Sabit faizli konut kredisinde azami %1 / %2"
+      ]
     },
     {
       "lines": [
         "Erken ödeme tazminatı (sınırı aşan) Haksız TKHK m.37'deki tavanı aşan kısım"
       ],
-      "text": "Erken ödeme tazminatı (sınırı aşan) Haksız TKHK m.37'deki tavanı aşan kısım"
+      "text": "Erken ödeme tazminatı (sınırı aşan) Haksız TKHK m.37'deki tavanı aşan kısım",
+      "cells": [
+        "Erken ödeme tazminatı (sınırı aşan)",
+        "Haksız",
+        "TKHK m.37'deki tavanı aşan kısım"
+      ]
     },
     {
       "lines": [
@@ -11193,25 +11834,45 @@
       "lines": [
         "Aşama Süre / Kaynak Sahadan Not"
       ],
-      "text": "Aşama Süre / Kaynak Sahadan Not"
+      "text": "Aşama Süre / Kaynak Sahadan Not",
+      "cells": [
+        "Aşama",
+        "Süre / Kaynak",
+        "Sahadan Not"
+      ]
     },
     {
       "lines": [
         "Zamanaşımı 10 yıl Süre, sözleşme tarihinden değil, kesintinin tahsil tarihinden işler."
       ],
-      "text": "Zamanaşımı 10 yıl Süre, sözleşme tarihinden değil, kesintinin tahsil tarihinden işler."
+      "text": "Zamanaşımı 10 yıl Süre, sözleşme tarihinden değil, kesintinin tahsil tarihinden işler.",
+      "cells": [
+        "Zamanaşımı",
+        "10 yıl",
+        "Süre, sözleşme tarihinden değil, kesintinin tahsil tarihinden işler."
+      ]
     },
     {
       "lines": [
         "Bankaya başvuru Dava/başvuru öncesi zorunlu adım Yazılı yapılmalı, tercihen noter ihtarnamesiyle."
       ],
-      "text": "Bankaya başvuru Dava/başvuru öncesi zorunlu adım Yazılı yapılmalı, tercihen noter ihtarnamesiyle."
+      "text": "Bankaya başvuru Dava/başvuru öncesi zorunlu adım Yazılı yapılmalı, tercihen noter ihtarnamesiyle.",
+      "cells": [
+        "Bankaya başvuru",
+        "Dava/başvuru öncesi zorunlu adım",
+        "Yazılı yapılmalı, tercihen noter ihtarnamesiyle."
+      ]
     },
     {
       "lines": [
         "Hakem Heyeti / Mahkeme Uyuşmazlık değerine göre Güncel parasal sınırın altı Hakem Heyeti, üzeri Tüketici Mahkemesi."
       ],
-      "text": "Hakem Heyeti / Mahkeme Uyuşmazlık değerine göre Güncel parasal sınırın altı Hakem Heyeti, üzeri Tüketici Mahkemesi."
+      "text": "Hakem Heyeti / Mahkeme Uyuşmazlık değerine göre Güncel parasal sınırın altı Hakem Heyeti, üzeri Tüketici Mahkemesi.",
+      "cells": [
+        "Hakem Heyeti / Mahkeme",
+        "Uyuşmazlık değerine göre",
+        "Güncel parasal sınırın altı Hakem Heyeti, üzeri Tüketici Mahkemesi."
+      ]
     },
     {
       "lines": [
@@ -11566,37 +12227,67 @@
       "lines": [
         "Özellik Sınır Dışı Kararına İtiraz İdari Gözetim Kararına İtiraz"
       ],
-      "text": "Özellik Sınır Dışı Kararına İtiraz İdari Gözetim Kararına İtiraz"
+      "text": "Özellik Sınır Dışı Kararına İtiraz İdari Gözetim Kararına İtiraz",
+      "cells": [
+        "Özellik",
+        "Sınır Dışı Kararına İtiraz",
+        "İdari Gözetim Kararına İtiraz"
+      ]
     },
     {
       "lines": [
         "Başvurulacak Merci İdare Mahkemesi (iptal davası) Sulh Ceza Hâkimliği"
       ],
-      "text": "Başvurulacak Merci İdare Mahkemesi (iptal davası) Sulh Ceza Hâkimliği"
+      "text": "Başvurulacak Merci İdare Mahkemesi (iptal davası) Sulh Ceza Hâkimliği",
+      "cells": [
+        "Başvurulacak Merci",
+        "İdare Mahkemesi (iptal davası)",
+        "Sulh Ceza Hâkimliği"
+      ]
     },
     {
       "lines": [
         "Süre Tebliğden itibaren 7 gün Süreye bağlı olmaksızın her zaman mümkün"
       ],
-      "text": "Süre Tebliğden itibaren 7 gün Süreye bağlı olmaksızın her zaman mümkün"
+      "text": "Süre Tebliğden itibaren 7 gün Süreye bağlı olmaksızın her zaman mümkün",
+      "cells": [
+        "Süre",
+        "Tebliğden itibaren 7 gün",
+        "Süreye bağlı olmaksızın her zaman mümkün"
+      ]
     },
     {
       "lines": [
         "Karar Süresi 15 gün içinde sonuçlandırılır Kanunen 5 gün, uygulamada 1-2 hafta"
       ],
-      "text": "Karar Süresi 15 gün içinde sonuçlandırılır Kanunen 5 gün, uygulamada 1-2 hafta"
+      "text": "Karar Süresi 15 gün içinde sonuçlandırılır Kanunen 5 gün, uygulamada 1-2 hafta",
+      "cells": [
+        "Karar Süresi",
+        "15 gün içinde sonuçlandırılır",
+        "Kanunen 5 gün, uygulamada 1-2 hafta"
+      ]
     },
     {
       "lines": [
         "Kararın Niteliği Kesin, istinaf ve temyiz yolu kapalı Yeniden itiraz mümkün"
       ],
-      "text": "Kararın Niteliği Kesin, istinaf ve temyiz yolu kapalı Yeniden itiraz mümkün"
+      "text": "Kararın Niteliği Kesin, istinaf ve temyiz yolu kapalı Yeniden itiraz mümkün",
+      "cells": [
+        "Kararın Niteliği",
+        "Kesin, istinaf ve temyiz yolu kapalı",
+        "Yeniden itiraz mümkün"
+      ]
     },
     {
       "lines": [
         "Etkisi Sınır dışı işlemini durdurur Yalnızca özgürlükten yoksun bırakılmayı sonlandırır"
       ],
-      "text": "Etkisi Sınır dışı işlemini durdurur Yalnızca özgürlükten yoksun bırakılmayı sonlandırır"
+      "text": "Etkisi Sınır dışı işlemini durdurur Yalnızca özgürlükten yoksun bırakılmayı sonlandırır",
+      "cells": [
+        "Etkisi",
+        "Sınır dışı işlemini durdurur",
+        "Yalnızca özgürlükten yoksun bırakılmayı sonlandırır"
+      ]
     },
     {
       "lines": [
@@ -11716,14 +12407,24 @@
       "lines": [
         "Aşama Süre Sahadan Not"
       ],
-      "text": "Aşama Süre Sahadan Not"
+      "text": "Aşama Süre Sahadan Not",
+      "cells": [
+        "Aşama",
+        "Süre",
+        "Sahadan Not"
+      ]
     },
     {
       "lines": [
         "Sınır dışı kararına karşı iptal Tebliğden itibaren 7 gün İstinaf/temyiz yolu kapalı olduğundan dilekçe ilk seferde",
         "davası eksiksiz hazırlanmalıdır."
       ],
-      "text": "Sınır dışı kararına karşı iptal Tebliğden itibaren 7 gün İstinaf/temyiz yolu kapalı olduğundan dilekçe ilk seferde davası eksiksiz hazırlanmalıdır."
+      "text": "Sınır dışı kararına karşı iptal Tebliğden itibaren 7 gün İstinaf/temyiz yolu kapalı olduğundan dilekçe ilk seferde davası eksiksiz hazırlanmalıdır.",
+      "cells": [
+        "Sınır dışı kararına karşı iptal davası",
+        "Tebliğden itibaren 7 gün",
+        "İstinaf/temyiz yolu kapalı olduğundan dilekçe ilk seferde eksiksiz hazırlanmalıdır."
+      ]
     },
     {
       "lines": [
@@ -11745,13 +12446,23 @@
         "Terke davet süresi 15-30 gün Kaçma riski veya sahte belge kullanımı hâlinde bu süre hiç",
         "tanınmaz."
       ],
-      "text": "Terke davet süresi 15-30 gün Kaçma riski veya sahte belge kullanımı hâlinde bu süre hiç tanınmaz."
+      "text": "Terke davet süresi 15-30 gün Kaçma riski veya sahte belge kullanımı hâlinde bu süre hiç tanınmaz.",
+      "cells": [
+        "Terke davet süresi",
+        "15-30 gün",
+        "Kaçma riski veya sahte belge kullanımı hâlinde bu süre hiç tanınmaz."
+      ]
     },
     {
       "lines": [
         "Alternatif yükümlülük süresi Azami 24 ay İdari gözetime alternatif olarak hâkimlikçe belirlenir."
       ],
-      "text": "Alternatif yükümlülük süresi Azami 24 ay İdari gözetime alternatif olarak hâkimlikçe belirlenir."
+      "text": "Alternatif yükümlülük süresi Azami 24 ay İdari gözetime alternatif olarak hâkimlikçe belirlenir.",
+      "cells": [
+        "Alternatif yükümlülük süresi",
+        "Azami 24 ay",
+        "İdari gözetime alternatif olarak hâkimlikçe belirlenir."
+      ]
     },
     {
       "lines": [
@@ -11989,25 +12700,45 @@
       "lines": [
         "Yıl Parasal Sınır Uygulanan Yeniden Değerleme Oranı"
       ],
-      "text": "Yıl Parasal Sınır Uygulanan Yeniden Değerleme Oranı"
+      "text": "Yıl Parasal Sınır Uygulanan Yeniden Değerleme Oranı",
+      "cells": [
+        "Yıl",
+        "Parasal Sınır",
+        "Uygulanan Yeniden Değerleme Oranı"
+      ]
     },
     {
       "lines": [
         "2024 104.000 TL %43,93 (2023 yılı YDO)"
       ],
-      "text": "2024 104.000 TL %43,93 (2023 yılı YDO)"
+      "text": "2024 104.000 TL %43,93 (2023 yılı YDO)",
+      "cells": [
+        "2024",
+        "104.000 TL",
+        "%43,93 (2023 yılı YDO)"
+      ]
     },
     {
       "lines": [
         "2025 149.000 TL %43,93 (2024 yılı YDO)"
       ],
-      "text": "2025 149.000 TL %43,93 (2024 yılı YDO)"
+      "text": "2025 149.000 TL %43,93 (2024 yılı YDO)",
+      "cells": [
+        "2025",
+        "149.000 TL",
+        "%43,93 (2024 yılı YDO)"
+      ]
     },
     {
       "lines": [
         "2026 186.000 TL %25,49 (2025 yılı YDO)"
       ],
-      "text": "2026 186.000 TL %25,49 (2025 yılı YDO)"
+      "text": "2026 186.000 TL %25,49 (2025 yılı YDO)",
+      "cells": [
+        "2026",
+        "186.000 TL",
+        "%25,49 (2025 yılı YDO)"
+      ]
     },
     {
       "lines": [
@@ -12136,19 +12867,34 @@
       "lines": [
         "Başvuru şekli İdari, dava değildir Gerçek yargılama (dava)"
       ],
-      "text": "Başvuru şekli İdari, dava değildir Gerçek yargılama (dava)"
+      "text": "Başvuru şekli İdari, dava değildir Gerçek yargılama (dava)",
+      "cells": [
+        "Başvuru şekli",
+        "İdari, dava değildir",
+        "Gerçek yargılama (dava)"
+      ]
     },
     {
       "lines": [
         "Başvuru ücreti Ücretsiz Harç ve yargılama gideri"
       ],
-      "text": "Başvuru ücreti Ücretsiz Harç ve yargılama gideri"
+      "text": "Başvuru ücreti Ücretsiz Harç ve yargılama gideri",
+      "cells": [
+        "Başvuru ücreti",
+        "Ücretsiz",
+        "Harç ve yargılama gideri"
+      ]
     },
     {
       "lines": [
         "Avukatla temsil Zorunlu değil Zorunlu değil, ancak önerilir"
       ],
-      "text": "Avukatla temsil Zorunlu değil Zorunlu değil, ancak önerilir"
+      "text": "Avukatla temsil Zorunlu değil Zorunlu değil, ancak önerilir",
+      "cells": [
+        "Avukatla temsil",
+        "Zorunlu değil",
+        "Zorunlu değil, ancak önerilir"
+      ]
     },
     {
       "lines": [
@@ -12217,25 +12963,45 @@
       "lines": [
         "Aşama Süre Sahadan Not"
       ],
-      "text": "Aşama Süre Sahadan Not"
+      "text": "Aşama Süre Sahadan Not",
+      "cells": [
+        "Aşama",
+        "Süre",
+        "Sahadan Not"
+      ]
     },
     {
       "lines": [
         "Hakem heyeti incelemesi En geç 6 ay (istisnaen 6 ay daha) Basit dosyalar genellikle çok daha kısa sürede sonuçlanır."
       ],
-      "text": "Hakem heyeti incelemesi En geç 6 ay (istisnaen 6 ay daha) Basit dosyalar genellikle çok daha kısa sürede sonuçlanır."
+      "text": "Hakem heyeti incelemesi En geç 6 ay (istisnaen 6 ay daha) Basit dosyalar genellikle çok daha kısa sürede sonuçlanır.",
+      "cells": [
+        "Hakem heyeti incelemesi",
+        "En geç 6 ay (istisnaen 6 ay daha)",
+        "Basit dosyalar genellikle çok daha kısa sürede sonuçlanır."
+      ]
     },
     {
       "lines": [
         "Kararın tebliği Karardan itibaren 10 iş günü Tebligat Kanunu hükümlerine göre yazılı olarak yapılır."
       ],
-      "text": "Kararın tebliği Karardan itibaren 10 iş günü Tebligat Kanunu hükümlerine göre yazılı olarak yapılır."
+      "text": "Kararın tebliği Karardan itibaren 10 iş günü Tebligat Kanunu hükümlerine göre yazılı olarak yapılır.",
+      "cells": [
+        "Kararın tebliği",
+        "Karardan itibaren 10 iş günü",
+        "Tebligat Kanunu hükümlerine göre yazılı olarak yapılır."
+      ]
     },
     {
       "lines": [
         "İtiraz süresi Tebliğden itibaren 15 gün Hak düşürücüdür; adres bilgilerinin güncel olması takip açısından önemlidir."
       ],
-      "text": "İtiraz süresi Tebliğden itibaren 15 gün Hak düşürücüdür; adres bilgilerinin güncel olması takip açısından önemlidir."
+      "text": "İtiraz süresi Tebliğden itibaren 15 gün Hak düşürücüdür; adres bilgilerinin güncel olması takip açısından önemlidir.",
+      "cells": [
+        "İtiraz süresi",
+        "Tebliğden itibaren 15 gün",
+        "Hak düşürücüdür; adres bilgilerinin güncel olması takip açısından önemlidir."
+      ]
     },
     {
       "lines": [
@@ -12539,7 +13305,13 @@
       "lines": [
         "İzin Türü Azami Süre Kimlere Verilir Yasal Dayanak"
       ],
-      "text": "İzin Türü Azami Süre Kimlere Verilir Yasal Dayanak"
+      "text": "İzin Türü Azami Süre Kimlere Verilir Yasal Dayanak",
+      "cells": [
+        "İzin Türü",
+        "Azami Süre",
+        "Kimlere Verilir",
+        "Yasal Dayanak"
+      ]
     },
     {
       "lines": [
@@ -12719,14 +13491,24 @@
       "lines": [
         "Aşama Süre Sahadan Not"
       ],
-      "text": "Aşama Süre Sahadan Not"
+      "text": "Aşama Süre Sahadan Not",
+      "cells": [
+        "Aşama",
+        "Süre",
+        "Sahadan Not"
+      ]
     },
     {
       "lines": [
         "Bakanlık değerlendirmesi Ortalama 30 gün Eksiksiz belge ve doğru istihdam/mali tablo süreci",
         "hızlandırır."
       ],
-      "text": "Bakanlık değerlendirmesi Ortalama 30 gün Eksiksiz belge ve doğru istihdam/mali tablo süreci hızlandırır."
+      "text": "Bakanlık değerlendirmesi Ortalama 30 gün Eksiksiz belge ve doğru istihdam/mali tablo süreci hızlandırır.",
+      "cells": [
+        "Bakanlık değerlendirmesi",
+        "Ortalama 30 gün",
+        "Eksiksiz belge ve doğru istihdam/mali tablo süreci hızlandırır."
+      ]
     },
     {
       "lines": [
@@ -13136,7 +13918,13 @@
         "Gayrimenkul Edinimi 400.000 USD veya 3 yıl (tapuya Tapu ve Kadastro Genel Müdürlüğü",
         "muadili şerh)"
       ],
-      "text": "Gayrimenkul Edinimi 400.000 USD veya 3 yıl (tapuya Tapu ve Kadastro Genel Müdürlüğü muadili şerh)"
+      "text": "Gayrimenkul Edinimi 400.000 USD veya 3 yıl (tapuya Tapu ve Kadastro Genel Müdürlüğü muadili şerh)",
+      "cells": [
+        "Gayrimenkul Edinimi",
+        "400.000 USD veya muadili",
+        "3 yıl (tapuya şerh)",
+        "Tapu ve Kadastro Genel Müdürlüğü"
+      ]
     },
     {
       "lines": [
@@ -13335,28 +14123,48 @@
       "lines": [
         "Aşama Yapılacak İşlem Sahadan Not"
       ],
-      "text": "Aşama Yapılacak İşlem Sahadan Not"
+      "text": "Aşama Yapılacak İşlem Sahadan Not",
+      "cells": [
+        "Aşama",
+        "Yapılacak İşlem",
+        "Sahadan Not"
+      ]
     },
     {
       "lines": [
         "Ön İnceleme Tapu kaydı ve taşınmaz Taşınmazın önceki bir vatandaşlık başvurusunda kullanılıp kullanılmadığı",
         "geçmişinin araştırılması tapu sicilinde her zaman açıkça görünmez."
       ],
-      "text": "Ön İnceleme Tapu kaydı ve taşınmaz Taşınmazın önceki bir vatandaşlık başvurusunda kullanılıp kullanılmadığı geçmişinin araştırılması tapu sicilinde her zaman açıkça görünmez."
+      "text": "Ön İnceleme Tapu kaydı ve taşınmaz Taşınmazın önceki bir vatandaşlık başvurusunda kullanılıp kullanılmadığı geçmişinin araştırılması tapu sicilinde her zaman açıkça görünmez.",
+      "cells": [
+        "Ön İnceleme",
+        "Tapu kaydı ve taşınmaz geçmişinin araştırılması",
+        "Taşınmazın önceki bir vatandaşlık başvurusunda kullanılıp kullanılmadığı tapu sicilinde her zaman açıkça görünmez."
+      ]
     },
     {
       "lines": [
         "Değerleme SPK lisanslı kuruluştan rapor Satış bedeli ile değerleme raporundaki tutar arasında fark olması hâlinde",
         "alınması başvuru reddedilir."
       ],
-      "text": "Değerleme SPK lisanslı kuruluştan rapor Satış bedeli ile değerleme raporundaki tutar arasında fark olması hâlinde alınması başvuru reddedilir."
+      "text": "Değerleme SPK lisanslı kuruluştan rapor Satış bedeli ile değerleme raporundaki tutar arasında fark olması hâlinde alınması başvuru reddedilir.",
+      "cells": [
+        "Değerleme",
+        "SPK lisanslı kuruluştan rapor alınması",
+        "Satış bedeli ile değerleme raporundaki tutar arasında fark olması hâlinde başvuru reddedilir."
+      ]
     },
     {
       "lines": [
         "Ödeme DAB düzenlenmesi ve TL ile Bedelin bölünerek veya DAB'a atıf yapılmadan transfer edilmesi işlemin",
         "ödeme reddine yol açabilir."
       ],
-      "text": "Ödeme DAB düzenlenmesi ve TL ile Bedelin bölünerek veya DAB'a atıf yapılmadan transfer edilmesi işlemin ödeme reddine yol açabilir."
+      "text": "Ödeme DAB düzenlenmesi ve TL ile Bedelin bölünerek veya DAB'a atıf yapılmadan transfer edilmesi işlemin ödeme reddine yol açabilir.",
+      "cells": [
+        "Ödeme",
+        "DAB düzenlenmesi ve TL ile ödeme",
+        "Bedelin bölünerek veya DAB'a atıf yapılmadan transfer edilmesi işlemin reddine yol açabilir."
+      ]
     },
     {
       "lines": [
@@ -15947,37 +16755,67 @@
       "lines": [
         "Kriter                          İptal Davası                                       Tam Yargı Davası"
       ],
-      "text": "Kriter İptal Davası Tam Yargı Davası"
+      "text": "Kriter İptal Davası Tam Yargı Davası",
+      "cells": [
+        "Kriter",
+        "İptal Davası",
+        "Tam Yargı Davası"
+      ]
     },
     {
       "lines": [
         "Amaç                            Hukuka aykırı işlemin ortadan kaldırılması         Uğranılan zararın tazmini"
       ],
-      "text": "Amaç Hukuka aykırı işlemin ortadan kaldırılması Uğranılan zararın tazmini"
+      "text": "Amaç Hukuka aykırı işlemin ortadan kaldırılması Uğranılan zararın tazmini",
+      "cells": [
+        "Amaç",
+        "Hukuka aykırı işlemin ortadan kaldırılması",
+        "Uğranılan zararın tazmini"
+      ]
     },
     {
       "lines": [
         "Kapsam                          Objektif; sonucu herkese etki eder                 Sübjektif; yalnızca davacıyı etkiler"
       ],
-      "text": "Kapsam Objektif; sonucu herkese etki eder Sübjektif; yalnızca davacıyı etkiler"
+      "text": "Kapsam Objektif; sonucu herkese etki eder Sübjektif; yalnızca davacıyı etkiler",
+      "cells": [
+        "Kapsam",
+        "Objektif; sonucu herkese etki eder",
+        "Sübjektif; yalnızca davacıyı etkiler"
+      ]
     },
     {
       "lines": [
         "Dava Açma Ehliyeti              Menfaati ihlal edilen herkes                       Zarara bizzat uğrayan kişi"
       ],
-      "text": "Dava Açma Ehliyeti Menfaati ihlal edilen herkes Zarara bizzat uğrayan kişi"
+      "text": "Dava Açma Ehliyeti Menfaati ihlal edilen herkes Zarara bizzat uğrayan kişi",
+      "cells": [
+        "Dava Açma Ehliyeti",
+        "Menfaati ihlal edilen herkes",
+        "Zarara bizzat uğrayan kişi"
+      ]
     },
     {
       "lines": [
         "Ön Başvuru Zorunluluğu          Kural olarak aranmaz                               Eylemden kaynaklanan zararda zorunlu (İYUK m.13)"
       ],
-      "text": "Ön Başvuru Zorunluluğu Kural olarak aranmaz Eylemden kaynaklanan zararda zorunlu (İYUK m.13)"
+      "text": "Ön Başvuru Zorunluluğu Kural olarak aranmaz Eylemden kaynaklanan zararda zorunlu (İYUK m.13)",
+      "cells": [
+        "Ön Başvuru Zorunluluğu",
+        "Kural olarak aranmaz",
+        "Eylemden kaynaklanan zararda zorunlu (İYUK m.13)"
+      ]
     },
     {
       "lines": [
         "Dava Açma Süresi                İşlemin tebliğinden itibaren 60 gün                Ret cevabının tebliğinden/zımni retten itibaren 60 gün"
       ],
-      "text": "Dava Açma Süresi İşlemin tebliğinden itibaren 60 gün Ret cevabının tebliğinden/zımni retten itibaren 60 gün"
+      "text": "Dava Açma Süresi İşlemin tebliğinden itibaren 60 gün Ret cevabının tebliğinden/zımni retten itibaren 60 gün",
+      "cells": [
+        "Dava Açma Süresi",
+        "İşlemin tebliğinden itibaren 60 gün",
+        "Ret cevabının tebliğinden/zımni retten itibaren 60 gün"
+      ]
     },
     {
       "lines": [
@@ -19180,31 +20018,56 @@
       "lines": [
         "Hâl Madde Yaptırım"
       ],
-      "text": "Hâl Madde Yaptırım"
+      "text": "Hâl Madde Yaptırım",
+      "cells": [
+        "Hâl",
+        "Madde",
+        "Yaptırım"
+      ]
     },
     {
       "lines": [
         "Temel hâl (huzurda veya gıyapta ihtilatla) m.125/1 3 aydan 2 yıla kadar hapis veya adli para cezası"
       ],
-      "text": "Temel hâl (huzurda veya gıyapta ihtilatla) m.125/1 3 aydan 2 yıla kadar hapis veya adli para cezası"
+      "text": "Temel hâl (huzurda veya gıyapta ihtilatla) m.125/1 3 aydan 2 yıla kadar hapis veya adli para cezası",
+      "cells": [
+        "Temel hâl (huzurda veya gıyapta ihtilatla)",
+        "m.125/1",
+        "3 aydan 2 yıla kadar hapis veya adli para cezası"
+      ]
     },
     {
       "lines": [
         "Sesli, yazılı veya görüntülü iletiyle işlenmesi m.125/2 Temel hâlle aynı ceza"
       ],
-      "text": "Sesli, yazılı veya görüntülü iletiyle işlenmesi m.125/2 Temel hâlle aynı ceza"
+      "text": "Sesli, yazılı veya görüntülü iletiyle işlenmesi m.125/2 Temel hâlle aynı ceza",
+      "cells": [
+        "Sesli, yazılı veya görüntülü iletiyle işlenmesi",
+        "m.125/2",
+        "Temel hâlle aynı ceza"
+      ]
     },
     {
       "lines": [
         "Kamu görevlisine görevinden dolayı m.125/3‑a Cezanın alt sınırı 1 yıldan az olamaz"
       ],
-      "text": "Kamu görevlisine görevinden dolayı m.125/3‑a Cezanın alt sınırı 1 yıldan az olamaz"
+      "text": "Kamu görevlisine görevinden dolayı m.125/3‑a Cezanın alt sınırı 1 yıldan az olamaz",
+      "cells": [
+        "Kamu görevlisine görevinden dolayı",
+        "m.125/3‑a",
+        "Cezanın alt sınırı 1 yıldan az olamaz"
+      ]
     },
     {
       "lines": [
         "İnanç, düşünce veya kanaat açıklaması nedeniyle m.125/3‑b Cezanın alt sınırı 1 yıldan az olamaz"
       ],
-      "text": "İnanç, düşünce veya kanaat açıklaması nedeniyle m.125/3‑b Cezanın alt sınırı 1 yıldan az olamaz"
+      "text": "İnanç, düşünce veya kanaat açıklaması nedeniyle m.125/3‑b Cezanın alt sınırı 1 yıldan az olamaz",
+      "cells": [
+        "İnanç, düşünce veya kanaat açıklaması nedeniyle",
+        "m.125/3‑b",
+        "Cezanın alt sınırı 1 yıldan az olamaz"
+      ]
     },
     {
       "lines": [
@@ -19212,13 +20075,23 @@
         "m.125/3‑c Cezanın alt sınırı 1 yıldan az olamaz",
         "değerlerden bahisle"
       ],
-      "text": "Kişinin mensup olduğu dince kutsal sayılan m.125/3‑c Cezanın alt sınırı 1 yıldan az olamaz değerlerden bahisle"
+      "text": "Kişinin mensup olduğu dince kutsal sayılan m.125/3‑c Cezanın alt sınırı 1 yıldan az olamaz değerlerden bahisle",
+      "cells": [
+        "Kişinin mensup olduğu dince kutsal sayılan değerlerden bahisle",
+        "m.125/3‑c",
+        "Cezanın alt sınırı 1 yıldan az olamaz"
+      ]
     },
     {
       "lines": [
         "Aleniyet m.125/4 Ceza altıda bir oranında artırılır"
       ],
-      "text": "Aleniyet m.125/4 Ceza altıda bir oranında artırılır"
+      "text": "Aleniyet m.125/4 Ceza altıda bir oranında artırılır",
+      "cells": [
+        "Aleniyet",
+        "m.125/4",
+        "Ceza altıda bir oranında artırılır"
+      ]
     },
     {
       "lines": [
@@ -19226,7 +20099,12 @@
         "m.125/5",
         "görevlerinden dolayı suç hükümleri uygulanır"
       ],
-      "text": "Kurul hâlinde çalışan kamu görevlilerine Kurul üyelerinin her birine karşı işlenmiş sayılır, zincirleme m.125/5 görevlerinden dolayı suç hükümleri uygulanır"
+      "text": "Kurul hâlinde çalışan kamu görevlilerine Kurul üyelerinin her birine karşı işlenmiş sayılır, zincirleme m.125/5 görevlerinden dolayı suç hükümleri uygulanır",
+      "cells": [
+        "Kurul hâlinde çalışan kamu görevlilerine görevlerinden dolayı",
+        "m.125/5",
+        "Kurul üyelerinin her birine karşı işlenmiş sayılır, zincirleme suç hükümleri uygulanır"
+      ]
     },
     {
       "lines": [
@@ -19355,37 +20233,67 @@
       "lines": [
         "Hakaretin İşleniş Biçimi Uzlaştırma Önödeme"
       ],
-      "text": "Hakaretin İşleniş Biçimi Uzlaştırma Önödeme"
+      "text": "Hakaretin İşleniş Biçimi Uzlaştırma Önödeme",
+      "cells": [
+        "Hakaretin İşleniş Biçimi",
+        "Uzlaştırma",
+        "Önödeme"
+      ]
     },
     {
       "lines": [
         "Yüz yüze basit hakaret (m.125/1) Uygulanmaz Uygulanır"
       ],
-      "text": "Yüz yüze basit hakaret (m.125/1) Uygulanmaz Uygulanır"
+      "text": "Yüz yüze basit hakaret (m.125/1) Uygulanmaz Uygulanır",
+      "cells": [
+        "Yüz yüze basit hakaret (m.125/1)",
+        "Uygulanmaz",
+        "Uygulanır"
+      ]
     },
     {
       "lines": [
         "İleti yoluyla hakaret (m.125/2) Uygulanmaz Uygulanır"
       ],
-      "text": "İleti yoluyla hakaret (m.125/2) Uygulanmaz Uygulanır"
+      "text": "İleti yoluyla hakaret (m.125/2) Uygulanmaz Uygulanır",
+      "cells": [
+        "İleti yoluyla hakaret (m.125/2)",
+        "Uygulanmaz",
+        "Uygulanır"
+      ]
     },
     {
       "lines": [
         "Kamu görevlisine görevinden dolayı (m.125/3‑a) Uygulanmaz Uygulanmaz"
       ],
-      "text": "Kamu görevlisine görevinden dolayı (m.125/3‑a) Uygulanmaz Uygulanmaz"
+      "text": "Kamu görevlisine görevinden dolayı (m.125/3‑a) Uygulanmaz Uygulanmaz",
+      "cells": [
+        "Kamu görevlisine görevinden dolayı (m.125/3‑a)",
+        "Uygulanmaz",
+        "Uygulanmaz"
+      ]
     },
     {
       "lines": [
         "İnanç veya kutsal değerlerden bahisle (m.125/3‑b, c) Uygulanmaz Uygulanır"
       ],
-      "text": "İnanç veya kutsal değerlerden bahisle (m.125/3‑b, c) Uygulanmaz Uygulanır"
+      "text": "İnanç veya kutsal değerlerden bahisle (m.125/3‑b, c) Uygulanmaz Uygulanır",
+      "cells": [
+        "İnanç veya kutsal değerlerden bahisle (m.125/3‑b, c)",
+        "Uygulanmaz",
+        "Uygulanır"
+      ]
     },
     {
       "lines": [
         "Alenen işlenen hakaret (m.125/4) Uygulanmaz Uygulanır"
       ],
-      "text": "Alenen işlenen hakaret (m.125/4) Uygulanmaz Uygulanır"
+      "text": "Alenen işlenen hakaret (m.125/4) Uygulanmaz Uygulanır",
+      "cells": [
+        "Alenen işlenen hakaret (m.125/4)",
+        "Uygulanmaz",
+        "Uygulanır"
+      ]
     },
     {
       "lines": [
@@ -20102,7 +21010,12 @@
       "lines": [
         "Bozma Nedeninin Niteliği Bent Sonuç"
       ],
-      "text": "Bozma Nedeninin Niteliği Bent Sonuç"
+      "text": "Bozma Nedeninin Niteliği Bent Sonuç",
+      "cells": [
+        "Bozma Nedeninin Niteliği",
+        "Bent",
+        "Sonuç"
+      ]
     },
     {
       "lines": [
@@ -20110,7 +21023,12 @@
         "Davanın esasını çözmeyen bir karara ilişkinse m.309/4‑a araştırma sonucunda yeniden karar verir; yargılamanın",
         "tekrarlanması yasağı uygulanmaz"
       ],
-      "text": "Kararı veren hâkim veya mahkeme, gerekli inceleme ve Davanın esasını çözmeyen bir karara ilişkinse m.309/4‑a araştırma sonucunda yeniden karar verir; yargılamanın tekrarlanması yasağı uygulanmaz"
+      "text": "Kararı veren hâkim veya mahkeme, gerekli inceleme ve Davanın esasını çözmeyen bir karara ilişkinse m.309/4‑a araştırma sonucunda yeniden karar verir; yargılamanın tekrarlanması yasağı uygulanmaz",
+      "cells": [
+        "Davanın esasını çözmeyen bir karara ilişkinse",
+        "m.309/4‑a",
+        "Kararı veren hâkim veya mahkeme, gerekli inceleme ve araştırma sonucunda yeniden karar verir; yargılamanın tekrarlanması yasağı uygulanmaz"
+      ]
     },
     {
       "lines": [
@@ -20120,7 +21038,12 @@
         "hükümdeki cezadan daha ağır olamaz",
         "işlemlerine ilişkinse"
       ],
-      "text": "Mahkûmiyet hükmünün esasını çözmeyen yönüne ya Yeniden yargılama yapılır; verilecek hüküm önceki da savunma hakkını kaldıran veya kısıtlayan usul m.309/4‑b hükümdeki cezadan daha ağır olamaz işlemlerine ilişkinse"
+      "text": "Mahkûmiyet hükmünün esasını çözmeyen yönüne ya Yeniden yargılama yapılır; verilecek hüküm önceki da savunma hakkını kaldıran veya kısıtlayan usul m.309/4‑b hükümdeki cezadan daha ağır olamaz işlemlerine ilişkinse",
+      "cells": [
+        "Mahkûmiyet hükmünün esasını çözmeyen yönüne ya da savunma hakkını kaldıran veya kısıtlayan usul işlemlerine ilişkinse",
+        "m.309/4‑b",
+        "Yeniden yargılama yapılır; verilecek hüküm önceki hükümdeki cezadan daha ağır olamaz"
+      ]
     },
     {
       "lines": [
@@ -20128,7 +21051,12 @@
         "m.309/4‑c Aleyhte sonuç doğurmaz ve yeniden yargılama yapılmaz",
         "hükümlere ilişkinse"
       ],
-      "text": "Davanın esasını çözen, mahkûmiyet dışındaki m.309/4‑c Aleyhte sonuç doğurmaz ve yeniden yargılama yapılmaz hükümlere ilişkinse"
+      "text": "Davanın esasını çözen, mahkûmiyet dışındaki m.309/4‑c Aleyhte sonuç doğurmaz ve yeniden yargılama yapılmaz hükümlere ilişkinse",
+      "cells": [
+        "Davanın esasını çözen, mahkûmiyet dışındaki hükümlere ilişkinse",
+        "m.309/4‑c",
+        "Aleyhte sonuç doğurmaz ve yeniden yargılama yapılmaz"
+      ]
     },
     {
       "lines": [
@@ -20202,7 +21130,13 @@
         "Ölçüt Kanun Yararına Bozma (m.309)",
         "İtirazı (m.308) (m.311)"
       ],
-      "text": "Yargıtay C. Başsavcısının Yargılamanın Yenilenmesi Ölçüt Kanun Yararına Bozma (m.309) İtirazı (m.308) (m.311)"
+      "text": "Yargıtay C. Başsavcısının Yargılamanın Yenilenmesi Ölçüt Kanun Yararına Bozma (m.309) İtirazı (m.308) (m.311)",
+      "cells": [
+        "Ölçüt",
+        "Kanun Yararına Bozma (m.309)",
+        "Yargıtay C. Başsavcısının İtirazı (m.308)",
+        "Yargılamanın Yenilenmesi (m.311)"
+      ]
     },
     {
       "lines": [
@@ -20210,21 +21144,39 @@
         "Kesinleşmiş hükümler",
         "karar karar ve hükümler kararları"
       ],
-      "text": "Konu İstinaf veya temyizden geçmeksizin kesinleşen Yargıtay ceza dairelerinin Kesinleşmiş hükümler karar karar ve hükümler kararları"
+      "text": "Konu İstinaf veya temyizden geçmeksizin kesinleşen Yargıtay ceza dairelerinin Kesinleşmiş hükümler karar karar ve hükümler kararları",
+      "cells": [
+        "Konu karar",
+        "İstinaf veya temyizden geçmeksizin kesinleşen karar ve hükümler",
+        "Yargıtay ceza dairelerinin kararları",
+        "Kesinleşmiş hükümler"
+      ]
     },
     {
       "lines": [
         "Başvuru Maddi hukuka veya muhakeme hukukuna Daire kararındaki ciddi Yeni delil veya olgunun",
         "sebebi aykırılık hukuka aykırılık ortaya çıkması"
       ],
-      "text": "Başvuru Maddi hukuka veya muhakeme hukukuna Daire kararındaki ciddi Yeni delil veya olgunun sebebi aykırılık hukuka aykırılık ortaya çıkması"
+      "text": "Başvuru Maddi hukuka veya muhakeme hukukuna Daire kararındaki ciddi Yeni delil veya olgunun sebebi aykırılık hukuka aykırılık ortaya çıkması",
+      "cells": [
+        "Başvuru sebebi",
+        "Maddi hukuka veya muhakeme hukukuna aykırılık",
+        "Daire kararındaki ciddi hukuka aykırılık",
+        "Yeni delil veya olgunun ortaya çıkması"
+      ]
     },
     {
       "lines": [
         "Yetkili Adalet Bakanlığı veya Yargıtay C. Yargıtay Cumhuriyet Hükümlü, ilgililer ve",
         "makam Başsavcılığı Başsavcısı Cumhuriyet savcısı"
       ],
-      "text": "Yetkili Adalet Bakanlığı veya Yargıtay C. Yargıtay Cumhuriyet Hükümlü, ilgililer ve makam Başsavcılığı Başsavcısı Cumhuriyet savcısı"
+      "text": "Yetkili Adalet Bakanlığı veya Yargıtay C. Yargıtay Cumhuriyet Hükümlü, ilgililer ve makam Başsavcılığı Başsavcısı Cumhuriyet savcısı",
+      "cells": [
+        "Yetkili makam",
+        "Adalet Bakanlığı veya Yargıtay C. Başsavcılığı",
+        "Yargıtay Cumhuriyet Başsavcısı",
+        "Hükümlü, ilgililer ve Cumhuriyet savcısı"
+      ]
     },
     {
       "lines": [
@@ -20232,7 +21184,13 @@
         "Yargıtayın ilgili ceza dairesi Hükmü veren mahkeme",
         "mercii Genel Kurulu"
       ],
-      "text": "İnceleme İlgili daire, ardından Ceza Yargıtayın ilgili ceza dairesi Hükmü veren mahkeme mercii Genel Kurulu"
+      "text": "İnceleme İlgili daire, ardından Ceza Yargıtayın ilgili ceza dairesi Hükmü veren mahkeme mercii Genel Kurulu",
+      "cells": [
+        "İnceleme mercii",
+        "Yargıtayın ilgili ceza dairesi",
+        "İlgili daire, ardından Ceza Genel Kurulu",
+        "Hükmü veren mahkeme"
+      ]
     },
     {
       "lines": [
@@ -20240,7 +21198,13 @@
         "Süre Aranmaz Aranmaz",
         "öngörülmüştür"
       ],
-      "text": "Aleyhe itirazda süre Süre Aranmaz Aranmaz öngörülmüştür"
+      "text": "Aleyhe itirazda süre Süre Aranmaz Aranmaz öngörülmüştür",
+      "cells": [
+        "Süre",
+        "Aranmaz",
+        "Aleyhe itirazda süre öngörülmüştür",
+        "Aranmaz"
+      ]
     },
     {
       "lines": [
@@ -20679,74 +21643,122 @@
       "lines": [
         "Bent Nitelikli Hâl"
       ],
-      "text": "Bent Nitelikli Hâl"
+      "text": "Bent Nitelikli Hâl",
+      "cells": [
+        "Bent",
+        "Nitelikli Hâl"
+      ]
     },
     {
       "lines": [
         "a Tasarlayarak öldürme"
       ],
-      "text": "a Tasarlayarak öldürme"
+      "text": "a Tasarlayarak öldürme",
+      "cells": [
+        "a",
+        "Tasarlayarak öldürme"
+      ]
     },
     {
       "lines": [
         "b Canavarca hisle veya eziyet çektirerek öldürme"
       ],
-      "text": "b Canavarca hisle veya eziyet çektirerek öldürme"
+      "text": "b Canavarca hisle veya eziyet çektirerek öldürme",
+      "cells": [
+        "b",
+        "Canavarca hisle veya eziyet çektirerek öldürme"
+      ]
     },
     {
       "lines": [
         "c",
         "Yangın, su baskını, tahrip, batırma veya bombalama ya da nükleer, biyolojik veya kimyasal silah kullanmak suretiyle"
       ],
-      "text": "c Yangın, su baskını, tahrip, batırma veya bombalama ya da nükleer, biyolojik veya kimyasal silah kullanmak suretiyle"
+      "text": "c Yangın, su baskını, tahrip, batırma veya bombalama ya da nükleer, biyolojik veya kimyasal silah kullanmak suretiyle",
+      "cells": [
+        "c",
+        "Yangın, su baskını, tahrip, batırma veya bombalama ya da nükleer, biyolojik veya kimyasal silah kullanmak suretiyle"
+      ]
     },
     {
       "lines": [
         "d Üstsoy veya altsoydan birine ya da eş, boşandığı eş veya kardeşe karşı"
       ],
-      "text": "d Üstsoy veya altsoydan birine ya da eş, boşandığı eş veya kardeşe karşı"
+      "text": "d Üstsoy veya altsoydan birine ya da eş, boşandığı eş veya kardeşe karşı",
+      "cells": [
+        "d",
+        "Üstsoy veya altsoydan birine ya da eş, boşandığı eş veya kardeşe karşı"
+      ]
     },
     {
       "lines": [
         "e Çocuğa ya da beden veya ruh bakımından kendisini savunamayacak durumda bulunan kişiye karşı"
       ],
-      "text": "e Çocuğa ya da beden veya ruh bakımından kendisini savunamayacak durumda bulunan kişiye karşı"
+      "text": "e Çocuğa ya da beden veya ruh bakımından kendisini savunamayacak durumda bulunan kişiye karşı",
+      "cells": [
+        "e",
+        "Çocuğa ya da beden veya ruh bakımından kendisini savunamayacak durumda bulunan kişiye karşı"
+      ]
     },
     {
       "lines": [
         "f Kadına karşı"
       ],
-      "text": "f Kadına karşı"
+      "text": "f Kadına karşı",
+      "cells": [
+        "f",
+        "Kadına karşı"
+      ]
     },
     {
       "lines": [
         "g Kişinin yerine getirdiği kamu görevi nedeniyle"
       ],
-      "text": "g Kişinin yerine getirdiği kamu görevi nedeniyle"
+      "text": "g Kişinin yerine getirdiği kamu görevi nedeniyle",
+      "cells": [
+        "g",
+        "Kişinin yerine getirdiği kamu görevi nedeniyle"
+      ]
     },
     {
       "lines": [
         "h Bir suçu gizlemek, delillerini ortadan kaldırmak veya işlenmesini kolaylaştırmak ya da yakalanmamak amacıyla"
       ],
-      "text": "h Bir suçu gizlemek, delillerini ortadan kaldırmak veya işlenmesini kolaylaştırmak ya da yakalanmamak amacıyla"
+      "text": "h Bir suçu gizlemek, delillerini ortadan kaldırmak veya işlenmesini kolaylaştırmak ya da yakalanmamak amacıyla",
+      "cells": [
+        "h",
+        "Bir suçu gizlemek, delillerini ortadan kaldırmak veya işlenmesini kolaylaştırmak ya da yakalanmamak amacıyla"
+      ]
     },
     {
       "lines": [
         "i Bir suçu işleyememekten dolayı duyduğu infialle"
       ],
-      "text": "i Bir suçu işleyememekten dolayı duyduğu infialle"
+      "text": "i Bir suçu işleyememekten dolayı duyduğu infialle",
+      "cells": [
+        "i",
+        "Bir suçu işleyememekten dolayı duyduğu infialle"
+      ]
     },
     {
       "lines": [
         "j Kan gütme saikiyle"
       ],
-      "text": "j Kan gütme saikiyle"
+      "text": "j Kan gütme saikiyle",
+      "cells": [
+        "j",
+        "Kan gütme saikiyle"
+      ]
     },
     {
       "lines": [
         "k Töre saikiyle"
       ],
-      "text": "k Töre saikiyle"
+      "text": "k Töre saikiyle",
+      "cells": [
+        "k",
+        "Töre saikiyle"
+      ]
     },
     {
       "lines": [
@@ -20834,13 +21846,23 @@
       "lines": [
         "Durum Tamamlanmış Suçun Cezası Teşebbüs Hâlinde Ceza"
       ],
-      "text": "Durum Tamamlanmış Suçun Cezası Teşebbüs Hâlinde Ceza"
+      "text": "Durum Tamamlanmış Suçun Cezası Teşebbüs Hâlinde Ceza",
+      "cells": [
+        "Durum",
+        "Tamamlanmış Suçun Cezası",
+        "Teşebbüs Hâlinde Ceza"
+      ]
     },
     {
       "lines": [
         "Basit kasten öldürme (m.81) Müebbet hapis 9 yıldan 15 yıla kadar hapis"
       ],
-      "text": "Basit kasten öldürme (m.81) Müebbet hapis 9 yıldan 15 yıla kadar hapis"
+      "text": "Basit kasten öldürme (m.81) Müebbet hapis 9 yıldan 15 yıla kadar hapis",
+      "cells": [
+        "Basit kasten öldürme (m.81)",
+        "Müebbet hapis",
+        "9 yıldan 15 yıla kadar hapis"
+      ]
     },
     {
       "lines": [
@@ -21355,7 +22377,13 @@
       "lines": [
         "Suç Madde Temel Ceza Nitelikli Hâlde (m.137)"
       ],
-      "text": "Suç Madde Temel Ceza Nitelikli Hâlde (m.137)"
+      "text": "Suç Madde Temel Ceza Nitelikli Hâlde (m.137)",
+      "cells": [
+        "Suç",
+        "Madde",
+        "Temel Ceza",
+        "Nitelikli Hâlde (m.137)"
+      ]
     },
     {
       "lines": [
@@ -21363,7 +22391,13 @@
         "Kişisel verilerin kaydedilmesi m.135/1 1 yıldan 3 yıla kadar hapis",
         "hapis"
       ],
-      "text": "1 yıl 6 aydan 4 yıl 6 aya kadar Kişisel verilerin kaydedilmesi m.135/1 1 yıldan 3 yıla kadar hapis hapis"
+      "text": "1 yıl 6 aydan 4 yıl 6 aya kadar Kişisel verilerin kaydedilmesi m.135/1 1 yıldan 3 yıla kadar hapis hapis",
+      "cells": [
+        "Kişisel verilerin kaydedilmesi",
+        "m.135/1",
+        "1 yıldan 3 yıla kadar hapis",
+        "1 yıl 6 aydan 4 yıl 6 aya kadar hapis"
+      ]
     },
     {
       "lines": [
@@ -21371,13 +22405,25 @@
         "Özel nitelikli verilerin kaydedilmesi m.135/2 Artırımlar birlikte uygulanır",
         "artırılır"
       ],
-      "text": "Ceza yarı oranında Özel nitelikli verilerin kaydedilmesi m.135/2 Artırımlar birlikte uygulanır artırılır"
+      "text": "Ceza yarı oranında Özel nitelikli verilerin kaydedilmesi m.135/2 Artırımlar birlikte uygulanır artırılır",
+      "cells": [
+        "Özel nitelikli verilerin kaydedilmesi",
+        "m.135/2",
+        "Ceza yarı oranında artırılır",
+        "Artırımlar birlikte uygulanır"
+      ]
     },
     {
       "lines": [
         "Verileri verme, yayma veya ele geçirme m.136/1 2 yıldan 4 yıla kadar hapis 3 yıldan 6 yıla kadar hapis"
       ],
-      "text": "Verileri verme, yayma veya ele geçirme m.136/1 2 yıldan 4 yıla kadar hapis 3 yıldan 6 yıla kadar hapis"
+      "text": "Verileri verme, yayma veya ele geçirme m.136/1 2 yıldan 4 yıla kadar hapis 3 yıldan 6 yıla kadar hapis",
+      "cells": [
+        "Verileri verme, yayma veya ele geçirme",
+        "m.136/1",
+        "2 yıldan 4 yıla kadar hapis",
+        "3 yıldan 6 yıla kadar hapis"
+      ]
     },
     {
       "lines": [
@@ -21385,13 +22431,25 @@
         "m.136/2 Ceza bir kat artırılır Artırımlar birlikte uygulanır",
         "olması"
       ],
-      "text": "Suçun konusunun CMK m.236 kayıtları m.136/2 Ceza bir kat artırılır Artırımlar birlikte uygulanır olması"
+      "text": "Suçun konusunun CMK m.236 kayıtları m.136/2 Ceza bir kat artırılır Artırımlar birlikte uygulanır olması",
+      "cells": [
+        "Suçun konusunun CMK m.236 kayıtları olması",
+        "m.136/2",
+        "Ceza bir kat artırılır",
+        "Artırımlar birlikte uygulanır"
+      ]
     },
     {
       "lines": [
         "Verileri yok etmeme m.138/1 1 yıldan 2 yıla kadar hapis 1 yıl 6 aydan 3 yıla kadar hapis"
       ],
-      "text": "Verileri yok etmeme m.138/1 1 yıldan 2 yıla kadar hapis 1 yıl 6 aydan 3 yıla kadar hapis"
+      "text": "Verileri yok etmeme m.138/1 1 yıldan 2 yıla kadar hapis 1 yıl 6 aydan 3 yıla kadar hapis",
+      "cells": [
+        "Verileri yok etmeme",
+        "m.138/1",
+        "1 yıldan 2 yıla kadar hapis",
+        "1 yıl 6 aydan 3 yıla kadar hapis"
+      ]
     },
     {
       "lines": [
@@ -21498,25 +22556,45 @@
       "lines": [
         "Yükümlülük İhlali 2026 Alt Sınır 2026 Üst Sınır"
       ],
-      "text": "Yükümlülük İhlali 2026 Alt Sınır 2026 Üst Sınır"
+      "text": "Yükümlülük İhlali 2026 Alt Sınır 2026 Üst Sınır",
+      "cells": [
+        "Yükümlülük İhlali",
+        "2026 Alt Sınır",
+        "2026 Üst Sınır"
+      ]
     },
     {
       "lines": [
         "Aydınlatma yükümlülüğünün yerine getirilmemesi 85.437 TL 1.709.200 TL"
       ],
-      "text": "Aydınlatma yükümlülüğünün yerine getirilmemesi 85.437 TL 1.709.200 TL"
+      "text": "Aydınlatma yükümlülüğünün yerine getirilmemesi 85.437 TL 1.709.200 TL",
+      "cells": [
+        "Aydınlatma yükümlülüğünün yerine getirilmemesi",
+        "85.437 TL",
+        "1.709.200 TL"
+      ]
     },
     {
       "lines": [
         "Veri güvenliğine ilişkin yükümlülüklerin yerine getirilmemesi 256.357 TL 17.092.242 TL"
       ],
-      "text": "Veri güvenliğine ilişkin yükümlülüklerin yerine getirilmemesi 256.357 TL 17.092.242 TL"
+      "text": "Veri güvenliğine ilişkin yükümlülüklerin yerine getirilmemesi 256.357 TL 17.092.242 TL",
+      "cells": [
+        "Veri güvenliğine ilişkin yükümlülüklerin yerine getirilmemesi",
+        "256.357 TL",
+        "17.092.242 TL"
+      ]
     },
     {
       "lines": [
         "Kurul kararlarının yerine getirilmemesi 427.263 TL 17.092.242 TL"
       ],
-      "text": "Kurul kararlarının yerine getirilmemesi 427.263 TL 17.092.242 TL"
+      "text": "Kurul kararlarının yerine getirilmemesi 427.263 TL 17.092.242 TL",
+      "cells": [
+        "Kurul kararlarının yerine getirilmemesi",
+        "427.263 TL",
+        "17.092.242 TL"
+      ]
     },
     {
       "lines": [
@@ -21901,13 +22979,23 @@
       "lines": [
         "Durum Fıkra Ceza"
       ],
-      "text": "Durum Fıkra Ceza"
+      "text": "Durum Fıkra Ceza",
+      "cells": [
+        "Durum",
+        "Fıkra",
+        "Ceza"
+      ]
     },
     {
       "lines": [
         "Taksirle bir kişinin ölümüne neden olma m.85/1 2 yıldan 6 yıla kadar hapis"
       ],
-      "text": "Taksirle bir kişinin ölümüne neden olma m.85/1 2 yıldan 6 yıla kadar hapis"
+      "text": "Taksirle bir kişinin ölümüne neden olma m.85/1 2 yıldan 6 yıla kadar hapis",
+      "cells": [
+        "Taksirle bir kişinin ölümüne neden olma",
+        "m.85/1",
+        "2 yıldan 6 yıla kadar hapis"
+      ]
     },
     {
       "lines": [
@@ -21915,7 +23003,12 @@
         "m.85/2 2 yıldan 15 yıla kadar hapis",
         "birden fazla kişinin yaralanması"
       ],
-      "text": "Aynı fiille birden fazla kişinin ölümü ya da bir kişinin ölümüyle birlikte bir veya m.85/2 2 yıldan 15 yıla kadar hapis birden fazla kişinin yaralanması"
+      "text": "Aynı fiille birden fazla kişinin ölümü ya da bir kişinin ölümüyle birlikte bir veya m.85/2 2 yıldan 15 yıla kadar hapis birden fazla kişinin yaralanması",
+      "cells": [
+        "Aynı fiille birden fazla kişinin ölümü ya da bir kişinin ölümüyle birlikte bir veya birden fazla kişinin yaralanması",
+        "m.85/2",
+        "2 yıldan 15 yıla kadar hapis"
+      ]
     },
     {
       "lines": [
@@ -21923,7 +23016,12 @@
         "Fiilin bilinçli taksirle işlenmesi m.22/3",
         "yarıya kadar artırılır"
       ],
-      "text": "Yukarıdaki cezalar üçte birden Fiilin bilinçli taksirle işlenmesi m.22/3 yarıya kadar artırılır"
+      "text": "Yukarıdaki cezalar üçte birden Fiilin bilinçli taksirle işlenmesi m.22/3 yarıya kadar artırılır",
+      "cells": [
+        "Fiilin bilinçli taksirle işlenmesi",
+        "m.22/3",
+        "Yukarıdaki cezalar üçte birden yarıya kadar artırılır"
+      ]
     },
     {
       "lines": [
@@ -21975,25 +23073,45 @@
       "lines": [
         "Kusurluluk Biçimi Netice Öngörülmüş mü? Netice İstenmiş mi?"
       ],
-      "text": "Kusurluluk Biçimi Netice Öngörülmüş mü? Netice İstenmiş mi?"
+      "text": "Kusurluluk Biçimi Netice Öngörülmüş mü? Netice İstenmiş mi?",
+      "cells": [
+        "Kusurluluk Biçimi",
+        "Netice Öngörülmüş mü?",
+        "Netice İstenmiş mi?"
+      ]
     },
     {
       "lines": [
         "Doğrudan kast Evet Evet"
       ],
-      "text": "Doğrudan kast Evet Evet"
+      "text": "Doğrudan kast Evet Evet",
+      "cells": [
+        "Doğrudan kast",
+        "Evet",
+        "Evet"
+      ]
     },
     {
       "lines": [
         "Olası kast Evet İstenmemiş, ancak göze alınmış"
       ],
-      "text": "Olası kast Evet İstenmemiş, ancak göze alınmış"
+      "text": "Olası kast Evet İstenmemiş, ancak göze alınmış",
+      "cells": [
+        "Olası kast",
+        "Evet",
+        "İstenmemiş, ancak göze alınmış"
+      ]
     },
     {
       "lines": [
         "Bilinçli taksir Evet İstenmemiş, gerçekleşmeyeceğine güvenilmiş"
       ],
-      "text": "Bilinçli taksir Evet İstenmemiş, gerçekleşmeyeceğine güvenilmiş"
+      "text": "Bilinçli taksir Evet İstenmemiş, gerçekleşmeyeceğine güvenilmiş",
+      "cells": [
+        "Bilinçli taksir",
+        "Evet",
+        "İstenmemiş, gerçekleşmeyeceğine güvenilmiş"
+      ]
     },
     {
       "lines": [
