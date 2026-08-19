@@ -113,7 +113,7 @@ const ArticleDetail = () => {
           (_, i) =>
             isHeading(rendered[i].text) &&
             !isSignature(rendered[i].text) &&
-            !((rendered[i] as { cells?: string[] }).cells?.length ?? 0 > 1)
+            ((rendered[i] as { cells?: string[] }).cells?.length ?? 0) <= 1
         ),
     [rendered]
   );
