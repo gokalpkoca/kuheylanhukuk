@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        serif: ["Urbanist", "serif"],
+        serif: ["Playfair Display", "serif"],
         sans: ["Epilogue", "sans-serif"],
       },
       colors: {
