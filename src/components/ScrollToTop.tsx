@@ -7,7 +7,8 @@ const ScrollToTop = () => {
   useEffect(() => {
     if (hash) {
       setTimeout(() => {
-        const el = document.querySelector(hash);
+        const id = decodeURIComponent(hash.slice(1));
+        const el = document.getElementById(id);
         if (el) el.scrollIntoView({ behavior: "smooth" });
       }, 100);
     } else {
@@ -19,3 +20,4 @@ const ScrollToTop = () => {
 };
 
 export default ScrollToTop;
+
