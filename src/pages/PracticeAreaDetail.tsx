@@ -117,13 +117,41 @@ const PracticeAreaDetail = () => {
                 {t("practice.related_desc")}
               </p>
 
+              {areaArticles.length > 0 && (
+                <div className="relative mb-6 max-w-md">
+                  <label htmlFor="area-article-search" className="sr-only">
+                    {t("practice.search_placeholder")}
+                  </label>
+                  <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+                  <input
+                    id="area-article-search"
+                    type="search"
+                    value={query}
+                    onChange={(e) => setQuery(e.target.value)}
+                    placeholder={t("practice.search_placeholder")}
+                    className="w-full rounded-full border border-border bg-card py-2.5 pl-10 pr-10 text-sm text-foreground placeholder:text-muted-foreground outline-none transition-colors focus:border-primary"
+                  />
+                  {query && (
+                    <button
+                      type="button"
+                      onClick={() => setQuery("")}
+                      aria-label={t("practice.search_placeholder")}
+                      className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground transition-colors hover:text-primary"
+                    >
+                      <X className="h-4 w-4" />
+                    </button>
+                  )}
+                </div>
+              )}
+
               {relatedArticles.length ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {relatedArticles.map((a, i) => {
-                    const aSlug = slugFromPdf(a.pdfUrl);
+                    const aSlug = a.aSlug;
                     return (
                       <motion.div
                         key={aSlug}
+
                         initial={{ opacity: 0, y: 14 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-60px" }}
