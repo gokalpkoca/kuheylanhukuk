@@ -385,23 +385,30 @@ const ArticleDetail = () => {
             {/* Table of contents */}
             {toc.length > 1 && (
               <aside className="hidden lg:block">
-                <nav className="sticky top-28 border-l border-border pl-5">
-                  <p className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-muted-foreground mb-4">
-                    <List className="w-3.5 h-3.5 text-primary" />
-                    {t("article.toc")}
-                  </p>
-                  <ul className="space-y-3 max-h-[60vh] overflow-y-auto pr-2">
-                    {toc.map((item) => (
-                      <li key={item.id}>
-                        <a
-                          href={`#${item.id}`}
-                          className="block text-sm leading-snug text-muted-foreground hover:text-primary transition-colors"
-                        >
-                          {item.text}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
+                <nav className="sticky top-28 border border-border rounded-lg bg-card/50 backdrop-blur-sm overflow-hidden">
+                  <details className="group" open>
+                    <summary className="flex cursor-pointer list-none items-center justify-between px-5 py-4 hover:bg-secondary/50 transition-colors">
+                      <span className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
+                        <List className="w-3.5 h-3.5 text-primary" />
+                        {t("article.toc")}
+                      </span>
+                      <span className="inline-flex h-6 w-6 items-center justify-center rounded-full border border-border bg-card text-muted-foreground group-open:rotate-180 transition-transform duration-300">
+                        <ChevronDown className="w-3.5 h-3.5" />
+                      </span>
+                    </summary>
+                    <ul className="space-y-3 max-h-[55vh] overflow-y-auto px-5 pb-5 border-t border-border">
+                      {toc.map((item) => (
+                        <li key={item.id}>
+                          <a
+                            href={`#${item.id}`}
+                            className="block text-sm leading-snug text-muted-foreground hover:text-primary transition-colors"
+                          >
+                            {item.text}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
                 </nav>
               </aside>
             )}
