@@ -485,7 +485,7 @@ const ArticleDetail = () => {
             {toc.length > 1 && (
               <aside className="order-first lg:order-last min-w-0">
                 <nav className="lg:sticky lg:top-28 border border-border rounded-lg bg-card/50 backdrop-blur-sm overflow-hidden">
-                  <details className="group" open>
+                  <details className="group" open={tocOpen} onToggle={(e) => setTocOpen(e.currentTarget.open)}>
                     <summary className="flex cursor-pointer list-none items-center justify-between px-5 py-4 hover:bg-secondary/50 transition-colors">
                       <span className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
                         <List className="w-3.5 h-3.5 text-primary" />
