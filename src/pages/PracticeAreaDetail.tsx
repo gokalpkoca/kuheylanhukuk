@@ -61,9 +61,7 @@ const PracticeAreaDetail = () => {
   }
 
   const Icon = area.icon;
-  const slugFromPdf = (pdfUrl?: string) =>
-    pdfUrl ? (pdfUrl.split("/").pop() || "").replace(/\.pdf$/i, "") : "";
-  const relatedArticles = allArticles.filter((a) => a.category === area.slug);
+  const relatedArticles = filteredArticles;
 
   return (
     <div className="min-h-screen bg-background">
