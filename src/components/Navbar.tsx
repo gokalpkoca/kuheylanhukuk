@@ -45,6 +45,7 @@ const Navbar = () => {
     { label: t("nav.makaleler"), href: "/blog", dropdown: "articles" },
     { label: t("nav.hesaplama"), href: "/hesaplama-araclarimiz", isPage: true },
     { label: t("nav.kariyer"), href: "/kariyer", isPage: true },
+    { label: t("nav.staj"), href: "/staj", isPage: true },
     { label: t("nav.iletisim"), href: "/iletisim", isPage: true },
   ];
 
