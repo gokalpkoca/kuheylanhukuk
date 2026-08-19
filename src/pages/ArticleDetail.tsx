@@ -192,6 +192,12 @@ const ArticleDetail = () => {
     }
   };
 
+  const scrollTocDown = () => {
+    const list = tocListRef.current;
+    if (list) list.scrollBy({ top: list.clientHeight * 0.75, behavior: "smooth" });
+  };
+
+
   let paragraphIndex = 0;
 
   return (
