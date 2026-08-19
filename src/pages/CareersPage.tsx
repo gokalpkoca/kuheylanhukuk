@@ -630,7 +630,7 @@ const CareersPage = () => {
                 {t("intern.form_title")}
               </h2>
 
-              <form onSubmit={handleInternSubmit} className="space-y-6">
+              <form onSubmit={handleInternSubmit} className="space-y-6 font-['Roboto']">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
@@ -685,7 +685,7 @@ const CareersPage = () => {
                       name="position"
                       value={internForm.position}
                       onChange={handleInternChange}
-                      className="w-full h-12 rounded-md bg-background/50 border border-border/80 px-3 text-sm text-foreground focus:border-primary/50 focus:outline-none focus:ring-1 focus:ring-primary/20 transition-all duration-300"
+                      className="w-full h-12 rounded-md bg-background/50 border border-border/80 px-3 text-sm font-['Roboto'] text-foreground focus:border-primary/50 focus:outline-none focus:ring-1 focus:ring-primary/20 transition-all duration-300"
                     >
                       <option value="">{t("intern.program_select")}</option>
                       {programs.map((p) => (
