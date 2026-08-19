@@ -103,8 +103,24 @@ const ArticleDetail = () => {
     [rendered]
   );
 
+  useEffect(() => {
+    const list = tocListRef.current;
+    if (!list) return;
+    const update = () => {
+      setTocHasMore(list.scrollTop + list.clientHeight < list.scrollHeight - 4);
+    };
+    update();
+    list.addEventListener("scroll", update, { passive: true });
+    const ro = new ResizeObserver(update);
+    ro.observe(list);
+    return () => {
+      list.removeEventListener("scroll", update);
+      ro.disconnect();
+    };
+  }, [toc]);
 
   const description = (blocks.find((b) => b.text.length > 80)?.text || title).slice(0, 155);
+
   const url = `https://kuheylanhukuk.com/blog/${slug}`;
   const articleLd = {
     "@context": "https://schema.org",
