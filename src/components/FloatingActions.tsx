@@ -72,8 +72,12 @@ const FloatingActions = () => {
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
           aria-label={l.open}
-          className="relative w-14 h-14 rounded-full bg-primary text-primary-foreground shadow-xl flex items-center justify-center transition-transform duration-300 hover:scale-105 active:scale-95"
+          className="relative w-14 h-14 rounded-full bg-primary text-primary-foreground shadow-xl shadow-primary/40 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-primary/50 active:scale-95"
         >
+          {/* Attention pulse rings */}
+          <span className="absolute inset-0 rounded-full bg-primary/30 animate-ping opacity-60" />
+          <span className="absolute -inset-1.5 rounded-full border border-primary/40 animate-pulse" />
+
           <Info
             className={`absolute w-6 h-6 transition-all duration-300 ${
               open ? "opacity-0 scale-50 rotate-90" : "opacity-100 scale-100 rotate-0"
@@ -85,6 +89,15 @@ const FloatingActions = () => {
             }`}
           />
         </button>
+
+        {/* Desktop label hint */}
+        <span
+          className={`hidden lg:block absolute right-full mr-3 top-1/2 -translate-y-1/2 whitespace-nowrap px-3 py-1.5 text-xs font-medium tracking-wide bg-card border border-border rounded shadow-md text-foreground transition-all duration-300 pointer-events-none ${
+            open ? "opacity-0 translate-x-2" : "opacity-100 translate-x-0"
+          }`}
+        >
+          {l.open}
+        </span>
       </div>
     </div>
   );
