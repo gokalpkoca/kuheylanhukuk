@@ -15,20 +15,30 @@ const Contact = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const { toast } = useToast();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", subject: "", message: "" });
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [touched, setTouched] = useState<Record<string, boolean>>({});
   const bot = useBotProtection();
+  const copy = getContactCopy(language);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const result = contactSchema.safeParse(formData);
+    const result = getContactSchema(language).safeParse(formData);
     if (!result.success) {
       const fieldErrors: Record<string, string> = {};
       result.error.errors.forEach((err) => {
-        if (err.path[0]) fieldErrors[err.path[0] as string] = err.message;
+        if (err.path[0] && !fieldErrors[err.path[0] as string]) fieldErrors[err.path[0] as string] = err.message;
       });
       setErrors(fieldErrors);
+      setTouched({ name: true, email: true, phone: true, subject: true, message: true });
+      const first = Object.keys(fieldErrors)[0];
+      toast({
+        variant: "destructive",
+        title: copy.summary(Object.keys(fieldErrors).length),
+        description: fieldErrors[first],
+      });
+      document.getElementById(`ch-${first}`)?.focus();
       return;
     }
     if (!bot.verify()) return;
@@ -44,10 +54,25 @@ const Contact = () => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
-    if (errors[name]) {
+    if (touched[name]) {
+      setErrors(prev => ({ ...prev, [name]: validateContactField(language, name as keyof ContactFormData, value) }));
+    } else if (errors[name]) {
       setErrors(prev => ({ ...prev, [name]: "" }));
     }
   };
+
+  const handleBlur = (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setTouched(prev => ({ ...prev, [name]: true }));
+    setErrors(prev => ({ ...prev, [name]: validateContactField(language, name as keyof ContactFormData, value) }));
+  };
+
+  const fieldState = (name: string) => ({
+    onBlur: handleBlur,
+    "aria-invalid": errors[name] ? true : undefined,
+    "aria-describedby": errors[name] ? `ch-${name}-error` : undefined,
+  });
+
 
   return (
     <section id="iletisim" className="py-24 lg:py-32 bg-background">
