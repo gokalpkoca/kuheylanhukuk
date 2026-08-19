@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { practiceAreas } from "@/data/practiceAreas";
 import { useLanguage } from "@/context/LanguageContext";
+import { paIconAnim } from "@/lib/practiceAreaIconAnim";
 
 const PracticeAreasPage = () => {
   const { t } = useLanguage();
@@ -54,7 +55,7 @@ const PracticeAreasPage = () => {
                     className="group flex items-center gap-4 p-6 border border-border rounded bg-card hover:border-primary hover:-translate-y-1 transition-all duration-300"
                   >
                     <div className="w-12 h-12 rounded bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
-                      <Icon className="w-6 h-6 text-primary" />
+                      <Icon className={`w-6 h-6 text-primary ${paIconAnim(area.slug)}`} />
                     </div>
                     <span className="font-serif text-base text-foreground font-medium group-hover:text-primary transition-colors">
                       {t(`pa.${area.slug}`)}
