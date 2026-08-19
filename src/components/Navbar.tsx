@@ -93,7 +93,7 @@ const Navbar = () => {
             <img src={logo} alt="Küheylan Hukuk Bürosu" width={640} height={52} className="h-5 lg:h-[1.5rem] w-auto -translate-y-[2px] dark:brightness-0 dark:invert" />
           </a>
 
-          <div className="hidden xl:flex flex-1 min-w-0 items-center justify-center gap-0.5 whitespace-nowrap">
+          <div className="hidden xl:flex flex-1 min-w-0 items-center justify-center gap-0.5 whitespace-nowrap xl:pl-6 2xl:pl-10">
 
             {navItems.map((item) =>
               item.dropdown === "practiceAreas" ? (
