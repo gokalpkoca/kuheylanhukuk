@@ -105,7 +105,7 @@ const Navbar = () => {
                     <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""}`} />
                   </button>
                   {dropdownOpen && (
-                    <div className="absolute top-full left-0 mt-1 w-72 bg-card border border-border rounded-lg shadow-xl shadow-black/30 z-50 py-2 max-h-[70vh] overflow-y-auto">
+                    <div className="absolute top-full left-0 mt-1 w-72 bg-card border border-border rounded shadow-xl shadow-black/30 z-50 py-2 max-h-[70vh] overflow-y-auto">
                       <Link
                         to="/faaliyet-alanlari"
                         onClick={() => setDropdownOpen(false)}
@@ -136,7 +136,7 @@ const Navbar = () => {
                     <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${articleDropdownOpen ? "rotate-180" : ""}`} />
                   </button>
                   {articleDropdownOpen && (
-                    <div className="absolute top-full left-0 mt-1 w-80 bg-card border border-border rounded-lg shadow-xl shadow-black/30 z-50 py-2 max-h-[70vh] overflow-y-auto">
+                    <div className="absolute top-full left-0 mt-1 w-80 bg-card border border-border rounded shadow-xl shadow-black/30 z-50 py-2 max-h-[70vh] overflow-y-auto">
                       <Link
                         to="/blog"
                         onClick={() => setArticleDropdownOpen(false)}
@@ -203,7 +203,7 @@ const Navbar = () => {
               </button>
 
               {langDropdownOpen && (
-                <div className="absolute top-full right-0 mt-2 w-20 bg-card border border-border rounded-lg shadow-xl shadow-black/30 z-50 py-1">
+                <div className="absolute top-full right-0 mt-2 w-20 bg-card border border-border rounded shadow-xl shadow-black/30 z-50 py-1">
                   {languages.map((lang) => (
                     <button
                       key={lang}
