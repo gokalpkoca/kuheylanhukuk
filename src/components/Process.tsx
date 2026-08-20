@@ -11,23 +11,25 @@ import {
   Eye,
   Target,
   Lock,
+  GraduationCap,
   ArrowRight,
 } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 const steps = [
-  { key: "1", Icon: MessageSquare },
-  { key: "2", Icon: Map },
-  { key: "3", Icon: ClipboardCheck },
-  { key: "4", Icon: CheckCircle2 },
+  { key: "1", Icon: MessageSquare, anim: "pa-anim-tap" },
+  { key: "2", Icon: Map, anim: "pa-anim-unfurl" },
+  { key: "3", Icon: ClipboardCheck, anim: "pa-anim-page" },
+  { key: "4", Icon: CheckCircle2, anim: "pa-anim-guard" },
 ];
 
 const principles = [
-  { key: "1", Icon: UserRound },
-  { key: "2", Icon: PhoneCall },
-  { key: "3", Icon: Eye },
-  { key: "4", Icon: Target },
-  { key: "5", Icon: Lock },
+  { key: "1", Icon: UserRound, anim: "pa-anim-lift" },
+  { key: "2", Icon: PhoneCall, anim: "pa-anim-swing" },
+  { key: "3", Icon: Eye, anim: "pa-anim-shine" },
+  { key: "4", Icon: Target, anim: "pa-anim-guard" },
+  { key: "5", Icon: Lock, anim: "pa-anim-drop" },
+  { key: "6", Icon: GraduationCap, anim: "pa-anim-case" },
 ];
 
 const Process = () => {
