@@ -99,7 +99,7 @@ const Process = () => {
               initial={{ opacity: 0, y: 16 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.4, delay: 0.25 + i * 0.07 }}
-              className="flex items-start gap-4 bg-card border border-border rounded-xl p-6 transition-colors hover:border-primary/50"
+              className="group flex items-start gap-4 bg-card border border-border rounded-xl p-6 transition-colors hover:border-primary/50"
             >
               <span className="shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center">
                 <Icon className={`w-5 h-5 pa-icon ${anim}`} aria-hidden="true" />
