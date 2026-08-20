@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft, RotateCcw } from "lucide-react";
@@ -24,12 +24,22 @@ const CalculatorDetail = () => {
 
   const [values, setValues] = useState<Record<string, string>>(initialValues);
   const [results, setResults] = useState<CalcResult[] | null>(null);
+  const resultRef = useRef<HTMLDivElement>(null);
 
   if (!calculator) return <NotFound />;
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setResults(calculator.compute(values));
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        resultRef.current?.scrollIntoView({
+          behavior: reduced ? "auto" : "smooth",
+          block: "center",
+        });
+      }, 80);
+    });
   };
 
   const handleReset = () => {
