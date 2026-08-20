@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 import { calculators } from "@/data/calculators";
+import { calcIconAnim } from "@/lib/calculatorIconAnim";
 
 const icons: Record<string, React.ElementType> = {
   "adi-faiz-hesaplama": Percent,

@@ -19,6 +19,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { calculators } from "@/data/calculators";
+import { calcIconAnim } from "@/lib/calculatorIconAnim";
 
 const icons: Record<string, React.ElementType> = {
   "adi-faiz-hesaplama": Percent,
