@@ -59,7 +59,7 @@ const Process = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
-          {steps.map(({ key, Icon }, i) => (
+          {steps.map(({ key, Icon, anim }, i) => (
             <motion.div
               key={key}
               initial={{ opacity: 0, y: 20 }}
@@ -71,7 +71,7 @@ const Process = () => {
                 0{key}
               </span>
               <div className="w-12 h-12 rounded-full bg-muted border border-border flex items-center justify-center mb-5 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
-                <Icon className="w-5 h-5" aria-hidden="true" />
+                <Icon className={`w-5 h-5 pa-icon ${anim}`} aria-hidden="true" />
               </div>
               <h3 className="font-serif text-lg text-foreground font-semibold mb-3 group-hover:text-primary transition-colors">
                 {t(`process.step${key}.title`)}
@@ -93,7 +93,7 @@ const Process = () => {
         </motion.h3>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {principles.map(({ key, Icon }, i) => (
+          {principles.map(({ key, Icon, anim }, i) => (
             <motion.div
               key={key}
               initial={{ opacity: 0, y: 16 }}
@@ -102,7 +102,7 @@ const Process = () => {
               className="flex items-start gap-4 bg-card border border-border rounded-xl p-6 transition-colors hover:border-primary/50"
             >
               <span className="shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center">
-                <Icon className="w-5 h-5" aria-hidden="true" />
+                <Icon className={`w-5 h-5 pa-icon ${anim}`} aria-hidden="true" />
               </span>
               <div>
                 <h4 className="font-serif text-base text-foreground font-semibold mb-1.5">
