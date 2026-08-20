@@ -29,6 +29,8 @@ const tr: Record<string, string> = {
   "process.principle4.desc": "Gereksiz uzayan süreçler yerine hakkınızı en etkin ve hızlı biçimde koruyan yolu tercih ediyoruz.",
   "process.principle5.title": "Gizlilik ve Mesleki Sır",
   "process.principle5.desc": "Paylaştığınız tüm bilgi ve belgeler avukatlık mesleğinin sır saklama yükümlülüğü kapsamında korunur.",
+  "process.principle6.title": "Sürekli Mesleki Gelişim",
+  "process.principle6.desc": "Mevzuat değişikliklerini ve güncel Yargıtay içtihatlarını düzenli olarak takip ederek dosyalarınıza en güncel hukuki bakışı taşıyoruz.",
   "process.cta": "Ön Görüşme Talep Edin",
   "nav.staj": "Staj",
   "career.submitting": "Gönderiliyor...",

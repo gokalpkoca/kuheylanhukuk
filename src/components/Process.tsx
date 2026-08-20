@@ -11,23 +11,25 @@ import {
   Eye,
   Target,
   Lock,
+  GraduationCap,
   ArrowRight,
 } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 const steps = [
-  { key: "1", Icon: MessageSquare },
-  { key: "2", Icon: Map },
-  { key: "3", Icon: ClipboardCheck },
-  { key: "4", Icon: CheckCircle2 },
+  { key: "1", Icon: MessageSquare, anim: "pa-anim-tap" },
+  { key: "2", Icon: Map, anim: "pa-anim-unfurl" },
+  { key: "3", Icon: ClipboardCheck, anim: "pa-anim-page" },
+  { key: "4", Icon: CheckCircle2, anim: "pa-anim-guard" },
 ];
 
 const principles = [
-  { key: "1", Icon: UserRound },
-  { key: "2", Icon: PhoneCall },
-  { key: "3", Icon: Eye },
-  { key: "4", Icon: Target },
-  { key: "5", Icon: Lock },
+  { key: "1", Icon: UserRound, anim: "pa-anim-lift" },
+  { key: "2", Icon: PhoneCall, anim: "pa-anim-swing" },
+  { key: "3", Icon: Eye, anim: "pa-anim-shine" },
+  { key: "4", Icon: Target, anim: "pa-anim-guard" },
+  { key: "5", Icon: Lock, anim: "pa-anim-drop" },
+  { key: "6", Icon: GraduationCap, anim: "pa-anim-case" },
 ];
 
 const Process = () => {
@@ -57,7 +59,7 @@ const Process = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
-          {steps.map(({ key, Icon }, i) => (
+          {steps.map(({ key, Icon, anim }, i) => (
             <motion.div
               key={key}
               initial={{ opacity: 0, y: 20 }}
@@ -69,7 +71,7 @@ const Process = () => {
                 0{key}
               </span>
               <div className="w-12 h-12 rounded-full bg-muted border border-border flex items-center justify-center mb-5 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
-                <Icon className="w-5 h-5" aria-hidden="true" />
+                <Icon className={`w-5 h-5 pa-icon ${anim}`} aria-hidden="true" />
               </div>
               <h3 className="font-serif text-lg text-foreground font-semibold mb-3 group-hover:text-primary transition-colors">
                 {t(`process.step${key}.title`)}
@@ -91,16 +93,16 @@ const Process = () => {
         </motion.h3>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {principles.map(({ key, Icon }, i) => (
+          {principles.map(({ key, Icon, anim }, i) => (
             <motion.div
               key={key}
               initial={{ opacity: 0, y: 16 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.4, delay: 0.25 + i * 0.07 }}
-              className="flex items-start gap-4 bg-card border border-border rounded-xl p-6 transition-colors hover:border-primary/50"
+              className="group flex items-start gap-4 bg-card border border-border rounded-xl p-6 transition-colors hover:border-primary/50"
             >
               <span className="shrink-0 w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center">
-                <Icon className="w-5 h-5" aria-hidden="true" />
+                <Icon className={`w-5 h-5 pa-icon ${anim}`} aria-hidden="true" />
               </span>
               <div>
                 <h4 className="font-serif text-base text-foreground font-semibold mb-1.5">
