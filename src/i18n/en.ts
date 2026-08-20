@@ -29,6 +29,8 @@ const en: Record<string, string> = {
   "process.principle4.desc": "Rather than needlessly prolonged proceedings, we choose the most effective and swift route to protect your rights.",
   "process.principle5.title": "Confidentiality and Professional Secrecy",
   "process.principle5.desc": "All information and documents you share are protected by the attorney's duty of professional secrecy.",
+  "process.principle6.title": "Continuous Professional Development",
+  "process.principle6.desc": "We regularly follow legislative amendments and current case law of the Court of Cassation, bringing the most up-to-date legal perspective to your file.",
   "process.cta": "Request a Preliminary Meeting",
   "nav.staj": "Internships",
   "career.submitting": "Sending...",
