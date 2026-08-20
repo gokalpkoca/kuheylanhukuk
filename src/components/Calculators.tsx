@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 import { calculators } from "@/data/calculators";
+import { calcIconAnim } from "@/lib/calculatorIconAnim";
 
 const icons: Record<string, React.ElementType> = {
   "adi-faiz-hesaplama": Percent,
@@ -70,7 +71,7 @@ const Calculators = () => {
                   className="group block h-full bg-card border border-border rounded-xl p-7 transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1"
                 >
                   <div className="w-12 h-12 rounded-full bg-muted border border-border flex items-center justify-center mb-5 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
-                    <Icon className="w-5 h-5" />
+                    <Icon className={`w-5 h-5 ${calcIconAnim(calc.slug)}`} />
                   </div>
                   <h3 className="font-serif text-lg text-foreground font-semibold mb-3 group-hover:text-primary transition-colors">
                     {calc.title}
